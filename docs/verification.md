@@ -25,7 +25,7 @@ Existing entries were explicitly classified rather than assigned from free-form 
 
 ## Automated verification
 
-`npm test` passes all **37 tests**. `npm run build` passes content validation, TypeScript checking, and the Vite production build without chunk-size warnings. The committed npm lockfile matches version 2.0.0.
+`npm test` passes all **39 tests**. `npm run build` passes content validation, TypeScript checking, and the Vite production build without chunk-size warnings. The committed npm lockfile matches version 2.0.0.
 
 Validation checks required content, contributor roles, citations, representation citations, unique IDs, branch/discipline consistency, related branches, date precision notes, valid endpoints, duplicate relationships, chronological contradictions, cycles, tour references, release coverage, and node overlaps.
 
@@ -38,6 +38,14 @@ Tests cover:
 - A synthetic crowded period that expands horizontally without wrapping; nearby unequal dates in different branches retain separate horizontal regions.
 - Distinct bundle membership separated by type/evidence, filtered counts, individual-edge exclusion, stable representative routes, and unchanged graph statistics.
 - All **824 individual routes** avoid unrelated cards. Dense synthetic cases cover many parents, same-floor links, long links, changing era widths, deterministic routing, and fanned ports. Rounded corners remain inside the tested clearance margins.
+
+## Zoom-in heading reset regression
+
+Reproduced and fixed on 2026-11-01. React reused the overview caption's span for the normal subbranch heading, leaving the imperative scale and rotation in place until the node was remounted. Caption cleanup now removes its owned transform and data attributes; the two presentations have distinct React keys, and registration/cleanup runs before paint.
+
+Two regression tests first failed against the original implementation and now pass. They cover cleanup, repeated registration, delayed font refresh, and other captions remaining active. In the production browser, repeated zoom-out/zoom-in cycles without panning left no transformed normal headings. The Computing view from the report was checked: Computation & algorithms, Information & security, and AI & learning immediately returned to 14px headings at the same vertical position, with no inline transform. There were no browser warnings or errors. All 39 tests, content validation, and the production build pass.
+
+![Computing headings restored immediately after zooming in](preview-title-reset.png)
 
 ## Pillar summaries and motion revision
 

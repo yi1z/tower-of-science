@@ -16,7 +16,12 @@ export class PillarLabels {
    this.widths.set(key,(this.context?.measureText(text).width??text.length*font*.55)+text.length*.3+2);
   }
   this.entries.set(element,{summary,width:this.widths.get(key)!,font});this.draw(element);
-  return()=>{this.entries.delete(element);};
+  return()=>{
+   this.entries.delete(element);
+   // React does not remove styles assigned outside its render cycle when reusing an element.
+   element.style.removeProperty('transform');
+   delete element.dataset.rotated;delete element.dataset.count;
+  };
  }
  refreshFonts(){this.widths.clear();const entries=[...this.entries];for(const [element,{summary}] of entries)this.register(element,summary);}
  update(zoom:number){if(this.zoom===zoom)return;this.zoom=zoom;for(const element of this.entries.keys())this.draw(element);}

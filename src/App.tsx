@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState, memo } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, memo } from 'react';
 import { ReactFlow, ReactFlowProvider, Handle, Position, useReactFlow, useStore, BaseEdge, EdgeLabelRenderer, ViewportPortal, type NodeProps, type Node, type Edge } from '@xyflow/react';
 import { Search, ArrowUpRight, ArrowUp, ArrowDown, ArrowLeft, ArrowRight, X, Plus, Minus, Maximize, Compass, BookOpen, Columns3, GitBranch, List, Map as MapIcon, SlidersHorizontal, RotateCcw, Link2, Check, ChevronRight, ExternalLink, Info } from 'lucide-react';
 import { atlas } from './data/atlas';
@@ -50,12 +50,12 @@ const JoinNode=memo(({data}:NodeProps)=>{
 type RegionData={region:Region;level:'section'|'branch';summary?:BranchSummary;labels:PillarLabels;onReveal:(summary:BranchSummary)=>void};
 const PillarNode=memo(({data}:NodeProps<Node<RegionData>>)=>{
  const {region:r,level,summary,labels,onReveal}=data,caption=useRef<HTMLSpanElement>(null),d=disciplines[r.discipline];
- useEffect(()=>{if(caption.current&&summary)return labels.register(caption.current,summary);},[labels,summary]);
+ useLayoutEffect(()=>{if(caption.current&&summary)return labels.register(caption.current,summary);},[labels,summary]);
  const label=groupLabel(r.id),description=`Explore ${label} in ${eras.find(e=>e.id===r.eraId)?.label}${summary?`, ${summary.memberIds.length} ideas`:''}`;
  return <div className={`pillar-region ${level==='section'?'science-section':'branch-region'} ${summary?'collapsed-pillar nopan nodrag':''}`} data-collapsed={!!summary} role={summary?'button':undefined} tabIndex={summary?0:undefined} aria-label={summary?description:undefined} title={summary?description:undefined} style={{'--discipline':d.color,borderColor:`${d.color}40`,background:level==='section'?`${d.color}08`:undefined} as React.CSSProperties} onClick={summary?()=>onReveal(summary):undefined} onKeyDown={summary?e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();onReveal(summary);}}:undefined}>
   <svg className="pillar-outline" aria-hidden="true" width="100%" height="100%"><path d={level==='section'?`M .5 0 V ${r.bottom-r.top} M ${r.width-.5} 0 V ${r.bottom-r.top}`:`M .5 0 V ${r.bottom-r.top}`} stroke={d.color} strokeOpacity={level==='section'?.35:.17} strokeWidth={.65} strokeDasharray={level==='branch'?'3 5':undefined} vectorEffect="non-scaling-stroke"/></svg>
   <Handle type="target" position={Position.Bottom}/>
-  {summary?<span ref={caption} className={`pillar-caption pillar-caption-${level}`}><strong>{d.symbol} {label}</strong><small>{summary.memberIds.length} {summary.memberIds.length===1?'idea':'ideas'}</small></span>:level==='section'?<strong>{d.symbol} {label}</strong>:<span className="branch-heading">{label}</span>}
+  {summary?<span key="summary-caption" ref={caption} className={`pillar-caption pillar-caption-${level}`}><strong>{d.symbol} {label}</strong><small>{summary.memberIds.length} {summary.memberIds.length===1?'idea':'ideas'}</small></span>:level==='section'?<strong key="section-heading">{d.symbol} {label}</strong>:<span key="branch-heading" className="branch-heading">{label}</span>}
   <Handle type="source" position={Position.Top}/>
  </div>;
 });
