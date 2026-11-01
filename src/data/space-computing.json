@@ -170,9 +170,13 @@
           "sc-kepler"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "T² ∝ a³",
-        "explanation": "For bodies orbiting the same dominant mass, squared orbital period T is proportional to cubed semi-major axis a."
+        "explanation": "For bodies orbiting the same dominant mass, squared orbital period T is proportional to cubed semi-major axis a.",
+        "sourceIds": [
+          "sc-kepler"
+        ]
       }
     },
     {
@@ -218,9 +222,13 @@
           "sc-parallax"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "d = 1 / p",
-        "explanation": "Distance d is in parsecs when annual parallax p is measured in arcseconds."
+        "explanation": "Distance d is in parsecs when annual parallax p is measured in arcseconds.",
+        "sourceIds": [
+          "sc-parallax"
+        ]
       }
     },
     {
@@ -401,9 +409,13 @@
           "sc-expansion"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "v ≈ H₀ d",
-        "explanation": "For nearby galaxies in the large-scale flow, recession speed v is approximately the Hubble parameter H₀ times distance d."
+        "explanation": "For nearby galaxies in the large-scale flow, recession speed v is approximately the Hubble parameter H₀ times distance d.",
+        "sourceIds": [
+          "sc-expansion"
+        ]
       }
     },
     {
@@ -1277,6 +1289,14 @@
         "history": [
           "sc-turing"
         ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "State + tape + transition rule",
+        "explanation": "A Turing machine changes state, writes a symbol, and moves a tape head according to a finite rule table. Its unbounded tape is a mathematical idealization.",
+        "sourceIds": [
+          "sc-turing"
+        ]
       }
     },
     {
@@ -1319,7 +1339,15 @@
           "sc-lambda"
         ]
       },
-      "example": "The expression (λx. x + 1) applied to 4 evaluates to 5: define a rule, then supply its argument."
+      "example": "The expression (λx. x + 1) applied to 4 evaluates to 5: define a rule, then supply its argument.",
+      "representation": {
+        "kind": "formula",
+        "expression": "(λx. M) N → M[x := N]",
+        "explanation": "Beta reduction applies the function λx. M to argument N by capture-avoiding substitution into M. Bound variables may need renaming.",
+        "sourceIds": [
+          "sc-lambda"
+        ]
+      }
     },
     {
       "id": "halting-problem",
@@ -1362,6 +1390,14 @@
           "sc-turing"
         ],
         "history": [
+          "sc-turing"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "No algorithm decides halting for every program and input",
+        "explanation": "A universal terminating decision procedure is impossible. Particular programs or restricted classes may still be proved to halt or not halt.",
+        "sourceIds": [
           "sc-turing"
         ]
       }
@@ -1495,11 +1531,15 @@
           "sc-shannon"
         ]
       },
-      "equation": {
+      "example": "A fair yes/no event carries one bit of uncertainty. A nearly certain outcome carries less average uncertainty.",
+      "representation": {
+        "kind": "formula",
         "expression": "H(X) = −Σ p(x) log₂ p(x)",
-        "explanation": "Entropy H is the average uncertainty, in bits, for possible outcomes x with probabilities p(x)."
-      },
-      "example": "A fair yes/no event carries one bit of uncertainty. A nearly certain outcome carries less average uncertainty."
+        "explanation": "Entropy H is the average uncertainty, in bits, for possible outcomes x with probabilities p(x).",
+        "sourceIds": [
+          "sc-shannon"
+        ]
+      }
     },
     {
       "id": "cybernetics",
@@ -1705,6 +1745,14 @@
         "history": [
           "sc-complexity"
         ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "T(n): resources as input size grows",
+        "explanation": "A time bound T(n) measures steps on a specified computational model for inputs of size n. The case being bounded, such as worst or average case, must be stated.",
+        "sourceIds": [
+          "sc-complexity"
+        ]
       }
     },
     {
@@ -1881,6 +1929,14 @@
         "history": [
           "sc-quantum-compute"
         ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "|ψ⟩ = α|0⟩ + β|1⟩",
+        "explanation": "A pure qubit state has complex amplitudes α and β satisfying |α|² + |β|² = 1. Measurement in this basis gives probabilities |α|² and |β|².",
+        "sourceIds": [
+          "sc-quantum-compute"
+        ]
       }
     },
     {
@@ -1960,6 +2016,14 @@
           "sc-backprop"
         ],
         "history": [
+          "sc-backprop"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "∂L/∂w = (∂L/∂z)(∂z/∂w)",
+        "explanation": "This local chain-rule step propagates the loss derivative from an intermediate value z to a weight w. A full network sums contributions along all relevant paths.",
+        "sourceIds": [
           "sc-backprop"
         ]
       }
@@ -2049,6 +2113,14 @@
         "history": [
           "sc-bayesnets"
         ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "P(x₁,…,xₙ) = ∏ᵢ P(xᵢ | paᵢ)",
+        "explanation": "A directed acyclic graph encodes a joint distribution as local conditional distributions. paᵢ denotes the values of node i’s parents. The factorization alone does not establish causality.",
+        "sourceIds": [
+          "sc-bayesnets"
+        ]
       }
     },
     {
@@ -2088,6 +2160,14 @@
           "sc-causality"
         ],
         "history": [
+          "sc-causality"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "P(Y | do(X = x))",
+        "explanation": "This distribution describes outcome Y under an intervention setting X to x. It generally differs from conditioning on the observation X = x; identification requires causal assumptions.",
+        "sourceIds": [
           "sc-causality"
         ]
       }
@@ -2170,6 +2250,14 @@
           "sc-attention"
         ],
         "history": [
+          "sc-attention"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "Attention = softmax(QKᵀ/√d_{k})V",
+        "explanation": "Scaled dot-product attention compares queries Q with keys K, normalizes their scores, and combines values V. dₖ is key dimension; masking and additional layers depend on the architecture.",
+        "sourceIds": [
           "sc-attention"
         ]
       }
@@ -2512,6 +2600,14 @@
         "history": [
           "sc-marginal"
         ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "MU = dU/dq",
+        "explanation": "In a differentiable utility model, marginal utility MU is the rate of change of utility U with quantity q, holding other quantities fixed. Cardinal magnitudes depend on the chosen utility representation.",
+        "sourceIds": [
+          "sc-marginal"
+        ]
       }
     },
     {
@@ -2553,6 +2649,15 @@
         ],
         "history": [
           "sc-supply"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "Qd(p*) = Qs(p*)",
+        "explanation": "At a competitive market-clearing price p*, quantity demanded Qd equals quantity supplied Qs. This is a model condition, not a claim that all markets always clear.",
+        "sourceIds": [
+          "sc-supply",
+          "sc-demand"
         ]
       }
     },
@@ -2600,9 +2705,13 @@
           "sc-fechner"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "S = k log(I / I₀)",
-        "explanation": "In Fechner's model, sensation S grows logarithmically with intensity I relative to a reference I₀; k sets the scale. Its range of validity is limited."
+        "explanation": "In Fechner's model, sensation S grows logarithmically with intensity I relative to a reference I₀; k sets the scale. Its range of validity is limited.",
+        "sourceIds": [
+          "sc-fechner"
+        ]
       }
     },
     {
@@ -3076,7 +3185,15 @@
           "sc-nash"
         ]
       },
-      "example": "An equilibrium may leave everyone worse off than cooperation; stability and collective benefit are different properties."
+      "example": "An equilibrium may leave everyone worse off than cooperation; stability and collective benefit are different properties.",
+      "representation": {
+        "kind": "definition",
+        "expression": "No profitable unilateral deviation",
+        "explanation": "Given everyone else’s strategy, each player’s chosen strategy is a best response. Equilibrium need not be unique, fair, efficient, or easily reached.",
+        "sourceIds": [
+          "sc-nash"
+        ]
+      }
     },
     {
       "id": "expected-utility",
@@ -3123,9 +3240,13 @@
           "sc-utility"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "EU = Σ pᵢ u(xᵢ)",
-        "explanation": "Expected utility sums each outcome's utility u(xᵢ), weighted by its probability pᵢ."
+        "explanation": "Expected utility sums each outcome's utility u(xᵢ), weighted by its probability pᵢ.",
+        "sourceIds": [
+          "sc-utility"
+        ]
       }
     },
     {

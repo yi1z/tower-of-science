@@ -17,6 +17,11 @@ export function validateAtlas(atlas:Atlas){
   if(!Array.isArray(c.aliases)||!Array.isArray(c.tags))errors.push(`${c.id}: aliases and tags must be arrays`);
   if(!c.contributors?.length||c.contributors.some(p=>!p.name||!p.role))errors.push(`${c.id}: incomplete attribution`);
   refs(c.sourceIds,c.id);refs(c.claimSources?.summary,`${c.id} summary`);refs(c.claimSources?.history,`${c.id} history`);
+  if(c.representation){
+   const r=c.representation;
+   if(!['formula','definition'].includes(r.kind)||!r.expression?.trim()||!r.explanation?.trim())errors.push(`${c.id}: incomplete representation`);
+   refs(r.sourceIds,`${c.id} representation`);
+  }
  }
  const pairs=new Set<string>(),out=new Map<string,string[]>();
  for(const e of atlas.relationships){

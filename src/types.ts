@@ -3,6 +3,9 @@ export type Standing = 'established' | 'limited' | 'superseded' | 'open' | 'spec
 export type RelationType = 'influence' | 'foundation' | 'enables' | 'revision';
 export interface Contributor { name: string; role: string }
 export interface Source { id: string; title: string; url: string; publisher: string }
+export interface Representation {
+ kind:'formula'|'definition'; expression:string; explanation:string; sourceIds:string[];
+}
 export interface Concept {
  id: string; title: string; aliases: string[]; discipline: Discipline; tags: string[];
  kind: 'concept' | 'theory' | 'method' | 'discovery' | 'mathematics' | 'instrument';
@@ -10,7 +13,7 @@ export interface Concept {
  summary: string; problem: string; development: string; limitations: string;
  standing: Standing; contributors: Contributor[]; sourceIds: string[];
  claimSources: { summary: string[]; history: string[] };
- example?: string; equation?: { expression: string; explanation: string };
+ example?: string; representation?: Representation;
 }
 export interface Relationship { id: string; source: string; target: string; type: RelationType; explanation: string; evidence: 'documented' | 'conceptual' | 'contested'; sourceIds: string[] }
 export interface Tour { id: string; title: string; subtitle: string; color: string; steps: { conceptId: string; narration: string }[] }

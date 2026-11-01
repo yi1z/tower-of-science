@@ -417,6 +417,14 @@
         "history": [
           "le-cells"
         ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Living organisms consist of cells; cells arise from cells",
+        "explanation": "Cells are the basic units of cellular life. This principle describes continuity of existing life; it does not explain the origin of the first cells.",
+        "sourceIds": [
+          "le-cells"
+        ]
       }
     },
     {
@@ -462,6 +470,14 @@
           "le-evolution"
         ],
         "history": [
+          "le-evolution"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Heritable variation + differential reproduction",
+        "explanation": "Natural selection changes populations when inherited differences affect reproductive success. Mutation, drift, and migration also contribute to evolution.",
+        "sourceIds": [
           "le-evolution"
         ]
       }
@@ -552,9 +568,13 @@
           "le-mendel"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "P(aa) = 1/2 × 1/2 = 1/4",
-        "explanation": "In an Aa × Aa cross, each parent transmits allele a with probability one half; independent transmissions give a one-quarter chance of aa."
+        "explanation": "In an Aa × Aa cross, each parent transmits allele a with probability one half; independent transmissions give a one-quarter chance of aa.",
+        "sourceIds": [
+          "le-mendel"
+        ]
       }
     },
     {
@@ -901,6 +921,14 @@
         "history": [
           "le-population"
         ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "p² + 2pq + q² = 1",
+        "explanation": "For two alleles with frequencies p and q, where p + q = 1, random mating gives these Hardy–Weinberg genotype proportions. Persistence requires the idealized absence of selection, mutation, migration, and drift.",
+        "sourceIds": [
+          "rep-population"
+        ]
       }
     },
     {
@@ -1151,7 +1179,16 @@
           "le-franklin"
         ]
       },
-      "example": "Complementary pairing lets each strand act as a template: A pairs with T, and G with C."
+      "example": "Complementary pairing lets each strand act as a template: A pairs with T, and G with C.",
+      "representation": {
+        "kind": "definition",
+        "expression": "A ↔ T;  G ↔ C",
+        "explanation": "Canonical DNA base pairing connects adenine with thymine and guanine with cytosine across complementary strands. Pairing helps explain templated replication.",
+        "sourceIds": [
+          "le-dna",
+          "le-franklin"
+        ]
+      }
     },
     {
       "id": "molecular-biology",
@@ -1202,9 +1239,14 @@
           "le-dogma-history"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "definition",
         "expression": "DNA → RNA → protein",
-        "explanation": "A common pathway of gene expression. The arrows represent transcription and translation; this shorthand is not a complete statement of the central dogma."
+        "explanation": "A common pathway of gene expression. The arrows represent transcription and translation; this shorthand is not a complete statement of the central dogma.",
+        "sourceIds": [
+          "le-dogma",
+          "le-dogma-history"
+        ]
       }
     },
     {
@@ -1303,7 +1345,15 @@
           "le-code"
         ]
       },
-      "example": "In the standard code, UUU specifies phenylalanine; the ribosome reads the message in three-base units."
+      "example": "In the standard code, UUU specifies phenylalanine; the ribosome reads the message in three-base units.",
+      "representation": {
+        "kind": "definition",
+        "expression": "RNA triplet → amino acid or stop",
+        "explanation": "A codon is a three-base RNA sequence read during translation. There are 64 possible triplets; assignments include redundancy and some lineage-specific exceptions.",
+        "sourceIds": [
+          "le-code"
+        ]
+      }
     },
     {
       "id": "endosymbiosis",
@@ -1541,9 +1591,14 @@
           "le-pcr-definition"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "N ≈ N₀ × 2ⁿ",
-        "explanation": "Ideal doubling gives N copies after n cycles from N₀ initial copies. Real reactions eventually depart from this ideal."
+        "explanation": "Ideal doubling gives N copies after n cycles from N₀ initial copies. Real reactions eventually depart from this ideal.",
+        "sourceIds": [
+          "le-pcr",
+          "le-pcr-definition"
+        ]
       }
     },
     {
@@ -1724,9 +1779,13 @@
           "le-earth-size"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "C = d × 360° / θ",
-        "explanation": "If locations are d apart along a meridian and their solar-angle difference is θ, the corresponding spherical circumference is C."
+        "explanation": "If locations are d apart along a meridian and their solar-angle difference is θ, the corresponding spherical circumference is C.",
+        "sourceIds": [
+          "le-earth-size"
+        ]
       }
     },
     {
@@ -1777,9 +1836,14 @@
           "le-hydrology"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "ΔS = inputs − outputs",
-        "explanation": "The change in stored water equals incoming water minus outgoing water over a defined region and time."
+        "explanation": "The change in stored water equals incoming water minus outgoing water over a defined region and time.",
+        "sourceIds": [
+          "le-hydrology-history",
+          "le-hydrology"
+        ]
       }
     },
     {
@@ -2255,9 +2319,13 @@
           "le-radiometric"
         ]
       },
-      "equation": {
-        "expression": "N(t) = N₀e^(−λt)",
-        "explanation": "For a closed radioactive parent population, N decreases from N₀ with decay constant λ over time t. Geological dating must also account for daughter isotopes and system history."
+      "representation": {
+        "kind": "formula",
+        "expression": "N(t) = N₀e^{−λt}",
+        "explanation": "For a closed radioactive parent population, N decreases from N₀ with decay constant λ over time t. Geological dating must also account for daughter isotopes and system history.",
+        "sourceIds": [
+          "le-radiometric"
+        ]
       }
     },
     {
@@ -2689,6 +2757,15 @@
           "le-drift"
         ],
         "history": [
+          "le-plates",
+          "le-drift"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Divergence · convergence · transform motion",
+        "explanation": "Lithospheric plates separate, approach, or slide past one another. These boundary types connect seafloor production, subduction, and much earthquake activity.",
+        "sourceIds": [
           "le-plates",
           "le-drift"
         ]

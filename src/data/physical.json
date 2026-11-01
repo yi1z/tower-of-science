@@ -37,7 +37,15 @@
           "ph-buoyancy"
         ]
       },
-      "example": "A steel ship floats because its hollow hull displaces enough water to support its weight."
+      "example": "A steel ship floats because its hollow hull displaces enough water to support its weight.",
+      "representation": {
+        "kind": "formula",
+        "expression": "Fᵦ = ρgV",
+        "explanation": "Buoyant-force magnitude Fᵦ equals fluid density ρ times gravitational acceleration g times displaced volume V, for a uniform-density fluid in uniform gravity.",
+        "sourceIds": [
+          "ph-buoyancy"
+        ]
+      }
     },
     {
       "id": "atomism",
@@ -160,6 +168,15 @@
           "ph-galileo-history",
           "ph-inertia"
         ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "ΣF = 0  ⇒  v = constant",
+        "explanation": "In an inertial frame, zero net force implies constant velocity v for a constant-mass body. Rest is included as zero velocity.",
+        "sourceIds": [
+          "ph-inertia",
+          "ph-galileo-history"
+        ]
       }
     },
     {
@@ -198,7 +215,16 @@
           "ph-galileo-history"
         ]
       },
-      "example": "A dropped object falls beside you on a smoothly moving ship, rather than being left behind."
+      "example": "A dropped object falls beside you on a smoothly moving ship, rather than being left behind.",
+      "representation": {
+        "kind": "formula",
+        "expression": "x′ = x − vt;  t′ = t",
+        "explanation": "For frames moving at constant relative speed v along one axis, classical coordinates differ by vt while time is shared. This transformation is a low-speed approximation to relativity.",
+        "sourceIds": [
+          "ph-relativity",
+          "ph-galileo-history"
+        ]
+      }
     },
     {
       "id": "classical-mechanics",
@@ -244,9 +270,14 @@
           "ph-gravity"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "F = ma",
-        "explanation": "For constant mass m, the net force F produces acceleration a; these quantities have direction."
+        "explanation": "For constant mass m, the net force F produces acceleration a; these quantities have direction.",
+        "sourceIds": [
+          "ph-newton",
+          "ph-gravity"
+        ]
       }
     },
     {
@@ -288,9 +319,13 @@
           "ph-gravity"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "F = Gm₁m₂ / r²",
-        "explanation": "G is the gravitational constant, m₁ and m₂ are masses, and r is their separation for point masses or spherical bodies."
+        "explanation": "G is the gravitational constant, m₁ and m₂ are masses, and r is their separation for point masses or spherical bodies.",
+        "sourceIds": [
+          "ph-gravity"
+        ]
       }
     },
     {
@@ -332,9 +367,13 @@
           "ph-momentum"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "p = mv",
-        "explanation": "Momentum p is mass m multiplied by velocity v in classical mechanics."
+        "explanation": "Momentum p is mass m multiplied by velocity v in classical mechanics.",
+        "sourceIds": [
+          "ph-momentum"
+        ]
       }
     },
     {
@@ -382,6 +421,14 @@
         "history": [
           "ph-action"
         ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "δS = 0;  S = ∫ L dt",
+        "explanation": "A physical path makes the action S stationary under permitted variations. L is the Lagrangian and t is time; stationary does not always mean a minimum.",
+        "sourceIds": [
+          "ph-action"
+        ]
       }
     },
     {
@@ -419,6 +466,14 @@
         "history": [
           "ph-coulomb",
           "ph-maxwell"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "F = |q₁q₂| / (4πε₀r²)",
+        "explanation": "In vacuum, this gives the force magnitude between two stationary point charges q₁ and q₂ separated by r. ε₀ is vacuum permittivity; charge signs determine attraction or repulsion.",
+        "sourceIds": [
+          "rep-coulomb"
         ]
       }
     },
@@ -465,7 +520,15 @@
           "ph-interference"
         ]
       },
-      "example": "Two narrow slits produce alternating bright and dark fringes rather than just two bright strips."
+      "example": "Two narrow slits produce alternating bright and dark fringes rather than just two bright strips.",
+      "representation": {
+        "kind": "formula",
+        "expression": "Δℓ = mλ",
+        "explanation": "Coherent, initially in-phase waves interfere constructively when their path difference Δℓ is an integer m times wavelength λ. Additional phase shifts alter the condition.",
+        "sourceIds": [
+          "ph-interference"
+        ]
+      }
     },
     {
       "id": "thermodynamics",
@@ -550,7 +613,15 @@
           "ph-induction"
         ]
       },
-      "example": "Moving a magnet through a wire coil can drive a current; holding it still does not maintain that induced current."
+      "example": "Moving a magnet through a wire coil can drive a current; holding it still does not maintain that induced current.",
+      "representation": {
+        "kind": "formula",
+        "expression": "ℰ = −dΦ_{B}/dt",
+        "explanation": "The induced electromotive force ℰ around one loop is the negative rate of change of magnetic flux ΦB. The sign expresses opposition to the flux change.",
+        "sourceIds": [
+          "rep-faraday"
+        ]
+      }
     },
     {
       "id": "energy-conservation",
@@ -595,9 +666,13 @@
           "ph-energy"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "ΔU = Q − W",
-        "explanation": "Internal-energy change ΔU equals heat Q entering the system minus work W done by it."
+        "explanation": "Internal-energy change ΔU equals heat Q entering the system minus work W done by it.",
+        "sourceIds": [
+          "ph-energy"
+        ]
       }
     },
     {
@@ -682,9 +757,15 @@
           "ph-clausius-history"
         ]
       },
-      "equation": {
-        "expression": "ΔS = Qrev / T",
-        "explanation": "For reversible heat transfer at constant temperature T, entropy change ΔS is heat Qrev divided by absolute temperature."
+      "representation": {
+        "kind": "formula",
+        "expression": "ΔS = Q_{rev} / T",
+        "explanation": "For reversible heat transfer at constant temperature T, entropy change ΔS is heat Qrev divided by absolute temperature.",
+        "sourceIds": [
+          "ph-entropy",
+          "ph-statistical",
+          "ph-clausius-history"
+        ]
       }
     },
     {
@@ -733,7 +814,15 @@
           "ph-maxwell-original"
         ]
       },
-      "example": "Visible light and radio waves are the same kind of field disturbance at different frequencies."
+      "example": "Visible light and radio waves are the same kind of field disturbance at different frequencies.",
+      "representation": {
+        "kind": "formula",
+        "expression": "c = 1 / √(μ₀ε₀)",
+        "explanation": "Maxwell’s vacuum equations predict electromagnetic waves with speed c, set by vacuum permeability μ₀ and permittivity ε₀. This is one consequence of the full field equations.",
+        "sourceIds": [
+          "rep-maxwell"
+        ]
+      }
     },
     {
       "id": "statistical-mechanics",
@@ -777,9 +866,15 @@
           "ph-brownian"
         ]
       },
-      "equation": {
-        "expression": "S = kB ln Ω",
-        "explanation": "For equally likely microstates, entropy S depends on their number Ω; kB is Boltzmann’s constant."
+      "representation": {
+        "kind": "formula",
+        "expression": "S = k_{B} ln Ω",
+        "explanation": "For equally likely microstates, entropy S depends on their number Ω; kB is Boltzmann’s constant.",
+        "sourceIds": [
+          "ph-statistical",
+          "ph-gibbs-history",
+          "ph-brownian"
+        ]
       }
     },
     {
@@ -866,6 +961,14 @@
         "history": [
           "ph-chemistry-history"
         ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "N(t) = N₀e^{−λt}",
+        "explanation": "For independent unstable nuclei of one species, N(t) is the expected remaining population at time t, N₀ is its initial value, and λ is the decay constant.",
+        "sourceIds": [
+          "ph-chemistry-history"
+        ]
       }
     },
     {
@@ -905,9 +1008,13 @@
           "ph-quanta"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "E = hf",
-        "explanation": "One quantum has energy E proportional to frequency f; h is Planck’s constant."
+        "explanation": "One quantum has energy E proportional to frequency f; h is Planck’s constant.",
+        "sourceIds": [
+          "ph-quanta"
+        ]
       }
     },
     {
@@ -953,9 +1060,13 @@
           "ph-relativity"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "E₀ = mc²",
-        "explanation": "Rest energy E₀ equals mass m times the square of the vacuum speed of light c."
+        "explanation": "Rest energy E₀ equals mass m times the square of the vacuum speed of light c.",
+        "sourceIds": [
+          "ph-relativity"
+        ]
       }
     },
     {
@@ -999,9 +1110,13 @@
           "ph-photoelectric"
         ]
       },
-      "equation": {
-        "expression": "Kmax = hf − φ",
-        "explanation": "The maximum electron kinetic energy equals photon energy hf minus the material’s work function φ."
+      "representation": {
+        "kind": "formula",
+        "expression": "K_{max} = hf − φ",
+        "explanation": "The maximum electron kinetic energy equals photon energy hf minus the material’s work function φ.",
+        "sourceIds": [
+          "ph-photoelectric"
+        ]
       }
     },
     {
@@ -1139,7 +1254,15 @@
           "ph-einstein-history"
         ]
       },
-      "example": "Freely falling objects follow spacetime geodesics; tidal effects reveal curvature that cannot be removed throughout a large region."
+      "example": "Freely falling objects follow spacetime geodesics; tidal effects reveal curvature that cannot be removed throughout a large region.",
+      "representation": {
+        "kind": "formula",
+        "expression": "G_{μν} = (8πG/c⁴) T_{μν}",
+        "explanation": "With zero cosmological constant, the Einstein tensor Gμν describes curvature and Tμν describes stress-energy. G without indices is Newton’s constant; c is the speed of light.",
+        "sourceIds": [
+          "rep-einstein"
+        ]
+      }
     },
     {
       "id": "quantum-mechanics",
@@ -1187,6 +1310,14 @@
         "history": [
           "ph-schrodinger"
         ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "iℏ ∂ψ/∂t = Ĥψ",
+        "explanation": "The Schrödinger equation describes unitary time evolution of a quantum state ψ. Ĥ is the Hamiltonian energy operator, ℏ the reduced Planck constant, and i the imaginary unit. It is not a complete account of measurement.",
+        "sourceIds": [
+          "rep-schrodinger"
+        ]
       }
     },
     {
@@ -1228,9 +1359,13 @@
           "ph-uncertainty"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "Δx Δp ≥ ℏ/2",
-        "explanation": "Δx and Δp are standard deviations of position and momentum in the same state; ℏ is the reduced Planck constant."
+        "explanation": "Δx and Δp are standard deviations of position and momentum in the same state; ℏ is the reduced Planck constant.",
+        "sourceIds": [
+          "ph-uncertainty"
+        ]
       }
     },
     {
@@ -1271,6 +1406,16 @@
           "ph-qft"
         ],
         "history": [
+          "ph-dirac-original",
+          "ph-qed-history"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Particles as excitations of quantized fields",
+        "explanation": "A field assigns quantities across spacetime; quantization makes its excitations obey quantum rules. Interactions can change particle number.",
+        "sourceIds": [
+          "ph-qft",
           "ph-dirac-original",
           "ph-qed-history"
         ]
@@ -1607,6 +1752,14 @@
         "history": [
           "ph-standard"
         ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "SU(3) × SU(2) × U(1)",
+        "explanation": "These gauge groups organize the strong and electroweak interactions. The notation summarizes symmetry structure, not the full particle content or a theory of gravity.",
+        "sourceIds": [
+          "ph-standard"
+        ]
       }
     },
     {
@@ -1941,6 +2094,16 @@
           "ph-periodic-history",
           "ph-lavoisier"
         ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "Σ m_{reactants} ≈ Σ m_{products}",
+        "explanation": "Mass is effectively conserved in ordinary closed chemical reactions. The approximation neglects tiny mass changes associated with changes in energy.",
+        "sourceIds": [
+          "ph-mass",
+          "ph-periodic-history",
+          "ph-lavoisier"
+        ]
       }
     },
     {
@@ -2069,9 +2232,13 @@
           "ph-gas-laws"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "PV = nRT",
-        "explanation": "The later ideal-gas synthesis relates pressure P, volume V, amount n, absolute temperature T, and gas constant R."
+        "explanation": "The later ideal-gas synthesis relates pressure P, volume V, amount n, absolute temperature T, and gas constant R.",
+        "sourceIds": [
+          "ph-gas-laws"
+        ]
       }
     },
     {
@@ -2112,6 +2279,15 @@
           "ph-gas-laws"
         ],
         "history": [
+          "ph-avogadro",
+          "ph-gas-laws"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "V ∝ n  (fixed T, P)",
+        "explanation": "For an ideal gas at fixed temperature T and pressure P, volume V is proportional to amount of substance n. Equal volumes then contain equal numbers of molecules.",
+        "sourceIds": [
           "ph-avogadro",
           "ph-gas-laws"
         ]
@@ -2340,6 +2516,14 @@
           "ph-rates",
           "ph-mass-action"
         ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "rate = k[A]",
+        "explanation": "An example first-order rate law: rate is proportional to reactant concentration [A], with rate constant k. Orders are determined by the reaction mechanism and experiment.",
+        "sourceIds": [
+          "rep-rates"
+        ]
       }
     },
     {
@@ -2383,6 +2567,14 @@
           "ph-equilibrium",
           "ph-mass-action"
         ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "K_{c} = [C]ᶜ[D]ᵈ / ([A]ᵃ[B]ᵇ)",
+        "explanation": "For aA + bB ⇌ cC + dD, this concentration-based expression is evaluated at equilibrium. Brackets denote concentrations. Rigorous equilibrium constants use dimensionless activities; pure solids and liquids are omitted.",
+        "sourceIds": [
+          "rep-equilibrium"
+        ]
       }
     },
     {
@@ -2423,9 +2615,14 @@
           "ph-gibbs-history"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "ΔG = ΔH − TΔS",
-        "explanation": "At constant temperature, Gibbs-energy change combines enthalpy change ΔH with entropy change ΔS; constant-pressure spontaneity also depends on the actual composition."
+        "explanation": "At constant temperature, Gibbs-energy change combines enthalpy change ΔH with entropy change ΔS; constant-pressure spontaneity also depends on the actual composition.",
+        "sourceIds": [
+          "ph-free-energy",
+          "ph-gibbs-history"
+        ]
       }
     },
     {
@@ -2559,6 +2756,16 @@
         ],
         "history": [
           "ph-acids",
+          "ph-lewis-history"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Acid: proton donor · Base: proton acceptor",
+        "explanation": "This is the Brønsted–Lowry definition. Lewis theory instead classifies acids as electron-pair acceptors and bases as electron-pair donors.",
+        "sourceIds": [
+          "ph-acids",
+          "ph-lewis",
           "ph-lewis-history"
         ]
       }

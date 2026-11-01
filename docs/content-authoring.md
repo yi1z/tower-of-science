@@ -12,7 +12,11 @@ Use a negative integer for BCE and a positive integer for CE; there is no year z
 
 Standings are `established`, `limited`, `superseded`, `open`, and `speculative`. Mathematical open conjectures and empirical frontier proposals need context in the limitations field; a status alone cannot express the full distinction.
 
-An example or an equation with an explanation is optional. Keep prose original, plain, specific, and proportionate to the sources. Link a focused chapter, paper, or historical account, not an institution’s generic home page.
+An example or a representative formula/definition is optional. Keep prose original, plain, specific, and proportionate to the sources. Link a focused chapter, paper, or historical account, not an institution’s generic home page.
+
+To support **Formulas & definitions** mode, add a `representation` object with `kind` (`formula` or `definition`), a concise `expression`, an `explanation` defining symbols and assumptions, and supporting `sourceIds`. The interface is `Representation` in `src/types.ts`. Use Unicode notation; `_{indices}` and `^{powers}` are also rendered as subscripts and superscripts. Do not put HTML in expressions.
+
+Choose a representative relationship, definition, or example rather than implying a short formula exhausts a theory. State limits such as equilibrium, an ideal gas, constant mass, or a finite equiprobable sample space. Modern notation is explicitly labeled in the interface and does not change the concept’s historical date. Concepts without a suitable representation retain their prose in both modes.
 
 ## Add a source
 

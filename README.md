@@ -26,6 +26,7 @@ npm run preview    # Serve the production build locally
 
 - Search for a concept, alias, or contributor. Press Ctrl/Cmd+K to focus search.
 - Select a concept to see its introduction, origins, contributors, limitations, and supporting references.
+- Switch between **Words** and **Formulas & definitions** in the toolbar or detail panel. There are 93 sourced representations with symbol explanations and assumptions; other entries retain their prose. This choice is included in shared links and retained during tours and resets.
 - Use **Trace origins** or **Follow influence** to highlight multiple generations. Filtered-out connecting concepts remain visible as dashed context nodes.
 - Select a connection or expand **Why they connect** in a concept panel to read its evidence.
 - Navigate by era, discipline, scientific standing, or relationship type. The layout remains fixed while filtering.
@@ -35,7 +36,7 @@ npm run preview    # Serve the production build locally
 
 ## Architecture
 
-React and TypeScript render the application; React Flow supplies the graph viewport and interactions. `src/graph.ts` computes deterministic chronological positions and graph indexes. `src/state.ts` encodes view state in the URL hash. No force simulation or layout recalculation occurs while filtering.
+React and TypeScript render the application; React Flow supplies the graph viewport and interactions. `src/graph.ts` computes deterministic chronological positions and graph indexes. Concepts with the same milestone year form a centered horizontal row, grouped by discipline. Crowded rows expand without a fixed column limit; each era boundary accommodates its widest row. `src/state.ts` encodes view state in the URL hash. No force simulation or layout recalculation occurs while filtering or switching content display.
 
 Content lives in four versioned JSON collections under `src/data/`, with a separate tour collection. `src/types.ts` defines the content interfaces and `src/validate.ts` enforces the authoring contract. The atlas metadata records its edition and editorial review date.
 

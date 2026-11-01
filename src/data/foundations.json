@@ -35,7 +35,15 @@
           "f-numerical-cognition"
         ]
       },
-      "example": "Pair one pebble with each animal. A missing pebble or animal reveals a mismatch without requiring written numerals."
+      "example": "Pair one pebble with each animal. A missing pebble or animal reveals a mismatch without requiring written numerals.",
+      "representation": {
+        "kind": "definition",
+        "expression": "n = |S|",
+        "explanation": "For a finite collection S, its cardinality |S| is the number n of distinct items. This is modern notation for an ancient practice.",
+        "sourceIds": [
+          "f-numerical-cognition"
+        ]
+      }
     },
     {
       "id": "tally-marks",
@@ -149,7 +157,15 @@
           "f-arithmetic-history"
         ]
       },
-      "example": "Three groups of four objects can be counted as 4 + 4 + 4 or written as 3 × 4."
+      "example": "Three groups of four objects can be counted as 4 + 4 + 4 or written as 3 × 4.",
+      "representation": {
+        "kind": "formula",
+        "expression": "a + b = b + a",
+        "explanation": "Addition of whole numbers a and b is commutative: changing their order leaves the sum unchanged.",
+        "sourceIds": [
+          "f-arithmetic-history"
+        ]
+      }
     },
     {
       "id": "egyptian-numerals",
@@ -222,7 +238,15 @@
           "f-fractions"
         ]
       },
-      "example": "One half plus one third is five sixths, even though each share uses a different denominator."
+      "example": "One half plus one third is five sixths, even though each share uses a different denominator.",
+      "representation": {
+        "kind": "formula",
+        "expression": "a/b + c/d = (ad + bc)/(bd)",
+        "explanation": "Fractions with nonzero denominators b and d can be added by expressing them with a common denominator.",
+        "sourceIds": [
+          "f-fractions"
+        ]
+      }
     },
     {
       "id": "geometry",
@@ -259,7 +283,15 @@
           "f-egypt"
         ]
       },
-      "example": "The area of a rectangle follows by counting rows and columns of equal unit squares."
+      "example": "The area of a rectangle follows by counting rows and columns of equal unit squares.",
+      "representation": {
+        "kind": "formula",
+        "expression": "A = ℓw",
+        "explanation": "A rectangle’s area A is the product of its length ℓ and width w, expressed in compatible units.",
+        "sourceIds": [
+          "f-egypt"
+        ]
+      }
     },
     {
       "id": "positional-notation",
@@ -299,7 +331,15 @@
           "f-babylon"
         ]
       },
-      "example": "In decimal notation, 222 means two hundreds, two tens, and two units."
+      "example": "In decimal notation, 222 means two hundreds, two tens, and two units.",
+      "representation": {
+        "kind": "definition",
+        "expression": "N = Σ dᵢbⁱ",
+        "explanation": "In base b, the digit dᵢ contributes its value times b to the power i. The index i starts at zero at the units place.",
+        "sourceIds": [
+          "f-babylon"
+        ]
+      }
     },
     {
       "id": "quadratic-equations",
@@ -334,6 +374,14 @@
         ],
         "history": [
           "f-quadratic"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "x = (−b ± √(b² − 4ac))/(2a)",
+        "explanation": "These are the roots of ax² + bx + c = 0 for a ≠ 0. A negative discriminant gives complex roots. This modern form does not describe ancient notation.",
+        "sourceIds": [
+          "rep-quadratic"
         ]
       }
     },
@@ -412,7 +460,15 @@
           "f-irrational"
         ]
       },
-      "example": "A unit square has diagonal √2, which cannot equal a ratio of two integers."
+      "example": "A unit square has diagonal √2, which cannot equal a ratio of two integers.",
+      "representation": {
+        "kind": "definition",
+        "expression": "√2 ∉ ℚ",
+        "explanation": "The diagonal of a unit square has length √2, which is not a ratio of integers. ℚ denotes the rational numbers; this is modern language for incommensurability.",
+        "sourceIds": [
+          "f-irrational"
+        ]
+      }
     },
     {
       "id": "chinese-rods",
@@ -485,7 +541,15 @@
           "f-zero"
         ]
       },
-      "example": "The zero in 205 keeps the two in the hundreds place."
+      "example": "The zero in 205 keeps the two in the hundreds place.",
+      "representation": {
+        "kind": "definition",
+        "expression": "101 ≠ 11",
+        "explanation": "In modern decimal notation the zero marks an empty tens place. This illustration distinguishes a positional marker from zero’s later role as a number.",
+        "sourceIds": [
+          "f-zero"
+        ]
+      }
     },
     {
       "id": "formal-logic",
@@ -596,6 +660,14 @@
         "history": [
           "f-prime"
         ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "p > 1; positive divisors: 1 and p",
+        "explanation": "A prime is an integer greater than one with exactly these two positive divisors. The number one is excluded.",
+        "sourceIds": [
+          "f-prime"
+        ]
       }
     },
     {
@@ -634,6 +706,14 @@
           "f-nine"
         ],
         "history": [
+          "f-nine"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "a + (−a) = 0",
+        "explanation": "The additive inverse −a cancels a. Negative values also represent direction or deficits relative to a chosen zero.",
+        "sourceIds": [
           "f-nine"
         ]
       }
@@ -678,6 +758,14 @@
           "f-trig"
         ],
         "history": [
+          "f-trig"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "sin²θ + cos²θ = 1",
+        "explanation": "For any real angle θ, sine and cosine are the coordinates of a point on the unit circle. Their squares therefore sum to one.",
+        "sourceIds": [
           "f-trig"
         ]
       }
@@ -799,7 +887,15 @@
           "f-brahmagupta"
         ]
       },
-      "example": "For any number a, a + 0 = a and a − a = 0."
+      "example": "For any number a, a + 0 = a and a − a = 0.",
+      "representation": {
+        "kind": "formula",
+        "expression": "a + 0 = a",
+        "explanation": "Zero is the additive identity: adding it leaves a number a unchanged. This is one defining role, not a license to divide by zero.",
+        "sourceIds": [
+          "f-brahmagupta"
+        ]
+      }
     },
     {
       "id": "algebra",
@@ -833,6 +929,14 @@
           "f-khwarizmi"
         ],
         "history": [
+          "f-khwarizmi"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "ax + b = c  ⇒  x = (c − b)/a",
+        "explanation": "Solving this linear equation isolates x, provided a is nonzero. The expression is a representative modern example.",
+        "sourceIds": [
           "f-khwarizmi"
         ]
       }
@@ -912,9 +1016,13 @@
           "f-bombelli"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "z = a + bi,   i² = −1",
-        "explanation": "a and b are real numbers; i is the imaginary unit."
+        "explanation": "a and b are real numbers; i is the imaginary unit.",
+        "sourceIds": [
+          "f-bombelli"
+        ]
       }
     },
     {
@@ -956,9 +1064,13 @@
           "f-napier"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "log(ab) = log(a) + log(b)",
-        "explanation": "For positive a and b, logarithms in the same valid base convert products into sums."
+        "explanation": "For positive a and b, logarithms in the same valid base convert products into sums.",
+        "sourceIds": [
+          "f-napier"
+        ]
       }
     },
     {
@@ -1000,7 +1112,15 @@
           "f-descartes"
         ]
       },
-      "example": "The equation x² + y² = r² describes a circle of radius r centered at the origin."
+      "example": "The equation x² + y² = r² describes a circle of radius r centered at the origin.",
+      "representation": {
+        "kind": "formula",
+        "expression": "y = mx + b",
+        "explanation": "In Cartesian coordinates, a nonvertical straight line has slope m and vertical intercept b.",
+        "sourceIds": [
+          "f-descartes"
+        ]
+      }
     },
     {
       "id": "probability",
@@ -1041,7 +1161,15 @@
           "f-pascal"
         ]
       },
-      "example": "A fair six-sided die gives probability 1/6 to each face; fairness is an assumption to be tested."
+      "example": "A fair six-sided die gives probability 1/6 to each face; fairness is an assumption to be tested.",
+      "representation": {
+        "kind": "formula",
+        "expression": "P(A) = |A| / |Ω|",
+        "explanation": "For a finite sample space Ω with equally likely outcomes, the probability of event A is its outcome count divided by the total. This rule is not valid without equal likelihood.",
+        "sourceIds": [
+          "f-pascal"
+        ]
+      }
     },
     {
       "id": "optimization",
@@ -1075,6 +1203,14 @@
           "f-fermat"
         ],
         "history": [
+          "f-fermat"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "f′(x*) = 0",
+        "explanation": "At an interior local optimum x* of a differentiable real function f, the derivative is zero. This necessary condition is not sufficient and does not cover boundary or nondifferentiable optima.",
+        "sourceIds": [
           "f-fermat"
         ]
       }
@@ -1121,9 +1257,13 @@
           "f-calculus"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "d/dx ∫ₐˣ f(t) dt = f(x)",
-        "explanation": "For continuous f, differentiating its accumulated area recovers the original function."
+        "explanation": "For continuous f, differentiating its accumulated area recovers the original function.",
+        "sourceIds": [
+          "f-calculus"
+        ]
       }
     },
     {
@@ -1165,9 +1305,13 @@
           "f-bernoulli"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "dy/dt = ky",
-        "explanation": "The quantity y changes at a rate proportional to its current value; k is the proportionality constant."
+        "explanation": "The quantity y changes at a rate proportional to its current value; k is the proportionality constant.",
+        "sourceIds": [
+          "f-bernoulli"
+        ]
       }
     },
     {
@@ -1205,7 +1349,15 @@
           "f-leibniz"
         ]
       },
-      "example": "Binary 101 equals 1×4 + 0×2 + 1×1 = 5."
+      "example": "Binary 101 equals 1×4 + 0×2 + 1×1 = 5.",
+      "representation": {
+        "kind": "definition",
+        "expression": "101₂ = 1·2² + 0·2¹ + 1·2⁰ = 5",
+        "explanation": "Binary uses digits zero and one in positions weighted by powers of two. The subscript identifies the numeral base.",
+        "sourceIds": [
+          "f-leibniz"
+        ]
+      }
     },
     {
       "id": "graph-theory",
@@ -1244,7 +1396,16 @@
           "f-euler-index"
         ]
       },
-      "example": "This atlas is itself a directed graph: concepts are vertices and supported development links are edges."
+      "example": "This atlas is itself a directed graph: concepts are vertices and supported development links are edges.",
+      "representation": {
+        "kind": "definition",
+        "expression": "G = (V, E)",
+        "explanation": "A graph G consists of vertices V and edges E connecting them. Direction, loops, and multiple edges depend on the chosen graph convention.",
+        "sourceIds": [
+          "f-euler",
+          "f-euler-index"
+        ]
+      }
     },
     {
       "id": "statistics",
@@ -1284,6 +1445,15 @@
           "f-achenwall"
         ],
         "history": [
+          "f-stats",
+          "f-achenwall"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "x̄ = (x₁ + ⋯ + xₙ)/n",
+        "explanation": "The arithmetic mean x̄ summarizes n observations x₁ through xₙ. It can be sensitive to extreme values and is only one descriptive statistic.",
+        "sourceIds": [
           "f-stats",
           "f-achenwall"
         ]
@@ -1335,9 +1505,13 @@
           "f-bayes"
         ]
       },
-      "equation": {
+      "representation": {
+        "kind": "formula",
         "expression": "P(H|E) = P(E|H)P(H) / P(E)",
-        "explanation": "H is a hypothesis and E is evidence; the equation applies when P(E) is nonzero."
+        "explanation": "H is a hypothesis and E is evidence; the equation applies when P(E) is nonzero.",
+        "sourceIds": [
+          "f-bayes"
+        ]
       }
     },
     {
@@ -1493,7 +1667,15 @@
           "f-group"
         ]
       },
-      "example": "Rotations of a square by quarter turns form a group under successive rotation."
+      "example": "Rotations of a square by quarter turns form a group under successive rotation.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Closure · associativity · identity · inverses",
+        "explanation": "A group is a set with a binary operation satisfying these four conditions. Commutativity is an additional property, not a requirement.",
+        "sourceIds": [
+          "f-group"
+        ]
+      }
     },
     {
       "id": "vectors",
@@ -1533,6 +1715,14 @@
         "history": [
           "f-hamilton"
         ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "u · v = |u||v| cos θ",
+        "explanation": "The Euclidean dot product relates vectors u and v to the angle θ between them. The bars denote lengths; for zero vectors the component definition still applies.",
+        "sourceIds": [
+          "rep-vectors"
+        ]
       }
     },
     {
@@ -1570,7 +1760,15 @@
           "f-boole"
         ]
       },
-      "example": "AND is true only if both inputs are true; OR is true if at least one is true."
+      "example": "AND is true only if both inputs are true; OR is true if at least one is true.",
+      "representation": {
+        "kind": "formula",
+        "expression": "¬(A ∧ B) = ¬A ∨ ¬B",
+        "explanation": "One of De Morgan’s laws: negating a conjunction equals the disjunction of its negations. ¬ means NOT, ∧ AND, and ∨ OR.",
+        "sourceIds": [
+          "f-boole"
+        ]
+      }
     },
     {
       "id": "linear-algebra",
@@ -1611,7 +1809,15 @@
           "f-matrix"
         ]
       },
-      "example": "A matrix can describe how a rotation changes the coordinates of every point in a plane."
+      "example": "A matrix can describe how a rotation changes the coordinates of every point in a plane.",
+      "representation": {
+        "kind": "formula",
+        "expression": "Ax = b",
+        "explanation": "A matrix A maps a vector x to a vector b. The same notation encodes a system of linear equations; a solution need not exist or be unique.",
+        "sourceIds": [
+          "f-matrix"
+        ]
+      }
     },
     {
       "id": "real-numbers",
@@ -1651,6 +1857,14 @@
         "history": [
           "f-real"
         ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Every nonempty bounded-above set has a supremum",
+        "explanation": "Completeness distinguishes the real-number system from the rationals. A supremum is a least upper bound, even when it is not an element of the set.",
+        "sourceIds": [
+          "f-real"
+        ]
       }
     },
     {
@@ -1688,7 +1902,15 @@
           "f-set"
         ]
       },
-      "example": "The natural numbers can be listed in order; all real numbers cannot be exhausted by any such list."
+      "example": "The natural numbers can be listed in order; all real numbers cannot be exhausted by any such list.",
+      "representation": {
+        "kind": "definition",
+        "expression": "A ∩ B = {x : x ∈ A and x ∈ B}",
+        "explanation": "The intersection of sets A and B contains exactly the elements belonging to both. Membership is written with ∈.",
+        "sourceIds": [
+          "f-set"
+        ]
+      }
     },
     {
       "id": "mathematical-logic",
@@ -1728,6 +1950,14 @@
         "history": [
           "f-frege"
         ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "∀x (P(x) → Q(x))",
+        "explanation": "This statement says that every object x with property P also has property Q. ∀ means “for every”; → is logical implication.",
+        "sourceIds": [
+          "f-frege"
+        ]
       }
     },
     {
@@ -1765,7 +1995,15 @@
           "f-topology"
         ]
       },
-      "example": "A circle can be continuously deformed into an ellipse while retaining its loop."
+      "example": "A circle can be continuously deformed into an ellipse while retaining its loop.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Continuity · neighborhoods · connectedness",
+        "explanation": "Topology describes spaces through open sets and continuous maps. Its invariants can survive deformation while distances and angles change.",
+        "sourceIds": [
+          "f-topology"
+        ]
+      }
     },
     {
       "id": "tensor-calculus",
@@ -1922,6 +2160,14 @@
           "f-eilenberg"
         ],
         "history": [
+          "f-eilenberg"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "f: A → B, g: B → C  ⇒  g ∘ f: A → C",
+        "explanation": "Arrows between objects can be composed. Composition is associative, and each object has an identity arrow. The symbols denote a general structure, not only functions between sets.",
+        "sourceIds": [
           "f-eilenberg"
         ]
       }
@@ -3665,6 +3911,66 @@
       "title": "Rafael Bombelli: complex-number arithmetic",
       "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Bombelli/",
       "publisher": "MacTutor, University of St Andrews"
+    },
+    {
+      "id": "rep-quadratic",
+      "title": "Quadratic equations",
+      "url": "https://openstax.org/books/college-algebra-2e/pages/2-5-quadratic-equations",
+      "publisher": "OpenStax — College Algebra 2e"
+    },
+    {
+      "id": "rep-vectors",
+      "title": "The dot product",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/2-3-the-dot-product",
+      "publisher": "OpenStax — Calculus Volume 3"
+    },
+    {
+      "id": "rep-faraday",
+      "title": "Faraday’s law",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/13-1-faradays-law",
+      "publisher": "OpenStax — University Physics Volume 2"
+    },
+    {
+      "id": "rep-coulomb",
+      "title": "Coulomb’s law",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law",
+      "publisher": "OpenStax — University Physics Volume 2"
+    },
+    {
+      "id": "rep-maxwell",
+      "title": "Maxwell’s equations and electromagnetic waves",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/16-1-maxwells-equations-and-electromagnetic-waves",
+      "publisher": "OpenStax — University Physics Volume 2"
+    },
+    {
+      "id": "rep-schrodinger",
+      "title": "The Schrödinger equation",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/7-3-the-schrodinger-equation",
+      "publisher": "OpenStax — University Physics Volume 3"
+    },
+    {
+      "id": "rep-einstein",
+      "title": "General relativity: lecture guide",
+      "url": "https://ocw.mit.edu/courses/8-962-general-relativity-spring-2020/743631236d2866f6ba129f06110d8b1a_MIT8_962S20_guide.pdf",
+      "publisher": "Scott Hughes — MIT OpenCourseWare"
+    },
+    {
+      "id": "rep-rates",
+      "title": "Integrated rate laws",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-4-integrated-rate-laws",
+      "publisher": "OpenStax — Chemistry 2e"
+    },
+    {
+      "id": "rep-equilibrium",
+      "title": "Equilibrium constants",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants",
+      "publisher": "OpenStax — Chemistry 2e"
+    },
+    {
+      "id": "rep-population",
+      "title": "Population evolution",
+      "url": "https://openstax.org/books/biology-ap-courses/pages/19-1-population-evolution",
+      "publisher": "OpenStax — Biology for AP Courses"
     }
   ]
 }
