@@ -25,7 +25,9 @@ npm run preview    # Serve the production build locally
 ## Explore
 
 - Search for a concept, alias, or contributor. Press Ctrl/Cmd+K to focus search.
-- Select a concept to see its introduction, origins, contributors, limitations, and supporting references.
+- Select a concept to see its introduction, origins, contributors, limitations, and supporting references. Closing its detail panel preserves your camera position and zoom. The index also preserves the camera until you select a different concept.
+- Drag from blank space, an edge, a bundle count, or a collapsed pillar to pan. A short click still opens the relationship; dragging never opens it accidentally.
+- Zoom out to see inactive subbranches, then major sections, represented by serif names and discipline symbols centered inside their existing pillars. Narrow pillars rotate their titles; they never move or become floating cards. Select a pillar to reveal its ideas without changing selection or filters. Active paths remain individual; summary bundles retain all original relationship evidence.
 - Switch between **Words** and **Formulas & definitions** in the toolbar or detail panel. The 283 sourced representations include symbol explanations and assumptions; other entries retain their prose. This choice is included in shared links and retained during tours and resets.
 - Use **Trace origins** or **Follow influence** to highlight multiple generations. Filtered-out connecting concepts remain visible as dashed context nodes.
 - Choose **Bundled**, **Focus only**, or **All connections**. Open a counted bundle (or the bundle index beside the selector) to inspect all member relationships and citations, then **Expand these connections** to see their individual paths. Selecting an idea reveals its immediate links.
@@ -37,7 +39,7 @@ npm run preview    # Serve the production build locally
 
 ## Architecture
 
-React and TypeScript render the application; React Flow supplies the graph viewport and interactions. `src/graph.ts` computes deterministic chronological positions and graph indexes. Shared historical periods form floors. Each era reserves separate subbranch regions sized for their busiest floor. Cards are centered within those cells, and era bounds are centered overall. Growing science sections join across era gaps. Individual routes use empty floor gutters and fan their ports to avoid unrelated cards. Bundle membership and routes are precomputed separately from the authoritative historical graph. `src/state.ts` encodes view state in the URL hash. No force simulation or layout recalculation occurs while filtering or switching content display.
+React and TypeScript render the application; React Flow supplies the graph viewport and interactions. `src/graph.ts` computes deterministic chronological positions and graph indexes. Shared historical periods form floors. Each era reserves separate subbranch regions sized for their busiest floor. Cards are centered within those cells, and era bounds are centered overall. Growing science sections join across era gaps. Individual routes use empty floor gutters and fan their ports to avoid unrelated cards. Bundle membership and routes are precomputed separately from the authoritative historical graph. `src/overview.ts` maps summaries onto fixed pillar bounds with zoom hysteresis and cached gutter routes. One SVG layer draws connections and culls by actual route segments, eliminating invisible anchor nodes. `src/viewport.ts` updates caption transforms without rerendering the graph. During gestures, `src/MotionConnections.tsx` caches inactive connection ink in an overscanned canvas; selected paths remain SVG, and all interactive SVG paths return after 120 ms of rest. The minimap separates static artwork from its camera indicator. `src/interaction.ts` and `src/useEdgePan.ts` distinguish explicit camera navigation and click/drag gestures. `src/state.ts` encodes view state in the URL hash. No force simulation or layout recalculation occurs while filtering or switching content display.
 
 Content lives in seven JSON collections in the versioned atlas under `src/data/`, with separate tour and versioned branch catalogs. `src/types.ts` defines the content interfaces and `src/validate.ts` enforces the authoring contract. The atlas metadata records its edition and editorial review date.
 
@@ -52,3 +54,7 @@ Source records include original papers, scholarly histories, official scientific
 See [Content authoring](docs/content-authoring.md) to add or revise an entry.
 
 See [Verification notes and preview images](docs/verification.md) for the checks completed on this edition.
+
+## Local motion benchmark
+
+Open the production preview with `?benchmark=1`, expand **Local motion benchmark**, and run it with the browser foregrounded. The opt-in panel measures the same pan/zoom sequence at card, subbranch, and section scales. It reports frame intervals, long tasks, and application/summary/route/node-array/component render counts. Repeat with each connection mode and a selected concept. `validTiming: false` flags insufficient samples or one-second browser throttling; those runs are not evidence of a frame-rate target. No observers run in normal sessions.

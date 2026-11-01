@@ -25,7 +25,7 @@ Existing entries were explicitly classified rather than assigned from free-form 
 
 ## Automated verification
 
-`npm test` passes all **23 tests**. `npm run build` passes content validation, TypeScript checking, and the Vite production build without chunk-size warnings. The committed npm lockfile matches version 2.0.0.
+`npm test` passes all **37 tests**. `npm run build` passes content validation, TypeScript checking, and the Vite production build without chunk-size warnings. The committed npm lockfile matches version 2.0.0.
 
 Validation checks required content, contributor roles, citations, representation citations, unique IDs, branch/discipline consistency, related branches, date precision notes, valid endpoints, duplicate relationships, chronological contradictions, cycles, tour references, release coverage, and node overlaps.
 
@@ -39,7 +39,45 @@ Tests cover:
 - Distinct bundle membership separated by type/evidence, filtered counts, individual-edge exclusion, stable representative routes, and unchanged graph statistics.
 - All **824 individual routes** avoid unrelated cards. Dense synthetic cases cover many parents, same-floor links, long links, changing era widths, deterministic routing, and fanned ports. Rounded corners remain inside the tested clearance margins.
 
-## Production browser review
+## Pillar summaries and motion revision
+
+Reviewed on 2026-11-01 against the local production preview. Content and URL schemas are unchanged.
+
+- Summary footprints are exactly the original section/era or subbranch/era rectangles. The 75 populated major-section regions and 169 subbranch regions retain their historical positions. Titles use the existing serif family, discipline symbol, color, and normal weight. Narrow titles rotate; counts hide when necessary to keep the title inside its pillar.
+- The modern mathematics caption was measured wholly inside its pillar. A real mouse drag from that pillar moved the viewport by exactly +80/+30 screen pixels without revealing it. Enter revealed the branch at zoom 0.55. When a tall branch cannot fit at that zoom, the camera centers a nearby concept; the reviewed modern mathematics view showed Markov chains, Hilbert spaces, and Noether’s theorem.
+- A highlighted connection drag moved the camera by +55/+35 pixels, kept the selection hash, and did not open a relationship. Closing details and switching to the index and back preserved the exact transform `translate(4563.4px, 13502.3px) scale(0.95)`.
+- Enter on a four-member overview bundle opened all four explanations and source citations. Expanding it revealed its original endpoints. Connections remain keyboard-accessible SVG paths at rest; pointer dragging works from their hit areas, labels, and collapsed pillars.
+- Routes now attach to pillar boundaries and use branch margins and inter-era section gutters. Automated checks cover unrelated collapsed regions and retained cards, alongside the existing 824 individual-route checks. Touch pinch arithmetic, camera preservation, six-pixel drag thresholds, title fitting, hysteresis, filtered ancestry, and membership preservation are covered in the 37-test suite.
+- Rendering uses one SVG connection layer and no invisible connection-anchor nodes (previously 2,444). Actual route segments determine culling. The graph shell, membership, routing, and node arrays no longer depend on raw camera zoom. The minimap artwork is memoized. Captions update through one animation-frame subscription using cached font measurements.
+- During a gesture, an overscanned canvas caches inactive connection ink. Selected paths remain SVG. All original interactive SVG paths and precise stroke widths return after 120 ms of rest. This changes presentation only; the historical graph, evidence, pillar counts, and filters remain authoritative.
+
+The refreshed preview images cover 1440 × 960 desktop, 820 × 900 tablet, and 390 × 844 mobile. The mobile detail sheet measures exactly 390px wide with no document overflow. The production browser emitted no warnings or errors during this revision’s review.
+
+### Performance evidence and limits
+
+The opt-in production `?benchmark=1` panel repeats the same camera sequence at three detail levels and reports frame intervals, long tasks, and render counts. Before the revision, each camera tick rebuilt summaries and routes and could render thousands of components. Steady-level runs after the refactor recorded **zero application-shell, summary, route, and node-array rebuilds**; component renders were limited to content entering or leaving the viewport.
+
+A separate 40-iteration local model benchmark (summary membership, bundles, and routes, excluding rendering) changed from p95 **3.7 ms / 8.6 ms** for major sections / subbranches to **1.61 ms / 1.65 ms**. This work now runs on semantic state changes rather than every zoom tick.
+
+Initial production browser measurements confirmed substantial improvement, but later runs were throttled to approximately one animation frame per second even while the page reported visibility. **The final 33 ms p95 frame-interval target is not verified in this environment.** The benchmark now explicitly marks throttled or undersampled results `validTiming: false`; those results must not be used as a frame-rate claim. Run the panel in a foreground browser on the target machine for comparable hardware timings. Responsive review uses viewport emulation, not physical multi-touch hardware.
+
+## Earlier navigation and readability review
+
+Reviewed on 2026-11-01 before the pillar-based summary revision below. The 450-concept content edition is unchanged.
+
+- Deselecting General relativity preserved the exact transform `translate(4773.4px, 13587.3px) scale(0.95)`. Switching to the index and back preserved it as well. Explicit selection now waits for panel measurement before centering; ordinary resizing does not recenter.
+- Real mouse drags beginning on an unhighlighted edge moved the camera by +85/+60 screen pixels; a highlighted edge moved it by +64/−45. No relationship panel opened on release. A normal click still opened the relationship. Dragging a bundle count moved the camera by +40/−45 while retaining its four-member evidence panel.
+- Both mouse and Enter activation of a summary revealed the selected branch at zoom 0.55. Keyboard activation preserved the current concept URL. The production view was also inspected at subbranch zoom 0.265 and major-section zoom 0.031.
+- With no active concept, the full collection produces 75 major-section/era summaries. Active regions retain their cards. Summary bundles retain original IDs, relationship types, evidence classes, member counts, and citations; the inspected four-member bundle displayed four cited relationships and expanded successfully.
+- All six journeys were opened and advanced. Words/Formulas switching preserved the camera; physics-filtered ancestry retained 19 contextual concepts. Back/Forward restored the filter hashes.
+- Reviewed 1440 × 960 desktop, 820 × 900 tablet, and 390 × 844 mobile layouts. Reading prose is 16px, controls 14px, and secondary text 12px. Cards use 30px titles, 14px previews, 24px formulas, and fixed 320 × 232 geometry.
+- Tablet controls wrap, and the narrow index uses dates above titles. Its scroll width equals its client width (250px); mobile document width equals the viewport (390px). The larger minimap and graph controls no longer overlap.
+- Ten additional regression tests cover camera transitions, the six-pixel drag threshold, both hysteresis boundaries, summary coverage and filtering, retained ancestry, label collisions, centered overview rows without rounding drift, original bundle membership, and route endpoints. Existing tests still verify all 824 individual routes against unrelated cards.
+- The production preview emitted no warnings or errors. Development hot reload emitted React Flow's node-type identity warning while component modules were edited; the node/edge type catalogs remain defined at module scope and the warning is absent in the production build.
+
+Responsive review used mouse and keyboard in browser viewport emulation, not physical touch hardware. The delegated pointer handler includes cancellation, pointer capture release, and multi-pointer handoff. Existing reduced-motion behavior is retained.
+
+## Expanded-edition baseline browser review
 
 Reviewed in the Chromium-based in-app browser with the complete dataset at **1440 × 960**, **820 × 900**, and **390 × 844**.
 
@@ -68,10 +106,14 @@ Some publisher references expose abstracts or bibliographic records rather than 
 
 ## Preview images
 
-![Desktop branch floors and bundled connections](preview-desktop.png)
+![Larger concept cards and formula details](preview-desktop.png)
 
 ![A cited bundle with its member relationships](preview-bundles.png)
 
-![Full tower with growing sections and era markers](preview-overview.png)
+![Full tower with named branch summaries](preview-overview.png)
 
-![Mobile medicine formula sheet](preview-mobile.png)
+![Mobile general relativity formula sheet](preview-mobile.png)
+
+![Named subbranches at intermediate overview zoom](preview-subbranches.png)
+
+![Tablet index and detail panel with wrapped controls](preview-tablet.png)

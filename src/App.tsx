@@ -1,24 +1,36 @@
 import { useCallback, useEffect, useMemo, useRef, useState, memo } from 'react';
-import { ReactFlow, ReactFlowProvider, Handle, Position, useReactFlow, useStore, BaseEdge, EdgeLabelRenderer, type NodeProps, type EdgeProps, type Node, type Edge } from '@xyflow/react';
+import { ReactFlow, ReactFlowProvider, Handle, Position, useReactFlow, useStore, BaseEdge, EdgeLabelRenderer, ViewportPortal, type NodeProps, type Node, type Edge } from '@xyflow/react';
 import { Search, ArrowUpRight, ArrowUp, ArrowDown, ArrowLeft, ArrowRight, X, Plus, Minus, Maximize, Compass, BookOpen, Columns3, GitBranch, List, Map as MapIcon, SlidersHorizontal, RotateCcw, Link2, Check, ChevronRight, ExternalLink, Info } from 'lucide-react';
 import { atlas } from './data/atlas';
 import { disciplines, eras, eraFor, relations, standings } from './config';
-import { indexGraph,layoutGraph,filterGraph,searchConcepts,NODE_WIDTH,NODE_HEIGHT,routeRelationships,buildBundles,visibleBundles,eraBandAt,type Bundle,type Route } from './graph';
+import { indexGraph,layoutGraph,filterGraph,searchConcepts,NODE_WIDTH,NODE_HEIGHT,routeRelationships,buildBundles,visibleBundles,eraBandAt,routeInViewport,type Bundle,type Route,type Region } from './graph';
 import { defaultState,parseState,serializeState,type ViewState } from './state';
 import type { Concept,Discipline,Relationship,RelationType,Standing } from './types';
+import {MotionConnections} from './MotionConnections';
+import {MotionBenchmark,benchmarkEnabled,recordRender} from './benchmark';
 import { Expression } from './Expression';
 import { branches,branchIndex,sectionOrder } from './branches';
+import {cameraIntent,type CameraState,type CameraIntent} from './interaction';
+import {useViewportPresentation,type PillarLabels} from './viewport';
+import {useEdgePan} from './useEdgePan';
+import {buildSummaryView,summaryBundles,regionId,summaryRoute,type BranchSummary,type SummaryLevel} from './overview';
 
 const index=indexGraph(atlas), layout=layoutGraph(atlas.concepts);
 const routes=routeRelationships(layout,atlas.relationships),bundleCatalog=buildBundles(atlas.concepts,atlas.relationships);
 const edgeIndex=new Map(atlas.relationships.map(e=>[e.id,e]));
 const sourceIndex=new Map(atlas.sources.map(s=>[s.id,s]));
+const routeTrack=(id:string)=>[...id].reduce((n,c)=>(n*31+c.charCodeAt(0))>>>0,7);
 const pillarIds=new Set(index.pillars.map(c=>c.id));
+const sceneryNodes:Node[]=[
+ ...layout.bands.map((b,i)=>({id:`era-${b.id}`,type:'era',position:{x:b.left,y:b.top},data:{...eras.find(e=>e.id===b.id),height:b.bottom-b.top,number:i+1},width:b.width,height:b.bottom-b.top,style:{width:b.width,height:b.bottom-b.top},draggable:false,selectable:false,focusable:false,zIndex:-10})),
+ ...layout.bands.slice(1).map((b,i)=>({id:`join-${b.id}`,type:'join',position:{x:layout.left,y:b.bottom},data:{lower:layout.bands[i].id,upper:b.id},width:layout.width,height:layout.bands[i].top-b.bottom,style:{width:layout.width,height:layout.bands[i].top-b.bottom},draggable:false,selectable:false,focusable:false,zIndex:-11}))
+];
 const motionDuration=(milliseconds:number)=>window.matchMedia('(prefers-reduced-motion: reduce)').matches?0:milliseconds;
 type ConceptData={concept:Concept;dim:boolean;context:boolean;selected:boolean;display:ViewState['display'];onSelect:(id:string)=>void};
 const ConceptNode=memo(({data}:NodeProps<Node<ConceptData>>)=>{
- const zoom=useStore(s=>s.transform[2]),c=data.concept,d=disciplines[c.discipline],pillar=pillarIds.has(c.id),formal=data.display==='formal'&&c.representation;
- return <button className={`concept-node ${formal?'formal-node':''} ${pillar?'pillar':''} ${data.selected?'selected':''} ${data.dim?'dim':''} ${data.context?'context-node':''} ${zoom<.32?'far':zoom<.9?'medium':'near'}`} style={{'--discipline':d.color,'--node-zoom':zoom} as React.CSSProperties} onClick={()=>data.onSelect(c.id)} aria-label={`${c.title}, ${c.date.label}, ${d.label}${pillar?', pillar of the atlas':''}${formal?`, ${formal.kind}: ${formal.expression}`:''}`}>
+ recordRender('concept');
+ const c=data.concept,d=disciplines[c.discipline],pillar=pillarIds.has(c.id),formal=data.display==='formal'&&c.representation;
+ return <button className={`concept-node ${formal?'formal-node':''} ${pillar?'pillar':''} ${data.selected?'selected':''} ${data.dim?'dim':''} ${data.context?'context-node':''}`} style={{'--discipline':d.color} as React.CSSProperties} onClick={()=>data.onSelect(c.id)} aria-label={`${c.title}, ${c.date.label}, ${d.label}${pillar?', pillar of the atlas':''}${formal?`, ${formal.kind}: ${formal.expression}`:''}`}>
   <Handle type="target" position={Position.Bottom} isConnectable={false}/>
   <div className="node-meta"><span>{d.symbol} {d.label}</span>{pillar&&<Columns3 size={12} aria-label="Pillar"/>}</div>
   <strong>{c.title}</strong><div className="node-date">{c.date.label}{c.standing==='speculative'||c.standing==='superseded'||c.standing==='open'?<span className="node-status">{standings[c.standing]}</span>:null}</div>
@@ -26,10 +38,8 @@ const ConceptNode=memo(({data}:NodeProps<Node<ConceptData>>)=>{
  </button>;
 });
 const EraNode=memo(({data}:NodeProps)=>{
- const band=layout.bands.find(b=>b.id===data.id)!,zoom=useStore(s=>s.transform[2]);
- return <div className="era-band" style={{height:band.bottom-band.top,'--rule-width':`${.65/zoom}px`} as React.CSSProperties}><div className="era-band-heading"><span>{String(Number(data.number)).padStart(2,'0')}</span><strong>{String(data.label)}</strong><small>{String(data.range)}</small></div>
- {layout.sections.filter(r=>r.eraId===band.id).map(r=><div className="science-section" key={r.id} style={{left:r.left-band.left,width:r.width,height:r.bottom-r.top,background:`${disciplines[r.discipline].color}${zoom<.25?'0c':'05'}`,borderColor:`${disciplines[r.discipline].color}40`}}><strong style={{color:disciplines[r.discipline].color}}>{disciplines[r.discipline].symbol} {disciplines[r.discipline].label}</strong></div>)}
- {layout.regions.filter(r=>r.eraId===band.id).map(r=><div className="branch-region" key={r.id} style={{left:r.left-band.left,width:r.width,height:r.bottom-r.top}}><span>{branchIndex.get(r.id)?.label}</span></div>)}
+ const band=layout.bands.find(b=>b.id===data.id)!;
+ return <div className="era-band" style={{height:band.bottom-band.top} as React.CSSProperties}><div className="era-band-heading"><span>{String(Number(data.number)).padStart(2,'0')}</span><strong>{String(data.label)}</strong><small>{String(data.range)}</small></div>
  {layout.rows.filter(r=>r.eraId===band.id).map(r=><div className="floor-rule" key={r.id} style={{top:r.y-band.top+NODE_HEIGHT+28}}><span>{r.label}</span></div>)}
  </div>;
 });
@@ -37,35 +47,58 @@ const JoinNode=memo(({data}:NodeProps)=>{
  const lower=layout.bands.find(b=>b.id===data.lower)!,upper=layout.bands.find(b=>b.id===data.upper)!,height=lower.top-upper.bottom;
  return <svg width={layout.width} height={height} className="era-join" aria-hidden="true">{sectionOrder.map(id=>{const a=layout.sections.find(r=>r.eraId===lower.id&&r.id===id),b=layout.sections.find(r=>r.eraId===upper.id&&r.id===id);if(!a||!b)return null;return <path key={id} d={`M ${a.left-layout.left} ${height} C ${a.left-layout.left} ${height/2}, ${b.left-layout.left} ${height/2}, ${b.left-layout.left} 0 L ${b.left+b.width-layout.left} 0 C ${b.left+b.width-layout.left} ${height/2}, ${a.left+a.width-layout.left} ${height/2}, ${a.left+a.width-layout.left} ${height} Z`} fill={`${disciplines[id].color}08`} stroke={`${disciplines[id].color}25`} vectorEffect="non-scaling-stroke"/>;})}</svg>;
 });
-const AnchorNode=memo(()=> <><Handle type="source" position={Position.Top}/><Handle type="target" position={Position.Bottom}/></>);
-const AtlasEdge=memo((props:EdgeProps)=>{
- const zoom=useStore(s=>s.transform[2]),route=props.data?.route as Route|undefined,count=Number(props.data?.count??0);
- if(!route)return null;
- return <><BaseEdge id={props.id} path={route.path} style={{...props.style,strokeWidth:Number(props.style?.strokeWidth??1)/zoom,opacity:Number(props.style?.opacity??1)*(zoom<.16?.6:1)}} markerEnd={props.markerEnd} interactionWidth={Math.max(18,10/zoom)}/>{count>1&&(zoom>.16||props.selected)&&<EdgeLabelRenderer><button className="bundle-count nodrag nopan" style={{transform:`translate(-50%, -50%) translate(${route.label.x}px,${route.label.y}px) scale(${1/zoom})`}} onClick={()=>{const select=props.data?.onSelect as (id:string)=>void;select(props.id);}} aria-label={`Read bundle of ${count} relationships`}>{count}</button></EdgeLabelRenderer>}</>;
+type RegionData={region:Region;level:'section'|'branch';summary?:BranchSummary;labels:PillarLabels;onReveal:(summary:BranchSummary)=>void};
+const PillarNode=memo(({data}:NodeProps<Node<RegionData>>)=>{
+ const {region:r,level,summary,labels,onReveal}=data,caption=useRef<HTMLSpanElement>(null),d=disciplines[r.discipline];
+ useEffect(()=>{if(caption.current&&summary)return labels.register(caption.current,summary);},[labels,summary]);
+ const label=groupLabel(r.id),description=`Explore ${label} in ${eras.find(e=>e.id===r.eraId)?.label}${summary?`, ${summary.memberIds.length} ideas`:''}`;
+ return <div className={`pillar-region ${level==='section'?'science-section':'branch-region'} ${summary?'collapsed-pillar nopan nodrag':''}`} data-collapsed={!!summary} role={summary?'button':undefined} tabIndex={summary?0:undefined} aria-label={summary?description:undefined} title={summary?description:undefined} style={{'--discipline':d.color,borderColor:`${d.color}40`,background:level==='section'?`${d.color}08`:undefined} as React.CSSProperties} onClick={summary?()=>onReveal(summary):undefined} onKeyDown={summary?e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();onReveal(summary);}}:undefined}>
+  <svg className="pillar-outline" aria-hidden="true" width="100%" height="100%"><path d={level==='section'?`M .5 0 V ${r.bottom-r.top} M ${r.width-.5} 0 V ${r.bottom-r.top}`:`M .5 0 V ${r.bottom-r.top}`} stroke={d.color} strokeOpacity={level==='section'?.35:.17} strokeWidth={.65} strokeDasharray={level==='branch'?'3 5':undefined} vectorEffect="non-scaling-stroke"/></svg>
+  <Handle type="target" position={Position.Bottom}/>
+  {summary?<span ref={caption} className={`pillar-caption pillar-caption-${level}`}><strong>{d.symbol} {label}</strong><small>{summary.memberIds.length} {summary.memberIds.length===1?'idea':'ideas'}</small></span>:level==='section'?<strong>{d.symbol} {label}</strong>:<span className="branch-heading">{label}</span>}
+  <Handle type="source" position={Position.Top}/>
+ </div>;
 });
-const nodeTypes={concept:ConceptNode,era:EraNode,join:JoinNode,anchor:AnchorNode},edgeTypes={atlas:AtlasEdge};
-function BranchRuler({onNavigate}:{onNavigate:(id:string)=>void}){
+const AtlasEdge=memo(({edge:props}:{edge:Edge})=>{
+ recordRender('edge');
+ const {getZoom}=useReactFlow();
+ const route=props.data?.route as Route|undefined,count=Number(props.data?.count??0);
+ const inView=useStore(s=>routeInViewport(route,s.transform,s.width,s.height));
+ if(!route||!inView)return null;
+ const select=()=>{const onSelect=props.data?.onSelect as (id:string)=>void;onSelect(props.id);};
+ return <g className={`react-flow__edge nopan ${props.selected?'selected':''} ${props.style?.stroke==='#386454'?'active':''}`} data-id={props.id} role="button" tabIndex={0} aria-label={props.ariaLabel} onClick={select} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select();}}}><BaseEdge id={props.id} path={route.path} style={{...props.style,'--edge-width':props.style?.strokeWidth??1} as React.CSSProperties} markerEnd={props.style?.stroke==='#386454'?'url(#arrow-active)':'url(#arrow-muted)'} interactionWidth={18}/>{count>1&&<EdgeLabelRenderer><button ref={element=>{if(element)element.style.setProperty('--label-scale',String(1/getZoom()));}} className={`bundle-count nodrag nopan ${props.selected?'selected':''}`} style={{transform:`translate(${route.label.x}px,${route.label.y}px) scale(var(--label-scale,1)) translate(-50%,-50%)`}} onClick={()=>{const select=props.data?.onSelect as (id:string)=>void;select(props.id);}} aria-label={`Read bundle of ${count} relationships`}>{count}</button></EdgeLabelRenderer>}</g>;
+});
+const nodeTypes={concept:ConceptNode,era:EraNode,join:JoinNode,region:PillarNode};
+const noEdges:Edge[]=[];
+const ConnectionsLayer=memo(({edges}:{edges:Edge[]})=><ViewportPortal><MotionConnections edges={edges}/><svg className="connection-canvas" width="1" height="1" aria-label="Historical connections"><defs>{[['active','#386454'],['muted','#849488']].map(([id,color])=><marker key={id} id={`arrow-${id}`} viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill={color}/></marker>)}</defs>{edges.map(edge=><AtlasEdge key={edge.id} edge={edge}/>)}</svg></ViewportPortal>);
+function BranchRuler({onNavigate,level}:{onNavigate:(id:string)=>void;level:SummaryLevel}){
  const transform=useStore(s=>s.transform),height=useStore(s=>s.height),width=useStore(s=>s.width);
  const cy=(height/2-transform[1])/transform[2],band=eraBandAt(layout,cy);
+ if(level==='section')return <div className="branch-ruler overview-ruler"><strong>Branch overview</strong><span>Choose a name to reveal its ideas.</span></div>;
  return <div className="branch-ruler" aria-label={`Science sections in ${eras.find(e=>e.id===band.id)?.short}`}>{(transform[2]<.32?layout.sections:layout.regions).filter(r=>r.eraId===band.id).map(r=>{const left=r.left*transform[2]+transform[0],right=(r.left+r.width)*transform[2]+transform[0],visible=Math.min(width,right)-Math.max(0,left);if(visible<42)return null;return <button key={r.id} onClick={()=>onNavigate(r.id)} style={{left:Math.max(0,left),width:visible,borderColor:disciplines[r.discipline].color,color:disciplines[r.discipline].color}} title={`${disciplines[r.discipline].label} / ${branchIndex.get(r.id)?.label}`}>{transform[2]>=.32&&visible>180?branchIndex.get(r.id)?.label:disciplines[r.discipline].label}</button>;})}</div>;
 }
 function EraRuler({onNavigate}:{onNavigate:(id:string)=>void}){
  const transform=useStore(s=>s.transform),height=useStore(s=>s.height);
  if(transform[2]>=.25)return null;
- return <nav className="era-ruler" aria-label="Era markers on the tower">{layout.bands.map(b=>{const y=(b.top+b.bottom)/2*transform[2]+transform[1],era=eras.find(e=>e.id===b.id)!;return y>47&&y<height-48?<button key={b.id} style={{top:y}} onClick={()=>onNavigate(b.id)}><strong>{era.short}</strong><small>{era.range}</small></button>:null;})}</nav>;
+ return <nav className="era-ruler" aria-label="Era markers on the tower">{layout.bands.map(b=>{const y=(b.top+b.bottom)/2*transform[2]+transform[1],era=eras.find(e=>e.id===b.id)!;return y>47&&y<height-48?<button key={b.id} title={`${era.label} · ${era.range}`} style={{top:y}} onClick={()=>onNavigate(b.id)}><strong>{era.short}</strong><small>{era.range}</small></button>:null;})}</nav>;
 }
+const MinimapArtwork=memo(({visible,selected}:{visible:Set<string>;selected:string})=>{
+ const top=layout.bands.at(-1)!.top,total=layout.bands[0].bottom-top;
+ const x=(v:number)=>4+(v-layout.left)/layout.width*92,y=(v:number)=>5+(v-top)/total*132,nodeWidth=NODE_WIDTH/layout.width*92;
+ return <g>{layout.sections.map(b=><rect key={`${b.eraId}-${b.id}`} x={x(b.left)} y={y(b.top)} width={b.width/layout.width*92} height={(b.bottom-b.top)/total*132} fill="none" stroke={disciplines[b.discipline].color} strokeWidth=".4"/>)}
+ {atlas.concepts.map(c=>{const p=layout.positions.get(c.id)!;return <rect key={c.id} x={x(p.x)} y={y(p.y)} width={nodeWidth} height="1.4" rx=".5" fill={disciplines[c.discipline].color} opacity={visible.has(c.id)?.8:.1}/>;})}
+ {selected&&layout.positions.has(selected)&&<circle cx={x(layout.positions.get(selected)!.x)+nodeWidth/2} cy={y(layout.positions.get(selected)!.y)} r="2" fill="#213e25"/>}</g>;
+});
 function TowerOverview({visible,selected}:{visible:Set<string>;selected:string}){
  const transform=useStore(s=>s.transform),width=useStore(s=>s.width),height=useStore(s=>s.height);
  const {setCenter,fitView}=useReactFlow();
  const top=layout.bands.at(-1)!.top,bottom=layout.bands[0].bottom,total=bottom-top;
  const x=(v:number)=>4+(v-layout.left)/layout.width*92,y=(v:number)=>5+(v-top)/total*132;
- const nodeWidth=NODE_WIDTH/layout.width*92;
  const jump=(e:React.PointerEvent<SVGSVGElement>)=>{const r=e.currentTarget.getBoundingClientRect();const gx=((e.clientX-r.left)/r.width*100-4)/92*layout.width+layout.left;const gy=((e.clientY-r.top)/r.height*142-5)/132*total+top;setCenter(gx,gy,{zoom:.8,duration:motionDuration(250)});};
- return <div className="tower-overview"><span>THE WHOLE TOWER</span><svg viewBox="0 0 100 142" role="button" tabIndex={0} aria-label="Full tower map. Click to navigate; press Enter to view the entire tower." onPointerDown={jump} onPointerMove={e=>{if(e.buttons===1)jump(e);}} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();fitView({nodes:atlas.concepts.map(c=>({id:c.id})),padding:.1});}}}>
-  {layout.sections.map(b=><rect key={`${b.eraId}-${b.id}`} x={x(b.left)} y={y(b.top)} width={b.width/layout.width*92} height={(b.bottom-b.top)/total*132} fill="none" stroke={disciplines[b.discipline].color} strokeWidth=".4"/>)}
-  {atlas.concepts.map(c=>{const p=layout.positions.get(c.id)!;return <rect key={c.id} x={x(p.x)} y={y(p.y)} width={nodeWidth} height="1.4" rx=".5" fill={disciplines[c.discipline].color} opacity={visible.has(c.id)?.8:.1}/>;})}
+ return <div className="tower-overview"><span>THE WHOLE TOWER</span><svg viewBox="0 0 100 142" role="button" tabIndex={0} aria-label="Full tower map. Click to navigate; press Enter to view the entire tower." onPointerDown={jump} onPointerMove={e=>{if(e.buttons===1)jump(e);}} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();fitView({includeHiddenNodes:true,nodes:atlas.concepts.map(c=>({id:c.id})),padding:.1});}}}>
+  <MinimapArtwork visible={visible} selected={selected}/>
   <rect x={Math.max(0,x(-transform[0]/transform[2]))} y={Math.max(0,y(-transform[1]/transform[2]))} width={Math.min(100,width/transform[2]/layout.width*92)} height={Math.max(3,Math.min(132,height/transform[2]/total*132))} fill="#48663b18" stroke="#426239" strokeWidth=".7"/>
-  {selected&&layout.positions.has(selected)&&<circle cx={x(layout.positions.get(selected)!.x)+nodeWidth/2} cy={y(layout.positions.get(selected)!.y)} r="2" fill="#213e25"/>}
+
  </svg><div><small>Past</small><small>↑ Present</small></div></div>;
 }
 
@@ -86,13 +119,19 @@ function RepresentationDetail({concept:c}:{concept:Concept}){
  return <figure className={`equation representation-detail ${r.kind}`}><span className="eyebrow">REPRESENTATIVE {r.kind.toUpperCase()}</span><div><Expression text={r.expression}/></div><figcaption>{r.explanation}<Citations ids={r.sourceIds}/></figcaption><small>Modern notation or a compact definition; not necessarily its original historical form.</small></figure>;
 }
 function AtlasApp(){
+ recordRender('app');
  const [state,change]=useUrlState();
  const [query,setQuery]=useState(''),[searchOpen,setSearchOpen]=useState(false),[activeTab,setActiveTab]=useState<'explore'|'journeys'|'pillars'>('explore');
  const [methodology,setMethodology]=useState(false),[mobileNav,setMobileNav]=useState(false),[edgeId,setEdgeId]=useState(''),[copied,setCopied]=useState(false),[initialized,setInitialized]=useState(false),[linkError,setLinkError]=useState('');
  const [detailCollapsed,setDetailCollapsed]=useState(false),[expanded,setExpanded]=useState<Set<string>>(new Set()),[browseBundles,setBrowseBundles]=useState(false),[selectedMembers,setSelectedMembers]=useState<string[]|null>(null);
- const bundleLevel=useStore(s=>s.transform[2]<.32?'section':'branch');
+
  const currentEra=useStore(s=>{const cy=(s.height/2-s.transform[1])/s.transform[2];return eraBandAt(layout,cy).id;});
  const {setCenter,fitView,zoomIn,zoomOut,getViewport}=useReactFlow();
+ const graphSurface=useEdgePan(),{level:detailLevel,labels}=useViewportPresentation(graphSurface);
+ const bundleLevel=detailLevel==='section'?'section':'branch';
+ const cameraPrevious=useRef<CameraState|null>(null),pendingCamera=useRef<CameraIntent|null>(null);
+ const [cameraRequest,setCameraRequest]=useState(0);
+ const queueCamera=useCallback((intent:CameraIntent)=>{pendingCamera.current=intent;setCameraRequest(n=>n+1);},[]);
  const viewportWidth=useStore(s=>s.width),viewportHeight=useStore(s=>s.height);
  const rootXs=layout.rows[0].ids.map(id=>layout.positions.get(id)!.x),homeX=(Math.min(...rootXs)+Math.max(...rootXs)+NODE_WIDTH)/2,homeZoom=Math.min(.72,Math.max(.2,(viewportWidth-50)/(Math.max(...rootXs)-Math.min(...rootXs)+NODE_WIDTH+70))),homeY=NODE_HEIGHT/2-viewportHeight/homeZoom*.18;
  const showCaption=useStore(s=>-s.transform[1]/s.transform[2]>-2500&&s.transform[2]>.3);
@@ -101,33 +140,78 @@ function AtlasApp(){
  const filtered=useMemo(()=>filterGraph(atlas.concepts,atlas.relationships,state,state.concept,state.trace,index),[state]);
  const results=useMemo(()=>searchConcepts(atlas.concepts,query),[query]);
  const selectConnection=useCallback((id:string,members?:string[])=>{setSelectedMembers(members??null);setEdgeId(id);setDetailCollapsed(false);setBrowseBundles(false);},[]);
- const goTo=useCallback((id:string)=>{setEdgeId('');setBrowseBundles(false);setDetailCollapsed(false);navigationTarget.current=null;change({concept:id,trace:'neighbors',tour:'',step:0});setQuery('');setSearchOpen(false);setMobileNav(false);},[change]);
+ const goTo=useCallback((id:string)=>{setEdgeId('');setBrowseBundles(false);setDetailCollapsed(false);navigationTarget.current=null;queueCamera({kind:'concept',id});change({concept:id,trace:'neighbors',tour:'',step:0});setQuery('');setSearchOpen(false);setMobileNav(false);},[change,queueCamera]);
  useEffect(()=>setDetailCollapsed(false),[state.concept,edgeId,state.tour,state.step]);
  const centerConcept=useCallback((id:string,duration=550)=>{const p=layout.positions.get(id);if(p)setCenter(p.x+NODE_WIDTH/2,p.y+NODE_HEIGHT/2,{zoom:.95,duration:motionDuration(duration)});},[setCenter]);
- useEffect(()=>{if(!initialized||state.view!=='tower')return;if(current)centerConcept(current.id);else if(navigationTarget.current){const p=navigationTarget.current;setCenter(p.x,p.y,{zoom:p.zoom,duration:motionDuration(350)});}else if(state.era){const ids=atlas.concepts.filter(c=>eraFor(c.date.year).id===state.era).map(c=>({id:c.id}));fitView({nodes:ids,padding:.12,maxZoom:.7,duration:motionDuration(450)});}else setCenter(homeX,homeY,{zoom:homeZoom,duration:0});},[initialized,state.concept,state.era,state.view,viewportWidth,viewportHeight,homeX,homeY,homeZoom,centerConcept,setCenter,fitView]);
+ useEffect(()=>{
+  if(!initialized||state.view!=='tower'||!viewportWidth||!viewportHeight)return;
+  const next={concept:state.concept,era:state.era,view:state.view};
+  const intent=cameraIntent(cameraPrevious.current,next);cameraPrevious.current=next;
+  if(intent)pendingCamera.current=intent;
+  if(pendingCamera.current?.kind==='concept'&&pendingCamera.current.id!==state.concept)pendingCamera.current=null;
+  if(!pendingCamera.current)return;
+  // Let the detail panel and ResizeObserver settle before consuming this one camera action.
+  let frame=requestAnimationFrame(()=>{frame=requestAnimationFrame(()=>{
+   const action=pendingCamera.current;pendingCamera.current=null;
+   if(action?.kind==='concept')centerConcept(action.id);
+   else if(action?.kind==='point')setCenter(action.x,action.y,{zoom:action.zoom,duration:motionDuration(400)});
+   else if(action?.kind==='era')fitView({includeHiddenNodes:true,nodes:atlas.concepts.filter(c=>eraFor(c.date.year).id===action.id).map(c=>({id:c.id})),padding:.12,maxZoom:.7,duration:0});
+   else if(action?.kind==='home')setCenter(homeX,homeY,{zoom:homeZoom,duration:0});
+  });});
+  return()=>cancelAnimationFrame(frame);
+ },[initialized,state.concept,state.era,state.view,viewportWidth,viewportHeight,homeX,homeY,homeZoom,centerConcept,setCenter,fitView,cameraRequest]);
  useEffect(()=>{if(currentTour&&step&&state.concept!==step.conceptId)change({concept:step.conceptId},true);},[currentTour,step,state.concept,change]);
  useEffect(()=>{if(state.concept&&!current){setLinkError('This concept is not in this edition. Search the atlas to find another idea.');change({concept:''},true);}else if(state.tour&&!currentTour){setLinkError('That journey could not be found. Choose one of the six journeys.');change({tour:'',step:0},true);}else if(currentTour&&state.step>=currentTour.steps.length){change({step:currentTour.steps.length-1,concept:currentTour.steps.at(-1)!.conceptId},true);}},[state.concept,state.tour,state.step,current,currentTour,change]);
  useEffect(()=>{const key=(e:KeyboardEvent)=>{if(e.key==='Escape'){setSearchOpen(false);setMethodology(false);setMobileNav(false);setEdgeId('');}if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();searchRef.current?.focus();}};window.addEventListener('keydown',key);return()=>window.removeEventListener('keydown',key);},[]);
- const nodes=useMemo<Node[]>(()=>[
-  ...layout.bands.map((b,i)=>({id:`era-${b.id}`,type:'era',position:{x:b.left,y:b.top},data:{...eras.find(e=>e.id===b.id),height:b.bottom-b.top,number:i+1},width:b.width,height:b.bottom-b.top,style:{width:b.width,height:b.bottom-b.top},draggable:false,selectable:false,focusable:false,zIndex:-10})),
-  ...layout.bands.slice(1).map((b,i)=>({id:`join-${b.id}`,type:'join',position:{x:layout.left,y:b.bottom},data:{lower:layout.bands[i].id,upper:b.id},style:{width:layout.width,height:layout.bands[i].top-b.bottom},draggable:false,selectable:false,focusable:false,zIndex:-11})),
-  ...bundleCatalog.flatMap(b=>{const r=routes.get(b.routeId)!;return [r.points[0],r.points.at(-1)!].map((p,i)=>({id:`${b.id}-${i}`,type:'anchor',position:p,data:{},width:1,height:1,style:{width:1,height:1,opacity:0,pointerEvents:'none' as const},draggable:false,selectable:false,focusable:false,zIndex:-20}));}),
-  ...atlas.concepts.map(c=>({id:c.id,type:'concept',zIndex:2,position:layout.positions.get(c.id)!,hidden:!filtered.visible.has(c.id),data:{concept:c,dim:!!current&&!filtered.highlight.has(c.id),context:!filtered.matching.has(c.id),selected:c.id===state.concept,display:state.display,onSelect:goTo},width:NODE_WIDTH,height:NODE_HEIGHT,draggable:false,connectable:false,focusable:false,style:{width:NODE_WIDTH,height:NODE_HEIGHT}}))
- ],[filtered,current,state.concept,state.display,goTo]);
+ const inspectionActive=useMemo(()=>{
+  const active=new Set(filtered.highlight);
+  for(const e of filtered.edges)if(expanded.has(e.id)||e.id===edgeId){active.add(e.source);active.add(e.target);}
+  return active;
+ },[filtered,expanded,edgeId]);
+ const summaryView=useMemo(()=>{recordRender('summary');return buildSummaryView(atlas.concepts,layout,filtered.visible,inspectionActive,detailLevel);},[filtered.visible,inspectionActive,detailLevel]);
+ const revealSummary=useCallback((summary:BranchSummary)=>{
+  const ps=summary.memberIds.map(id=>layout.positions.get(id)!);
+  const left=Math.min(...ps.map(p=>p.x)),right=Math.max(...ps.map(p=>p.x))+NODE_WIDTH,top=Math.min(...ps.map(p=>p.y)),bottom=Math.max(...ps.map(p=>p.y))+NODE_HEIGHT;
+  const fit=Math.min(.9,(viewportWidth-80)/(right-left),(viewportHeight-100)/(bottom-top)),nearest=[...ps].sort((a,b)=>Math.hypot(a.x+NODE_WIDTH/2-summary.anchor.x,a.y+NODE_HEIGHT/2-summary.anchor.y)-Math.hypot(b.x+NODE_WIDTH/2-summary.anchor.x,b.y+NODE_HEIGHT/2-summary.anchor.y))[0];
+  const target={x:fit<.55?nearest.x+NODE_WIDTH/2:(left+right)/2,y:fit<.55?nearest.y+NODE_HEIGHT/2:(top+bottom)/2,zoom:Math.max(.55,fit)};
+  navigationTarget.current=target;queueCamera({kind:'point',...target});
+ },[viewportWidth,viewportHeight,queueCamera]);
+ const overviewBundles=useMemo(()=>summaryBundles(filtered.edges,summaryView,index.byId,bundleLevel),[filtered.edges,summaryView,bundleLevel]);
+ const selectedBundleRef=useRef<Bundle|undefined>(undefined);
  const displayEdges=useMemo(()=>{
-  const individual=new Set(filtered.edges.filter(e=>state.connections==='all'||(state.connections==='focus'&&state.trace!=='neighbors'&&filtered.highlight.has(e.source)&&filtered.highlight.has(e.target))||expanded.has(e.id)||e.source===state.concept||e.target===state.concept).map(e=>e.id));
-  const bundles=state.connections==='bundled'?visibleBundles(bundleCatalog,filtered.edges,bundleLevel,individual):[];
-  const all=filtered.edges.filter(e=>individual.has(e.id)).map(e=>({id:e.id,source:e.source,target:e.target,type:e.type,route:routes.get(e.id)!,members:[e.id],bundle:false}));
-  return [...all,...bundles.map(b=>({id:b.id,source:`${b.id}-0`,target:`${b.id}-1`,type:b.type,route:routes.get(b.routeId)!,members:b.memberIds,bundle:true}))];
- },[filtered,state.connections,state.concept,expanded,bundleLevel]);
- const edges=useMemo<Edge[]>(()=>displayEdges.map(e=>{const active=e.members.some(id=>{if(expanded.has(id))return true;const r=edgeIndex.get(id)!;return filtered.highlight.has(r.source)&&filtered.highlight.has(r.target);});return {id:e.id,source:e.source,target:e.target,selected:e.id===edgeId,type:'atlas',data:{route:e.route,count:e.bundle?e.members.length:0,members:e.members,onSelect:(id:string)=>selectConnection(id,e.members)},style:{stroke:active?'#386454':e.bundle?'#849488':'#a5aea4',vectorEffect:'non-scaling-stroke',strokeWidth:active?1.7:e.bundle?Math.min(2,.55+Math.log2(e.members.length)*.25):.7,strokeDasharray:relations[e.type].dash,opacity:current?(active?.85:.045):e.bundle?.32:.45},markerEnd:{type:'arrowclosed' as const,color:active?'#386454':'#849488',width:12,height:12},ariaLabel:e.bundle?`${e.members.length} ${relations[e.type].label.toLowerCase()} relationships. Press Enter to inspect bundle.`:`${index.byId.get(e.source)?.title}: ${relations[e.type].label} for ${index.byId.get(e.target)?.title}`,focusable:true,zIndex:active?1:0};}),[displayEdges,filtered,current,edgeId,selectConnection,expanded]);
- const selectedEdge=edgeIndex.get(edgeId),selectedBundle=bundleCatalog.find(b=>b.id===edgeId);
+  recordRender('routes');
+  const individual=new Set(filtered.edges.filter(e=>state.connections==='all'||(filtered.highlight.has(e.source)&&filtered.highlight.has(e.target))||expanded.has(e.id)||e.source===state.concept||e.target===state.concept||e.id===edgeId).map(e=>e.id));
+  const ordinary=filtered.edges.filter(e=>!summaryView.endpoints.has(e.source)&&!summaryView.endpoints.has(e.target));
+  const bundles=state.connections==='bundled'?visibleBundles(bundleCatalog,ordinary,bundleLevel,individual):[];
+  const all=filtered.edges.filter(e=>individual.has(e.id)).map(e=>{const source=summaryView.endpoints.get(e.source)??e.source,target=summaryView.endpoints.get(e.target)??e.target;return {id:e.id,source,target,type:e.type,route:source!==e.source||target!==e.target?summaryRoute(source,target,summaryView,layout,routeTrack(e.id)):routes.get(e.id)!,members:[e.id],bundle:false};});
+  const overview=state.connections==='bundled'?overviewBundles.map(b=>{
+   const members=b.memberIds.filter(id=>!individual.has(id));if(!members.length)return null;
+   const first=edgeIndex.get(members[0])!,source=summaryView.endpoints.get(first.source)??first.source,target=summaryView.endpoints.get(first.target)??first.target;
+   return {id:b.id,source,target,type:b.type,route:summaryRoute(source,target,summaryView,layout,routeTrack(b.id)),members,bundle:true};
+  }).filter((b):b is NonNullable<typeof b>=>!!b):[];
+  return [...all,...bundles.map(b=>({id:b.id,source:edgeIndex.get(b.routeId)!.source,target:edgeIndex.get(b.routeId)!.target,type:b.type,route:routes.get(b.routeId)!,members:b.memberIds,bundle:true})),...overview];
+ },[filtered,state.connections,state.concept,expanded,bundleLevel,summaryView,overviewBundles,edgeId]);
+ const edges=useMemo<Edge[]>(()=>displayEdges.map(e=>{const active=e.members.some(id=>{if(expanded.has(id))return true;const r=edgeIndex.get(id)!;return filtered.highlight.has(r.source)&&filtered.highlight.has(r.target);});return {id:e.id,source:e.source,target:e.target,selected:e.id===edgeId,type:'atlas',data:{route:e.route,count:e.bundle?e.members.length:0,members:e.members,onSelect:(id:string)=>selectConnection(id,e.members)},style:{stroke:active?'#386454':e.bundle?'#849488':'#a5aea4',vectorEffect:'non-scaling-stroke',strokeWidth:active?1.7:e.bundle?Math.min(2,.55+Math.log2(e.members.length)*.25):.7,strokeDasharray:relations[e.type].dash,opacity:current?(active?.85:.045):e.bundle?.32:.45},markerEnd:{type:'arrowclosed' as const,color:active?'#386454':'#849488',width:12,height:12},ariaLabel:e.bundle?`${e.members.length} ${relations[e.type].label.toLowerCase()} relationships. Press Enter to inspect bundle.`:`${index.byId.get(edgeIndex.get(e.members[0])!.source)?.title}: ${relations[e.type].label} for ${index.byId.get(edgeIndex.get(e.members[0])!.target)?.title}`,focusable:true,zIndex:active?1:0};}),[displayEdges,filtered,current,edgeId,selectConnection,expanded]);
+ const nodes=useMemo<Node[]>(()=>{
+  recordRender('nodes');
+  return [
+   ...sceneryNodes,
+   ...(['section','branch'] as const).flatMap(level=>(level==='section'?layout.sections:layout.regions).map(region=>{
+    const id=regionId(level,region.eraId,region.id),summary=summaryView.byId.get(id),hidden=level==='branch'&&summaryView.byId.has(regionId('section',region.eraId,region.discipline));
+    return {id,type:'region',position:{x:region.left,y:region.top},hidden,data:{region,level,summary,labels,onReveal:revealSummary},width:region.width,height:region.bottom-region.top,style:{width:region.width,height:region.bottom-region.top,pointerEvents:summary?'auto' as const:'none' as const},zIndex:level==='section'?-8:-7,draggable:false,selectable:false,focusable:false};
+   })),
+   ...atlas.concepts.map(c=>({id:c.id,type:'concept',zIndex:2,position:layout.positions.get(c.id)!,hidden:!filtered.visible.has(c.id)||summaryView.endpoints.has(c.id),data:{concept:c,dim:!!current&&!filtered.highlight.has(c.id),context:!filtered.matching.has(c.id),selected:c.id===state.concept,display:state.display,onSelect:goTo},width:NODE_WIDTH,height:NODE_HEIGHT,draggable:false,connectable:false,focusable:false,style:{width:NODE_WIDTH,height:NODE_HEIGHT}}))
+  ];
+ },[summaryView,labels,revealSummary,filtered,current,state.concept,state.display,goTo]);
+ const selectedEdge=edgeIndex.get(edgeId),liveBundle=[...overviewBundles,...bundleCatalog].find(b=>b.id===edgeId);
+ if(liveBundle)selectedBundleRef.current=liveBundle;
+ const selectedBundle=liveBundle??(selectedBundleRef.current?.id===edgeId?selectedBundleRef.current:undefined);
  const matchingBundleEdges=selectedBundle?filtered.edges.filter(e=>(selectedMembers??selectedBundle.memberIds).includes(e.id)):[];
- const expandBundle=()=>{const ids=[...new Set(matchingBundleEdges.flatMap(e=>[e.source,e.target]))],ps=ids.map(id=>layout.positions.get(id)!),left=Math.min(...ps.map(p=>p.x)),right=Math.max(...ps.map(p=>p.x))+NODE_WIDTH,top=Math.min(...ps.map(p=>p.y)),bottom=Math.max(...ps.map(p=>p.y))+NODE_HEIGHT;navigationTarget.current={x:(left+right)/2,y:(top+bottom)/2,zoom:Math.max(.02,Math.min(.85,(viewportWidth-80)/(right-left),(viewportHeight-100)/(bottom-top)))};setExpanded(previous=>new Set([...previous,...matchingBundleEdges.map(e=>e.id)]));setEdgeId('');setBrowseBundles(false);change({concept:'',tour:''});const p=navigationTarget.current;setCenter(p.x,p.y,{zoom:p.zoom,duration:motionDuration(350)});};
- const navigateBranch=(id:string)=>{const navEra=state.era||currentEra;const regions=branchIndex.has(id)?layout.regions:layout.sections;const region=regions.find(r=>r.id===id&&r.eraId===navEra)??regions.filter(r=>r.id===id).sort((a,b)=>Math.abs(eras.findIndex(e=>e.id===a.eraId)-eras.findIndex(e=>e.id===navEra))-Math.abs(eras.findIndex(e=>e.id===b.eraId)-eras.findIndex(e=>e.id===navEra)))[0];if(region){const v=getViewport(),cy=(viewportHeight/2-v.y)/v.zoom,nearby=atlas.concepts.filter(c=>(branchIndex.has(id)?c.branchId===id:c.discipline===id)&&eraFor(c.date.year).id===region.eraId).map(c=>layout.positions.get(c.id)!).sort((a,b)=>Math.abs(a.y+NODE_HEIGHT/2-cy)-Math.abs(b.y+NODE_HEIGHT/2-cy));navigationTarget.current={x:region.left+region.width/2,y:nearby.length?nearby[0].y+NODE_HEIGHT/2:(region.top+region.bottom)/2,zoom:Math.min(.85,viewportWidth/(region.width+80))};change({concept:'',tour:'',view:'tower',...(state.era&&region.eraId!==state.era?{era:region.eraId}:{})});const p=navigationTarget.current;setCenter(p.x,p.y,{zoom:p.zoom,duration:motionDuration(400)});setMobileNav(false);}};
- const chooseEra=(id:string)=>{navigationTarget.current=null;change({era:id,concept:'',tour:'',trace:'neighbors'});setMobileNav(false);};
- const tourStep=(tourId:string,stepIndex:number)=>{const t=atlas.tours.find(t=>t.id===tourId)!;const s=Math.max(0,Math.min(stepIndex,t.steps.length-1));change({...defaultState,display:state.display,tour:tourId,step:s,concept:t.steps[s].conceptId});setMobileNav(false);setEdgeId('');};
- const reset=()=>{navigationTarget.current=null;change({...defaultState,display:state.display});setQuery('');setEdgeId('');setLinkError('');setExpanded(new Set());setBrowseBundles(false);setCenter(homeX,homeY,{zoom:homeZoom,duration:0});};
+ const expandBundle=()=>{const ids=[...new Set(matchingBundleEdges.flatMap(e=>[e.source,e.target]))],ps=ids.map(id=>layout.positions.get(id)!),left=Math.min(...ps.map(p=>p.x)),right=Math.max(...ps.map(p=>p.x))+NODE_WIDTH,top=Math.min(...ps.map(p=>p.y)),bottom=Math.max(...ps.map(p=>p.y))+NODE_HEIGHT;navigationTarget.current={x:(left+right)/2,y:(top+bottom)/2,zoom:Math.max(.02,Math.min(.85,(viewportWidth-80)/(right-left),(viewportHeight-100)/(bottom-top)))};setExpanded(previous=>new Set([...previous,...matchingBundleEdges.map(e=>e.id)]));setEdgeId('');setBrowseBundles(false);change({concept:'',tour:''});const p=navigationTarget.current;queueCamera({kind:'point',...p});};
+ const navigateBranch=(id:string)=>{const navEra=state.era||currentEra;const regions=branchIndex.has(id)?layout.regions:layout.sections;const region=regions.find(r=>r.id===id&&r.eraId===navEra)??regions.filter(r=>r.id===id).sort((a,b)=>Math.abs(eras.findIndex(e=>e.id===a.eraId)-eras.findIndex(e=>e.id===navEra))-Math.abs(eras.findIndex(e=>e.id===b.eraId)-eras.findIndex(e=>e.id===navEra)))[0];if(region){const v=getViewport(),cy=(viewportHeight/2-v.y)/v.zoom,nearby=atlas.concepts.filter(c=>(branchIndex.has(id)?c.branchId===id:c.discipline===id)&&eraFor(c.date.year).id===region.eraId).map(c=>layout.positions.get(c.id)!).sort((a,b)=>Math.abs(a.y+NODE_HEIGHT/2-cy)-Math.abs(b.y+NODE_HEIGHT/2-cy));navigationTarget.current={x:region.left+region.width/2,y:nearby.length?nearby[0].y+NODE_HEIGHT/2:(region.top+region.bottom)/2,zoom:Math.min(.85,viewportWidth/(region.width+80))};change({concept:'',tour:'',view:'tower',...(state.era&&region.eraId!==state.era?{era:region.eraId}:{})});const p=navigationTarget.current;queueCamera({kind:'point',...p});setMobileNav(false);}};
+ const chooseEra=(id:string)=>{navigationTarget.current=null;change({era:id,concept:'',tour:'',trace:'neighbors'});setMobileNav(false);queueCamera({kind:'era',id});};
+ const tourStep=(tourId:string,stepIndex:number)=>{const t=atlas.tours.find(t=>t.id===tourId)!;const s=Math.max(0,Math.min(stepIndex,t.steps.length-1));queueCamera({kind:'concept',id:t.steps[s].conceptId});change({...defaultState,display:state.display,tour:tourId,step:s,concept:t.steps[s].conceptId});setMobileNav(false);setEdgeId('');};
+ const reset=()=>{navigationTarget.current=null;change({...defaultState,display:state.display});setQuery('');setEdgeId('');setLinkError('');setExpanded(new Set());setBrowseBundles(false);queueCamera({kind:'home'});};
  const copyLink=async()=>{try{await navigator.clipboard.writeText(window.location.href);setCopied(true);window.setTimeout(()=>setCopied(false),2000);}catch{setLinkError('Copy the address from your browser to share this view.');}};
  return <div className="app-shell">
   <a className="skip-link" href="#main-content" onClick={e=>{e.preventDefault();document.getElementById('main-content')?.focus();}}>Skip to atlas</a>
@@ -154,19 +238,21 @@ function AtlasApp(){
    <div className="canvas-toolbar"><div><span className="live-dot"/>{state.era?eras.find(e=>e.id===state.era)?.label:'The connected history of science'}<small>{filtered.matching.size} ideas{filtered.visible.size>filtered.matching.size?` + ${filtered.visible.size-filtered.matching.size} in context`:''}</small></div><div className="view-switch"><button title="Tower view" aria-label="Tower view" aria-pressed={state.view==='tower'} className={state.view==='tower'?'active':''} onClick={()=>change({view:'tower'})}><MapIcon size={15}/><span>Tower</span></button><button title="Chronological list" aria-label="Chronological list" aria-pressed={state.view==='list'} className={state.view==='list'?'active':''} onClick={()=>change({view:'list'})}><List size={15}/><span>Index</span></button></div></div>
    <div className="canvas-display"><label className="connection-mode"><span>Connections</span><select aria-label="Connection display" value={state.connections} onChange={e=>change({connections:e.target.value as ViewState['connections']})}><option value="bundled">Bundled</option><option value="focus">Focus only</option><option value="all">All connections</option></select></label><button className="browse-bundles" title="Browse connection bundles" aria-label="Browse connection bundles" onClick={()=>{setBrowseBundles(true);setEdgeId('');setDetailCollapsed(false);}}><GitBranch size={15}/></button><DisplaySwitch value={state.display} onChange={display=>change({display})} label="Atlas content display"/></div>
    {linkError&&<div className="notice" role="status">{linkError}<button aria-label="Dismiss message" onClick={()=>setLinkError('')}><X size={14}/></button></div>}
-   <div className={`canvas-content ${state.view==='list'?'show-list':''}`}>
+   <div ref={graphSurface} className={`canvas-content ${state.view==='list'?'show-list':''}`}>
     {detailCollapsed&&(current||selectedEdge||selectedBundle||browseBundles)&&<button className="reopen-detail" onClick={()=>setDetailCollapsed(false)}><BookOpen size={16}/> Read selected idea</button>}
-    {state.view==='tower'?<><ReactFlow nodes={nodes} edges={edges} nodeTypes={nodeTypes} edgeTypes={edgeTypes} onInit={()=>setInitialized(true)} onEdgeClick={(_,e)=>selectConnection(e.id,e.data?.members as string[])} onEdgesChange={changes=>{for(const c of changes)if(c.type==='select'&&c.selected)selectConnection(c.id,edges.find(e=>e.id===c.id)?.data?.members as string[]);}} onPaneClick={()=>{setSearchOpen(false);setEdgeId('');}} minZoom={.02} maxZoom={1.5} onlyRenderVisibleElements nodesDraggable={false} nodesConnectable={false} edgesReconnectable={false} deleteKeyCode={null} selectionKeyCode={null} panOnScroll zoomOnDoubleClick={false} proOptions={{hideAttribution:false}} ariaLabelConfig={{'edge.a11yDescription.default':'Press Enter to read this connection.','controls.zoomIn.ariaLabel':'Zoom in','controls.zoomOut.ariaLabel':'Zoom out'}}>
+    <div className={`tower-surface overview-${detailLevel}`} hidden={state.view!=='tower'}><ReactFlow nodes={nodes} edges={noEdges} nodeTypes={nodeTypes} onInit={()=>setInitialized(true)} onPaneClick={()=>{setSearchOpen(false);setEdgeId('');}} minZoom={.02} maxZoom={1.5} onlyRenderVisibleElements nodesDraggable={false} nodesConnectable={false} edgesReconnectable={false} deleteKeyCode={null} selectionKeyCode={null} paneClickDistance={6} panOnScroll zoomOnDoubleClick={false} proOptions={{hideAttribution:false}} ariaLabelConfig={{'edge.a11yDescription.default':'Press Enter to read this connection.','controls.zoomIn.ariaLabel':'Zoom in','controls.zoomOut.ariaLabel':'Zoom out'}}>
+    <ConnectionsLayer edges={edges}/>
     </ReactFlow>
-    <BranchRuler onNavigate={navigateBranch}/><EraRuler onNavigate={chooseEra}/>
+    <BranchRuler onNavigate={navigateBranch} level={detailLevel}/><EraRuler onNavigate={chooseEra}/>
+    {benchmarkEnabled&&<MotionBenchmark center={{x:0,y:layout.bands.find(b=>b.id==='modern')!.top+1600}}/>}
     <TowerOverview visible={filtered.visible} selected={state.concept}/>
     {state.connections==='focus'&&!current&&<div className="focus-hint">Select an idea to reveal its connections.</div>}
-    {current&&<button className="trace-summary" onClick={()=>fitView({nodes:[...filtered.highlight].map(id=>({id})),padding:.15,duration:motionDuration(300)})}><GitBranch size={14}/>{filtered.highlight.size-1} {state.trace==='ancestors'?'origins':state.trace==='descendants'?'descendants':'connected ideas'} highlighted <Maximize size={13}/><span>Fit path</span></button>}
+    {current&&<button className="trace-summary" onClick={()=>fitView({includeHiddenNodes:true,nodes:[...filtered.highlight].map(id=>({id})),padding:.15,duration:motionDuration(300)})}><GitBranch size={14}/>{filtered.highlight.size-1} {state.trace==='ancestors'?'origins':state.trace==='descendants'?'descendants':'connected ideas'} highlighted <Maximize size={13}/><span>Fit path</span></button>}
     {!current&&!state.era&&showCaption&&!navigationTarget.current&&<div className="canvas-caption"><span className="eyebrow">EVERY DISCOVERY HAS A HISTORY</span><h2>Begin at the roots.<br/><em>See how ideas rise.</em></h2><p>Select an idea to uncover what came before<br/>and everything it made possible.</p><button onClick={()=>{setActiveTab('journeys');if(window.innerWidth<760)setMobileNav(true);}}>Take a guided journey <ArrowRight size={15}/></button></div>}
-    <div className="canvas-controls"><button onClick={()=>zoomIn({duration:motionDuration(200)})} aria-label="Zoom in"><Plus size={17}/></button><button onClick={()=>zoomOut({duration:motionDuration(200)})} aria-label="Zoom out"><Minus size={17}/></button><span/><button onClick={()=>fitView({nodes:atlas.concepts.filter(c=>filtered.visible.has(c.id)).map(c=>({id:c.id})),padding:.12,duration:motionDuration(500)})} aria-label="View entire tower" title="View entire tower"><Maximize size={16}/></button><button onClick={reset} aria-label="Return to foundations and reset filters" title="Return to foundations"><RotateCcw size={16}/></button></div>
+    <div className="canvas-controls"><button onClick={()=>zoomIn({duration:motionDuration(200)})} aria-label="Zoom in"><Plus size={17}/></button><button onClick={()=>zoomOut({duration:motionDuration(200)})} aria-label="Zoom out"><Minus size={17}/></button><span/><button onClick={()=>fitView({includeHiddenNodes:true,nodes:atlas.concepts.filter(c=>filtered.visible.has(c.id)).map(c=>({id:c.id})),padding:.12,duration:motionDuration(500)})} aria-label="View entire tower" title="View entire tower"><Maximize size={16}/></button><button onClick={reset} aria-label="Return to foundations and reset filters" title="Return to foundations"><RotateCcw size={16}/></button></div>
     <div className="map-note"><ArrowUp size={12}/><span>Later ideas rise upward</span><i/>Time is compressed</div>
     {filtered.matching.size===0&&<div className="empty-state"><Compass size={28}/><h3>No ideas match these filters.</h3><p>Try a different era or clear your filters.</p><button onClick={()=>change({disciplines:[],branches:[],era:'',standing:''})}>Clear filters</button></div>}
-    </>:<div className="concept-index"><div className="index-heading"><span className="eyebrow">THE CHRONOLOGICAL INDEX</span><h2>A history, one idea at a time.</h2><p>Every concept and connection, in an accessible reading view.</p></div>{eras.map(era=>{const items=atlas.concepts.filter(c=>filtered.visible.has(c.id)&&eraFor(c.date.year).id===era.id).sort((a,b)=>a.date.year-b.date.year||a.title.localeCompare(b.title));return items.length?<section key={era.id}><h3>{era.label}<small>{era.range}</small></h3>{items.map(c=><button className={`index-item ${current?.id===c.id?'active':''}`} key={c.id} onClick={()=>goTo(c.id)}><time>{c.date.label}</time><span className="color-dot" style={{background:disciplines[c.discipline].color}}/><div><strong>{c.title}{pillarIds.has(c.id)&&<Columns3 size={13}/>}</strong><p className={state.display==='formal'&&c.representation?`index-representation ${c.representation.kind}`:undefined}>{state.display==='formal'&&c.representation?<Expression text={c.representation.expression}/>:c.summary}</p></div><ArrowUpRight size={17}/></button>)}</section>:null;})}{filtered.matching.size===0&&<div className="index-empty"><p>No ideas match these filters.</p><button onClick={()=>change({disciplines:[],branches:[],era:'',standing:''})}>Clear filters</button></div>}</div>}
+    </div>{state.view==='list'&&<div className="concept-index"><div className="index-heading"><span className="eyebrow">THE CHRONOLOGICAL INDEX</span><h2>A history, one idea at a time.</h2><p>Every concept and connection, in an accessible reading view.</p></div>{eras.map(era=>{const items=atlas.concepts.filter(c=>filtered.visible.has(c.id)&&eraFor(c.date.year).id===era.id).sort((a,b)=>a.date.year-b.date.year||a.title.localeCompare(b.title));return items.length?<section key={era.id}><h3>{era.label}<small>{era.range}</small></h3>{items.map(c=><button className={`index-item ${current?.id===c.id?'active':''}`} key={c.id} onClick={()=>goTo(c.id)}><time>{c.date.label}</time><span className="color-dot" style={{background:disciplines[c.discipline].color}}/><div><strong>{c.title}{pillarIds.has(c.id)&&<Columns3 size={13}/>}</strong><p className={state.display==='formal'&&c.representation?`index-representation ${c.representation.kind}`:undefined}>{state.display==='formal'&&c.representation?<Expression text={c.representation.expression}/>:c.summary}</p></div><ArrowUpRight size={17}/></button>)}</section>:null;})}{filtered.matching.size===0&&<div className="index-empty"><p>No ideas match these filters.</p><button onClick={()=>change({disciplines:[],branches:[],era:'',standing:''})}>Clear filters</button></div>}</div>}
    </div>
    {currentTour&&step&&<div className="tour-player"><div className="tour-player-top"><span><GitBranch size={14}/>{currentTour.title}</span><button aria-label="Exit guided journey" onClick={()=>change({tour:'',step:0})}><X size={16}/></button></div><p>{step.narration}</p><div className="tour-player-bottom"><button disabled={state.step===0} onClick={()=>tourStep(currentTour.id,state.step-1)} aria-label="Previous tour stop"><ArrowLeft size={16}/></button><span>{state.step+1} <i>/</i> {currentTour.steps.length}</span><div className="tour-progress">{currentTour.steps.map((s,i)=><button key={`${s.conceptId}-${i}`} className={i===state.step?'active':''} aria-label={`Tour stop ${i+1}`} aria-current={i===state.step?'step':undefined} onClick={()=>tourStep(currentTour.id,i)}/>)}</div>{state.step<currentTour.steps.length-1?<button onClick={()=>tourStep(currentTour.id,state.step+1)} aria-label="Next tour stop"><ArrowRight size={16}/></button>:<button onClick={()=>{change({tour:'',step:0});setActiveTab('journeys');}} aria-label="Complete journey"><Check size={16}/></button>}</div></div>}
   </main>
@@ -201,7 +287,7 @@ function Methodology({onClose}:{onClose:()=>void}){
  useEffect(()=>{const previous=document.activeElement as HTMLElement;closeRef.current?.focus();return()=>previous?.focus();},[]);
  const trap=(e:React.KeyboardEvent)=>{if(e.key!=='Tab')return;const items=dialogRef.current?.querySelectorAll<HTMLElement>('button,a[href]');if(!items?.length)return;const first=items[0],last=items[items.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}};
  return <div className="modal-backdrop" onClick={onClose}><div className="methodology-modal" role="dialog" aria-modal="true" aria-labelledby="method-title" ref={dialogRef} onKeyDown={trap} onClick={e=>e.stopPropagation()}><button className="modal-close icon-button" ref={closeRef} onClick={onClose} aria-label="Close about the atlas"><X size={21}/></button><Logo/><span className="eyebrow">A NOTE FROM THE ATLAS</span><h2 id="method-title">Knowledge is a conversation<br/><em>across centuries.</em></h2><p className="lead">The Tower of Science maps how ideas build on, challenge, and transform one another. It is a curated guide to scientific development, not a complete family tree of human knowledge.</p><div className="method-stats"><span><strong>{atlas.concepts.length}</strong>Ideas</span><span><strong>{atlas.relationships.length}</strong>Connections</span><span><strong>6</strong>Journeys</span></div>
-  <section><h3>Reading the tower</h3><p>Earlier milestones sit lower; later ones sit higher. Approximate contemporaries share period floors, with exact dates preserved in the index. Cards are centered within their subbranch cells. Science sections reserve separate horizontal regions within each era and expand to accommodate their busiest floor. The shape stays fixed when filtering. Time is compressed, and spacing is not a measure of importance or difficulty. Multiple roots acknowledge that counting, observation, craft, and practical knowledge arose in many communities. Unrecorded contributions cannot be reconstructed with certainty.</p></section>
+  <section><h3>Reading the tower</h3><p>Earlier milestones sit lower; later ones sit higher. Approximate contemporaries share period floors, with exact dates preserved in the index. Cards are centered within their subbranch cells. Science sections reserve separate horizontal regions within each era and expand to accommodate their busiest floor. The shape stays fixed when filtering. At far zoom, inactive branches become named summaries within their eras. Labels retain a readable size and may shift to avoid collisions; the underlying concept positions do not move. Selecting a branch name reveals its concepts while keeping your current selection and filters. Summary connections group the same cited relationships and do not create new historical claims. Time is compressed, and spacing is not a measure of importance or difficulty. Multiple roots acknowledge that counting, observation, craft, and practical knowledge arose in many communities. Unrecorded contributions cannot be reconstructed with certainty.</p></section>
   <section><h3>Four kinds of connection</h3><div className="method-relations">{Object.entries(relations).map(([id,r])=><div key={id}><svg width="40" height="16"><path d="M1 8h34" stroke="#386454" strokeWidth="2" strokeDasharray={r.dash}/><path d="m30 4 5 4-5 4" fill="none" stroke="#386454"/></svg><span><strong>{r.label}</strong><small>{r.definition}</small></span></div>)}</div><p>Documented connections are supported by the cited accounts. Conceptual connections are editorial interpretations of prerequisites, not evidence of historical transmission. Contested links identify uncertainty. The graph represents development without claiming that history was inevitable.</p></section>
   <section><h3>Sections, floors, and connection bundles</h3><p>Modern branches are navigational categories applied retrospectively, not claims about how historical communities divided knowledge. Each idea has one primary location; related branches identify interdisciplinary associations. Empty periods are omitted. Floors span prehistory, 500 years from 5000–500 BCE, 100 years to 1500, 25 years to 1850, 10 years to 1900, and five years afterward, split at era boundaries.</p><p>Bundled mode groups existing connections by section (or subbranch at closer zoom), era pair, relationship type, and evidence classification. Counts include distinct relationships after filters. Selected ideas show their immediate connections individually. Open a bundle to inspect its complete evidence or expand its members. Focus only hides background links; All connections draws each relationship. Bundles do not affect ancestry, pillar counts, or scientific standing.</p></section>
   <section><h3>What makes a pillar?</h3><p>A pillar has five or more distinct, supported direct descendants in this edition. Documented and explicitly identified conceptual links count; contested links do not. Total descendants include indirect paths, counted once per concept. These are properties of this collection, not universal rankings of scientific value.</p></section>

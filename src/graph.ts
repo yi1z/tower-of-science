@@ -27,7 +27,7 @@ export function filterGraph(concepts:Concept[], edges:Relationship[],filters:Fil
  }
  return {matching,visible,highlight,edges:edges.filter(e=>types.has(e.type)&&visible.has(e.source)&&visible.has(e.target))};
 }
-export const NODE_WIDTH=248, NODE_HEIGHT=154, COLUMN_GAP=72, ROW_GAP=124;
+export const NODE_WIDTH=320, NODE_HEIGHT=232, COLUMN_GAP=72, ROW_GAP=124;
 const BRANCH_PAD=32, SECTION_GAP=96, ERA_GAP=260;
 export interface Point { x:number;y:number }
 export interface Region { id:string;eraId:string;discipline:Discipline;left:number;width:number;top:number;bottom:number }
@@ -81,6 +81,16 @@ export function eraBandAt(layout:Layout,y:number){
  return layout.bands.find(b=>y>=b.top&&y<=b.bottom)??[...layout.bands].sort((a,b)=>Math.min(Math.abs(a.top-y),Math.abs(a.bottom-y))-Math.min(Math.abs(b.top-y),Math.abs(b.bottom-y)))[0];
 }
 export interface Route { points:Point[];path:string;label:Point }
+/** React Flow's endpoint bounds include large empty pillar areas. Cull using the actual route. */
+export function routeInViewport(route:Route|undefined,transform:[number,number,number],width:number,height:number){
+ if(!route)return false;
+ const [x,y,zoom]=transform,pad=32/zoom,left=-x/zoom-pad,right=(width-x)/zoom+pad,top=-y/zoom-pad,bottom=(height-y)/zoom+pad;
+ for(let i=1;i<route.points.length;i++){
+  const a=route.points[i-1],b=route.points[i];
+  if(Math.max(a.x,b.x)>=left&&Math.min(a.x,b.x)<=right&&Math.max(a.y,b.y)>=top&&Math.min(a.y,b.y)<=bottom)return true;
+ }
+ return false;
+}
 const hash=(id:string)=>[...id].reduce((v,c)=>(v*31+c.charCodeAt(0))>>>0,7);
 export function roundedPath(points:Point[],radius=8){
  if(!points.length)return '';
