@@ -1,0 +1,4752 @@
+{
+  "concepts": [
+    {
+      "id": "hydrostatics",
+      "title": "Hydrostatics & buoyancy",
+      "aliases": [
+        "Archimedes’ principle"
+      ],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": -250,
+        "label": "c. 250 BCE",
+        "precision": "approximate",
+        "note": "Approximate period of the surviving tradition, not a uniquely dated invention."
+      },
+      "summary": "Fluids at rest exert pressure, and an immersed body is buoyed by the weight of fluid it displaces.",
+      "problem": "Explain floating, sinking, and the balance of submerged objects.",
+      "development": "In Hellenistic Syracuse, Archimedes combined geometrical reasoning with the study of floating bodies. His result made fluid behavior susceptible to mathematical proof and later engineering calculation.",
+      "limitations": "The buoyancy rule remains useful, but flowing, viscous, or rapidly accelerating fluids need additional models.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Archimedes",
+          "role": "Developed a mathematical theory of floating bodies."
+        }
+      ],
+      "sourceIds": [
+        "ph-buoyancy"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-buoyancy"
+        ],
+        "history": [
+          "ph-buoyancy"
+        ]
+      },
+      "example": "A steel ship floats because its hollow hull displaces enough water to support its weight."
+    },
+    {
+      "id": "atomism",
+      "title": "Ancient atomism",
+      "aliases": [
+        "Democritean atomism"
+      ],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": -440,
+        "label": "c. 440 BCE",
+        "precision": "approximate",
+        "note": "Approximate period of the surviving tradition, not a uniquely dated invention."
+      },
+      "summary": "One ancient proposal held that matter consists of indivisible bodies moving through empty space.",
+      "problem": "Explain change while preserving something enduring beneath visible appearances.",
+      "development": "Leucippus and Democritus proposed atomistic accounts in the Greek world. These were philosophical arguments, not the quantitative chemical theory that emerged much later; other traditions developed their own accounts of indivisible matter.",
+      "limitations": "Ancient atoms were not experimentally identified chemical atoms. Modern atoms are divisible, and historical resemblance alone does not prove a line of transmission.",
+      "standing": "superseded",
+      "contributors": [
+        {
+          "name": "Leucippus",
+          "role": "Associated with the early Greek atomist school."
+        },
+        {
+          "name": "Democritus",
+          "role": "Developed explanations using atoms and void."
+        }
+      ],
+      "sourceIds": [
+        "ph-atoms-early"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-atoms-early"
+        ],
+        "history": [
+          "ph-atoms-early"
+        ]
+      }
+    },
+    {
+      "id": "geometric-optics",
+      "title": "Geometrical optics",
+      "aliases": [
+        "Ray optics",
+        "Alhazen’s optics"
+      ],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1021,
+        "label": "c. 1021",
+        "precision": "approximate",
+        "note": "Approximate completion period traditionally associated with the Book of Optics; ray studies are much older."
+      },
+      "summary": "Light paths can be modeled as rays, allowing mirrors, lenses, and images to be analyzed with geometry.",
+      "problem": "Explain how light reaches the eye and how reflection changes an image.",
+      "development": "Ibn al-Haytham’s Book of Optics in medieval Cairo combined geometrical analysis with experiments on light and vision. It critically reworked earlier optical traditions and influenced later Latin scholarship.",
+      "limitations": "Ray models approximate light when wavelength-scale effects are negligible; diffraction and interference require wave descriptions. The date marks an influential synthesis, not the origin of optics.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Ibn al-Haytham",
+          "role": "Integrated experiments, reflection geometry, and a light-into-the-eye account of vision."
+        }
+      ],
+      "sourceIds": [
+        "ph-optics"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-optics"
+        ],
+        "history": [
+          "ph-optics"
+        ]
+      }
+    },
+    {
+      "id": "inertia",
+      "title": "Inertia",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1632,
+        "label": "1632–1687",
+        "precision": "range",
+        "note": "From Galileo’s Dialogue to Newton’s first-law formulation."
+      },
+      "summary": "An object does not need a continuing push to maintain uniform motion; forces explain changes in motion.",
+      "problem": "Separate motion itself from the effects of friction and resistance.",
+      "development": "Galileo’s discussions of motion challenged the idea that ordinary motion must continually be sustained. Newton subsequently formulated uniform straight-line motion as the force-free case in his first law.",
+      "limitations": "The simple statement applies in inertial reference frames; apparent forces arise in accelerating frames. Galileo’s formulation was not identical to Newton’s later law.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Galileo Galilei",
+          "role": "Developed arguments about persistent motion."
+        },
+        {
+          "name": "Isaac Newton",
+          "role": "Made inertia the first law of his mechanics."
+        }
+      ],
+      "sourceIds": [
+        "ph-inertia",
+        "ph-galileo-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-inertia"
+        ],
+        "history": [
+          "ph-galileo-history",
+          "ph-inertia"
+        ]
+      }
+    },
+    {
+      "id": "galilean-relativity",
+      "title": "Galilean relativity",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1632,
+        "label": "1632",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Mechanical experiments inside a uniformly moving laboratory cannot reveal its uniform motion relative to another such laboratory.",
+      "problem": "Explain why shared motion can be invisible to observers traveling together.",
+      "development": "Galileo’s ship thought experiment illustrated the relativity of uniform motion. Classical mechanics later expressed this through transformations between reference frames that share a common time.",
+      "limitations": "Classical addition of velocities fails for light and near-light-speed motion; special relativity changes the transformations.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Galileo Galilei",
+          "role": "Used shipboard experiments to reason about uniform motion."
+        }
+      ],
+      "sourceIds": [
+        "ph-relativity",
+        "ph-galileo-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-relativity"
+        ],
+        "history": [
+          "ph-galileo-history"
+        ]
+      },
+      "example": "A dropped object falls beside you on a smoothly moving ship, rather than being left behind."
+    },
+    {
+      "id": "classical-mechanics",
+      "title": "Classical mechanics",
+      "aliases": [
+        "Newtonian mechanics"
+      ],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1687,
+        "label": "1687",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Newton’s laws connect forces, mass, and acceleration, making motion quantitatively predictable.",
+      "problem": "Find one mathematical framework for terrestrial motion and celestial dynamics.",
+      "development": "Newton’s Principia synthesized laws of motion and gravitation using earlier work on falling bodies and planetary orbits. Later analytical formulations extended this framework to complex interacting systems.",
+      "limitations": "Extremely useful for ordinary speeds and macroscopic bodies; quantum and relativistic regimes require broader theories.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Isaac Newton",
+          "role": "Published the laws of motion in the Principia."
+        },
+        {
+          "name": "Émilie du Châtelet",
+          "role": "Translated, explained, and extended Newtonian mechanics for a wider scholarly audience."
+        }
+      ],
+      "sourceIds": [
+        "ph-newton",
+        "ph-gravity"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-newton",
+          "ph-gravity"
+        ],
+        "history": [
+          "ph-newton",
+          "ph-gravity"
+        ]
+      },
+      "equation": {
+        "expression": "F = ma",
+        "explanation": "For constant mass m, the net force F produces acceleration a; these quantities have direction."
+      }
+    },
+    {
+      "id": "universal-gravitation",
+      "title": "Universal gravitation",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1687,
+        "label": "1687",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "The same attractive interaction accounts for falling bodies and the orbits of celestial objects.",
+      "problem": "Connect Earth-bound motion with the motion of the Moon and planets.",
+      "development": "Newton used an inverse-square attraction in the Principia to connect terrestrial acceleration with planetary mechanics. Kepler’s orbital regularities and earlier proposals of attraction supplied crucial problems and constraints.",
+      "limitations": "Accurate in weak gravitational fields at low speeds; general relativity replaces its instantaneous-force picture in more demanding regimes.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Isaac Newton",
+          "role": "Formulated the universal inverse-square law."
+        },
+        {
+          "name": "Robert Hooke",
+          "role": "Advanced proposals linking planetary motion and attraction."
+        }
+      ],
+      "sourceIds": [
+        "ph-gravity"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-gravity"
+        ],
+        "history": [
+          "ph-gravity"
+        ]
+      },
+      "equation": {
+        "expression": "F = Gm₁m₂ / r²",
+        "explanation": "G is the gravitational constant, m₁ and m₂ are masses, and r is their separation for point masses or spherical bodies."
+      }
+    },
+    {
+      "id": "momentum",
+      "title": "Momentum conservation",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1687,
+        "label": "1687",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "A system’s total momentum remains unchanged when its net external force is zero.",
+      "problem": "Predict collisions and recoil without reconstructing every internal force.",
+      "development": "Earlier studies of collisions were consolidated in Newtonian dynamics. Defining momentum as mass times velocity makes changes of motion and exchanges between interacting bodies measurable.",
+      "limitations": "The familiar p = mv formula is nonrelativistic; conservation survives with a revised momentum in relativity. One must account for momentum carried by fields as well as matter.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Isaac Newton",
+          "role": "Defined quantity of motion and related its change to impressed force."
+        },
+        {
+          "name": "Christiaan Huygens",
+          "role": "Studied collision laws before the Principia."
+        }
+      ],
+      "sourceIds": [
+        "ph-momentum"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-momentum"
+        ],
+        "history": [
+          "ph-momentum"
+        ]
+      },
+      "equation": {
+        "expression": "p = mv",
+        "explanation": "Momentum p is mass m multiplied by velocity v in classical mechanics."
+      }
+    },
+    {
+      "id": "least-action",
+      "title": "Stationary action",
+      "aliases": [
+        "Least action",
+        "Hamilton’s principle"
+      ],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1744,
+        "label": "1744 onward",
+        "precision": "approximate",
+        "note": "Early action principles appeared in the 1740s; the modern stationary-action formulation developed later."
+      },
+      "summary": "Many laws of motion can be expressed by finding paths for which a quantity called action is stationary.",
+      "problem": "Unify apparently different dynamical laws through a common mathematical principle.",
+      "development": "Maupertuis and Euler developed action principles in the 1740s; Lagrange and Hamilton later supplied systematic formulations. The calculus of variations converted a broad organizing idea into precise equations of motion.",
+      "limitations": "The physical path need not minimize action: it can be another stationary point. A suitable action and boundary conditions must first be specified.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Pierre Louis Maupertuis",
+          "role": "Proposed an early action principle."
+        },
+        {
+          "name": "Leonhard Euler",
+          "role": "Gave variational methods mathematical precision."
+        },
+        {
+          "name": "Joseph-Louis Lagrange and William Rowan Hamilton",
+          "role": "Developed general analytical formulations."
+        }
+      ],
+      "sourceIds": [
+        "ph-action"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-action"
+        ],
+        "history": [
+          "ph-action"
+        ]
+      }
+    },
+    {
+      "id": "electric-charge",
+      "title": "Electric charge & Coulomb’s law",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1785,
+        "label": "1785",
+        "precision": "exact",
+        "note": "Date of Coulomb’s quantitative electrostatic experiments; observations of electrical effects are ancient."
+      },
+      "summary": "Electric charge is a property of matter that determines attraction and repulsion between charged bodies.",
+      "problem": "Quantify electrical forces beyond qualitative experiments with rubbed materials.",
+      "development": "Coulomb’s torsion-balance experiments established an inverse-square relation for electrostatic force. A numerical account of charge became a foundation for field theory and the study of electrical matter.",
+      "limitations": "Coulomb’s law describes stationary point charges or suitable distributions; moving charges require electrodynamics.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Charles-Augustin de Coulomb",
+          "role": "Measured electrostatic forces with a torsion balance."
+        }
+      ],
+      "sourceIds": [
+        "ph-coulomb",
+        "ph-maxwell"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-coulomb"
+        ],
+        "history": [
+          "ph-coulomb",
+          "ph-maxwell"
+        ]
+      }
+    },
+    {
+      "id": "wave-optics",
+      "title": "Wave optics",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1801,
+        "label": "1801",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Overlapping light waves reinforce or cancel one another, producing interference and diffraction patterns.",
+      "problem": "Explain optical phenomena that a simple ray or corpuscle picture could not capture.",
+      "development": "Huygens developed a wave account of light; Young’s 1801 interference experiment supplied persuasive evidence. Fresnel’s later mathematical treatment extended the explanation to diffraction.",
+      "limitations": "Classical waves describe propagation very well, but the detection and exchange of light also require quantum theory.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Christiaan Huygens",
+          "role": "Proposed a wave construction for light propagation."
+        },
+        {
+          "name": "Thomas Young",
+          "role": "Demonstrated interference."
+        },
+        {
+          "name": "Augustin-Jean Fresnel",
+          "role": "Developed wave diffraction theory."
+        }
+      ],
+      "sourceIds": [
+        "ph-interference"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-interference"
+        ],
+        "history": [
+          "ph-interference"
+        ]
+      },
+      "example": "Two narrow slits produce alternating bright and dark fringes rather than just two bright strips."
+    },
+    {
+      "id": "thermodynamics",
+      "title": "Thermodynamics",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1824,
+        "label": "1824–1865",
+        "precision": "range",
+        "note": "From Carnot’s engine analysis to mature energy and entropy formulations."
+      },
+      "summary": "Heat, work, temperature, and entropy constrain how physical systems exchange energy and change state.",
+      "problem": "Understand heat-engine efficiency and the limits of converting heat into work.",
+      "development": "Carnot’s 1824 study of ideal engines began a decisive stage. Joule, Clausius, Kelvin, and others subsequently developed energy conservation and the second law, replacing parts of Carnot’s original caloric interpretation.",
+      "limitations": "Equilibrium thermodynamics predicts constraints and final tendencies, not the detailed speed of a process; microscopic systems require care with fluctuations.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Sadi Carnot",
+          "role": "Analyzed ideal heat-engine efficiency."
+        },
+        {
+          "name": "Rudolf Clausius and William Thomson (Lord Kelvin)",
+          "role": "Formulated the second law."
+        },
+        {
+          "name": "James Prescott Joule",
+          "role": "Measured the relation between work and heat."
+        }
+      ],
+      "sourceIds": [
+        "ph-carnot"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-carnot"
+        ],
+        "history": [
+          "ph-carnot"
+        ]
+      }
+    },
+    {
+      "id": "electromagnetic-induction",
+      "title": "Electromagnetic induction",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "discovery",
+      "date": {
+        "year": 1831,
+        "label": "1831",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "A changing magnetic flux produces an electromotive force, linking magnetism to electric current.",
+      "problem": "Discover how magnetism can generate electricity.",
+      "development": "Faraday’s coil-and-magnet experiments showed that change, rather than a stationary magnet alone, is crucial. His experimental field ideas were later incorporated into Maxwell’s equations.",
+      "limitations": "The induced voltage depends on flux change through the entire circuit, not simply magnetic-field strength at one point.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Michael Faraday",
+          "role": "Demonstrated induction through changing magnetic fields."
+        },
+        {
+          "name": "Joseph Henry",
+          "role": "Investigated induction independently."
+        }
+      ],
+      "sourceIds": [
+        "ph-induction"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-induction"
+        ],
+        "history": [
+          "ph-induction"
+        ]
+      },
+      "example": "Moving a magnet through a wire coil can drive a current; holding it still does not maintain that induced current."
+    },
+    {
+      "id": "energy-conservation",
+      "title": "Conservation of energy",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1847,
+        "label": "1847",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Energy changes form and moves between systems, while the total for an isolated system is conserved.",
+      "problem": "Unify heat, mechanical work, and other apparently separate physical processes.",
+      "development": "Measurements of mechanical heating and nineteenth-century theoretical arguments converged on a general conservation principle. Helmholtz’s 1847 synthesis joined work by Joule, Mayer, and others.",
+      "limitations": "Tracking a complete system boundary is essential. In general relativity, defining a global conserved energy for an arbitrary spacetime is more subtle than in ordinary mechanics.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "James Prescott Joule",
+          "role": "Measured mechanical work converted to heat."
+        },
+        {
+          "name": "Julius Robert Mayer",
+          "role": "Argued for equivalence among forms of energy."
+        },
+        {
+          "name": "Hermann von Helmholtz",
+          "role": "Published an influential general synthesis."
+        }
+      ],
+      "sourceIds": [
+        "ph-energy"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-energy"
+        ],
+        "history": [
+          "ph-energy"
+        ]
+      },
+      "equation": {
+        "expression": "ΔU = Q − W",
+        "explanation": "Internal-energy change ΔU equals heat Q entering the system minus work W done by it."
+      }
+    },
+    {
+      "id": "kinetic-theory",
+      "title": "Kinetic theory of gases",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1857,
+        "label": "1857–1860",
+        "precision": "range",
+        "note": "Milestones in Clausius’s and Maxwell’s molecular theory; earlier kinetic models include Daniel Bernoulli’s work."
+      },
+      "summary": "Gas pressure and temperature emerge from the motion and collisions of many molecules.",
+      "problem": "Explain macroscopic gas laws using microscopic mechanical behavior.",
+      "development": "Clausius revived molecular explanations of gases in the 1850s; Maxwell introduced a distribution of molecular speeds. This joined mechanical models with probability and led toward statistical mechanics.",
+      "limitations": "The ideal-gas version neglects molecular size and most interactions, so dense gases and phase changes need refinements.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Rudolf Clausius",
+          "role": "Developed a molecular account of heat and gases."
+        },
+        {
+          "name": "James Clerk Maxwell",
+          "role": "Introduced a statistical distribution of molecular velocities."
+        }
+      ],
+      "sourceIds": [
+        "ph-gas-model"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-gas-model"
+        ],
+        "history": [
+          "ph-gas-model"
+        ]
+      }
+    },
+    {
+      "id": "entropy",
+      "title": "Entropy",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1865,
+        "label": "1865",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Entropy measures a thermodynamic constraint on change and, microscopically, the multiplicity of compatible states.",
+      "problem": "Explain why some energy-conserving processes occur spontaneously while their reverses do not.",
+      "development": "Clausius introduced the term in 1865 while developing the second law. Statistical interpretations later connected thermodynamic entropy with the number and probabilities of microscopic configurations.",
+      "limitations": "Entropy is not simply visual messiness. A local decrease is possible when the surroundings gain sufficient entropy.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Rudolf Clausius",
+          "role": "Introduced thermodynamic entropy."
+        },
+        {
+          "name": "Ludwig Boltzmann",
+          "role": "Related entropy to microscopic possibilities."
+        }
+      ],
+      "sourceIds": [
+        "ph-entropy",
+        "ph-statistical",
+        "ph-clausius-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-entropy",
+          "ph-statistical"
+        ],
+        "history": [
+          "ph-clausius-history"
+        ]
+      },
+      "equation": {
+        "expression": "ΔS = Qrev / T",
+        "explanation": "For reversible heat transfer at constant temperature T, entropy change ΔS is heat Qrev divided by absolute temperature."
+      }
+    },
+    {
+      "id": "electromagnetism",
+      "title": "Maxwell’s electromagnetism",
+      "aliases": [
+        "Maxwell’s equations"
+      ],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1865,
+        "label": "1865",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Electric and magnetic fields are coupled aspects of one interaction; their disturbances propagate as electromagnetic waves.",
+      "problem": "Unify electrical experiments, magnetic effects, and the wave nature of light.",
+      "development": "Maxwell combined empirical laws from Coulomb, Ampère, Faraday, and others, adding displacement current. His synthesis predicted waves traveling at the measured speed of light.",
+      "limitations": "Classical electromagnetism omits the quantization of matter and radiation; quantum electrodynamics is needed for individual emission and scattering processes.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "James Clerk Maxwell",
+          "role": "Unified electrical and magnetic laws in a field theory."
+        },
+        {
+          "name": "Michael Faraday",
+          "role": "Supplied induction experiments and influential field concepts."
+        },
+        {
+          "name": "Heinrich Hertz",
+          "role": "Later generated and detected radio waves."
+        }
+      ],
+      "sourceIds": [
+        "ph-maxwell",
+        "ph-maxwell-original"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-maxwell"
+        ],
+        "history": [
+          "ph-maxwell-original"
+        ]
+      },
+      "example": "Visible light and radio waves are the same kind of field disturbance at different frequencies."
+    },
+    {
+      "id": "statistical-mechanics",
+      "title": "Statistical mechanics",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1872,
+        "label": "1872–1902",
+        "precision": "range",
+        "note": "From Boltzmann’s kinetic analysis to Gibbs’s ensemble formulation."
+      },
+      "summary": "Probability connects the behavior of many microscopic constituents to bulk temperature, pressure, and entropy.",
+      "problem": "Derive thermodynamic regularities from mechanical or quantum descriptions of particles.",
+      "development": "Boltzmann’s kinetic work and Gibbs’s ensemble methods turned microscopic uncertainty into a predictive framework. Rather than tracking every particle, one studies distributions over possible microscopic states.",
+      "limitations": "Equilibrium predictions rely on appropriate ensembles and constraints; nonequilibrium behavior can be much harder to derive.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Ludwig Boltzmann",
+          "role": "Developed statistical accounts of gases and entropy."
+        },
+        {
+          "name": "J. Willard Gibbs",
+          "role": "Systematized ensemble methods."
+        }
+      ],
+      "sourceIds": [
+        "ph-statistical",
+        "ph-gibbs-history",
+        "ph-brownian"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-statistical"
+        ],
+        "history": [
+          "ph-gibbs-history",
+          "ph-brownian"
+        ]
+      },
+      "equation": {
+        "expression": "S = kB ln Ω",
+        "explanation": "For equally likely microstates, entropy S depends on their number Ω; kB is Boltzmann’s constant."
+      }
+    },
+    {
+      "id": "electron",
+      "title": "The electron",
+      "aliases": [
+        "Cathode-ray particle"
+      ],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "discovery",
+      "date": {
+        "year": 1897,
+        "label": "1897",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Atoms contain small negatively charged constituents, contradicting the idea that atoms are indivisible.",
+      "problem": "Identify what carries cathode rays and electrical charge within matter.",
+      "development": "J. J. Thomson used electric and magnetic deflections of cathode rays to infer a universal particle with a very large charge-to-mass ratio. Later measurements and atomic models established the electron’s role in matter.",
+      "limitations": "The discovery did not determine the whole structure of the atom; quantum theory was needed to explain electron states.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "J. J. Thomson",
+          "role": "Identified cathode-ray particles as constituents of matter."
+        },
+        {
+          "name": "Robert Millikan",
+          "role": "Later measured the elementary charge precisely."
+        }
+      ],
+      "sourceIds": [
+        "ph-atomic-evolution"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-atomic-evolution"
+        ],
+        "history": [
+          "ph-atomic-evolution"
+        ]
+      }
+    },
+    {
+      "id": "radioactivity",
+      "title": "Radioactivity",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "discovery",
+      "date": {
+        "year": 1896,
+        "label": "1896",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Some unstable nuclei transform spontaneously, emitting particles or electromagnetic radiation.",
+      "problem": "Explain penetrating radiation from substances without an external energy supply.",
+      "development": "Becquerel discovered uranium’s spontaneous radiation in 1896. Marie and Pierre Curie identified additional radioactive substances, while subsequent work clarified decay types and transformations between elements.",
+      "limitations": "Radioactivity is a nuclear process, unlike ordinary chemical reactions; decay rates predict populations rather than the exact decay time of one nucleus.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Henri Becquerel",
+          "role": "Discovered spontaneous uranium radiation."
+        },
+        {
+          "name": "Marie Curie and Pierre Curie",
+          "role": "Investigated radioactive substances and discovered polonium and radium."
+        },
+        {
+          "name": "Ernest Rutherford and Frederick Soddy",
+          "role": "Developed the transformation account of radioactive decay."
+        }
+      ],
+      "sourceIds": [
+        "ph-chemistry-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-chemistry-history"
+        ],
+        "history": [
+          "ph-chemistry-history"
+        ]
+      }
+    },
+    {
+      "id": "blackbody-quanta",
+      "title": "Energy quanta",
+      "aliases": [
+        "Planck’s quantum hypothesis"
+      ],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1900,
+        "label": "1900",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Energy exchange between radiation and matter can occur in discrete amounts proportional to frequency.",
+      "problem": "Explain the measured spectrum of radiation emitted by a hot cavity.",
+      "development": "Planck’s 1900 radiation law introduced energy elements in a statistical calculation. The idea began as a solution to thermal radiation and became a starting point for quantum physics.",
+      "limitations": "Planck’s original argument was not yet the complete modern photon theory; the physical interpretation developed through later work.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Max Planck",
+          "role": "Introduced quantized energy elements in the blackbody problem."
+        }
+      ],
+      "sourceIds": [
+        "ph-quanta"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-quanta"
+        ],
+        "history": [
+          "ph-quanta"
+        ]
+      },
+      "equation": {
+        "expression": "E = hf",
+        "explanation": "One quantum has energy E proportional to frequency f; h is Planck’s constant."
+      }
+    },
+    {
+      "id": "special-relativity",
+      "title": "Special relativity",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1905,
+        "label": "1905",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Space and time measurements depend on relative motion, while physical laws and the vacuum speed of light agree across inertial frames.",
+      "problem": "Resolve the mismatch between classical velocity addition and electromagnetism.",
+      "development": "Einstein’s 1905 formulation rethought simultaneity and inertial motion. Lorentz’s transformations and Poincaré’s work formed part of the mathematical and conceptual setting; Minkowski later clarified spacetime geometry.",
+      "limitations": "It describes flat spacetime and local inertial physics; gravitational curvature requires general relativity.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Albert Einstein",
+          "role": "Formulated the two-postulate theory."
+        },
+        {
+          "name": "Hendrik Lorentz",
+          "role": "Developed transformations used in relativistic kinematics."
+        },
+        {
+          "name": "Hermann Minkowski",
+          "role": "Expressed the theory in four-dimensional spacetime."
+        }
+      ],
+      "sourceIds": [
+        "ph-relativity"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-relativity"
+        ],
+        "history": [
+          "ph-relativity"
+        ]
+      },
+      "equation": {
+        "expression": "E₀ = mc²",
+        "explanation": "Rest energy E₀ equals mass m times the square of the vacuum speed of light c."
+      }
+    },
+    {
+      "id": "photoelectric-effect",
+      "title": "Light quanta & the photoelectric effect",
+      "aliases": [
+        "Einstein’s light-quantum hypothesis"
+      ],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1905,
+        "label": "1905",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Light can eject electrons from a material when individual light quanta carry sufficient energy.",
+      "problem": "Explain why increasing light intensity cannot replace the need for sufficiently high frequency.",
+      "development": "Einstein used Planck’s energy-frequency relation to interpret photoelectric observations. The explanation helped establish the particle-like exchange of light alongside its well-tested wave propagation.",
+      "limitations": "The effect supports quantized light–matter interactions, not a picture in which light is always a classical tiny ball.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Albert Einstein",
+          "role": "Explained photoelectric emission with light quanta."
+        },
+        {
+          "name": "Heinrich Hertz and Philipp Lenard",
+          "role": "Made earlier observations and experimental investigations."
+        }
+      ],
+      "sourceIds": [
+        "ph-photoelectric"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-photoelectric"
+        ],
+        "history": [
+          "ph-photoelectric"
+        ]
+      },
+      "equation": {
+        "expression": "Kmax = hf − φ",
+        "explanation": "The maximum electron kinetic energy equals photon energy hf minus the material’s work function φ."
+      }
+    },
+    {
+      "id": "brownian-motion",
+      "title": "Molecular theory of Brownian motion",
+      "aliases": [
+        "Einstein–Smoluchowski theory"
+      ],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1905,
+        "label": "1905",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Irregular motion of small suspended particles results from many collisions with surrounding molecules.",
+      "problem": "Turn apparently erratic microscopic motion into a quantitative test of atoms.",
+      "development": "Building on kinetic and statistical ideas, Einstein predicted observable displacement statistics in 1905; Smoluchowski independently developed a related explanation. Perrin’s measurements helped turn atomism into experimentally compelling physical theory.",
+      "limitations": "The simple diffusion model applies over appropriate time and length scales; it does not resolve every individual molecular collision.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Albert Einstein",
+          "role": "Connected diffusion with molecular thermal motion."
+        },
+        {
+          "name": "Marian Smoluchowski",
+          "role": "Independently developed a statistical explanation."
+        },
+        {
+          "name": "Jean Perrin",
+          "role": "Tested molecular predictions experimentally."
+        }
+      ],
+      "sourceIds": [
+        "ph-brownian"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-brownian"
+        ],
+        "history": [
+          "ph-brownian"
+        ]
+      },
+      "example": "The average squared displacement grows with elapsed time even though the average directional displacement can be zero."
+    },
+    {
+      "id": "nuclear-atom",
+      "title": "The nuclear atom",
+      "aliases": [
+        "Rutherford model"
+      ],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "discovery",
+      "date": {
+        "year": 1911,
+        "label": "1911",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Most atomic mass and positive charge are concentrated in a tiny nucleus surrounded by electrons.",
+      "problem": "Explain rare, large deflections of fast particles passing through thin metal foil.",
+      "development": "Geiger and Marsden’s scattering measurements challenged diffuse-charge atomic models. Rutherford’s 1911 interpretation concentrated positive charge in a small center, changing the problems atomic theory needed to solve.",
+      "limitations": "A classical planetary electron model cannot explain atomic stability or discrete spectra; quantum mechanics supplies a different account of electron states.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Ernest Rutherford",
+          "role": "Interpreted scattering in terms of a small charged nucleus."
+        },
+        {
+          "name": "Hans Geiger and Ernest Marsden",
+          "role": "Performed key scattering measurements."
+        }
+      ],
+      "sourceIds": [
+        "ph-atomic-evolution"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-atomic-evolution"
+        ],
+        "history": [
+          "ph-atomic-evolution"
+        ]
+      }
+    },
+    {
+      "id": "general-relativity",
+      "title": "General relativity",
+      "aliases": [
+        "Einstein’s theory of gravity"
+      ],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1915,
+        "label": "1915",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Gravity is described through the curvature of spacetime, with matter and energy influencing geometry.",
+      "problem": "Extend relativity to gravity and explain phenomena beyond Newton’s force law.",
+      "development": "Einstein combined the equivalence principle with differential geometry and tensor methods, aided by Marcel Grossmann’s mathematical guidance. The 1915 field equations made spacetime dynamical rather than a fixed stage.",
+      "limitations": "Strong observational support does not make it a quantum theory; singularities and quantum gravity remain open problems.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Albert Einstein",
+          "role": "Formulated the gravitational field equations."
+        },
+        {
+          "name": "Marcel Grossmann",
+          "role": "Helped identify suitable differential-geometric tools."
+        },
+        {
+          "name": "Bernhard Riemann",
+          "role": "Developed earlier mathematical foundations for curved spaces."
+        }
+      ],
+      "sourceIds": [
+        "ph-gr-curvature",
+        "ph-einstein-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-gr-curvature"
+        ],
+        "history": [
+          "ph-einstein-history"
+        ]
+      },
+      "example": "Freely falling objects follow spacetime geodesics; tidal effects reveal curvature that cannot be removed throughout a large region."
+    },
+    {
+      "id": "quantum-mechanics",
+      "title": "Quantum mechanics",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1925,
+        "label": "1925–1926",
+        "precision": "range",
+        "note": "Matrix mechanics appeared in 1925; wave mechanics and Born’s interpretation followed in 1926."
+      },
+      "summary": "States and measurement probabilities replace definite classical trajectories as the basic description of microscopic systems.",
+      "problem": "Explain atomic stability, spectral lines, and experiments incompatible with classical mechanics.",
+      "development": "Heisenberg’s matrix mechanics and Schrödinger’s wave mechanics developed in 1925–1926; Born connected wave amplitudes with probabilities. These formulations unified earlier quantum clues into a general predictive framework.",
+      "limitations": "Predictions are extremely successful, but their interpretation remains debated; relativistic creation and destruction of particles require quantum field theory.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Werner Heisenberg",
+          "role": "Developed matrix mechanics."
+        },
+        {
+          "name": "Erwin Schrödinger",
+          "role": "Developed wave mechanics."
+        },
+        {
+          "name": "Max Born",
+          "role": "Introduced the probability interpretation."
+        },
+        {
+          "name": "Pascual Jordan",
+          "role": "Helped formulate matrix mechanics."
+        }
+      ],
+      "sourceIds": [
+        "ph-schrodinger"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-schrodinger"
+        ],
+        "history": [
+          "ph-schrodinger"
+        ]
+      }
+    },
+    {
+      "id": "uncertainty-principle",
+      "title": "Quantum uncertainty",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1927,
+        "label": "1927",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Certain pairs of observables, such as position and momentum, cannot both have arbitrarily narrow distributions in one quantum state.",
+      "problem": "Clarify the limits of importing classical particle trajectories into quantum theory.",
+      "development": "Heisenberg’s 1927 analysis exposed the incompatibility of classical measurement expectations with quantum mechanics. A precise mathematical inequality relates the statistical spreads of position and momentum.",
+      "limitations": "This is not merely poor instrumentation, nor a claim that every physical quantity is unknowable. Different uncertainty relations concern different operational situations.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Werner Heisenberg",
+          "role": "Developed the uncertainty analysis."
+        },
+        {
+          "name": "Earle Kennard",
+          "role": "Established the standard position–momentum inequality."
+        }
+      ],
+      "sourceIds": [
+        "ph-uncertainty"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-uncertainty"
+        ],
+        "history": [
+          "ph-uncertainty"
+        ]
+      },
+      "equation": {
+        "expression": "Δx Δp ≥ ℏ/2",
+        "explanation": "Δx and Δp are standard deviations of position and momentum in the same state; ℏ is the reduced Planck constant."
+      }
+    },
+    {
+      "id": "quantum-field-theory",
+      "title": "Quantum field theory",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1927,
+        "label": "1927–1930s",
+        "precision": "range",
+        "note": "Date marks early radiation field quantization; the framework developed across several papers and authors."
+      },
+      "summary": "Particles are excitations of quantum fields, permitting interactions that create and destroy particles.",
+      "problem": "Combine quantum principles with fields and, in relativistic applications, special relativity.",
+      "development": "Early work by Dirac, Jordan, Heisenberg, and Pauli quantized fields and treated radiation processes. Later refinements supplied the framework for particle physics and many descriptions of collective matter.",
+      "limitations": "A framework is not a single theory: one must specify its fields and interactions. Strong coupling and a complete quantum treatment of gravity remain difficult.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Paul Dirac",
+          "role": "Developed a quantum description of radiation emission and absorption."
+        },
+        {
+          "name": "Pascual Jordan, Werner Heisenberg, and Wolfgang Pauli",
+          "role": "Helped formulate field quantization."
+        }
+      ],
+      "sourceIds": [
+        "ph-qft",
+        "ph-dirac-original",
+        "ph-qed-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-qft"
+        ],
+        "history": [
+          "ph-dirac-original",
+          "ph-qed-history"
+        ]
+      }
+    },
+    {
+      "id": "antimatter",
+      "title": "Antimatter",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "discovery",
+      "date": {
+        "year": 1928,
+        "label": "1928–1932",
+        "precision": "range",
+        "note": "From Dirac’s equation to Anderson’s experimental positron discovery."
+      },
+      "summary": "Particles have corresponding antiparticles with the same mass and opposite relevant charges.",
+      "problem": "Understand the unexpected solutions of a relativistic quantum equation for the electron.",
+      "development": "Dirac’s 1928 equation combined special relativity and quantum theory. Its interpretation evolved toward the positron, observed by Anderson in 1932; field theory later clarified the creation and annihilation of particle–antiparticle pairs.",
+      "limitations": "Antiparticles are experimentally established. Why the observable universe contains so much more matter than antimatter is a separate unresolved problem.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Paul Dirac",
+          "role": "Developed the relativistic electron equation."
+        },
+        {
+          "name": "Carl Anderson",
+          "role": "Observed the positron in cosmic rays."
+        }
+      ],
+      "sourceIds": [
+        "ph-antimatter"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-antimatter"
+        ],
+        "history": [
+          "ph-antimatter"
+        ]
+      }
+    },
+    {
+      "id": "quantum-electrodynamics",
+      "title": "Quantum electrodynamics",
+      "aliases": [
+        "QED"
+      ],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1948,
+        "label": "1947–1949",
+        "precision": "range",
+        "note": "Period of the postwar renormalized formulations; early QED began in the 1920s."
+      },
+      "summary": "QED describes electromagnetic interactions between charged particles and photons using quantum fields.",
+      "problem": "Make precise quantum predictions for radiation, scattering, and electron properties.",
+      "development": "Postwar work by Tomonaga, Schwinger, Feynman, and Dyson organized relativistic calculations and controlled divergent terms through renormalization. It turned earlier quantum radiation theory into an exceptionally precise calculational framework.",
+      "limitations": "Its predictions concern electromagnetic processes; it does not by itself describe the strong force, weak force, or quantum gravity.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Sin-Itiro Tomonaga",
+          "role": "Developed a relativistic quantum field formulation."
+        },
+        {
+          "name": "Julian Schwinger and Richard Feynman",
+          "role": "Developed powerful renormalized calculational methods."
+        },
+        {
+          "name": "Freeman Dyson",
+          "role": "Related the different formulations."
+        }
+      ],
+      "sourceIds": [
+        "ph-qed-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-qed-history"
+        ],
+        "history": [
+          "ph-qed-history"
+        ]
+      }
+    },
+    {
+      "id": "superconductivity",
+      "title": "Superconductivity",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "discovery",
+      "date": {
+        "year": 1911,
+        "label": "1911",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Certain materials enter a state with zero electrical resistance and characteristic magnetic behavior below a transition temperature.",
+      "problem": "Explain an abrupt disappearance of resistance in extremely cold metals.",
+      "development": "Kamerlingh Onnes observed the effect in mercury in 1911. Understanding lagged behind discovery: the Bardeen–Cooper–Schrieffer theory later explained conventional superconductors through paired electrons.",
+      "limitations": "The existence of superconductivity is established, but mechanisms in some unconventional materials remain active research. Zero resistance alone is not its complete definition.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Heike Kamerlingh Onnes",
+          "role": "Discovered superconductivity in mercury."
+        },
+        {
+          "name": "John Bardeen, Leon Cooper, and J. Robert Schrieffer",
+          "role": "Explained conventional superconductivity through electron pairing."
+        }
+      ],
+      "sourceIds": [
+        "ph-superconductivity"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-superconductivity"
+        ],
+        "history": [
+          "ph-superconductivity"
+        ]
+      },
+      "example": "A persistent current can flow in a superconducting loop without a continuing applied voltage."
+    },
+    {
+      "id": "nuclear-fission",
+      "title": "Nuclear fission",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "discovery",
+      "date": {
+        "year": 1938,
+        "label": "1938–1939",
+        "precision": "range",
+        "note": "Chemical evidence emerged in December 1938; the physical interpretation was published in 1939."
+      },
+      "summary": "A heavy nucleus can split into lighter fragments, releasing energy and often additional neutrons.",
+      "problem": "Explain unexpected chemical products after uranium was bombarded with neutrons.",
+      "development": "Hahn and Strassmann identified barium among the products. Meitner and Frisch interpreted the results as nuclear splitting and calculated the energy release; the finding opened a new branch of nuclear physics.",
+      "limitations": "Not every nucleus readily fissions, and sustaining a chain reaction depends on neutron production and losses. Credit cannot be reduced to the sole Nobel recipient.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Otto Hahn and Fritz Strassmann",
+          "role": "Identified key chemical products."
+        },
+        {
+          "name": "Lise Meitner and Otto Robert Frisch",
+          "role": "Explained nuclear splitting and its energy release."
+        }
+      ],
+      "sourceIds": [
+        "ph-fission"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-fission"
+        ],
+        "history": [
+          "ph-fission"
+        ]
+      }
+    },
+    {
+      "id": "semiconductor-band-theory",
+      "title": "Electronic band theory",
+      "aliases": [
+        "Band theory of solids"
+      ],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1928,
+        "label": "1928–1931",
+        "precision": "range",
+        "note": "From Bloch’s crystal-electron theory to Wilson’s semiconductor theory."
+      },
+      "summary": "Electrons in a crystal occupy allowed energy bands separated by gaps, helping explain conductors, insulators, and semiconductors.",
+      "problem": "Explain why materials with electrons have dramatically different electrical behavior.",
+      "development": "Quantum mechanics applied to periodic crystal potentials replaced simple free-electron pictures. Bloch’s work supplied a central mathematical description; subsequent band models underpinned semiconductor physics.",
+      "limitations": "Simple independent-electron bands can fail in strongly correlated or disordered materials. Real devices also depend on defects, interfaces, and carrier dynamics.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Felix Bloch",
+          "role": "Developed quantum states for periodic crystal potentials."
+        },
+        {
+          "name": "Alan H. Wilson",
+          "role": "Applied band ideas to semiconductors."
+        }
+      ],
+      "sourceIds": [
+        "ph-bands"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-bands"
+        ],
+        "history": [
+          "ph-bands"
+        ]
+      }
+    },
+    {
+      "id": "gauge-theory",
+      "title": "Non-Abelian gauge theory",
+      "aliases": [
+        "Yang–Mills theory"
+      ],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1954,
+        "label": "1954",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Requiring local internal symmetries leads to interacting fields with a structured set of force carriers.",
+      "problem": "Extend the symmetry idea underlying electromagnetism to more general interactions.",
+      "development": "Yang and Mills generalized gauge invariance to isotopic-spin rotations in 1954. Their original application evolved, while the mathematical structure became central to electroweak theory and quantum chromodynamics.",
+      "limitations": "Choosing a symmetry does not alone identify nature’s particles or parameters. Individual gauge models require experimental testing.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Chen Ning Yang and Robert Mills",
+          "role": "Formulated non-Abelian gauge invariance and its field equations."
+        }
+      ],
+      "sourceIds": [
+        "ph-gauge"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-gauge"
+        ],
+        "history": [
+          "ph-gauge"
+        ]
+      }
+    },
+    {
+      "id": "quark-model",
+      "title": "The quark model",
+      "aliases": [
+        "Quarks"
+      ],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1964,
+        "label": "1964",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Many strongly interacting particles can be organized as combinations of smaller constituents called quarks.",
+      "problem": "Bring order to the growing collection of hadrons discovered in particle experiments.",
+      "development": "Gell-Mann and Zweig independently proposed constituent schemes in 1964. Classification patterns became part of a deeper theory after scattering experiments and quantum chromodynamics clarified quark dynamics.",
+      "limitations": "Quarks are not observed as isolated particles under ordinary conditions; confinement requires the strong-interaction theory beyond the original classification scheme.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Murray Gell-Mann",
+          "role": "Proposed quarks as hadron constituents."
+        },
+        {
+          "name": "George Zweig",
+          "role": "Independently proposed constituent particles called aces."
+        }
+      ],
+      "sourceIds": [
+        "ph-quarks"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-quarks"
+        ],
+        "history": [
+          "ph-quarks"
+        ]
+      }
+    },
+    {
+      "id": "standard-model",
+      "title": "The Standard Model",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1973,
+        "label": "Early 1970s",
+        "precision": "approximate",
+        "note": "1973 marks a key QCD milestone, not a single invention date for the complete framework."
+      },
+      "summary": "A quantum field framework describes known elementary matter and the electromagnetic, weak, and strong interactions.",
+      "problem": "Combine successful particle theories into a consistent account of fundamental interactions.",
+      "development": "Electroweak unification and quantum chromodynamics converged in the early 1970s. Work on gauge symmetry, symmetry breaking, and strong-interaction behavior linked many separate developments into the present framework.",
+      "limitations": "It excludes gravity and does not fully explain dark matter, neutrino masses in its minimal form, or the cosmic matter–antimatter imbalance.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Sheldon Glashow, Abdus Salam, and Steven Weinberg",
+          "role": "Developed electroweak theory."
+        },
+        {
+          "name": "David Gross, Frank Wilczek, and H. David Politzer",
+          "role": "Established asymptotic freedom of the strong interaction."
+        },
+        {
+          "name": "Many experimental collaborations",
+          "role": "Tested particles and interactions over decades."
+        }
+      ],
+      "sourceIds": [
+        "ph-standard"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-standard"
+        ],
+        "history": [
+          "ph-standard"
+        ]
+      }
+    },
+    {
+      "id": "renormalization-group",
+      "title": "Renormalization group",
+      "aliases": [
+        "RG"
+      ],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "method",
+      "date": {
+        "year": 1971,
+        "label": "1971",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "A system’s effective description changes as the observation scale changes, revealing what matters at large distances.",
+      "problem": "Explain why very different materials can share the same behavior near a phase transition.",
+      "development": "Earlier field-theory scaling ideas were developed by Wilson into a systematic approach to critical phenomena. Coarse-graining exposes fixed points and connects microscopic models with universal large-scale behavior.",
+      "limitations": "Practical calculations often require approximations; identifying an appropriate effective model remains essential.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Kenneth G. Wilson",
+          "role": "Developed modern renormalization-group analysis of critical phenomena."
+        },
+        {
+          "name": "Leo Kadanoff",
+          "role": "Introduced influential block-spin scaling ideas."
+        }
+      ],
+      "sourceIds": [
+        "ph-rg"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-rg"
+        ],
+        "history": [
+          "ph-rg"
+        ]
+      },
+      "example": "Fluids and magnets can share critical exponents despite having very different microscopic constituents."
+    },
+    {
+      "id": "string-theory",
+      "title": "String theory",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1968,
+        "label": "1968 onward",
+        "precision": "approximate",
+        "note": "The origin in hadron scattering predates the later quantum-gravity interpretation."
+      },
+      "summary": "A family of theoretical frameworks replaces point-like fundamental objects with extended strings whose vibrations represent particle states.",
+      "problem": "Originally model strong-interaction scattering; later investigate a possible quantum description including gravity.",
+      "development": "Veneziano’s 1968 scattering formula initiated dual-resonance models. Nambu, Nielsen, and Susskind developed string interpretations; subsequent work recast the framework as a candidate for unification and quantum gravity.",
+      "limitations": "No unique string-based description of our universe has been experimentally established. Its mathematical successes and useful dualities do not establish it as nature’s final theory.",
+      "standing": "speculative",
+      "contributors": [
+        {
+          "name": "Gabriele Veneziano",
+          "role": "Introduced a formative scattering amplitude."
+        },
+        {
+          "name": "Yoichiro Nambu, Holger Bech Nielsen, and Leonard Susskind",
+          "role": "Developed early string interpretations."
+        }
+      ],
+      "sourceIds": [
+        "ph-string"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-string"
+        ],
+        "history": [
+          "ph-string"
+        ]
+      }
+    },
+    {
+      "id": "quantum-entanglement",
+      "title": "Quantum entanglement",
+      "aliases": [],
+      "discipline": "physics",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1935,
+        "label": "1935",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "A joint quantum state can have correlations that cannot be represented as independent states for its parts.",
+      "problem": "Understand whether quantum theory can give a complete local description of separated systems.",
+      "development": "The 1935 Einstein–Podolsky–Rosen argument and Schrödinger’s analysis exposed the issue. Bell later derived testable inequalities, and experiments demonstrated correlations incompatible with local hidden-variable accounts under their stated assumptions.",
+      "limitations": "Entanglement does not permit controllable faster-than-light signaling. Experiments and applications require careful preparation and protection from environmental noise.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Erwin Schrödinger",
+          "role": "Named and analyzed entanglement."
+        },
+        {
+          "name": "Albert Einstein, Boris Podolsky, and Nathan Rosen",
+          "role": "Formulated the completeness challenge."
+        },
+        {
+          "name": "John Bell",
+          "role": "Made local-hidden-variable claims experimentally testable."
+        },
+        {
+          "name": "John Clauser, Alain Aspect, and Anton Zeilinger",
+          "role": "Developed decisive experimental investigations."
+        }
+      ],
+      "sourceIds": [
+        "ph-entanglement"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-entanglement"
+        ],
+        "history": [
+          "ph-entanglement"
+        ]
+      }
+    },
+    {
+      "id": "metallurgy",
+      "title": "Early metallurgy",
+      "aliases": [],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "method",
+      "date": {
+        "year": -5000,
+        "label": "c. 5000–2600 BCE",
+        "precision": "range",
+        "note": "Broad archaeological period in South Asia; different metallurgical techniques and regions have different chronologies."
+      },
+      "summary": "Heating, hammering, and combining materials allowed communities to extract and shape metals with useful properties.",
+      "problem": "Obtain durable tools and ornaments from naturally occurring minerals and metals.",
+      "development": "Copper working and later smelting emerged through accumulated craft knowledge in several regions. Archaeological evidence from South Asia documents metallurgy alongside ceramics and trade; no individual inventor is identifiable.",
+      "limitations": "The date is a broad regional anchor, not a claim about one worldwide origin. Practical metalworking preceded modern explanations of elements and bonding.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Unknown craft communities",
+          "role": "Developed and transmitted metalworking techniques over generations."
+        }
+      ],
+      "sourceIds": [
+        "ph-metallurgy"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-metallurgy"
+        ],
+        "history": [
+          "ph-metallurgy"
+        ]
+      },
+      "example": "Changing processing conditions or alloy composition changes hardness and workability."
+    },
+    {
+      "id": "four-elements",
+      "title": "The four-element theory",
+      "aliases": [],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": -450,
+        "label": "c. 450 BCE",
+        "precision": "approximate",
+        "note": "Approximate period of the surviving tradition, not a uniquely dated invention."
+      },
+      "summary": "An influential ancient account explained material diversity through combinations of earth, water, air, and fire.",
+      "problem": "Explain how stable basic constituents could produce the changing materials of everyday life.",
+      "development": "Empedocles proposed four roots in the fifth century BCE. Aristotle later reworked elemental accounts, which shaped medicine and natural philosophy for centuries. This is one historical tradition rather than a universal human starting point.",
+      "limitations": "The four elements are not the chemical elements of modern science. The framework is retained here for its historical influence, not its experimental validity.",
+      "standing": "superseded",
+      "contributors": [
+        {
+          "name": "Empedocles",
+          "role": "Proposed four enduring roots and forces of combination and separation."
+        },
+        {
+          "name": "Aristotle",
+          "role": "Developed an influential later elemental framework."
+        }
+      ],
+      "sourceIds": [
+        "ph-empedocles"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-empedocles"
+        ],
+        "history": [
+          "ph-empedocles"
+        ]
+      }
+    },
+    {
+      "id": "alchemy",
+      "title": "Alchemy & laboratory transformation",
+      "aliases": [],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "method",
+      "date": {
+        "year": 300,
+        "label": "c. 300 CE",
+        "precision": "approximate",
+        "note": "Period of Zosimos’s surviving textual tradition; related crafts are earlier and other alchemical traditions have distinct histories."
+      },
+      "summary": "Alchemy joined material crafts with theories of transformation, developing apparatus and techniques alongside now-rejected transmutation goals.",
+      "problem": "Understand and deliberately change the qualities of substances, especially metals.",
+      "development": "Surviving Greco-Egyptian texts associated with Zosimos show craft and philosophical traditions interacting. Arabic-language scholars later expanded alchemical practices and vocabulary; translation transmitted parts of this learning to Latin Europe.",
+      "limitations": "Alchemy encompassed diverse traditions, not a single scientific theory. Ordinary chemical processes cannot transmute one element into another, though useful laboratory practices survived.",
+      "standing": "superseded",
+      "contributors": [
+        {
+          "name": "Zosimos of Panopolis",
+          "role": "Authored influential early alchemical texts."
+        },
+        {
+          "name": "Arabic- and Latin-language practitioners",
+          "role": "Developed and transmitted laboratory operations and theories."
+        }
+      ],
+      "sourceIds": [
+        "ph-alchemy",
+        "ph-arabic-alchemy"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-alchemy",
+          "ph-arabic-alchemy"
+        ],
+        "history": [
+          "ph-alchemy",
+          "ph-arabic-alchemy"
+        ]
+      }
+    },
+    {
+      "id": "phlogiston",
+      "title": "Phlogiston theory",
+      "aliases": [],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1700,
+        "label": "c. 1700",
+        "precision": "approximate",
+        "note": "Early-eighteenth-century formulation associated with Stahl; Becher’s related account appeared earlier."
+      },
+      "summary": "Combustible substances were once thought to release a material principle called phlogiston when burned.",
+      "problem": "Unify burning, metal calcination, and the recovery of metals from ores.",
+      "development": "Stahl’s early-eighteenth-century account organized many laboratory observations into one explanatory scheme. Problems with the increased mass of heated metals later became central to arguments for oxygen chemistry.",
+      "limitations": "Superseded as an account of combustion. It was historically productive as a framework for experiments, but phlogiston was not an identified chemical substance.",
+      "standing": "superseded",
+      "contributors": [
+        {
+          "name": "Georg Ernst Stahl",
+          "role": "Developed and promoted phlogiston theory."
+        },
+        {
+          "name": "Johann Joachim Becher",
+          "role": "Advanced an earlier earth-based account that influenced Stahl."
+        }
+      ],
+      "sourceIds": [
+        "ph-lavoisier"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-lavoisier"
+        ],
+        "history": [
+          "ph-lavoisier"
+        ]
+      }
+    },
+    {
+      "id": "conservation-of-mass",
+      "title": "Conservation of mass in chemistry",
+      "aliases": [],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1789,
+        "label": "1789",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "In a closed chemical reaction, the total mass of reactants and products is effectively unchanged.",
+      "problem": "Account quantitatively for matter when gases enter or leave a reaction vessel.",
+      "development": "Careful weighing helped Lavoisier reorganize chemical analysis and reject explanations that ignored the role of gases. His 1789 textbook made quantitative conservation central to chemical reasoning.",
+      "limitations": "At chemical scales mass changes from energy transfer are normally negligible. Nuclear reactions require mass–energy accounting rather than the simple chemical approximation.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Antoine-Laurent Lavoisier",
+          "role": "Made quantitative mass balance central to chemical analysis."
+        },
+        {
+          "name": "Marie-Anne Paulze Lavoisier",
+          "role": "Recorded, illustrated, and communicated the experimental program."
+        }
+      ],
+      "sourceIds": [
+        "ph-mass",
+        "ph-periodic-history",
+        "ph-lavoisier"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-mass"
+        ],
+        "history": [
+          "ph-periodic-history",
+          "ph-lavoisier"
+        ]
+      }
+    },
+    {
+      "id": "combustion-oxygen",
+      "title": "Oxygen theory of combustion",
+      "aliases": [
+        "Chemical revolution"
+      ],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1777,
+        "label": "1777",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Ordinary burning often combines a fuel with oxygen rather than releasing a hypothetical fire substance.",
+      "problem": "Explain combustion and the gain in mass when metals are heated in air.",
+      "development": "Priestley and Scheele prepared oxygen, while Lavoisier reinterpreted gas experiments to reject phlogiston. His 1777 theory made atmospheric participation central to combustion and respiration.",
+      "limitations": "Modern combustion chemistry is broader than a single oxygen rule, and Lavoisier’s claim that oxygen was essential to all acids was incorrect.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Antoine-Laurent Lavoisier",
+          "role": "Interpreted combustion as combination with a component of air."
+        },
+        {
+          "name": "Joseph Priestley and Carl Wilhelm Scheele",
+          "role": "Independently prepared oxygen."
+        }
+      ],
+      "sourceIds": [
+        "ph-oxygen-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-oxygen-history"
+        ],
+        "history": [
+          "ph-oxygen-history"
+        ]
+      }
+    },
+    {
+      "id": "atomic-theory",
+      "title": "Chemical atomic theory",
+      "aliases": [
+        "Dalton’s atomic theory"
+      ],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1808,
+        "label": "1808",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Elements consist of atoms that combine in characteristic numerical proportions to form compounds.",
+      "problem": "Explain reproducible mass ratios in chemical combinations.",
+      "development": "Dalton’s early-nineteenth-century work connected measurements of gases and chemical composition with relative atomic masses. His 1808 New System of Chemical Philosophy presented a quantitative program distinct from ancient philosophical atomism.",
+      "limitations": "Dalton’s indivisible atoms and identical masses for every atom of an element required revision after subatomic particles and isotopes were discovered.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "John Dalton",
+          "role": "Developed a quantitative chemical atomic theory."
+        },
+        {
+          "name": "Joseph Proust",
+          "role": "Established influential evidence for definite composition."
+        }
+      ],
+      "sourceIds": [
+        "ph-dalton",
+        "ph-atoms-early"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-dalton",
+          "ph-atoms-early"
+        ],
+        "history": [
+          "ph-dalton",
+          "ph-atoms-early"
+        ]
+      }
+    },
+    {
+      "id": "gas-laws",
+      "title": "Quantitative gas laws",
+      "aliases": [],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1662,
+        "label": "1662",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Pressure, volume, temperature, and amount follow regular relationships for gases under suitable conditions.",
+      "problem": "Turn experiments with trapped air into predictable numerical relationships.",
+      "development": "Boyle’s pressure–volume experiments were followed by temperature and volume laws associated with Charles and Gay-Lussac. Their combination eventually produced the ideal-gas equation.",
+      "limitations": "Ideal behavior is an approximation that becomes poor near condensation or at high density. The combined equation is later than Boyle’s original law.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Robert Boyle and Robert Hooke",
+          "role": "Studied pressure and volume experimentally."
+        },
+        {
+          "name": "Jacques Charles and Joseph Louis Gay-Lussac",
+          "role": "Investigated thermal behavior of gases."
+        }
+      ],
+      "sourceIds": [
+        "ph-gas-laws"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-gas-laws"
+        ],
+        "history": [
+          "ph-gas-laws"
+        ]
+      },
+      "equation": {
+        "expression": "PV = nRT",
+        "explanation": "The later ideal-gas synthesis relates pressure P, volume V, amount n, absolute temperature T, and gas constant R."
+      }
+    },
+    {
+      "id": "avogadro-hypothesis",
+      "title": "Avogadro’s molecular hypothesis",
+      "aliases": [],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1811,
+        "label": "1811",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Equal volumes of ideal gases at the same temperature and pressure contain equal numbers of molecules.",
+      "problem": "Reconcile simple reacting-gas volume ratios with chemical atomic theory.",
+      "development": "Avogadro distinguished molecules from constituent atoms and allowed elemental gases to be molecular. Cannizzaro later used this reasoning to clarify atomic and molecular masses for chemists.",
+      "limitations": "The equal-volume rule is an ideal-gas approximation. Avogadro did not measure the modern numerical value of the constant named for him.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Amedeo Avogadro",
+          "role": "Proposed the equal-volume molecular hypothesis."
+        },
+        {
+          "name": "Stanislao Cannizzaro",
+          "role": "Promoted its use in determining consistent atomic masses."
+        }
+      ],
+      "sourceIds": [
+        "ph-avogadro",
+        "ph-gas-laws"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-avogadro",
+          "ph-gas-laws"
+        ],
+        "history": [
+          "ph-avogadro",
+          "ph-gas-laws"
+        ]
+      }
+    },
+    {
+      "id": "electrochemistry",
+      "title": "Electrochemistry",
+      "aliases": [],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1800,
+        "label": "1800–1834",
+        "precision": "range",
+        "note": "From the voltaic pile to Faraday’s quantitative electrolysis laws."
+      },
+      "summary": "Chemical reactions and electric current can drive one another through transfers of electrons.",
+      "problem": "Understand batteries and use electricity to transform or separate substances.",
+      "development": "Volta’s pile provided a sustained electrical source. Electrolysis experiments and Faraday’s quantitative laws linked chemical change with the amount of electric charge passed.",
+      "limitations": "A useful cell needs suitable reactions, interfaces, and transport; a favorable voltage alone does not guarantee a practical battery.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Alessandro Volta",
+          "role": "Built an early sustained-current battery."
+        },
+        {
+          "name": "Humphry Davy",
+          "role": "Used electrolysis to isolate elements."
+        },
+        {
+          "name": "Michael Faraday",
+          "role": "Quantified the relation between charge and electrochemical change."
+        }
+      ],
+      "sourceIds": [
+        "ph-cells",
+        "ph-periodic"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-cells",
+          "ph-periodic"
+        ],
+        "history": [
+          "ph-cells",
+          "ph-periodic"
+        ]
+      }
+    },
+    {
+      "id": "organic-chemistry",
+      "title": "Organic synthesis",
+      "aliases": [
+        "Urea synthesis"
+      ],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "method",
+      "date": {
+        "year": 1828,
+        "label": "1828",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Carbon-containing substances can be investigated and synthesized through ordinary chemical transformations.",
+      "problem": "Determine whether compounds associated with living organisms require a special vital force for their production.",
+      "development": "Wöhler’s preparation of urea in 1828 became an emblem of laboratory organic synthesis. Work with Liebig on isomers and persistent atomic groupings helped shift attention toward molecular arrangement.",
+      "limitations": "One synthesis did not instantly eliminate all vitalist beliefs. Modern organic chemistry is defined by carbon chemistry, not simply by whether a substance comes from life.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Friedrich Wöhler",
+          "role": "Prepared urea from ammonium cyanate."
+        },
+        {
+          "name": "Justus von Liebig",
+          "role": "Developed organic analysis and collaborated on atomic groupings."
+        }
+      ],
+      "sourceIds": [
+        "ph-urea"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-urea"
+        ],
+        "history": [
+          "ph-urea"
+        ]
+      }
+    },
+    {
+      "id": "chemical-structure",
+      "title": "Structural theory of molecules",
+      "aliases": [],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1858,
+        "label": "1858",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "A molecule’s properties depend on which atoms are connected, not only on its elemental composition.",
+      "problem": "Explain why compounds with the same formula can behave differently.",
+      "development": "Kekulé and Couper independently described carbon’s four bonds and its ability to form chains. Structural formulas gave chemists a way to reason about isomers and plan transformations.",
+      "limitations": "Flat formulas do not specify full three-dimensional geometry or electron distribution; stereochemistry and quantum bonding add these layers.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "August Kekulé",
+          "role": "Developed carbon valence and chain structures."
+        },
+        {
+          "name": "Archibald Scott Couper",
+          "role": "Independently proposed carbon connectivity."
+        },
+        {
+          "name": "Aleksandr Butlerov",
+          "role": "Systematized chemical structure theory."
+        }
+      ],
+      "sourceIds": [
+        "ph-structure"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-structure"
+        ],
+        "history": [
+          "ph-structure"
+        ]
+      },
+      "example": "Ethanol and dimethyl ether share a formula but connect their atoms differently."
+    },
+    {
+      "id": "periodic-table",
+      "title": "The periodic table",
+      "aliases": [],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1869,
+        "label": "1869",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Chemical elements show recurring properties when arranged in a systematic sequence.",
+      "problem": "Organize known elements and predict the properties of missing ones.",
+      "development": "Mendeleev and Meyer built on earlier classifications and improving atomic masses. Mendeleev left gaps and made successful predictions; the later atomic-number ordering explained anomalies in mass-based arrangements.",
+      "limitations": "The table organizes patterns rather than replacing theories of bonding. Its modern order and interpretation differ from the 1869 versions.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Dmitri Mendeleev",
+          "role": "Published a predictive periodic arrangement."
+        },
+        {
+          "name": "Julius Lothar Meyer",
+          "role": "Independently developed periodic classification."
+        },
+        {
+          "name": "Alexandre-Émile Béguyer de Chancourtois and John Newlands",
+          "role": "Proposed important earlier periodic arrangements."
+        },
+        {
+          "name": "Henry Moseley",
+          "role": "Later established atomic number as the ordering principle."
+        }
+      ],
+      "sourceIds": [
+        "ph-periodic"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-periodic"
+        ],
+        "history": [
+          "ph-periodic"
+        ]
+      }
+    },
+    {
+      "id": "chemical-kinetics",
+      "title": "Chemical kinetics",
+      "aliases": [],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1864,
+        "label": "1864",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Reaction rates depend on concentrations, temperature, mechanisms, and other conditions.",
+      "problem": "Explain why some chemically favorable changes happen quickly and others barely proceed.",
+      "development": "Guldberg and Waage’s mass-action work joined concentration with reaction behavior. Later kinetic experiments and temperature-dependent rate laws made reaction speed a measurable subject distinct from equilibrium.",
+      "limitations": "Overall reaction orders must be measured or derived from a mechanism; they cannot generally be read from the balanced equation.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Cato Guldberg and Peter Waage",
+          "role": "Developed mass-action reasoning."
+        },
+        {
+          "name": "Svante Arrhenius",
+          "role": "Related rate constants to temperature and activation energy."
+        }
+      ],
+      "sourceIds": [
+        "ph-rates",
+        "ph-mass-action"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-rates",
+          "ph-mass-action"
+        ],
+        "history": [
+          "ph-rates",
+          "ph-mass-action"
+        ]
+      }
+    },
+    {
+      "id": "chemical-equilibrium",
+      "title": "Dynamic chemical equilibrium",
+      "aliases": [],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1864,
+        "label": "1864",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "A reversible reaction can reach a state in which forward and reverse rates balance while reactions continue microscopically.",
+      "problem": "Explain why reactants often remain when a reaction appears to have stopped.",
+      "development": "Mass-action work gave quantitative relations among equilibrium compositions. Later thermodynamics supplied a more general basis using activities and chemical potentials.",
+      "limitations": "Equilibrium means balanced rates, not equal concentrations. Concentration-based formulas are approximations for nonideal mixtures.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Cato Guldberg and Peter Waage",
+          "role": "Developed quantitative mass-action relationships."
+        },
+        {
+          "name": "Henri Louis Le Chatelier",
+          "role": "Formulated a useful qualitative response principle."
+        }
+      ],
+      "sourceIds": [
+        "ph-equilibrium",
+        "ph-mass-action"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-equilibrium",
+          "ph-mass-action"
+        ],
+        "history": [
+          "ph-equilibrium",
+          "ph-mass-action"
+        ]
+      }
+    },
+    {
+      "id": "chemical-thermodynamics",
+      "title": "Chemical thermodynamics",
+      "aliases": [],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1876,
+        "label": "1876–1878",
+        "precision": "range",
+        "note": "Publication period of On the Equilibrium of Heterogeneous Substances."
+      },
+      "summary": "Energy, entropy, and chemical potentials determine equilibrium and the direction of chemical change under specified conditions.",
+      "problem": "Predict which reactions and phases are favored without tracking every molecular collision.",
+      "development": "Gibbs’s work on heterogeneous substances applied thermodynamics to mixtures, phases, and reactions. This connected chemical equilibrium with a unified mathematical framework.",
+      "limitations": "A negative free-energy change does not imply a fast reaction; kinetic barriers can delay a thermodynamically favored process.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "J. Willard Gibbs",
+          "role": "Developed a general thermodynamic treatment of chemical equilibrium."
+        }
+      ],
+      "sourceIds": [
+        "ph-free-energy",
+        "ph-gibbs-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-free-energy",
+          "ph-gibbs-history"
+        ],
+        "history": [
+          "ph-free-energy",
+          "ph-gibbs-history"
+        ]
+      },
+      "equation": {
+        "expression": "ΔG = ΔH − TΔS",
+        "explanation": "At constant temperature, Gibbs-energy change combines enthalpy change ΔH with entropy change ΔS; constant-pressure spontaneity also depends on the actual composition."
+      }
+    },
+    {
+      "id": "stereochemistry",
+      "title": "Stereochemistry",
+      "aliases": [
+        "Molecular chirality"
+      ],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1874,
+        "label": "1874",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Molecules with the same connections can differ in their spatial arrangement and biological or optical behavior.",
+      "problem": "Explain optical activity and differences not captured by flat structural formulas.",
+      "development": "Van ’t Hoff and Le Bel independently proposed tetrahedral arrangements around carbon. Their geometric account connected molecular structure with earlier observations of optical activity.",
+      "limitations": "A drawing must distinguish connectivity, configuration, and changing conformation; not every spatial drawing represents a separate stable substance.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Jacobus van ’t Hoff and Joseph Achille Le Bel",
+          "role": "Independently proposed tetrahedral carbon geometry."
+        },
+        {
+          "name": "Louis Pasteur",
+          "role": "Earlier separated mirror-related tartrate crystals."
+        }
+      ],
+      "sourceIds": [
+        "ph-structure"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-structure"
+        ],
+        "history": [
+          "ph-structure"
+        ]
+      },
+      "example": "Mirror-image molecules can interact differently with a chiral enzyme."
+    },
+    {
+      "id": "chemical-bonding",
+      "title": "The electron-pair chemical bond",
+      "aliases": [
+        "Lewis bonding",
+        "Covalent bond"
+      ],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1916,
+        "label": "1916",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Atoms can form covalent bonds by sharing pairs of electrons, offering an electronic explanation for valence.",
+      "problem": "Explain why atoms connect in characteristic numbers and arrangements.",
+      "development": "Lewis linked chemical combinations with electron pairs and outer-shell configurations. His diagrams translated structural chemistry into an electronic language that quantum chemistry later explained more deeply.",
+      "limitations": "Lewis structures are useful models, but they simplify delocalization, unusual electron counts, and the quantum distribution of charge.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Gilbert Newton Lewis",
+          "role": "Proposed the shared electron-pair bond."
+        },
+        {
+          "name": "Walther Kossel",
+          "role": "Developed a complementary electronic account of ionic bonding."
+        }
+      ],
+      "sourceIds": [
+        "ph-lewis",
+        "ph-lewis-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-lewis"
+        ],
+        "history": [
+          "ph-lewis-history"
+        ]
+      },
+      "example": "A line between two atoms in a Lewis structure represents a shared electron pair."
+    },
+    {
+      "id": "acid-base-theories",
+      "title": "Modern acid–base theories",
+      "aliases": [
+        "Brønsted–Lowry theory",
+        "Lewis acids and bases"
+      ],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1923,
+        "label": "1923",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Acid–base behavior can be described through proton transfer or, more broadly, electron-pair donation and acceptance.",
+      "problem": "Extend acidity beyond a narrow list of aqueous substances.",
+      "development": "Brønsted and Lowry independently emphasized proton donation and acceptance. Lewis’s electron-pair approach widened the concept to reactions without proton transfer.",
+      "limitations": "Which definition is useful depends on the reaction and solvent; acidity is not an absolute property independent of context.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Johannes Brønsted and Thomas Martin Lowry",
+          "role": "Independently formulated proton-transfer definitions."
+        },
+        {
+          "name": "Gilbert Newton Lewis",
+          "role": "Proposed electron-pair acceptor and donor definitions."
+        }
+      ],
+      "sourceIds": [
+        "ph-acids",
+        "ph-lewis",
+        "ph-lewis-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-acids",
+          "ph-lewis"
+        ],
+        "history": [
+          "ph-acids",
+          "ph-lewis-history"
+        ]
+      }
+    },
+    {
+      "id": "quantum-chemistry",
+      "title": "Quantum chemistry",
+      "aliases": [
+        "Theoretical molecular chemistry"
+      ],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1927,
+        "label": "1927",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Quantum mechanics explains molecular energies, bonding, spectra, and reactivity through electronic states.",
+      "problem": "Derive chemical bonds and molecular behavior from microscopic physical principles.",
+      "development": "Heitler and London’s treatment of the hydrogen molecule showed how quantum states could account for a covalent bond. Subsequent valence-bond and orbital approaches expanded the program to complex molecules.",
+      "limitations": "Most many-electron problems require approximations; an apparently precise calculation is only as reliable as its model and numerical treatment.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Walter Heitler and Fritz London",
+          "role": "Gave an early quantum-mechanical treatment of bonding in the hydrogen molecule."
+        },
+        {
+          "name": "Linus Pauling",
+          "role": "Developed quantum-based explanations of chemical bonding."
+        }
+      ],
+      "sourceIds": [
+        "ph-valence",
+        "ph-schrodinger"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-valence",
+          "ph-schrodinger"
+        ],
+        "history": [
+          "ph-valence",
+          "ph-schrodinger"
+        ]
+      }
+    },
+    {
+      "id": "molecular-orbital-theory",
+      "title": "Molecular orbital theory",
+      "aliases": [],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "theory",
+      "date": {
+        "year": 1928,
+        "label": "Late 1920s",
+        "precision": "approximate",
+        "note": "Development spanned several contributions by Hund, Mulliken, and others."
+      },
+      "summary": "Electrons can occupy orbitals spread over a whole molecule rather than belonging to one atom or bond.",
+      "problem": "Explain bonding, delocalization, and properties such as oxygen’s magnetism.",
+      "development": "Hund and Mulliken developed molecular-orbital descriptions in the late 1920s. Combining atomic orbitals creates bonding and antibonding states whose occupancy helps predict molecular stability.",
+      "limitations": "Simple orbital diagrams neglect some electron correlation. Orbitals are model-dependent mathematical objects, not tiny paths followed by electrons.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Friedrich Hund and Robert S. Mulliken",
+          "role": "Developed molecular-orbital theory."
+        }
+      ],
+      "sourceIds": [
+        "ph-orbitals",
+        "ph-chemistry-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-orbitals",
+          "ph-chemistry-history"
+        ],
+        "history": [
+          "ph-orbitals",
+          "ph-chemistry-history"
+        ]
+      }
+    },
+    {
+      "id": "polymer-science",
+      "title": "Macromolecules & polymers",
+      "aliases": [
+        "Macromolecular chemistry"
+      ],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1920,
+        "label": "1920s",
+        "precision": "approximate",
+        "note": "Period of Staudinger’s macromolecular proposal and supporting investigations."
+      },
+      "summary": "Many materials consist of very long covalently connected molecules built from repeating units.",
+      "problem": "Explain the unusual behavior of rubber, cellulose, and other substances once treated as aggregates of small molecules.",
+      "development": "Staudinger argued for long-chain macromolecules and supported the idea through chemical investigations. Acceptance of molecular chains transformed synthetic materials and the study of biological macromolecules.",
+      "limitations": "Chain length, branching, stereochemistry, and processing all affect properties; a repeating-unit formula does not fully characterize a material.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Hermann Staudinger",
+          "role": "Established the macromolecular chain concept."
+        },
+        {
+          "name": "Paul Flory",
+          "role": "Later developed statistical and physical theories of polymer behavior."
+        }
+      ],
+      "sourceIds": [
+        "ph-polymer"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-polymer"
+        ],
+        "history": [
+          "ph-polymer"
+        ]
+      }
+    },
+    {
+      "id": "chromatography",
+      "title": "Chromatography",
+      "aliases": [],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "method",
+      "date": {
+        "year": 1903,
+        "label": "1903–1906",
+        "precision": "range",
+        "note": "Period of Tswett’s early demonstrations and publications; partition methods came later."
+      },
+      "summary": "Mixture components separate because they travel differently between stationary and moving phases.",
+      "problem": "Identify and isolate substances hidden within complex mixtures.",
+      "development": "Tswett separated plant pigments using adsorption columns. Later partition chromatography by Martin and Synge greatly extended analytical separations and enabled biochemical investigations.",
+      "limitations": "A separated peak or band does not by itself prove chemical identity; calibration and complementary measurements are often needed.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Mikhail Tswett",
+          "role": "Developed adsorption chromatography of plant pigments."
+        },
+        {
+          "name": "Archer Martin and Richard Synge",
+          "role": "Developed partition chromatography."
+        }
+      ],
+      "sourceIds": [
+        "ph-chromatography-history",
+        "ph-chemistry-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-chromatography-history"
+        ],
+        "history": [
+          "ph-chromatography-history",
+          "ph-chemistry-history"
+        ]
+      }
+    },
+    {
+      "id": "biochemistry",
+      "title": "Cell-free biochemistry",
+      "aliases": [
+        "Cell-free fermentation",
+        "Enzymatic fermentation"
+      ],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "discovery",
+      "date": {
+        "year": 1897,
+        "label": "1897",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "Chemical reactions characteristic of living cells can be studied through their molecular catalysts outside intact organisms.",
+      "problem": "Test whether fermentation needs living cells or can be explained by chemical agents.",
+      "development": "Buchner demonstrated fermentation in cell-free yeast extracts. The result made enzyme-mediated reactions experimentally accessible and strengthened molecular explanations of biological processes.",
+      "limitations": "Isolated reactions do not capture all the organization and regulation of a living cell; biochemical results must be interpreted in their biological setting.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Eduard Buchner",
+          "role": "Demonstrated cell-free alcoholic fermentation."
+        },
+        {
+          "name": "Hans Buchner and Martin Hahn",
+          "role": "Contributed to the experimental work on yeast extracts."
+        }
+      ],
+      "sourceIds": [
+        "ph-buchner"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-buchner"
+        ],
+        "history": [
+          "ph-buchner"
+        ]
+      }
+    },
+    {
+      "id": "catalysis",
+      "title": "Catalysis",
+      "aliases": [],
+      "discipline": "chemistry",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1835,
+        "label": "1835",
+        "precision": "exact",
+        "note": "Date identifies the landmark formulation or publication described below; development continued afterward."
+      },
+      "summary": "A catalyst changes a reaction’s rate through an alternative pathway and is regenerated during the overall process.",
+      "problem": "Explain how small quantities of a substance can accelerate a chemical transformation.",
+      "development": "Berzelius named catalysis in 1835, drawing together known effects. Earlier work by Elizabeth Fulhame had already described substances participating in reactions without being permanently consumed.",
+      "limitations": "Catalysts do not change the equilibrium constant or make a thermodynamically impossible overall process favorable; they affect the route and rate.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Jöns Jacob Berzelius",
+          "role": "Named and organized the concept of catalysis."
+        },
+        {
+          "name": "Elizabeth Fulhame",
+          "role": "Developed earlier experimental accounts of catalytic reaction cycles."
+        }
+      ],
+      "sourceIds": [
+        "ph-catalysis",
+        "ph-fulhame"
+      ],
+      "claimSources": {
+        "summary": [
+          "ph-catalysis",
+          "ph-fulhame"
+        ],
+        "history": [
+          "ph-catalysis",
+          "ph-fulhame"
+        ]
+      },
+      "example": "Enzymes accelerate selected biochemical reactions while returning to a state able to act again."
+    }
+  ],
+  "relationships": [
+    {
+      "id": "measurement--hydrostatics",
+      "source": "measurement",
+      "target": "hydrostatics",
+      "type": "foundation",
+      "explanation": "Comparing volumes and weights makes buoyancy quantitatively testable.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-buoyancy"
+      ]
+    },
+    {
+      "id": "geometry--hydrostatics",
+      "source": "geometry",
+      "target": "hydrostatics",
+      "type": "foundation",
+      "explanation": "Geometrical arguments describe volumes and the equilibrium of floating shapes.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-buoyancy"
+      ]
+    },
+    {
+      "id": "geometry--geometric-optics",
+      "source": "geometry",
+      "target": "geometric-optics",
+      "type": "foundation",
+      "explanation": "Ray paths, reflection angles, and images are expressed through geometrical constructions.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-optics"
+      ]
+    },
+    {
+      "id": "experimental-method--geometric-optics",
+      "source": "experimental-method",
+      "target": "geometric-optics",
+      "type": "enables",
+      "explanation": "Ibn al-Haytham explicitly combined optical reasoning with tests of light and reflection.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-optics"
+      ]
+    },
+    {
+      "id": "inertia--galilean-relativity",
+      "source": "inertia",
+      "target": "galilean-relativity",
+      "type": "foundation",
+      "explanation": "A force-free body supplies the reference for comparing uniformly moving laboratories.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-relativity"
+      ]
+    },
+    {
+      "id": "inertia--classical-mechanics",
+      "source": "inertia",
+      "target": "classical-mechanics",
+      "type": "influence",
+      "explanation": "Newton’s first law formalized earlier arguments about persistent motion.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-inertia",
+        "ph-newton"
+      ]
+    },
+    {
+      "id": "calculus--classical-mechanics",
+      "source": "calculus",
+      "target": "classical-mechanics",
+      "type": "foundation",
+      "explanation": "Differential and integral reasoning provide tools for predicting continuously changing motion; this is a mathematical dependency rather than a claim that Leibniz’s publication caused Newton’s work.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-newton",
+        "ph-gravity"
+      ]
+    },
+    {
+      "id": "geometry--classical-mechanics",
+      "source": "geometry",
+      "target": "classical-mechanics",
+      "type": "foundation",
+      "explanation": "The Principia expressed many dynamical results through geometrical arguments.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-gravity"
+      ]
+    },
+    {
+      "id": "classical-mechanics--universal-gravitation",
+      "source": "classical-mechanics",
+      "target": "universal-gravitation",
+      "type": "foundation",
+      "explanation": "Laws of motion connect a gravitational force with predicted orbital accelerations.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-gravity"
+      ]
+    },
+    {
+      "id": "classical-mechanics--momentum",
+      "source": "classical-mechanics",
+      "target": "momentum",
+      "type": "foundation",
+      "explanation": "Newtonian force laws describe changes and exchanges of quantity of motion.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-momentum"
+      ]
+    },
+    {
+      "id": "classical-mechanics--least-action",
+      "source": "classical-mechanics",
+      "target": "least-action",
+      "type": "revision",
+      "explanation": "Variational mechanics recasts dynamical laws through an action rather than adding up forces directly.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-action"
+      ]
+    },
+    {
+      "id": "calculus--least-action",
+      "source": "calculus",
+      "target": "least-action",
+      "type": "foundation",
+      "explanation": "Action principles require integration and variations of possible paths.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-action"
+      ]
+    },
+    {
+      "id": "measurement--electric-charge",
+      "source": "measurement",
+      "target": "electric-charge",
+      "type": "enables",
+      "explanation": "Force measurements made qualitative electrical attraction into a quantitative law.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-coulomb"
+      ]
+    },
+    {
+      "id": "classical-mechanics--electric-charge",
+      "source": "classical-mechanics",
+      "target": "electric-charge",
+      "type": "foundation",
+      "explanation": "Coulomb’s quantitative force law can be used within Newtonian equations of motion.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-coulomb"
+      ]
+    },
+    {
+      "id": "geometric-optics--wave-optics",
+      "source": "geometric-optics",
+      "target": "wave-optics",
+      "type": "revision",
+      "explanation": "Wave models explain diffraction and interference that ray approximations omit.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-interference"
+      ]
+    },
+    {
+      "id": "trigonometry--wave-optics",
+      "source": "trigonometry",
+      "target": "wave-optics",
+      "type": "foundation",
+      "explanation": "Path differences and angles determine the positions of interference fringes.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-interference"
+      ]
+    },
+    {
+      "id": "gas-laws--thermodynamics",
+      "source": "gas-laws",
+      "target": "thermodynamics",
+      "type": "enables",
+      "explanation": "Relations among pressure, volume, and temperature make ideal heat-engine cycles calculable.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-carnot"
+      ]
+    },
+    {
+      "id": "calculus--thermodynamics",
+      "source": "calculus",
+      "target": "thermodynamics",
+      "type": "foundation",
+      "explanation": "Integrating pressure over volume changes measures work along an engine cycle.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-carnot"
+      ]
+    },
+    {
+      "id": "electric-charge--electromagnetic-induction",
+      "source": "electric-charge",
+      "target": "electromagnetic-induction",
+      "type": "influence",
+      "explanation": "Quantitative electrical measurements supplied the experimental setting for studying induced currents.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-induction"
+      ]
+    },
+    {
+      "id": "classical-mechanics--energy-conservation",
+      "source": "classical-mechanics",
+      "target": "energy-conservation",
+      "type": "foundation",
+      "explanation": "Mechanical work and kinetic energy form part of the broader energy balance.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-energy"
+      ]
+    },
+    {
+      "id": "thermodynamics--energy-conservation",
+      "source": "thermodynamics",
+      "target": "energy-conservation",
+      "type": "influence",
+      "explanation": "Investigating the connection between heat and work helped establish a common conserved quantity.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-energy"
+      ]
+    },
+    {
+      "id": "gas-laws--kinetic-theory",
+      "source": "gas-laws",
+      "target": "kinetic-theory",
+      "type": "revision",
+      "explanation": "Molecular motion offers a microscopic explanation for empirical pressure and temperature laws.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-gas-model"
+      ]
+    },
+    {
+      "id": "classical-mechanics--kinetic-theory",
+      "source": "classical-mechanics",
+      "target": "kinetic-theory",
+      "type": "foundation",
+      "explanation": "Molecular collisions are modeled using mechanical changes in momentum.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-gas-model"
+      ]
+    },
+    {
+      "id": "probability--kinetic-theory",
+      "source": "probability",
+      "target": "kinetic-theory",
+      "type": "foundation",
+      "explanation": "A distribution of molecular velocities replaces the assumption that every molecule moves equally fast.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-gas-model"
+      ]
+    },
+    {
+      "id": "atomic-theory--kinetic-theory",
+      "source": "atomic-theory",
+      "target": "kinetic-theory",
+      "type": "foundation",
+      "explanation": "The molecular model treats a gas as many discrete material constituents.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-gas-model"
+      ]
+    },
+    {
+      "id": "thermodynamics--entropy",
+      "source": "thermodynamics",
+      "target": "entropy",
+      "type": "influence",
+      "explanation": "Entropy sharpened the second-law restrictions discovered in heat-engine analysis.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-entropy",
+        "ph-statistical"
+      ]
+    },
+    {
+      "id": "energy-conservation--entropy",
+      "source": "energy-conservation",
+      "target": "entropy",
+      "type": "enables",
+      "explanation": "Energy conservation alone permits processes that entropy and the second law exclude.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-entropy",
+        "ph-statistical"
+      ]
+    },
+    {
+      "id": "electric-charge--electromagnetism",
+      "source": "electric-charge",
+      "target": "electromagnetism",
+      "type": "influence",
+      "explanation": "Maxwell incorporated established electrostatic laws into his field synthesis.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-maxwell"
+      ]
+    },
+    {
+      "id": "electromagnetic-induction--electromagnetism",
+      "source": "electromagnetic-induction",
+      "target": "electromagnetism",
+      "type": "influence",
+      "explanation": "Faraday’s induction law became a central part of Maxwell’s unified field equations.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-maxwell"
+      ]
+    },
+    {
+      "id": "wave-optics--electromagnetism",
+      "source": "wave-optics",
+      "target": "electromagnetism",
+      "type": "revision",
+      "explanation": "Electromagnetic waves supplied a physical account of the wave propagation already observed in optics.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-maxwell"
+      ]
+    },
+    {
+      "id": "differential-equations--electromagnetism",
+      "source": "differential-equations",
+      "target": "electromagnetism",
+      "type": "foundation",
+      "explanation": "Coupled field equations describe how electric and magnetic disturbances propagate.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-maxwell"
+      ]
+    },
+    {
+      "id": "kinetic-theory--statistical-mechanics",
+      "source": "kinetic-theory",
+      "target": "statistical-mechanics",
+      "type": "influence",
+      "explanation": "Probabilistic molecular models expanded into a general approach to macroscopic matter.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-brownian",
+        "ph-statistical"
+      ]
+    },
+    {
+      "id": "entropy--statistical-mechanics",
+      "source": "entropy",
+      "target": "statistical-mechanics",
+      "type": "revision",
+      "explanation": "The thermodynamic entropy concept receives a microscopic interpretation in terms of states and probabilities.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-statistical"
+      ]
+    },
+    {
+      "id": "probability--statistical-mechanics",
+      "source": "probability",
+      "target": "statistical-mechanics",
+      "type": "foundation",
+      "explanation": "Ensembles and probability distributions describe collections of microscopic possibilities.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-statistical"
+      ]
+    },
+    {
+      "id": "electromagnetism--electron",
+      "source": "electromagnetism",
+      "target": "electron",
+      "type": "enables",
+      "explanation": "Electric and magnetic deflections let Thomson measure properties of cathode rays.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-atomic-evolution"
+      ]
+    },
+    {
+      "id": "atomic-theory--electron",
+      "source": "atomic-theory",
+      "target": "electron",
+      "type": "revision",
+      "explanation": "The electron showed that chemical atoms have internal constituents.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-atomic-evolution"
+      ]
+    },
+    {
+      "id": "atomic-theory--radioactivity",
+      "source": "atomic-theory",
+      "target": "radioactivity",
+      "type": "revision",
+      "explanation": "Radioactive transformations challenged the immutability of chemical elements.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-chemistry-history"
+      ]
+    },
+    {
+      "id": "thermodynamics--blackbody-quanta",
+      "source": "thermodynamics",
+      "target": "blackbody-quanta",
+      "type": "influence",
+      "explanation": "The thermal radiation spectrum posed the problem that Planck’s law addressed.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-quanta"
+      ]
+    },
+    {
+      "id": "electromagnetism--blackbody-quanta",
+      "source": "electromagnetism",
+      "target": "blackbody-quanta",
+      "type": "foundation",
+      "explanation": "Blackbody radiation is electromagnetic radiation; quantization revised its exchange with matter.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-quanta"
+      ]
+    },
+    {
+      "id": "statistical-mechanics--blackbody-quanta",
+      "source": "statistical-mechanics",
+      "target": "blackbody-quanta",
+      "type": "foundation",
+      "explanation": "Planck used statistical reasoning to relate microscopic energy elements to the observed spectrum.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-quanta"
+      ]
+    },
+    {
+      "id": "galilean-relativity--special-relativity",
+      "source": "galilean-relativity",
+      "target": "special-relativity",
+      "type": "revision",
+      "explanation": "Einstein retained relativity of inertial frames but changed the classical transformations of space and time.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-relativity"
+      ]
+    },
+    {
+      "id": "electromagnetism--special-relativity",
+      "source": "electromagnetism",
+      "target": "special-relativity",
+      "type": "influence",
+      "explanation": "The fixed wave speed in Maxwell’s equations conflicted with classical velocity addition.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-relativity"
+      ]
+    },
+    {
+      "id": "blackbody-quanta--photoelectric-effect",
+      "source": "blackbody-quanta",
+      "target": "photoelectric-effect",
+      "type": "influence",
+      "explanation": "Einstein extended Planck’s energy-frequency relation to the exchange of individual light quanta.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-photoelectric"
+      ]
+    },
+    {
+      "id": "electron--photoelectric-effect",
+      "source": "electron",
+      "target": "photoelectric-effect",
+      "type": "enables",
+      "explanation": "Identifying electrons made the emitted carriers in photoelectric experiments interpretable.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-photoelectric"
+      ]
+    },
+    {
+      "id": "statistical-mechanics--brownian-motion",
+      "source": "statistical-mechanics",
+      "target": "brownian-motion",
+      "type": "influence",
+      "explanation": "Einstein applied molecular statistical reasoning to observable suspended particles.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-brownian"
+      ]
+    },
+    {
+      "id": "microscope--brownian-motion",
+      "source": "microscope",
+      "target": "brownian-motion",
+      "type": "enables",
+      "explanation": "Microscopy made the random motion and displacement of small suspended particles measurable.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-brownian"
+      ]
+    },
+    {
+      "id": "atomic-theory--brownian-motion",
+      "source": "atomic-theory",
+      "target": "brownian-motion",
+      "type": "enables",
+      "explanation": "The molecular hypothesis supplied a mechanism whose measurable consequences could be tested.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-brownian"
+      ]
+    },
+    {
+      "id": "radioactivity--nuclear-atom",
+      "source": "radioactivity",
+      "target": "nuclear-atom",
+      "type": "enables",
+      "explanation": "Radioactive alpha sources provided the projectiles for atomic scattering experiments.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-atomic-evolution"
+      ]
+    },
+    {
+      "id": "electron--nuclear-atom",
+      "source": "electron",
+      "target": "nuclear-atom",
+      "type": "revision",
+      "explanation": "A small charged nucleus replaced models with diffuse positive charge and embedded electrons.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-atomic-evolution"
+      ]
+    },
+    {
+      "id": "special-relativity--general-relativity",
+      "source": "special-relativity",
+      "target": "general-relativity",
+      "type": "foundation",
+      "explanation": "Local freely falling frames retain special-relativistic physics within a curved-spacetime description.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-gr-curvature"
+      ]
+    },
+    {
+      "id": "universal-gravitation--general-relativity",
+      "source": "universal-gravitation",
+      "target": "general-relativity",
+      "type": "revision",
+      "explanation": "Curved spacetime replaces Newton’s force picture while reproducing it in an appropriate weak-field limit.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-gr-curvature"
+      ]
+    },
+    {
+      "id": "differential-geometry--general-relativity",
+      "source": "differential-geometry",
+      "target": "general-relativity",
+      "type": "foundation",
+      "explanation": "Curvature and geodesics provide the mathematical language for gravitational spacetime.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-gr-curvature"
+      ]
+    },
+    {
+      "id": "tensor-calculus--general-relativity",
+      "source": "tensor-calculus",
+      "target": "general-relativity",
+      "type": "foundation",
+      "explanation": "Tensor equations express gravitational relations independently of coordinate choices.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-einstein-history"
+      ]
+    },
+    {
+      "id": "blackbody-quanta--quantum-mechanics",
+      "source": "blackbody-quanta",
+      "target": "quantum-mechanics",
+      "type": "influence",
+      "explanation": "Quantized energy was an early clue that classical microscopic mechanics needed replacement.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-schrodinger"
+      ]
+    },
+    {
+      "id": "photoelectric-effect--quantum-mechanics",
+      "source": "photoelectric-effect",
+      "target": "quantum-mechanics",
+      "type": "influence",
+      "explanation": "Light-quantum evidence helped establish the need for a theory beyond classical waves and particles.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-schrodinger"
+      ]
+    },
+    {
+      "id": "linear-algebra--quantum-mechanics",
+      "source": "linear-algebra",
+      "target": "quantum-mechanics",
+      "type": "foundation",
+      "explanation": "Matrix mechanics represents observables and state transformations algebraically.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-schrodinger"
+      ]
+    },
+    {
+      "id": "differential-equations--quantum-mechanics",
+      "source": "differential-equations",
+      "target": "quantum-mechanics",
+      "type": "foundation",
+      "explanation": "Wave mechanics predicts state evolution through Schrödinger’s differential equation.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-schrodinger"
+      ]
+    },
+    {
+      "id": "probability--quantum-mechanics",
+      "source": "probability",
+      "target": "quantum-mechanics",
+      "type": "foundation",
+      "explanation": "The quantum state yields probabilities for measurement outcomes.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-schrodinger"
+      ]
+    },
+    {
+      "id": "quantum-mechanics--uncertainty-principle",
+      "source": "quantum-mechanics",
+      "target": "uncertainty-principle",
+      "type": "foundation",
+      "explanation": "Position–momentum uncertainty follows from the structure of quantum states and observables.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-uncertainty"
+      ]
+    },
+    {
+      "id": "fourier-analysis--uncertainty-principle",
+      "source": "fourier-analysis",
+      "target": "uncertainty-principle",
+      "type": "foundation",
+      "explanation": "A localized wave packet needs a spread of wavelengths, linking position spread with momentum spread.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-uncertainty"
+      ]
+    },
+    {
+      "id": "quantum-mechanics--quantum-field-theory",
+      "source": "quantum-mechanics",
+      "target": "quantum-field-theory",
+      "type": "foundation",
+      "explanation": "Field quantization extends quantum rules to systems with variable particle number.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-qft",
+        "ph-qed-history"
+      ]
+    },
+    {
+      "id": "special-relativity--quantum-field-theory",
+      "source": "special-relativity",
+      "target": "quantum-field-theory",
+      "type": "foundation",
+      "explanation": "Relativistic field theories must respect spacetime symmetry and relativistic causality.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-qft",
+        "ph-qed-history"
+      ]
+    },
+    {
+      "id": "electromagnetism--quantum-field-theory",
+      "source": "electromagnetism",
+      "target": "quantum-field-theory",
+      "type": "influence",
+      "explanation": "Quantizing the radiation field supplied an early route into quantum field theory.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-qft",
+        "ph-qed-history"
+      ]
+    },
+    {
+      "id": "quantum-mechanics--antimatter",
+      "source": "quantum-mechanics",
+      "target": "antimatter",
+      "type": "foundation",
+      "explanation": "Dirac sought a quantum electron equation with the required relativistic structure.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-antimatter"
+      ]
+    },
+    {
+      "id": "special-relativity--antimatter",
+      "source": "special-relativity",
+      "target": "antimatter",
+      "type": "foundation",
+      "explanation": "Relativistic consistency was central to Dirac’s electron equation and its unexpected solutions.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-antimatter"
+      ]
+    },
+    {
+      "id": "quantum-field-theory--quantum-electrodynamics",
+      "source": "quantum-field-theory",
+      "target": "quantum-electrodynamics",
+      "type": "foundation",
+      "explanation": "QED specializes quantum field theory to electromagnetic interactions of matter and radiation.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-qed-history"
+      ]
+    },
+    {
+      "id": "electromagnetism--quantum-electrodynamics",
+      "source": "electromagnetism",
+      "target": "quantum-electrodynamics",
+      "type": "revision",
+      "explanation": "The quantum theory extends classical electromagnetic fields to photon emission, absorption, and scattering.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-qed-history"
+      ]
+    },
+    {
+      "id": "thermodynamics--superconductivity",
+      "source": "thermodynamics",
+      "target": "superconductivity",
+      "type": "enables",
+      "explanation": "Low-temperature experimental control made the abrupt resistance transition observable.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-superconductivity"
+      ]
+    },
+    {
+      "id": "electron--superconductivity",
+      "source": "electron",
+      "target": "superconductivity",
+      "type": "foundation",
+      "explanation": "Electrical conduction and later pairing theories concern the behavior of electrons in materials.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-superconductivity"
+      ]
+    },
+    {
+      "id": "nuclear-atom--nuclear-fission",
+      "source": "nuclear-atom",
+      "target": "nuclear-fission",
+      "type": "foundation",
+      "explanation": "Fission concerns the splitting of the concentrated atomic nucleus rather than ordinary chemical bonds.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-fission"
+      ]
+    },
+    {
+      "id": "radioactivity--nuclear-fission",
+      "source": "radioactivity",
+      "target": "nuclear-fission",
+      "type": "enables",
+      "explanation": "Radiochemical techniques identified the unexpected products of neutron-bombarded uranium.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-fission"
+      ]
+    },
+    {
+      "id": "special-relativity--nuclear-fission",
+      "source": "special-relativity",
+      "target": "nuclear-fission",
+      "type": "foundation",
+      "explanation": "Mass–energy equivalence explains the large energy released by a small mass difference.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-fission"
+      ]
+    },
+    {
+      "id": "quantum-mechanics--semiconductor-band-theory",
+      "source": "quantum-mechanics",
+      "target": "semiconductor-band-theory",
+      "type": "foundation",
+      "explanation": "Solving a quantum electron problem in a periodic potential leads to allowed energy bands.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-bands"
+      ]
+    },
+    {
+      "id": "chemical-bonding--semiconductor-band-theory",
+      "source": "chemical-bonding",
+      "target": "semiconductor-band-theory",
+      "type": "foundation",
+      "explanation": "Combining the levels of many bonded atoms provides a route to understanding continuous bands.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-bands"
+      ]
+    },
+    {
+      "id": "quantum-field-theory--gauge-theory",
+      "source": "quantum-field-theory",
+      "target": "gauge-theory",
+      "type": "foundation",
+      "explanation": "Local symmetry is imposed on fields to construct their interactions.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-gauge"
+      ]
+    },
+    {
+      "id": "group-theory--gauge-theory",
+      "source": "group-theory",
+      "target": "gauge-theory",
+      "type": "foundation",
+      "explanation": "Continuous symmetry groups organize the allowed internal transformations and force fields.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-gauge"
+      ]
+    },
+    {
+      "id": "electromagnetism--gauge-theory",
+      "source": "electromagnetism",
+      "target": "gauge-theory",
+      "type": "influence",
+      "explanation": "Yang and Mills explicitly generalized the gauge structure familiar from electromagnetism.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-gauge"
+      ]
+    },
+    {
+      "id": "group-theory--quark-model",
+      "source": "group-theory",
+      "target": "quark-model",
+      "type": "foundation",
+      "explanation": "Symmetry-based patterns helped organize hadrons into constituent multiplets.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-quarks"
+      ]
+    },
+    {
+      "id": "gauge-theory--standard-model",
+      "source": "gauge-theory",
+      "target": "standard-model",
+      "type": "foundation",
+      "explanation": "Gauge structures underpin the strong and electroweak interactions in the model.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-standard"
+      ]
+    },
+    {
+      "id": "quark-model--standard-model",
+      "source": "quark-model",
+      "target": "standard-model",
+      "type": "influence",
+      "explanation": "The quark constituents became matter fields in the theory of strong interactions.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-standard"
+      ]
+    },
+    {
+      "id": "quantum-electrodynamics--standard-model",
+      "source": "quantum-electrodynamics",
+      "target": "standard-model",
+      "type": "influence",
+      "explanation": "The successful quantum electromagnetic theory became part of the broader electroweak description.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-standard"
+      ]
+    },
+    {
+      "id": "quantum-field-theory--standard-model",
+      "source": "quantum-field-theory",
+      "target": "standard-model",
+      "type": "foundation",
+      "explanation": "Particle fields and their interactions supply the model’s common formal framework.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-standard"
+      ]
+    },
+    {
+      "id": "statistical-mechanics--renormalization-group",
+      "source": "statistical-mechanics",
+      "target": "renormalization-group",
+      "type": "influence",
+      "explanation": "Critical behavior in many-particle systems motivated Wilson’s scaling analysis.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-rg"
+      ]
+    },
+    {
+      "id": "quantum-field-theory--renormalization-group",
+      "source": "quantum-field-theory",
+      "target": "renormalization-group",
+      "type": "influence",
+      "explanation": "Field-theory renormalization supplied methods later connected with critical phenomena.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-rg"
+      ]
+    },
+    {
+      "id": "quantum-field-theory--string-theory",
+      "source": "quantum-field-theory",
+      "target": "string-theory",
+      "type": "influence",
+      "explanation": "Difficulties applying familiar field-theory methods to hadron scattering motivated alternative dual models.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-string"
+      ]
+    },
+    {
+      "id": "quantum-mechanics--string-theory",
+      "source": "quantum-mechanics",
+      "target": "string-theory",
+      "type": "foundation",
+      "explanation": "String descriptions retain quantum principles while changing the objects being quantized.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-string"
+      ]
+    },
+    {
+      "id": "quantum-mechanics--quantum-entanglement",
+      "source": "quantum-mechanics",
+      "target": "quantum-entanglement",
+      "type": "foundation",
+      "explanation": "Joint quantum states permit correlations that cannot be reduced to independent states for the parts.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-entanglement"
+      ]
+    },
+    {
+      "id": "probability--quantum-entanglement",
+      "source": "probability",
+      "target": "quantum-entanglement",
+      "type": "foundation",
+      "explanation": "Experimental tests compare correlations and joint outcome probabilities.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-entanglement"
+      ]
+    },
+    {
+      "id": "four-elements--alchemy",
+      "source": "four-elements",
+      "target": "alchemy",
+      "type": "influence",
+      "explanation": "Greco-Egyptian alchemy combined theories of material transformation with craft practices.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-alchemy"
+      ]
+    },
+    {
+      "id": "metallurgy--alchemy",
+      "source": "metallurgy",
+      "target": "alchemy",
+      "type": "enables",
+      "explanation": "Metalworking supplied practical transformations and apparatus for alchemical investigation.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-alchemy"
+      ]
+    },
+    {
+      "id": "alchemy--phlogiston",
+      "source": "alchemy",
+      "target": "phlogiston",
+      "type": "influence",
+      "explanation": "Earlier material-transformation traditions formed part of the setting for phlogiston accounts of metals and burning.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-lavoisier"
+      ]
+    },
+    {
+      "id": "phlogiston--combustion-oxygen",
+      "source": "phlogiston",
+      "target": "combustion-oxygen",
+      "type": "revision",
+      "explanation": "Oxygen chemistry replaced the release of phlogiston with combination with a component of air.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-oxygen-history"
+      ]
+    },
+    {
+      "id": "measurement--combustion-oxygen",
+      "source": "measurement",
+      "target": "combustion-oxygen",
+      "type": "enables",
+      "explanation": "Quantitative weighing and gas collection distinguished oxygen uptake from hypothetical material loss.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-oxygen-history"
+      ]
+    },
+    {
+      "id": "combustion-oxygen--conservation-of-mass",
+      "source": "combustion-oxygen",
+      "target": "conservation-of-mass",
+      "type": "influence",
+      "explanation": "Accounting for gases helped make mass balance explicit in the chemical revolution.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-lavoisier"
+      ]
+    },
+    {
+      "id": "measurement--conservation-of-mass",
+      "source": "measurement",
+      "target": "conservation-of-mass",
+      "type": "enables",
+      "explanation": "Closed-vessel weighing reveals whether all reactants and products have been counted.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-lavoisier"
+      ]
+    },
+    {
+      "id": "conservation-of-mass--atomic-theory",
+      "source": "conservation-of-mass",
+      "target": "atomic-theory",
+      "type": "foundation",
+      "explanation": "Quantitative mass relationships constrain possible combinations of atoms.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-dalton",
+        "ph-atoms-early"
+      ]
+    },
+    {
+      "id": "gas-laws--atomic-theory",
+      "source": "gas-laws",
+      "target": "atomic-theory",
+      "type": "influence",
+      "explanation": "Dalton’s work on gases and relative masses helped shape his atomic program.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-dalton"
+      ]
+    },
+    {
+      "id": "atomism--atomic-theory",
+      "source": "atomism",
+      "target": "atomic-theory",
+      "type": "revision",
+      "explanation": "Both accounts use discrete constituents, but Dalton’s theory introduced quantitative chemical tests; this edge compares frameworks rather than asserting direct transmission.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-atoms-early",
+        "ph-dalton"
+      ]
+    },
+    {
+      "id": "measurement--gas-laws",
+      "source": "measurement",
+      "target": "gas-laws",
+      "type": "enables",
+      "explanation": "Pressure and volume instruments make numerical relationships in air experimentally accessible.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-gas-laws"
+      ]
+    },
+    {
+      "id": "algebra--gas-laws",
+      "source": "algebra",
+      "target": "gas-laws",
+      "type": "foundation",
+      "explanation": "Proportionalities among gas variables can be combined and rearranged as equations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-gas-laws"
+      ]
+    },
+    {
+      "id": "atomic-theory--avogadro-hypothesis",
+      "source": "atomic-theory",
+      "target": "avogadro-hypothesis",
+      "type": "revision",
+      "explanation": "Distinguishing molecules from atoms resolved conflicts in combining-gas ratios.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-avogadro",
+        "ph-gas-laws"
+      ]
+    },
+    {
+      "id": "gas-laws--avogadro-hypothesis",
+      "source": "gas-laws",
+      "target": "avogadro-hypothesis",
+      "type": "influence",
+      "explanation": "Measured gas-volume ratios motivated a molecular interpretation of equal volumes.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-avogadro",
+        "ph-gas-laws"
+      ]
+    },
+    {
+      "id": "electric-charge--electrochemistry",
+      "source": "electric-charge",
+      "target": "electrochemistry",
+      "type": "enables",
+      "explanation": "Electrical currents provide a controllable way to drive chemical transformations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-cells",
+        "ph-periodic"
+      ]
+    },
+    {
+      "id": "electrochemistry--periodic-table",
+      "source": "electrochemistry",
+      "target": "periodic-table",
+      "type": "enables",
+      "explanation": "Electrolysis isolated additional elements and helped reveal families with similar properties.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-periodic"
+      ]
+    },
+    {
+      "id": "atomic-theory--organic-chemistry",
+      "source": "atomic-theory",
+      "target": "organic-chemistry",
+      "type": "foundation",
+      "explanation": "Elemental composition and atomic groupings made organic reactions amenable to chemical analysis.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-urea"
+      ]
+    },
+    {
+      "id": "organic-chemistry--chemical-structure",
+      "source": "organic-chemistry",
+      "target": "chemical-structure",
+      "type": "influence",
+      "explanation": "Isomers and persistent atomic groupings highlighted the importance of molecular arrangement.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-urea",
+        "ph-structure"
+      ]
+    },
+    {
+      "id": "atomic-theory--chemical-structure",
+      "source": "atomic-theory",
+      "target": "chemical-structure",
+      "type": "foundation",
+      "explanation": "Structural formulas specify arrangements of the atoms already used to represent composition.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-structure"
+      ]
+    },
+    {
+      "id": "atomic-theory--periodic-table",
+      "source": "atomic-theory",
+      "target": "periodic-table",
+      "type": "foundation",
+      "explanation": "Relative atomic masses supplied an early quantitative axis for ordering the elements.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-periodic"
+      ]
+    },
+    {
+      "id": "avogadro-hypothesis--periodic-table",
+      "source": "avogadro-hypothesis",
+      "target": "periodic-table",
+      "type": "influence",
+      "explanation": "Cannizzaro’s use of molecular ideas clarified atomic masses before major periodic classifications.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-avogadro",
+        "ph-periodic"
+      ]
+    },
+    {
+      "id": "atomic-theory--chemical-kinetics",
+      "source": "atomic-theory",
+      "target": "chemical-kinetics",
+      "type": "foundation",
+      "explanation": "Reacting particles and their concentrations supply a microscopic interpretation of reaction rates.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-rates",
+        "ph-mass-action"
+      ]
+    },
+    {
+      "id": "differential-equations--chemical-kinetics",
+      "source": "differential-equations",
+      "target": "chemical-kinetics",
+      "type": "foundation",
+      "explanation": "Rate laws become equations for how concentrations change with time.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-rates",
+        "ph-mass-action"
+      ]
+    },
+    {
+      "id": "measurement--chemical-equilibrium",
+      "source": "measurement",
+      "target": "chemical-equilibrium",
+      "type": "enables",
+      "explanation": "Quantitative composition measurements reveal stable ratios in reversible reactions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-equilibrium",
+        "ph-mass-action"
+      ]
+    },
+    {
+      "id": "chemical-kinetics--chemical-equilibrium",
+      "source": "chemical-kinetics",
+      "target": "chemical-equilibrium",
+      "type": "foundation",
+      "explanation": "Equal forward and reverse rates explain how constant composition can coexist with continuing molecular reactions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-equilibrium"
+      ]
+    },
+    {
+      "id": "thermodynamics--chemical-thermodynamics",
+      "source": "thermodynamics",
+      "target": "chemical-thermodynamics",
+      "type": "influence",
+      "explanation": "Gibbs extended thermodynamic reasoning to reacting mixtures and coexisting phases.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-free-energy",
+        "ph-gibbs-history"
+      ]
+    },
+    {
+      "id": "entropy--chemical-thermodynamics",
+      "source": "entropy",
+      "target": "chemical-thermodynamics",
+      "type": "foundation",
+      "explanation": "Entropy and energy together determine equilibrium criteria under suitable constraints.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-free-energy",
+        "ph-gibbs-history"
+      ]
+    },
+    {
+      "id": "chemical-equilibrium--chemical-thermodynamics",
+      "source": "chemical-equilibrium",
+      "target": "chemical-thermodynamics",
+      "type": "revision",
+      "explanation": "Chemical potentials generalize equilibrium relationships beyond simple concentration-based rules.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-free-energy",
+        "ph-gibbs-history"
+      ]
+    },
+    {
+      "id": "chemical-structure--stereochemistry",
+      "source": "chemical-structure",
+      "target": "stereochemistry",
+      "type": "revision",
+      "explanation": "Tetrahedral geometry added spatial distinctions to earlier connectivity formulas.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-structure"
+      ]
+    },
+    {
+      "id": "geometry--stereochemistry",
+      "source": "geometry",
+      "target": "stereochemistry",
+      "type": "foundation",
+      "explanation": "Three-dimensional arrangements and mirror symmetry distinguish molecular configurations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-structure"
+      ]
+    },
+    {
+      "id": "electron--chemical-bonding",
+      "source": "electron",
+      "target": "chemical-bonding",
+      "type": "enables",
+      "explanation": "The electron supplied the constituent that Lewis used to explain valence and shared pairs.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-lewis-history"
+      ]
+    },
+    {
+      "id": "chemical-structure--chemical-bonding",
+      "source": "chemical-structure",
+      "target": "chemical-bonding",
+      "type": "revision",
+      "explanation": "Electron pairs supplied a proposed physical explanation for the bonds in structural formulas.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-lewis-history"
+      ]
+    },
+    {
+      "id": "periodic-table--chemical-bonding",
+      "source": "periodic-table",
+      "target": "chemical-bonding",
+      "type": "foundation",
+      "explanation": "Recurring outer-shell patterns help explain recurring valences across element groups.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-lewis",
+        "ph-chemistry-history"
+      ]
+    },
+    {
+      "id": "chemical-bonding--acid-base-theories",
+      "source": "chemical-bonding",
+      "target": "acid-base-theories",
+      "type": "foundation",
+      "explanation": "Lewis’s acid–base definition uses electron-pair donation and acceptance.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-lewis-history"
+      ]
+    },
+    {
+      "id": "chemical-equilibrium--acid-base-theories",
+      "source": "chemical-equilibrium",
+      "target": "acid-base-theories",
+      "type": "foundation",
+      "explanation": "Reversible proton transfer can be quantified with equilibrium constants.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-acids"
+      ]
+    },
+    {
+      "id": "quantum-mechanics--quantum-chemistry",
+      "source": "quantum-mechanics",
+      "target": "quantum-chemistry",
+      "type": "foundation",
+      "explanation": "The molecular Schrödinger problem turns quantum principles into predictions about chemical bonds.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-valence",
+        "ph-schrodinger"
+      ]
+    },
+    {
+      "id": "chemical-bonding--quantum-chemistry",
+      "source": "chemical-bonding",
+      "target": "quantum-chemistry",
+      "type": "revision",
+      "explanation": "Quantum states provide an explanation for electron-pair bonding beyond the original Lewis picture.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-valence"
+      ]
+    },
+    {
+      "id": "quantum-chemistry--molecular-orbital-theory",
+      "source": "quantum-chemistry",
+      "target": "molecular-orbital-theory",
+      "type": "foundation",
+      "explanation": "Molecular orbitals are one quantum framework for describing electrons distributed across atoms.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-orbitals",
+        "ph-chemistry-history"
+      ]
+    },
+    {
+      "id": "linear-algebra--molecular-orbital-theory",
+      "source": "linear-algebra",
+      "target": "molecular-orbital-theory",
+      "type": "foundation",
+      "explanation": "Linear combinations of atomic states provide approximate molecular orbitals.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-orbitals"
+      ]
+    },
+    {
+      "id": "chemical-structure--polymer-science",
+      "source": "chemical-structure",
+      "target": "polymer-science",
+      "type": "foundation",
+      "explanation": "Long covalent chains extend structural chemistry from small molecules to macromolecules.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-polymer"
+      ]
+    },
+    {
+      "id": "chemical-bonding--polymer-science",
+      "source": "chemical-bonding",
+      "target": "polymer-science",
+      "type": "foundation",
+      "explanation": "Covalent connectivity distinguishes a macromolecule from a loose aggregate of small molecules.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-polymer"
+      ]
+    },
+    {
+      "id": "experimental-method--chromatography",
+      "source": "experimental-method",
+      "target": "chromatography",
+      "type": "enables",
+      "explanation": "Controlled separation and comparison of fractions turn mixtures into experimentally distinguishable components.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-chromatography-history"
+      ]
+    },
+    {
+      "id": "organic-chemistry--biochemistry",
+      "source": "organic-chemistry",
+      "target": "biochemistry",
+      "type": "influence",
+      "explanation": "The laboratory study of organic substances supplied methods and questions for cell-free biochemical reactions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-buchner"
+      ]
+    },
+    {
+      "id": "catalysis--biochemistry",
+      "source": "catalysis",
+      "target": "biochemistry",
+      "type": "foundation",
+      "explanation": "Enzymes explain how fermentation can proceed through catalysts in extracts without intact living cells.",
+      "evidence": "documented",
+      "sourceIds": [
+        "ph-buchner"
+      ]
+    },
+    {
+      "id": "experimental-method--catalysis",
+      "source": "experimental-method",
+      "target": "catalysis",
+      "type": "enables",
+      "explanation": "Comparing otherwise similar reactions reveals acceleration by a substance that is regenerated.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "ph-catalysis",
+        "ph-fulhame"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ph-buoyancy",
+      "title": "Archimedes’ Principle and Buoyancy",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/14-4-archimedes-principle-and-buoyancy",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-atoms-early",
+      "title": "Early Ideas in Atomic Theory",
+      "url": "https://openstax.org/books/chemistry/pages/2-1-early-ideas-in-atomic-theory",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-inertia",
+      "title": "Newton’s First Law",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/5-2-newtons-first-law",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-newton",
+      "title": "Newton’s Second Law",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-gravity",
+      "title": "Newton’s Law of Universal Gravitation",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/13-1-newtons-law-of-universal-gravitation",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-momentum",
+      "title": "Linear Momentum",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/9-1-linear-momentum",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-relativity",
+      "title": "Invariance of Physical Laws",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/5-1-invariance-of-physical-laws",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-interference",
+      "title": "Young’s Double-Slit Interference",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/3-1-youngs-double-slit-interference",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-carnot",
+      "title": "The Carnot Cycle",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-induction",
+      "title": "Faraday’s Law",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/13-1-faradays-law",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-energy",
+      "title": "First Law of Thermodynamics",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-gas-model",
+      "title": "Molecular Model of an Ideal Gas",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-entropy",
+      "title": "Entropy",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-maxwell",
+      "title": "Maxwell’s Equations and Electromagnetic Waves",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/16-1-maxwells-equations-and-electromagnetic-waves",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-statistical",
+      "title": "Entropy on a Microscopic Scale",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-7-entropy-on-a-microscopic-scale",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-quanta",
+      "title": "Blackbody Radiation",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/6-1-blackbody-radiation",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-photoelectric",
+      "title": "Photoelectric Effect",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/6-2-photoelectric-effect",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-schrodinger",
+      "title": "The Schrödinger Equation",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/7-3-the-schrodinger-equation",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-uncertainty",
+      "title": "The Heisenberg Uncertainty Principle",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/7-2-the-heisenberg-uncertainty-principle",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-atomic-evolution",
+      "title": "Evolution of Atomic Theory",
+      "url": "https://openstax.org/books/chemistry-2e/pages/2-2-evolution-of-atomic-theory",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-gas-laws",
+      "title": "Relating Pressure, Volume, Amount, and Temperature",
+      "url": "https://openstax.org/books/chemistry-2e/pages/9-2-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-rates",
+      "title": "Rate Laws",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-3-rate-laws",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-equilibrium",
+      "title": "Chemical Equilibria",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-1-chemical-equilibria",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-free-energy",
+      "title": "Free Energy",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-4-free-energy",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-lewis",
+      "title": "Lewis Symbols and Structures",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-3-lewis-symbols-and-structures",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-acids",
+      "title": "Brønsted–Lowry Acids and Bases",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-1-bronsted-lowry-acids-and-bases",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-orbitals",
+      "title": "Molecular Orbital Theory",
+      "url": "https://openstax.org/books/chemistry-2e/pages/8-4-molecular-orbital-theory",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-catalysis",
+      "title": "Catalysis",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-7-catalysis",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-cells",
+      "title": "Galvanic Cells",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-2-galvanic-cells",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-structure",
+      "title": "Development of Chemical Bonding Theory",
+      "url": "https://openstax.org/books/organic-chemistry/pages/1-4-development-of-chemical-bonding-theory",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-valence",
+      "title": "Valence Bond Theory",
+      "url": "https://openstax.org/books/chemistry-2e/pages/8-1-valence-bond-theory",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-lavoisier",
+      "title": "The Chemical Revolution of Antoine-Laurent Lavoisier",
+      "url": "https://www.acs.org/education/whatischemistry/landmarks/lavoisier.html",
+      "publisher": "American Chemical Society"
+    },
+    {
+      "id": "ph-periodic",
+      "title": "Development of the periodic table",
+      "url": "https://periodic-table.rsc.org/history/about",
+      "publisher": "Royal Society of Chemistry"
+    },
+    {
+      "id": "ph-dalton",
+      "title": "John Dalton — the man and the myth",
+      "url": "https://pubs.rsc.org/en/content/articlehtml/2022/dt/d1dt04135e",
+      "publisher": "Royal Society of Chemistry"
+    },
+    {
+      "id": "ph-urea",
+      "title": "Justus von Liebig and Friedrich Wöhler",
+      "url": "https://www.sciencehistory.org/education/scientific-biographies/justus-von-liebig-and-friedrich-wohler/",
+      "publisher": "Science History Institute"
+    },
+    {
+      "id": "ph-alchemy",
+      "title": "The Secrets of Alchemy",
+      "url": "https://www.sciencehistory.org/stories/magazine/the-secrets-of-alchemy/",
+      "publisher": "Science History Institute"
+    },
+    {
+      "id": "ph-arabic-alchemy",
+      "title": "Al-Kimiya: Notes on Arabic Alchemy",
+      "url": "https://www.sciencehistory.org/stories/magazine/al-kimiya-notes-on-arabic-alchemy/",
+      "publisher": "Science History Institute"
+    },
+    {
+      "id": "ph-metallurgy",
+      "title": "South Asia, 8000–2000 B.C.",
+      "url": "https://www.metmuseum.org/es/toah/ht/02/ssa.html",
+      "publisher": "The Metropolitan Museum of Art"
+    },
+    {
+      "id": "ph-mass-action",
+      "title": "Guldberg and Waage and the law of mass action",
+      "url": "https://pubs.acs.org/doi/abs/10.1021/ed042p548",
+      "publisher": "American Chemical Society"
+    },
+    {
+      "id": "ph-buchner",
+      "title": "Cell-free fermentation — Nobel Lecture",
+      "url": "https://www.nobelprize.org/uploads/2018/06/buchner-lecture.pdf",
+      "publisher": "Nobel Foundation / Eduard Buchner"
+    },
+    {
+      "id": "ph-polymer",
+      "title": "Macromolecular Chemistry — Nobel Lecture",
+      "url": "https://www.nobelprize.org/uploads/2018/06/staudinger-lecture.pdf",
+      "publisher": "Nobel Foundation / Hermann Staudinger"
+    },
+    {
+      "id": "ph-brownian",
+      "title": "Einstein and Brownian Motion",
+      "url": "https://www.aps.org/apsnews/2005/02/this-month-in-physics-history",
+      "publisher": "American Physical Society"
+    },
+    {
+      "id": "ph-gr-curvature",
+      "title": "Gravity: from weightlessness to curvature",
+      "url": "https://www.einstein-online.info/en/spotlight/geometry_force/",
+      "publisher": "Max Planck Institute for Gravitational Physics"
+    },
+    {
+      "id": "ph-qft",
+      "title": "Introduction to Quantum Field Theory",
+      "url": "https://www.damtp.cam.ac.uk/user/tong/qft/qfthtml/S0.html",
+      "publisher": "University of Cambridge / David Tong"
+    },
+    {
+      "id": "ph-qed-history",
+      "title": "Quantum Field Theory: Afterword",
+      "url": "https://www.damtp.cam.ac.uk/user/tong/qft/six.pdf",
+      "publisher": "University of Cambridge / David Tong"
+    },
+    {
+      "id": "ph-antimatter",
+      "title": "Antimatter",
+      "url": "https://home.cern/science/physics/antimatter/",
+      "publisher": "CERN"
+    },
+    {
+      "id": "ph-quarks",
+      "title": "Who invented quarks?",
+      "url": "https://home.cern/who-invented-quarks/",
+      "publisher": "CERN"
+    },
+    {
+      "id": "ph-standard",
+      "title": "The Standard Model",
+      "url": "https://home.web.cern.ch/science/physics/standard-model",
+      "publisher": "CERN"
+    },
+    {
+      "id": "ph-gauge",
+      "title": "Conservation of Isotopic Spin and Isotopic Gauge Invariance",
+      "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.96.191",
+      "publisher": "American Physical Society / C. N. Yang and R. L. Mills"
+    },
+    {
+      "id": "ph-rg",
+      "title": "The Renormalization Group and Critical Phenomena — Nobel Lecture",
+      "url": "https://www.nobelprize.org/uploads/2018/06/wilson-lecture-2.pdf",
+      "publisher": "Nobel Foundation / Kenneth G. Wilson"
+    },
+    {
+      "id": "ph-entanglement",
+      "title": "How entanglement has become a powerful tool",
+      "url": "https://www.nobelprize.org/uploads/2022/10/popular-physicsprize2022-3.pdf",
+      "publisher": "Royal Swedish Academy of Sciences"
+    },
+    {
+      "id": "ph-superconductivity",
+      "title": "Advanced information on the Nobel Prize in Physics 2003",
+      "url": "https://www.nobelprize.org/uploads/2018/06/advanced-physicsprize2003-4.pdf",
+      "publisher": "Royal Swedish Academy of Sciences"
+    },
+    {
+      "id": "ph-optics",
+      "title": "Ibn al-Haytham — Biography",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Al-Haytham/",
+      "publisher": "University of St Andrews / MacTutor"
+    },
+    {
+      "id": "ph-action",
+      "title": "Variational Principles",
+      "url": "https://mathshistory.st-andrews.ac.uk/Extras/Moiseiwitsch_Variational_Principles/",
+      "publisher": "University of St Andrews / B. L. Moiseiwitsch"
+    },
+    {
+      "id": "ph-coulomb",
+      "title": "Coulomb’s Law",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-bands",
+      "title": "Band Theory of Solids",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/9-5-band-theory-of-solids",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-fission",
+      "title": "Otto Hahn, Lise Meitner, and Fritz Strassmann",
+      "url": "https://www.sciencehistory.org/education/scientific-biographies/otto-hahn-lise-meitner-and-fritz-strassmann/",
+      "publisher": "Science History Institute"
+    },
+    {
+      "id": "ph-string",
+      "title": "The roots and fruits of string theory",
+      "url": "https://cerncourier.com/a/the-roots-and-fruits-of-string-theory/",
+      "publisher": "CERN Courier / Gabriele Veneziano"
+    },
+    {
+      "id": "ph-chemistry-history",
+      "title": "The Nobel Prize in Chemistry: The development of modern chemistry",
+      "url": "https://www.nobelprize.org/prizes/themes/the-nobel-prize-in-chemistry-the-development-of-modern-chemistry/",
+      "publisher": "Nobel Foundation"
+    },
+    {
+      "id": "ph-gibbs-history",
+      "title": "J. Willard Gibbs — Biography",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Gibbs/",
+      "publisher": "University of St Andrews / MacTutor"
+    },
+    {
+      "id": "ph-empedocles",
+      "title": "Empedocles",
+      "url": "https://plato.stanford.edu/entries/empedocles/",
+      "publisher": "Stanford Encyclopedia of Philosophy"
+    },
+    {
+      "id": "ph-avogadro",
+      "title": "Assembling the Modern Periodic Table",
+      "url": "https://inchemistry.acs.org/atomic-news/assembling-the-periodic-table.html",
+      "publisher": "American Chemical Society"
+    },
+    {
+      "id": "ph-fulhame",
+      "title": "Improving Representation of Women in the Chemical Engineering Undergraduate Curriculum",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jchemed.4c00117",
+      "publisher": "American Chemical Society"
+    },
+    {
+      "id": "ph-galileo-history",
+      "title": "Galileo Galilei — Biography",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Galileo/",
+      "publisher": "University of St Andrews / MacTutor"
+    },
+    {
+      "id": "ph-lewis-history",
+      "title": "Gilbert Newton Lewis",
+      "url": "https://www.sciencehistory.org/education/scientific-biographies/gilbert-newton-lewis/",
+      "publisher": "Science History Institute"
+    },
+    {
+      "id": "ph-chromatography-history",
+      "title": "Exploring Thin-Layer and Column Chromatography Fundamentals",
+      "url": "https://pubs.acs.org/doi/abs/10.1021/acs.jchemed.4c00957",
+      "publisher": "American Chemical Society"
+    },
+    {
+      "id": "ph-oxygen-history",
+      "title": "Joseph Priestley, Discoverer of Oxygen",
+      "url": "https://www.acs.org/education/whatischemistry/landmarks/josephpriestleyoxygen.html",
+      "publisher": "American Chemical Society"
+    },
+    {
+      "id": "ph-mass",
+      "title": "Phases and Classification of Matter",
+      "url": "https://openstax.org/books/chemistry-2e/pages/1-2-phases-and-classification-of-matter",
+      "publisher": "OpenStax / Rice University"
+    },
+    {
+      "id": "ph-periodic-history",
+      "title": "The evolution of the periodic table",
+      "url": "https://edu.rsc.org/feature/the-evolution-of-the-periodic-table/3009652.article",
+      "publisher": "Royal Society of Chemistry"
+    },
+    {
+      "id": "ph-clausius-history",
+      "title": "Rudolf Clausius — Biography",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Clausius/",
+      "publisher": "University of St Andrews / MacTutor"
+    },
+    {
+      "id": "ph-einstein-history",
+      "title": "Albert Einstein — Biography",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Einstein/",
+      "publisher": "University of St Andrews / MacTutor"
+    },
+    {
+      "id": "ph-maxwell-original",
+      "title": "A dynamical theory of the electromagnetic field (1865)",
+      "url": "https://library.si.edu/digital-library/book/dynamicaltheoryo00maxw",
+      "publisher": "Smithsonian Libraries / James Clerk Maxwell"
+    },
+    {
+      "id": "ph-dirac-original",
+      "title": "The Quantum Theory of the Emission and Absorption of Radiation (1927)",
+      "url": "https://www.terpconnect.umd.edu/~yskim/dirac/dart/dirac27a.pdf",
+      "publisher": "University of Maryland archive / Paul Dirac"
+    }
+  ]
+}

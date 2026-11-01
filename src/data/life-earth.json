@@ -1,0 +1,4575 @@
+{
+  "concepts": [
+    {
+      "id": "hippocratic-medicine",
+      "title": "Clinical observation",
+      "aliases": [
+        "Hippocratic medicine",
+        "case histories"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "medicine",
+        "observation"
+      ],
+      "kind": "method",
+      "date": {
+        "year": -400,
+        "label": "c. 400 BCE",
+        "precision": "approximate",
+        "note": "An approximate period for influential Hippocratic texts; medical observation is much older and occurred in many societies."
+      },
+      "summary": "Careful accounts of symptoms, surroundings, and the course of illness made the patient’s history a source of evidence.",
+      "problem": "How could a physician distinguish illnesses and anticipate their development without relying only on ritual explanations?",
+      "development": "The heterogeneous Hippocratic writings in ancient Greece described cases and sought natural explanations. Their observational habits became part of later medical traditions; the collection was written by multiple authors, not securely by one founder.",
+      "limitations": "The associated physiology and treatments were often wrong. This node recognizes a historical practice of observation, not the validity of ancient medical advice.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Authors of the Hippocratic corpus",
+          "role": "Recorded cases and developed naturalistic accounts of disease; individual authorship is often uncertain."
+        }
+      ],
+      "sourceIds": [
+        "le-hippocratic"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-hippocratic"
+        ],
+        "history": [
+          "le-hippocratic"
+        ]
+      }
+    },
+    {
+      "id": "humoral-theory",
+      "title": "The four humors",
+      "aliases": [
+        "humoralism",
+        "humorism"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "medicine",
+        "historical theory"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": -400,
+        "label": "c. 400 BCE",
+        "precision": "approximate",
+        "note": "Approximate dating of the early textual formulation; Galen’s later synthesis belongs to the second century CE."
+      },
+      "summary": "Humoral medicine explained health as a balance among blood, phlegm, yellow bile, and black bile.",
+      "problem": "Ancient physicians needed a general explanation linking symptoms, diet, environment, and bodily change.",
+      "development": "The Hippocratic treatise On the Nature of Man presented a four-humor account. Galen later developed a wider explanatory system that circulated through Greek, Arabic, and Latin medical traditions.",
+      "limitations": "The four humors are not a valid model of physiology. Its long influence illustrates that an organizing explanation can persist despite a mistaken mechanism.",
+      "standing": "superseded",
+      "contributors": [
+        {
+          "name": "Hippocratic authors",
+          "role": "Formulated early humoral accounts of illness."
+        },
+        {
+          "name": "Galen",
+          "role": "Expanded humoral physiology and its explanatory system."
+        }
+      ],
+      "sourceIds": [
+        "le-humors"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-humors"
+        ],
+        "history": [
+          "le-humors"
+        ]
+      }
+    },
+    {
+      "id": "natural-classification",
+      "title": "Organizing living things",
+      "aliases": [
+        "natural history",
+        "biological classification",
+        "taxonomy"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "classification",
+        "organisms"
+      ],
+      "kind": "method",
+      "date": {
+        "year": -350,
+        "label": "c. 350 BCE",
+        "precision": "approximate",
+        "note": "An approximate classical Greek milestone, not the beginning of human classification of nature."
+      },
+      "summary": "Comparing bodily structures and habits made it possible to organize the diversity of living things into intelligible groups.",
+      "problem": "How could the enormous variety of animals and plants be described systematically rather than as an unconnected collection?",
+      "development": "Aristotle investigated animals comparatively in the Greek world, and Theophrastus developed systematic botanical descriptions. These projects were important strands of natural history, alongside other cultures’ extensive practical classifications.",
+      "limitations": "Ancient groupings were not a modern evolutionary taxonomy. Aristotle did not produce the tidy universal classification sometimes attributed to him.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Aristotle",
+          "role": "Compared animal structures, reproduction, and modes of life."
+        },
+        {
+          "name": "Theophrastus",
+          "role": "Developed systematic accounts of plants."
+        }
+      ],
+      "sourceIds": [
+        "le-classification"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-classification"
+        ],
+        "history": [
+          "le-classification"
+        ]
+      }
+    },
+    {
+      "id": "comparative-anatomy",
+      "title": "Anatomy through dissection",
+      "aliases": [
+        "Vesalian anatomy",
+        "dissection"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "medicine",
+        "structure"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1543,
+        "label": "1543 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Dissecting and comparing bodies allows anatomical claims to be tested against visible structures.",
+      "problem": "Inherited anatomical descriptions sometimes came from other species or repeated errors. Which descriptions matched the human body?",
+      "development": "At Padua, Andreas Vesalius made direct dissection central to teaching. His illustrated 1543 Fabrica corrected influential anatomical claims and tied detailed images to observations.",
+      "limitations": "Anatomy reveals structure more directly than function. Dissections also vary with preparation, developmental stage, and individual anatomy; they cannot alone explain physiology.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Andreas Vesalius",
+          "role": "Published the Fabrica and emphasized direct human dissection."
+        },
+        {
+          "name": "Anatomical illustrators and dissectors",
+          "role": "Made observations inspectable through preparation and detailed images."
+        }
+      ],
+      "sourceIds": [
+        "le-anatomy"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-anatomy"
+        ],
+        "history": [
+          "le-anatomy"
+        ]
+      },
+      "example": "Comparing a human jaw with an animal jaw can reveal why a description transferred between species is misleading."
+    },
+    {
+      "id": "blood-circulation",
+      "title": "Circulation of the blood",
+      "aliases": [
+        "cardiovascular circulation",
+        "De Motu Cordis"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "physiology",
+        "medicine"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1628,
+        "label": "1628 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "The heart pumps blood through a circulating system rather than producing a supply that tissues continually consume.",
+      "problem": "The amount of blood moved by the heart was too large for the traditional account of continual production and consumption.",
+      "development": "William Harvey combined dissections, valve observations, and quantitative arguments in De Motu Cordis. Earlier work, including Ibn al-Nafis’s account of pulmonary circulation, had challenged parts of Galenic physiology.",
+      "limitations": "Harvey could not observe capillaries connecting small arteries and veins. Later microscopy supplied that missing structural link; circulation is also regulated in ways beyond his model.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "William Harvey",
+          "role": "Demonstrated systemic circulation and the heart’s pumping role."
+        },
+        {
+          "name": "Ibn al-Nafis",
+          "role": "Earlier described the passage of blood through the lungs."
+        }
+      ],
+      "sourceIds": [
+        "le-circulation",
+        "le-pulmonary"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-circulation",
+          "le-pulmonary"
+        ],
+        "history": [
+          "le-circulation",
+          "le-pulmonary"
+        ]
+      }
+    },
+    {
+      "id": "cell-observation",
+      "title": "The first described cells",
+      "aliases": [
+        "Hooke’s cells",
+        "Micrographia"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "microscopy",
+        "cells"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1665,
+        "label": "1665 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Microscopy revealed that cork contains repeated tiny compartments, which Robert Hooke named cells.",
+      "problem": "What structures exist below ordinary sight, and could reliable drawings make those structures available to other observers?",
+      "development": "Hooke’s Micrographia joined optical instruments, specimen preparation, descriptions, and engravings. The cork compartments he illustrated were cell walls in dead plant tissue, not a full account of living cells.",
+      "limitations": "Naming these compartments did not establish cell theory. That later theory required comparisons across living plant and animal tissues.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Robert Hooke",
+          "role": "Published microscopic observations and introduced the term cell for cork compartments."
+        }
+      ],
+      "sourceIds": [
+        "le-hooke"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-hooke"
+        ],
+        "history": [
+          "le-hooke"
+        ]
+      },
+      "example": "A thin slice of cork looks like a honeycomb under magnification."
+    },
+    {
+      "id": "microorganisms",
+      "title": "A living microscopic world",
+      "aliases": [
+        "animalcules",
+        "microbial discovery"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "microbiology",
+        "microscopy"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1676,
+        "label": "1676 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Small organisms invisible to the unaided eye inhabit water, infusions, and other everyday environments.",
+      "problem": "Were microscopic moving forms real living entities, and could other observers verify them?",
+      "development": "Antonie van Leeuwenhoek’s carefully ground lenses revealed many kinds of animalcules. His 1676 correspondence to the Royal Society described observations in water and infusions, helping establish microscopy as a way to discover living diversity.",
+      "limitations": "Seeing microbes does not establish that they cause disease. Their ecological roles, cellular organization, and pathogenic effects required separate investigations.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Antonie van Leeuwenhoek",
+          "role": "Observed and reported microscopic organisms with single-lens microscopes."
+        },
+        {
+          "name": "Royal Society correspondents",
+          "role": "Discussed and investigated the reproducibility of the observations."
+        }
+      ],
+      "sourceIds": [
+        "le-leeuwenhoek"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-leeuwenhoek"
+        ],
+        "history": [
+          "le-leeuwenhoek"
+        ]
+      }
+    },
+    {
+      "id": "vaccination",
+      "title": "Vaccination",
+      "aliases": [
+        "immunization",
+        "smallpox vaccine"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "immunology",
+        "medicine"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1796,
+        "label": "1796 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Exposure to a suitable antigen can prepare immunity against a later infection without requiring the full disease.",
+      "problem": "Could smallpox protection be achieved with less risk than deliberately introducing smallpox itself?",
+      "development": "Jenner tested cowpox-associated protection in 1796. His work built on rural observations and a much older history of variolation in Asia, Africa, and the Ottoman world. Later vaccines used many different biological strategies.",
+      "limitations": "Jenner’s human challenge experiment would not meet modern research ethics. Vaccine effects and risks depend on the particular vaccine and disease; this is a historical concept, not individual treatment guidance.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Edward Jenner",
+          "role": "Investigated cowpox-associated protection against smallpox."
+        },
+        {
+          "name": "Earlier variolation practitioners",
+          "role": "Established practices of inducing protection across multiple societies."
+        },
+        {
+          "name": "Sarah Nelmes and James Phipps",
+          "role": "Were central participants in Jenner’s 1796 experiment."
+        }
+      ],
+      "sourceIds": [
+        "le-vaccination"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-vaccination"
+        ],
+        "history": [
+          "le-vaccination"
+        ]
+      }
+    },
+    {
+      "id": "cell-theory",
+      "title": "Cell theory",
+      "aliases": [
+        "cellular theory"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "cells",
+        "foundations"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1839,
+        "label": "1839 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Cells are the basic organizational units of living organisms, and cells arise through the continuity of existing cellular life.",
+      "problem": "Did plants and animals share a common structural basis despite their very different forms?",
+      "development": "Schleiden’s plant studies and Schwann’s comparisons of animal tissues led to a unifying account in the late 1830s. Later work, associated with Virchow and others, strengthened the principle that new cells come from existing cells.",
+      "limitations": "Viruses are acellular and depend on cellular hosts. Cell theory describes cellular life; it does not by itself explain how the first cells originated.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Matthias Schleiden",
+          "role": "Argued for the cellular organization of plants."
+        },
+        {
+          "name": "Theodor Schwann",
+          "role": "Extended the comparison to animal tissues."
+        },
+        {
+          "name": "Rudolf Virchow",
+          "role": "Helped establish cellular continuity in biology and pathology."
+        }
+      ],
+      "sourceIds": [
+        "le-cells"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-cells"
+        ],
+        "history": [
+          "le-cells"
+        ]
+      }
+    },
+    {
+      "id": "evolution",
+      "title": "Evolution by natural selection",
+      "aliases": [
+        "Darwinian evolution",
+        "natural selection",
+        "common descent"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "evolution",
+        "foundations"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1859,
+        "label": "1859 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Inherited variation and unequal reproductive success can change populations over generations, while common descent explains relationships among organisms.",
+      "problem": "How could adaptation and the branching diversity of life arise without each species being independently fixed?",
+      "development": "Darwin and Wallace independently developed natural selection and jointly presented accounts in 1858. Darwin’s 1859 book assembled a broad argument from breeding, geography, fossils, and comparative biology.",
+      "limitations": "Natural selection is one evolutionary process, alongside drift, mutation, and gene flow. Darwin lacked modern genetics, and evolution is not a ladder toward a predetermined goal.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Charles Darwin",
+          "role": "Developed and extensively supported common descent and natural selection."
+        },
+        {
+          "name": "Alfred Russel Wallace",
+          "role": "Independently formulated natural selection and co-presented it in 1858."
+        }
+      ],
+      "sourceIds": [
+        "le-evolution"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-evolution"
+        ],
+        "history": [
+          "le-evolution"
+        ]
+      }
+    },
+    {
+      "id": "germ-theory",
+      "title": "Germ theory of disease",
+      "aliases": [
+        "microbial disease causation"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "microbiology",
+        "medicine"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1861,
+        "label": "1860s–1880s",
+        "precision": "range",
+        "note": "Placed at 1861 to represent Pasteur’s formative experimental period; disease-specific demonstrations developed over subsequent decades."
+      },
+      "summary": "Specific microorganisms can cause specific infectious diseases; illness need not arise from bad air or bodily imbalance.",
+      "problem": "How could the cause of an infection be separated from the conditions that merely accompanied it?",
+      "development": "Pasteur’s fermentation and contamination experiments helped undermine spontaneous generation. Koch and colleagues later connected particular organisms with particular diseases through isolation and experimental tests.",
+      "limitations": "The date marks a formative period rather than a single discovery. Not all microbes cause illness, not all disease is infectious, and host biology and environment alter outcomes.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Louis Pasteur",
+          "role": "Connected microbial activity with fermentation and contamination."
+        },
+        {
+          "name": "Robert Koch",
+          "role": "Developed experimental methods linking particular microbes to diseases."
+        }
+      ],
+      "sourceIds": [
+        "le-germs"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-germs"
+        ],
+        "history": [
+          "le-germs"
+        ]
+      }
+    },
+    {
+      "id": "mendelian-genetics",
+      "title": "Mendelian inheritance",
+      "aliases": [
+        "Mendel’s laws",
+        "particulate inheritance"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "genetics",
+        "probability"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1866,
+        "label": "1866 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Hereditary factors can remain discrete across generations, producing predictable segregation patterns rather than permanently blending.",
+      "problem": "Why can a trait absent in one generation reappear in the next?",
+      "development": "Mendel counted outcomes of controlled pea crosses and published his account in 1866 after presentations in 1865. Later scientists reinterpreted the factors as genes and connected their behavior to chromosomes.",
+      "limitations": "Simple dominant–recessive ratios apply only under particular conditions. Linkage, multiple genes, incomplete dominance, and environmental influences produce more complex patterns.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Gregor Mendel",
+          "role": "Designed controlled crosses and inferred particulate inheritance from their numerical patterns."
+        }
+      ],
+      "sourceIds": [
+        "le-mendel"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-mendel"
+        ],
+        "history": [
+          "le-mendel"
+        ]
+      },
+      "equation": {
+        "expression": "P(aa) = 1/2 × 1/2 = 1/4",
+        "explanation": "In an Aa × Aa cross, each parent transmits allele a with probability one half; independent transmissions give a one-quarter chance of aa."
+      }
+    },
+    {
+      "id": "ecology",
+      "title": "Ecology",
+      "aliases": [
+        "organism–environment relations"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "environment",
+        "interactions"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1866,
+        "label": "1866 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Ecology studies how organisms interact with one another and with their physical surroundings.",
+      "problem": "Why are species found in particular places, and how do food, climate, competitors, and partners shape their lives?",
+      "development": "Haeckel named ecology in 1866 within an evolutionary account of organisms and their conditions of existence. The field also grew from natural history, plant geography, practical land knowledge, and Darwin’s studies of relationships among species.",
+      "limitations": "The word’s introduction is not the invention of ecological knowledge. Ecological explanations depend on spatial scale, history, and context rather than a single universal balance.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Ernst Haeckel",
+          "role": "Introduced the term ecology."
+        },
+        {
+          "name": "Charles Darwin",
+          "role": "Analyzed ecological relationships in the context of adaptation and natural selection."
+        },
+        {
+          "name": "Naturalists and land-based knowledge traditions",
+          "role": "Accumulated observations of organisms and environments over much longer periods."
+        }
+      ],
+      "sourceIds": [
+        "le-ecology"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-ecology"
+        ],
+        "history": [
+          "le-ecology"
+        ]
+      }
+    },
+    {
+      "id": "neuron-doctrine",
+      "title": "The neuron doctrine",
+      "aliases": [
+        "neuronal theory"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "neuroscience",
+        "cells"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1891,
+        "label": "1891 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "The nervous system is composed of individual nerve cells that communicate across specialized contacts.",
+      "problem": "Was nervous tissue one continuous net, or a system of separate cellular units?",
+      "development": "Golgi’s staining method made individual nerve cells visible. Cajal used it to argue for discrete neurons, while Waldeyer consolidated the terminology and doctrine in 1891.",
+      "limitations": "The doctrine does not mean neurons act in isolation. Glia, chemical synapses, and electrical junctions are essential, and network behavior cannot be read directly from a cell drawing.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Santiago Ramón y Cajal",
+          "role": "Used detailed observations to support neuronal individuality."
+        },
+        {
+          "name": "Camillo Golgi",
+          "role": "Developed the silver staining method, while favoring a competing reticular interpretation."
+        },
+        {
+          "name": "Heinrich Wilhelm Waldeyer",
+          "role": "Synthesized the doctrine and popularized the term neuron."
+        }
+      ],
+      "sourceIds": [
+        "le-neuron"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-neuron"
+        ],
+        "history": [
+          "le-neuron"
+        ]
+      }
+    },
+    {
+      "id": "chromosome-theory",
+      "title": "Chromosomes carry inheritance",
+      "aliases": [
+        "Sutton–Boveri theory",
+        "chromosomal inheritance"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "genetics",
+        "cells"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1902,
+        "label": "1902–1903",
+        "precision": "range",
+        "note": "The theory was formulated in papers around 1902–1903; later experimental support is identified in the explanation."
+      },
+      "summary": "The behavior of chromosomes during cell division provides a physical basis for Mendel’s hereditary factors.",
+      "problem": "What objects inside cells could segregate and combine in the way Mendel’s factors did?",
+      "development": "Sutton and Boveri connected chromosome behavior with inheritance. Later fruit-fly experiments by Morgan’s group and observations by Carothers provided additional support and explained genetic linkage.",
+      "limitations": "Genes on the same chromosome do not always assort independently. Organelles also contain genetic material, so chromosomal inheritance in the nucleus is not the whole of heredity.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Walter Sutton",
+          "role": "Compared chromosome segregation with Mendelian inheritance."
+        },
+        {
+          "name": "Theodor Boveri",
+          "role": "Demonstrated the importance of chromosome complements in development."
+        },
+        {
+          "name": "Eleanor Carothers",
+          "role": "Provided cytological evidence of chromosome assortment."
+        },
+        {
+          "name": "Thomas Hunt Morgan",
+          "role": "Linked inherited traits to chromosomes through fruit-fly experiments."
+        }
+      ],
+      "sourceIds": [
+        "le-chromosomes"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-chromosomes"
+        ],
+        "history": [
+          "le-chromosomes"
+        ]
+      }
+    },
+    {
+      "id": "adaptive-immunity",
+      "title": "Specific immunity and memory",
+      "aliases": [
+        "acquired immunity",
+        "immune memory"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "immunology",
+        "cells"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1908,
+        "label": "1908 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Adaptive immunity recognizes particular molecular targets and can respond more effectively after a previous encounter.",
+      "problem": "Why can surviving an infection or receiving a vaccine change the response to a later exposure?",
+      "development": "Antibody research and cellular studies established complementary approaches to immunity. Ehrlich and Mechnikov shared the 1908 Nobel Prize; later lymphocyte and clonal-selection research explained specificity and memory in greater detail.",
+      "limitations": "The 1908 milestone does not date the complete modern theory. Adaptive and innate responses cooperate, and immune memory varies with the pathogen and the individual.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Paul Ehrlich",
+          "role": "Developed influential accounts of antibody specificity."
+        },
+        {
+          "name": "Ilya Mechnikov",
+          "role": "Established phagocytosis and the importance of cellular defense."
+        },
+        {
+          "name": "Later immunologists",
+          "role": "Explained lymphocyte selection and long-lived immune memory."
+        }
+      ],
+      "sourceIds": [
+        "le-immunity",
+        "le-immunity-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-immunity",
+          "le-immunity-history"
+        ],
+        "history": [
+          "le-immunity",
+          "le-immunity-history"
+        ]
+      }
+    },
+    {
+      "id": "synaptic-transmission",
+      "title": "Chemical synaptic transmission",
+      "aliases": [
+        "neurotransmission",
+        "acetylcholine"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "neuroscience",
+        "signaling"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1921,
+        "label": "1921 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "A nerve can influence another cell by releasing a chemical messenger, rather than transferring only an electrical current.",
+      "problem": "How does a nerve signal change the activity of a separate target cell?",
+      "development": "Loewi’s frog-heart experiments showed that stimulating one heart’s nerve released a transferable substance that slowed another heart. Dale’s pharmacological work helped establish acetylcholine as a transmitter.",
+      "limitations": "Chemical transmission is not universal: electrical synapses also exist. Effects depend on receptors, transmitter clearance, and the state of the receiving cell.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Otto Loewi",
+          "role": "Demonstrated a transferable chemical effect of nerve stimulation in 1921."
+        },
+        {
+          "name": "Henry Dale",
+          "role": "Helped identify and explain acetylcholine’s physiological actions."
+        }
+      ],
+      "sourceIds": [
+        "le-synapse"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-synapse"
+        ],
+        "history": [
+          "le-synapse"
+        ]
+      }
+    },
+    {
+      "id": "homeostasis",
+      "title": "Homeostasis",
+      "aliases": [
+        "physiological regulation"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "physiology",
+        "feedback"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1929,
+        "label": "1929 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Living systems maintain internal conditions within workable ranges through coordinated regulation.",
+      "problem": "How can body temperature or blood chemistry remain relatively stable while the environment and activity change?",
+      "development": "Cannon’s 1929 synthesis developed the idea of physiological homeostasis, building on Claude Bernard’s internal environment. Responses such as sweating or hormonal regulation counter disturbances without requiring absolute constancy.",
+      "limitations": "Homeostasis is dynamic, not perfect equilibrium. Set points can change, and development, stress, and disease can alter the range of regulated conditions.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Walter Cannon",
+          "role": "Systematized physiological homeostasis."
+        },
+        {
+          "name": "Claude Bernard",
+          "role": "Earlier emphasized the importance of the internal environment."
+        }
+      ],
+      "sourceIds": [
+        "le-homeostasis"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-homeostasis"
+        ],
+        "history": [
+          "le-homeostasis"
+        ]
+      },
+      "example": "Sweating increases heat loss when body temperature rises, forming part of a feedback process."
+    },
+    {
+      "id": "population-genetics",
+      "title": "Population genetics",
+      "aliases": [
+        "evolutionary genetics"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "genetics",
+        "mathematical biology"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1930,
+        "label": "1920s–1930s",
+        "precision": "range",
+        "note": "1930 anchors a multi-author research program spanning several decades."
+      },
+      "summary": "Mathematical models track how gene variants change in frequency through selection, mutation, migration, and chance.",
+      "problem": "Could Mendelian inheritance produce the small, cumulative evolutionary changes described by Darwin?",
+      "development": "Fisher, Haldane, and Wright developed quantitative accounts in the 1920s and 1930s. Their models reconciled particulate heredity with natural selection and made drift and population structure explicit.",
+      "limitations": "Real populations can violate assumptions such as random mating or constant size. A model’s usefulness depends on matching its assumptions to the question.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Ronald Fisher",
+          "role": "Connected Mendelian inheritance, continuous variation, and selection."
+        },
+        {
+          "name": "J. B. S. Haldane",
+          "role": "Developed mathematical models of selection."
+        },
+        {
+          "name": "Sewall Wright",
+          "role": "Analyzed drift, inbreeding, and population structure."
+        }
+      ],
+      "sourceIds": [
+        "le-population"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-population"
+        ],
+        "history": [
+          "le-population"
+        ]
+      }
+    },
+    {
+      "id": "modern-synthesis",
+      "title": "The modern evolutionary synthesis",
+      "aliases": [
+        "neo-Darwinian synthesis"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "evolution",
+        "integration"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1942,
+        "label": "1942 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Genetics, natural history, systematics, and paleontology were integrated into an account of evolutionary change within and between populations.",
+      "problem": "How could short-term inheritance and population change explain speciation and the larger patterns seen in nature and fossils?",
+      "development": "Population genetics supplied mechanisms; Dobzhansky, Mayr, Simpson, Stebbins, Huxley, and others connected them to organisms, species, and deep time. Huxley’s 1942 book gave the synthesis its enduring name.",
+      "limitations": "This was a developing research framework, not a final theory of everything biological. Molecular evolution, developmental biology, and symbiosis subsequently expanded its emphasis.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Theodosius Dobzhansky",
+          "role": "Connected genetic variation with natural populations."
+        },
+        {
+          "name": "Ernst Mayr",
+          "role": "Connected systematics and speciation."
+        },
+        {
+          "name": "Julian Huxley",
+          "role": "Presented an influential synthesis in 1942."
+        },
+        {
+          "name": "George Gaylord Simpson and G. Ledyard Stebbins",
+          "role": "Extended the synthesis to paleontology and plant evolution."
+        }
+      ],
+      "sourceIds": [
+        "le-synthesis"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-synthesis"
+        ],
+        "history": [
+          "le-synthesis"
+        ]
+      }
+    },
+    {
+      "id": "dna-as-genetic-material",
+      "title": "DNA as hereditary material",
+      "aliases": [
+        "Avery–MacLeod–McCarty experiment",
+        "transforming principle"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "genetics",
+        "molecules"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1944,
+        "label": "1944 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "DNA can carry information that changes an organism’s inherited properties.",
+      "problem": "Was the transforming substance exchanged between bacterial strains a protein, a nucleic acid, or something else?",
+      "development": "Avery, MacLeod, and McCarty purified material from pneumococci and tested what destroyed its transforming activity. Treatments targeting DNA removed that activity, providing strong evidence for DNA’s hereditary role.",
+      "limitations": "The experiment concerned bacterial transformation and did not alone establish every feature of inheritance. Additional work in viruses and other organisms strengthened the general conclusion.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Oswald Avery",
+          "role": "Led investigation of the bacterial transforming principle."
+        },
+        {
+          "name": "Colin MacLeod and Maclyn McCarty",
+          "role": "Helped isolate and characterize the active DNA material."
+        },
+        {
+          "name": "Frederick Griffith",
+          "role": "Earlier discovered bacterial transformation in 1928."
+        }
+      ],
+      "sourceIds": [
+        "le-dna-material"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-dna-material"
+        ],
+        "history": [
+          "le-dna-material"
+        ]
+      }
+    },
+    {
+      "id": "phylogenetics",
+      "title": "Phylogenetic systematics",
+      "aliases": [
+        "cladistics",
+        "evolutionary trees"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "evolution",
+        "classification"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1950,
+        "label": "1950 CE",
+        "precision": "exact",
+        "note": "1950 marks Hennig’s German formulation; the widely cited English book appeared in 1966."
+      },
+      "summary": "Evolutionary relationships can be inferred from shared derived characteristics and represented as branching hypotheses of common ancestry.",
+      "problem": "Which similarities indicate a closer common ancestor rather than convergence or an ancient trait shared more widely?",
+      "development": "Hennig’s German work of 1950, followed by the influential English presentation in 1966, made ancestry the basis of systematic classification. Later methods incorporated molecular sequences and explicit statistical models.",
+      "limitations": "A tree is an inference with uncertainty, not a picture observed directly. Hybridization and horizontal gene transfer can require networks, and different genes can have different histories.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Willi Hennig",
+          "role": "Formulated phylogenetic systematics based on shared derived characters."
+        },
+        {
+          "name": "Later molecular systematists",
+          "role": "Developed sequence-based and statistical methods for evolutionary inference."
+        }
+      ],
+      "sourceIds": [
+        "le-phylogeny"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-phylogeny"
+        ],
+        "history": [
+          "le-phylogeny"
+        ]
+      }
+    },
+    {
+      "id": "action-potential",
+      "title": "The action potential",
+      "aliases": [
+        "Hodgkin–Huxley model",
+        "nerve impulse"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "neuroscience",
+        "electrophysiology"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1952,
+        "label": "1952 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "A nerve impulse is a traveling change in membrane voltage generated by changing flows of ions.",
+      "problem": "How could a nerve signal maintain its form while moving along an axon?",
+      "development": "Hodgkin and Huxley measured currents in the squid giant axon and modeled voltage-dependent sodium and potassium conductances. Their equations reproduced the rise, fall, and propagation of a nerve impulse.",
+      "limitations": "The model describes a particular membrane system and uses fitted variables for channel behavior. Other neurons and channel types require adapted models.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Alan Hodgkin and Andrew Huxley",
+          "role": "Combined voltage-clamp measurements with a quantitative ionic model."
+        }
+      ],
+      "sourceIds": [
+        "le-action"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-action"
+        ],
+        "history": [
+          "le-action"
+        ]
+      },
+      "example": "Opening sodium channels can rapidly depolarize a membrane; delayed potassium flow helps restore its voltage."
+    },
+    {
+      "id": "dna-structure",
+      "title": "The DNA double helix",
+      "aliases": [
+        "double helix",
+        "DNA base pairing"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "genetics",
+        "molecular structure"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1953,
+        "label": "1953 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Two complementary DNA strands form a double helix, suggesting how hereditary information can be copied.",
+      "problem": "What molecular arrangement could explain DNA’s measured dimensions, chemical composition, and ability to preserve sequence information?",
+      "development": "Watson and Crick proposed a model constrained by chemistry, base ratios, and X-ray evidence. Franklin and Gosling’s diffraction work, alongside work by Wilkins and colleagues, supplied crucial structural evidence.",
+      "limitations": "Credit involves more than the final model, and the use of unpublished evidence remains an important historical issue. The helix alone does not explain gene regulation or every form of DNA packaging.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "James Watson and Francis Crick",
+          "role": "Constructed the complementary double-helix model."
+        },
+        {
+          "name": "Rosalind Franklin and Raymond Gosling",
+          "role": "Produced and analyzed crucial X-ray diffraction evidence."
+        },
+        {
+          "name": "Maurice Wilkins and colleagues",
+          "role": "Contributed additional structural observations."
+        },
+        {
+          "name": "Erwin Chargaff",
+          "role": "Established important patterns in DNA base composition."
+        }
+      ],
+      "sourceIds": [
+        "le-dna",
+        "le-franklin"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-dna",
+          "le-franklin"
+        ],
+        "history": [
+          "le-dna",
+          "le-franklin"
+        ]
+      },
+      "example": "Complementary pairing lets each strand act as a template: A pairs with T, and G with C."
+    },
+    {
+      "id": "molecular-biology",
+      "title": "Molecular biology and information flow",
+      "aliases": [
+        "central dogma",
+        "sequence hypothesis",
+        "gene expression"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "genetics",
+        "information"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1958,
+        "label": "1958 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Sequences in nucleic acids help specify protein sequences, connecting inherited information with cellular machinery.",
+      "problem": "How could a sequence of chemical units determine the diverse structures and functions of proteins?",
+      "development": "Crick’s sequence hypothesis and central dogma organized the problem in 1958. Subsequent discoveries identified messenger RNA, transfer RNA, and ribosomal mechanisms for translating nucleotide sequences into proteins.",
+      "limitations": "The central dogma restricts transfer of sequence information from proteins; it is not simply a claim that information always flows only DNA to RNA. Reverse transcription is compatible with that distinction.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Francis Crick",
+          "role": "Formulated the sequence hypothesis and central dogma."
+        },
+        {
+          "name": "Many biochemists and geneticists",
+          "role": "Identified the molecular machinery of gene expression."
+        }
+      ],
+      "sourceIds": [
+        "le-dogma",
+        "le-dogma-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-dogma",
+          "le-dogma-history"
+        ],
+        "history": [
+          "le-dogma",
+          "le-dogma-history"
+        ]
+      },
+      "equation": {
+        "expression": "DNA → RNA → protein",
+        "explanation": "A common pathway of gene expression. The arrows represent transcription and translation; this shorthand is not a complete statement of the central dogma."
+      }
+    },
+    {
+      "id": "gene-regulation",
+      "title": "Gene regulation",
+      "aliases": [
+        "operon model",
+        "lac operon"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "genetics",
+        "regulation"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1961,
+        "label": "1961 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Cells control when and how strongly genes are expressed, allowing similar genetic material to produce different responses.",
+      "problem": "Why does a bacterium make an enzyme under one nutritional condition but not another?",
+      "development": "Jacob and Monod’s operon model connected regulatory proteins and DNA sites with coordinated gene expression. The lac system made environmental responsiveness experimentally accessible.",
+      "limitations": "Bacterial operons are one regulatory architecture. Eukaryotic regulation also involves chromatin, many interacting control sequences, RNA processing, and other mechanisms.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "François Jacob and Jacques Monod",
+          "role": "Developed the operon model of genetic regulation."
+        },
+        {
+          "name": "André Lwoff and collaborators",
+          "role": "Contributed the surrounding research on genetic control and viruses."
+        }
+      ],
+      "sourceIds": [
+        "le-regulation"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-regulation"
+        ],
+        "history": [
+          "le-regulation"
+        ]
+      },
+      "example": "A bacterium can increase production of lactose-processing machinery when the appropriate signals are present."
+    },
+    {
+      "id": "genetic-code",
+      "title": "The genetic code",
+      "aliases": [
+        "codons",
+        "translation code"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "genetics",
+        "information"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1966,
+        "label": "1966 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Groups of three RNA bases specify amino acids or translation stops, linking nucleotide sequences to protein sequences.",
+      "problem": "Which combinations of nucleotide letters correspond to which amino acids?",
+      "development": "Cell-free protein synthesis, synthetic RNAs, and transfer-RNA studies allowed researchers to decipher the code during the early 1960s. By 1966, the principal codon assignments had been established.",
+      "limitations": "The code is highly conserved but has known exceptions, including some mitochondrial codes. A codon table alone does not explain translation control or protein folding.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Marshall Nirenberg and Heinrich Matthaei",
+          "role": "Linked synthetic RNA to a specified amino-acid product."
+        },
+        {
+          "name": "Har Gobind Khorana",
+          "role": "Used defined synthetic sequences to resolve codon assignments."
+        },
+        {
+          "name": "Robert Holley",
+          "role": "Determined a transfer-RNA sequence."
+        }
+      ],
+      "sourceIds": [
+        "le-code"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-code"
+        ],
+        "history": [
+          "le-code"
+        ]
+      },
+      "example": "In the standard code, UUU specifies phenylalanine; the ribosome reads the message in three-base units."
+    },
+    {
+      "id": "endosymbiosis",
+      "title": "Endosymbiotic origins of organelles",
+      "aliases": [
+        "symbiogenesis",
+        "organelle evolution"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "evolution",
+        "cells"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1967,
+        "label": "1967 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Mitochondria and plastids descend from bacteria that became integrated into ancestral host cells.",
+      "problem": "Why do certain cell compartments have their own DNA and resemble bacteria in important ways?",
+      "development": "Earlier symbiotic proposals were revived and developed by Lynn Margulis in 1967. Molecular and cellular evidence subsequently established bacterial ancestry for mitochondria and plastids.",
+      "limitations": "Not every component of Margulis’s original proposal was supported. Organelle origins are well established, while details of host identity and the sequence of early events remain active research.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Lynn Margulis",
+          "role": "Renewed and developed the endosymbiotic account of eukaryotic cells."
+        },
+        {
+          "name": "Konstantin Mereschkowski",
+          "role": "Earlier proposed a symbiotic origin for plastids."
+        },
+        {
+          "name": "Later molecular biologists",
+          "role": "Tested organelle ancestry using molecular evidence."
+        }
+      ],
+      "sourceIds": [
+        "le-endosymbiosis"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-endosymbiosis"
+        ],
+        "history": [
+          "le-endosymbiosis"
+        ]
+      }
+    },
+    {
+      "id": "neutral-theory",
+      "title": "Neutral molecular evolution",
+      "aliases": [
+        "Kimura’s neutral theory",
+        "molecular drift"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "evolution",
+        "genetics"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1968,
+        "label": "1968 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Many molecular changes can spread through populations by random genetic drift because they have little or no effect on reproductive success.",
+      "problem": "Could natural selection alone plausibly explain the rate of sequence change measured in molecules?",
+      "development": "Kimura argued that many observed molecular substitutions are selectively neutral. The theory made mutation and drift central to interpreting molecular variation and stimulated quantitative tests.",
+      "limitations": "It does not claim that every mutation is neutral or that adaptation is unimportant. The relative importance of drift and selection varies among sites, populations, and environments.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Motoo Kimura",
+          "role": "Formulated the neutral theory of molecular evolution."
+        },
+        {
+          "name": "Tomoko Ohta",
+          "role": "Later developed the related nearly neutral theory."
+        }
+      ],
+      "sourceIds": [
+        "le-neutral"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-neutral"
+        ],
+        "history": [
+          "le-neutral"
+        ]
+      }
+    },
+    {
+      "id": "recombinant-dna",
+      "title": "Recombinant DNA",
+      "aliases": [
+        "gene cloning",
+        "genetic engineering"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "biotechnology",
+        "genetics"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1973,
+        "label": "1973 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "DNA fragments from different sources can be joined and maintained in a host, making genes experimentally manipulable.",
+      "problem": "Could researchers assemble a new DNA molecule and make it function inside living cells?",
+      "development": "Cohen, Chang, Boyer, and Helling joined plasmid fragments using restriction enzymes and introduced the resulting molecules into bacteria. This established a practical route to cloning chosen DNA fragments.",
+      "limitations": "Successful assembly does not guarantee desired expression or biological effects. Work with recombinant organisms requires containment and context-specific assessment.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Stanley Cohen, Annie Chang, Herbert Boyer, and Robert Helling",
+          "role": "Constructed biologically functional recombinant plasmids in 1973."
+        }
+      ],
+      "sourceIds": [
+        "le-recombinant"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-recombinant"
+        ],
+        "history": [
+          "le-recombinant"
+        ]
+      },
+      "example": "A plasmid can carry an inserted gene that is copied when the host bacterium reproduces."
+    },
+    {
+      "id": "evolutionary-developmental-biology",
+      "title": "Evolutionary developmental biology",
+      "aliases": [
+        "evo-devo",
+        "homeobox",
+        "Hox genes"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "development",
+        "evolution"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1984,
+        "label": "1984 CE",
+        "precision": "exact",
+        "note": "1984 marks influential homeobox publications, not the origin of comparisons between embryology and evolution."
+      },
+      "summary": "Evolutionary changes in developmental programs help explain how bodies acquire different forms.",
+      "problem": "How can related organisms develop very different structures while sharing much of their genetic machinery?",
+      "development": "Embryology had long been connected with evolution. Discoveries of conserved homeobox sequences in the 1980s made it possible to compare developmental control genes directly across organisms.",
+      "limitations": "Conserved genes do not imply identical development. Regulatory context, gene interactions, cell behavior, and environmental conditions all matter.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "William McGinnis, Michael Levine, Walter Gehring, and collaborators",
+          "role": "Identified conserved homeobox sequences in developmental genes."
+        },
+        {
+          "name": "Edward Lewis",
+          "role": "Connected homeotic genes with body-pattern organization."
+        }
+      ],
+      "sourceIds": [
+        "le-homeobox",
+        "le-homeobox-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-homeobox",
+          "le-homeobox-history"
+        ],
+        "history": [
+          "le-homeobox",
+          "le-homeobox-history"
+        ]
+      }
+    },
+    {
+      "id": "pcr",
+      "title": "Polymerase chain reaction",
+      "aliases": [
+        "DNA amplification"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "biotechnology",
+        "methods"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1985,
+        "label": "1985 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Repeated cycles of DNA separation, primer binding, and synthesis amplify a chosen segment into many copies.",
+      "problem": "How could a tiny amount of a particular DNA sequence be made abundant enough to analyze?",
+      "development": "The PCR concept emerged at Cetus, and Saiki and colleagues published a demonstration in 1985. Later heat-stable polymerases made repeated cycling more convenient and reliable.",
+      "limitations": "PCR needs suitable primers and careful controls. Contamination and amplification bias can create misleading results; copying DNA does not by itself establish what it means.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Kary Mullis",
+          "role": "Conceived PCR’s cyclic amplification strategy."
+        },
+        {
+          "name": "Randall Saiki, Henry Erlich, Norman Arnheim, and colleagues",
+          "role": "Developed and demonstrated early practical amplification."
+        }
+      ],
+      "sourceIds": [
+        "le-pcr",
+        "le-pcr-definition"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-pcr",
+          "le-pcr-definition"
+        ],
+        "history": [
+          "le-pcr",
+          "le-pcr-definition"
+        ]
+      },
+      "equation": {
+        "expression": "N ≈ N₀ × 2ⁿ",
+        "explanation": "Ideal doubling gives N copies after n cycles from N₀ initial copies. Real reactions eventually depart from this ideal."
+      }
+    },
+    {
+      "id": "genomics",
+      "title": "Whole-genome sequencing",
+      "aliases": [
+        "genome sequencing",
+        "shotgun sequencing"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "genetics",
+        "computation"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1995,
+        "label": "1995 CE",
+        "precision": "exact",
+        "note": "A milestone for a free-living organism’s complete genome; viral genomes had been sequenced earlier."
+      },
+      "summary": "Sequencing and assembling an organism’s full genetic complement reveals genes and their broader genomic context.",
+      "problem": "Could many short DNA readings be combined into a complete genome rather than isolated gene fragments?",
+      "development": "Fleischmann, Venter, and collaborators reported the complete Haemophilus influenzae genome using a whole-genome shotgun strategy in 1995. It was a landmark for sequencing free-living organisms and for computational assembly.",
+      "limitations": "A genome sequence is not a complete explanation of an organism. Assembly can miss or misplace repeats, and sequence interpretation needs functional and comparative evidence.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Robert Fleischmann, J. Craig Venter, Hamilton Smith, and collaborators",
+          "role": "Produced the 1995 H. influenzae whole-genome sequence."
+        }
+      ],
+      "sourceIds": [
+        "le-genomics"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-genomics"
+        ],
+        "history": [
+          "le-genomics"
+        ]
+      }
+    },
+    {
+      "id": "systems-biology",
+      "title": "Systems biology",
+      "aliases": [
+        "network biology"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "systems",
+        "computation"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 2002,
+        "label": "2002 CE",
+        "precision": "exact",
+        "note": "2002 is an influential published synthesis; systems approaches in biology are much older."
+      },
+      "summary": "Systems biology studies how interacting molecular and cellular parts generate behavior at the level of a whole system.",
+      "problem": "Why does knowing the parts of a cell not automatically explain its dynamics, robustness, or response to disturbance?",
+      "development": "Older physiological and mathematical traditions converged with high-throughput measurements and computation. Kitano’s 2002 overview articulated a program combining network structure, dynamics, control, and experimental testing.",
+      "limitations": "Large models can be underconstrained by data. Their predictions need validation, and a detailed network diagram alone is not an explanation.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Hiroaki Kitano",
+          "role": "Articulated an influential computational and experimental systems-biology program."
+        },
+        {
+          "name": "Many physiological, mathematical, and genomic researchers",
+          "role": "Developed the measurements and models on which the field builds."
+        }
+      ],
+      "sourceIds": [
+        "le-systems"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-systems"
+        ],
+        "history": [
+          "le-systems"
+        ]
+      }
+    },
+    {
+      "id": "crispr",
+      "title": "Programmable CRISPR editing",
+      "aliases": [
+        "CRISPR-Cas9",
+        "genome editing"
+      ],
+      "discipline": "biology",
+      "tags": [
+        "biotechnology",
+        "genetics"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 2012,
+        "label": "2012 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "An RNA guide can direct a CRISPR-associated enzyme to a chosen DNA target, enabling targeted genetic changes.",
+      "problem": "Could a reusable molecular tool locate and cut DNA at a sequence chosen by the researcher?",
+      "development": "Studies of bacterial antiviral defense led Charpentier, Doudna, and collaborators to demonstrate programmable Cas9 cleavage in 2012. Further teams adapted the system for genome editing in cells.",
+      "limitations": "Delivery, unintended edits, and repair outcomes remain important constraints. Scientific capability does not settle the ethical questions surrounding particular uses, especially heritable human changes.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Emmanuelle Charpentier and Jennifer Doudna",
+          "role": "Led the 2012 demonstration of programmable Cas9 cleavage."
+        },
+        {
+          "name": "Francisco Mojica and many microbial researchers",
+          "role": "Helped establish the biological context of CRISPR systems."
+        }
+      ],
+      "sourceIds": [
+        "le-crispr"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-crispr"
+        ],
+        "history": [
+          "le-crispr"
+        ]
+      }
+    },
+    {
+      "id": "earth-measurement",
+      "title": "Measuring the Earth",
+      "aliases": [
+        "Eratosthenes’ circumference",
+        "geodesy"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "geometry",
+        "measurement"
+      ],
+      "kind": "method",
+      "date": {
+        "year": -240,
+        "label": "c. 240 BCE",
+        "precision": "approximate",
+        "note": "Traditional approximate dating of Eratosthenes’ estimate; the original calculation is known through later accounts."
+      },
+      "summary": "Geometry connects local measurements of shadows and distances to an estimate of the size of the whole planet.",
+      "problem": "How could people estimate Earth’s circumference without traveling all the way around it?",
+      "development": "Eratosthenes compared the Sun’s direction at two locations in Egypt and related the angular difference to their separation. The method turned an astronomical observation into a measurement of Earth.",
+      "limitations": "The surviving account leaves uncertainties about distance units and the exact observations. Its importance lies in the geometric method, not an artificially precise claim about the result.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Eratosthenes",
+          "role": "Estimated Earth’s circumference from solar angles and terrestrial distances."
+        },
+        {
+          "name": "Surveyors and travelers",
+          "role": "Supplied geographic distance information used in such estimates."
+        }
+      ],
+      "sourceIds": [
+        "le-earth-size"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-earth-size"
+        ],
+        "history": [
+          "le-earth-size"
+        ]
+      },
+      "equation": {
+        "expression": "C = d × 360° / θ",
+        "explanation": "If locations are d apart along a meridian and their solar-angle difference is θ, the corresponding spherical circumference is C."
+      }
+    },
+    {
+      "id": "water-cycle",
+      "title": "The quantitative water cycle",
+      "aliases": [
+        "hydrological cycle",
+        "water balance"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "water",
+        "measurement"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1674,
+        "label": "1674 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Water moves among atmosphere, land, living things, and oceans; measurements can account for how much enters, leaves, and is stored.",
+      "problem": "Could rainfall supply rivers and springs, or was some other hidden water source needed?",
+      "development": "Perrault compared rainfall with estimated river flow in the Seine basin, helping establish quantitative hydrology. Modern water budgets extend the accounting to evaporation, groundwater, snow, and human withdrawals.",
+      "limitations": "Ideas about circulating water are much older. The 1674 milestone is an early quantitative test, not a complete modern theory or an uncontested single invention.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Pierre Perrault",
+          "role": "Published a quantitative comparison of rainfall and river flow."
+        },
+        {
+          "name": "Edme Mariotte and later hydrologists",
+          "role": "Improved flow measurements and water-balance reasoning."
+        }
+      ],
+      "sourceIds": [
+        "le-hydrology-history",
+        "le-hydrology"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-hydrology-history",
+          "le-hydrology"
+        ],
+        "history": [
+          "le-hydrology-history",
+          "le-hydrology"
+        ]
+      },
+      "equation": {
+        "expression": "ΔS = inputs − outputs",
+        "explanation": "The change in stored water equals incoming water minus outgoing water over a defined region and time."
+      }
+    },
+    {
+      "id": "stratigraphy",
+      "title": "Reading layers of rock",
+      "aliases": [
+        "superposition",
+        "original horizontality",
+        "stratigraphic sequence"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "geology",
+        "time"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1669,
+        "label": "1669 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Rock layers preserve an order of events that can be reconstructed from their positions and relationships.",
+      "problem": "How could geologists tell which events happened first before they had clocks for dating rocks?",
+      "development": "Steno articulated superposition and original horizontality: sediment generally accumulates above older deposits and begins approximately level. Tilted or cut layers therefore record later events.",
+      "limitations": "Layers can be overturned, eroded, intruded, or redeposited. The principles require geological interpretation and establish relative order rather than numerical ages.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Nicolaus Steno",
+          "role": "Published foundational principles for interpreting strata in 1669."
+        }
+      ],
+      "sourceIds": [
+        "le-strata"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-strata"
+        ],
+        "history": [
+          "le-strata"
+        ]
+      },
+      "example": "A fault cutting several sedimentary layers formed after the layers it cuts."
+    },
+    {
+      "id": "fossil-organisms",
+      "title": "Fossils as traces of past life",
+      "aliases": [
+        "organic origin of fossils",
+        "paleontology"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "fossils",
+        "deep time"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1669,
+        "label": "1669 CE",
+        "precision": "exact",
+        "note": "1669 anchors Steno’s geological synthesis; his shark dissection and earlier publication occurred in 1666–1667."
+      },
+      "summary": "Fossils can be remains or traces of once-living organisms preserved within geological materials.",
+      "problem": "Were shell-like and tooth-like objects in rocks organisms’ remains, or shapes that had grown within the stone?",
+      "development": "Comparisons between shark teeth and tongue stones helped Steno explain fossil origins. His geological work linked preserved objects to the history of the surrounding material; earlier observers had also recognized organic origins.",
+      "limitations": "This node is a landmark argument, not the first recognition of fossils. Preservation is selective, so the fossil record is incomplete and demands careful interpretation.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Nicolaus Steno",
+          "role": "Connected anatomical comparisons with explanations of fossils in rocks."
+        },
+        {
+          "name": "Earlier naturalists",
+          "role": "Recognized similarities between some fossils and living organisms."
+        }
+      ],
+      "sourceIds": [
+        "le-fossils"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-fossils"
+        ],
+        "history": [
+          "le-fossils"
+        ]
+      }
+    },
+    {
+      "id": "geological-time",
+      "title": "Deep geological time",
+      "aliases": [
+        "deep time",
+        "Hutton’s theory of the Earth"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "geology",
+        "foundations"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1788,
+        "label": "1788 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "The structures of Earth record histories far longer than a human lifetime or a short written chronology.",
+      "problem": "How much time was required for rock formation, uplift, erosion, and renewed deposition to reshape a landscape?",
+      "development": "Hutton interpreted repeated geological cycles and unconformities as evidence for an immense past. His theory and the 1788 examination of Siccar Point became influential milestones in the development of deep time.",
+      "limitations": "He did not measure Earth’s numerical age. Later radiometric methods supplied an absolute timescale, and modern geology recognizes both slow changes and rapid catastrophes.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "James Hutton",
+          "role": "Argued from rock relationships for immense geological time."
+        },
+        {
+          "name": "John Playfair and James Hall",
+          "role": "Helped investigate and communicate the geological evidence."
+        }
+      ],
+      "sourceIds": [
+        "le-deep-time"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-deep-time"
+        ],
+        "history": [
+          "le-deep-time"
+        ]
+      },
+      "example": "Tilted old layers beneath younger horizontal layers record deposition, deformation, erosion, and renewed deposition."
+    },
+    {
+      "id": "greenhouse-effect",
+      "title": "The atmospheric greenhouse effect",
+      "aliases": [
+        "radiative greenhouse warming"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "climate",
+        "radiation"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1824,
+        "label": "1824 CE",
+        "precision": "exact",
+        "note": "1824 marks an early planetary heat-balance argument; the modern physical explanation developed through later experiments and calculations."
+      },
+      "summary": "Greenhouse gases absorb and emit infrared radiation, making Earth’s surface warmer than it would be without that atmospheric effect.",
+      "problem": "Why is Earth’s surface warmer than a simple calculation of incoming sunlight and outgoing radiation suggests?",
+      "development": "Fourier considered the atmosphere’s role in planetary temperature. Later experiments and calculations, including Tyndall’s and Arrhenius’s, identified absorbing gases and quantified parts of the effect.",
+      "limitations": "A greenhouse building warms largely by limiting air exchange, so the name is an imperfect analogy. Modern explanations require radiative transfer, convection, and feedbacks.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Joseph Fourier",
+          "role": "Analyzed planetary heat balance and atmospheric influence."
+        },
+        {
+          "name": "John Tyndall",
+          "role": "Measured infrared absorption by gases."
+        },
+        {
+          "name": "Svante Arrhenius",
+          "role": "Calculated temperature responses to changes in carbon dioxide."
+        }
+      ],
+      "sourceIds": [
+        "le-greenhouse"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-greenhouse"
+        ],
+        "history": [
+          "le-greenhouse"
+        ]
+      }
+    },
+    {
+      "id": "uniformitarianism",
+      "title": "Interpreting the past through processes",
+      "aliases": [
+        "actualism",
+        "Principles of Geology"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "geology",
+        "historical reasoning"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1830,
+        "label": "1830 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Processes observable today provide tools for reconstructing geological events in the distant past.",
+      "problem": "How could geologists explain ancient rocks using evidence that could be inspected and tested in the present?",
+      "development": "Building on Hutton, Lyell’s Principles of Geology made present-day processes central to geological explanation. This approach encouraged close comparison of modern environments with ancient deposits.",
+      "limitations": "The useful principle is continuity of physical laws, not a claim that rates never vary. Impacts, eruptions, floods, and other rapid events are important parts of Earth history.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Charles Lyell",
+          "role": "Popularized process-based geological reasoning in Principles of Geology."
+        },
+        {
+          "name": "James Hutton",
+          "role": "Provided an earlier framework linking observed processes and deep time."
+        }
+      ],
+      "sourceIds": [
+        "le-uniformity"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-uniformity"
+        ],
+        "history": [
+          "le-uniformity"
+        ]
+      },
+      "example": "Ripple marks in modern sand help interpret similar structures preserved in sandstone."
+    },
+    {
+      "id": "ice-age-theory",
+      "title": "Past ice ages",
+      "aliases": [
+        "glacial theory",
+        "Pleistocene glaciation"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "climate",
+        "geology"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1840,
+        "label": "1830s–1840s",
+        "precision": "range",
+        "note": "1840 represents a period of influential publication and field investigation, rather than a single discovery."
+      },
+      "summary": "Glaciers once extended far beyond their present limits, leaving distinctive scratches, transported boulders, and deposits.",
+      "problem": "What could explain geological features in regions where no glacier exists today?",
+      "development": "Observations by Alpine residents and investigators such as Venetz and de Charpentier helped develop glacial explanations. Agassiz promoted a widespread past glaciation, including influential British investigations in 1840.",
+      "limitations": "The extent and timing of glaciations required later dating and mapping. Past ice ages do not imply that every climate change has the same cause.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Ignaz Venetz and Jean de Charpentier",
+          "role": "Developed evidence for larger former Alpine glaciers."
+        },
+        {
+          "name": "Louis Agassiz",
+          "role": "Promoted the wider ice-age interpretation."
+        }
+      ],
+      "sourceIds": [
+        "le-ice-age"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-ice-age"
+        ],
+        "history": [
+          "le-ice-age"
+        ]
+      }
+    },
+    {
+      "id": "isostasy",
+      "title": "Isostasy",
+      "aliases": [
+        "isostatic compensation"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "geophysics",
+        "gravity"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1855,
+        "label": "1855 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Large regions of Earth’s outer layers tend toward gravitational balance, with differences in density and crustal thickness helping support topography.",
+      "problem": "Why did mountains deflect survey measurements less than expected from their visible mass?",
+      "development": "Airy and Pratt proposed different compensation models in 1855. Airy emphasized deep roots beneath high terrain; Pratt emphasized lateral density differences.",
+      "limitations": "The lithosphere also has strength and flexes, and compensation may be incomplete. Simple column models are useful approximations rather than a universal local rule.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "George Biddell Airy",
+          "role": "Proposed compensation through varying crustal thickness."
+        },
+        {
+          "name": "John Henry Pratt",
+          "role": "Proposed compensation through varying density."
+        }
+      ],
+      "sourceIds": [
+        "le-isostasy"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-isostasy"
+        ],
+        "history": [
+          "le-isostasy"
+        ]
+      },
+      "example": "A mountain range can be associated with a deep crustal root, analogous in a limited way to the submerged part of an iceberg."
+    },
+    {
+      "id": "ocean-circulation",
+      "title": "Mapping ocean circulation",
+      "aliases": [
+        "physical oceanography",
+        "current charts"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "oceans",
+        "measurement"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1855,
+        "label": "1855 CE",
+        "precision": "exact",
+        "note": "1855 marks an influential synthesis, not the discovery of ocean currents."
+      },
+      "summary": "Systematic observations reveal recurring ocean currents that transport water, heat, and dissolved substances.",
+      "problem": "Could scattered observations from ships be combined into useful patterns of winds and currents?",
+      "development": "Maury’s charts and 1855 Physical Geography of the Sea synthesized maritime records. Coast surveys and later oceanographers strengthened and corrected this emerging picture of the ocean.",
+      "limitations": "Maury’s explanations were often incomplete or incorrect. Modern circulation theory distinguishes wind-driven flows, density effects, Earth’s rotation, and interactions with topography.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Matthew Fontaine Maury",
+          "role": "Compiled maritime observations and popularized physical oceanography."
+        },
+        {
+          "name": "Mariners and survey crews",
+          "role": "Collected the distributed measurements behind current charts."
+        }
+      ],
+      "sourceIds": [
+        "le-ocean",
+        "le-ocean-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-ocean",
+          "le-ocean-history"
+        ],
+        "history": [
+          "le-ocean",
+          "le-ocean-history"
+        ]
+      }
+    },
+    {
+      "id": "seismology",
+      "title": "Instrumental seismology",
+      "aliases": [
+        "seismographs",
+        "earthquake waves"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "geophysics",
+        "instruments"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1880,
+        "label": "c. 1880",
+        "precision": "approximate",
+        "note": "A milestone in modern instrumental seismology, not the first earthquake instrument."
+      },
+      "summary": "Recorded ground motion turns earthquakes into measurable signals that reveal both seismic sources and Earth’s interior.",
+      "problem": "How could earthquakes be compared reliably across locations rather than described only by felt intensity and damage?",
+      "development": "Milne and colleagues in Japan helped develop instrumental earthquake study during the late nineteenth century. Earlier earthquake observations and instruments, including traditions in China, belong to a much longer history.",
+      "limitations": "A seismogram mixes information about the source, travel path, and instrument. Separating these effects requires models and networks of observations.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "John Milne",
+          "role": "Promoted systematic instrumental earthquake study in Japan."
+        },
+        {
+          "name": "James Ewing and Thomas Gray",
+          "role": "Contributed early seismograph designs."
+        },
+        {
+          "name": "Japanese collaborators and observers",
+          "role": "Built the observational setting for the emerging discipline."
+        }
+      ],
+      "sourceIds": [
+        "le-seismic"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-seismic"
+        ],
+        "history": [
+          "le-seismic"
+        ]
+      }
+    },
+    {
+      "id": "radiometric-dating",
+      "title": "Radiometric dating",
+      "aliases": [
+        "isotopic dating",
+        "geochronology"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "geology",
+        "time"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1907,
+        "label": "1907 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Radioactive parent isotopes and their daughter products provide clocks for suitable geological materials.",
+      "problem": "How could the relative sequence of rocks be assigned numerical ages?",
+      "development": "Radioactivity opened a new timescale. Boltwood’s 1907 uranium–lead estimates showed that some minerals recorded immense ages; subsequent work refined decay constants, isotope measurements, and geological interpretation.",
+      "limitations": "A date concerns an event such as crystallization or resetting of an isotope system. Contamination, inherited material, and later heating must be assessed.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Bertram Boltwood",
+          "role": "Published early radioactive age estimates for minerals."
+        },
+        {
+          "name": "Ernest Rutherford",
+          "role": "Helped establish radioactive decay as a basis for geological dating."
+        },
+        {
+          "name": "Later geochronologists",
+          "role": "Refined isotopic methods and cross-checks."
+        }
+      ],
+      "sourceIds": [
+        "le-radiometric"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-radiometric"
+        ],
+        "history": [
+          "le-radiometric"
+        ]
+      },
+      "equation": {
+        "expression": "N(t) = N₀e^(−λt)",
+        "explanation": "For a closed radioactive parent population, N decreases from N₀ with decay constant λ over time t. Geological dating must also account for daughter isotopes and system history."
+      }
+    },
+    {
+      "id": "continental-drift",
+      "title": "Continental drift",
+      "aliases": [
+        "Wegener’s theory",
+        "Pangaea"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "geology",
+        "tectonics"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1912,
+        "label": "1912 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "The present continents were once connected and have moved relative to one another over geological time.",
+      "problem": "Why do widely separated continents share matching geological structures, fossils, and signs of ancient climates?",
+      "development": "Wegener assembled geographic, fossil, and climatic evidence for moving continents. His proposal challenged fixed-continent interpretations but lacked a satisfactory mechanism.",
+      "limitations": "Continental mobility is established within plate tectonics. Wegener’s proposed forces and the idea of continents plowing through ocean crust were inadequate; the later theory moved whole lithospheric plates.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Alfred Wegener",
+          "role": "Synthesized evidence for continental mobility."
+        },
+        {
+          "name": "Alexander du Toit",
+          "role": "Extended geological comparisons between separated southern continents."
+        }
+      ],
+      "sourceIds": [
+        "le-drift"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-drift"
+        ],
+        "history": [
+          "le-drift"
+        ]
+      }
+    },
+    {
+      "id": "biogeochemical-cycles",
+      "title": "Life in geochemical cycles",
+      "aliases": [
+        "biogeochemistry",
+        "biosphere"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "environment",
+        "cycles"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1926,
+        "label": "1926 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Living organisms participate in the movement and transformation of chemical elements through air, water, soil, and rock.",
+      "problem": "Could life be understood as an active part of Earth’s chemistry rather than merely a passenger on its surface?",
+      "development": "Vernadsky’s work on the biosphere treated living matter as a geological and chemical force. Later studies measured reservoirs and fluxes of carbon, nitrogen, phosphorus, and other elements.",
+      "limitations": "No single cycle is isolated: biological activity, physical transport, and chemistry interact. Global averages can hide large local differences and delays.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Vladimir Vernadsky",
+          "role": "Developed a biogeochemical account of the biosphere."
+        },
+        {
+          "name": "Many subsequent ecologists and geochemists",
+          "role": "Measured elemental reservoirs, transformations, and fluxes."
+        }
+      ],
+      "sourceIds": [
+        "le-biosphere"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-biosphere"
+        ],
+        "history": [
+          "le-biosphere"
+        ]
+      },
+      "example": "Photosynthesis transfers carbon into organisms; respiration, decay, transport, and burial move it through other reservoirs."
+    },
+    {
+      "id": "ecosystem",
+      "title": "The ecosystem",
+      "aliases": [
+        "ecological systems"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "ecology",
+        "systems"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1935,
+        "label": "1935 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "An ecosystem includes organisms together with the physical conditions and exchanges that connect them.",
+      "problem": "What should be studied as a unit when plants, animals, soil, water, and energy flows affect one another?",
+      "development": "Tansley introduced ecosystem as a way to consider the whole system, including physical factors. This challenged treatments of vegetation that gave insufficient attention to material and environmental relationships.",
+      "limitations": "Ecosystem boundaries are chosen for a question, not always sharply drawn in nature. Ecosystems change through disturbances, movement, and human activity; they need not sit at a fixed balance.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Arthur Tansley",
+          "role": "Introduced and explained the ecosystem concept."
+        }
+      ],
+      "sourceIds": [
+        "le-ecosystem"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-ecosystem"
+        ],
+        "history": [
+          "le-ecosystem"
+        ]
+      },
+      "example": "A pond study can track sunlight, nutrients, microbes, plants, animals, and exchanges with surrounding land."
+    },
+    {
+      "id": "earth-interior",
+      "title": "A layered Earth with an inner core",
+      "aliases": [
+        "inner core",
+        "seismic Earth structure"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "geophysics",
+        "interior"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1936,
+        "label": "1936 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Seismic waves reveal that Earth has distinct internal layers, including a solid inner core within a liquid outer core.",
+      "problem": "Why were some earthquake waves detected where a simple model of the core predicted a shadow?",
+      "development": "Lehmann examined seismic arrivals and proposed an inner core in her 1936 paper P′. Changes in wave speed and refraction made otherwise inaccessible structure inferable.",
+      "limitations": "The broad layered structure is well established, but composition, temperature, and fine structure require indirect inference and remain areas of research.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Inge Lehmann",
+          "role": "Inferred an inner core from seismic-wave observations."
+        },
+        {
+          "name": "Earlier seismologists, including Beno Gutenberg",
+          "role": "Established key constraints on the core and seismic travel paths."
+        }
+      ],
+      "sourceIds": [
+        "le-core",
+        "le-core-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-core",
+          "le-core-history"
+        ],
+        "history": [
+          "le-core",
+          "le-core-history"
+        ]
+      },
+      "example": "A wave bent or reflected at an internal boundary can arrive at a detector that a simpler model places in shadow."
+    },
+    {
+      "id": "anthropogenic-warming",
+      "title": "Human-driven greenhouse warming",
+      "aliases": [
+        "anthropogenic climate change",
+        "Callendar effect"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "climate",
+        "human influence"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1938,
+        "label": "1938 CE",
+        "precision": "exact",
+        "note": "1938 marks Callendar’s published synthesis; modern understanding rests on subsequent research as well."
+      },
+      "summary": "Adding long-lived greenhouse gases through human activity changes Earth’s energy balance and warms the climate.",
+      "problem": "Could industrial carbon dioxide emissions measurably affect global temperature?",
+      "development": "Callendar combined historical temperature and carbon-dioxide estimates with radiation calculations in 1938. Later measurements, improved models, and attribution studies greatly strengthened and refined the physical case.",
+      "limitations": "Callendar’s numerical estimates are not today’s evidence base. Modern conclusions use many independent observations and methods; short-term regional variation does not directly measure the long-term global response.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Guy Stewart Callendar",
+          "role": "Connected industrial emissions, carbon-dioxide increases, and warming in a quantitative study."
+        },
+        {
+          "name": "Later atmospheric scientists and climate researchers",
+          "role": "Established measurements, mechanisms, and attribution with much broader evidence."
+        }
+      ],
+      "sourceIds": [
+        "le-warming",
+        "le-greenhouse"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-warming",
+          "le-greenhouse"
+        ],
+        "history": [
+          "le-warming",
+          "le-greenhouse"
+        ]
+      }
+    },
+    {
+      "id": "milankovitch-cycles",
+      "title": "Orbital pacing of ice ages",
+      "aliases": [
+        "orbital cycles",
+        "astronomical climate theory"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "climate",
+        "astronomy"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1941,
+        "label": "1941 CE",
+        "precision": "exact",
+        "note": "1941 marks Milankovitch’s major synthesis after decades of calculations; empirical tests developed later."
+      },
+      "summary": "Changes in Earth’s orbit and axis redistribute sunlight by season and latitude, helping pace glacial cycles.",
+      "problem": "What could supply a recurring external influence on the growth and retreat of large ice sheets?",
+      "development": "Milankovitch calculated insolation changes from eccentricity, obliquity, and precession. Later sediment and ice records tested connections between orbital periods and climate variations.",
+      "limitations": "Orbital forcing operates over thousands of years and interacts with ice, oceans, and greenhouse feedbacks. It does not explain the rapid warming from recent human greenhouse emissions.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Milutin Milankovitch",
+          "role": "Calculated long-term changes in insolation from orbital geometry."
+        },
+        {
+          "name": "James Hays, John Imbrie, and Nicholas Shackleton",
+          "role": "Later compared orbital predictions with marine records."
+        }
+      ],
+      "sourceIds": [
+        "le-milankovitch",
+        "le-milankovitch-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-milankovitch",
+          "le-milankovitch-history"
+        ],
+        "history": [
+          "le-milankovitch",
+          "le-milankovitch-history"
+        ]
+      }
+    },
+    {
+      "id": "paleomagnetism",
+      "title": "Rocks as magnetic records",
+      "aliases": [
+        "remanent magnetism",
+        "apparent polar wander"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "geophysics",
+        "tectonics"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1956,
+        "label": "1950s",
+        "precision": "approximate",
+        "note": "1956 anchors a major reinterpretation of continental paleomagnetic paths; magnetic studies of rocks are older."
+      },
+      "summary": "Some rocks preserve information about the direction and polarity of Earth’s magnetic field when they formed.",
+      "problem": "Could ancient magnetism provide a test of whether continents had changed their relative positions?",
+      "development": "Runcorn and colleagues compared apparent polar-wander paths from different continents. Paths that disagreed for fixed continents could become more consistent when continental motion was allowed.",
+      "limitations": "Magnetic signals may be altered after formation, and rotations or age errors complicate interpretation. Multiple rocks, dating methods, and geological checks are necessary.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Keith Runcorn",
+          "role": "Used paleomagnetic comparisons to test continental motion."
+        },
+        {
+          "name": "Patrick Blackett, Edward Irving, and colleagues",
+          "role": "Developed instruments and methods for measuring weak rock magnetism."
+        }
+      ],
+      "sourceIds": [
+        "le-paleomagnetic"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-paleomagnetic"
+        ],
+        "history": [
+          "le-paleomagnetic"
+        ]
+      }
+    },
+    {
+      "id": "seafloor-spreading",
+      "title": "Seafloor spreading",
+      "aliases": [
+        "ocean-floor spreading"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "tectonics",
+        "oceans"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1962,
+        "label": "1962 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "New oceanic crust forms at spreading ridges, moves away, and is eventually recycled at subduction zones.",
+      "problem": "How could continents move without forcing their way through a supposedly fixed ocean floor?",
+      "development": "Hess proposed a mobile ocean floor in a 1962 synthesis. Ocean mapping, including work by Tharp and Heezen, exposed ridge structure; magnetic stripes subsequently supplied a powerful quantitative test.",
+      "limitations": "The original account required refinement. Spreading, subduction, and plate motion are parts of a larger tectonic system rather than a single conveyor with uniform speed.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Harry Hess",
+          "role": "Published an influential account of mobile ocean basins."
+        },
+        {
+          "name": "Robert Dietz",
+          "role": "Independently developed and named seafloor spreading."
+        },
+        {
+          "name": "Marie Tharp and Bruce Heezen",
+          "role": "Mapped ocean-floor structures central to the emerging picture."
+        }
+      ],
+      "sourceIds": [
+        "le-spreading",
+        "le-magnetic-stripes"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-spreading",
+          "le-magnetic-stripes"
+        ],
+        "history": [
+          "le-spreading",
+          "le-magnetic-stripes"
+        ]
+      }
+    },
+    {
+      "id": "plate-tectonics",
+      "title": "Plate tectonics",
+      "aliases": [
+        "lithospheric plates",
+        "global tectonics"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "tectonics",
+        "foundations"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1967,
+        "label": "1967–1968",
+        "precision": "range",
+        "note": "Placed at 1967 for a landmark plate-motion publication; the synthesis emerged through several groups over the decade."
+      },
+      "summary": "Earth’s outer shell is divided into moving plates whose interactions explain many earthquakes, volcanoes, ocean basins, and mountain belts.",
+      "problem": "Could continental drift, ocean-floor creation, deep earthquakes, and transform faults be explained by one coherent framework?",
+      "development": "During the 1960s, magnetic, seismic, and oceanographic evidence converged. McKenzie and Parker described rigid-plate motion on a sphere in 1967; Morgan, Le Pichon, Wilson, and others contributed essential parts of the synthesis.",
+      "limitations": "The theory explains lithospheric motion, but plate boundaries can be broad and deforming. The onset of plate tectonics in early Earth history remains debated.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Dan McKenzie and Robert Parker",
+          "role": "Formulated a spherical rigid-plate model."
+        },
+        {
+          "name": "W. Jason Morgan and Xavier Le Pichon",
+          "role": "Developed global plate-motion models."
+        },
+        {
+          "name": "J. Tuzo Wilson",
+          "role": "Explained transform faults and other key tectonic relationships."
+        }
+      ],
+      "sourceIds": [
+        "le-plates",
+        "le-drift"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-plates",
+          "le-drift"
+        ],
+        "history": [
+          "le-plates",
+          "le-drift"
+        ]
+      }
+    },
+    {
+      "id": "climate-modeling",
+      "title": "Physical climate models",
+      "aliases": [
+        "general circulation models",
+        "radiative-convective model"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "climate",
+        "computation"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1967,
+        "label": "1967 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Climate models calculate how energy, water, air, oceans, and other components interact under specified physical conditions.",
+      "problem": "How does the climate respond when radiation, greenhouse gases, or circulation change together?",
+      "development": "Manabe and Wetherald’s radiative-convective work linked atmospheric radiation with vertical heat transport and water-vapor feedback. Later models added three-dimensional circulation and coupled oceans and land.",
+      "limitations": "Models approximate unresolved processes and depend on inputs and assumptions. Their usefulness comes from physical consistency, comparisons with observations, and carefully tested ensembles.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Syukuro Manabe and Richard Wetherald",
+          "role": "Developed influential radiative-convective climate calculations."
+        },
+        {
+          "name": "Many atmospheric and computational scientists",
+          "role": "Extended models to coupled global systems."
+        }
+      ],
+      "sourceIds": [
+        "le-climate-models"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-climate-models"
+        ],
+        "history": [
+          "le-climate-models"
+        ]
+      }
+    },
+    {
+      "id": "remote-sensing",
+      "title": "Satellite Earth observation",
+      "aliases": [
+        "Landsat",
+        "Earth observation"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "instruments",
+        "environment"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1972,
+        "label": "1972 CE",
+        "precision": "exact",
+        "note": "1972 is the Landsat 1 milestone; aerial photography and other satellite observations predate it."
+      },
+      "summary": "Repeated measurements from orbit reveal patterns and changes across Earth’s surface that ground observations alone cannot easily capture.",
+      "problem": "How could land, vegetation, water, and environmental change be monitored consistently over large regions?",
+      "development": "Landsat 1 began a dedicated land-observation program in 1972. Multispectral scanning distinguished surfaces by their responses in different wavelength bands and established a long observational record.",
+      "limitations": "Satellite measurements require calibration and interpretation. Clouds, sensor resolution, viewing conditions, and changing instruments can complicate comparisons.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "NASA and US Geological Survey teams",
+          "role": "Developed and operated the Landsat program."
+        },
+        {
+          "name": "Virginia Norwood and the multispectral-scanner team",
+          "role": "Helped develop the instrument that enabled systematic multispectral land imaging."
+        }
+      ],
+      "sourceIds": [
+        "le-landsat",
+        "le-norwood"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-landsat",
+          "le-norwood"
+        ],
+        "history": [
+          "le-landsat",
+          "le-norwood"
+        ]
+      }
+    },
+    {
+      "id": "ozone-depletion",
+      "title": "Chemistry of ozone depletion",
+      "aliases": [
+        "CFC ozone destruction",
+        "stratospheric ozone chemistry"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "atmosphere",
+        "chemistry"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1974,
+        "label": "1974 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Chlorine released from some human-made compounds can catalytically destroy stratospheric ozone, weakening a shield against ultraviolet radiation.",
+      "problem": "Could chemically stable compounds released near the ground have important effects far above it?",
+      "development": "Molina and Rowland proposed that chlorofluorocarbons could reach the stratosphere and release reactive chlorine. Subsequent observations and chemistry explained severe polar ozone loss.",
+      "limitations": "The Antarctic ozone hole involves additional polar-cloud chemistry beyond the original mechanism. Ozone depletion and greenhouse warming are different problems with interacting atmospheric processes.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Mario Molina and F. Sherwood Rowland",
+          "role": "Proposed the CFC–chlorine mechanism of ozone depletion."
+        },
+        {
+          "name": "Paul Crutzen",
+          "role": "Developed key understanding of catalytic stratospheric ozone chemistry."
+        }
+      ],
+      "sourceIds": [
+        "le-ozone"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-ozone"
+        ],
+        "history": [
+          "le-ozone"
+        ]
+      }
+    },
+    {
+      "id": "earth-system-science",
+      "title": "Earth system science",
+      "aliases": [
+        "coupled Earth system",
+        "global change science"
+      ],
+      "discipline": "earth",
+      "tags": [
+        "systems",
+        "planetary environment"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1986,
+        "label": "1986 CE",
+        "precision": "exact",
+        "note": "Date marks the publication or research milestone discussed here, not the first human recognition of the subject."
+      },
+      "summary": "Atmosphere, oceans, ice, land, living systems, and human activity are studied as an interacting planetary system.",
+      "problem": "How could changes that cross traditional disciplinary boundaries be measured and explained together?",
+      "development": "A NASA advisory committee led by Bretherton presented an influential 1986 overview linking Earth’s components and their feedbacks. The program joined existing traditions in climatology, ecology, geochemistry, and remote sensing.",
+      "limitations": "A system diagram is a framework, not a complete causal model. Different processes act on very different timescales, and uncertainty can propagate between coupled components.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Francis Bretherton and the Earth System Sciences Committee",
+          "role": "Organized an influential integrated research framework."
+        },
+        {
+          "name": "Researchers across Earth and life sciences",
+          "role": "Developed the observations and models needed to study coupled change."
+        }
+      ],
+      "sourceIds": [
+        "le-earth-system"
+      ],
+      "claimSources": {
+        "summary": [
+          "le-earth-system"
+        ],
+        "history": [
+          "le-earth-system"
+        ]
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "natural-classification--comparative-anatomy",
+      "source": "natural-classification",
+      "target": "comparative-anatomy",
+      "type": "influence",
+      "explanation": "Comparing organism structures is a conceptual foundation for anatomical comparison; this edge does not assert a single documented transmission route.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-anatomy"
+      ]
+    },
+    {
+      "id": "hippocratic-medicine--comparative-anatomy",
+      "source": "hippocratic-medicine",
+      "target": "comparative-anatomy",
+      "type": "influence",
+      "explanation": "Both approaches treat observations of bodies as evidence. The connection is editorial, not a claim that Vesalius derived his methods directly from a particular Hippocratic text.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-anatomy"
+      ]
+    },
+    {
+      "id": "comparative-anatomy--blood-circulation",
+      "source": "comparative-anatomy",
+      "target": "blood-circulation",
+      "type": "enables",
+      "explanation": "Dissection and anatomical comparison made the heart, vessels, and valves available for Harvey’s investigation.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-circulation"
+      ]
+    },
+    {
+      "id": "measurement--blood-circulation",
+      "source": "measurement",
+      "target": "blood-circulation",
+      "type": "enables",
+      "explanation": "Estimating the quantity of blood moved by the heart helped expose problems in continual-production accounts.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-circulation"
+      ]
+    },
+    {
+      "id": "microscope--cell-observation",
+      "source": "microscope",
+      "target": "cell-observation",
+      "type": "enables",
+      "explanation": "Magnification made the repeated compartments of cork visible in Hooke’s observations.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-hooke"
+      ]
+    },
+    {
+      "id": "microscope--microorganisms",
+      "source": "microscope",
+      "target": "microorganisms",
+      "type": "enables",
+      "explanation": "Leeuwenhoek’s lenses made small living forms observable in water and infusions.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-leeuwenhoek"
+      ]
+    },
+    {
+      "id": "cell-observation--cell-theory",
+      "source": "cell-observation",
+      "target": "cell-theory",
+      "type": "influence",
+      "explanation": "The microscopic study of cellular structures developed into comparisons across plant and animal tissues.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-cells"
+      ]
+    },
+    {
+      "id": "microorganisms--cell-theory",
+      "source": "microorganisms",
+      "target": "cell-theory",
+      "type": "enables",
+      "explanation": "Single-celled life helped extend cellular organization beyond the compartments seen in plant tissue.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-cells"
+      ]
+    },
+    {
+      "id": "microorganisms--germ-theory",
+      "source": "microorganisms",
+      "target": "germ-theory",
+      "type": "enables",
+      "explanation": "Recognizing microorganisms made it possible to investigate whether particular microscopic agents caused infection.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-germs"
+      ]
+    },
+    {
+      "id": "humoral-theory--germ-theory",
+      "source": "humoral-theory",
+      "target": "germ-theory",
+      "type": "revision",
+      "explanation": "Microbial explanations displaced humoral accounts for infectious disease; this was a gradual, multi-strand historical change.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-germs"
+      ]
+    },
+    {
+      "id": "experimental-method--germ-theory",
+      "source": "experimental-method",
+      "target": "germ-theory",
+      "type": "enables",
+      "explanation": "Controlled contamination and isolation experiments separated candidate causes from accompanying conditions. This is a methodological connection.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-germs"
+      ]
+    },
+    {
+      "id": "arithmetic--mendelian-genetics",
+      "source": "arithmetic",
+      "target": "mendelian-genetics",
+      "type": "foundation",
+      "explanation": "Counting offspring in distinct classes made inheritance ratios visible; this is a conceptual dependency rather than a claim about a named arithmetic tradition.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-mendel"
+      ]
+    },
+    {
+      "id": "probability--mendelian-genetics",
+      "source": "probability",
+      "target": "mendelian-genetics",
+      "type": "foundation",
+      "explanation": "Probability models explain how separate parental transmissions produce expected inheritance ratios.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-mendel"
+      ]
+    },
+    {
+      "id": "natural-classification--evolution",
+      "source": "natural-classification",
+      "target": "evolution",
+      "type": "influence",
+      "explanation": "Comparative natural history supplied patterns of similarity that common descent could explain. This broad connection does not imply a direct line from Aristotle to Darwin.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-evolution"
+      ]
+    },
+    {
+      "id": "geological-time--evolution",
+      "source": "geological-time",
+      "target": "evolution",
+      "type": "enables",
+      "explanation": "An immense geological past provided time for cumulative changes and branching descent.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-evolution"
+      ]
+    },
+    {
+      "id": "uniformitarianism--evolution",
+      "source": "uniformitarianism",
+      "target": "evolution",
+      "type": "influence",
+      "explanation": "Lyell’s geological reasoning influenced Darwin’s understanding of cumulative changes over long periods.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-evolution"
+      ]
+    },
+    {
+      "id": "evolution--ecology",
+      "source": "evolution",
+      "target": "ecology",
+      "type": "influence",
+      "explanation": "Haeckel formulated ecology within an evolutionary account of organisms and their conditions of existence.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-ecology"
+      ]
+    },
+    {
+      "id": "natural-classification--ecology",
+      "source": "natural-classification",
+      "target": "ecology",
+      "type": "enables",
+      "explanation": "Describing organisms and their distributions supports questions about their relationships with environments; the edge is conceptual.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-ecology"
+      ]
+    },
+    {
+      "id": "cell-theory--neuron-doctrine",
+      "source": "cell-theory",
+      "target": "neuron-doctrine",
+      "type": "foundation",
+      "explanation": "The neuron doctrine extended cellular individuality to the specialized tissue of the nervous system.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-neuron"
+      ]
+    },
+    {
+      "id": "microscope--neuron-doctrine",
+      "source": "microscope",
+      "target": "neuron-doctrine",
+      "type": "enables",
+      "explanation": "Microscopy combined with staining revealed individual neuronal forms that could be compared.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-neuron"
+      ]
+    },
+    {
+      "id": "mendelian-genetics--chromosome-theory",
+      "source": "mendelian-genetics",
+      "target": "chromosome-theory",
+      "type": "influence",
+      "explanation": "The segregation of hereditary factors suggested a comparison with the behavior of chromosomes during cell division.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-chromosomes"
+      ]
+    },
+    {
+      "id": "cell-theory--chromosome-theory",
+      "source": "cell-theory",
+      "target": "chromosome-theory",
+      "type": "foundation",
+      "explanation": "Inheritance could be investigated through physical structures and divisions within cells.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-chromosomes"
+      ]
+    },
+    {
+      "id": "microscope--chromosome-theory",
+      "source": "microscope",
+      "target": "chromosome-theory",
+      "type": "enables",
+      "explanation": "Improved microscopy and staining made chromosome movement observable.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-chromosomes"
+      ]
+    },
+    {
+      "id": "vaccination--adaptive-immunity",
+      "source": "vaccination",
+      "target": "adaptive-immunity",
+      "type": "enables",
+      "explanation": "Acquired protection provided a phenomenon that mechanisms of immune specificity and memory needed to explain.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-immunity"
+      ]
+    },
+    {
+      "id": "germ-theory--adaptive-immunity",
+      "source": "germ-theory",
+      "target": "adaptive-immunity",
+      "type": "influence",
+      "explanation": "Microbial causes of disease gave immunologists defined agents and targets for studying defense.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-immunity"
+      ]
+    },
+    {
+      "id": "neuron-doctrine--synaptic-transmission",
+      "source": "neuron-doctrine",
+      "target": "synaptic-transmission",
+      "type": "foundation",
+      "explanation": "Separate neuronal units raised the question of how signals crossed from one cell to another.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-synapse"
+      ]
+    },
+    {
+      "id": "blood-circulation--synaptic-transmission",
+      "source": "blood-circulation",
+      "target": "synaptic-transmission",
+      "type": "enables",
+      "explanation": "The isolated beating heart served as a measurable preparation for detecting a transferable nerve-induced chemical effect.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-synapse"
+      ]
+    },
+    {
+      "id": "blood-circulation--homeostasis",
+      "source": "blood-circulation",
+      "target": "homeostasis",
+      "type": "influence",
+      "explanation": "Circulation participates in the coordinated maintenance of an internal environment, a conceptual connection to physiological regulation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-homeostasis"
+      ]
+    },
+    {
+      "id": "measurement--homeostasis",
+      "source": "measurement",
+      "target": "homeostasis",
+      "type": "enables",
+      "explanation": "Tracking physiological variables makes regulation and recovery after disturbance testable.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-homeostasis"
+      ]
+    },
+    {
+      "id": "evolution--population-genetics",
+      "source": "evolution",
+      "target": "population-genetics",
+      "type": "influence",
+      "explanation": "Population genetics made natural selection’s consequences for inherited variation mathematically explicit.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-population"
+      ]
+    },
+    {
+      "id": "mendelian-genetics--population-genetics",
+      "source": "mendelian-genetics",
+      "target": "population-genetics",
+      "type": "foundation",
+      "explanation": "Discrete hereditary factors supplied the units whose frequencies could be modeled through generations.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-population"
+      ]
+    },
+    {
+      "id": "probability--population-genetics",
+      "source": "probability",
+      "target": "population-genetics",
+      "type": "foundation",
+      "explanation": "Random inheritance and finite-population sampling require probabilistic models.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-population"
+      ]
+    },
+    {
+      "id": "statistics--population-genetics",
+      "source": "statistics",
+      "target": "population-genetics",
+      "type": "foundation",
+      "explanation": "Statistical descriptions connect variation in populations with models of evolutionary change.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-population"
+      ]
+    },
+    {
+      "id": "population-genetics--modern-synthesis",
+      "source": "population-genetics",
+      "target": "modern-synthesis",
+      "type": "foundation",
+      "explanation": "Mathematical accounts of inheritance and selection helped connect genetics with natural history and speciation.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-synthesis"
+      ]
+    },
+    {
+      "id": "evolution--modern-synthesis",
+      "source": "evolution",
+      "target": "modern-synthesis",
+      "type": "influence",
+      "explanation": "The synthesis retained common descent and natural selection while incorporating Mendelian and population genetics.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-synthesis"
+      ]
+    },
+    {
+      "id": "fossil-organisms--modern-synthesis",
+      "source": "fossil-organisms",
+      "target": "modern-synthesis",
+      "type": "enables",
+      "explanation": "Paleontological evidence connected population-level mechanisms with the long history of life.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-synthesis"
+      ]
+    },
+    {
+      "id": "chromosome-theory--dna-as-genetic-material",
+      "source": "chromosome-theory",
+      "target": "dna-as-genetic-material",
+      "type": "influence",
+      "explanation": "A physical account of hereditary structures sharpened the question of which chemical component carried inherited information.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-dna-material"
+      ]
+    },
+    {
+      "id": "germ-theory--dna-as-genetic-material",
+      "source": "germ-theory",
+      "target": "dna-as-genetic-material",
+      "type": "enables",
+      "explanation": "Work with pathogenic bacterial strains supplied the transformation phenomenon used to identify DNA’s hereditary role.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-dna-material"
+      ]
+    },
+    {
+      "id": "evolution--phylogenetics",
+      "source": "evolution",
+      "target": "phylogenetics",
+      "type": "foundation",
+      "explanation": "Common descent supplies the interpretation of branching relationships among organisms.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-phylogeny"
+      ]
+    },
+    {
+      "id": "natural-classification--phylogenetics",
+      "source": "natural-classification",
+      "target": "phylogenetics",
+      "type": "revision",
+      "explanation": "Phylogenetic systematics replaces classification by overall resemblance with explicit hypotheses about ancestry.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-phylogeny"
+      ]
+    },
+    {
+      "id": "neuron-doctrine--action-potential",
+      "source": "neuron-doctrine",
+      "target": "action-potential",
+      "type": "foundation",
+      "explanation": "The nerve cell and its membrane provide the biological unit whose excitability the model explains.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-action"
+      ]
+    },
+    {
+      "id": "differential-equations--action-potential",
+      "source": "differential-equations",
+      "target": "action-potential",
+      "type": "foundation",
+      "explanation": "Coupled differential equations describe changing membrane voltage and conductances in the Hodgkin–Huxley model.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-action"
+      ]
+    },
+    {
+      "id": "dna-as-genetic-material--dna-structure",
+      "source": "dna-as-genetic-material",
+      "target": "dna-structure",
+      "type": "influence",
+      "explanation": "Evidence for DNA’s hereditary role made its molecular structure a central explanatory target.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-dna"
+      ]
+    },
+    {
+      "id": "chemical-bonding--dna-structure",
+      "source": "chemical-bonding",
+      "target": "dna-structure",
+      "type": "foundation",
+      "explanation": "Chemical bonding and stereochemical constraints limited the possible arrangements of DNA’s components.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-dna"
+      ]
+    },
+    {
+      "id": "dna-structure--molecular-biology",
+      "source": "dna-structure",
+      "target": "molecular-biology",
+      "type": "influence",
+      "explanation": "Complementary nucleotide strands helped frame heredity as a problem of copying and using molecular sequence information.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-dogma-history"
+      ]
+    },
+    {
+      "id": "biochemistry--molecular-biology",
+      "source": "biochemistry",
+      "target": "molecular-biology",
+      "type": "enables",
+      "explanation": "Biochemical experiments connected inherited information with protein production and molecular machinery.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-dogma-history"
+      ]
+    },
+    {
+      "id": "molecular-biology--gene-regulation",
+      "source": "molecular-biology",
+      "target": "gene-regulation",
+      "type": "foundation",
+      "explanation": "The problem of information flow becomes a problem of control: cells regulate when sequence information is expressed.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-regulation"
+      ]
+    },
+    {
+      "id": "dna-as-genetic-material--gene-regulation",
+      "source": "dna-as-genetic-material",
+      "target": "gene-regulation",
+      "type": "foundation",
+      "explanation": "Hereditary DNA provides both protein-coding information and sites involved in controlling expression.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-regulation"
+      ]
+    },
+    {
+      "id": "molecular-biology--genetic-code",
+      "source": "molecular-biology",
+      "target": "genetic-code",
+      "type": "influence",
+      "explanation": "The sequence hypothesis posed a specific experimental problem: how nucleotide sequences specify amino acids.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-code"
+      ]
+    },
+    {
+      "id": "dna-structure--genetic-code",
+      "source": "dna-structure",
+      "target": "genetic-code",
+      "type": "foundation",
+      "explanation": "DNA sequence information supplies the inherited template whose expressed codons are translated.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-code"
+      ]
+    },
+    {
+      "id": "cell-theory--endosymbiosis",
+      "source": "cell-theory",
+      "target": "endosymbiosis",
+      "type": "foundation",
+      "explanation": "Cellular organization makes it meaningful to ask whether one cell became incorporated within another.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-endosymbiosis"
+      ]
+    },
+    {
+      "id": "evolution--endosymbiosis",
+      "source": "evolution",
+      "target": "endosymbiosis",
+      "type": "foundation",
+      "explanation": "Endosymbiosis explains major cellular features through historical descent and integration.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-endosymbiosis"
+      ]
+    },
+    {
+      "id": "microorganisms--endosymbiosis",
+      "source": "microorganisms",
+      "target": "endosymbiosis",
+      "type": "enables",
+      "explanation": "Comparisons with bacteria supplied evidence for the ancestry of mitochondria and plastids.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-endosymbiosis"
+      ]
+    },
+    {
+      "id": "population-genetics--neutral-theory",
+      "source": "population-genetics",
+      "target": "neutral-theory",
+      "type": "foundation",
+      "explanation": "Mutation and random genetic drift provided the mechanisms needed to explain neutral sequence substitutions.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-neutral"
+      ]
+    },
+    {
+      "id": "genetic-code--neutral-theory",
+      "source": "genetic-code",
+      "target": "neutral-theory",
+      "type": "enables",
+      "explanation": "Molecular sequence comparisons, interpreted through coding relationships, exposed rates of change the theory sought to explain.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-neutral"
+      ]
+    },
+    {
+      "id": "dna-structure--recombinant-dna",
+      "source": "dna-structure",
+      "target": "recombinant-dna",
+      "type": "foundation",
+      "explanation": "A chemical understanding of DNA enabled fragments to be cut, joined, and copied in designed combinations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-recombinant"
+      ]
+    },
+    {
+      "id": "molecular-biology--recombinant-dna",
+      "source": "molecular-biology",
+      "target": "recombinant-dna",
+      "type": "enables",
+      "explanation": "Knowledge of DNA replication and cellular information processing made functional plasmid construction possible.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-recombinant"
+      ]
+    },
+    {
+      "id": "evolution--evolutionary-developmental-biology",
+      "source": "evolution",
+      "target": "evolutionary-developmental-biology",
+      "type": "foundation",
+      "explanation": "Common ancestry frames comparisons of conserved developmental machinery and divergent body forms.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-homeobox-history"
+      ]
+    },
+    {
+      "id": "gene-regulation--evolutionary-developmental-biology",
+      "source": "gene-regulation",
+      "target": "evolutionary-developmental-biology",
+      "type": "foundation",
+      "explanation": "Changes in where and when developmental genes act can alter the forms produced by related genetic toolkits.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-homeobox"
+      ]
+    },
+    {
+      "id": "recombinant-dna--evolutionary-developmental-biology",
+      "source": "recombinant-dna",
+      "target": "evolutionary-developmental-biology",
+      "type": "enables",
+      "explanation": "Molecular cloning made developmental genes accessible for sequence comparison.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-homeobox"
+      ]
+    },
+    {
+      "id": "dna-structure--pcr",
+      "source": "dna-structure",
+      "target": "pcr",
+      "type": "foundation",
+      "explanation": "Complementary base pairing permits primers to select a target and each strand to guide new synthesis.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-pcr-definition"
+      ]
+    },
+    {
+      "id": "molecular-biology--pcr",
+      "source": "molecular-biology",
+      "target": "pcr",
+      "type": "enables",
+      "explanation": "DNA polymerases and knowledge of template-directed synthesis supplied the copying machinery used by PCR.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-pcr"
+      ]
+    },
+    {
+      "id": "recombinant-dna--genomics",
+      "source": "recombinant-dna",
+      "target": "genomics",
+      "type": "enables",
+      "explanation": "DNA manipulation and cloning methods contributed to the preparation and analysis of genome fragments.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-genomics"
+      ]
+    },
+    {
+      "id": "dna-structure--genomics",
+      "source": "dna-structure",
+      "target": "genomics",
+      "type": "foundation",
+      "explanation": "A genome can be represented as an ordered nucleotide sequence, enabling whole-genome reconstruction.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-genomics"
+      ]
+    },
+    {
+      "id": "genomics--systems-biology",
+      "source": "genomics",
+      "target": "systems-biology",
+      "type": "enables",
+      "explanation": "Large-scale genomic measurements provide components and observations for models of interacting biological systems.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-systems"
+      ]
+    },
+    {
+      "id": "gene-regulation--systems-biology",
+      "source": "gene-regulation",
+      "target": "systems-biology",
+      "type": "foundation",
+      "explanation": "Regulatory interactions form dynamic networks whose collective behavior systems models investigate.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-systems"
+      ]
+    },
+    {
+      "id": "homeostasis--systems-biology",
+      "source": "homeostasis",
+      "target": "systems-biology",
+      "type": "influence",
+      "explanation": "Physiological regulation provides questions about feedback and robustness that can be studied at molecular and network scales.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-systems"
+      ]
+    },
+    {
+      "id": "recombinant-dna--crispr",
+      "source": "recombinant-dna",
+      "target": "crispr",
+      "type": "influence",
+      "explanation": "Earlier DNA engineering established experimental goals and practices that targeted genome editing extends. This is a conceptual connection, not a direct derivation of bacterial CRISPR.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-crispr"
+      ]
+    },
+    {
+      "id": "genomics--crispr",
+      "source": "genomics",
+      "target": "crispr",
+      "type": "enables",
+      "explanation": "Sequence analysis helped researchers recognize repeated CRISPR arrays and investigate their relationship with microbial defense.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-crispr"
+      ]
+    },
+    {
+      "id": "molecular-biology--crispr",
+      "source": "molecular-biology",
+      "target": "crispr",
+      "type": "foundation",
+      "explanation": "RNA-guided sequence recognition and DNA cleavage depend on molecular information-processing mechanisms.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-crispr"
+      ]
+    },
+    {
+      "id": "geometry--earth-measurement",
+      "source": "geometry",
+      "target": "earth-measurement",
+      "type": "foundation",
+      "explanation": "A fraction of a circle relates the measured solar-angle difference to the full circumference.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-earth-size"
+      ]
+    },
+    {
+      "id": "measurement--earth-measurement",
+      "source": "measurement",
+      "target": "earth-measurement",
+      "type": "enables",
+      "explanation": "The geometric argument requires observations of angles and terrestrial distances.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-earth-size"
+      ]
+    },
+    {
+      "id": "measurement--water-cycle",
+      "source": "measurement",
+      "target": "water-cycle",
+      "type": "enables",
+      "explanation": "Rainfall and river-flow estimates allowed an explicit comparison of water input and output.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-hydrology-history"
+      ]
+    },
+    {
+      "id": "comparative-anatomy--fossil-organisms",
+      "source": "comparative-anatomy",
+      "target": "fossil-organisms",
+      "type": "enables",
+      "explanation": "Steno’s anatomical comparison of shark teeth with tongue stones supported an organic interpretation of those fossils.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-fossils"
+      ]
+    },
+    {
+      "id": "stratigraphy--geological-time",
+      "source": "stratigraphy",
+      "target": "geological-time",
+      "type": "enables",
+      "explanation": "Relations among deposited, tilted, and eroded layers expose sequences requiring substantial time.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-deep-time"
+      ]
+    },
+    {
+      "id": "fossil-organisms--geological-time",
+      "source": "fossil-organisms",
+      "target": "geological-time",
+      "type": "influence",
+      "explanation": "Interpreting fossils as former life made rock sequences records of a past biological world. This is a conceptual connection to deep time.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-fossils"
+      ]
+    },
+    {
+      "id": "geological-time--uniformitarianism",
+      "source": "geological-time",
+      "target": "uniformitarianism",
+      "type": "influence",
+      "explanation": "Hutton’s account of long geological histories informed Lyell’s later process-based synthesis.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-uniformity"
+      ]
+    },
+    {
+      "id": "stratigraphy--uniformitarianism",
+      "source": "stratigraphy",
+      "target": "uniformitarianism",
+      "type": "enables",
+      "explanation": "Layered rock relationships provide historical observations that modern geological processes can help explain.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-uniformity"
+      ]
+    },
+    {
+      "id": "uniformitarianism--ice-age-theory",
+      "source": "uniformitarianism",
+      "target": "ice-age-theory",
+      "type": "enables",
+      "explanation": "Comparing present glaciers with older landforms supports inference to former glaciation. This is a methodological connection.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-ice-age"
+      ]
+    },
+    {
+      "id": "measurement--isostasy",
+      "source": "measurement",
+      "target": "isostasy",
+      "type": "enables",
+      "explanation": "Discrepancies in geodetic observations created the problem of gravitational compensation.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-isostasy"
+      ]
+    },
+    {
+      "id": "classical-mechanics--isostasy",
+      "source": "classical-mechanics",
+      "target": "isostasy",
+      "type": "foundation",
+      "explanation": "Gravitational balance supplies the physical framework for compensation models.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-isostasy"
+      ]
+    },
+    {
+      "id": "measurement--ocean-circulation",
+      "source": "measurement",
+      "target": "ocean-circulation",
+      "type": "enables",
+      "explanation": "Combining repeated ship observations made persistent patterns of currents and winds identifiable.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-ocean"
+      ]
+    },
+    {
+      "id": "measurement--seismology",
+      "source": "measurement",
+      "target": "seismology",
+      "type": "enables",
+      "explanation": "Instrumental recordings replace only qualitative descriptions with comparable measurements of motion.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-seismic"
+      ]
+    },
+    {
+      "id": "geological-time--radiometric-dating",
+      "source": "geological-time",
+      "target": "radiometric-dating",
+      "type": "influence",
+      "explanation": "Radioactive dating supplied numerical estimates for the long histories previously inferred from rock relationships.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-radiometric"
+      ]
+    },
+    {
+      "id": "fossil-organisms--continental-drift",
+      "source": "fossil-organisms",
+      "target": "continental-drift",
+      "type": "enables",
+      "explanation": "Matching fossil distributions on separated continents were part of Wegener’s evidence for former connections.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-drift"
+      ]
+    },
+    {
+      "id": "ice-age-theory--continental-drift",
+      "source": "ice-age-theory",
+      "target": "continental-drift",
+      "type": "enables",
+      "explanation": "Ancient glacial traces in now-separated regions supplied evidence that their past geographic arrangement differed.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-drift"
+      ]
+    },
+    {
+      "id": "ecology--biogeochemical-cycles",
+      "source": "ecology",
+      "target": "biogeochemical-cycles",
+      "type": "foundation",
+      "explanation": "Organism–environment relationships can be extended to the movement of elements through living and nonliving reservoirs.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-biosphere"
+      ]
+    },
+    {
+      "id": "atomic-theory--biogeochemical-cycles",
+      "source": "atomic-theory",
+      "target": "biogeochemical-cycles",
+      "type": "foundation",
+      "explanation": "Accounting for chemical elements makes material transfers through the biosphere intelligible. This is a conceptual dependency.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-biosphere"
+      ]
+    },
+    {
+      "id": "ecology--ecosystem",
+      "source": "ecology",
+      "target": "ecosystem",
+      "type": "influence",
+      "explanation": "Tansley’s ecosystem concept developed within debates about the units and physical context of ecological study.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-ecosystem"
+      ]
+    },
+    {
+      "id": "water-cycle--ecosystem",
+      "source": "water-cycle",
+      "target": "ecosystem",
+      "type": "foundation",
+      "explanation": "Water exchange exemplifies the physical connections that ecosystem analysis includes alongside organisms.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-ecosystem"
+      ]
+    },
+    {
+      "id": "seismology--earth-interior",
+      "source": "seismology",
+      "target": "earth-interior",
+      "type": "enables",
+      "explanation": "Seismic arrivals provided the observations from which Lehmann inferred an inner core.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-core"
+      ]
+    },
+    {
+      "id": "greenhouse-effect--anthropogenic-warming",
+      "source": "greenhouse-effect",
+      "target": "anthropogenic-warming",
+      "type": "foundation",
+      "explanation": "The radiative effect of carbon dioxide provides the physical link from increased concentration to warming.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-warming"
+      ]
+    },
+    {
+      "id": "ice-age-theory--milankovitch-cycles",
+      "source": "ice-age-theory",
+      "target": "milankovitch-cycles",
+      "type": "influence",
+      "explanation": "Explaining repeated glacial advances and retreats motivated calculations of long-term orbital forcing.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-milankovitch"
+      ]
+    },
+    {
+      "id": "calculus--milankovitch-cycles",
+      "source": "calculus",
+      "target": "milankovitch-cycles",
+      "type": "foundation",
+      "explanation": "Continuous calculations of orbital geometry and insolation underlie quantitative astronomical climate models.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-milankovitch-history"
+      ]
+    },
+    {
+      "id": "continental-drift--paleomagnetism",
+      "source": "continental-drift",
+      "target": "paleomagnetism",
+      "type": "influence",
+      "explanation": "The disagreement between polar-wander paths could be interpreted by allowing continents to move relative to one another.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-paleomagnetic"
+      ]
+    },
+    {
+      "id": "measurement--paleomagnetism",
+      "source": "measurement",
+      "target": "paleomagnetism",
+      "type": "enables",
+      "explanation": "Sensitive measurements of weak remanent magnetization made continental comparisons possible.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-paleomagnetic"
+      ]
+    },
+    {
+      "id": "continental-drift--seafloor-spreading",
+      "source": "continental-drift",
+      "target": "seafloor-spreading",
+      "type": "revision",
+      "explanation": "Moving oceanic crust supplied a way for continents to travel without plowing through a fixed seafloor.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-spreading"
+      ]
+    },
+    {
+      "id": "ocean-circulation--seafloor-spreading",
+      "source": "ocean-circulation",
+      "target": "seafloor-spreading",
+      "type": "enables",
+      "explanation": "The broader growth of systematic oceanography enabled exploration and mapping of ocean basins. This is a field-level conceptual connection.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-spreading"
+      ]
+    },
+    {
+      "id": "seafloor-spreading--plate-tectonics",
+      "source": "seafloor-spreading",
+      "target": "plate-tectonics",
+      "type": "foundation",
+      "explanation": "Creation and removal of oceanic crust became part of a coherent model of moving plates.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-plates"
+      ]
+    },
+    {
+      "id": "paleomagnetism--plate-tectonics",
+      "source": "paleomagnetism",
+      "target": "plate-tectonics",
+      "type": "enables",
+      "explanation": "Magnetic patterns and reversals supplied tests of ocean-floor movement incorporated into the plate synthesis.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-magnetic-stripes"
+      ]
+    },
+    {
+      "id": "seismology--plate-tectonics",
+      "source": "seismology",
+      "target": "plate-tectonics",
+      "type": "enables",
+      "explanation": "Earthquake locations and motion directions constrained plate boundaries and relative movements.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-plates"
+      ]
+    },
+    {
+      "id": "geometry--plate-tectonics",
+      "source": "geometry",
+      "target": "plate-tectonics",
+      "type": "foundation",
+      "explanation": "Rigid motions on a sphere provide the mathematical description of relative plate movements.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-plates"
+      ]
+    },
+    {
+      "id": "greenhouse-effect--climate-modeling",
+      "source": "greenhouse-effect",
+      "target": "climate-modeling",
+      "type": "foundation",
+      "explanation": "Radiative transfer and atmospheric absorption are essential physical ingredients of climate calculations.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-climate-models"
+      ]
+    },
+    {
+      "id": "thermodynamics--climate-modeling",
+      "source": "thermodynamics",
+      "target": "climate-modeling",
+      "type": "foundation",
+      "explanation": "Conservation and transport of heat constrain how atmospheric temperature responds to radiation and convection.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-climate-models"
+      ]
+    },
+    {
+      "id": "differential-equations--climate-modeling",
+      "source": "differential-equations",
+      "target": "climate-modeling",
+      "type": "foundation",
+      "explanation": "Time-dependent physical processes are represented by equations that can be solved or approximated numerically.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-climate-models"
+      ]
+    },
+    {
+      "id": "spectroscopy--remote-sensing",
+      "source": "spectroscopy",
+      "target": "remote-sensing",
+      "type": "foundation",
+      "explanation": "Different wavelength responses allow multispectral measurements to distinguish materials and surface conditions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-norwood"
+      ]
+    },
+    {
+      "id": "chemical-kinetics--ozone-depletion",
+      "source": "chemical-kinetics",
+      "target": "ozone-depletion",
+      "type": "foundation",
+      "explanation": "Reaction mechanisms and rates explain how chlorine can catalytically remove ozone.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-ozone"
+      ]
+    },
+    {
+      "id": "chemical-bonding--ozone-depletion",
+      "source": "chemical-bonding",
+      "target": "ozone-depletion",
+      "type": "foundation",
+      "explanation": "The breakup and rearrangement of molecules connects CFC decomposition with reactive chlorine chemistry.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-ozone"
+      ]
+    },
+    {
+      "id": "ecosystem--earth-system-science",
+      "source": "ecosystem",
+      "target": "earth-system-science",
+      "type": "foundation",
+      "explanation": "Coupling organisms with their physical environment supplies one part of a planetary systems perspective.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-earth-system"
+      ]
+    },
+    {
+      "id": "biogeochemical-cycles--earth-system-science",
+      "source": "biogeochemical-cycles",
+      "target": "earth-system-science",
+      "type": "foundation",
+      "explanation": "Elemental transfers connect living systems with atmosphere, oceans, land, and rock.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-earth-system"
+      ]
+    },
+    {
+      "id": "climate-modeling--earth-system-science",
+      "source": "climate-modeling",
+      "target": "earth-system-science",
+      "type": "enables",
+      "explanation": "Physical climate models provide a way to investigate interactions and feedbacks across planetary components.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-earth-system"
+      ]
+    },
+    {
+      "id": "remote-sensing--earth-system-science",
+      "source": "remote-sensing",
+      "target": "earth-system-science",
+      "type": "enables",
+      "explanation": "Repeated global observations make changes across coupled Earth components measurable.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-earth-system"
+      ]
+    },
+    {
+      "id": "ocean-circulation--earth-system-science",
+      "source": "ocean-circulation",
+      "target": "earth-system-science",
+      "type": "foundation",
+      "explanation": "Ocean transport connects heat and material exchanges over large distances and timescales.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "le-earth-system"
+      ]
+    },
+    {
+      "id": "radioactivity--radiometric-dating",
+      "source": "radioactivity",
+      "target": "radiometric-dating",
+      "type": "enables",
+      "explanation": "Predictable radioactive decay supplied a physical clock for assigning numerical ages to suitable minerals.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-radiometric"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "le-hippocratic",
+      "title": "The origins of the history and physical examination",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK458/",
+      "publisher": "NCBI Bookshelf / Clinical Methods"
+    },
+    {
+      "id": "le-humors",
+      "title": "The Art and Science of Healing: Graeco-Roman Medicine",
+      "url": "https://exhibitions.kelsey.lsa.umich.edu/art-science-healing/theme2.php",
+      "publisher": "University of Michigan, Kelsey Museum"
+    },
+    {
+      "id": "le-classification",
+      "title": "Aristotle: Biology",
+      "url": "https://iep.utm.edu/aristotle-biology/",
+      "publisher": "Internet Encyclopedia of Philosophy"
+    },
+    {
+      "id": "le-anatomy",
+      "title": "Historical Anatomies: Andreas Vesalius",
+      "url": "https://www.nlm.nih.gov/exhibition/historicalanatomies/vesalius_bio.html",
+      "publisher": "US National Library of Medicine"
+    },
+    {
+      "id": "le-circulation",
+      "title": "Ceaseless motion: William Harvey’s experimentations in circulation",
+      "url": "https://history.rcp.ac.uk/exhibitions/past-exhibitions/ceaseless-motion-experimentations-circulation",
+      "publisher": "Royal College of Physicians Museum"
+    },
+    {
+      "id": "le-pulmonary",
+      "title": "The discovery of pulmonary circulation: From Imhotep to William Harvey",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4220440/",
+      "publisher": "Global Cardiology Science and Practice / PubMed Central"
+    },
+    {
+      "id": "le-hooke",
+      "title": "Micrographia (1665), digitized original",
+      "url": "https://wellcomecollection.org/works/apmaw56u",
+      "publisher": "Wellcome Collection"
+    },
+    {
+      "id": "le-leeuwenhoek",
+      "title": "Leeuwenhoek’s letter to Oldenburg, 9 October 1676",
+      "url": "https://makingscience.royalsociety.org/items/el_l1_22/letter-from-antoni-van-leeuwenhoek-to-henry-oldenburg-dated-at-delft",
+      "publisher": "The Royal Society"
+    },
+    {
+      "id": "le-vaccination",
+      "title": "History of smallpox vaccination",
+      "url": "https://www.who.int/news-room/spotlight/history-of-vaccination/history-of-smallpox-vaccination",
+      "publisher": "World Health Organization"
+    },
+    {
+      "id": "le-cells",
+      "title": "Biology 2e: Studying Cells",
+      "url": "https://openstax.org/books/biology-2e/pages/4-1-studying-cells",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "le-evolution",
+      "title": "Biology 2e: Understanding Evolution",
+      "url": "https://openstax.org/books/biology-2e/pages/18-1-understanding-evolution",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "le-germs",
+      "title": "Microbiology: Foundations of Modern Cell Theory",
+      "url": "https://openstax.org/books/microbiology/pages/3-2-foundations-of-modern-cell-theory",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "le-mendel",
+      "title": "Biology 2e: Mendel’s Experiments and the Laws of Probability",
+      "url": "https://openstax.org/books/biology-2e/pages/12-1-mendels-experiments-and-the-laws-of-probability",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "le-ecology",
+      "title": "Was Darwin an ecologist?",
+      "url": "https://www.darwinproject.ac.uk/commentary/life-sciences/was-darwin-ecologist",
+      "publisher": "University of Cambridge, Darwin Correspondence Project"
+    },
+    {
+      "id": "le-neuron",
+      "title": "Cajal, Golgi, Nansen, Schäfer and the neuron doctrine",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23870749/",
+      "publisher": "Journal of the History of the Neurosciences / PubMed"
+    },
+    {
+      "id": "le-chromosomes",
+      "title": "Biology 2e: Chromosomal Theory and Genetic Linkage",
+      "url": "https://openstax.org/books/biology-2e/pages/13-1-chromosomal-theory-and-genetic-linkage",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "le-immunity",
+      "title": "Biology 2e: Adaptive Immune Response",
+      "url": "https://openstax.org/books/biology-2e/pages/42-2-adaptive-immune-response",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "le-immunity-history",
+      "title": "Nobel Prize in Physiology or Medicine 1908",
+      "url": "https://www.nobelprize.org/prizes/medicine/1908/summary/",
+      "publisher": "Nobel Prize"
+    },
+    {
+      "id": "le-synapse",
+      "title": "Otto Loewi: The chemical transmission of nerve action, Nobel lecture",
+      "url": "https://www.nobelprize.org/prizes/medicine/1936/loewi/lecture/",
+      "publisher": "Nobel Prize"
+    },
+    {
+      "id": "le-homeostasis",
+      "title": "Organization for physiological homeostasis (1929)",
+      "url": "https://journals.physiology.org/doi/10.1152/physrev.1929.9.3.399",
+      "publisher": "American Physiological Society"
+    },
+    {
+      "id": "le-population",
+      "title": "Population Genetics",
+      "url": "https://plato.stanford.edu/entries/population-genetics/",
+      "publisher": "Stanford Encyclopedia of Philosophy"
+    },
+    {
+      "id": "le-synthesis",
+      "title": "The genetic material? Historical development of the Modern Synthesis",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK595925/",
+      "publisher": "NCBI Bookshelf"
+    },
+    {
+      "id": "le-dna-material",
+      "title": "Biology 2e: Historical Basis of Modern Understanding",
+      "url": "https://openstax.org/books/biology-2e/pages/14-1-historical-basis-of-modern-understanding",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "le-phylogeny",
+      "title": "Phylogenetic Inference",
+      "url": "https://plato.stanford.edu/entries/phylogenetic-inference/",
+      "publisher": "Stanford Encyclopedia of Philosophy"
+    },
+    {
+      "id": "le-action",
+      "title": "A quantitative description of membrane current and its application to conduction and excitation in nerve",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12991237/",
+      "publisher": "The Journal of Physiology / PubMed"
+    },
+    {
+      "id": "le-dna",
+      "title": "Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid (1953)",
+      "url": "https://www.nature.com/articles/171737a0",
+      "publisher": "Nature"
+    },
+    {
+      "id": "le-franklin",
+      "title": "Molecular Configuration in Sodium Thymonucleate (1953)",
+      "url": "https://www.nature.com/articles/171740a0",
+      "publisher": "Nature"
+    },
+    {
+      "id": "le-dogma",
+      "title": "Central Dogma of Molecular Biology (1970)",
+      "url": "https://www.nature.com/articles/227561a0",
+      "publisher": "Nature"
+    },
+    {
+      "id": "le-dogma-history",
+      "title": "60 years ago, Francis Crick changed the logic of biology",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5602739/",
+      "publisher": "PLOS Biology"
+    },
+    {
+      "id": "le-regulation",
+      "title": "Genetic regulatory mechanisms in the synthesis of proteins (1961)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/13718526/",
+      "publisher": "Journal of Molecular Biology / PubMed"
+    },
+    {
+      "id": "le-code",
+      "title": "1966: Genetic Code Cracked",
+      "url": "https://www.genome.gov/25520300/online-education-kit-1966-genetic-code-cracked",
+      "publisher": "National Human Genome Research Institute"
+    },
+    {
+      "id": "le-endosymbiosis",
+      "title": "Lynn Margulis and the endosymbiont hypothesis: 50 years later",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5426843/",
+      "publisher": "Molecular Biology of the Cell"
+    },
+    {
+      "id": "le-neutral",
+      "title": "Evolutionary Rate at the Molecular Level (1968)",
+      "url": "https://www.nature.com/articles/217624a0",
+      "publisher": "Nature"
+    },
+    {
+      "id": "le-recombinant",
+      "title": "Construction of biologically functional bacterial plasmids in vitro (1973)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/4594039/",
+      "publisher": "Proceedings of the National Academy of Sciences / PubMed"
+    },
+    {
+      "id": "le-homeobox",
+      "title": "A conserved DNA sequence in homoeotic genes of the Drosophila Antennapedia and bithorax complexes (1984)",
+      "url": "https://www.nature.com/articles/308428a0",
+      "publisher": "Nature"
+    },
+    {
+      "id": "le-homeobox-history",
+      "title": "Lifting the lid on the homeobox discovery",
+      "url": "https://www.nature.com/articles/21057-c1",
+      "publisher": "Nature"
+    },
+    {
+      "id": "le-pcr",
+      "title": "Enzymatic amplification of beta-globin genomic sequences (1985)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2999980/",
+      "publisher": "Science / PubMed"
+    },
+    {
+      "id": "le-pcr-definition",
+      "title": "Polymerase Chain Reaction",
+      "url": "https://www.genome.gov/genetics-glossary/Polymerase-Chain-Reaction-PCR",
+      "publisher": "National Human Genome Research Institute"
+    },
+    {
+      "id": "le-genomics",
+      "title": "Whole-genome random sequencing and assembly of Haemophilus influenzae Rd (1995)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7542800/",
+      "publisher": "Science / PubMed"
+    },
+    {
+      "id": "le-systems",
+      "title": "Systems biology: a brief overview (2002)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11872829/",
+      "publisher": "Science / PubMed"
+    },
+    {
+      "id": "le-crispr",
+      "title": "The Nobel Prize in Chemistry 2020: CRISPR genetic scissors",
+      "url": "https://www.nobelprize.org/uploads/2020/10/press-chemistryprize2020.pdf",
+      "publisher": "Royal Swedish Academy of Sciences"
+    },
+    {
+      "id": "le-earth-size",
+      "title": "How Big Is the Earth?",
+      "url": "https://pumas.nasa.gov/sites/default/files/examples/04_01_13_1.pdf",
+      "publisher": "NASA / Jet Propulsion Laboratory"
+    },
+    {
+      "id": "le-hydrology-history",
+      "title": "Pierre Perrault and the origins of hydrology (2024)",
+      "url": "https://water.usask.ca/hillslope/documents/pdfs/2024/mcdonnell_perrault_2024.pdf",
+      "publisher": "Hydrological Sciences Journal / University of Saskatchewan"
+    },
+    {
+      "id": "le-hydrology",
+      "title": "The Water Cycle",
+      "url": "https://www.usgs.gov/special-topics/water-science-school/science/water-cycle",
+      "publisher": "US Geological Survey"
+    },
+    {
+      "id": "le-strata",
+      "title": "Geologic Principles: Superposition and Original Horizontality",
+      "url": "https://home.nps.gov/articles/geologic-principles-superposition-and-original-horizontality.htm",
+      "publisher": "US National Park Service"
+    },
+    {
+      "id": "le-fossils",
+      "title": "Nicolaus Steno (1638–1686)",
+      "url": "https://science.nasa.gov/earth/earth-observatory/nicolaus-steno/",
+      "publisher": "NASA Earth Observatory"
+    },
+    {
+      "id": "le-deep-time",
+      "title": "The legacy of James Hutton",
+      "url": "https://rse.org.uk/about-us/heritage-collections/archive/the-legacy-of-james-hutton/",
+      "publisher": "Royal Society of Edinburgh"
+    },
+    {
+      "id": "le-greenhouse",
+      "title": "The Greenhouse Effect: Teacher Background Information",
+      "url": "https://gml.noaa.gov/education/lesson_plans/Teacher%20Background%20Information-%20The%20Greenhouse%20Effect.pdf",
+      "publisher": "NOAA Global Monitoring Laboratory"
+    },
+    {
+      "id": "le-uniformity",
+      "title": "Geologic Principles: Uniformitarianism",
+      "url": "https://www.nps.gov/articles/geologic-principles-uniformitarianism.htm",
+      "publisher": "US National Park Service"
+    },
+    {
+      "id": "le-ice-age",
+      "title": "Agassiz Rock: Geological Conservation Review site account",
+      "url": "https://jncc.gov.uk/jncc-assets/GCR/gcr-site-account-379.pdf",
+      "publisher": "UK Joint Nature Conservation Committee"
+    },
+    {
+      "id": "le-isostasy",
+      "title": "The Development of the Concept of Isostasy",
+      "url": "https://www.cambridge.org/core/books/isostasy-and-flexure-of-the-lithosphere/development-of-the-concept-of-isostasy/D2B33633648A8F31B53A15B76B653C8E",
+      "publisher": "Cambridge University Press"
+    },
+    {
+      "id": "le-ocean",
+      "title": "The Physical Geography of the Sea (1855), digitized original",
+      "url": "https://library.si.edu/digital-library/book/physicalgeograp00maura",
+      "publisher": "Smithsonian Libraries"
+    },
+    {
+      "id": "le-ocean-history",
+      "title": "Ocean exploration historical timeline",
+      "url": "https://oceanexplorer.noaa.gov/history/timeline/",
+      "publisher": "NOAA Ocean Exploration"
+    },
+    {
+      "id": "le-seismic",
+      "title": "Seismology in Japan (1880)",
+      "url": "https://www.nature.com/articles/022208a0",
+      "publisher": "Nature"
+    },
+    {
+      "id": "le-radiometric",
+      "title": "Geologic Time: Radiometric Time Scale",
+      "url": "https://pubs.usgs.gov/gip/geotime/radiometric.html",
+      "publisher": "US Geological Survey"
+    },
+    {
+      "id": "le-drift",
+      "title": "This Dynamic Earth: Historical Perspective",
+      "url": "https://pubs.usgs.gov/gip/dynamic/historical.html",
+      "publisher": "US Geological Survey"
+    },
+    {
+      "id": "le-biosphere",
+      "title": "Études biogéochimiques: Sur la vitesse de la transmission de la vie dans la biosphère (1926)",
+      "url": "https://www.mathnet.ru/php/archive.phtml?jrnid=im&option_lang=eng&paperid=5583&wshow=paper",
+      "publisher": "Academy of Sciences / Math-Net.Ru"
+    },
+    {
+      "id": "le-ecosystem",
+      "title": "The Use and Abuse of Vegetational Concepts and Terms (1935)",
+      "url": "https://doi.org/10.2307/1930070",
+      "publisher": "Ecological Society of America"
+    },
+    {
+      "id": "le-core",
+      "title": "Inge Lehmann and the inner core",
+      "url": "https://nbi.ku.dk/english/www/inge/lehmann/",
+      "publisher": "Niels Bohr Institute, University of Copenhagen"
+    },
+    {
+      "id": "le-core-history",
+      "title": "September 1936: Lehmann concludes that Earth has an inner core",
+      "url": "https://www.aps.org/apsnews/2023/08/seismologist-lehmann-earth-inner-core",
+      "publisher": "American Physical Society"
+    },
+    {
+      "id": "le-warming",
+      "title": "The artificial production of carbon dioxide and its influence on temperature (1938)",
+      "url": "https://doi.org/10.1002/qj.49706427503",
+      "publisher": "Quarterly Journal of the Royal Meteorological Society"
+    },
+    {
+      "id": "le-milankovitch",
+      "title": "Milankovitch cycles and their role in Earth’s climate",
+      "url": "https://science.nasa.gov/science-research/earth-science/milankovitch-orbital-cycles-and-their-role-in-earths-climate/",
+      "publisher": "NASA Science"
+    },
+    {
+      "id": "le-milankovitch-history",
+      "title": "Milutin Milankovitch",
+      "url": "https://science.nasa.gov/earth/earth-observatory/milutin-milankovitch/",
+      "publisher": "NASA Earth Observatory"
+    },
+    {
+      "id": "le-paleomagnetic",
+      "title": "Palaeomagnetic data from Europe and North America and their bearing on the origin of the North Atlantic Ocean",
+      "url": "https://www.sciencedirect.com/science/article/pii/0040195168900735",
+      "publisher": "Tectonophysics"
+    },
+    {
+      "id": "le-spreading",
+      "title": "Harry Hammond Hess: This Dynamic Earth",
+      "url": "https://pubs.usgs.gov/gip/dynamic/HHH.html",
+      "publisher": "US Geological Survey"
+    },
+    {
+      "id": "le-magnetic-stripes",
+      "title": "Magnetic Record of Seafloor Spreading",
+      "url": "https://pubs.usgs.gov/cp/41/report.pdf",
+      "publisher": "US Geological Survey"
+    },
+    {
+      "id": "le-plates",
+      "title": "The North Pacific: an Example of Tectonics on a Sphere (1967)",
+      "url": "https://www.nature.com/articles/2161276a0",
+      "publisher": "Nature"
+    },
+    {
+      "id": "le-climate-models",
+      "title": "The Nobel Prize in Physics 2021: Physical modeling of Earth’s climate",
+      "url": "https://www.nobelprize.org/uploads/2021/10/press-physicsprize2021.pdf",
+      "publisher": "Royal Swedish Academy of Sciences"
+    },
+    {
+      "id": "le-landsat",
+      "title": "Landsat 1",
+      "url": "https://www.usgs.gov/landsat-missions/landsat-1",
+      "publisher": "US Geological Survey"
+    },
+    {
+      "id": "le-ozone",
+      "title": "A Story of Ozone: Earth’s Natural Sunscreen",
+      "url": "https://www.nasa.gov/centers-and-facilities/goddard/a-story-of-ozone-earths-natural-sunscreen/",
+      "publisher": "NASA Goddard"
+    },
+    {
+      "id": "le-earth-system",
+      "title": "Earth System Science: Overview, A Program for Global Change (1986)",
+      "url": "https://www.nationalacademies.org/publications/19210",
+      "publisher": "NASA Advisory Council / National Academies"
+    },
+    {
+      "id": "le-norwood",
+      "title": "Virginia T. Norwood: The Mother of Landsat",
+      "url": "https://science.nasa.gov/missions/landsat/virginia-t-norwood-the-mother-of-landsat/",
+      "publisher": "NASA Science"
+    }
+  ]
+}

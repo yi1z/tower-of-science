@@ -1,0 +1,5271 @@
+{
+  "concepts": [
+    {
+      "id": "sky-cycles",
+      "title": "Cycles of the sky",
+      "aliases": [
+        "Calendars",
+        "celestial observation"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": -2000,
+        "label": "c. 2000 BCE and earlier",
+        "precision": "approximate",
+        "note": "Observational traditions developed independently over millennia; this is a broad placement, not an invention date."
+      },
+      "summary": "Repeated movements of the Sun, Moon, and stars made time and seasons observable patterns.",
+      "problem": "Communities needed calendars, seasonal markers, and ways to orient travel.",
+      "development": "Observers in Mesopotamia, Egypt, China, and other societies accumulated records. Later Maya astronomy and Polynesian navigation developed distinct, sophisticated uses of celestial regularities.",
+      "limitations": "The surviving record is uneven; shared observations do not establish a single origin or direct transmission.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Anonymous observers",
+          "role": "Maintained local calendrical and navigational traditions"
+        }
+      ],
+      "sourceIds": [
+        "sc-ancient"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-ancient"
+        ],
+        "history": [
+          "sc-ancient"
+        ]
+      }
+    },
+    {
+      "id": "geocentrism",
+      "title": "Geocentric planetary models",
+      "aliases": [
+        "Ptolemaic system",
+        "epicycles"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 150,
+        "label": "c. 150 CE",
+        "precision": "approximate",
+        "note": "Placement follows Ptolemy's Almagest; Earth-centered models are substantially older."
+      },
+      "summary": "Earth-centered mathematical models described planetary positions using combinations of circular motions.",
+      "problem": "Planets sometimes appear to reverse direction against the stars.",
+      "development": "Ptolemy synthesized earlier Greek mathematical astronomy into a predictive system. Later astronomers in multiple regions criticized and refined its geometry.",
+      "limitations": "The model's stationary Earth is physically incorrect; its geometrical prediction techniques retain historical importance.",
+      "standing": "superseded",
+      "contributors": [
+        {
+          "name": "Claudius Ptolemy",
+          "role": "Systematized the Almagest planetary model"
+        },
+        {
+          "name": "Hipparchus",
+          "role": "Developed earlier quantitative astronomy"
+        }
+      ],
+      "sourceIds": [
+        "sc-ancient"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-ancient"
+        ],
+        "history": [
+          "sc-ancient"
+        ]
+      }
+    },
+    {
+      "id": "heliocentrism",
+      "title": "Heliocentric planetary system",
+      "aliases": [
+        "Copernican system",
+        "Sun-centered system"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1543,
+        "label": "1543",
+        "precision": "exact",
+        "note": "Publication of De revolutionibus; earlier Sun-centered proposals existed."
+      },
+      "summary": "Placing Earth among the planets makes apparent planetary reversals a consequence of relative orbital motion.",
+      "problem": "Astronomers sought a coherent arrangement of planetary periods and motions.",
+      "development": "Copernicus reorganized inherited planetary geometry around the Sun. His circular-orbit construction was later revised through observations and Kepler's ellipses.",
+      "limitations": "The Sun is not the center of the universe, and circular orbits were an approximation.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Nicolaus Copernicus",
+          "role": "Published a systematic Sun-centered model"
+        }
+      ],
+      "sourceIds": [
+        "sc-copernicus"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-copernicus"
+        ],
+        "history": [
+          "sc-copernicus"
+        ]
+      }
+    },
+    {
+      "id": "kepler-laws",
+      "title": "Kepler's laws of planetary motion",
+      "aliases": [
+        "elliptical orbits"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1609,
+        "label": "1609–1619",
+        "precision": "range",
+        "note": "The first two laws appeared in 1609; the period–distance law followed in 1619."
+      },
+      "summary": "Planets follow ellipses, sweep equal areas in equal times, and obey a period–distance relation.",
+      "problem": "Precise observations of Mars resisted circular-orbit models.",
+      "development": "Kepler analyzed Tycho Brahe's positional measurements within a heliocentric framework. The resulting empirical rules helped make Newton's gravitational explanation possible.",
+      "limitations": "The laws describe ideal two-body motion; interactions between planets require corrections.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Johannes Kepler",
+          "role": "Derived the three laws"
+        },
+        {
+          "name": "Tycho Brahe",
+          "role": "Produced precise planetary observations"
+        }
+      ],
+      "sourceIds": [
+        "sc-kepler"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-kepler"
+        ],
+        "history": [
+          "sc-kepler"
+        ]
+      },
+      "equation": {
+        "expression": "T² ∝ a³",
+        "explanation": "For bodies orbiting the same dominant mass, squared orbital period T is proportional to cubed semi-major axis a."
+      }
+    },
+    {
+      "id": "stellar-parallax",
+      "title": "Stellar parallax",
+      "aliases": [
+        "trigonometric parallax"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1838,
+        "label": "1838",
+        "precision": "exact",
+        "note": "Bessel's published distance to 61 Cygni is used as the milestone; Struve and Henderson also contributed."
+      },
+      "summary": "A nearby star's apparent annual shift gives its distance through triangulation.",
+      "problem": "Apparent brightness alone cannot tell a faint nearby star from a bright distant one.",
+      "development": "Improved telescopes made tiny angular shifts measurable. Earth's orbit supplied the baseline, creating a geometric anchor for the cosmic distance ladder.",
+      "limitations": "Parallax angles shrink with distance; measurement uncertainty eventually dominates.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Friedrich Bessel",
+          "role": "Measured the parallax of 61 Cygni"
+        },
+        {
+          "name": "Friedrich Struve and Thomas Henderson",
+          "role": "Made early stellar distance measurements"
+        }
+      ],
+      "sourceIds": [
+        "sc-parallax"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-parallax"
+        ],
+        "history": [
+          "sc-parallax"
+        ]
+      },
+      "equation": {
+        "expression": "d = 1 / p",
+        "explanation": "Distance d is in parsecs when annual parallax p is measured in arcseconds."
+      }
+    },
+    {
+      "id": "stellar-classification",
+      "title": "Stellar spectral classification",
+      "aliases": [
+        "Harvard classification",
+        "OBAFGKM"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1901,
+        "label": "c. 1901",
+        "precision": "approximate",
+        "note": "Marks Cannon's early classification work; the system developed across several decades."
+      },
+      "summary": "Patterns of absorption lines sort stars into classes closely related to surface temperature.",
+      "problem": "Astronomers needed a consistent way to compare thousands of stellar spectra.",
+      "development": "Williamina Fleming, Antonia Maury, and Annie Jump Cannon refined Harvard's classifications. Later atomic physics explained why temperature changes spectral lines.",
+      "limitations": "A spectral class is not a complete history of a star; gravity, composition, and other properties also matter.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Annie Jump Cannon",
+          "role": "Standardized the OBAFGKM sequence"
+        },
+        {
+          "name": "Williamina Fleming and Antonia Maury",
+          "role": "Developed earlier stellar classifications"
+        }
+      ],
+      "sourceIds": [
+        "sc-spectra"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-spectra"
+        ],
+        "history": [
+          "sc-spectra"
+        ]
+      }
+    },
+    {
+      "id": "period-luminosity",
+      "title": "Cepheid period–luminosity relation",
+      "aliases": [
+        "Leavitt law",
+        "Cepheids"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1912,
+        "label": "1912",
+        "precision": "exact",
+        "note": "Leavitt identified the trend in 1908 and published its quantitative form in 1912."
+      },
+      "summary": "A Cepheid variable's pulsation period predicts its intrinsic brightness and therefore helps reveal its distance.",
+      "problem": "Distances beyond the reach of parallax required another calibrated ruler.",
+      "development": "Henrietta Swan Leavitt compared variables in the Magellanic Clouds, treating them as approximately equidistant. The relation became a bridge from nearby stars to other galaxies.",
+      "limitations": "Different Cepheid populations and dust require calibration; the relation is not identical for every variable star.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Henrietta Swan Leavitt",
+          "role": "Discovered the relation using photographic records"
+        }
+      ],
+      "sourceIds": [
+        "sc-cepheid"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-cepheid"
+        ],
+        "history": [
+          "sc-cepheid"
+        ]
+      }
+    },
+    {
+      "id": "hertzsprung-russell",
+      "title": "Hertzsprung–Russell diagram",
+      "aliases": [
+        "H-R diagram",
+        "main sequence"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1913,
+        "label": "c. 1911–1913",
+        "precision": "approximate",
+        "note": "Independent early diagrams by Hertzsprung and Russell are represented by the 1913 milestone."
+      },
+      "summary": "Plotting stellar luminosity against temperature reveals the main sequence, giants, and white dwarfs.",
+      "problem": "A catalog of stellar measurements needed an organizing pattern.",
+      "development": "Hertzsprung and Russell connected spectral properties with intrinsic brightness. Stellar physics later explained how stars move through this diagram as they evolve.",
+      "limitations": "A star's position alone does not uniquely determine its age, especially without mass and composition.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Ejnar Hertzsprung",
+          "role": "Related stellar color and luminosity"
+        },
+        {
+          "name": "Henry Norris Russell",
+          "role": "Developed an independent classification diagram"
+        }
+      ],
+      "sourceIds": [
+        "sc-hr"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-hr"
+        ],
+        "history": [
+          "sc-hr"
+        ]
+      }
+    },
+    {
+      "id": "cosmic-expansion",
+      "title": "Expansion of the universe",
+      "aliases": [
+        "Hubble–Lemaître law"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1927,
+        "label": "1927–1929",
+        "precision": "range",
+        "note": "Lemaître's theoretical and observational relation preceded Hubble's 1929 publication."
+      },
+      "summary": "On large scales, distances between unbound galaxies increase as the universe evolves.",
+      "problem": "Galaxy spectra and distance estimates suggested a systematic pattern of recession.",
+      "development": "Friedmann and Lemaître developed evolving relativistic models. Lemaître connected expansion with observations; Hubble's distances and Slipher's redshifts helped establish the empirical relation.",
+      "limitations": "Bound systems do not simply expand with the universe; nearby peculiar velocities complicate the relation.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Georges Lemaître",
+          "role": "Connected expansion theory and observations"
+        },
+        {
+          "name": "Alexander Friedmann",
+          "role": "Derived evolving cosmological solutions"
+        },
+        {
+          "name": "Edwin Hubble and Vesto Slipher",
+          "role": "Supplied crucial distances and redshifts"
+        }
+      ],
+      "sourceIds": [
+        "sc-expansion"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-expansion"
+        ],
+        "history": [
+          "sc-expansion"
+        ]
+      },
+      "equation": {
+        "expression": "v ≈ H₀ d",
+        "explanation": "For nearby galaxies in the large-scale flow, recession speed v is approximately the Hubble parameter H₀ times distance d."
+      }
+    },
+    {
+      "id": "big-bang",
+      "title": "Hot Big Bang cosmology",
+      "aliases": [
+        "hot early universe"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1931,
+        "label": "1931–1948",
+        "precision": "range",
+        "note": "The placement marks Lemaître's early-origin proposal; the hot nuclear model developed in the 1940s."
+      },
+      "summary": "The observable universe evolved from a much hotter, denser early state as space expanded.",
+      "problem": "Cosmology needed to explain expansion, light-element abundances, and the thermal history of matter.",
+      "development": "Lemaître's early proposal was substantially revised by Gamow, Alpher, and Herman into a hot-universe framework. Background radiation later supplied strong observational evidence.",
+      "limitations": "The model describes early evolution; it does not establish creation from absolute nothing or a complete account of the first instant.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Georges Lemaître",
+          "role": "Proposed an early dense cosmic state"
+        },
+        {
+          "name": "George Gamow, Ralph Alpher, and Robert Herman",
+          "role": "Developed hot-universe and radiation predictions"
+        }
+      ],
+      "sourceIds": [
+        "sc-bigbang"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-bigbang"
+        ],
+        "history": [
+          "sc-bigbang"
+        ]
+      }
+    },
+    {
+      "id": "stellar-fusion",
+      "title": "Nuclear fusion in stars",
+      "aliases": [
+        "proton–proton chain",
+        "CNO cycle"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1939,
+        "label": "1939",
+        "precision": "exact",
+        "note": "Bethe's analysis of stellar energy production is the milestone; earlier contributions were essential."
+      },
+      "summary": "Stars release energy by transforming light nuclei into more tightly bound nuclei.",
+      "problem": "Chemical burning and gravitational contraction could not explain the Sun's long lifetime.",
+      "development": "Mass–energy equivalence and nuclear physics enabled proton–proton and carbon–nitrogen–oxygen reaction models. Bethe's work connected these reactions to stellar temperatures.",
+      "limitations": "Reaction rates depend on temperature and composition; different masses follow different burning histories.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Hans Bethe",
+          "role": "Explained major stellar fusion pathways"
+        },
+        {
+          "name": "Arthur Eddington",
+          "role": "Argued for nuclear energy in stars"
+        }
+      ],
+      "sourceIds": [
+        "sc-fusion"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-fusion"
+        ],
+        "history": [
+          "sc-fusion"
+        ]
+      }
+    },
+    {
+      "id": "stellar-nucleosynthesis",
+      "title": "Stellar nucleosynthesis",
+      "aliases": [
+        "B²FH",
+        "element formation"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1957,
+        "label": "1957",
+        "precision": "exact",
+        "note": "Marks the B2FH synthesis of element-production mechanisms, building on earlier stellar-nuclear work."
+      },
+      "summary": "Nuclear reactions in stars and stellar explosions build many elements heavier than helium.",
+      "problem": "A physical explanation was needed for the observed distribution of chemical elements.",
+      "development": "Burbidge, Burbidge, Fowler, and Hoyle organized distinct fusion and neutron-capture processes. Subsequent observations and calculations refined where those processes occur.",
+      "limitations": "No single kind of star makes all elements; some production sites and detailed yields remain active research.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Margaret Burbidge, Geoffrey Burbidge, William Fowler, and Fred Hoyle",
+          "role": "Synthesized stellar element-production theory"
+        }
+      ],
+      "sourceIds": [
+        "sc-supernova",
+        "sc-b2fh"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-supernova",
+          "sc-b2fh"
+        ],
+        "history": [
+          "sc-b2fh"
+        ]
+      }
+    },
+    {
+      "id": "white-dwarfs",
+      "title": "White dwarfs and the mass limit",
+      "aliases": [
+        "Chandrasekhar limit",
+        "electron degeneracy"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1931,
+        "label": "1931",
+        "precision": "exact",
+        "note": "Placement marks Chandrasekhar's relativistic mass-limit result; white dwarfs were observed earlier."
+      },
+      "summary": "Electron degeneracy pressure supports compact stellar remnants only below a limiting mass.",
+      "problem": "Extremely dense, dim stars could not be explained as ordinary gas spheres.",
+      "development": "Quantum statistics explained support without ongoing fusion. Chandrasekhar included relativistic electron motion and found a limiting mass near 1.4 solar masses.",
+      "limitations": "The ideal limit depends on composition and assumptions; rotation, magnetic fields, and binary evolution add complications.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Subrahmanyan Chandrasekhar",
+          "role": "Derived the relativistic limiting mass"
+        },
+        {
+          "name": "Ralph Fowler",
+          "role": "Applied electron degeneracy to white dwarfs"
+        }
+      ],
+      "sourceIds": [
+        "sc-dwarfs"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-dwarfs"
+        ],
+        "history": [
+          "sc-dwarfs"
+        ]
+      }
+    },
+    {
+      "id": "neutron-stars",
+      "title": "Neutron stars and pulsars",
+      "aliases": [
+        "pulsars"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1934,
+        "label": "1934–1967",
+        "precision": "range",
+        "note": "Theory preceded the 1967 discovery of pulsars."
+      },
+      "summary": "A collapsed stellar core can form an object so dense that neutron-rich matter dominates its interior.",
+      "problem": "Supernova remnants required a possible end state beyond ordinary stars and white dwarfs.",
+      "development": "Baade and Zwicky proposed neutron stars after the neutron's discovery. Jocelyn Bell Burnell's pulsar observations later revealed rapidly rotating compact stars.",
+      "limitations": "The behavior of matter at the highest core densities remains uncertain; not every neutron star is visible as a pulsar.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Walter Baade and Fritz Zwicky",
+          "role": "Proposed neutron-star remnants"
+        },
+        {
+          "name": "Jocelyn Bell Burnell",
+          "role": "Discovered the first pulsar signals"
+        }
+      ],
+      "sourceIds": [
+        "sc-neutron",
+        "sc-supernova1934"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-neutron"
+        ],
+        "history": [
+          "sc-neutron",
+          "sc-supernova1934"
+        ]
+      }
+    },
+    {
+      "id": "black-holes",
+      "title": "Black holes",
+      "aliases": [
+        "event horizon"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1916,
+        "label": "1916 onward",
+        "precision": "range",
+        "note": "Schwarzschild's solution is the mathematical milestone; physical collapse and observational evidence came later."
+      },
+      "summary": "A black hole contains a region from which light cannot escape to distant observers.",
+      "problem": "General relativity allowed gravity far stronger than Newtonian intuition suggested.",
+      "development": "Schwarzschild found a spherical spacetime solution. Later collapse studies established physical formation scenarios; stellar orbits, accretion, and gravitational waves supplied evidence.",
+      "limitations": "Classical singularities signal incomplete physics; the interior requires more than an extrapolation of tested external behavior.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Karl Schwarzschild",
+          "role": "Found the spherical solution"
+        },
+        {
+          "name": "J. Robert Oppenheimer and Hartland Snyder",
+          "role": "Modeled gravitational collapse"
+        }
+      ],
+      "sourceIds": [
+        "sc-blackholes"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-blackholes"
+        ],
+        "history": [
+          "sc-blackholes"
+        ]
+      }
+    },
+    {
+      "id": "cosmic-microwave-background",
+      "title": "Cosmic microwave background",
+      "aliases": [
+        "CMB",
+        "relic radiation"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1965,
+        "label": "1965",
+        "precision": "exact",
+        "note": "Marks observational discovery; hot-universe radiation had been predicted earlier."
+      },
+      "summary": "A nearly uniform microwave glow preserves a cooled remnant of the universe's hot early phase.",
+      "problem": "A hot Big Bang needed observable evidence beyond expansion.",
+      "development": "Penzias and Wilson detected unexplained antenna noise. Dicke's group interpreted the radiation cosmologically; later satellites measured its spectrum and tiny anisotropies.",
+      "limitations": "Foreground emission and instrumental calibration must be separated from the primordial signal.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Arno Penzias and Robert Wilson",
+          "role": "Detected the microwave background"
+        },
+        {
+          "name": "Robert Dicke and collaborators",
+          "role": "Developed the cosmological interpretation"
+        }
+      ],
+      "sourceIds": [
+        "sc-cmb"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-cmb"
+        ],
+        "history": [
+          "sc-cmb"
+        ]
+      }
+    },
+    {
+      "id": "dark-matter",
+      "title": "Dark matter",
+      "aliases": [
+        "missing mass"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1933,
+        "label": "1933 onward",
+        "precision": "range",
+        "note": "Zwicky's cluster analysis is a milestone; earlier missing-mass discussions existed."
+      },
+      "summary": "Multiple gravitational observations indicate more mass than luminous matter alone accounts for.",
+      "problem": "Galaxy and cluster motions were too fast for the visible mass estimates.",
+      "development": "Zwicky studied galaxy clusters; Rubin, Ford, and others extended evidence through galaxy rotation. Lensing and cosmology now provide independent constraints.",
+      "limitations": "The gravitational discrepancy is well evidenced, but the identity of dark matter remains unresolved; alternatives must match multiple tests.",
+      "standing": "open",
+      "contributors": [
+        {
+          "name": "Fritz Zwicky",
+          "role": "Inferred missing mass in the Coma cluster"
+        },
+        {
+          "name": "Vera Rubin and Kent Ford",
+          "role": "Measured galaxy rotation curves"
+        }
+      ],
+      "sourceIds": [
+        "sc-darkmatter"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-darkmatter"
+        ],
+        "history": [
+          "sc-darkmatter"
+        ]
+      }
+    },
+    {
+      "id": "inflation",
+      "title": "Cosmic inflation",
+      "aliases": [
+        "inflationary cosmology"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1981,
+        "label": "1981",
+        "precision": "exact",
+        "note": "Guth's published proposal is the milestone; related ideas and subsequent models have distinct histories."
+      },
+      "summary": "A proposed brief period of accelerated early expansion could explain large-scale uniformity and seed cosmic structure.",
+      "problem": "The basic hot-universe model leaves puzzles about flatness and causally separated regions.",
+      "development": "Guth connected early-universe particle physics with rapid expansion. Linde and others developed models avoiding problems in the original scenario.",
+      "limitations": "Some broad predictions fit observations, but no unique mechanism or inflation-driving field has been established.",
+      "standing": "speculative",
+      "contributors": [
+        {
+          "name": "Alan Guth",
+          "role": "Proposed an early inflation scenario"
+        },
+        {
+          "name": "Andrei Linde and others",
+          "role": "Developed subsequent inflationary models"
+        }
+      ],
+      "sourceIds": [
+        "sc-inflation"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-inflation"
+        ],
+        "history": [
+          "sc-inflation"
+        ]
+      }
+    },
+    {
+      "id": "dark-energy",
+      "title": "Accelerated expansion and dark energy",
+      "aliases": [
+        "cosmological constant"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1998,
+        "label": "1998–1999",
+        "precision": "range",
+        "note": "Two independent supernova teams reported the key acceleration evidence."
+      },
+      "summary": "The late universe's expansion accelerates; dark energy names a component used to explain this within standard cosmology.",
+      "problem": "Distant supernova distances did not fit a universe slowing under matter's gravity alone.",
+      "development": "Teams compared standardized supernova brightness with redshift. Other cosmological measurements supported acceleration and constrained possible explanations.",
+      "limitations": "Acceleration has strong evidence; whether its cause is a cosmological constant, a dynamical field, or modified gravity remains unresolved.",
+      "standing": "open",
+      "contributors": [
+        {
+          "name": "Saul Perlmutter's team",
+          "role": "Measured supernova distances"
+        },
+        {
+          "name": "Brian Schmidt and Adam Riess's team",
+          "role": "Independently established acceleration evidence"
+        }
+      ],
+      "sourceIds": [
+        "sc-darkenergy"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-darkenergy"
+        ],
+        "history": [
+          "sc-darkenergy"
+        ]
+      }
+    },
+    {
+      "id": "exoplanets",
+      "title": "Planets beyond the Solar System",
+      "aliases": [
+        "extrasolar planets"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1992,
+        "label": "1992–1995",
+        "precision": "range",
+        "note": "Pulsar planets were confirmed in 1992; a planet around a Sun-like star followed in 1995."
+      },
+      "summary": "Planets orbit other stars and remnants, revealing a much wider range of planetary systems than our own.",
+      "problem": "Faint planets are difficult to distinguish beside bright host stars.",
+      "development": "Wolszczan and Frail detected pulsar timing variations. Mayor and Queloz used stellar radial velocity; transit surveys later greatly expanded the sample.",
+      "limitations": "Detection methods favor particular sizes and orbits; a catalog is not an unbiased census.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Aleksander Wolszczan and Dale Frail",
+          "role": "Confirmed pulsar planets"
+        },
+        {
+          "name": "Michel Mayor and Didier Queloz",
+          "role": "Detected 51 Pegasi b"
+        }
+      ],
+      "sourceIds": [
+        "sc-exoplanets"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-exoplanets"
+        ],
+        "history": [
+          "sc-exoplanets"
+        ]
+      }
+    },
+    {
+      "id": "gravitational-lensing",
+      "title": "Gravitational deflection and lensing",
+      "aliases": [
+        "Einstein lens",
+        "light deflection"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1919,
+        "label": "1919",
+        "precision": "exact",
+        "note": "The eclipse tests established a milestone in light deflection; observed strong lenses came later."
+      },
+      "summary": "Gravity bends light paths, allowing massive objects to distort, magnify, or multiply distant images.",
+      "problem": "Relativity's prediction about light needed observational tests.",
+      "development": "The 1919 eclipse expeditions measured stellar deflections. Later lensing observations turned this effect into a method for mapping mass and studying distant galaxies.",
+      "limitations": "Mass reconstruction has degeneracies; the early eclipse data had substantial uncertainties and were followed by more precise tests.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Arthur Eddington, Frank Dyson, and expedition teams",
+          "role": "Tested solar light deflection"
+        },
+        {
+          "name": "Albert Einstein",
+          "role": "Predicted relativistic light bending"
+        }
+      ],
+      "sourceIds": [
+        "sc-lensing"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-lensing"
+        ],
+        "history": [
+          "sc-lensing"
+        ]
+      }
+    },
+    {
+      "id": "gravitational-wave-astronomy",
+      "title": "Gravitational-wave astronomy",
+      "aliases": [
+        "GW150914",
+        "LIGO"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 2015,
+        "label": "2015 detection; 2016 announcement",
+        "precision": "exact",
+        "note": "The date follows the first direct detection, GW150914."
+      },
+      "summary": "Tiny changes in distance reveal passing spacetime waves from systems such as merging black holes.",
+      "problem": "Many compact-object events are hard to study through light alone.",
+      "development": "Relativity predicted the waves; laser interferometers and sophisticated noise analysis made direct detection possible. Observations opened a new way to test gravity.",
+      "limitations": "Detectors cover limited frequency ranges and need careful calibration; source interpretation depends on waveform models.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "LIGO Scientific Collaboration and Virgo Collaboration",
+          "role": "Established direct detection and source interpretation"
+        }
+      ],
+      "sourceIds": [
+        "sc-waves"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-waves"
+        ],
+        "history": [
+          "sc-waves"
+        ]
+      }
+    },
+    {
+      "id": "radio-astronomy",
+      "title": "Radio astronomy",
+      "aliases": [
+        "cosmic radio emission"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1933,
+        "label": "1933",
+        "precision": "exact",
+        "note": "Jansky's published cosmic-radio discovery is the milestone."
+      },
+      "summary": "Radio receivers reveal celestial processes invisible to optical telescopes.",
+      "problem": "Unexplained radio interference raised the possibility of emission from space.",
+      "development": "Jansky traced a recurring signal to the Milky Way. Reber built a dedicated radio telescope; later arrays combined antennas to sharpen resolution.",
+      "limitations": "Radio interference and Earth's atmosphere constrain observations; long wavelengths require large apertures or interferometers.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Karl Jansky",
+          "role": "Identified galactic radio emission"
+        },
+        {
+          "name": "Grote Reber",
+          "role": "Built an early dedicated radio telescope"
+        }
+      ],
+      "sourceIds": [
+        "sc-radio"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-radio"
+        ],
+        "history": [
+          "sc-radio"
+        ]
+      }
+    },
+    {
+      "id": "large-scale-structure",
+      "title": "The cosmic web",
+      "aliases": [
+        "large-scale structure",
+        "galaxy filaments"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1986,
+        "label": "c. 1986",
+        "precision": "approximate",
+        "note": "Marks a landmark redshift-survey map, not the first discovery of galaxy clustering."
+      },
+      "summary": "Galaxies form filaments, walls, clusters, and voids across enormous volumes.",
+      "problem": "Two-dimensional sky positions concealed the three-dimensional organization of galaxies.",
+      "development": "Redshift surveys supplied approximate depth information. The mapped structure became a test of gravitational growth from initial density fluctuations.",
+      "limitations": "Galaxy surveys have selection effects, and redshift distances also contain local motion.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Margaret Geller, John Huchra, and Valérie de Lapparent",
+          "role": "Mapped striking structure in the CfA redshift survey"
+        }
+      ],
+      "sourceIds": [
+        "sc-structure",
+        "sc-slice"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-structure"
+        ],
+        "history": [
+          "sc-slice"
+        ]
+      }
+    },
+    {
+      "id": "lcdm",
+      "title": "Lambda–cold dark matter cosmology",
+      "aliases": [
+        "ΛCDM",
+        "concordance cosmology"
+      ],
+      "discipline": "astronomy",
+      "tags": [
+        "cosmos"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 2003,
+        "label": "c. 2003",
+        "precision": "approximate",
+        "note": "WMAP's first-year results are a precision-era milestone; the model developed earlier."
+      },
+      "summary": "A compact cosmological model combines ordinary matter, cold dark matter, and a cosmological constant.",
+      "problem": "Many observations of the early and late universe needed a consistent quantitative framework.",
+      "development": "Background-radiation measurements, galaxy surveys, and supernova distances jointly constrained a small set of cosmological parameters.",
+      "limitations": "Its components are partly phenomenological; the nature of dark matter and dark energy and several measurement tensions remain open.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "WMAP and broader cosmology collaborations",
+          "role": "Constrained the concordance model with multiple observations"
+        }
+      ],
+      "sourceIds": [
+        "sc-wmap"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-wmap"
+        ],
+        "history": [
+          "sc-wmap"
+        ]
+      }
+    },
+    {
+      "id": "abacus",
+      "title": "Counting boards and the abacus",
+      "aliases": [
+        "counting board",
+        "suanpan",
+        "soroban"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "instrument",
+      "date": {
+        "year": -500,
+        "label": "c. 500 BCE and earlier",
+        "precision": "approximate",
+        "note": "A broad ancient milestone; different counting-board traditions have uncertain beginnings."
+      },
+      "summary": "Counters arranged by position make arithmetic visible and reduce demands on memory.",
+      "problem": "Trade and administration required dependable calculations beyond mental arithmetic.",
+      "development": "Ancient counting surfaces evolved into diverse bead and rod devices. Moving counters implemented numerical operations without requiring modern written notation.",
+      "limitations": "No single inventor or uninterrupted transmission explains all abacus traditions; the device still relies on trained procedures.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Anonymous craftspeople and calculators",
+          "role": "Developed multiple counting-device traditions"
+        }
+      ],
+      "sourceIds": [
+        "sc-abacus"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-abacus"
+        ],
+        "history": [
+          "sc-abacus"
+        ]
+      }
+    },
+    {
+      "id": "mechanical-calculator",
+      "title": "Mechanical arithmetic",
+      "aliases": [
+        "Pascaline",
+        "calculating machine"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "instrument",
+      "date": {
+        "year": 1642,
+        "label": "1642",
+        "precision": "exact",
+        "note": "Pascal's calculator is the milestone, not a claim that it was the earliest calculating machine."
+      },
+      "summary": "Gear mechanisms can encode digits and automatically carry between numerical positions.",
+      "problem": "Repeated bookkeeping arithmetic was laborious and prone to mistakes.",
+      "development": "Pascal built adding devices; Leibniz later developed a stepped mechanism for more operations. Mechanical calculation made numerical procedures into engineered processes.",
+      "limitations": "Early machines had restricted operations and manufacturing difficulties; programmable computation required additional ideas.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Blaise Pascal",
+          "role": "Built the Pascaline"
+        },
+        {
+          "name": "Gottfried Wilhelm Leibniz",
+          "role": "Developed a stepped reckoner"
+        }
+      ],
+      "sourceIds": [
+        "sc-abacus"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-abacus"
+        ],
+        "history": [
+          "sc-abacus"
+        ]
+      }
+    },
+    {
+      "id": "analytical-engine",
+      "title": "Programmable analytical engine",
+      "aliases": [
+        "Babbage engine",
+        "programmability"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1837,
+        "label": "c. 1837",
+        "precision": "approximate",
+        "note": "Babbage developed designs during the 1830s; Lovelace's published notes followed in 1843."
+      },
+      "summary": "A general-purpose calculating machine separates stored numbers, processing, and instructions.",
+      "problem": "A machine built for one numerical table could not easily perform a different procedure.",
+      "development": "Babbage extended his mechanical-engine ideas toward conditional, programmable calculation. Lovelace explained its broader symbolic possibilities and published a detailed computational example.",
+      "limitations": "The complete engine was not built in their lifetimes; resemblance to later computers does not prove every later inventor drew directly from it.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Charles Babbage",
+          "role": "Designed the Analytical Engine"
+        },
+        {
+          "name": "Ada Lovelace",
+          "role": "Explained its generality and published algorithmic notes"
+        }
+      ],
+      "sourceIds": [
+        "sc-babbage"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-babbage"
+        ],
+        "history": [
+          "sc-babbage"
+        ]
+      }
+    },
+    {
+      "id": "turing-machine",
+      "title": "Turing machine",
+      "aliases": [
+        "universal computation"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1936,
+        "label": "1936",
+        "precision": "exact",
+        "note": "Turing's paper was published across 1936–1937."
+      },
+      "summary": "A finite rulebook, a movable head, and an unlimited tape provide a precise model of computation.",
+      "problem": "Mathematicians needed a rigorous meaning for a calculation performed by mechanical rules.",
+      "development": "Turing analyzed elementary symbolic steps and described a universal machine able to simulate other machines. This became a foundation for computability theory.",
+      "limitations": "An unlimited tape is an idealization; computability does not guarantee practical running time.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Alan Turing",
+          "role": "Introduced automatic and universal machines"
+        }
+      ],
+      "sourceIds": [
+        "sc-turing"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-turing"
+        ],
+        "history": [
+          "sc-turing"
+        ]
+      }
+    },
+    {
+      "id": "lambda-calculus",
+      "title": "Lambda calculus",
+      "aliases": [
+        "λ-calculus",
+        "functional computation"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1936,
+        "label": "1930s; 1936 milestone",
+        "precision": "approximate",
+        "note": "Church introduced the formalism earlier in the 1930s; 1936 marks its computability role."
+      },
+      "summary": "Computation can be expressed through defining functions and applying them to arguments.",
+      "problem": "Logic needed precise rules for transforming expressions and representing effective procedures.",
+      "development": "Church developed a calculus of function abstraction. Its correspondence with other computation models helped establish a robust notion of computability.",
+      "limitations": "Untyped expressions may fail to terminate; typed variants impose additional restrictions.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Alonzo Church",
+          "role": "Developed lambda calculus and its computability interpretation"
+        }
+      ],
+      "sourceIds": [
+        "sc-lambda"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-lambda"
+        ],
+        "history": [
+          "sc-lambda"
+        ]
+      },
+      "example": "The expression (λx. x + 1) applied to 4 evaluates to 5: define a rule, then supply its argument."
+    },
+    {
+      "id": "halting-problem",
+      "title": "Limits of algorithmic decision",
+      "aliases": [
+        "undecidability",
+        "halting problem"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1936,
+        "label": "1936",
+        "precision": "exact",
+        "note": "Turing's undecidability results underlie the modern halting-problem formulation."
+      },
+      "summary": "No single algorithm can correctly decide whether every possible program eventually stops.",
+      "problem": "Could all mathematical and computational questions be settled by mechanical procedure?",
+      "development": "Self-reference and a precise machine model produce a contradiction for any proposed universal stopping test. This sharply limits automatic reasoning.",
+      "limitations": "Many restricted classes of programs can be analyzed; undecidability concerns an unrestricted universal procedure.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Alan Turing",
+          "role": "Established central machine-undecidability results"
+        },
+        {
+          "name": "Alonzo Church",
+          "role": "Independently proved a related undecidability result"
+        }
+      ],
+      "sourceIds": [
+        "sc-turing"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-turing"
+        ],
+        "history": [
+          "sc-turing"
+        ]
+      }
+    },
+    {
+      "id": "neural-networks",
+      "title": "Artificial neural networks",
+      "aliases": [
+        "connectionism",
+        "neuron model"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1943,
+        "label": "1943",
+        "precision": "exact",
+        "note": "Marks the McCulloch–Pitts logical neuron model; trainable networks developed later."
+      },
+      "summary": "Networks of simple units transform inputs through connections, providing models for computation and learning.",
+      "problem": "Could elementary neuron-like operations realize complex logical behavior?",
+      "development": "McCulloch and Pitts related threshold units to propositional logic. Later learning rules made network weights adjustable from experience.",
+      "limitations": "Artificial units simplify biological neurons drastically; their success does not by itself explain how brains work.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Warren McCulloch and Walter Pitts",
+          "role": "Linked idealized neural activity with logic"
+        }
+      ],
+      "sourceIds": [
+        "sc-neurons"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-neurons"
+        ],
+        "history": [
+          "sc-neurons"
+        ]
+      }
+    },
+    {
+      "id": "stored-program",
+      "title": "Stored-program computing",
+      "aliases": [
+        "von Neumann architecture"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1945,
+        "label": "1945–1948",
+        "precision": "range",
+        "note": "The EDVAC draft appeared in 1945; working electronic implementations followed."
+      },
+      "summary": "Instructions encoded in memory can be changed and manipulated like other data.",
+      "problem": "Rewiring a machine for every new computation limited flexibility.",
+      "development": "EDVAC discussions and von Neumann's report articulated a stored-program design; teams in Manchester and Cambridge demonstrated practical machines.",
+      "limitations": "Credit is collective and historically contested; a single architectural diagram does not capture all computer designs.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "John von Neumann",
+          "role": "Circulated the EDVAC draft"
+        },
+        {
+          "name": "J. Presper Eckert and John Mauchly",
+          "role": "Contributed to EDVAC development"
+        },
+        {
+          "name": "Manchester and Cambridge teams",
+          "role": "Built early working systems"
+        }
+      ],
+      "sourceIds": [
+        "sc-computers"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-computers"
+        ],
+        "history": [
+          "sc-computers"
+        ]
+      }
+    },
+    {
+      "id": "information-theory",
+      "title": "Mathematical information theory",
+      "aliases": [
+        "Shannon entropy",
+        "channel capacity"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1948,
+        "label": "1948",
+        "precision": "exact",
+        "note": "Publication of Shannon's two-part mathematical theory of communication."
+      },
+      "summary": "Probability quantifies uncertainty, while coding theorems set limits on compression and reliable communication.",
+      "problem": "Engineers needed to separate fundamental communication limits from particular devices.",
+      "development": "Shannon modeled sources and noisy channels, deriving entropy and channel capacity. The theory linked statistics, coding, and communication engineering.",
+      "limitations": "Shannon information measures uncertainty, not a message's truth, usefulness, or meaning.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Claude Shannon",
+          "role": "Founded the mathematical theory of communication"
+        }
+      ],
+      "sourceIds": [
+        "sc-shannon"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-shannon"
+        ],
+        "history": [
+          "sc-shannon"
+        ]
+      },
+      "equation": {
+        "expression": "H(X) = −Σ p(x) log₂ p(x)",
+        "explanation": "Entropy H is the average uncertainty, in bits, for possible outcomes x with probabilities p(x)."
+      },
+      "example": "A fair yes/no event carries one bit of uncertainty. A nearly certain outcome carries less average uncertainty."
+    },
+    {
+      "id": "cybernetics",
+      "title": "Cybernetics and feedback",
+      "aliases": [
+        "feedback control"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1948,
+        "label": "1948",
+        "precision": "exact",
+        "note": "Publication of Wiener's Cybernetics; feedback mechanisms themselves are much older."
+      },
+      "summary": "A system can regulate its behavior by measuring outputs and feeding that information back into its actions.",
+      "problem": "Engineers and physiologists faced parallel problems of control under uncertainty.",
+      "development": "Wiener connected communication, feedback, and statistical reasoning across machines and living systems. Control theory and cognitive models developed related approaches.",
+      "limitations": "A shared feedback vocabulary does not make biological or social systems identical to simple machines.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Norbert Wiener",
+          "role": "Unified control and communication ideas"
+        },
+        {
+          "name": "Arturo Rosenblueth and collaborators",
+          "role": "Connected feedback with purposeful behavior"
+        }
+      ],
+      "sourceIds": [
+        "sc-cybernetics"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-cybernetics"
+        ],
+        "history": [
+          "sc-cybernetics"
+        ]
+      }
+    },
+    {
+      "id": "error-correction",
+      "title": "Error-correcting codes",
+      "aliases": [
+        "Hamming codes",
+        "coding theory"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1950,
+        "label": "1950",
+        "precision": "exact",
+        "note": "Publication of Hamming's coding paper."
+      },
+      "summary": "Carefully added redundancy allows some corrupted messages to be detected and repaired.",
+      "problem": "Noisy channels and unreliable components can flip symbols during storage or transmission.",
+      "development": "Hamming constructed codes with mathematical spacing between valid messages. Coding theory developed practical ways to approach communication limits.",
+      "limitations": "Correction guarantees depend on the assumed error model and redundancy; arbitrary corruption cannot always be repaired.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Richard Hamming",
+          "role": "Constructed influential error-detecting and correcting codes"
+        }
+      ],
+      "sourceIds": [
+        "sc-hamming"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-hamming"
+        ],
+        "history": [
+          "sc-hamming"
+        ]
+      }
+    },
+    {
+      "id": "artificial-intelligence",
+      "title": "Artificial intelligence as a research field",
+      "aliases": [
+        "AI"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1956,
+        "label": "1956",
+        "precision": "exact",
+        "note": "Dartmouth summer project; its proposal was written in 1955."
+      },
+      "summary": "AI studies computational methods for tasks involving reasoning, perception, language, and learning.",
+      "problem": "Could machines perform activities previously associated with human intelligence?",
+      "development": "The Dartmouth proposal brought diverse computational ambitions under one name. Symbolic reasoning, statistical methods, and neural approaches developed along overlapping paths.",
+      "limitations": "This is a research program, not a single explanatory theory; success on tasks does not settle questions of general intelligence or consciousness.",
+      "standing": "open",
+      "contributors": [
+        {
+          "name": "John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon",
+          "role": "Proposed the Dartmouth research project"
+        }
+      ],
+      "sourceIds": [
+        "sc-dartmouth"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-dartmouth"
+        ],
+        "history": [
+          "sc-dartmouth"
+        ]
+      }
+    },
+    {
+      "id": "machine-learning",
+      "title": "Machine learning",
+      "aliases": [
+        "statistical learning",
+        "ML"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1959,
+        "label": "1959",
+        "precision": "exact",
+        "note": "Samuel's checkers paper is a naming milestone; learning-machine research predates it."
+      },
+      "summary": "Programs improve task performance by adjusting from examples or experience.",
+      "problem": "Explicitly writing every decision rule is difficult for complex tasks.",
+      "development": "Samuel's checkers research demonstrated improvement through experience. Statistical estimation and optimization later supplied broad frameworks for generalization.",
+      "limitations": "Good training performance may fail on new situations; data quality and evaluation design matter.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Arthur Samuel",
+          "role": "Demonstrated learning in a checkers program"
+        }
+      ],
+      "sourceIds": [
+        "sc-samuel"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-samuel"
+        ],
+        "history": [
+          "sc-samuel"
+        ]
+      }
+    },
+    {
+      "id": "computational-complexity",
+      "title": "Computational complexity",
+      "aliases": [
+        "complexity classes"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1965,
+        "label": "1965",
+        "precision": "exact",
+        "note": "Hartmanis and Stearns's paper marks a systematic resource-bounded theory."
+      },
+      "summary": "Problems are classified by the time or memory needed as input size grows.",
+      "problem": "A computable problem may still be too expensive to solve.",
+      "development": "Hartmanis and Stearns formalized time-bounded computation. Complexity classes made efficiency itself a mathematical object.",
+      "limitations": "Worst-case growth does not fully predict practical performance; many important separations remain unproved.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Juris Hartmanis and Richard Stearns",
+          "role": "Developed a systematic time-complexity framework"
+        }
+      ],
+      "sourceIds": [
+        "sc-complexity"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-complexity"
+        ],
+        "history": [
+          "sc-complexity"
+        ]
+      }
+    },
+    {
+      "id": "np-completeness",
+      "title": "NP-completeness",
+      "aliases": [
+        "Cook–Levin theorem",
+        "P versus NP"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1971,
+        "label": "1971",
+        "precision": "exact",
+        "note": "Cook's theorem is the milestone; Levin independently developed a related result."
+      },
+      "summary": "Some efficiently checkable problems are at least as hard as every problem in NP under efficient reductions.",
+      "problem": "Researchers needed to recognize families of difficult search and decision problems.",
+      "development": "Cook linked nondeterministic computation with logical satisfiability. Reductions subsequently connected many combinatorial problems.",
+      "limitations": "NP-complete does not mean proved impossible to solve quickly; whether P equals NP remains open.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Stephen Cook",
+          "role": "Established a foundational completeness theorem"
+        },
+        {
+          "name": "Leonid Levin",
+          "role": "Independently developed universal search problems"
+        },
+        {
+          "name": "Richard Karp",
+          "role": "Connected many combinatorial problems through reductions"
+        }
+      ],
+      "sourceIds": [
+        "sc-cook"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-cook"
+        ],
+        "history": [
+          "sc-cook"
+        ]
+      }
+    },
+    {
+      "id": "public-key-cryptography",
+      "title": "Public-key cryptography",
+      "aliases": [
+        "asymmetric cryptography",
+        "key exchange"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1976,
+        "label": "1976",
+        "precision": "exact",
+        "note": "Diffie and Hellman's public proposal is the milestone; classified parallel discoveries were revealed later."
+      },
+      "summary": "Different but mathematically related keys permit public operations while keeping a private secret.",
+      "problem": "Secure communication previously required a secret to be shared beforehand.",
+      "development": "Diffie and Hellman introduced public-key ideas and key agreement, using computational difficulty as a resource.",
+      "limitations": "Security depends on assumptions, parameter choices, and implementation; not every hard-looking problem is secure.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Whitfield Diffie and Martin Hellman",
+          "role": "Published public-key and key-agreement principles"
+        }
+      ],
+      "sourceIds": [
+        "sc-cryptography"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-cryptography"
+        ],
+        "history": [
+          "sc-cryptography"
+        ]
+      }
+    },
+    {
+      "id": "distributed-consensus",
+      "title": "Distributed consensus under faults",
+      "aliases": [
+        "Byzantine agreement",
+        "fault tolerance"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1982,
+        "label": "1982",
+        "precision": "exact",
+        "note": "The Byzantine generals formulation builds on earlier agreement research."
+      },
+      "summary": "Independent computers can coordinate despite some components sending inconsistent information, under specified assumptions.",
+      "problem": "Replicated systems must agree even when components fail or behave maliciously.",
+      "development": "Lamport, Shostak, and Pease formalized Byzantine agreement and proved bounds for communication models.",
+      "limitations": "Guarantees depend on timing, authentication, and fault assumptions; they are not unconditional promises of agreement.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Leslie Lamport, Robert Shostak, and Marshall Pease",
+          "role": "Formalized Byzantine agreement"
+        }
+      ],
+      "sourceIds": [
+        "sc-consensus"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-consensus"
+        ],
+        "history": [
+          "sc-consensus"
+        ]
+      }
+    },
+    {
+      "id": "quantum-computing",
+      "title": "Quantum computation",
+      "aliases": [
+        "quantum simulation",
+        "quantum computer"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1982,
+        "label": "1982",
+        "precision": "exact",
+        "note": "Feynman's published simulation argument is a milestone; several earlier and later proposals contributed."
+      },
+      "summary": "Quantum systems process information through controlled superposition, interference, and entanglement.",
+      "problem": "Simulating general quantum systems with classical resources can be costly.",
+      "development": "Feynman argued for quantum simulators; later universal models and algorithms clarified computational possibilities.",
+      "limitations": "Quantum computation does not accelerate every problem, and useful devices must control errors.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Richard Feynman",
+          "role": "Argued for quantum simulation"
+        },
+        {
+          "name": "David Deutsch",
+          "role": "Later formalized universal quantum computation"
+        }
+      ],
+      "sourceIds": [
+        "sc-quantum-compute"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-quantum-compute"
+        ],
+        "history": [
+          "sc-quantum-compute"
+        ]
+      }
+    },
+    {
+      "id": "quantum-information",
+      "title": "Quantum information",
+      "aliases": [
+        "qubits",
+        "quantum coding"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1995,
+        "label": "1995",
+        "precision": "exact",
+        "note": "Schumacher's quantum-coding theorem is the milestone; the broader field has earlier roots."
+      },
+      "summary": "Quantum states have information-processing capacities that differ from ordinary classical bits.",
+      "problem": "Classical coding alone does not describe compressing or transmitting unknown quantum states.",
+      "development": "Schumacher connected quantum entropy to faithful compression and formalized the qubit resource. Entanglement and measurement became central operational concepts.",
+      "limitations": "An unknown quantum state cannot be treated as a freely readable classical record; physical noise constrains protocols.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Benjamin Schumacher",
+          "role": "Proved a quantum source-coding theorem"
+        }
+      ],
+      "sourceIds": [
+        "sc-quantum-info"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-quantum-info"
+        ],
+        "history": [
+          "sc-quantum-info"
+        ]
+      }
+    },
+    {
+      "id": "backpropagation",
+      "title": "Backpropagation",
+      "aliases": [
+        "reverse-mode differentiation"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1986,
+        "label": "1986",
+        "precision": "exact",
+        "note": "Marks an influential neural-network demonstration, not the invention of reverse differentiation."
+      },
+      "summary": "The chain rule efficiently traces how each network parameter contributes to a prediction error.",
+      "problem": "Multilayer networks needed practical ways to adjust hidden connections.",
+      "development": "Rumelhart, Hinton, and Williams popularized error backpropagation for learned representations, building on earlier differentiation and learning work.",
+      "limitations": "Gradients do not guarantee a global optimum; training can be unstable or data-dependent.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "David Rumelhart, Geoffrey Hinton, and Ronald Williams",
+          "role": "Demonstrated learning hidden representations with backpropagation"
+        }
+      ],
+      "sourceIds": [
+        "sc-backprop"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-backprop"
+        ],
+        "history": [
+          "sc-backprop"
+        ]
+      }
+    },
+    {
+      "id": "reinforcement-learning",
+      "title": "Learning from rewards",
+      "aliases": [
+        "Q-learning",
+        "reinforcement learning"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1989,
+        "label": "1989",
+        "precision": "exact",
+        "note": "Watkins's thesis is the Q-learning milestone; reinforcement learning has older roots."
+      },
+      "summary": "An agent improves decisions by learning from rewards accumulated over interactions.",
+      "problem": "An action may have useful or harmful consequences only much later.",
+      "development": "Work on dynamic programming, trial-and-error learning, and temporal differences led to methods such as Watkins's Q-learning.",
+      "limitations": "Exploration can be costly, and a poorly chosen reward can produce unwanted behavior.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Christopher Watkins",
+          "role": "Introduced Q-learning"
+        },
+        {
+          "name": "Richard Sutton",
+          "role": "Developed influential temporal-difference learning methods"
+        }
+      ],
+      "sourceIds": [
+        "sc-rl",
+        "sc-rl-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-rl"
+        ],
+        "history": [
+          "sc-rl-history"
+        ]
+      }
+    },
+    {
+      "id": "bayesian-networks",
+      "title": "Bayesian networks",
+      "aliases": [
+        "belief networks",
+        "probabilistic graphical models"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1988,
+        "label": "1988",
+        "precision": "exact",
+        "note": "Pearl's book consolidated work developed through the preceding decade."
+      },
+      "summary": "A directed graph expresses conditional dependencies among uncertain variables.",
+      "problem": "Large joint probability distributions are difficult to represent and reason with directly.",
+      "development": "Pearl developed graph-based representations and local probability propagation, joining probabilistic reasoning with AI.",
+      "limitations": "A dependency arrow is not automatically causal; omitted variables and incorrect independence assumptions distort inference.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Judea Pearl",
+          "role": "Developed and synthesized probabilistic graphical reasoning"
+        }
+      ],
+      "sourceIds": [
+        "sc-bayesnets"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-bayesnets"
+        ],
+        "history": [
+          "sc-bayesnets"
+        ]
+      }
+    },
+    {
+      "id": "causal-inference",
+      "title": "Graphical causal inference",
+      "aliases": [
+        "causal diagrams",
+        "do-calculus"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1995,
+        "label": "1995",
+        "precision": "exact",
+        "note": "The date marks Pearl's causal-diagram framework, not the beginning of causal inference as a whole."
+      },
+      "summary": "Causal diagrams make assumptions explicit and help determine which interventions can be inferred from observations.",
+      "problem": "Correlation alone cannot distinguish causation from common causes or selection effects.",
+      "development": "Pearl combined graphical models with intervention rules. The framework complements experimental design and other causal traditions.",
+      "limitations": "The graph is an assumption, not a conclusion extracted automatically from data; unidentified effects require more information.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Judea Pearl",
+          "role": "Developed graphical identification and intervention calculus"
+        }
+      ],
+      "sourceIds": [
+        "sc-causality"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-causality"
+        ],
+        "history": [
+          "sc-causality"
+        ]
+      }
+    },
+    {
+      "id": "deep-learning",
+      "title": "Deep representation learning",
+      "aliases": [
+        "deep neural networks",
+        "representation learning"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 2006,
+        "label": "2006",
+        "precision": "exact",
+        "note": "An influential deep-belief-network paper marks renewed practical progress; deep networks have older precedents."
+      },
+      "summary": "Multiple learned layers build increasingly useful representations of data.",
+      "problem": "Hand-designed features often limited performance on complex perceptual tasks.",
+      "development": "Hinton, Osindero, and Teh showed a practical training strategy for deep belief networks. Subsequent architectures, data, and hardware widened the approach.",
+      "limitations": "Large models can overfit, inherit data biases, and fail outside their training conditions.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Geoffrey Hinton, Simon Osindero, and Yee-Whye Teh",
+          "role": "Developed an influential deep-network training approach"
+        }
+      ],
+      "sourceIds": [
+        "sc-deep"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-deep"
+        ],
+        "history": [
+          "sc-deep"
+        ]
+      }
+    },
+    {
+      "id": "transformers",
+      "title": "Attention-based transformers",
+      "aliases": [
+        "self-attention",
+        "Transformer"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 2017,
+        "label": "2017",
+        "precision": "exact",
+        "note": "Publication of Attention Is All You Need."
+      },
+      "summary": "Attention lets a model combine information from different positions in a sequence according to learned relevance.",
+      "problem": "Sequential processing made some language-model computations slow and long-range relationships difficult.",
+      "development": "Vaswani and collaborators built an attention-centered sequence architecture. Parallel training made it influential across language and other modalities.",
+      "limitations": "Attention scores are not a complete explanation of reasoning; learned patterns can reproduce errors and bias.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Ashish Vaswani and seven collaborators",
+          "role": "Introduced the Transformer architecture"
+        }
+      ],
+      "sourceIds": [
+        "sc-attention"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-attention"
+        ],
+        "history": [
+          "sc-attention"
+        ]
+      }
+    },
+    {
+      "id": "diffusion-models",
+      "title": "Diffusion generative models",
+      "aliases": [
+        "denoising diffusion"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 2015,
+        "label": "2015",
+        "precision": "exact",
+        "note": "The original nonequilibrium-thermodynamics generative proposal is the milestone."
+      },
+      "summary": "A model learns to reverse gradual corruption, turning noise into samples resembling a training distribution.",
+      "problem": "Generative modeling needed flexible distributions with tractable training and sampling.",
+      "development": "Sohl-Dickstein and collaborators connected diffusion processes with learned reverse dynamics. Later denoising formulations improved practical generation.",
+      "limitations": "Generated samples reflect learned data patterns, not guaranteed factual or physical validity.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Jascha Sohl-Dickstein, Eric Weiss, Niru Maheswaranathan, and Surya Ganguli",
+          "role": "Proposed the diffusion generative framework"
+        }
+      ],
+      "sourceIds": [
+        "sc-diffusion"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-diffusion"
+        ],
+        "history": [
+          "sc-diffusion"
+        ]
+      }
+    },
+    {
+      "id": "algorithmic-information",
+      "title": "Algorithmic information",
+      "aliases": [
+        "Kolmogorov complexity",
+        "description length"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1965,
+        "label": "c. 1964–1965",
+        "precision": "approximate",
+        "note": "Solomonoff and Kolmogorov developed foundational formulations; Chaitin contributed independently."
+      },
+      "summary": "The shortest program producing an object provides a measure of its descriptive complexity.",
+      "problem": "Shannon's average uncertainty does not directly measure the complexity of an individual string.",
+      "development": "Algorithmic information joined universal computation with description length and randomness. Different universal machines change complexity only by an additive constant.",
+      "limitations": "Exact shortest-description complexity is generally uncomputable; practical compressors give upper bounds.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Ray Solomonoff, Andrey Kolmogorov, and Gregory Chaitin",
+          "role": "Developed algorithmic approaches to information and randomness"
+        }
+      ],
+      "sourceIds": [
+        "sc-algorithmic"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-algorithmic"
+        ],
+        "history": [
+          "sc-algorithmic"
+        ]
+      }
+    },
+    {
+      "id": "formal-verification",
+      "title": "Formal program verification",
+      "aliases": [
+        "Hoare logic",
+        "program correctness"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1969,
+        "label": "1969",
+        "precision": "exact",
+        "note": "Hoare's axiomatic paper is the milestone; Floyd and earlier work also contributed."
+      },
+      "summary": "Logical assertions describe what must hold before and after a program executes.",
+      "problem": "Testing examples cannot establish every possible program behavior.",
+      "development": "Hoare gave rules for proving program properties from statements and assumptions. Later tools mechanized parts of such reasoning.",
+      "limitations": "A proof is only as good as its specification and modeled environment; full automation faces undecidability.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "C. A. R. Hoare",
+          "role": "Developed axiomatic program logic"
+        },
+        {
+          "name": "Robert Floyd",
+          "role": "Developed earlier assertions-based verification"
+        }
+      ],
+      "sourceIds": [
+        "sc-hoare"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-hoare"
+        ],
+        "history": [
+          "sc-hoare"
+        ]
+      }
+    },
+    {
+      "id": "programming-languages",
+      "title": "High-level programming languages",
+      "aliases": [
+        "Fortran",
+        "compiler"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1957,
+        "label": "1957",
+        "precision": "exact",
+        "note": "FORTRAN's release is the landmark; several earlier language and compiler projects existed."
+      },
+      "summary": "A compiler translates structured, human-oriented instructions into machine operations.",
+      "problem": "Scientists needed to express computations without writing every hardware-level instruction.",
+      "development": "Backus's IBM team developed FORTRAN and an effective compiler; Hopper and others pursued parallel paths to higher-level programming.",
+      "limitations": "A convenient notation does not itself guarantee correct algorithms or safe numerical behavior.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "John Backus and the FORTRAN team",
+          "role": "Developed a practical scientific language and compiler"
+        },
+        {
+          "name": "Grace Hopper",
+          "role": "Pioneered compiler approaches"
+        }
+      ],
+      "sourceIds": [
+        "sc-fortran"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-fortran"
+        ],
+        "history": [
+          "sc-fortran"
+        ]
+      }
+    },
+    {
+      "id": "support-vector-machines",
+      "title": "Support-vector machines",
+      "aliases": [
+        "SVM",
+        "maximum-margin classification"
+      ],
+      "discipline": "computing",
+      "tags": [
+        "information"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1995,
+        "label": "1995",
+        "precision": "exact",
+        "note": "Cortes and Vapnik's soft-margin formulation generalized earlier margin classifiers."
+      },
+      "summary": "A classifier chooses a separating boundary with a large margin, allowing controlled errors.",
+      "problem": "A model should separate classes while generalizing beyond its training examples.",
+      "development": "Cortes and Vapnik combined margin optimization with feature-space mappings and slack variables for nonseparable data.",
+      "limitations": "Performance depends on representation, kernel, and regularization choices; training can be expensive on large datasets.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Corinna Cortes and Vladimir Vapnik",
+          "role": "Developed soft-margin support-vector networks"
+        }
+      ],
+      "sourceIds": [
+        "sc-svm"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-svm"
+        ],
+        "history": [
+          "sc-svm"
+        ]
+      }
+    },
+    {
+      "id": "division-of-labor",
+      "title": "Division of labor",
+      "aliases": [
+        "specialization"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1776,
+        "label": "1776",
+        "precision": "exact",
+        "note": "Smith's Wealth of Nations is the milestone; specialized work is ancient."
+      },
+      "summary": "Dividing production into specialized tasks can increase output through practice, coordination, and tools.",
+      "problem": "Political economy sought to explain differences in productivity and wealth.",
+      "development": "Adam Smith illustrated how specialization and exchange alter productive capacity. Later economics examined its dependence on market scale and institutions.",
+      "limitations": "Productivity gains are not automatic improvements in wellbeing; distribution, autonomy, and working conditions also matter.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Adam Smith",
+          "role": "Analyzed specialization and exchange"
+        }
+      ],
+      "sourceIds": [
+        "sc-division"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-division"
+        ],
+        "history": [
+          "sc-division"
+        ]
+      }
+    },
+    {
+      "id": "comparative-advantage",
+      "title": "Comparative advantage",
+      "aliases": [
+        "opportunity cost"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1817,
+        "label": "1817",
+        "precision": "exact",
+        "note": "Ricardo's published trade example is used as a landmark."
+      },
+      "summary": "Specializing according to relative opportunity costs can produce gains from exchange even without absolute superiority.",
+      "problem": "Why can trade benefit two parties when one is more productive at everything?",
+      "development": "Ricardo compared relative production costs, separating comparative from absolute advantage. Later models incorporated multiple factors and adjustment costs.",
+      "limitations": "Aggregate gains need not reach every person; assumptions about adjustment, externalities, and institutions affect applications.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "David Ricardo",
+          "role": "Formulated the influential comparative-cost argument"
+        }
+      ],
+      "sourceIds": [
+        "sc-comparative"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-comparative"
+        ],
+        "history": [
+          "sc-comparative"
+        ]
+      },
+      "example": "A person can be faster at two tasks yet gain by specializing in the one where their relative advantage is larger."
+    },
+    {
+      "id": "marginal-utility",
+      "title": "Marginal utility",
+      "aliases": [
+        "marginalism"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1871,
+        "label": "1871",
+        "precision": "exact",
+        "note": "Jevons and Menger published independently in 1871; Walras followed in the 1870s."
+      },
+      "summary": "Decisions can depend on the value of one additional unit rather than total usefulness.",
+      "problem": "Economic theories needed to explain choices and exchange values at the margin.",
+      "development": "Jevons applied mathematical reasoning to incremental satisfaction. Parallel marginalist traditions helped reshape theories of consumer choice.",
+      "limitations": "Utility is a model of preference, not an objectively measured universal quantity of happiness.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "William Stanley Jevons",
+          "role": "Developed mathematical marginal utility"
+        },
+        {
+          "name": "Carl Menger and Léon Walras",
+          "role": "Developed independent marginalist approaches"
+        }
+      ],
+      "sourceIds": [
+        "sc-marginal"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-marginal"
+        ],
+        "history": [
+          "sc-marginal"
+        ]
+      }
+    },
+    {
+      "id": "supply-demand",
+      "title": "Supply, demand, and equilibrium",
+      "aliases": [
+        "market equilibrium"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1890,
+        "label": "1890",
+        "precision": "exact",
+        "note": "Marshall's synthesis is the milestone, not the origin of supply and demand reasoning."
+      },
+      "summary": "A market model connects prices with quantities buyers seek and sellers offer.",
+      "problem": "Economists needed to analyze how changes in conditions affect prices and exchange.",
+      "development": "Marshall combined demand and cost analysis into an influential partial-equilibrium framework. The crossing of curves is a model of mutually consistent plans.",
+      "limitations": "Market power, institutions, externalities, and changing expectations can invalidate simple competitive assumptions.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Alfred Marshall",
+          "role": "Systematized partial-equilibrium analysis"
+        }
+      ],
+      "sourceIds": [
+        "sc-supply",
+        "sc-demand"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-demand"
+        ],
+        "history": [
+          "sc-supply"
+        ]
+      }
+    },
+    {
+      "id": "psychophysics",
+      "title": "Psychophysics",
+      "aliases": [
+        "Weber–Fechner law"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1860,
+        "label": "1860",
+        "precision": "exact",
+        "note": "Publication of Fechner's Elemente der Psychophysik."
+      },
+      "summary": "Controlled stimulus changes can be related quantitatively to reported sensations and discrimination thresholds.",
+      "problem": "Could aspects of subjective experience be measured systematically?",
+      "development": "Weber studied sensory discrimination; Fechner developed experimental methods and mathematical relations linking physical intensity with sensation.",
+      "limitations": "Different senses and stimulus ranges require different models; a simple logarithmic law is not universal.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Gustav Fechner",
+          "role": "Established psychophysical methods"
+        },
+        {
+          "name": "Ernst Weber",
+          "role": "Measured sensory discrimination"
+        }
+      ],
+      "sourceIds": [
+        "sc-fechner"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-fechner"
+        ],
+        "history": [
+          "sc-fechner"
+        ]
+      },
+      "equation": {
+        "expression": "S = k log(I / I₀)",
+        "explanation": "In Fechner's model, sensation S grows logarithmically with intensity I relative to a reference I₀; k sets the scale. Its range of validity is limited."
+      }
+    },
+    {
+      "id": "experimental-psychology",
+      "title": "Experimental psychology",
+      "aliases": [
+        "laboratory psychology"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1879,
+        "label": "1879",
+        "precision": "exact",
+        "note": "Wundt's Leipzig laboratory is an institutional milestone; experimental mental science had earlier roots."
+      },
+      "summary": "Questions about perception, attention, and mental processes can be investigated with controlled experiments.",
+      "problem": "Speculation about the mind needed repeatable observations and measurements.",
+      "development": "Wundt organized laboratory research, drawing on physiology and psychophysics. Later approaches broadened participants, tasks, and methods.",
+      "limitations": "Early introspective methods were limited; experiments require careful operational definitions and appropriate populations.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Wilhelm Wundt",
+          "role": "Established an influential psychology laboratory"
+        },
+        {
+          "name": "William James",
+          "role": "Developed a major alternative account of mental function"
+        }
+      ],
+      "sourceIds": [
+        "sc-psych-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-psych-history"
+        ],
+        "history": [
+          "sc-psych-history"
+        ]
+      }
+    },
+    {
+      "id": "conditioning",
+      "title": "Classical conditioning",
+      "aliases": [
+        "Pavlovian conditioning"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1903,
+        "label": "c. 1903",
+        "precision": "approximate",
+        "note": "Pavlov reported conditioned-reflex work around this period; experiments developed across several years."
+      },
+      "summary": "An organism can learn that one stimulus predicts another and respond in anticipation.",
+      "problem": "Digestive experiments revealed responses occurring before food arrived.",
+      "development": "Pavlov measured salivation and manipulated stimulus pairings. Conditioning became a controlled framework for studying associative learning.",
+      "limitations": "Learning depends on predictiveness and biological constraints; simple stimulus pairing does not explain all learning.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Ivan Pavlov",
+          "role": "Systematically investigated conditioned reflexes"
+        }
+      ],
+      "sourceIds": [
+        "sc-conditioning"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-conditioning"
+        ],
+        "history": [
+          "sc-conditioning"
+        ]
+      }
+    },
+    {
+      "id": "behaviorism",
+      "title": "Behaviorism",
+      "aliases": [
+        "behavioral psychology"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1913,
+        "label": "1913",
+        "precision": "exact",
+        "note": "Publication of Watson's behaviorist manifesto."
+      },
+      "summary": "Behaviorism emphasized observable behavior and environmental relations as psychology's scientific subject matter.",
+      "problem": "Introspection raised concerns about subjectivity and reproducibility.",
+      "development": "Watson advocated an objective behavioral science. Learning experiments expanded the approach; later cognitive theories challenged its exclusion of internal representations.",
+      "limitations": "Behavioral methods remain valuable, but a strict rejection of internal processes is not a complete account of mind.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "John B. Watson",
+          "role": "Articulated an influential behaviorist program"
+        }
+      ],
+      "sourceIds": [
+        "sc-watson"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-watson"
+        ],
+        "history": [
+          "sc-watson"
+        ]
+      }
+    },
+    {
+      "id": "gestalt",
+      "title": "Gestalt principles of perception",
+      "aliases": [
+        "perceptual grouping"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1912,
+        "label": "1912–1923",
+        "precision": "range",
+        "note": "Wertheimer's apparent-motion work began in 1912; the cited organization paper appeared in 1923."
+      },
+      "summary": "Perception organizes stimuli into structured wholes, influenced by proximity, similarity, and continuity.",
+      "problem": "Collections of sensory elements did not explain the coherent objects people perceive.",
+      "development": "Wertheimer, Köhler, and Koffka studied organization and apparent motion. Their principles shaped perceptual research and later design practice.",
+      "limitations": "Grouping principles describe robust tendencies but do not constitute a complete neural mechanism or universal rule.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Max Wertheimer",
+          "role": "Studied apparent motion and perceptual organization"
+        },
+        {
+          "name": "Wolfgang Köhler and Kurt Koffka",
+          "role": "Developed Gestalt psychology"
+        }
+      ],
+      "sourceIds": [
+        "sc-gestalt"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-gestalt"
+        ],
+        "history": [
+          "sc-gestalt"
+        ]
+      }
+    },
+    {
+      "id": "operant-conditioning",
+      "title": "Operant conditioning",
+      "aliases": [
+        "reinforcement schedules"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1938,
+        "label": "1938",
+        "precision": "exact",
+        "note": "Skinner's The Behavior of Organisms consolidated the experimental program."
+      },
+      "summary": "Consequences alter how likely an action is to occur again.",
+      "problem": "Learning involves actions that change the environment, not just reflexes to stimuli.",
+      "development": "Thorndike's law of effect preceded Skinner's controlled studies of reinforcement schedules and behavior. The approach made consequences experimentally manipulable.",
+      "limitations": "Reinforcement is context-dependent; it does not remove the roles of cognition, biology, and social learning.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "B. F. Skinner",
+          "role": "Developed systematic operant experiments"
+        },
+        {
+          "name": "Edward Thorndike",
+          "role": "Formulated the law of effect"
+        }
+      ],
+      "sourceIds": [
+        "sc-operant"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-operant"
+        ],
+        "history": [
+          "sc-operant"
+        ]
+      }
+    },
+    {
+      "id": "cognitive-psychology",
+      "title": "Information-processing psychology",
+      "aliases": [
+        "cognitive revolution"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1956,
+        "label": "c. 1956",
+        "precision": "approximate",
+        "note": "A mid-century milestone, not a single founding event; Miller's paper provides a concrete example."
+      },
+      "summary": "Mental processes can be modeled as transformations of information constrained by attention and memory.",
+      "problem": "Behavior alone did not explain the organization and limits of complex thought.",
+      "development": "Miller used information theory to study judgment and memory capacity. Broader cognitive research developed testable models of internal representations.",
+      "limitations": "Computer analogies are models, not evidence that every mental process works like a digital computer.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "George Miller",
+          "role": "Studied information-processing limits"
+        },
+        {
+          "name": "Jerome Bruner and other cognitive researchers",
+          "role": "Developed experimental accounts of internal processing"
+        }
+      ],
+      "sourceIds": [
+        "sc-miller"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-miller"
+        ],
+        "history": [
+          "sc-miller"
+        ]
+      }
+    },
+    {
+      "id": "working-memory",
+      "title": "Working memory",
+      "aliases": [
+        "short-term processing"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1974,
+        "label": "1974",
+        "precision": "exact",
+        "note": "Publication of Baddeley and Hitch's working-memory account."
+      },
+      "summary": "A limited-capacity system temporarily maintains and manipulates information during thought.",
+      "problem": "A passive short-term store did not adequately explain concurrent memory and reasoning tasks.",
+      "development": "Baddeley and Hitch used dual-task evidence to propose interacting storage and control components. Later models refined their organization.",
+      "limitations": "Competing accounts differ over the nature of capacity and control; component labels are not literal brain compartments.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Alan Baddeley and Graham Hitch",
+          "role": "Proposed a multi-component working-memory framework"
+        }
+      ],
+      "sourceIds": [
+        "sc-working"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-working"
+        ],
+        "history": [
+          "sc-working"
+        ]
+      }
+    },
+    {
+      "id": "social-learning",
+      "title": "Observational learning",
+      "aliases": [
+        "modeling",
+        "social learning theory"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1961,
+        "label": "1961",
+        "precision": "exact",
+        "note": "The Bobo-doll study is a milestone; observational learning research predates it."
+      },
+      "summary": "People can acquire behavior by watching others, without directly receiving the same rewards.",
+      "problem": "Learning theories needed to explain imitation and the influence of social models.",
+      "development": "Bandura, Dorothea Ross, and Sheila Ross experimentally studied children's imitation. Later social-cognitive theories added expectations and self-regulation.",
+      "limitations": "A laboratory imitation task does not by itself establish durable real-world behavior; context and ethics matter.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Albert Bandura, Dorothea Ross, and Sheila Ross",
+          "role": "Investigated imitation through controlled experiments"
+        }
+      ],
+      "sourceIds": [
+        "sc-social"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-social"
+        ],
+        "history": [
+          "sc-social"
+        ]
+      }
+    },
+    {
+      "id": "cognitive-dissonance",
+      "title": "Cognitive dissonance",
+      "aliases": [
+        "attitude change"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1957,
+        "label": "1957",
+        "precision": "exact",
+        "note": "Festinger's theory preceded the 1959 forced-compliance experiment."
+      },
+      "summary": "Inconsistency between beliefs and actions can motivate changes that reduce psychological discomfort.",
+      "problem": "People sometimes change attitudes after acting against them.",
+      "development": "Festinger proposed the theory; experiments with Carlsmith explored how justification affects attitude change. Subsequent research tested competing explanations and boundary conditions.",
+      "limitations": "The theory is not a universal explanation for disagreement; self-perception and other mechanisms can produce similar observations.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Leon Festinger",
+          "role": "Proposed dissonance theory"
+        },
+        {
+          "name": "James Carlsmith",
+          "role": "Co-developed an influential experimental test"
+        }
+      ],
+      "sourceIds": [
+        "sc-dissonance"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-dissonance"
+        ],
+        "history": [
+          "sc-dissonance"
+        ]
+      }
+    },
+    {
+      "id": "game-theory",
+      "title": "Mathematical game theory",
+      "aliases": [
+        "strategic interaction"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1944,
+        "label": "1944",
+        "precision": "exact",
+        "note": "Von Neumann and Morgenstern's book is the synthesis milestone; earlier strategic mathematics existed."
+      },
+      "summary": "Outcomes depend on the choices of multiple agents whose interests may align or conflict.",
+      "problem": "Ordinary optimization omits the fact that other decision-makers also adapt.",
+      "development": "Von Neumann's strategic mathematics and Morgenstern's economics formed a shared framework of players, strategies, and payoffs.",
+      "limitations": "A mathematically valid solution concept does not guarantee that real people know the game or behave as assumed.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "John von Neumann and Oskar Morgenstern",
+          "role": "Synthesized strategic interaction mathematically"
+        }
+      ],
+      "sourceIds": [
+        "sc-game"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-game"
+        ],
+        "history": [
+          "sc-game"
+        ]
+      }
+    },
+    {
+      "id": "nash-equilibrium",
+      "title": "Nash equilibrium",
+      "aliases": [
+        "noncooperative equilibrium"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1950,
+        "label": "1950",
+        "precision": "exact",
+        "note": "Nash announced an existence result in 1950 and developed it further in 1951."
+      },
+      "summary": "A strategy profile is an equilibrium when no player benefits by changing their own strategy alone.",
+      "problem": "Game theory needed a general solution concept beyond two-player zero-sum games.",
+      "development": "Nash used fixed-point reasoning to prove mixed-strategy equilibrium existence for finite games.",
+      "limitations": "An equilibrium need not be fair, unique, efficient, easy to find, or a realistic prediction.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "John Nash",
+          "role": "Defined the equilibrium concept and proved an existence theorem"
+        }
+      ],
+      "sourceIds": [
+        "sc-nash"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-nash"
+        ],
+        "history": [
+          "sc-nash"
+        ]
+      },
+      "example": "An equilibrium may leave everyone worse off than cooperation; stability and collective benefit are different properties."
+    },
+    {
+      "id": "expected-utility",
+      "title": "Expected utility",
+      "aliases": [
+        "decision theory",
+        "utility under risk"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1944,
+        "label": "1944",
+        "precision": "exact",
+        "note": "Marks axiomatic expected utility; Bernoulli's risk analysis dates to 1738."
+      },
+      "summary": "Uncertain options can be ranked by probability-weighted utility when preferences satisfy specified consistency conditions.",
+      "problem": "Expected money alone fails to capture risk-sensitive choices.",
+      "development": "Von Neumann and Morgenstern formalized utility over lotteries, building on earlier risk reasoning. The framework became central to decision analysis.",
+      "limitations": "It is a normative model under assumptions; observed choices often violate those assumptions.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "John von Neumann and Oskar Morgenstern",
+          "role": "Axiomatized expected utility"
+        },
+        {
+          "name": "Daniel Bernoulli",
+          "role": "Developed an earlier utility account of risk"
+        }
+      ],
+      "sourceIds": [
+        "sc-utility"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-utility"
+        ],
+        "history": [
+          "sc-utility"
+        ]
+      },
+      "equation": {
+        "expression": "EU = Σ pᵢ u(xᵢ)",
+        "explanation": "Expected utility sums each outcome's utility u(xᵢ), weighted by its probability pᵢ."
+      }
+    },
+    {
+      "id": "prospect-theory",
+      "title": "Prospect theory",
+      "aliases": [
+        "loss aversion",
+        "reference dependence"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1979,
+        "label": "1979",
+        "precision": "exact",
+        "note": "Publication of Kahneman and Tversky's original model."
+      },
+      "summary": "Choices under risk depend on reference points, perceived gains and losses, and nonlinear probability weighting.",
+      "problem": "Observed decisions systematically departed from standard expected-utility predictions.",
+      "development": "Kahneman and Tversky built a descriptive model from choice experiments, connecting psychophysics with economic decision-making.",
+      "limitations": "Predictions depend on reference points and context; the model is not a universal account of every decision.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Daniel Kahneman and Amos Tversky",
+          "role": "Developed prospect theory"
+        }
+      ],
+      "sourceIds": [
+        "sc-prospect"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-prospect"
+        ],
+        "history": [
+          "sc-prospect"
+        ]
+      }
+    },
+    {
+      "id": "behavioral-economics",
+      "title": "Behavioral economics",
+      "aliases": [
+        "bounded rationality"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1980,
+        "label": "1980",
+        "precision": "exact",
+        "note": "Thaler's consumer-choice paper is a milestone; psychological economics has a longer history."
+      },
+      "summary": "Economic models can incorporate measured limits of attention, self-control, and social preferences.",
+      "problem": "Idealized rational-choice models left systematic patterns in behavior unexplained.",
+      "development": "Thaler connected psychological evidence with consumer theory. Experiments and formal models developed testable accounts of departures from standard assumptions.",
+      "limitations": "Effects vary across populations and institutions; identifying a bias does not alone establish the best policy.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Richard Thaler",
+          "role": "Developed psychologically informed economic analysis"
+        },
+        {
+          "name": "Daniel Kahneman and Amos Tversky",
+          "role": "Provided influential decision evidence"
+        }
+      ],
+      "sourceIds": [
+        "sc-behavioral"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-behavioral"
+        ],
+        "history": [
+          "sc-behavioral"
+        ]
+      }
+    },
+    {
+      "id": "randomized-development",
+      "title": "Randomized field experiments",
+      "aliases": [
+        "randomized controlled trial",
+        "development economics"
+      ],
+      "discipline": "society",
+      "tags": [
+        "mind",
+        "decision"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1995,
+        "label": "c. 1995",
+        "precision": "approximate",
+        "note": "Marks influential development-economics experiments; randomized social research is much older."
+      },
+      "summary": "Random allocation of an intervention helps compare outcomes without systematic initial treatment selection.",
+      "problem": "Policy correlations often mix intervention effects with preexisting differences.",
+      "development": "Kremer's education studies and later work by Banerjee, Duflo, and collaborators adapted randomized trials to development questions.",
+      "limitations": "Attrition, spillovers, ethics, and generalization require care; a local effect is not a universal policy result.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Michael Kremer",
+          "role": "Conducted influential early development field experiments"
+        },
+        {
+          "name": "Abhijit Banerjee and Esther Duflo",
+          "role": "Expanded experimental development economics"
+        }
+      ],
+      "sourceIds": [
+        "sc-field"
+      ],
+      "claimSources": {
+        "summary": [
+          "sc-field"
+        ],
+        "history": [
+          "sc-field"
+        ]
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "counting--sky-cycles",
+      "source": "counting",
+      "target": "sky-cycles",
+      "type": "foundation",
+      "explanation": "Counting repetitions is a conceptual prerequisite for comparing days, lunar months, and seasonal cycles.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-ancient"
+      ]
+    },
+    {
+      "id": "sky-cycles--geocentrism",
+      "source": "sky-cycles",
+      "target": "geocentrism",
+      "type": "enables",
+      "explanation": "Long-term positional observations supplied phenomena for mathematical Earth-centered models to explain.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-ancient"
+      ]
+    },
+    {
+      "id": "geometry--geocentrism",
+      "source": "geometry",
+      "target": "geocentrism",
+      "type": "foundation",
+      "explanation": "Circles and angular geometry supplied the mathematical language of epicycles.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-ancient"
+      ]
+    },
+    {
+      "id": "geocentrism--heliocentrism",
+      "source": "geocentrism",
+      "target": "heliocentrism",
+      "type": "revision",
+      "explanation": "Copernicus reorganized inherited planetary models by placing Earth in motion around the Sun.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-copernicus"
+      ]
+    },
+    {
+      "id": "heliocentrism--kepler-laws",
+      "source": "heliocentrism",
+      "target": "kepler-laws",
+      "type": "influence",
+      "explanation": "Kepler investigated planetary motions within a Sun-centered arrangement and replaced circular paths with ellipses.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-kepler"
+      ]
+    },
+    {
+      "id": "geometry--kepler-laws",
+      "source": "geometry",
+      "target": "kepler-laws",
+      "type": "foundation",
+      "explanation": "Ellipse geometry and areas express the first two laws; this link identifies mathematical dependence.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-kepler"
+      ]
+    },
+    {
+      "id": "telescope--stellar-parallax",
+      "source": "telescope",
+      "target": "stellar-parallax",
+      "type": "enables",
+      "explanation": "Precise telescopic angular measurements made annual stellar displacement detectable.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-parallax"
+      ]
+    },
+    {
+      "id": "heliocentrism--stellar-parallax",
+      "source": "heliocentrism",
+      "target": "stellar-parallax",
+      "type": "foundation",
+      "explanation": "Earth's orbital baseline gives annual parallax its geometric interpretation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-parallax"
+      ]
+    },
+    {
+      "id": "geometry--stellar-parallax",
+      "source": "geometry",
+      "target": "stellar-parallax",
+      "type": "foundation",
+      "explanation": "Triangulation converts a baseline and small angle into a stellar distance.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-parallax"
+      ]
+    },
+    {
+      "id": "spectroscopy--stellar-classification",
+      "source": "spectroscopy",
+      "target": "stellar-classification",
+      "type": "enables",
+      "explanation": "Stellar absorption spectra supplied the features used to classify stars.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-spectra"
+      ]
+    },
+    {
+      "id": "telescope--period-luminosity",
+      "source": "telescope",
+      "target": "period-luminosity",
+      "type": "enables",
+      "explanation": "Repeated photographic observations of faint stars enabled Leavitt to compare pulsation periods and brightness.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-cepheid"
+      ]
+    },
+    {
+      "id": "stellar-classification--hertzsprung-russell",
+      "source": "stellar-classification",
+      "target": "hertzsprung-russell",
+      "type": "enables",
+      "explanation": "Spectral categories supplied a temperature-related axis for comparing luminosities.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-hr"
+      ]
+    },
+    {
+      "id": "stellar-parallax--hertzsprung-russell",
+      "source": "stellar-parallax",
+      "target": "hertzsprung-russell",
+      "type": "enables",
+      "explanation": "Distance measurements allowed apparent brightness to be converted into intrinsic luminosity.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-hr"
+      ]
+    },
+    {
+      "id": "general-relativity--cosmic-expansion",
+      "source": "general-relativity",
+      "target": "cosmic-expansion",
+      "type": "foundation",
+      "explanation": "Relativistic cosmological solutions allowed the overall scale of the universe to evolve.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-expansion"
+      ]
+    },
+    {
+      "id": "period-luminosity--cosmic-expansion",
+      "source": "period-luminosity",
+      "target": "cosmic-expansion",
+      "type": "enables",
+      "explanation": "Cepheid distances helped establish the relation between galaxy distances and recession measurements.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-expansion"
+      ]
+    },
+    {
+      "id": "spectroscopy--cosmic-expansion",
+      "source": "spectroscopy",
+      "target": "cosmic-expansion",
+      "type": "enables",
+      "explanation": "Galaxy spectra provided redshifts used in establishing expansion.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-expansion"
+      ]
+    },
+    {
+      "id": "cosmic-expansion--big-bang",
+      "source": "cosmic-expansion",
+      "target": "big-bang",
+      "type": "influence",
+      "explanation": "Running an expanding universe backward motivated a denser earlier state.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-bigbang"
+      ]
+    },
+    {
+      "id": "general-relativity--big-bang",
+      "source": "general-relativity",
+      "target": "big-bang",
+      "type": "foundation",
+      "explanation": "Relativistic dynamics provide the mathematical framework for evolving-universe models.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-bigbang"
+      ]
+    },
+    {
+      "id": "special-relativity--stellar-fusion",
+      "source": "special-relativity",
+      "target": "stellar-fusion",
+      "type": "foundation",
+      "explanation": "Mass–energy equivalence connects the nuclear mass difference with released energy.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-fusion"
+      ]
+    },
+    {
+      "id": "quantum-mechanics--stellar-fusion",
+      "source": "quantum-mechanics",
+      "target": "stellar-fusion",
+      "type": "foundation",
+      "explanation": "Quantum nuclear behavior is needed to calculate reactions in stellar interiors.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-fusion"
+      ]
+    },
+    {
+      "id": "stellar-fusion--stellar-nucleosynthesis",
+      "source": "stellar-fusion",
+      "target": "stellar-nucleosynthesis",
+      "type": "influence",
+      "explanation": "Stellar energy-producing reactions became part of a broader account of element formation.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-b2fh"
+      ]
+    },
+    {
+      "id": "spectroscopy--stellar-nucleosynthesis",
+      "source": "spectroscopy",
+      "target": "stellar-nucleosynthesis",
+      "type": "enables",
+      "explanation": "Measured elemental abundances constrain proposed nuclear production pathways.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-b2fh"
+      ]
+    },
+    {
+      "id": "quantum-mechanics--white-dwarfs",
+      "source": "quantum-mechanics",
+      "target": "white-dwarfs",
+      "type": "foundation",
+      "explanation": "Electron degeneracy is a quantum effect supporting a dense remnant.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-dwarfs"
+      ]
+    },
+    {
+      "id": "special-relativity--white-dwarfs",
+      "source": "special-relativity",
+      "target": "white-dwarfs",
+      "type": "foundation",
+      "explanation": "Relativistic electron behavior is central to the limiting-mass argument.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-dwarfs"
+      ]
+    },
+    {
+      "id": "white-dwarfs--neutron-stars",
+      "source": "white-dwarfs",
+      "target": "neutron-stars",
+      "type": "influence",
+      "explanation": "Compact-remnant physics raised the question of stellar endpoints beyond electron-supported configurations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-neutron"
+      ]
+    },
+    {
+      "id": "general-relativity--black-holes",
+      "source": "general-relativity",
+      "target": "black-holes",
+      "type": "foundation",
+      "explanation": "Schwarzschild's solution follows from Einstein's gravitational field equations.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-blackholes"
+      ]
+    },
+    {
+      "id": "big-bang--cosmic-microwave-background",
+      "source": "big-bang",
+      "target": "cosmic-microwave-background",
+      "type": "influence",
+      "explanation": "A hot early universe predicted relic radiation that could be sought observationally.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-cmb"
+      ]
+    },
+    {
+      "id": "radio-astronomy--cosmic-microwave-background",
+      "source": "radio-astronomy",
+      "target": "cosmic-microwave-background",
+      "type": "enables",
+      "explanation": "Sensitive microwave receivers allowed the faint all-sky background to be detected.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-cmb"
+      ]
+    },
+    {
+      "id": "classical-mechanics--dark-matter",
+      "source": "classical-mechanics",
+      "target": "dark-matter",
+      "type": "foundation",
+      "explanation": "Dynamical estimates compare observed velocities with the gravity expected from visible mass.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-darkmatter"
+      ]
+    },
+    {
+      "id": "big-bang--inflation",
+      "source": "big-bang",
+      "target": "inflation",
+      "type": "influence",
+      "explanation": "Inflation was proposed to address initial-condition puzzles left by the standard hot-universe model.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-inflation"
+      ]
+    },
+    {
+      "id": "quantum-field-theory--inflation",
+      "source": "quantum-field-theory",
+      "target": "inflation",
+      "type": "foundation",
+      "explanation": "Inflationary scenarios often use field dynamics and vacuum-like energy in an expanding spacetime.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-inflation"
+      ]
+    },
+    {
+      "id": "cosmic-microwave-background--inflation",
+      "source": "cosmic-microwave-background",
+      "target": "inflation",
+      "type": "enables",
+      "explanation": "The uniformity and fluctuation pattern of the background constrain inflationary explanations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-inflation"
+      ]
+    },
+    {
+      "id": "cosmic-expansion--dark-energy",
+      "source": "cosmic-expansion",
+      "target": "dark-energy",
+      "type": "revision",
+      "explanation": "Supernova distances showed that late expansion accelerates rather than following a matter-only decelerating history.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-darkenergy"
+      ]
+    },
+    {
+      "id": "general-relativity--dark-energy",
+      "source": "general-relativity",
+      "target": "dark-energy",
+      "type": "foundation",
+      "explanation": "Relativistic cosmology relates the expansion rate to matter, pressure, and a possible cosmological constant.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-darkenergy"
+      ]
+    },
+    {
+      "id": "kepler-laws--exoplanets",
+      "source": "kepler-laws",
+      "target": "exoplanets",
+      "type": "foundation",
+      "explanation": "Orbital periods and motions connect detected timing or velocity changes with planetary systems.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-exoplanets"
+      ]
+    },
+    {
+      "id": "spectroscopy--exoplanets",
+      "source": "spectroscopy",
+      "target": "exoplanets",
+      "type": "enables",
+      "explanation": "Precise Doppler measurements can reveal a star's motion caused by an orbiting planet.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-exoplanets"
+      ]
+    },
+    {
+      "id": "general-relativity--gravitational-lensing",
+      "source": "general-relativity",
+      "target": "gravitational-lensing",
+      "type": "foundation",
+      "explanation": "Relativity predicts deflection of light in a curved spacetime.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-lensing"
+      ]
+    },
+    {
+      "id": "telescope--gravitational-lensing",
+      "source": "telescope",
+      "target": "gravitational-lensing",
+      "type": "enables",
+      "explanation": "Comparing stellar positions near the eclipsed Sun enabled an early light-deflection test.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-lensing"
+      ]
+    },
+    {
+      "id": "general-relativity--gravitational-wave-astronomy",
+      "source": "general-relativity",
+      "target": "gravitational-wave-astronomy",
+      "type": "foundation",
+      "explanation": "Relativity predicts traveling spacetime disturbances and their measurable effect on distance.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-waves"
+      ]
+    },
+    {
+      "id": "black-holes--gravitational-wave-astronomy",
+      "source": "black-holes",
+      "target": "gravitational-wave-astronomy",
+      "type": "influence",
+      "explanation": "Models of merging black holes supplied signals against which detector data could be compared.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-waves"
+      ]
+    },
+    {
+      "id": "electromagnetism--radio-astronomy",
+      "source": "electromagnetism",
+      "target": "radio-astronomy",
+      "type": "foundation",
+      "explanation": "Radio waves are electromagnetic radiation, extending astronomy beyond visible wavelengths.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-radio"
+      ]
+    },
+    {
+      "id": "cosmic-expansion--large-scale-structure",
+      "source": "cosmic-expansion",
+      "target": "large-scale-structure",
+      "type": "enables",
+      "explanation": "The distance–redshift relation supplied an approximate depth axis for galaxy surveys.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-structure"
+      ]
+    },
+    {
+      "id": "dark-matter--large-scale-structure",
+      "source": "dark-matter",
+      "target": "large-scale-structure",
+      "type": "influence",
+      "explanation": "Gravitational clustering of unseen matter provides a framework for explaining the observed cosmic web.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-structure"
+      ]
+    },
+    {
+      "id": "big-bang--lcdm",
+      "source": "big-bang",
+      "target": "lcdm",
+      "type": "foundation",
+      "explanation": "The concordance model retains the hot, expanding early-universe framework.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-wmap"
+      ]
+    },
+    {
+      "id": "cosmic-microwave-background--lcdm",
+      "source": "cosmic-microwave-background",
+      "target": "lcdm",
+      "type": "enables",
+      "explanation": "Precision microwave measurements constrain the model's parameters.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-wmap"
+      ]
+    },
+    {
+      "id": "dark-matter--lcdm",
+      "source": "dark-matter",
+      "target": "lcdm",
+      "type": "foundation",
+      "explanation": "A cold dark-matter component accounts for gravitational observations and structure growth in the model.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-wmap"
+      ]
+    },
+    {
+      "id": "dark-energy--lcdm",
+      "source": "dark-energy",
+      "target": "lcdm",
+      "type": "foundation",
+      "explanation": "A cosmological constant provides the model's simplest account of accelerated expansion.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-wmap"
+      ]
+    },
+    {
+      "id": "arithmetic--abacus",
+      "source": "arithmetic",
+      "target": "abacus",
+      "type": "foundation",
+      "explanation": "Counter movements implement arithmetic procedures on represented quantities.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-abacus"
+      ]
+    },
+    {
+      "id": "positional-notation--abacus",
+      "source": "positional-notation",
+      "target": "abacus",
+      "type": "foundation",
+      "explanation": "Place value explains how columns or positions can stand for different magnitudes; this is a conceptual comparison.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-abacus"
+      ]
+    },
+    {
+      "id": "arithmetic--mechanical-calculator",
+      "source": "arithmetic",
+      "target": "mechanical-calculator",
+      "type": "foundation",
+      "explanation": "Gears embody addition and positional carrying as repeatable operations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-abacus"
+      ]
+    },
+    {
+      "id": "mechanical-calculator--analytical-engine",
+      "source": "mechanical-calculator",
+      "target": "analytical-engine",
+      "type": "influence",
+      "explanation": "Babbage generalized mechanical calculation toward a programmable engine with separate store and mill.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-babbage"
+      ]
+    },
+    {
+      "id": "algorithms--analytical-engine",
+      "source": "algorithms",
+      "target": "analytical-engine",
+      "type": "foundation",
+      "explanation": "A programmable engine requires a sequence of executable numerical instructions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-babbage"
+      ]
+    },
+    {
+      "id": "algorithms--turing-machine",
+      "source": "algorithms",
+      "target": "turing-machine",
+      "type": "foundation",
+      "explanation": "The machine model formalizes the idea of effective step-by-step calculation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-turing"
+      ]
+    },
+    {
+      "id": "mathematical-logic--turing-machine",
+      "source": "mathematical-logic",
+      "target": "turing-machine",
+      "type": "influence",
+      "explanation": "Questions about mechanical logical decision motivated Turing's investigation.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-turing"
+      ]
+    },
+    {
+      "id": "mathematical-logic--lambda-calculus",
+      "source": "mathematical-logic",
+      "target": "lambda-calculus",
+      "type": "influence",
+      "explanation": "Church developed function abstraction in a foundational logical setting.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-lambda"
+      ]
+    },
+    {
+      "id": "turing-machine--halting-problem",
+      "source": "turing-machine",
+      "target": "halting-problem",
+      "type": "foundation",
+      "explanation": "A precise universal machine model makes the undecidability argument possible.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-turing"
+      ]
+    },
+    {
+      "id": "boolean-algebra--neural-networks",
+      "source": "boolean-algebra",
+      "target": "neural-networks",
+      "type": "foundation",
+      "explanation": "Logical combinations can be realized by idealized threshold units.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-neurons"
+      ]
+    },
+    {
+      "id": "formal-logic--neural-networks",
+      "source": "formal-logic",
+      "target": "neural-networks",
+      "type": "influence",
+      "explanation": "McCulloch and Pitts explicitly analyzed idealized neural activity with propositional logic.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-neurons"
+      ]
+    },
+    {
+      "id": "turing-machine--stored-program",
+      "source": "turing-machine",
+      "target": "stored-program",
+      "type": "foundation",
+      "explanation": "Universal computation explains how encoded instructions can specify many different procedures; this is a conceptual link.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-computers"
+      ]
+    },
+    {
+      "id": "binary-numbers--stored-program",
+      "source": "binary-numbers",
+      "target": "stored-program",
+      "type": "foundation",
+      "explanation": "Binary encoding provides a common representation for instructions and data in many stored-program machines.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-computers"
+      ]
+    },
+    {
+      "id": "probability--information-theory",
+      "source": "probability",
+      "target": "information-theory",
+      "type": "foundation",
+      "explanation": "Shannon's uncertainty measure and channel models are defined using probabilities.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-shannon"
+      ]
+    },
+    {
+      "id": "logarithms--information-theory",
+      "source": "logarithms",
+      "target": "information-theory",
+      "type": "foundation",
+      "explanation": "Logarithms turn multiplicative numbers of possibilities into additive information quantities.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-shannon"
+      ]
+    },
+    {
+      "id": "information-theory--cybernetics",
+      "source": "information-theory",
+      "target": "cybernetics",
+      "type": "foundation",
+      "explanation": "Information and noisy communication form a shared mathematical language for feedback; this is a conceptual connection between contemporary works.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-cybernetics"
+      ]
+    },
+    {
+      "id": "calculus--cybernetics",
+      "source": "calculus",
+      "target": "cybernetics",
+      "type": "foundation",
+      "explanation": "Continuous feedback dynamics can be modeled using rates of change.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-cybernetics"
+      ]
+    },
+    {
+      "id": "information-theory--error-correction",
+      "source": "information-theory",
+      "target": "error-correction",
+      "type": "foundation",
+      "explanation": "Reliable transmission in noise provides the mathematical problem that error-correcting codes address.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-hamming"
+      ]
+    },
+    {
+      "id": "boolean-algebra--error-correction",
+      "source": "boolean-algebra",
+      "target": "error-correction",
+      "type": "foundation",
+      "explanation": "Parity constraints operate on binary values to distinguish valid codewords.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-hamming"
+      ]
+    },
+    {
+      "id": "turing-machine--artificial-intelligence",
+      "source": "turing-machine",
+      "target": "artificial-intelligence",
+      "type": "foundation",
+      "explanation": "General computation provides a framework for implementing reasoning procedures.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-dartmouth"
+      ]
+    },
+    {
+      "id": "neural-networks--artificial-intelligence",
+      "source": "neural-networks",
+      "target": "artificial-intelligence",
+      "type": "influence",
+      "explanation": "The Dartmouth proposal explicitly included neural nets among its research directions.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-dartmouth"
+      ]
+    },
+    {
+      "id": "artificial-intelligence--machine-learning",
+      "source": "artificial-intelligence",
+      "target": "machine-learning",
+      "type": "influence",
+      "explanation": "Learning through experience became one of the practical approaches pursued within AI.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-samuel"
+      ]
+    },
+    {
+      "id": "statistics--machine-learning",
+      "source": "statistics",
+      "target": "machine-learning",
+      "type": "foundation",
+      "explanation": "Statistical inference supplies a conceptual basis for estimating patterns from finite examples.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-samuel"
+      ]
+    },
+    {
+      "id": "turing-machine--computational-complexity",
+      "source": "turing-machine",
+      "target": "computational-complexity",
+      "type": "foundation",
+      "explanation": "Resource limits refine an abstract model of computation into time and space classes.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-complexity"
+      ]
+    },
+    {
+      "id": "computational-complexity--np-completeness",
+      "source": "computational-complexity",
+      "target": "np-completeness",
+      "type": "foundation",
+      "explanation": "Polynomial-time bounds and reductions make completeness a precise statement.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-cook"
+      ]
+    },
+    {
+      "id": "boolean-algebra--np-completeness",
+      "source": "boolean-algebra",
+      "target": "np-completeness",
+      "type": "foundation",
+      "explanation": "Boolean satisfiability provides a central complete decision problem.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-cook"
+      ]
+    },
+    {
+      "id": "computational-complexity--public-key-cryptography",
+      "source": "computational-complexity",
+      "target": "public-key-cryptography",
+      "type": "foundation",
+      "explanation": "The public-key approach distinguishes feasible operations from computations intended to be infeasible.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-cryptography"
+      ]
+    },
+    {
+      "id": "information-theory--public-key-cryptography",
+      "source": "information-theory",
+      "target": "public-key-cryptography",
+      "type": "influence",
+      "explanation": "Diffie and Hellman explicitly connected cryptographic problems with communication and computation theory.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-cryptography"
+      ]
+    },
+    {
+      "id": "algorithms--distributed-consensus",
+      "source": "algorithms",
+      "target": "distributed-consensus",
+      "type": "foundation",
+      "explanation": "Agreement protocols specify precise local rules for messages and decisions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-consensus"
+      ]
+    },
+    {
+      "id": "formal-verification--distributed-consensus",
+      "source": "formal-verification",
+      "target": "distributed-consensus",
+      "type": "foundation",
+      "explanation": "Correctness arguments establish agreement guarantees under an explicit fault model.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-consensus"
+      ]
+    },
+    {
+      "id": "quantum-mechanics--quantum-computing",
+      "source": "quantum-mechanics",
+      "target": "quantum-computing",
+      "type": "foundation",
+      "explanation": "Controlled quantum evolution supplies operations unavailable in an ordinary classical model.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-quantum-compute"
+      ]
+    },
+    {
+      "id": "turing-machine--quantum-computing",
+      "source": "turing-machine",
+      "target": "quantum-computing",
+      "type": "influence",
+      "explanation": "Feynman's discussion asks how physical simulation relates to universal computation.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-quantum-compute"
+      ]
+    },
+    {
+      "id": "information-theory--quantum-information",
+      "source": "information-theory",
+      "target": "quantum-information",
+      "type": "influence",
+      "explanation": "Schumacher's coding theorem is explicitly analogous to Shannon's classical noiseless coding theorem.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-quantum-info"
+      ]
+    },
+    {
+      "id": "quantum-mechanics--quantum-information",
+      "source": "quantum-mechanics",
+      "target": "quantum-information",
+      "type": "foundation",
+      "explanation": "Quantum states, measurements, and density operators define the information being encoded.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-quantum-info"
+      ]
+    },
+    {
+      "id": "quantum-entanglement--quantum-information",
+      "source": "quantum-entanglement",
+      "target": "quantum-information",
+      "type": "foundation",
+      "explanation": "Entangled states have joint properties central to quantum coding and communication.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-quantum-info"
+      ]
+    },
+    {
+      "id": "neural-networks--backpropagation",
+      "source": "neural-networks",
+      "target": "backpropagation",
+      "type": "influence",
+      "explanation": "Multilayer networks supplied the learnable parameters and hidden representations addressed by the method.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-backprop"
+      ]
+    },
+    {
+      "id": "calculus--backpropagation",
+      "source": "calculus",
+      "target": "backpropagation",
+      "type": "foundation",
+      "explanation": "The chain rule propagates output derivatives through intermediate computations.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-backprop"
+      ]
+    },
+    {
+      "id": "optimization--backpropagation",
+      "source": "optimization",
+      "target": "backpropagation",
+      "type": "foundation",
+      "explanation": "Computed gradients provide directions for adjusting parameters to reduce a loss.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-backprop"
+      ]
+    },
+    {
+      "id": "machine-learning--reinforcement-learning",
+      "source": "machine-learning",
+      "target": "reinforcement-learning",
+      "type": "influence",
+      "explanation": "Trial-and-error experience supplies data for learning improved decisions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-rl"
+      ]
+    },
+    {
+      "id": "operant-conditioning--reinforcement-learning",
+      "source": "operant-conditioning",
+      "target": "reinforcement-learning",
+      "type": "influence",
+      "explanation": "Reward-based learning provides a conceptual bridge between behavioral learning and computational agents, without equating the two.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-rl"
+      ]
+    },
+    {
+      "id": "probability--reinforcement-learning",
+      "source": "probability",
+      "target": "reinforcement-learning",
+      "type": "foundation",
+      "explanation": "Stochastic environments and expected returns require probabilistic reasoning.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-rl"
+      ]
+    },
+    {
+      "id": "bayes-theorem--bayesian-networks",
+      "source": "bayes-theorem",
+      "target": "bayesian-networks",
+      "type": "foundation",
+      "explanation": "Conditional probabilities update beliefs as observations arrive.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-bayesnets"
+      ]
+    },
+    {
+      "id": "graph-theory--bayesian-networks",
+      "source": "graph-theory",
+      "target": "bayesian-networks",
+      "type": "foundation",
+      "explanation": "Directed graphs encode dependency structure and guide inference algorithms.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-bayesnets"
+      ]
+    },
+    {
+      "id": "bayesian-networks--causal-inference",
+      "source": "bayesian-networks",
+      "target": "causal-inference",
+      "type": "influence",
+      "explanation": "Causal diagrams extend graphical probabilistic reasoning with assumptions about interventions.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-causality"
+      ]
+    },
+    {
+      "id": "statistics--causal-inference",
+      "source": "statistics",
+      "target": "causal-inference",
+      "type": "foundation",
+      "explanation": "Identification relates causal assumptions to quantities estimated from observed distributions.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-causality"
+      ]
+    },
+    {
+      "id": "neural-networks--deep-learning",
+      "source": "neural-networks",
+      "target": "deep-learning",
+      "type": "influence",
+      "explanation": "Deep models extend neural computation through multiple representation layers.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-deep"
+      ]
+    },
+    {
+      "id": "backpropagation--deep-learning",
+      "source": "backpropagation",
+      "target": "deep-learning",
+      "type": "enables",
+      "explanation": "Gradient-based fine-tuning adjusts layers after initialization or pretraining.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-deep"
+      ]
+    },
+    {
+      "id": "machine-learning--deep-learning",
+      "source": "machine-learning",
+      "target": "deep-learning",
+      "type": "influence",
+      "explanation": "Deep networks learn useful representations from data rather than requiring all features to be specified manually.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-deep"
+      ]
+    },
+    {
+      "id": "deep-learning--transformers",
+      "source": "deep-learning",
+      "target": "transformers",
+      "type": "influence",
+      "explanation": "Transformers are learned multilayer architectures for representing and transforming sequences.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-attention"
+      ]
+    },
+    {
+      "id": "linear-algebra--transformers",
+      "source": "linear-algebra",
+      "target": "transformers",
+      "type": "foundation",
+      "explanation": "Matrix operations implement projections and attention-weighted combinations.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-attention"
+      ]
+    },
+    {
+      "id": "deep-learning--diffusion-models",
+      "source": "deep-learning",
+      "target": "diffusion-models",
+      "type": "influence",
+      "explanation": "Neural networks parameterize the learned reverse process.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-diffusion"
+      ]
+    },
+    {
+      "id": "thermodynamics--diffusion-models",
+      "source": "thermodynamics",
+      "target": "diffusion-models",
+      "type": "influence",
+      "explanation": "The original diffusion-model proposal explicitly draws inspiration from nonequilibrium thermodynamics.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-diffusion"
+      ]
+    },
+    {
+      "id": "probability--diffusion-models",
+      "source": "probability",
+      "target": "diffusion-models",
+      "type": "foundation",
+      "explanation": "Forward and reverse stochastic processes describe distributions over data.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-diffusion"
+      ]
+    },
+    {
+      "id": "turing-machine--algorithmic-information",
+      "source": "turing-machine",
+      "target": "algorithmic-information",
+      "type": "foundation",
+      "explanation": "A universal description language supplies the programs whose shortest lengths define complexity.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-algorithmic"
+      ]
+    },
+    {
+      "id": "information-theory--algorithmic-information",
+      "source": "information-theory",
+      "target": "algorithmic-information",
+      "type": "influence",
+      "explanation": "Algorithmic approaches address information in individual descriptions, complementing average probabilistic entropy.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-algorithmic"
+      ]
+    },
+    {
+      "id": "mathematical-logic--formal-verification",
+      "source": "mathematical-logic",
+      "target": "formal-verification",
+      "type": "foundation",
+      "explanation": "Axioms and inference rules establish program properties deductively.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-hoare"
+      ]
+    },
+    {
+      "id": "halting-problem--formal-verification",
+      "source": "halting-problem",
+      "target": "formal-verification",
+      "type": "foundation",
+      "explanation": "Undecidability explains why unrestricted program correctness cannot be automated completely.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-hoare"
+      ]
+    },
+    {
+      "id": "stored-program--programming-languages",
+      "source": "stored-program",
+      "target": "programming-languages",
+      "type": "enables",
+      "explanation": "Programmable machines can execute translated code produced by a compiler.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-fortran"
+      ]
+    },
+    {
+      "id": "algebra--programming-languages",
+      "source": "algebra",
+      "target": "programming-languages",
+      "type": "influence",
+      "explanation": "FORTRAN allowed scientists to express numerical formulas in a higher-level notation.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-fortran"
+      ]
+    },
+    {
+      "id": "machine-learning--support-vector-machines",
+      "source": "machine-learning",
+      "target": "support-vector-machines",
+      "type": "influence",
+      "explanation": "Support-vector methods address learning classification rules from examples.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-svm"
+      ]
+    },
+    {
+      "id": "optimization--support-vector-machines",
+      "source": "optimization",
+      "target": "support-vector-machines",
+      "type": "foundation",
+      "explanation": "The margin and slack-variable formulation defines a constrained optimization problem.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-svm"
+      ]
+    },
+    {
+      "id": "linear-algebra--support-vector-machines",
+      "source": "linear-algebra",
+      "target": "support-vector-machines",
+      "type": "foundation",
+      "explanation": "Vectors, inner products, and hyperplanes express the separating boundary.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-svm"
+      ]
+    },
+    {
+      "id": "arithmetic--division-of-labor",
+      "source": "arithmetic",
+      "target": "division-of-labor",
+      "type": "foundation",
+      "explanation": "Comparing output per worker uses quantitative production measures; this is an editorial prerequisite link.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-division"
+      ]
+    },
+    {
+      "id": "division-of-labor--comparative-advantage",
+      "source": "division-of-labor",
+      "target": "comparative-advantage",
+      "type": "influence",
+      "explanation": "The specialization-and-exchange problem expands from tasks within production to relative costs across trading partners.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-comparative"
+      ]
+    },
+    {
+      "id": "arithmetic--comparative-advantage",
+      "source": "arithmetic",
+      "target": "comparative-advantage",
+      "type": "foundation",
+      "explanation": "Ratios of required inputs express opportunity costs in Ricardo's numerical example.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-comparative"
+      ]
+    },
+    {
+      "id": "calculus--marginal-utility",
+      "source": "calculus",
+      "target": "marginal-utility",
+      "type": "foundation",
+      "explanation": "Marginal analysis uses incremental changes and, in mathematical formulations, derivatives.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-marginal"
+      ]
+    },
+    {
+      "id": "marginal-utility--supply-demand",
+      "source": "marginal-utility",
+      "target": "supply-demand",
+      "type": "influence",
+      "explanation": "Marshall integrated marginal demand reasoning with production-cost analysis.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-supply"
+      ]
+    },
+    {
+      "id": "measurement--psychophysics",
+      "source": "measurement",
+      "target": "psychophysics",
+      "type": "foundation",
+      "explanation": "Systematic stimulus and response measurements make sensory comparisons quantitative.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-fechner"
+      ]
+    },
+    {
+      "id": "calculus--psychophysics",
+      "source": "calculus",
+      "target": "psychophysics",
+      "type": "foundation",
+      "explanation": "Fechner explicitly related differential and integral formulas in sensory measurement.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-fechner"
+      ]
+    },
+    {
+      "id": "psychophysics--experimental-psychology",
+      "source": "psychophysics",
+      "target": "experimental-psychology",
+      "type": "influence",
+      "explanation": "Quantitative sensory experiments helped establish laboratory methods for studying the mind.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-psych-history"
+      ]
+    },
+    {
+      "id": "experimental-method--experimental-psychology",
+      "source": "experimental-method",
+      "target": "experimental-psychology",
+      "type": "foundation",
+      "explanation": "Controlled manipulation and repeatable observations make mental processes investigable.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-psych-history"
+      ]
+    },
+    {
+      "id": "experimental-method--conditioning",
+      "source": "experimental-method",
+      "target": "conditioning",
+      "type": "foundation",
+      "explanation": "Manipulating stimulus pairings makes competing accounts of anticipatory responses testable.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-conditioning"
+      ]
+    },
+    {
+      "id": "conditioning--behaviorism",
+      "source": "conditioning",
+      "target": "behaviorism",
+      "type": "influence",
+      "explanation": "Conditioned-response research supported a focus on measurable relations between environment and behavior.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-watson"
+      ]
+    },
+    {
+      "id": "experimental-psychology--behaviorism",
+      "source": "experimental-psychology",
+      "target": "behaviorism",
+      "type": "revision",
+      "explanation": "Watson redirected the experimental program away from introspection toward observable behavior.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-watson"
+      ]
+    },
+    {
+      "id": "experimental-psychology--gestalt",
+      "source": "experimental-psychology",
+      "target": "gestalt",
+      "type": "revision",
+      "explanation": "Gestalt research challenged accounts that reduced perception to isolated sensory elements.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-gestalt"
+      ]
+    },
+    {
+      "id": "behaviorism--operant-conditioning",
+      "source": "behaviorism",
+      "target": "operant-conditioning",
+      "type": "influence",
+      "explanation": "Skinner developed an experimentally controlled behavioral program centered on consequences.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-operant"
+      ]
+    },
+    {
+      "id": "conditioning--operant-conditioning",
+      "source": "conditioning",
+      "target": "operant-conditioning",
+      "type": "revision",
+      "explanation": "Operant conditioning distinguishes learning through action consequences from learning stimulus predictions.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-operant"
+      ]
+    },
+    {
+      "id": "information-theory--cognitive-psychology",
+      "source": "information-theory",
+      "target": "cognitive-psychology",
+      "type": "influence",
+      "explanation": "Miller explicitly used information theory to analyze limits of judgment and memory.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-miller"
+      ]
+    },
+    {
+      "id": "behaviorism--cognitive-psychology",
+      "source": "behaviorism",
+      "target": "cognitive-psychology",
+      "type": "revision",
+      "explanation": "Cognitive models reintroduced internal information-processing mechanisms into experimental explanation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-psych-history"
+      ]
+    },
+    {
+      "id": "cognitive-psychology--working-memory",
+      "source": "cognitive-psychology",
+      "target": "working-memory",
+      "type": "influence",
+      "explanation": "Working-memory models explain the temporary storage and manipulation needed for ongoing thought.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-working"
+      ]
+    },
+    {
+      "id": "operant-conditioning--social-learning",
+      "source": "operant-conditioning",
+      "target": "social-learning",
+      "type": "revision",
+      "explanation": "Observational learning showed how acquiring behavior could be studied without each learner receiving direct reinforcement.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-social"
+      ]
+    },
+    {
+      "id": "experimental-psychology--cognitive-dissonance",
+      "source": "experimental-psychology",
+      "target": "cognitive-dissonance",
+      "type": "enables",
+      "explanation": "Controlled attitude-change experiments tested predictions of cognitive inconsistency.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-dissonance"
+      ]
+    },
+    {
+      "id": "probability--game-theory",
+      "source": "probability",
+      "target": "game-theory",
+      "type": "foundation",
+      "explanation": "Mixed strategies and uncertain outcomes require probabilities over actions and results.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-game"
+      ]
+    },
+    {
+      "id": "expected-utility--game-theory",
+      "source": "expected-utility",
+      "target": "game-theory",
+      "type": "foundation",
+      "explanation": "Utility over uncertain outcomes supplies payoffs for strategic analysis; the two were developed together in the 1944 synthesis.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-game"
+      ]
+    },
+    {
+      "id": "game-theory--nash-equilibrium",
+      "source": "game-theory",
+      "target": "nash-equilibrium",
+      "type": "influence",
+      "explanation": "Nash generalized strategic equilibrium beyond the earlier zero-sum setting.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-nash"
+      ]
+    },
+    {
+      "id": "probability--expected-utility",
+      "source": "probability",
+      "target": "expected-utility",
+      "type": "foundation",
+      "explanation": "Expected utility weights each possible outcome's utility by its probability.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-utility"
+      ]
+    },
+    {
+      "id": "marginal-utility--expected-utility",
+      "source": "marginal-utility",
+      "target": "expected-utility",
+      "type": "influence",
+      "explanation": "Preference-based utility provides a conceptual bridge from consumption choices to choices over uncertain outcomes.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-utility"
+      ]
+    },
+    {
+      "id": "expected-utility--prospect-theory",
+      "source": "expected-utility",
+      "target": "prospect-theory",
+      "type": "revision",
+      "explanation": "Prospect theory modeled systematic departures from expected-utility predictions in risky choices.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-prospect"
+      ]
+    },
+    {
+      "id": "psychophysics--prospect-theory",
+      "source": "psychophysics",
+      "target": "prospect-theory",
+      "type": "influence",
+      "explanation": "Kahneman described nonlinear psychological responses as central to the development of the theory.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-prospect"
+      ]
+    },
+    {
+      "id": "prospect-theory--behavioral-economics",
+      "source": "prospect-theory",
+      "target": "behavioral-economics",
+      "type": "influence",
+      "explanation": "Reference dependence and related experimental findings informed psychologically realistic economic models.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-behavioral"
+      ]
+    },
+    {
+      "id": "supply-demand--behavioral-economics",
+      "source": "supply-demand",
+      "target": "behavioral-economics",
+      "type": "revision",
+      "explanation": "Behavioral consumer models challenge and extend assumptions used in standard demand analysis.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-behavioral"
+      ]
+    },
+    {
+      "id": "controlled-trials--randomized-development",
+      "source": "controlled-trials",
+      "target": "randomized-development",
+      "type": "influence",
+      "explanation": "Random assignment and comparison groups were adapted to interventions in social and economic settings.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-field"
+      ]
+    },
+    {
+      "id": "statistics--randomized-development",
+      "source": "statistics",
+      "target": "randomized-development",
+      "type": "foundation",
+      "explanation": "Statistical estimation quantifies treatment differences and their uncertainty.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "sc-field"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "sc-ancient",
+      "title": "Ancient astronomy",
+      "url": "https://openstax.org/books/astronomy-2e/pages/2-2-ancient-astronomy",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-copernicus",
+      "title": "The birth of modern astronomy",
+      "url": "https://openstax.org/books/astronomy-2e/pages/2-4-the-birth-of-modern-astronomy",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-kepler",
+      "title": "The laws of planetary motion",
+      "url": "https://openstax.org/books/astronomy-2e/pages/3-1-the-laws-of-planetary-motion",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-parallax",
+      "title": "Surveying the stars",
+      "url": "https://openstax.org/books/astronomy-2e/pages/19-2-surveying-the-stars",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-spectra",
+      "title": "The spectra of stars",
+      "url": "https://openstax.org/books/astronomy-2e/pages/17-3-the-spectra-of-stars-and-brown-dwarfs",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-cepheid",
+      "title": "Variable stars and cosmic distances",
+      "url": "https://openstax.org/books/astronomy-2e/pages/19-3-variable-stars-one-key-to-cosmic-distances",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-hr",
+      "title": "The Hertzsprung–Russell diagram",
+      "url": "https://openstax.org/books/astronomy-2e/pages/18-4-the-h-r-diagram",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-expansion",
+      "title": "The expanding universe",
+      "url": "https://openstax.org/books/astronomy-2e/pages/26-5-the-expanding-universe",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-bigbang",
+      "title": "The beginning of the universe",
+      "url": "https://openstax.org/books/astronomy-2e/pages/29-3-the-beginning-of-the-universe",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-fusion",
+      "title": "Mass, energy, and stellar fusion",
+      "url": "https://openstax.org/books/astronomy-2e/pages/16-2-mass-energy-and-the-theory-of-relativity",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-supernova",
+      "title": "Supernova observations",
+      "url": "https://openstax.org/books/astronomy-2e/pages/23-3-supernova-observations",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-dwarfs",
+      "title": "The death of low-mass stars",
+      "url": "https://openstax.org/books/astronomy-2e/pages/23-1-the-death-of-low-mass-stars",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-neutron",
+      "title": "Pulsars and neutron stars",
+      "url": "https://openstax.org/books/astronomy-2e/pages/23-4-pulsars-and-the-discovery-of-neutron-stars",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-blackholes",
+      "title": "Black holes",
+      "url": "https://openstax.org/books/astronomy-2e/pages/24-5-black-holes",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-cmb",
+      "title": "The cosmic microwave background",
+      "url": "https://openstax.org/books/astronomy-2e/pages/29-4-the-cosmic-microwave-background",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-darkmatter",
+      "title": "The challenge of dark matter",
+      "url": "https://openstax.org/books/astronomy-2e/pages/28-4-the-challenge-of-dark-matter",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-inflation",
+      "title": "The inflationary universe",
+      "url": "https://openstax.org/books/astronomy-2e/pages/29-6-the-inflationary-universe",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-darkenergy",
+      "title": "A model of the universe",
+      "url": "https://openstax.org/books/astronomy-2e/pages/29-2-a-model-of-the-universe",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-exoplanets",
+      "title": "Planets beyond the Solar System",
+      "url": "https://openstax.org/books/astronomy-2e/pages/21-4-planets-beyond-the-solar-system-search-and-discovery",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-lensing",
+      "title": "Tests of general relativity",
+      "url": "https://openstax.org/books/astronomy-2e/pages/24-3-tests-of-general-relativity",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-waves",
+      "title": "Gravitational wave astronomy",
+      "url": "https://openstax.org/books/astronomy-2e/pages/24-7-gravitational-wave-astronomy",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-radio",
+      "title": "Radio telescopes",
+      "url": "https://openstax.org/books/astronomy-2e/pages/6-4-radio-telescopes",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-structure",
+      "title": "The distribution of galaxies in space",
+      "url": "https://openstax.org/books/astronomy-2e/pages/28-3-the-distribution-of-galaxies-in-space",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-wmap",
+      "title": "WMAP overview: the standard cosmological model",
+      "url": "https://science.nasa.gov/mission/wmap/wmap-overview/",
+      "publisher": "NASA"
+    },
+    {
+      "id": "sc-abacus",
+      "title": "A history of computers",
+      "url": "https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch4/history-histoire/5214792-eng.htm",
+      "publisher": "Statistics Canada"
+    },
+    {
+      "id": "sc-babbage",
+      "title": "The Engines: Babbage's programmable designs",
+      "url": "https://www.computerhistory.org/babbage/engines/",
+      "publisher": "Computer History Museum"
+    },
+    {
+      "id": "sc-turing",
+      "title": "Turing machines",
+      "url": "https://plato.stanford.edu/entries/turing-machine/",
+      "publisher": "Stanford Encyclopedia of Philosophy"
+    },
+    {
+      "id": "sc-lambda",
+      "title": "The lambda calculus",
+      "url": "https://plato.stanford.edu/entries/lambda-calculus/",
+      "publisher": "Stanford Encyclopedia of Philosophy"
+    },
+    {
+      "id": "sc-neurons",
+      "title": "A logical calculus of the ideas immanent in nervous activity",
+      "url": "https://www.cs.cmu.edu/~./epxing/Class/10715/reading/McCulloch.and.Pitts.pdf",
+      "publisher": "McCulloch and Pitts; Carnegie Mellon University archive"
+    },
+    {
+      "id": "sc-computers",
+      "title": "Timeline of computer history: computers",
+      "url": "https://www.computerhistory.org/timeline/computers/",
+      "publisher": "Computer History Museum"
+    },
+    {
+      "id": "sc-shannon",
+      "title": "A mathematical theory of communication",
+      "url": "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf",
+      "publisher": "Claude Shannon; Harvard University archive"
+    },
+    {
+      "id": "sc-cybernetics",
+      "title": "Cybernetics: control and communication",
+      "url": "https://mitpress.mit.edu/9780262537841/cybernetics-or-control-and-communication-in-the-animal-and-the-machine/",
+      "publisher": "MIT Press"
+    },
+    {
+      "id": "sc-hamming",
+      "title": "Error detecting and error correcting codes",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/j.1538-7305.1950.tb00463.x",
+      "publisher": "Richard Hamming; Bell System Technical Journal"
+    },
+    {
+      "id": "sc-dartmouth",
+      "title": "Proposal for the Dartmouth summer research project on artificial intelligence",
+      "url": "https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html",
+      "publisher": "McCarthy, Minsky, Rochester, and Shannon; Stanford archive"
+    },
+    {
+      "id": "sc-samuel",
+      "title": "The games that helped AI evolve",
+      "url": "https://www.ibm.com/history/early-games",
+      "publisher": "IBM"
+    },
+    {
+      "id": "sc-complexity",
+      "title": "On the computational complexity of algorithms",
+      "url": "https://www3.risc.jku.at/people/schreine/courses/compcomp/HartmanisStearns1965.pdf",
+      "publisher": "Hartmanis and Stearns; Johannes Kepler University archive"
+    },
+    {
+      "id": "sc-cook",
+      "title": "The complexity of theorem-proving procedures",
+      "url": "https://doi.org/10.1145/800157.805047",
+      "publisher": "Stephen Cook; ACM"
+    },
+    {
+      "id": "sc-cryptography",
+      "title": "New directions in cryptography",
+      "url": "https://ee.stanford.edu/~hellman/publications/24.pdf",
+      "publisher": "Whitfield Diffie and Martin Hellman"
+    },
+    {
+      "id": "sc-consensus",
+      "title": "The Byzantine generals problem",
+      "url": "https://lamport.azurewebsites.net/pubs/byz.pdf",
+      "publisher": "Leslie Lamport, Robert Shostak, and Marshall Pease"
+    },
+    {
+      "id": "sc-quantum-compute",
+      "title": "Simulating physics with computers",
+      "url": "https://authors.library.caltech.edu/records/a1kgk-xyk45",
+      "publisher": "Richard Feynman; Caltech"
+    },
+    {
+      "id": "sc-quantum-info",
+      "title": "Quantum coding",
+      "url": "https://doi.org/10.1103/PhysRevA.51.2738",
+      "publisher": "Benjamin Schumacher; Physical Review A"
+    },
+    {
+      "id": "sc-backprop",
+      "title": "Learning representations by back-propagating errors",
+      "url": "https://www.cs.toronto.edu/~hinton/absps/naturebp.pdf",
+      "publisher": "Rumelhart, Hinton, and Williams"
+    },
+    {
+      "id": "sc-rl",
+      "title": "Learning from delayed rewards",
+      "url": "https://www.cs.rhul.ac.uk/~chrisw/thesis.html",
+      "publisher": "Christopher Watkins; King's College Cambridge thesis"
+    },
+    {
+      "id": "sc-bayesnets",
+      "title": "Probabilistic reasoning in intelligent systems",
+      "url": "https://books.google.com/books/about/Probabilistic_Reasoning_in_Intelligent_S.html?id=AvNID7LyMusC",
+      "publisher": "Judea Pearl; Morgan Kaufmann"
+    },
+    {
+      "id": "sc-causality",
+      "title": "Causal diagrams for empirical research",
+      "url": "https://academic.oup.com/biomet/article-abstract/82/4/669/251647",
+      "publisher": "Judea Pearl; Biometrika"
+    },
+    {
+      "id": "sc-deep",
+      "title": "A fast learning algorithm for deep belief nets",
+      "url": "https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf",
+      "publisher": "Hinton, Osindero, and Teh"
+    },
+    {
+      "id": "sc-attention",
+      "title": "Attention is all you need",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "publisher": "Vaswani and collaborators"
+    },
+    {
+      "id": "sc-diffusion",
+      "title": "Deep unsupervised learning using nonequilibrium thermodynamics",
+      "url": "https://arxiv.org/abs/1503.03585",
+      "publisher": "Sohl-Dickstein, Weiss, Maheswaranathan, and Ganguli"
+    },
+    {
+      "id": "sc-algorithmic",
+      "title": "Information: mathematical theories and algorithmic complexity",
+      "url": "https://plato.stanford.edu/entries/information/",
+      "publisher": "Stanford Encyclopedia of Philosophy"
+    },
+    {
+      "id": "sc-hoare",
+      "title": "An axiomatic basis for computer programming",
+      "url": "https://doi.org/10.1145/363235.363259",
+      "publisher": "C. A. R. Hoare; ACM"
+    },
+    {
+      "id": "sc-fortran",
+      "title": "Fortran: the first programming language standard",
+      "url": "https://www.ibm.com/history/fortran",
+      "publisher": "IBM"
+    },
+    {
+      "id": "sc-svm",
+      "title": "Support-vector networks",
+      "url": "https://ise.ncsu.edu/wp-content/uploads/sites/9/2022/08/Cortes-Vapnik1995_Article_Support-vectorNetworks.pdf",
+      "publisher": "Corinna Cortes and Vladimir Vapnik"
+    },
+    {
+      "id": "sc-division",
+      "title": "Division of labor and scarcity",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/1-1-what-is-economics-and-why-is-it-important",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-comparative",
+      "title": "Absolute and comparative advantage",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/33-1-absolute-and-comparative-advantage",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-marginal",
+      "title": "The Theory of Political Economy",
+      "url": "https://www.econlib.org/library/YPDBooks/Jevons/jvnPE.html",
+      "publisher": "W. Stanley Jevons; Econlib edition"
+    },
+    {
+      "id": "sc-supply",
+      "title": "Principles of Economics",
+      "url": "https://www.econlib.org/library/Marshall/marP.html",
+      "publisher": "Alfred Marshall; Econlib edition"
+    },
+    {
+      "id": "sc-demand",
+      "title": "Demand, supply, and equilibrium",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/3-1-demand-supply-and-equilibrium-in-markets-for-goods-and-services",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-fechner",
+      "title": "Elements of Psychophysics",
+      "url": "https://www.yorku.ca/pclassic/Fechner/",
+      "publisher": "Gustav Fechner; York University archive"
+    },
+    {
+      "id": "sc-psych-history",
+      "title": "History of psychology",
+      "url": "https://openstax.org/books/psychology-2e/pages/1-2-history-of-psychology",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-conditioning",
+      "title": "Classical conditioning",
+      "url": "https://openstax.org/books/psychology-2e/pages/6-2-classical-conditioning",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-watson",
+      "title": "Psychology as the behaviorist views it",
+      "url": "https://www.yorku.ca/pclassic/Watson/views.htm",
+      "publisher": "John Watson; York University archive"
+    },
+    {
+      "id": "sc-gestalt",
+      "title": "Laws of organization in perceptual forms",
+      "url": "https://www.yorku.ca/pclassic/Wertheimer/Forms/forms.htm",
+      "publisher": "Max Wertheimer; York University archive"
+    },
+    {
+      "id": "sc-operant",
+      "title": "Operant conditioning",
+      "url": "https://openstax.org/books/psychology-2e/pages/6-3-operant-conditioning",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "sc-miller",
+      "title": "The magical number seven, plus or minus two",
+      "url": "https://www.yorku.ca/pclassic/Miller/",
+      "publisher": "George Miller; York University archive"
+    },
+    {
+      "id": "sc-working",
+      "title": "Working memory",
+      "url": "https://doi.org/10.1016/S0079-7421(08)60452-1",
+      "publisher": "Alan Baddeley and Graham Hitch"
+    },
+    {
+      "id": "sc-social",
+      "title": "Transmission of aggression through imitation of aggressive models",
+      "url": "https://www.yorku.ca/pclassic/Bandura/bobo.htm",
+      "publisher": "Bandura, Ross, and Ross; York University archive"
+    },
+    {
+      "id": "sc-dissonance",
+      "title": "Cognitive consequences of forced compliance",
+      "url": "https://www.yorku.ca/pclassic/Festinger/",
+      "publisher": "Festinger and Carlsmith; York University archive"
+    },
+    {
+      "id": "sc-game",
+      "title": "Game theory",
+      "url": "https://plato.stanford.edu/entries/game-theory/",
+      "publisher": "Stanford Encyclopedia of Philosophy"
+    },
+    {
+      "id": "sc-nash",
+      "title": "Equilibrium points in n-person games",
+      "url": "https://doi.org/10.1073/pnas.36.1.48",
+      "publisher": "John Nash; PNAS"
+    },
+    {
+      "id": "sc-utility",
+      "title": "Expected utility",
+      "url": "https://plato.stanford.edu/entries/rationality-normative-utility/",
+      "publisher": "Stanford Encyclopedia of Philosophy"
+    },
+    {
+      "id": "sc-prospect",
+      "title": "Daniel Kahneman: biographical account of prospect theory",
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/2002/kahneman/biographical/",
+      "publisher": "Daniel Kahneman; Nobel Foundation"
+    },
+    {
+      "id": "sc-behavioral",
+      "title": "Richard Thaler's contributions to behavioral economics",
+      "url": "https://www.nobelprize.org/uploads/2018/06/advanced-economicsciences2017.pdf",
+      "publisher": "Royal Swedish Academy of Sciences"
+    },
+    {
+      "id": "sc-field",
+      "title": "Experimental approaches to alleviating global poverty",
+      "url": "https://www.nobelprize.org/uploads/2019/10/advanced-economicsciencesprize2019.pdf",
+      "publisher": "Royal Swedish Academy of Sciences"
+    },
+    {
+      "id": "sc-b2fh",
+      "title": "Synthesis of the Elements in Stars (1957)",
+      "url": "https://authors.library.caltech.edu/records/bpgfm-dsq46",
+      "publisher": "E. Margaret Burbidge, G. R. Burbidge, W. A. Fowler, and F. Hoyle; Caltech archive"
+    },
+    {
+      "id": "sc-supernova1934",
+      "title": "On Super-novae (1934)",
+      "url": "https://authors.library.caltech.edu/records/17wyr-1eh66",
+      "publisher": "Walter Baade and Fritz Zwicky; Caltech archive"
+    },
+    {
+      "id": "sc-slice",
+      "title": "A slice of the universe (1986)",
+      "url": "https://ntrs.nasa.gov/citations/19860045933",
+      "publisher": "Valerie de Lapparent, Margaret Geller, and John Huchra; NASA NTRS"
+    },
+    {
+      "id": "sc-rl-history",
+      "title": "Reinforcement learning: some history",
+      "url": "https://www.cs.rhul.ac.uk/home/chrisw/RL_some_history.html",
+      "publisher": "Christopher Watkins; Royal Holloway"
+    }
+  ]
+}

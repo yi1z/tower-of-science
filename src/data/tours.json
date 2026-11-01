@@ -1,0 +1,334 @@
+[
+  {
+    "id": "numbers-to-computation",
+    "title": "Numbers to computation",
+    "subtitle": "From keeping count to the possibilities—and limits—of programmable machines.",
+    "color": "#8b6747",
+    "steps": [
+      {
+        "conceptId": "counting",
+        "narration": "Begin with a deceptively powerful move: treating different collections as having the same quantity. No single inventor stands at this foundation; counting emerged through many forms of practical life."
+      },
+      {
+        "conceptId": "arithmetic",
+        "narration": "Once quantities can be represented, operations let us combine and compare them. Arithmetic turns a record of what exists into a procedure for answering a new question."
+      },
+      {
+        "conceptId": "positional-notation",
+        "narration": "Position gives a small set of signs a much larger expressive range. Babylonian place value shows that efficient numerical representation developed long before our familiar decimal notation."
+      },
+      {
+        "conceptId": "zero-placeholder",
+        "narration": "An empty position creates a problem: how can a written number distinguish a missing unit from a shifted digit? Placeholder signs answer that representational question without yet making zero an ordinary number."
+      },
+      {
+        "conceptId": "zero-number",
+        "narration": "Now change historical branches to Indian arithmetic. Rules for calculating with zero are a different achievement from marking an empty place. This tour connects the ideas without claiming a simple, proven line of transmission."
+      },
+      {
+        "conceptId": "algorithms",
+        "narration": "Switch from the objects of arithmetic to its procedures. An algorithm makes a method explicit enough to repeat. Medieval mathematical writing helped circulate systematic calculation across languages and communities."
+      },
+      {
+        "conceptId": "binary-numbers",
+        "narration": "On the representation branch, two symbols can express arbitrarily large integers. Binary notation is not a computer by itself, but it offers a compact way to connect number representation with two-state devices."
+      },
+      {
+        "conceptId": "boolean-algebra",
+        "narration": "Change branches from numbers to reasoning. Boolean algebra makes logical combinations manipulable through symbols. Later computing brings numerical representation and logical operations together; their resemblance is not a shared invention story."
+      },
+      {
+        "conceptId": "mathematical-logic",
+        "narration": "Move to the broader foundations of formal reasoning. Explicit rules make proofs and symbolic transformations objects of mathematical study, setting up questions about what a mechanical procedure could decide."
+      },
+      {
+        "conceptId": "turing-machine",
+        "narration": "A tape, a head, and a finite rulebook make the meaning of computation precise. Turing's universal machine shows how one general mechanism can imitate many particular procedures."
+      },
+      {
+        "conceptId": "halting-problem",
+        "narration": "The same precision reveals a boundary. No universal program can decide whether every possible program will stop. Progress in science sometimes means proving what a method cannot do."
+      },
+      {
+        "conceptId": "quantum-computing",
+        "narration": "Return to a different branch: the physical resources used for computation. Quantum processes change which tasks may be efficient, but they do not simply erase the logical limits established by computability theory."
+      }
+    ]
+  },
+  {
+    "id": "geometry-to-spacetime",
+    "title": "Geometry to spacetime",
+    "subtitle": "How measuring shapes became a language for the structure of the universe.",
+    "color": "#668273",
+    "steps": [
+      {
+        "conceptId": "geometry",
+        "narration": "Start with land, structures, and shapes. Practical geometry makes spatial relationships calculable, providing useful knowledge long before a complete axiomatic system organizes its results."
+      },
+      {
+        "conceptId": "deductive-proof",
+        "narration": "A new question changes the enterprise: why must a result hold? Proof turns an observed or calculated pattern into a conclusion supported by stated assumptions and reasoning."
+      },
+      {
+        "conceptId": "euclidean-geometry",
+        "narration": "Euclid's organization makes a mathematical world from definitions, postulates, and deductions. The achievement lies partly in the relationships between claims, not only in the individual geometric facts."
+      },
+      {
+        "conceptId": "analytic-geometry",
+        "narration": "Coordinates give shapes numerical addresses. Algebraic equations can now describe curves, bringing previously distinct techniques into one workspace and preparing geometry for the study of changing quantities."
+      },
+      {
+        "conceptId": "calculus",
+        "narration": "A curve can be studied through its local rate of change and through accumulated quantities. Calculus supplies tools for translating between small-scale behavior and larger geometric or physical patterns."
+      },
+      {
+        "conceptId": "differential-geometry",
+        "narration": "Apply those tools to curves and surfaces. Curvature becomes a measurable local property, making it possible to describe spaces through their geometry rather than only through a picture."
+      },
+      {
+        "conceptId": "non-euclidean-geometry",
+        "narration": "Move sideways to another challenge to inherited geometry. Consistent alternatives to Euclid show that his parallel postulate is not forced by the others. Different assumptions can produce different mathematical spaces."
+      },
+      {
+        "conceptId": "tensor-calculus",
+        "narration": "Join another mathematical branch concerned with quantities that retain their meaning when coordinates change. Tensor calculus provides a disciplined language for expressing geometry and physical laws without privileging one coordinate grid."
+      },
+      {
+        "conceptId": "special-relativity",
+        "narration": "Step onto the physics branch. Measurements of space and time depend on relative motion, while physical laws maintain a common form. This is a conceptual bridge, not a claim that tensor calculus caused special relativity."
+      },
+      {
+        "conceptId": "general-relativity",
+        "narration": "Several branches meet here: relativity, gravitation, and curved geometry. Gravity becomes a property of spacetime, linking the distribution of matter and energy with the paths followed by bodies and light."
+      },
+      {
+        "conceptId": "black-holes",
+        "narration": "Push the equations into a new regime. Schwarzschild's solution opened a mathematical possibility later connected with collapsing stars and observations. A successful theory can generate questions its original authors did not fully anticipate."
+      }
+    ]
+  },
+  {
+    "id": "motion-to-quantum-fields",
+    "title": "Motion to quantum fields",
+    "subtitle": "Follow changing explanations of motion, energy, matter, and interaction.",
+    "color": "#a66f59",
+    "steps": [
+      {
+        "conceptId": "measurement",
+        "narration": "To compare explanations, nature must supply more than impressions. Measurements give experiments quantities that can be checked, repeated, and connected with mathematical relationships."
+      },
+      {
+        "conceptId": "inertia",
+        "narration": "Move onto the mechanics branch. Persistent motion no longer needs a continual push; changing motion is what demands explanation. This rearranges the questions that a theory of motion must answer."
+      },
+      {
+        "conceptId": "classical-mechanics",
+        "narration": "Newton's laws connect forces with changes of motion in a unified mathematical framework. Their enormous reach also supplies a useful lesson: a theory can remain valuable within limits after deeper theories appear."
+      },
+      {
+        "conceptId": "thermodynamics",
+        "narration": "Switch from individual trajectories to heat and work. Engines prompt questions that mechanical paths alone do not conveniently answer, and a new language of macroscopic constraints begins to develop."
+      },
+      {
+        "conceptId": "electromagnetism",
+        "narration": "On another branch, electric and magnetic phenomena come together in a field theory. The unification explains light as an electromagnetic wave and gives physics a powerful alternative to thinking only in particles."
+      },
+      {
+        "conceptId": "blackbody-quanta",
+        "narration": "Thermal radiation exposes a difficulty for classical descriptions. Planck's energy elements introduce a new ingredient, initially tied to a specific problem rather than a finished theory of the microscopic world."
+      },
+      {
+        "conceptId": "quantum-mechanics",
+        "narration": "The new framework changes how physical states and measurement outcomes are described. Classical trajectories give way to a theory with mathematical rules for amplitudes and experimentally testable probabilities."
+      },
+      {
+        "conceptId": "quantum-field-theory",
+        "narration": "Quantum reasoning meets fields and relativistic requirements. Particle creation and destruction can be described within a field framework, opening a language for fundamental interactions."
+      },
+      {
+        "conceptId": "quantum-electrodynamics",
+        "narration": "Focus on the interaction of charged particles and light. Quantum electrodynamics turns the field framework into exceptionally precise predictions while requiring careful handling of quantities arising in calculations."
+      },
+      {
+        "conceptId": "gauge-theory",
+        "narration": "Move to the symmetry branch of field theory. Local transformations and their associated fields organize possible interactions, extending the mathematical approach beyond the particular case of electromagnetism."
+      },
+      {
+        "conceptId": "renormalization-group",
+        "narration": "Change viewpoint from symmetry to scale. A system can look different when examined at different resolutions. Renormalization-group methods explain how descriptions and effective parameters change across those scales."
+      },
+      {
+        "conceptId": "standard-model",
+        "narration": "Bring several branches together in the Standard Model. Its account of particles and three fundamental interactions is strongly tested, yet incomplete. The tower ends this journey with a powerful framework and clearly visible open questions."
+      }
+    ]
+  },
+  {
+    "id": "atoms-to-living-systems",
+    "title": "Atoms to living systems",
+    "subtitle": "Where the chemistry of matter meets cells, inheritance, and molecular explanation.",
+    "color": "#7d895e",
+    "steps": [
+      {
+        "conceptId": "atomism",
+        "narration": "Begin with an ancient proposal: matter might consist of small constituents and empty space. Philosophical atomism matters historically, but it was not the experimentally quantified atomic theory that chemistry later developed."
+      },
+      {
+        "conceptId": "atomic-theory",
+        "narration": "Chemical measurements give atoms a new explanatory role. Combining proportions can be understood through elements made of characteristic atoms, bringing a speculative idea into a quantitative scientific framework."
+      },
+      {
+        "conceptId": "chemical-structure",
+        "narration": "Composition alone is not enough. The arrangement and connectivity of atoms help explain why substances with similar ingredients behave differently. Matter gains an internal architecture."
+      },
+      {
+        "conceptId": "chemical-bonding",
+        "narration": "Bonding theories investigate what holds that architecture together. Electron-based descriptions connect chemical patterns with physical mechanisms and eventually help explain the structures of biological molecules."
+      },
+      {
+        "conceptId": "microscope",
+        "narration": "Now move back in time and across to the observational branch of biology. Magnification reveals structures unavailable to unaided sight; molecular chemistry did not historically precede these early observations."
+      },
+      {
+        "conceptId": "cell-observation",
+        "narration": "Hooke's descriptions of cork illustrate how an instrument can introduce a new object of study. Seeing compartments was a beginning, not yet a complete account of the living cell."
+      },
+      {
+        "conceptId": "cell-theory",
+        "narration": "Repeated observations across organisms support a broader claim: cells are fundamental units of life. A local observation becomes a unifying biological framework through comparison and revision."
+      },
+      {
+        "conceptId": "mendelian-genetics",
+        "narration": "Change branches from cellular structure to inheritance. Counting outcomes in crosses reveals regular patterns. These experiments did not depend on already knowing the molecular material that carried hereditary information."
+      },
+      {
+        "conceptId": "chromosome-theory",
+        "narration": "The inheritance and cell branches begin to meet. Chromosome behavior during cell division offers a physical explanation for patterns of segregation and combination observed in breeding experiments."
+      },
+      {
+        "conceptId": "dna-as-genetic-material",
+        "narration": "Identifying the carrier requires experiments, not just noticing a molecule in chromosomes. Evidence from different systems establishes DNA's hereditary role and narrows the search for a mechanism."
+      },
+      {
+        "conceptId": "dna-structure",
+        "narration": "Structural chemistry and heredity converge. A double-helical model connects molecular arrangement with possible copying, while the experimental contributions behind that model remain essential to the story."
+      },
+      {
+        "conceptId": "molecular-biology",
+        "narration": "Sequence information becomes a way to explain biological function. Connections among DNA, RNA, and proteins link chemistry with inheritance, while regulation and cellular context keep the explanation richer than a simple one-way slogan."
+      }
+    ]
+  },
+  {
+    "id": "observation-to-modern-cosmology",
+    "title": "Observation to modern cosmology",
+    "subtitle": "Build a picture of the universe from repeated observations and new ways of measuring distance.",
+    "color": "#687d94",
+    "steps": [
+      {
+        "conceptId": "sky-cycles",
+        "narration": "The sky first offers repetition: days, months, seasons, and moving lights. Many cultures develop distinct observational traditions, giving the tower several roots rather than one universal starting point."
+      },
+      {
+        "conceptId": "geocentrism",
+        "narration": "A mathematical model can predict appearances even when its physical picture is wrong. Earth-centered planetary models organized observations and created a framework that later astronomers could criticize and revise."
+      },
+      {
+        "conceptId": "heliocentrism",
+        "narration": "Putting Earth in motion changes the explanation of what we see. Apparent planetary reversals become understandable through relative orbital motion, although the original circular model still needed improvement."
+      },
+      {
+        "conceptId": "kepler-laws",
+        "narration": "Precise observations resist convenient assumptions. Kepler's ellipses and area law show the creative power of allowing measurements to reshape a mathematical model."
+      },
+      {
+        "conceptId": "telescope",
+        "narration": "Turn to a parallel instrument branch and briefly step back in chronology. Telescopes transform what can be observed. Kepler's planetary laws themselves drew crucially on Tycho's earlier, pre-telescopic measurements."
+      },
+      {
+        "conceptId": "stellar-parallax",
+        "narration": "A familiar surveying principle reaches the stars. Earth's orbit provides a baseline, and a tiny annual shift becomes a geometric measure of distance."
+      },
+      {
+        "conceptId": "period-luminosity",
+        "narration": "Switch to another rung of the distance ladder. Pulsating stars reveal a relationship between period and intrinsic brightness, extending measurement far beyond the stars whose parallax was initially measurable."
+      },
+      {
+        "conceptId": "cosmic-expansion",
+        "narration": "Distance measurements meet galaxy redshifts and relativistic models. A pattern emerges at large scales: the universe is evolving, and widely separated unbound galaxies are moving farther apart."
+      },
+      {
+        "conceptId": "big-bang",
+        "narration": "Following that evolution backward motivates a hotter, denser past. The modern model is a history of early cosmic development, not an established account of creation from absolute nothing."
+      },
+      {
+        "conceptId": "cosmic-microwave-background",
+        "narration": "A theory of a hot past leaves an observable trace. The microwave background transforms early-universe speculation into a framework constrained by measurements of a nearly uniform sky glow and its tiny variations."
+      },
+      {
+        "conceptId": "dark-energy",
+        "narration": "Move to a separate, late-universe observational branch. Supernova distances indicate accelerated expansion. The observation is better established than the physical identity of the component called dark energy."
+      },
+      {
+        "conceptId": "lcdm",
+        "narration": "Combine early-universe radiation, matter clustering, and expansion measurements. Lambda–cold dark matter offers a compact working model, while its unexplained components remind us that coherence does not mean completion."
+      }
+    ]
+  },
+  {
+    "id": "probability-to-learning-and-decisions",
+    "title": "Probability to learning and decisions",
+    "subtitle": "Explore three branches of uncertainty: inference, learned patterns, and human choice.",
+    "color": "#8c7492",
+    "steps": [
+      {
+        "conceptId": "probability",
+        "narration": "Chance becomes something that mathematics can describe. Instead of promising a particular outcome, probability relates possible outcomes to a structure of uncertainty."
+      },
+      {
+        "conceptId": "bayes-theorem",
+        "narration": "Evidence changes what is plausible. Bayes's theorem makes conditional updating precise, while reminding us that an inference depends on both observations and the assumptions brought to them."
+      },
+      {
+        "conceptId": "bayesian-networks",
+        "narration": "Many uncertain quantities interact. A graph organizes conditional dependencies so that a complicated joint distribution can be represented and queried through a more manageable structure."
+      },
+      {
+        "conceptId": "causal-inference",
+        "narration": "A dependency is not automatically a cause. Causal diagrams add explicit assumptions about interventions, revealing when observational data can answer a causal question and when additional evidence is required."
+      },
+      {
+        "conceptId": "information-theory",
+        "narration": "Return to a different probability branch, developed earlier. Shannon asks how much uncertainty a source produces and how reliably messages can cross a noisy channel, separating information quantity from meaning."
+      },
+      {
+        "conceptId": "machine-learning",
+        "narration": "Move from communication to learning from examples. Statistical patterns can guide predictions without every decision rule being hand-written. This is a neighboring application of uncertainty, not a claimed direct historical derivation from Shannon."
+      },
+      {
+        "conceptId": "deep-learning",
+        "narration": "Learning can also construct the representations used for prediction. Multiple layers transform data into useful features, but a successful fit still needs testing beyond the examples used for training."
+      },
+      {
+        "conceptId": "expected-utility",
+        "narration": "Step back to the decision branch. Probability-weighted utility offers a consistent way to compare uncertain options under stated assumptions. It is not a claim that people always calculate or choose this way."
+      },
+      {
+        "conceptId": "game-theory",
+        "narration": "Other decision-makers make the problem interactive. A choice's consequences now depend on what others choose, and utility becomes part of a model of strategic relationships."
+      },
+      {
+        "conceptId": "nash-equilibrium",
+        "narration": "An equilibrium describes choices no individual wants to change alone. Stability does not imply fairness or collective benefit, and the existence of an equilibrium does not guarantee that people will find it."
+      },
+      {
+        "conceptId": "prospect-theory",
+        "narration": "Return to empirical human choice rather than strategic equilibrium. Experiments show that reference points and perceived gains and losses matter, motivating a descriptive alternative to standard expected-utility predictions."
+      },
+      {
+        "conceptId": "behavioral-economics",
+        "narration": "Psychological evidence enters economic modeling. The resulting explanations connect decision research with markets and institutions, while treating context, measurement, and the limits of generalization as part of the science."
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "name": "tower-of-science",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "validate": "tsx scripts/validate.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "build": "npm run validate && tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "@fontsource/libre-caslon-display": "^5.3.0",
+    "@xyflow/react": "^12.10.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tsx": "^4.20.0",
+    "typescript": "~5.8.3",
+    "vite": "^6.1.0"
+  }
+}

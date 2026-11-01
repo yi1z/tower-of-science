@@ -1,0 +1,3670 @@
+{
+  "concepts": [
+    {
+      "id": "counting",
+      "title": "Counting & quantity",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": -30000,
+        "label": "Prehistory",
+        "precision": "approximate",
+        "note": "Prehistoric placement is schematic. It must not be read as a dated invention."
+      },
+      "summary": "Recognizing how many things there are makes quantity something that can be remembered, compared, and eventually represented.",
+      "problem": "How can a community keep track of animals, objects, or repeated events?",
+      "development": "Counting arose through practices whose beginnings were not recorded. Fingers, objects, spoken numbers, and marks provided different ways to keep one-to-one correspondences. This is a reconstructed foundation, not an identifiable invention.",
+      "limitations": "Not every prehistoric mark records a number. The ordering date is illustrative; no exact origin of human counting is known.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Many unnamed communities",
+          "role": "Developed and transmitted practical ways of comparing quantities"
+        }
+      ],
+      "sourceIds": [
+        "f-numerical-cognition"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-numerical-cognition"
+        ],
+        "history": [
+          "f-numerical-cognition"
+        ]
+      },
+      "example": "Pair one pebble with each animal. A missing pebble or animal reveals a mismatch without requiring written numerals."
+    },
+    {
+      "id": "tally-marks",
+      "title": "Recording with tally marks",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "method",
+      "date": {
+        "year": -23000,
+        "label": "c. 23,000 BCE",
+        "precision": "approximate",
+        "note": "Approximate placement based on the Smithsonian’s estimate of about 25,000 years ago. Published estimates differ: Oxford gives 20,000–18,000 BCE. Proposed meanings of the marks are also disputed."
+      },
+      "summary": "Marks can turn a fleeting observation into an external record that another person can inspect.",
+      "problem": "How can quantities or sequences be preserved beyond memory?",
+      "development": "The incised Ishango bone from central Africa is an important example of early information recording. Its grouped marks have prompted numerical interpretations, although their precise purpose remains debated.",
+      "limitations": "A marked artifact does not establish its maker’s complete number system or prove sophisticated arithmetic.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Unknown makers at Ishango",
+          "role": "Created a surviving incised bone from present-day Democratic Republic of Congo"
+        }
+      ],
+      "sourceIds": [
+        "f-ishango",
+        "f-world"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-ishango"
+        ],
+        "history": [
+          "f-ishango",
+          "f-world"
+        ]
+      }
+    },
+    {
+      "id": "measurement",
+      "title": "Shared units of measurement",
+      "aliases": [],
+      "discipline": "methods",
+      "tags": [],
+      "kind": "method",
+      "date": {
+        "year": -3000,
+        "label": "c. 3000 BCE",
+        "precision": "approximate",
+        "note": "Represents documented ancient standardization, not the first act of measuring."
+      },
+      "summary": "Measurement compares a property with a chosen unit so that quantities can be communicated and reproduced.",
+      "problem": "How can length, area, capacity, and weight be compared fairly?",
+      "development": "Ancient administrations and builders developed standards for practical tasks. Body-based units and material reference objects gradually became shared conventions; later metrology made standards more reproducible.",
+      "limitations": "Every measurement has uncertainty. Early standards varied by place and period rather than forming one universal system.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Ancient surveyors and administrators",
+          "role": "Established and maintained local standards"
+        }
+      ],
+      "sourceIds": [
+        "f-measurement",
+        "f-metrology-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-measurement"
+        ],
+        "history": [
+          "f-measurement",
+          "f-metrology-history"
+        ]
+      },
+      "example": "A length of five cubits means five repetitions of a reference length."
+    },
+    {
+      "id": "arithmetic",
+      "title": "Arithmetic operations",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": -3000,
+        "label": "c. 3000 BCE",
+        "precision": "approximate",
+        "note": "A broad early-records milestone; arithmetic practices predate surviving written examples."
+      },
+      "summary": "Addition, subtraction, multiplication, and division turn collections into quantities that can be systematically combined and shared.",
+      "problem": "How can people calculate totals, exchanges, and equal shares?",
+      "development": "Written administrative traditions made calculations durable. Algorithms differed across cultures: repeated addition, doubling, tables, and positional procedures could solve related problems without identical notation.",
+      "limitations": "The rules depend on the number system being used. Division by zero is not defined in ordinary arithmetic.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Generations of scribes and practitioners",
+          "role": "Developed practical calculation traditions"
+        }
+      ],
+      "sourceIds": [
+        "f-arithmetic-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-arithmetic-history"
+        ],
+        "history": [
+          "f-arithmetic-history"
+        ]
+      },
+      "example": "Three groups of four objects can be counted as 4 + 4 + 4 or written as 3 × 4."
+    },
+    {
+      "id": "egyptian-numerals",
+      "title": "Egyptian decimal numerals",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": -3000,
+        "label": "c. 3000 BCE",
+        "precision": "approximate",
+        "note": "Numeral forms evolved; this date marks their early attested use."
+      },
+      "summary": "Distinct signs for powers of ten allowed Egyptian scribes to record large quantities with an additive notation.",
+      "problem": "How can written records express more than a few repeated tally marks?",
+      "development": "Hieroglyphic numeral signs represented units, tens, hundreds, and larger powers. Later scribal scripts made notation faster, while calculation techniques adapted to the available representations.",
+      "limitations": "Decimal grouping is not the same as positional notation: a sign’s value did not depend on its place in a digit string.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Egyptian scribes",
+          "role": "Developed numeral conventions and administrative records"
+        }
+      ],
+      "sourceIds": [
+        "f-egypt-num"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-egypt-num"
+        ],
+        "history": [
+          "f-egypt-num"
+        ]
+      }
+    },
+    {
+      "id": "fractions",
+      "title": "Fractions & proportional shares",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": -1850,
+        "label": "c. 1850 BCE",
+        "precision": "approximate",
+        "note": "Selected early textual horizon; surviving papyri can copy older material."
+      },
+      "summary": "Fractions express parts of a unit and ratios between quantities, extending arithmetic beyond whole objects.",
+      "problem": "How can a quantity be divided when the result is not a whole number?",
+      "development": "Egyptian mathematical papyri preserve systematic work with shares, especially unit fractions. Babylonian traditions also used fractional place values. These are distinct approaches, not a single invented notation.",
+      "limitations": "Different fractional notations have different computational conveniences; an exact ratio need not have a finite decimal expansion.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Egyptian and Mesopotamian scribes",
+          "role": "Developed practical methods for dividing quantities"
+        }
+      ],
+      "sourceIds": [
+        "f-fractions"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-fractions"
+        ],
+        "history": [
+          "f-fractions"
+        ]
+      },
+      "example": "One half plus one third is five sixths, even though each share uses a different denominator."
+    },
+    {
+      "id": "geometry",
+      "title": "Practical geometry",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": -1850,
+        "label": "c. 1850 BCE",
+        "precision": "approximate",
+        "note": "An early textual milestone rather than an origin date."
+      },
+      "summary": "Rules for lengths, areas, and volumes make shapes calculable in surveying, construction, and storage.",
+      "problem": "How can land, buildings, and containers be measured without counting every small unit?",
+      "development": "Ancient Egyptian problem texts preserve procedures for areas and volumes. Comparable practical traditions developed elsewhere, long before geometry was organized as an axiomatic discipline.",
+      "limitations": "Practical procedures can be approximations; successful examples alone do not establish a proof for every case.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Ancient surveyors and scribes",
+          "role": "Preserved geometric procedures in working and teaching traditions"
+        }
+      ],
+      "sourceIds": [
+        "f-egypt"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-egypt"
+        ],
+        "history": [
+          "f-egypt"
+        ]
+      },
+      "example": "The area of a rectangle follows by counting rows and columns of equal unit squares."
+    },
+    {
+      "id": "positional-notation",
+      "title": "Positional number systems",
+      "aliases": [
+        "place value",
+        "sexagesimal"
+      ],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": -1800,
+        "label": "c. 1800 BCE",
+        "precision": "approximate",
+        "note": "Old Babylonian mathematical texts provide the selected milestone."
+      },
+      "summary": "A numeral’s place changes its value, allowing a small set of signs to express very large numbers.",
+      "problem": "How can large quantities be represented and calculated with efficiently?",
+      "development": "Old Babylonian scribes used a base-sixty positional system. Positions multiplied a sign’s value by powers of sixty, although context often supplied the scale or clarified an empty position.",
+      "limitations": "Place value does not automatically imply a zero symbol; early Babylonian notation retained ambiguities.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Babylonian scribes",
+          "role": "Developed and used sexagesimal place-value calculations"
+        }
+      ],
+      "sourceIds": [
+        "f-babylon"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-babylon"
+        ],
+        "history": [
+          "f-babylon"
+        ]
+      },
+      "example": "In decimal notation, 222 means two hundreds, two tens, and two units."
+    },
+    {
+      "id": "quadratic-equations",
+      "title": "Quadratic equations",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": -1800,
+        "label": "c. 1800 BCE",
+        "precision": "approximate",
+        "note": "Date refers to surviving Old Babylonian methods, not modern symbolic algebra."
+      },
+      "summary": "Equations involving a squared unknown describe relationships that cannot be solved by linear arithmetic alone.",
+      "problem": "How can an unknown length be found when its area and another constraint are given?",
+      "development": "Babylonian tablets preserve numerical procedures equivalent to solving certain quadratic equations. Modern symbolic formulas emerged much later from several algebraic traditions.",
+      "limitations": "Ancient procedures did not use today’s symbols or freely accept all modern kinds of roots.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Babylonian mathematicians",
+          "role": "Recorded procedures for quadratic problems"
+        }
+      ],
+      "sourceIds": [
+        "f-quadratic"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-quadratic"
+        ],
+        "history": [
+          "f-quadratic"
+        ]
+      }
+    },
+    {
+      "id": "deductive-proof",
+      "title": "Deductive mathematical proof",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": -550,
+        "label": "c. 550–300 BCE",
+        "precision": "range",
+        "note": "Approximate development, not a documented first proof."
+      },
+      "summary": "A proof shows that a conclusion follows from stated assumptions, rather than only agreeing with examples.",
+      "problem": "How can a mathematical claim be justified for every case covered by its assumptions?",
+      "development": "Greek mathematical traditions developed connected demonstrations; Euclid organized them into an influential deductive structure. Surviving evidence is uneven, and early attributions are often retrospective.",
+      "limitations": "A proof establishes consequences of assumptions, not their physical truth.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Greek mathematical communities",
+          "role": "Developed demonstrative traditions"
+        },
+        {
+          "name": "Euclid",
+          "role": "Organized earlier results into a systematic exposition"
+        }
+      ],
+      "sourceIds": [
+        "f-euclid"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-euclid"
+        ],
+        "history": [
+          "f-euclid"
+        ]
+      }
+    },
+    {
+      "id": "irrational-numbers",
+      "title": "Incommensurable magnitudes",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": -450,
+        "label": "c. 450 BCE",
+        "precision": "approximate",
+        "note": "Approximate period of Greek work; personal priority is uncertain."
+      },
+      "summary": "Some lengths cannot be expressed as a ratio of whole-number multiples of a common unit.",
+      "problem": "Can every geometric magnitude be represented by a fraction?",
+      "development": "Greek investigations of incommensurability exposed limits of whole-number ratios. Modern irrational numbers eventually gave these magnitudes a numerical home, but that later viewpoint should not be imposed on the earliest work.",
+      "limitations": "Stories assigning the discovery to a particular person are uncertain; exact real-number constructions came much later.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Ancient Greek mathematicians",
+          "role": "Studied incommensurable lengths"
+        }
+      ],
+      "sourceIds": [
+        "f-irrational"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-irrational"
+        ],
+        "history": [
+          "f-irrational"
+        ]
+      },
+      "example": "A unit square has diagonal √2, which cannot equal a ratio of two integers."
+    },
+    {
+      "id": "chinese-rods",
+      "title": "Counting rods & decimal places",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": -400,
+        "label": "c. 400 BCE",
+        "precision": "approximate",
+        "note": "Approximate early tradition; no single inventor is established."
+      },
+      "summary": "Arranged rods provided a movable decimal representation for performing calculations.",
+      "problem": "How can intermediate numerical results be manipulated without rewriting them each time?",
+      "development": "Chinese calculation used rod patterns and positions on a surface. Alternating orientations helped distinguish adjacent places, and an empty position could carry information before a written zero sign became standard.",
+      "limitations": "A calculation-board practice is not identical to a written numeral system; exact early dates are uncertain.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Chinese mathematical practitioners",
+          "role": "Developed rod numerals and calculation techniques"
+        }
+      ],
+      "sourceIds": [
+        "f-chinese"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-chinese"
+        ],
+        "history": [
+          "f-chinese"
+        ]
+      }
+    },
+    {
+      "id": "zero-placeholder",
+      "title": "Zero as a placeholder",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": -400,
+        "label": "c. 400 BCE",
+        "precision": "approximate",
+        "note": "Different empty-place marks are attested at different dates."
+      },
+      "summary": "An explicit empty-place marker distinguishes numbers whose other digits occupy different positions.",
+      "problem": "How can a scribe distinguish a missing place from adjacent nonzero digits?",
+      "development": "Later Babylonian notation used signs within positional numbers to mark empty places. Such marks solved a notation problem without necessarily treating zero as an ordinary number.",
+      "limitations": "A placeholder is not yet a complete arithmetic of zero, and early conventions were not identical to modern ones.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Babylonian scribes",
+          "role": "Used explicit marks for empty numeral positions"
+        }
+      ],
+      "sourceIds": [
+        "f-zero"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-zero"
+        ],
+        "history": [
+          "f-zero"
+        ]
+      },
+      "example": "The zero in 205 keeps the two in the hundreds place."
+    },
+    {
+      "id": "formal-logic",
+      "title": "Syllogistic logic",
+      "aliases": [
+        "Aristotelian logic",
+        "syllogism"
+      ],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": -350,
+        "label": "c. 350 BCE",
+        "precision": "approximate",
+        "note": "Approximate composition period for Aristotle’s logical works."
+      },
+      "summary": "Valid forms of argument preserve truth from their premises to their conclusions.",
+      "problem": "What makes an inference reliable independently of its particular subject?",
+      "development": "Aristotle analyzed combinations of quantified statements and valid deductions. Later traditions transmitted and revised this account; modern predicate logic is substantially more expressive.",
+      "limitations": "Classical syllogistic is not a complete representation of every kind of reasoning, and validity alone does not establish true premises.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Aristotle",
+          "role": "Developed a systematic theory of syllogisms"
+        }
+      ],
+      "sourceIds": [
+        "f-logic"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-logic"
+        ],
+        "history": [
+          "f-logic"
+        ]
+      }
+    },
+    {
+      "id": "euclidean-geometry",
+      "title": "Euclidean geometry",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": -300,
+        "label": "c. 300 BCE",
+        "precision": "approximate",
+        "note": "Approximate compilation date for the Elements."
+      },
+      "summary": "Geometry can be organized around definitions and postulates from which theorems are deduced.",
+      "problem": "How can many separate geometric results form a coherent explanatory system?",
+      "development": "The Elements assembled earlier mathematics into a connected exposition. Its treatment of plane and solid geometry became a durable model of mathematical argument.",
+      "limitations": "Euclidean assumptions describe flat geometry; curved spaces require different geometries. Some historical proofs also depended on unstated assumptions.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Euclid",
+          "role": "Compiled and structured the Elements"
+        }
+      ],
+      "sourceIds": [
+        "f-euclid"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-euclid"
+        ],
+        "history": [
+          "f-euclid"
+        ]
+      }
+    },
+    {
+      "id": "prime-numbers",
+      "title": "Prime numbers & factorization",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": -300,
+        "label": "c. 300 BCE",
+        "precision": "approximate",
+        "note": "A milestone in surviving systematic treatment, not the first recognition of primes."
+      },
+      "summary": "Prime numbers are whole numbers greater than one that cannot be factored into smaller positive factors other than one.",
+      "problem": "What are the multiplicative building blocks of whole numbers?",
+      "development": "Euclid’s Elements preserved foundational results about primes, including the infinitude of primes. Later number theory investigated their distribution and computational properties.",
+      "limitations": "Prime factorization is mathematically unique, but finding the factors of a very large integer can be computationally difficult.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Euclid",
+          "role": "Presented foundational theorems about divisibility and primes"
+        }
+      ],
+      "sourceIds": [
+        "f-prime"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-prime"
+        ],
+        "history": [
+          "f-prime"
+        ]
+      }
+    },
+    {
+      "id": "negative-numbers",
+      "title": "Negative numbers",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": -200,
+        "label": "c. 200 BCE – 200 CE",
+        "precision": "range",
+        "note": "The compilation history of the Nine Chapters spans centuries."
+      },
+      "summary": "Signed numbers extend arithmetic to deficits, opposing directions, and differences below a chosen zero.",
+      "problem": "How can a calculation represent owing more than one possesses?",
+      "development": "The Chinese Nine Chapters tradition includes procedures involving positive and negative quantities. Indian and later Islamic and European mathematicians developed further rules and interpretations.",
+      "limitations": "Acceptance varied across mathematical traditions; practical use preceded a universally accepted abstract number system.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Chinese mathematical tradition",
+          "role": "Preserved signed calculation procedures"
+        },
+        {
+          "name": "Liu Hui",
+          "role": "Commented on the Nine Chapters"
+        }
+      ],
+      "sourceIds": [
+        "f-nine"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-nine"
+        ],
+        "history": [
+          "f-nine"
+        ]
+      }
+    },
+    {
+      "id": "trigonometry",
+      "title": "Trigonometric relationships",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": -150,
+        "label": "c. 150 BCE",
+        "precision": "approximate",
+        "note": "Selected early chord-table milestone; later sine and function traditions are distinguished in the history."
+      },
+      "summary": "Relations between angles and lengths allow triangles and periodic patterns to be calculated.",
+      "problem": "How can inaccessible distances or astronomical positions be inferred from angles?",
+      "development": "Greek chord tables, Indian sine methods, and subsequent Islamic mathematics contributed distinct stages to trigonometry. The modern system of functions emerged through this long development.",
+      "limitations": "The selected date does not mean modern sine notation and all trigonometric identities already existed.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Hipparchus",
+          "role": "Developed early chord-table astronomy"
+        },
+        {
+          "name": "Aryabhata",
+          "role": "Used sine tables"
+        },
+        {
+          "name": "Islamic mathematicians",
+          "role": "Extended trigonometric methods"
+        }
+      ],
+      "sourceIds": [
+        "f-trig"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-trig"
+        ],
+        "history": [
+          "f-trig"
+        ]
+      }
+    },
+    {
+      "id": "maya-numerals",
+      "title": "Maya numeration",
+      "aliases": [
+        "Mayan mathematics",
+        "vigesimal"
+      ],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 300,
+        "label": "c. 300 CE",
+        "precision": "approximate",
+        "note": "Illustrative Classic-period placement; relevant Mesoamerican practices have earlier roots."
+      },
+      "summary": "Maya numerical notation combined dots, bars, and zero signs in positional and calendrical systems.",
+      "problem": "How can long intervals and calendrical cycles be recorded precisely?",
+      "development": "Mesoamerican numerical traditions developed independently of the Old World systems shown elsewhere in the atlas. Maya inscriptions and manuscripts preserve sophisticated calendrical calculation.",
+      "limitations": "Calendar positions do not always follow a uniform base-twenty progression. A similar zero symbol does not imply transmission from another civilization.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Maya scribes and astronomers",
+          "role": "Developed and preserved numerical and calendrical knowledge"
+        }
+      ],
+      "sourceIds": [
+        "f-maya"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-maya"
+        ],
+        "history": [
+          "f-maya"
+        ]
+      }
+    },
+    {
+      "id": "decimal-numerals",
+      "title": "Indian decimal place value",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 600,
+        "label": "c. 600 CE",
+        "precision": "approximate",
+        "note": "Approximate developmental milestone; not a claim about the first surviving zero inscription."
+      },
+      "summary": "A decimal place-value notation gives repeated digits different values according to powers of ten.",
+      "problem": "How can a compact written representation support systematic calculation?",
+      "development": "Indian numeral forms and positional conventions developed over time. Their transmission through Arabic-language scholarship and other routes helped establish the numeral tradition used internationally today.",
+      "limitations": "No single person or surviving artifact captures the entire invention; the dating of some early manuscripts is disputed.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Indian mathematicians and scribes",
+          "role": "Developed decimal place-value practices"
+        },
+        {
+          "name": "Arabic-language scholars",
+          "role": "Adapted and transmitted Indian calculation methods"
+        }
+      ],
+      "sourceIds": [
+        "f-india"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-india"
+        ],
+        "history": [
+          "f-india"
+        ]
+      }
+    },
+    {
+      "id": "zero-number",
+      "title": "Zero as a number",
+      "aliases": [
+        "0",
+        "Brahmagupta"
+      ],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 628,
+        "label": "628 CE",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Zero becomes an object of calculation, not simply a gap inside a written numeral.",
+      "problem": "What rules should govern calculations involving nothing or a difference of equal quantities?",
+      "development": "Brahmagupta’s Brahmasphutasiddhanta stated arithmetic rules involving zero and signed quantities. This mathematical treatment is distinct from earlier placeholder conventions.",
+      "limitations": "Historical rules for division involving zero were not all consistent with modern arithmetic; ordinary division by zero remains undefined.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Brahmagupta",
+          "role": "Formulated arithmetic rules involving zero"
+        }
+      ],
+      "sourceIds": [
+        "f-brahmagupta"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-brahmagupta"
+        ],
+        "history": [
+          "f-brahmagupta"
+        ]
+      },
+      "example": "For any number a, a + 0 = a and a − a = 0."
+    },
+    {
+      "id": "algebra",
+      "title": "Systematic algebra",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 820,
+        "label": "c. 820 CE",
+        "precision": "approximate",
+        "note": "Approximate date of al-Khwarizmi’s algebra treatise."
+      },
+      "summary": "Algebra organizes methods for finding unknown quantities from relationships.",
+      "problem": "Can different practical problems be solved by common rules?",
+      "development": "Al-Khwarizmi classified and solved equation types in an influential Arabic treatise. His procedures built a systematic subject from earlier equation-solving practices; symbolic algebra developed later.",
+      "limitations": "The treatise used words and geometric arguments rather than today’s symbolic notation and unrestricted signed coefficients.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Muhammad ibn Musa al-Khwarizmi",
+          "role": "Systematized equation-solving"
+        }
+      ],
+      "sourceIds": [
+        "f-khwarizmi"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-khwarizmi"
+        ],
+        "history": [
+          "f-khwarizmi"
+        ]
+      }
+    },
+    {
+      "id": "algorithms",
+      "title": "Explicit calculation procedures",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "method",
+      "date": {
+        "year": 820,
+        "label": "c. 820 CE",
+        "precision": "approximate",
+        "note": "This milestone concerns transmission and terminology, not the invention of all algorithms."
+      },
+      "summary": "An algorithm specifies steps for carrying out a task, making a procedure repeatable.",
+      "problem": "How can a solution method be communicated so someone else can execute it?",
+      "development": "Al-Khwarizmi’s arithmetic writing helped transmit Indian calculation procedures. His name later supplied the word algorithm; stepwise methods themselves are much older.",
+      "limitations": "An explicit procedure need not be efficient, and not every mathematical problem has an algorithmic solution.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Muhammad ibn Musa al-Khwarizmi",
+          "role": "Explained and transmitted calculation procedures"
+        }
+      ],
+      "sourceIds": [
+        "f-khwarizmi"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-khwarizmi"
+        ],
+        "history": [
+          "f-khwarizmi"
+        ]
+      }
+    },
+    {
+      "id": "complex-numbers",
+      "title": "Complex numbers",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1545,
+        "label": "1545",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Numbers built from real and imaginary parts make equations solvable beyond the real-number line.",
+      "problem": "How can algebra handle square roots of negative quantities that arise during calculation?",
+      "development": "Sixteenth-century work on cubic equations encountered expressions involving imaginary quantities. Cardano recorded them, and Bombelli later developed rules that made these expressions operational.",
+      "limitations": "The name imaginary does not make these numbers fictitious; physical interpretations depend on the model using them.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Gerolamo Cardano",
+          "role": "Published algebraic cases involving negative square roots"
+        },
+        {
+          "name": "Rafael Bombelli",
+          "role": "Developed consistent calculation rules"
+        }
+      ],
+      "sourceIds": [
+        "f-bombelli"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-bombelli"
+        ],
+        "history": [
+          "f-bombelli"
+        ]
+      },
+      "equation": {
+        "expression": "z = a + bi,   i² = −1",
+        "explanation": "a and b are real numbers; i is the imaginary unit."
+      }
+    },
+    {
+      "id": "logarithms",
+      "title": "Logarithms",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1614,
+        "label": "1614",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Logarithms turn multiplication into addition and encode the exponent needed to obtain a number.",
+      "problem": "How can large astronomical and navigational calculations be made easier?",
+      "development": "Napier published logarithmic tables, and Briggs developed influential common-logarithm tables. Earlier definitions differed from the modern inverse-exponential formulation.",
+      "limitations": "For real logarithms, the argument must be positive and the base must be positive and unequal to one.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "John Napier",
+          "role": "Published logarithmic tables"
+        },
+        {
+          "name": "Henry Briggs",
+          "role": "Developed base-ten tables"
+        }
+      ],
+      "sourceIds": [
+        "f-napier"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-napier"
+        ],
+        "history": [
+          "f-napier"
+        ]
+      },
+      "equation": {
+        "expression": "log(ab) = log(a) + log(b)",
+        "explanation": "For positive a and b, logarithms in the same valid base convert products into sums."
+      }
+    },
+    {
+      "id": "analytic-geometry",
+      "title": "Analytic geometry",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1637,
+        "label": "1637",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Coordinates and equations translate geometric questions into algebraic ones.",
+      "problem": "Can curves be studied by calculating with numbers rather than only drawing figures?",
+      "development": "Descartes published La Géométrie, while Fermat developed related methods independently. This bridge allowed algebraic equations to describe families of geometric curves.",
+      "limitations": "Coordinate descriptions depend on chosen conventions; the geometry should not be confused with one particular coordinate grid.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "René Descartes",
+          "role": "Published a major algebraic treatment of geometry"
+        },
+        {
+          "name": "Pierre de Fermat",
+          "role": "Developed related coordinate methods"
+        }
+      ],
+      "sourceIds": [
+        "f-descartes"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-descartes"
+        ],
+        "history": [
+          "f-descartes"
+        ]
+      },
+      "example": "The equation x² + y² = r² describes a circle of radius r centered at the origin."
+    },
+    {
+      "id": "probability",
+      "title": "Mathematical probability",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1654,
+        "label": "1654",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Probability assigns numbers to uncertainty under explicit assumptions about possible outcomes.",
+      "problem": "What is a fair division of stakes in an interrupted game?",
+      "development": "The Pascal–Fermat correspondence treated problems of chance mathematically. Later work extended these methods far beyond gambling and ultimately supplied axiomatic foundations.",
+      "limitations": "A probability calculation is only as appropriate as its model of the possible outcomes and available information.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Blaise Pascal",
+          "role": "Analyzed problems of chance"
+        },
+        {
+          "name": "Pierre de Fermat",
+          "role": "Corresponded on fair allocation of stakes"
+        }
+      ],
+      "sourceIds": [
+        "f-pascal"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-pascal"
+        ],
+        "history": [
+          "f-pascal"
+        ]
+      },
+      "example": "A fair six-sided die gives probability 1/6 to each face; fairness is an assumption to be tested."
+    },
+    {
+      "id": "optimization",
+      "title": "Maxima & minima",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1636,
+        "label": "c. 1636",
+        "precision": "approximate",
+        "note": "Marks the circulation of Fermat’s extrema methods to Paris mathematicians; his work began in the late 1620s. It is not the first optimization problem."
+      },
+      "summary": "Optimization seeks the best feasible value of a quantity, such as shortest travel time or greatest area.",
+      "problem": "How can one identify an extreme value without trying every possibility?",
+      "development": "Fermat studied maxima and minima in the late 1620s and circulated his methods to Mersenne’s circle in 1636. Later calculus and constrained methods broadened the problems optimization could solve.",
+      "limitations": "A local optimum need not be globally best, and a mathematical optimum depends on the objective and constraints chosen.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Pierre de Fermat",
+          "role": "Developed early methods for extrema"
+        }
+      ],
+      "sourceIds": [
+        "f-fermat"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-fermat"
+        ],
+        "history": [
+          "f-fermat"
+        ]
+      }
+    },
+    {
+      "id": "calculus",
+      "title": "Differential & integral calculus",
+      "aliases": [
+        "differentiation",
+        "integration"
+      ],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1684,
+        "label": "1684",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Calculus connects rates of change with accumulated quantities, making continuously changing systems calculable.",
+      "problem": "How can a momentary speed and an entire traveled distance be related?",
+      "development": "Newton and Leibniz developed systematic methods independently, building on earlier work on tangents, areas, and infinite processes. Leibniz’s 1684 publication marks the selected public milestone.",
+      "limitations": "Foundational rigor developed later. Derivatives and integrals require appropriate assumptions; not every function behaves smoothly.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Isaac Newton",
+          "role": "Developed fluxional methods"
+        },
+        {
+          "name": "Gottfried Wilhelm Leibniz",
+          "role": "Published differential methods and influential notation"
+        }
+      ],
+      "sourceIds": [
+        "f-calculus"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-calculus"
+        ],
+        "history": [
+          "f-calculus"
+        ]
+      },
+      "equation": {
+        "expression": "d/dx ∫ₐˣ f(t) dt = f(x)",
+        "explanation": "For continuous f, differentiating its accumulated area recovers the original function."
+      }
+    },
+    {
+      "id": "differential-equations",
+      "title": "Differential equations",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1690,
+        "label": "c. 1690",
+        "precision": "approximate",
+        "note": "A formative period of the subject rather than its first isolated example."
+      },
+      "summary": "Equations involving rates of change express rules for how a system evolves.",
+      "problem": "Can a local rule for change predict a whole trajectory?",
+      "development": "The Bernoullis, Leibniz, Newton, and other early analysts developed techniques for equations arising in geometry and mechanics. The subject expanded from particular solvable equations to general theory.",
+      "limitations": "Initial conditions matter; many equations have no elementary closed-form solution, and existence or uniqueness needs proof.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Jacob and Johann Bernoulli",
+          "role": "Developed early solution methods"
+        },
+        {
+          "name": "Gottfried Wilhelm Leibniz",
+          "role": "Advanced differential notation and methods"
+        }
+      ],
+      "sourceIds": [
+        "f-bernoulli"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-bernoulli"
+        ],
+        "history": [
+          "f-bernoulli"
+        ]
+      },
+      "equation": {
+        "expression": "dy/dt = ky",
+        "explanation": "The quantity y changes at a rate proportional to its current value; k is the proportionality constant."
+      }
+    },
+    {
+      "id": "binary-numbers",
+      "title": "Binary arithmetic",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1703,
+        "label": "1703",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Using only zero and one, binary notation represents quantities through powers of two.",
+      "problem": "How can arithmetic be organized with the smallest positional digit alphabet?",
+      "development": "Leibniz published an account of binary arithmetic. Binary patterns also have earlier histories; modern digital systems later found two-state representations technically useful.",
+      "limitations": "Earlier binary-like patterns are not automatically evidence of the same arithmetic or of direct transmission into modern computing.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Gottfried Wilhelm Leibniz",
+          "role": "Published a systematic account of binary arithmetic"
+        }
+      ],
+      "sourceIds": [
+        "f-leibniz"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-leibniz"
+        ],
+        "history": [
+          "f-leibniz"
+        ]
+      },
+      "example": "Binary 101 equals 1×4 + 0×2 + 1×1 = 5."
+    },
+    {
+      "id": "graph-theory",
+      "title": "Graph theory",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1736,
+        "label": "1736",
+        "precision": "exact",
+        "note": "1736 is the nominal year of the journal volume. Euler presented the bridge argument in 1735; the volume was printed in 1741."
+      },
+      "summary": "Graphs represent objects as vertices and their relationships as edges, abstracting away unnecessary physical detail.",
+      "problem": "Can a route cross each bridge exactly once?",
+      "development": "Euler analyzed the Königsberg bridge problem by focusing on connectivity. Later graph theory generalized such structures to networks, algorithms, chemistry, and many other settings.",
+      "limitations": "A graph preserves only the relationships represented in it; the choice of nodes and edges is part of the model.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Leonhard Euler",
+          "role": "Formulated the bridge problem in terms of connectivity"
+        }
+      ],
+      "sourceIds": [
+        "f-euler",
+        "f-euler-index"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-euler"
+        ],
+        "history": [
+          "f-euler",
+          "f-euler-index"
+        ]
+      },
+      "example": "This atlas is itself a directed graph: concepts are vertices and supported development links are edges."
+    },
+    {
+      "id": "statistics",
+      "title": "Statistical description",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1749,
+        "label": "1749",
+        "precision": "exact",
+        "note": "1749 is a terminology milestone, not the invention of all statistical analysis."
+      },
+      "summary": "Statistics organizes observations so patterns in populations can be described and investigated.",
+      "problem": "How can scattered records reveal something about a larger society or process?",
+      "development": "Achenwall’s Statistik concerned systematic knowledge of states. Earlier population accounting and later probability-based inference helped shape the much broader modern discipline.",
+      "limitations": "Descriptive patterns alone do not establish causes or guarantee that a sample represents a population.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Gottfried Achenwall",
+          "role": "Helped establish the term Statistik"
+        },
+        {
+          "name": "John Graunt",
+          "role": "Earlier analyzed population records"
+        }
+      ],
+      "sourceIds": [
+        "f-stats",
+        "f-achenwall"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-stats",
+          "f-achenwall"
+        ],
+        "history": [
+          "f-stats",
+          "f-achenwall"
+        ]
+      }
+    },
+    {
+      "id": "bayes-theorem",
+      "title": "Bayesian updating",
+      "aliases": [
+        "Bayes theorem",
+        "conditional probability"
+      ],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1763,
+        "label": "1763",
+        "precision": "exact",
+        "note": "The essay was read in 1763 and appeared in the Philosophical Transactions volume for that year."
+      },
+      "summary": "Bayesian reasoning updates uncertainty about a hypothesis after observing evidence.",
+      "problem": "How should evidence change a previously uncertain belief?",
+      "development": "Bayes’s essay, communicated by Richard Price after his death, addressed inverse probability. Laplace subsequently developed broader methods that helped establish Bayesian inference.",
+      "limitations": "Results depend on the likelihood model and prior assumptions; an apparently precise answer can hide an inappropriate model.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Thomas Bayes",
+          "role": "Developed an inverse-probability result"
+        },
+        {
+          "name": "Richard Price",
+          "role": "Communicated the posthumous essay"
+        },
+        {
+          "name": "Pierre-Simon Laplace",
+          "role": "Extended inverse-probability methods"
+        }
+      ],
+      "sourceIds": [
+        "f-bayes"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-bayes"
+        ],
+        "history": [
+          "f-bayes"
+        ]
+      },
+      "equation": {
+        "expression": "P(H|E) = P(E|H)P(H) / P(E)",
+        "explanation": "H is a hypothesis and E is evidence; the equation applies when P(E) is nonzero."
+      }
+    },
+    {
+      "id": "fourier-analysis",
+      "title": "Fourier analysis",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1822,
+        "label": "1822",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Complex signals can be studied through combinations of simple oscillations.",
+      "problem": "How can the distribution of heat evolve from an arbitrary initial shape?",
+      "development": "Fourier’s study of heat developed trigonometric-series methods. Later analysis clarified convergence and extended these ideas to transformations used across physical and information sciences.",
+      "limitations": "A series does not necessarily converge in every desired sense; its mathematical conditions matter.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Joseph Fourier",
+          "role": "Developed trigonometric-series methods for heat"
+        }
+      ],
+      "sourceIds": [
+        "f-fourier"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-fourier"
+        ],
+        "history": [
+          "f-fourier"
+        ]
+      },
+      "example": "A musical note contains a fundamental frequency and harmonics; Fourier methods separate these components."
+    },
+    {
+      "id": "differential-geometry",
+      "title": "Differential geometry",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1827,
+        "label": "1827",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Calculus reveals how curves and surfaces bend, including properties measurable from within a surface.",
+      "problem": "Can curvature be characterized independently of the surrounding space?",
+      "development": "Gauss’s study of curved surfaces established intrinsic curvature as a central idea. Later work extended geometric analysis to higher-dimensional spaces.",
+      "limitations": "A coordinate formula is only a representation; geometric conclusions must survive changes of coordinates.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Carl Friedrich Gauss",
+          "role": "Developed intrinsic surface geometry"
+        }
+      ],
+      "sourceIds": [
+        "f-gauss"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-gauss"
+        ],
+        "history": [
+          "f-gauss"
+        ]
+      },
+      "example": "A sphere’s curvature can be detected by measuring sufficiently large triangles on its surface."
+    },
+    {
+      "id": "non-euclidean-geometry",
+      "title": "Non-Euclidean geometry",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1829,
+        "label": "1829",
+        "precision": "exact",
+        "note": "1829 marks Lobachevsky’s publication; Bolyai published his account in 1832."
+      },
+      "summary": "Consistent geometries can differ from Euclid’s parallel postulate.",
+      "problem": "Must the usual rule about parallels follow from the other geometric assumptions?",
+      "development": "Lobachevsky and Bolyai developed hyperbolic geometry independently; Gauss also investigated related ideas. This changed the status of Euclidean geometry from a uniquely necessary framework to one among alternatives.",
+      "limitations": "Mathematical consistency does not determine which geometry describes a particular physical situation.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Nikolai Lobachevsky",
+          "role": "Published hyperbolic geometry"
+        },
+        {
+          "name": "János Bolyai",
+          "role": "Independently developed a non-Euclidean geometry"
+        }
+      ],
+      "sourceIds": [
+        "f-non-euclid"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-non-euclid"
+        ],
+        "history": [
+          "f-non-euclid"
+        ]
+      }
+    },
+    {
+      "id": "group-theory",
+      "title": "Group theory",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1832,
+        "label": "1832",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Groups capture transformations that can be combined, undone, and compared by shared algebraic rules.",
+      "problem": "What structure lies behind symmetries and the solvability of equations?",
+      "development": "Work on permutations and polynomial equations led to Galois’s insights. The abstract group concept emerged over further decades and became central to the mathematics of symmetry.",
+      "limitations": "The selected date concerns Galois’s work, not the final modern definition of every group.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Évariste Galois",
+          "role": "Connected permutations with equation solvability"
+        },
+        {
+          "name": "Joseph-Louis Lagrange",
+          "role": "Developed earlier permutation methods"
+        }
+      ],
+      "sourceIds": [
+        "f-group"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-group"
+        ],
+        "history": [
+          "f-group"
+        ]
+      },
+      "example": "Rotations of a square by quarter turns form a group under successive rotation."
+    },
+    {
+      "id": "vectors",
+      "title": "Vectors & directed quantities",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1843,
+        "label": "1843",
+        "precision": "exact",
+        "note": "1843 marks Hamilton’s quaternion discovery, a milestone in the broader development of vector methods."
+      },
+      "summary": "A vector combines magnitude and direction, allowing displacement and other directed quantities to be manipulated algebraically.",
+      "problem": "How can spatial directions participate in a systematic calculus?",
+      "development": "Hamilton’s quaternions and Grassmann’s related algebraic work helped develop the treatment of directed magnitudes. Later vector analysis selected operations especially useful in physics.",
+      "limitations": "Modern vector notation is not identical to Hamilton’s quaternions, and a vector’s components depend on the chosen basis.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "William Rowan Hamilton",
+          "role": "Developed quaternion algebra"
+        },
+        {
+          "name": "Hermann Grassmann",
+          "role": "Developed an algebra of extension"
+        }
+      ],
+      "sourceIds": [
+        "f-hamilton"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-hamilton"
+        ],
+        "history": [
+          "f-hamilton"
+        ]
+      }
+    },
+    {
+      "id": "boolean-algebra",
+      "title": "Boolean algebra",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1854,
+        "label": "1854",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Logical relationships can be treated algebraically, connecting truth conditions with symbolic operations.",
+      "problem": "Can reasoning be calculated with rather than expressed only in ordinary language?",
+      "development": "Boole’s algebraic treatment of logic developed across publications in 1847 and 1854. Later reformulations made Boolean operations fundamental to digital circuit design.",
+      "limitations": "Boole’s original system differs from the modern two-valued presentation; logical truth values are not ordinary physical voltages.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "George Boole",
+          "role": "Developed an algebraic approach to logic"
+        }
+      ],
+      "sourceIds": [
+        "f-boole"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-boole"
+        ],
+        "history": [
+          "f-boole"
+        ]
+      },
+      "example": "AND is true only if both inputs are true; OR is true if at least one is true."
+    },
+    {
+      "id": "linear-algebra",
+      "title": "Matrices & linear algebra",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1858,
+        "label": "1858",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Linear algebra studies vectors, linear transformations, and systems of linear equations.",
+      "problem": "How can many coupled linear relationships be handled together?",
+      "development": "Methods for simultaneous equations are ancient. Cayley’s matrix work helped establish an abstract algebra of transformations, while later vector-space language unified diverse examples.",
+      "limitations": "Linear models are powerful but do not represent all nonlinear behavior; numerical solutions can be sensitive to ill-conditioning.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Arthur Cayley",
+          "role": "Developed matrix algebra"
+        },
+        {
+          "name": "James Joseph Sylvester",
+          "role": "Contributed matrix terminology and theory"
+        }
+      ],
+      "sourceIds": [
+        "f-matrix"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-matrix"
+        ],
+        "history": [
+          "f-matrix"
+        ]
+      },
+      "example": "A matrix can describe how a rotation changes the coordinates of every point in a plane."
+    },
+    {
+      "id": "real-numbers",
+      "title": "Rigorous real numbers",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1872,
+        "label": "1872",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "The real numbers can be constructed to include limits and eliminate gaps in the number line.",
+      "problem": "What mathematical objects justify the continuity assumed in analysis?",
+      "development": "Dedekind’s cuts and Cantor’s sequence-based work supplied rigorous approaches to real numbers. They addressed problems left open by using intuitive lengths and infinite decimal expansions.",
+      "limitations": "Different constructions must be related by proofs; a real number is not simply a finite decimal stored in a computer.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Richard Dedekind",
+          "role": "Constructed reals through cuts"
+        },
+        {
+          "name": "Georg Cantor",
+          "role": "Developed sequence-based foundations"
+        }
+      ],
+      "sourceIds": [
+        "f-real"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-real"
+        ],
+        "history": [
+          "f-real"
+        ]
+      }
+    },
+    {
+      "id": "set-theory",
+      "title": "Set theory & infinities",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1874,
+        "label": "1874",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Collections can be mathematical objects, and infinite collections can have different sizes.",
+      "problem": "Can infinity be compared precisely rather than treated as one undifferentiated idea?",
+      "development": "Cantor established that some infinite sets cannot be paired one-to-one with the natural numbers. Subsequent axiomatization addressed contradictions in unrestricted collection formation.",
+      "limitations": "Naive set comprehension leads to paradoxes; modern work specifies axioms and may encounter independence results.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Georg Cantor",
+          "role": "Developed the mathematics of infinite sets"
+        }
+      ],
+      "sourceIds": [
+        "f-set"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-set"
+        ],
+        "history": [
+          "f-set"
+        ]
+      },
+      "example": "The natural numbers can be listed in order; all real numbers cannot be exhausted by any such list."
+    },
+    {
+      "id": "mathematical-logic",
+      "title": "Predicate logic",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1879,
+        "label": "1879",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Formal languages with variables, relations, and quantifiers express the structure of mathematical statements.",
+      "problem": "How can the full range of mathematical inference be represented precisely?",
+      "development": "Frege’s Begriffsschrift introduced a powerful formal system beyond traditional syllogistic. Related work by Peirce and others helped shape modern logical notation and analysis.",
+      "limitations": "A logical calculus requires specified rules and semantics; not every philosophical question is settled by formalization.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Gottlob Frege",
+          "role": "Published Begriffsschrift"
+        },
+        {
+          "name": "Charles Sanders Peirce",
+          "role": "Developed related logical methods"
+        }
+      ],
+      "sourceIds": [
+        "f-frege"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-frege"
+        ],
+        "history": [
+          "f-frege"
+        ]
+      }
+    },
+    {
+      "id": "topology",
+      "title": "Topology",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1895,
+        "label": "1895",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Topology studies properties preserved by continuous deformation, such as connectedness and holes.",
+      "problem": "What remains the same when a geometric object is stretched without tearing it?",
+      "development": "Earlier work on networks and surfaces led to Poincaré’s Analysis Situs. Algebraic methods subsequently made qualitative features of spaces calculable.",
+      "limitations": "Informal stretching pictures are helpful but cannot replace precise definitions of spaces and continuous maps.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Henri Poincaré",
+          "role": "Developed systematic algebraic methods for topology"
+        }
+      ],
+      "sourceIds": [
+        "f-topology"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-topology"
+        ],
+        "history": [
+          "f-topology"
+        ]
+      },
+      "example": "A circle can be continuously deformed into an ellipse while retaining its loop."
+    },
+    {
+      "id": "tensor-calculus",
+      "title": "Tensor calculus",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1900,
+        "label": "1900",
+        "precision": "exact",
+        "note": "1900 marks Ricci and Levi-Civita’s joint exposition."
+      },
+      "summary": "Tensor methods describe quantities and their changes in ways that remain meaningful across coordinate systems.",
+      "problem": "How can geometric or physical laws avoid depending on an arbitrary choice of coordinates?",
+      "development": "Ricci-Curbastro and Levi-Civita developed the absolute differential calculus. Its coordinate-independent machinery later became important in general relativity.",
+      "limitations": "A collection of numbers is not automatically a tensor; its transformation behavior is essential.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Gregorio Ricci-Curbastro",
+          "role": "Developed the absolute differential calculus"
+        },
+        {
+          "name": "Tullio Levi-Civita",
+          "role": "Coauthored its systematic exposition"
+        }
+      ],
+      "sourceIds": [
+        "f-ricci"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-ricci"
+        ],
+        "history": [
+          "f-ricci"
+        ]
+      }
+    },
+    {
+      "id": "measure-theory",
+      "title": "Measure & modern integration",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1902,
+        "label": "1902",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Measure theory generalizes size and makes integration work for much broader classes of functions and sets.",
+      "problem": "How can limits and irregular functions be integrated reliably?",
+      "development": "Borel’s work on sets and measure preceded Lebesgue’s theory of integration. This framework later provided a rigorous foundation for modern probability.",
+      "limitations": "Not every arbitrary set has a useful measure; measurability and convergence assumptions cannot be omitted.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Émile Borel",
+          "role": "Developed measure-theoretic foundations"
+        },
+        {
+          "name": "Henri Lebesgue",
+          "role": "Created a more general integral"
+        }
+      ],
+      "sourceIds": [
+        "f-lebesgue"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-lebesgue"
+        ],
+        "history": [
+          "f-lebesgue"
+        ]
+      }
+    },
+    {
+      "id": "incompleteness",
+      "title": "Gödel’s incompleteness theorems",
+      "aliases": [
+        "Godel",
+        "incompleteness theorem"
+      ],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1931,
+        "label": "1931",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Any consistent, effectively axiomatized system strong enough to express basic arithmetic leaves some arithmetic statements neither provable nor disprovable within that system.",
+      "problem": "Could one formal system settle every arithmetic truth and certify its own consistency?",
+      "development": "Gödel encoded statements about proofs within arithmetic. His second theorem, under standard conditions, prevents such a system from proving its own consistency; neither result makes ordinary mathematical proof invalid.",
+      "limitations": "The theorems have specific hypotheses. They do not say that all truth is unknowable or that every system is inconsistent.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Kurt Gödel",
+          "role": "Proved incompleteness results for formal arithmetic"
+        }
+      ],
+      "sourceIds": [
+        "f-godel"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-godel"
+        ],
+        "history": [
+          "f-godel"
+        ]
+      }
+    },
+    {
+      "id": "category-theory",
+      "title": "Category theory",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1945,
+        "label": "1945",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Category theory studies objects through the structure-preserving maps between them.",
+      "problem": "How can similar constructions across different mathematical fields be described uniformly?",
+      "development": "Eilenberg and Mac Lane introduced categories and natural transformations while investigating algebraic topology. The language subsequently spread into logic, algebra, geometry, and computation.",
+      "limitations": "Abstraction can reveal common structure but does not remove the need to prove results in specific examples.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Samuel Eilenberg",
+          "role": "Cofounded category theory"
+        },
+        {
+          "name": "Saunders Mac Lane",
+          "role": "Cofounded category theory"
+        }
+      ],
+      "sourceIds": [
+        "f-eilenberg"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-eilenberg"
+        ],
+        "history": [
+          "f-eilenberg"
+        ]
+      }
+    },
+    {
+      "id": "chaos-theory",
+      "title": "Deterministic chaos",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1963,
+        "label": "1963",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "A deterministic system can be highly sensitive to small changes in initial conditions, limiting long-range prediction.",
+      "problem": "Why can a precise rule still fail to yield practically predictable behavior?",
+      "development": "Lorenz’s simplified atmospheric model demonstrated irregular behavior arising from deterministic equations. Earlier dynamical-systems work, including Poincaré’s, anticipated important aspects.",
+      "limitations": "Chaos is not the same as random forcing. Sensitivity also does not make every prediction at every timescale impossible.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Edward Lorenz",
+          "role": "Demonstrated deterministic nonperiodic behavior in an atmospheric model"
+        }
+      ],
+      "sourceIds": [
+        "f-lorenz"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-lorenz"
+        ],
+        "history": [
+          "f-lorenz"
+        ]
+      },
+      "example": "Two nearly identical initial states can evolve toward substantially different trajectories."
+    },
+    {
+      "id": "fractals",
+      "title": "Fractal geometry",
+      "aliases": [],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 1975,
+        "label": "1975",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Fractals describe structures whose detail and scaling can remain complex across many magnifications.",
+      "problem": "How can mathematics characterize shapes too irregular for smooth classical geometry?",
+      "development": "Earlier mathematical examples challenged intuitive ideas about curves and dimension. Mandelbrot connected scaling ideas to irregular natural patterns and popularized fractal geometry.",
+      "limitations": "Natural objects resemble mathematical fractals only over limited scales; apparent self-similarity alone does not establish a particular model.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Benoît Mandelbrot",
+          "role": "Developed and popularized fractal geometry"
+        }
+      ],
+      "sourceIds": [
+        "f-fractals"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-fractals"
+        ],
+        "history": [
+          "f-fractals"
+        ]
+      },
+      "example": "A coastline’s measured length changes as the measuring scale becomes finer."
+    },
+    {
+      "id": "homotopy-type-theory",
+      "title": "Homotopy type theory",
+      "aliases": [
+        "HoTT",
+        "univalent foundations"
+      ],
+      "discipline": "mathematics",
+      "tags": [],
+      "kind": "mathematics",
+      "date": {
+        "year": 2013,
+        "label": "2013",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "Ideas from topology and type theory form a framework for expressing and mechanically checking mathematics.",
+      "problem": "Can equality and mathematical structure be organized in a foundation suited to proof assistants?",
+      "development": "The Univalent Foundations Program brought researchers together around connections between types, paths, and equivalences. Its collaborative book presented a systematic account in 2013.",
+      "limitations": "This is an active foundational framework, not an empirical theory or a replacement accepted by all mathematicians.",
+      "standing": "open",
+      "contributors": [
+        {
+          "name": "Vladimir Voevodsky",
+          "role": "Developed univalent foundations"
+        },
+        {
+          "name": "The Univalent Foundations Program",
+          "role": "Produced the collaborative HoTT book"
+        }
+      ],
+      "sourceIds": [
+        "f-hott"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-hott"
+        ],
+        "history": [
+          "f-hott"
+        ]
+      }
+    },
+    {
+      "id": "experimental-method",
+      "title": "Testing ideas by experiment",
+      "aliases": [],
+      "discipline": "methods",
+      "tags": [],
+      "kind": "method",
+      "date": {
+        "year": 1021,
+        "label": "Early 11th century",
+        "precision": "approximate",
+        "note": "1021 is an approximate display anchor for Ibn al-Haytham’s early-eleventh-century work, not a securely documented publication date or the origin of experimentation."
+      },
+      "summary": "Deliberately arranged observations can discriminate between explanations of how nature behaves.",
+      "problem": "How can a proposed explanation face a test designed to expose its errors?",
+      "development": "Working in Cairo, Ibn al-Haytham joined geometrical analysis with carefully arranged optical experiments. His practice belongs to a broader history of observation, intervention, criticism, and replication; it does not establish a single inventor of experimental inquiry.",
+      "limitations": "There is no single timeless recipe used in every science, nor one inventor of all experimental practice.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Ibn al-Haytham",
+          "role": "Combined experimental investigation with mathematical optics"
+        }
+      ],
+      "sourceIds": [
+        "f-haytham",
+        "f-method",
+        "f-haytham-method"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-method",
+          "f-haytham-method"
+        ],
+        "history": [
+          "f-haytham",
+          "f-haytham-method"
+        ]
+      }
+    },
+    {
+      "id": "microscope",
+      "title": "The compound microscope",
+      "aliases": [],
+      "discipline": "methods",
+      "tags": [],
+      "kind": "instrument",
+      "date": {
+        "year": 1590,
+        "label": "c. 1590",
+        "precision": "approximate",
+        "note": "Traditional date and attribution are uncertain; the record does not establish a single inventor."
+      },
+      "summary": "Combining lenses reveals details too small to resolve with unaided eyes.",
+      "problem": "What structures exist below the scale of ordinary vision?",
+      "development": "Early compound microscopes emerged from European lens-making traditions. Claims of invention by the Janssen family are retrospective and uncertain; later improvements transformed microscopy into a scientific instrument.",
+      "limitations": "Magnification alone does not guarantee useful resolution. Early instruments introduced optical distortions and uncertain interpretations.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Dutch lens makers",
+          "role": "Developed early compound instruments"
+        },
+        {
+          "name": "Zacharias Janssen",
+          "role": "Traditionally associated with early invention, with disputed attribution"
+        }
+      ],
+      "sourceIds": [
+        "f-microscope"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-microscope"
+        ],
+        "history": [
+          "f-microscope"
+        ]
+      }
+    },
+    {
+      "id": "telescope",
+      "title": "The telescope",
+      "aliases": [],
+      "discipline": "methods",
+      "tags": [],
+      "kind": "instrument",
+      "date": {
+        "year": 1608,
+        "label": "1608",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "A telescope gathers and redirects light to reveal distant objects and finer angular detail.",
+      "problem": "How can the distant sky be investigated beyond unaided vision?",
+      "development": "A Dutch patent application by Lippershey provides an early documentary landmark. Galileo improved telescopes and used them for observations that challenged established cosmological expectations.",
+      "limitations": "Galileo did not invent the telescope; early observations also depended on understanding instrument limitations.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Hans Lippershey",
+          "role": "Submitted an early telescope patent application"
+        },
+        {
+          "name": "Galileo Galilei",
+          "role": "Improved telescopes and applied them to astronomy"
+        }
+      ],
+      "sourceIds": [
+        "f-telescope"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-telescope"
+        ],
+        "history": [
+          "f-telescope"
+        ]
+      }
+    },
+    {
+      "id": "controlled-trials",
+      "title": "Controlled comparisons",
+      "aliases": [],
+      "discipline": "methods",
+      "tags": [],
+      "kind": "method",
+      "date": {
+        "year": 1747,
+        "label": "1747",
+        "precision": "exact",
+        "note": "The trial was conducted in 1747 and described in Lind’s 1753 treatise."
+      },
+      "summary": "Comparing groups under similar conditions helps distinguish the effect of an intervention from other differences.",
+      "problem": "Does a treatment help more than an alternative or no treatment?",
+      "development": "James Lind reported comparing proposed scurvy treatments among sailors. His small comparison became a landmark in histories of fair tests, though it was not a modern randomized trial.",
+      "limitations": "A comparison can still be biased if allocation, measurement, or other conditions differ between groups.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "James Lind",
+          "role": "Reported a comparative scurvy-treatment trial"
+        }
+      ],
+      "sourceIds": [
+        "f-lind"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-lind"
+        ],
+        "history": [
+          "f-lind"
+        ]
+      }
+    },
+    {
+      "id": "spectroscopy",
+      "title": "Reading light with spectroscopy",
+      "aliases": [],
+      "discipline": "methods",
+      "tags": [],
+      "kind": "method",
+      "date": {
+        "year": 1814,
+        "label": "c. 1814",
+        "precision": "approximate",
+        "note": "An early precision-spectroscopy milestone; chemical spectral analysis followed in the nineteenth century."
+      },
+      "summary": "Separating light by wavelength reveals patterns that can identify materials and physical conditions.",
+      "problem": "What information is concealed inside apparently uniform light?",
+      "development": "Fraunhofer measured dark lines in the solar spectrum with improved instruments. Later work connected spectral features with chemical substances, turning light into a probe of distant matter.",
+      "limitations": "A spectral pattern needs a physical interpretation; line position, intensity, and broadening reflect different processes.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Joseph von Fraunhofer",
+          "role": "Precisely mapped dark solar lines"
+        },
+        {
+          "name": "Gustav Kirchhoff and Robert Bunsen",
+          "role": "Later connected spectra to chemical analysis"
+        }
+      ],
+      "sourceIds": [
+        "f-fraunhofer"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-fraunhofer"
+        ],
+        "history": [
+          "f-fraunhofer"
+        ]
+      }
+    },
+    {
+      "id": "peer-review",
+      "title": "Systematic expert review",
+      "aliases": [],
+      "discipline": "methods",
+      "tags": [],
+      "kind": "method",
+      "date": {
+        "year": 1831,
+        "label": "1831",
+        "precision": "exact",
+        "note": "1831 marks a Royal Society milestone, not a universal beginning of peer review."
+      },
+      "summary": "Specialist scrutiny can challenge a research report’s methods, interpretation, and presentation before publication.",
+      "problem": "How can a scholarly community examine claims before adding them to its literature?",
+      "development": "The Royal Society expanded systematic refereeing in the nineteenth century. Earlier consultation existed, but modern peer-review conventions developed unevenly across institutions and journals.",
+      "limitations": "Review can miss errors and reproduce biases; publication does not guarantee correctness or substitute for replication.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Scientific societies, editors, and referees",
+          "role": "Developed formal expert-assessment practices"
+        }
+      ],
+      "sourceIds": [
+        "f-peer"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-peer"
+        ],
+        "history": [
+          "f-peer"
+        ]
+      }
+    },
+    {
+      "id": "falsifiability",
+      "title": "Falsifiability",
+      "aliases": [],
+      "discipline": "methods",
+      "tags": [],
+      "kind": "concept",
+      "date": {
+        "year": 1934,
+        "label": "1934",
+        "precision": "exact",
+        "note": "The date identifies a selected publication or formulation, not the beginning of every contributing tradition."
+      },
+      "summary": "A scientific proposal should expose itself to possible observations that would count against it.",
+      "problem": "What distinguishes an empirical test from a claim compatible with every outcome?",
+      "development": "Popper emphasized risky predictions and criticism rather than accumulating confirming examples. His account shaped debates about scientific demarcation and theory testing.",
+      "limitations": "Real tests involve auxiliary assumptions, and scientific practice is more complex than rejecting a theory after any apparent anomaly.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Karl Popper",
+          "role": "Developed falsifiability as a demarcation proposal"
+        }
+      ],
+      "sourceIds": [
+        "f-popper"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-popper"
+        ],
+        "history": [
+          "f-popper"
+        ]
+      }
+    },
+    {
+      "id": "randomized-trials",
+      "title": "Randomized controlled trials",
+      "aliases": [],
+      "discipline": "methods",
+      "tags": [],
+      "kind": "method",
+      "date": {
+        "year": 1948,
+        "label": "1948",
+        "precision": "exact",
+        "note": "The date identifies the published MRC tuberculosis trial; earlier randomized experiments existed."
+      },
+      "summary": "Random assignment helps make comparison groups similar in expectation, reducing allocation bias.",
+      "problem": "How can investigators avoid choosing systematically different people for different treatments?",
+      "development": "The Medical Research Council’s streptomycin trial described concealed random allocation in detail. It was a methodological landmark rather than the first use of all randomized experimental ideas.",
+      "limitations": "Chance imbalance, missing data, adherence, and limited generalizability can still affect conclusions.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Austin Bradford Hill",
+          "role": "Helped design the trial’s allocation methods"
+        },
+        {
+          "name": "Medical Research Council investigators",
+          "role": "Conducted and reported the study"
+        }
+      ],
+      "sourceIds": [
+        "f-rct"
+      ],
+      "claimSources": {
+        "summary": [
+          "f-rct"
+        ],
+        "history": [
+          "f-rct"
+        ]
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "counting--tally-marks",
+      "source": "counting",
+      "target": "tally-marks",
+      "type": "enables",
+      "explanation": "Associating marks with quantities is a conceptual route from counting to external records; the makers’ intention is not fully known.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-ishango"
+      ]
+    },
+    {
+      "id": "counting--measurement",
+      "source": "counting",
+      "target": "measurement",
+      "type": "foundation",
+      "explanation": "Measuring by repeated units depends conceptually on counting those units.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-measurement"
+      ]
+    },
+    {
+      "id": "counting--arithmetic",
+      "source": "counting",
+      "target": "arithmetic",
+      "type": "foundation",
+      "explanation": "Combining and comparing counted collections supplies the conceptual basis of elementary arithmetic.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-arithmetic-history"
+      ]
+    },
+    {
+      "id": "counting--egyptian-numerals",
+      "source": "counting",
+      "target": "egyptian-numerals",
+      "type": "foundation",
+      "explanation": "Grouping counted objects into powers of ten is an editorial conceptual link to decimal notation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-egypt-num"
+      ]
+    },
+    {
+      "id": "arithmetic--fractions",
+      "source": "arithmetic",
+      "target": "fractions",
+      "type": "foundation",
+      "explanation": "Division of whole quantities motivates the extension to fractional quantities.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-fractions"
+      ]
+    },
+    {
+      "id": "measurement--geometry",
+      "source": "measurement",
+      "target": "geometry",
+      "type": "enables",
+      "explanation": "Geometric area and volume problems arise from measurement tasks.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-egypt"
+      ]
+    },
+    {
+      "id": "arithmetic--positional-notation",
+      "source": "arithmetic",
+      "target": "positional-notation",
+      "type": "enables",
+      "explanation": "Efficient written calculation is one problem addressed by positional representation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-babylon"
+      ]
+    },
+    {
+      "id": "geometry--quadratic-equations",
+      "source": "geometry",
+      "target": "quadratic-equations",
+      "type": "enables",
+      "explanation": "Area problems supply a concrete setting in which squared unknowns occur.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-quadratic"
+      ]
+    },
+    {
+      "id": "arithmetic--quadratic-equations",
+      "source": "arithmetic",
+      "target": "quadratic-equations",
+      "type": "foundation",
+      "explanation": "Quadratic solution procedures require operations on known quantities.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-quadratic"
+      ]
+    },
+    {
+      "id": "geometry--deductive-proof",
+      "source": "geometry",
+      "target": "deductive-proof",
+      "type": "enables",
+      "explanation": "Geometric problems provided a central setting for the development of mathematical demonstrations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-euclid"
+      ]
+    },
+    {
+      "id": "geometry--irrational-numbers",
+      "source": "geometry",
+      "target": "irrational-numbers",
+      "type": "enables",
+      "explanation": "Comparing a square’s diagonal with its side exposes magnitudes beyond rational ratios.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-irrational"
+      ]
+    },
+    {
+      "id": "fractions--irrational-numbers",
+      "source": "fractions",
+      "target": "irrational-numbers",
+      "type": "revision",
+      "explanation": "Incommensurability demonstrates that ratios of integers cannot represent every length.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-irrational"
+      ]
+    },
+    {
+      "id": "arithmetic--chinese-rods",
+      "source": "arithmetic",
+      "target": "chinese-rods",
+      "type": "enables",
+      "explanation": "Movable representations support the intermediate steps required by arithmetic.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-chinese"
+      ]
+    },
+    {
+      "id": "positional-notation--zero-placeholder",
+      "source": "positional-notation",
+      "target": "zero-placeholder",
+      "type": "enables",
+      "explanation": "The ambiguity of an empty positional place motivates a placeholder.",
+      "evidence": "documented",
+      "sourceIds": [
+        "f-zero"
+      ]
+    },
+    {
+      "id": "deductive-proof--formal-logic",
+      "source": "deductive-proof",
+      "target": "formal-logic",
+      "type": "foundation",
+      "explanation": "Proof and formal inference share the question of which conclusions follow from assumptions; this is conceptual, not a documented personal transmission.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-logic"
+      ]
+    },
+    {
+      "id": "geometry--euclidean-geometry",
+      "source": "geometry",
+      "target": "euclidean-geometry",
+      "type": "foundation",
+      "explanation": "Practical and theoretical shape problems supply the subject matter of Euclidean geometry.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-euclid"
+      ]
+    },
+    {
+      "id": "deductive-proof--euclidean-geometry",
+      "source": "deductive-proof",
+      "target": "euclidean-geometry",
+      "type": "foundation",
+      "explanation": "Euclid’s organization makes deductive demonstration central.",
+      "evidence": "documented",
+      "sourceIds": [
+        "f-euclid"
+      ]
+    },
+    {
+      "id": "arithmetic--prime-numbers",
+      "source": "arithmetic",
+      "target": "prime-numbers",
+      "type": "foundation",
+      "explanation": "Divisibility and factorization are structural questions about multiplication.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-prime"
+      ]
+    },
+    {
+      "id": "deductive-proof--prime-numbers",
+      "source": "deductive-proof",
+      "target": "prime-numbers",
+      "type": "foundation",
+      "explanation": "General claims about primes require proof rather than finite lists of examples.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-prime"
+      ]
+    },
+    {
+      "id": "chinese-rods--negative-numbers",
+      "source": "chinese-rods",
+      "target": "negative-numbers",
+      "type": "enables",
+      "explanation": "Calculation with signed rod quantities provides an early documented setting for negative numbers.",
+      "evidence": "documented",
+      "sourceIds": [
+        "f-nine"
+      ]
+    },
+    {
+      "id": "arithmetic--negative-numbers",
+      "source": "arithmetic",
+      "target": "negative-numbers",
+      "type": "foundation",
+      "explanation": "Negative quantities extend subtraction beyond nonnegative outcomes.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-nine"
+      ]
+    },
+    {
+      "id": "geometry--trigonometry",
+      "source": "geometry",
+      "target": "trigonometry",
+      "type": "foundation",
+      "explanation": "Trigonometry turns relationships within geometric figures into calculable quantities.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-trig"
+      ]
+    },
+    {
+      "id": "arithmetic--decimal-numerals",
+      "source": "arithmetic",
+      "target": "decimal-numerals",
+      "type": "enables",
+      "explanation": "Decimal place value supports compact algorithms for ordinary arithmetic.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-india"
+      ]
+    },
+    {
+      "id": "decimal-numerals--zero-number",
+      "source": "decimal-numerals",
+      "target": "zero-number",
+      "type": "enables",
+      "explanation": "Indian numerical practice provides the historical setting for Brahmagupta’s treatment.",
+      "evidence": "documented",
+      "sourceIds": [
+        "f-brahmagupta"
+      ]
+    },
+    {
+      "id": "arithmetic--zero-number",
+      "source": "arithmetic",
+      "target": "zero-number",
+      "type": "foundation",
+      "explanation": "Treating zero as a number requires extending arithmetic rules to it.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-brahmagupta"
+      ]
+    },
+    {
+      "id": "quadratic-equations--algebra",
+      "source": "quadratic-equations",
+      "target": "algebra",
+      "type": "foundation",
+      "explanation": "Quadratic problems are one of the central equation families organized by algebra.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-khwarizmi"
+      ]
+    },
+    {
+      "id": "decimal-numerals--algorithms",
+      "source": "decimal-numerals",
+      "target": "algorithms",
+      "type": "enables",
+      "explanation": "Place-value numerals support systematic digit-by-digit arithmetic.",
+      "evidence": "documented",
+      "sourceIds": [
+        "f-khwarizmi"
+      ]
+    },
+    {
+      "id": "algebra--complex-numbers",
+      "source": "algebra",
+      "target": "complex-numbers",
+      "type": "foundation",
+      "explanation": "Solving polynomial equations motivated extending the allowed number system.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-bombelli"
+      ]
+    },
+    {
+      "id": "arithmetic--logarithms",
+      "source": "arithmetic",
+      "target": "logarithms",
+      "type": "enables",
+      "explanation": "Replacing repeated multiplication by addition reduces the work of calculation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-napier"
+      ]
+    },
+    {
+      "id": "algebra--analytic-geometry",
+      "source": "algebra",
+      "target": "analytic-geometry",
+      "type": "foundation",
+      "explanation": "Equations provide the language used to describe curves.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-descartes"
+      ]
+    },
+    {
+      "id": "euclidean-geometry--analytic-geometry",
+      "source": "euclidean-geometry",
+      "target": "analytic-geometry",
+      "type": "foundation",
+      "explanation": "Coordinate methods translate established geometric problems.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-descartes"
+      ]
+    },
+    {
+      "id": "fractions--probability",
+      "source": "fractions",
+      "target": "probability",
+      "type": "foundation",
+      "explanation": "Probabilities of equally likely outcomes can be represented as ratios of favorable to possible cases.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-pascal"
+      ]
+    },
+    {
+      "id": "algebra--optimization",
+      "source": "algebra",
+      "target": "optimization",
+      "type": "foundation",
+      "explanation": "Extremum problems can be formulated as relationships among unknown quantities.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-fermat"
+      ]
+    },
+    {
+      "id": "analytic-geometry--calculus",
+      "source": "analytic-geometry",
+      "target": "calculus",
+      "type": "foundation",
+      "explanation": "Equations describing curves allow their changes and accumulated areas to be analyzed.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-calculus"
+      ]
+    },
+    {
+      "id": "optimization--calculus",
+      "source": "optimization",
+      "target": "calculus",
+      "type": "foundation",
+      "explanation": "Tangent and extremum methods were important precursors to differential calculus.",
+      "evidence": "documented",
+      "sourceIds": [
+        "f-calculus"
+      ]
+    },
+    {
+      "id": "calculus--differential-equations",
+      "source": "calculus",
+      "target": "differential-equations",
+      "type": "foundation",
+      "explanation": "Differential equations use derivatives to specify change.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-bernoulli"
+      ]
+    },
+    {
+      "id": "positional-notation--binary-numbers",
+      "source": "positional-notation",
+      "target": "binary-numbers",
+      "type": "foundation",
+      "explanation": "Binary is a place-value system with base two.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-leibniz"
+      ]
+    },
+    {
+      "id": "zero-number--binary-numbers",
+      "source": "zero-number",
+      "target": "binary-numbers",
+      "type": "foundation",
+      "explanation": "The two binary digits explicitly include zero.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-leibniz"
+      ]
+    },
+    {
+      "id": "deductive-proof--graph-theory",
+      "source": "deductive-proof",
+      "target": "graph-theory",
+      "type": "foundation",
+      "explanation": "A connectivity argument can establish impossibility without testing every route.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-euler"
+      ]
+    },
+    {
+      "id": "arithmetic--statistics",
+      "source": "arithmetic",
+      "target": "statistics",
+      "type": "foundation",
+      "explanation": "Counts, averages, and comparisons organize observations quantitatively.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-stats",
+        "f-achenwall"
+      ]
+    },
+    {
+      "id": "measurement--statistics",
+      "source": "measurement",
+      "target": "statistics",
+      "type": "enables",
+      "explanation": "Shared definitions make recorded observations comparable.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-stats",
+        "f-achenwall"
+      ]
+    },
+    {
+      "id": "probability--bayes-theorem",
+      "source": "probability",
+      "target": "bayes-theorem",
+      "type": "foundation",
+      "explanation": "Bayesian updating follows from the rules of conditional probability.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-bayes"
+      ]
+    },
+    {
+      "id": "calculus--fourier-analysis",
+      "source": "calculus",
+      "target": "fourier-analysis",
+      "type": "foundation",
+      "explanation": "Continuous rates and accumulation enter the heat equation and its solutions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-fourier"
+      ]
+    },
+    {
+      "id": "trigonometry--fourier-analysis",
+      "source": "trigonometry",
+      "target": "fourier-analysis",
+      "type": "foundation",
+      "explanation": "Sine and cosine functions supply oscillatory components.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-fourier"
+      ]
+    },
+    {
+      "id": "calculus--differential-geometry",
+      "source": "calculus",
+      "target": "differential-geometry",
+      "type": "foundation",
+      "explanation": "Derivatives quantify local changes in geometric shape.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-gauss"
+      ]
+    },
+    {
+      "id": "analytic-geometry--differential-geometry",
+      "source": "analytic-geometry",
+      "target": "differential-geometry",
+      "type": "foundation",
+      "explanation": "Coordinate descriptions allow geometric quantities to be calculated.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-gauss"
+      ]
+    },
+    {
+      "id": "euclidean-geometry--non-euclidean-geometry",
+      "source": "euclidean-geometry",
+      "target": "non-euclidean-geometry",
+      "type": "revision",
+      "explanation": "Changing the parallel assumption yields a different geometric theory without discarding all geometry.",
+      "evidence": "documented",
+      "sourceIds": [
+        "f-non-euclid"
+      ]
+    },
+    {
+      "id": "algebra--group-theory",
+      "source": "algebra",
+      "target": "group-theory",
+      "type": "foundation",
+      "explanation": "Questions about polynomial equations motivated structural study of transformations.",
+      "evidence": "documented",
+      "sourceIds": [
+        "f-group"
+      ]
+    },
+    {
+      "id": "analytic-geometry--vectors",
+      "source": "analytic-geometry",
+      "target": "vectors",
+      "type": "foundation",
+      "explanation": "Coordinate descriptions supply numerical components for spatial quantities.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-hamilton"
+      ]
+    },
+    {
+      "id": "formal-logic--boolean-algebra",
+      "source": "formal-logic",
+      "target": "boolean-algebra",
+      "type": "revision",
+      "explanation": "Algebraic methods expand the formal treatment of reasoning.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-boole"
+      ]
+    },
+    {
+      "id": "algebra--boolean-algebra",
+      "source": "algebra",
+      "target": "boolean-algebra",
+      "type": "foundation",
+      "explanation": "Symbolic operations provide the technique for manipulating logical expressions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-boole"
+      ]
+    },
+    {
+      "id": "vectors--linear-algebra",
+      "source": "vectors",
+      "target": "linear-algebra",
+      "type": "foundation",
+      "explanation": "Vector quantities are objects acted on by linear transformations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-matrix"
+      ]
+    },
+    {
+      "id": "algebra--linear-algebra",
+      "source": "algebra",
+      "target": "linear-algebra",
+      "type": "foundation",
+      "explanation": "Simultaneous equations supply a central problem of linear algebra.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-matrix"
+      ]
+    },
+    {
+      "id": "irrational-numbers--real-numbers",
+      "source": "irrational-numbers",
+      "target": "real-numbers",
+      "type": "foundation",
+      "explanation": "Incommensurable quantities show why rational numbers alone are insufficient.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-real"
+      ]
+    },
+    {
+      "id": "calculus--real-numbers",
+      "source": "calculus",
+      "target": "real-numbers",
+      "type": "enables",
+      "explanation": "Questions about limits motivated rigorous foundations for continuous quantities.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-real"
+      ]
+    },
+    {
+      "id": "deductive-proof--set-theory",
+      "source": "deductive-proof",
+      "target": "set-theory",
+      "type": "foundation",
+      "explanation": "Claims about infinite collections require argument rather than enumeration.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-set"
+      ]
+    },
+    {
+      "id": "real-numbers--set-theory",
+      "source": "real-numbers",
+      "target": "set-theory",
+      "type": "foundation",
+      "explanation": "Comparing real and natural numbers exposes distinct infinite sizes.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-set"
+      ]
+    },
+    {
+      "id": "formal-logic--mathematical-logic",
+      "source": "formal-logic",
+      "target": "mathematical-logic",
+      "type": "revision",
+      "explanation": "Predicate logic expresses relationships beyond the scope of traditional syllogisms.",
+      "evidence": "documented",
+      "sourceIds": [
+        "f-frege"
+      ]
+    },
+    {
+      "id": "geometry--topology",
+      "source": "geometry",
+      "target": "topology",
+      "type": "foundation",
+      "explanation": "Topology abstracts qualitative structure from geometric figures.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-topology"
+      ]
+    },
+    {
+      "id": "group-theory--topology",
+      "source": "group-theory",
+      "target": "topology",
+      "type": "foundation",
+      "explanation": "Algebraic groups can encode loops and other features of spaces.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-topology"
+      ]
+    },
+    {
+      "id": "differential-geometry--tensor-calculus",
+      "source": "differential-geometry",
+      "target": "tensor-calculus",
+      "type": "foundation",
+      "explanation": "Curved-space geometry requires differentiation that respects coordinate changes.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-ricci"
+      ]
+    },
+    {
+      "id": "linear-algebra--tensor-calculus",
+      "source": "linear-algebra",
+      "target": "tensor-calculus",
+      "type": "foundation",
+      "explanation": "Multilinear transformations underpin tensor operations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-ricci"
+      ]
+    },
+    {
+      "id": "set-theory--measure-theory",
+      "source": "set-theory",
+      "target": "measure-theory",
+      "type": "foundation",
+      "explanation": "Measures assign sizes to specified collections of subsets.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-lebesgue"
+      ]
+    },
+    {
+      "id": "calculus--measure-theory",
+      "source": "calculus",
+      "target": "measure-theory",
+      "type": "revision",
+      "explanation": "Lebesgue integration extends earlier integration methods.",
+      "evidence": "documented",
+      "sourceIds": [
+        "f-lebesgue"
+      ]
+    },
+    {
+      "id": "mathematical-logic--incompleteness",
+      "source": "mathematical-logic",
+      "target": "incompleteness",
+      "type": "foundation",
+      "explanation": "Formal syntax and proof rules make the limitations precise.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-godel"
+      ]
+    },
+    {
+      "id": "arithmetic--incompleteness",
+      "source": "arithmetic",
+      "target": "incompleteness",
+      "type": "foundation",
+      "explanation": "Arithmetic can encode statements about formal derivations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-godel"
+      ]
+    },
+    {
+      "id": "topology--category-theory",
+      "source": "topology",
+      "target": "category-theory",
+      "type": "enables",
+      "explanation": "Algebraic-topological constructions motivated the language of natural transformations.",
+      "evidence": "documented",
+      "sourceIds": [
+        "f-eilenberg"
+      ]
+    },
+    {
+      "id": "algebra--category-theory",
+      "source": "algebra",
+      "target": "category-theory",
+      "type": "foundation",
+      "explanation": "Structure-preserving maps organize relationships between algebraic objects.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-eilenberg"
+      ]
+    },
+    {
+      "id": "differential-equations--chaos-theory",
+      "source": "differential-equations",
+      "target": "chaos-theory",
+      "type": "foundation",
+      "explanation": "Nonlinear evolution equations can generate sensitive dependence.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-lorenz"
+      ]
+    },
+    {
+      "id": "geometry--fractals",
+      "source": "geometry",
+      "target": "fractals",
+      "type": "revision",
+      "explanation": "Fractal models extend geometric description beyond smooth shapes.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-fractals"
+      ]
+    },
+    {
+      "id": "measure-theory--fractals",
+      "source": "measure-theory",
+      "target": "fractals",
+      "type": "foundation",
+      "explanation": "Generalized notions of dimension and size quantify irregular sets.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-fractals"
+      ]
+    },
+    {
+      "id": "topology--homotopy-type-theory",
+      "source": "topology",
+      "target": "homotopy-type-theory",
+      "type": "foundation",
+      "explanation": "Paths and homotopies provide interpretations of identity and higher identity.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-hott"
+      ]
+    },
+    {
+      "id": "mathematical-logic--homotopy-type-theory",
+      "source": "mathematical-logic",
+      "target": "homotopy-type-theory",
+      "type": "foundation",
+      "explanation": "Formal type systems supply a language for constructions and proofs.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-hott"
+      ]
+    },
+    {
+      "id": "category-theory--homotopy-type-theory",
+      "source": "category-theory",
+      "target": "homotopy-type-theory",
+      "type": "foundation",
+      "explanation": "Categorical structures connect logical and geometric interpretations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-hott"
+      ]
+    },
+    {
+      "id": "geometry--experimental-method",
+      "source": "geometry",
+      "target": "experimental-method",
+      "type": "foundation",
+      "explanation": "Geometric reasoning made quantitative optical predictions possible.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-haytham",
+        "f-method"
+      ]
+    },
+    {
+      "id": "geometric-optics--microscope",
+      "source": "geometric-optics",
+      "target": "microscope",
+      "type": "foundation",
+      "explanation": "Lens-based imaging uses optical relationships; this is a conceptual connection, not an attribution of direct transmission.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-microscope"
+      ]
+    },
+    {
+      "id": "geometric-optics--telescope",
+      "source": "geometric-optics",
+      "target": "telescope",
+      "type": "foundation",
+      "explanation": "Optical imaging explains how lenses form magnified views.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-telescope"
+      ]
+    },
+    {
+      "id": "experimental-method--controlled-trials",
+      "source": "experimental-method",
+      "target": "controlled-trials",
+      "type": "enables",
+      "explanation": "Controlled comparison makes an intervention test more informative by limiting alternative explanations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-lind"
+      ]
+    },
+    {
+      "id": "geometric-optics--spectroscopy",
+      "source": "geometric-optics",
+      "target": "spectroscopy",
+      "type": "foundation",
+      "explanation": "Optical instruments separate and measure components of light.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-fraunhofer"
+      ]
+    },
+    {
+      "id": "measurement--spectroscopy",
+      "source": "measurement",
+      "target": "spectroscopy",
+      "type": "enables",
+      "explanation": "Calibrated wavelength measurements make spectra comparable.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-fraunhofer"
+      ]
+    },
+    {
+      "id": "experimental-method--falsifiability",
+      "source": "experimental-method",
+      "target": "falsifiability",
+      "type": "influence",
+      "explanation": "Falsifiability analyzes the critical role that empirical tests can play in evaluating theories.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-popper"
+      ]
+    },
+    {
+      "id": "controlled-trials--randomized-trials",
+      "source": "controlled-trials",
+      "target": "randomized-trials",
+      "type": "revision",
+      "explanation": "Random assignment strengthens controlled comparisons by reducing allocation bias.",
+      "evidence": "documented",
+      "sourceIds": [
+        "f-rct"
+      ]
+    },
+    {
+      "id": "probability--randomized-trials",
+      "source": "probability",
+      "target": "randomized-trials",
+      "type": "foundation",
+      "explanation": "Randomization uses a probabilistic mechanism to allocate participants.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-rct"
+      ]
+    },
+    {
+      "id": "statistics--randomized-trials",
+      "source": "statistics",
+      "target": "randomized-trials",
+      "type": "foundation",
+      "explanation": "Outcome comparisons require statistical assessment of variation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-rct"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "f-world",
+      "title": "World history of mathematics",
+      "url": "https://www.maths.ox.ac.uk/system/files/attachments/World%20history%20of%20maths.pdf",
+      "publisher": "University of Oxford"
+    },
+    {
+      "id": "f-ishango",
+      "title": "Ishango Bone",
+      "url": "https://humanorigins.si.edu/evidence/behavior/recording-information/ishango-bone",
+      "publisher": "Smithsonian Human Origins"
+    },
+    {
+      "id": "f-measurement",
+      "title": "Meter: the development of shared length standards",
+      "url": "https://www.nist.gov/si-redefinition/meter",
+      "publisher": "National Institute of Standards and Technology"
+    },
+    {
+      "id": "f-egypt",
+      "title": "Egyptian mathematics",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Egyptian_mathematics/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-egypt-num",
+      "title": "Egyptian numerals",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Egyptian_numerals/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-babylon",
+      "title": "Babylonian numerals",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Babylonian_numerals/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-quadratic",
+      "title": "Quadratic, cubic and quartic equations",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Quadratic_etc_equations/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-chinese",
+      "title": "Chinese numerals",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Chinese_numerals/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-nine",
+      "title": "The Nine Chapters on the Mathematical Art",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Nine_chapters/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-zero",
+      "title": "A history of zero",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Zero/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-maya",
+      "title": "Mayan mathematics",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Mayan_mathematics/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-india",
+      "title": "Indian numerals",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Indian_numerals/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-trig",
+      "title": "Trigonometric functions",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Trigonometric_functions/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-prime",
+      "title": "Prime numbers",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Prime_numbers/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-real",
+      "title": "The real numbers: Stevin to Hilbert",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Real_numbers_2/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-logic",
+      "title": "Aristotle’s Logic",
+      "url": "https://plato.stanford.edu/entries/aristotle-logic/",
+      "publisher": "Stanford Encyclopedia of Philosophy"
+    },
+    {
+      "id": "f-euclid",
+      "title": "Euclid of Alexandria",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Euclid/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-khwarizmi",
+      "title": "Al-Khwarizmi: algebra and arithmetic",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Al-Khwarizmi/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-napier",
+      "title": "John Napier",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Napier/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-descartes",
+      "title": "René Descartes",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Descartes/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-pascal",
+      "title": "Blaise Pascal",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Pascal/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-fermat",
+      "title": "Pierre de Fermat",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Fermat/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-calculus",
+      "title": "The rise of calculus",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/The_rise_of_calculus/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-leibniz",
+      "title": "Gottfried Wilhelm Leibniz",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Leibniz/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-bernoulli",
+      "title": "Johann Bernoulli",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Johann/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-euler",
+      "title": "Euler E53: Solutio problematis ad geometriam situs pertinentis",
+      "url": "https://scholarlycommons.pacific.edu/euler-works/53/",
+      "publisher": "Euler Archive, University of the Pacific"
+    },
+    {
+      "id": "f-bayes",
+      "title": "Thomas Bayes",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Bayes/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-fourier",
+      "title": "Joseph Fourier",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Fourier/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-gauss",
+      "title": "Carl Friedrich Gauss",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-non-euclid",
+      "title": "Non-Euclidean geometry",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Non-Euclidean_geometry/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-group",
+      "title": "The development of group theory",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Development_group_theory/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-hamilton",
+      "title": "William Rowan Hamilton",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Hamilton/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-boole",
+      "title": "George Boole",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Boole/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-matrix",
+      "title": "Matrices and determinants",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Matrices_and_determinants/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-set",
+      "title": "The beginnings of set theory",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Beginnings_of_set_theory/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-frege",
+      "title": "Gottlob Frege",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Frege/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-topology",
+      "title": "Topology in mathematics",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Topology_in_mathematics/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-ricci",
+      "title": "Gregorio Ricci-Curbastro",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Ricci-Curbastro/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-lebesgue",
+      "title": "Henri Lebesgue",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-eilenberg",
+      "title": "Samuel Eilenberg",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Eilenberg/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-fractals",
+      "title": "A history of fractal geometry",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/fractals/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-stats",
+      "title": "Founders of Statistics",
+      "url": "https://isi-web.org/founders-statistics",
+      "publisher": "International Statistical Institute"
+    },
+    {
+      "id": "f-achenwall",
+      "title": "Gottfried Achenwall",
+      "url": "https://www.deutsche-biographie.de/sfz68124.html",
+      "publisher": "Deutsche Biographie"
+    },
+    {
+      "id": "f-godel",
+      "title": "Gödel’s Incompleteness Theorems",
+      "url": "https://plato.stanford.edu/entries/goedel-incompleteness/",
+      "publisher": "Stanford Encyclopedia of Philosophy"
+    },
+    {
+      "id": "f-lorenz",
+      "title": "Deterministic Nonperiodic Flow (1963)",
+      "url": "https://journals.ametsoc.org/doi/abs/10.1175/1520-0469%281963%29020%3C0130%3ADNF%3E2.0.CO%3B2",
+      "publisher": "Journal of the Atmospheric Sciences"
+    },
+    {
+      "id": "f-hott",
+      "title": "Homotopy Type Theory: Univalent Foundations of Mathematics",
+      "url": "https://homotopytypetheory.org/book/",
+      "publisher": "The Univalent Foundations Program"
+    },
+    {
+      "id": "f-method",
+      "title": "Scientific Method",
+      "url": "https://plato.stanford.edu/entries/scientific-method/",
+      "publisher": "Stanford Encyclopedia of Philosophy"
+    },
+    {
+      "id": "f-haytham",
+      "title": "Abu Ali al-Hasan ibn al-Haytham",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Al-Haytham/",
+      "publisher": "University of St Andrews · MacTutor"
+    },
+    {
+      "id": "f-microscope",
+      "title": "Lens Crafters: 1590, Invention of the Microscope",
+      "url": "https://www.aps.org/apsnews/2004/03/lens-crafters-1590-invention-microscope",
+      "publisher": "American Physical Society"
+    },
+    {
+      "id": "f-telescope",
+      "title": "Did Galileo invent the telescope?",
+      "url": "https://starchild.gsfc.nasa.gov/docs/StarChild/questions/question37.html",
+      "publisher": "NASA Goddard"
+    },
+    {
+      "id": "f-lind",
+      "title": "Lind J (1753): A treatise of the scurvy",
+      "url": "https://www.jameslindlibrary.org/lind-j-1753/",
+      "publisher": "The James Lind Library"
+    },
+    {
+      "id": "f-fraunhofer",
+      "title": "Joseph von Fraunhofer",
+      "url": "https://www.fraunhofer.de/en/about-fraunhofer/profile-structure/chronicles/joseph-von-fraunhofer.html",
+      "publisher": "Fraunhofer Society"
+    },
+    {
+      "id": "f-peer",
+      "title": "Peer review from the archive",
+      "url": "https://royalsociety.org/blog/2015/09/peer-review-from-the-archive/",
+      "publisher": "The Royal Society"
+    },
+    {
+      "id": "f-rct",
+      "title": "Medical Research Council (1948): streptomycin trial",
+      "url": "https://www.jameslindlibrary.org/medical-research-council-1948b/",
+      "publisher": "The James Lind Library"
+    },
+    {
+      "id": "f-popper",
+      "title": "Karl Popper",
+      "url": "https://plato.stanford.edu/entries/popper/",
+      "publisher": "Stanford Encyclopedia of Philosophy"
+    },
+    {
+      "id": "f-metrology-history",
+      "title": "National Conference on Weights and Measures: historical introduction",
+      "url": "https://www.nist.gov/speech-testimony/national-conference-weights-and-measures",
+      "publisher": "National Institute of Standards and Technology"
+    },
+    {
+      "id": "f-euler-index",
+      "title": "Eneström Index: E53 publication and presentation dates",
+      "url": "https://eulerarchive.maa.org/resources/enestrom/Enestrom_Index.pdf",
+      "publisher": "Euler Archive / Mathematical Association of America"
+    },
+    {
+      "id": "f-irrational",
+      "title": "The real numbers: Pythagoras to Stevin",
+      "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Real_numbers_1/",
+      "publisher": "MacTutor, University of St Andrews"
+    },
+    {
+      "id": "f-haytham-method",
+      "title": "Ibn al-Haytham’s scientific method",
+      "url": "https://courier.unesco.org/en/articles/ibn-al-haythams-scientific-method",
+      "publisher": "The UNESCO Courier"
+    },
+    {
+      "id": "f-numerical-cognition",
+      "title": "Numerical Cognition: numerical symbols and cultural artifacts",
+      "url": "https://oecs.mit.edu/pub/rek9756r/",
+      "publisher": "Open Encyclopedia of Cognitive Science, MIT Press"
+    },
+    {
+      "id": "f-arithmetic-history",
+      "title": "Addition and subtraction: history and development",
+      "url": "https://www.amsi.org.au/teacher_modules/Addition_and_subtraction.html",
+      "publisher": "Australian Mathematical Sciences Institute / University of Melbourne"
+    },
+    {
+      "id": "f-fractions",
+      "title": "History of Fractions",
+      "url": "https://nrich.maths.org/articles/history-fractions",
+      "publisher": "NRICH, University of Cambridge"
+    },
+    {
+      "id": "f-brahmagupta",
+      "title": "Brahmagupta: zero and signed arithmetic",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Brahmagupta/",
+      "publisher": "MacTutor, University of St Andrews"
+    },
+    {
+      "id": "f-bombelli",
+      "title": "Rafael Bombelli: complex-number arithmetic",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Bombelli/",
+      "publisher": "MacTutor, University of St Andrews"
+    }
+  ]
+}
