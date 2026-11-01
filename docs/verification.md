@@ -1,40 +1,77 @@
-# Edition 1 verification
+# Edition 2 verification
 
-Reviewed on 2026-11-01.
+Reviewed on 2026-11-01. Local implementation only; nothing was deployed.
 
-## Automated checks
+## Release content
 
-`npm test` passes all 15 tests. `npm run build` passes content validation, TypeScript checking, and the Vite production build.
+The atlas contains **450 concepts, 824 relationships, 533 source records, 283 representative formulas/definitions, 47 pillars, and six journeys with 71 narrated stops**. There are 12 major sections and 43 populated subbranches. The expansion adds 190 complete entries; all original concept IDs and tour stops remain valid.
 
-The bundled collection contains 260 concepts, 471 relationships, 296 source records, 93 representative formulas/definitions, six tours with 71 narrated stops, and 29 pillars. Validation checks required content, citations (including representations), unique IDs, valid endpoints, dating notes, duplicate connections, cycles, chronological order, tour references, and node overlap. The final build has no chunk-size warnings.
+| Section | Concepts |
+| --- | ---: |
+| Mathematics | 71 |
+| Methods & instruments | 15 |
+| Computing | 50 |
+| Engineering | 18 |
+| Physics | 62 |
+| Astronomy | 37 |
+| Earth & environment | 36 |
+| Chemistry | 37 |
+| Materials science | 12 |
+| Life sciences | 51 |
+| Medicine | 25 |
+| Mind & society | 36 |
 
-Tests cover multi-parent ancestry, unique descendant counting, filtered context, relationship-filter traversal, contributor and alias searches, deterministic positions, URL serialization, invalid URL normalization, invalid graph detection, pillar eligibility, and tour completeness.
+Existing entries were explicitly classified rather than assigned from free-form tags. Five health entries moved to medicine; the ecosystem entry moved from Earth science to life science. Their IDs and prior representations were preserved.
 
-Additional checks verify that every chronological row and era boundary is centered on the same axis, a synthetic crowded year expands beyond the former nine-column width without wrapping, and formal representations have explanations and citations. URL tests include the content-display choice and fallback for unknown values.
+## Automated verification
 
-## Browser review
+`npm test` passes all **23 tests**. `npm run build` passes content validation, TypeScript checking, and the Vite production build without chunk-size warnings. The committed npm lockfile matches version 2.0.0.
 
-The application was reviewed in a Chromium-based browser at desktop, tablet (820 × 900), and mobile (390 × 844) sizes, with the complete collection loaded.
+Validation checks required content, contributor roles, citations, representation citations, unique IDs, branch/discipline consistency, related branches, date precision notes, valid endpoints, duplicate relationships, chronological contradictions, cycles, tour references, release coverage, and node overlaps.
 
-- Stepped through all 71 stops of the six journeys and reached each completion control.
-- Checked search results, an empty search, combined filters, empty-filter recovery, and era navigation.
-- Verified that physics-only ancestry for general relativity retains mathematical concepts as context.
-- Checked concept and tour URL state, reload, and browser Back/Forward restoration.
-- Opened concepts from the chronological index using the keyboard and opened a graph connection using Enter.
-- Checked the methodology dialog, Escape dismissal, mobile navigation, reading sheet, and mobile tour controls.
-- Reviewed selected-node centering, line layering, the overview map, zoom controls, and responsive layouts.
-- Confirmed that the mobile document does not overflow horizontally.
-- Verified Words/Formulas switching in the tower, index, and detail sheet; unchanged node positions; mode restoration with Back; and prose fallback for entries without a representation.
-- Smoke-tested the final production build served by `npm run preview`; no production console warnings or errors were observed.
+Tests cover:
 
-Reduced-motion preferences are honored by CSS transitions and animated viewport controls. Text contrast and focus indicators were reviewed during implementation. This was a manual accessibility review, not a comprehensive screen-reader or WCAG certification.
+- Multi-parent ancestry, unique descendant counts, pillar eligibility and sorting, and six complete tours.
+- Combined branch, discipline, era, standing, and relationship filters; filtered ancestors retained as context; empty results.
+- Search aliases, contributors and diacritics; legacy hashes and new branch/connection/display state; invalid state normalization.
+- Deterministic placement independent of input order, shared period boundaries, chronological floor order, centered era bounds and branch cells, section containment, and correct era identification near floor boundaries.
+- A synthetic crowded period that expands horizontally without wrapping; nearby unequal dates in different branches retain separate horizontal regions.
+- Distinct bundle membership separated by type/evidence, filtered counts, individual-edge exclusion, stable representative routes, and unchanged graph statistics.
+- All **824 individual routes** avoid unrelated cards. Dense synthetic cases cover many parents, same-floor links, long links, changing era widths, deterministic routing, and fanned ports. Rounded corners remain inside the tested clearance margins.
 
-## Editorial scope
+## Production browser review
 
-Entries and relationships include source references and distinguish documented influence from editorial conceptual connections. Dates and difficult attributions were checked against scholarly histories, original publications, and institutional sources. This remains a curated introductory synthesis, not an exhaustive or independently peer-reviewed history. Automated checks establish structural integrity, not the truth of every historical claim.
+Reviewed in the Chromium-based in-app browser with the complete dataset at **1440 × 960**, **820 × 900**, and **390 × 844**.
+
+- Stepped through all 71 stops of all six journeys and reached every completion control.
+- Opened old concept links and new branch/filter/formula/connection links; verified Back/Forward restoration.
+- Confirmed physics/fields-only ancestry for general relativity retains mathematical concepts as context.
+- Checked empty search, combined-filter empty states, recovery, and the 450-entry chronological index.
+- Opened a new entry from the index using Enter and expanded nested branch navigation using the keyboard.
+- Navigated between branches and eras, checked shared-floor separation, the sticky ruler, full-tower era markers, and the section minimap.
+- Opened a counted bundle using Enter: its displayed count matched all eight cited member relationships. Expanding a bundle revealed its individual routes and closed the panel.
+- Checked Bundled, Focus only, and All connections; selected paths remain prominent while unrelated connections fade.
+- Reviewed mobile navigation, the full-screen formula sheet, tracing and reopening details, touch controls, and no document-level horizontal overflow.
+- Reviewed the tablet split layout and wrapped toolbar controls; both index and detail content remained accessible.
+- Verified Words/Formulas switching, explanatory symbol text, source links, and stable positions. Corrected a missing population-symbol explanation in the SIR example during review.
+- The final production browser reported no warnings or errors.
+
+Reduced-motion preferences are honored by CSS and viewport animation controls. Focus styles and equivalent index/detail navigation remain available. This is a manual accessibility review, not a comprehensive screen-reader or WCAG certification.
+
+## Editorial review and limitations
+
+New entries and edges were researched against original publications, scholarly histories, institutional accounts, and technical references. Reviews covered cross-branch edges, affected pillars, independent discovery, historical dating, contributors, and frontier status. Two weak analogy/application links were removed because they did not justify developmental parenthood. Mathematical and physical reformulations are distinguished from earlier historical milestones.
+
+Examples of explicit qualifications include Shannon's 1949 sampling treatment and named antecedents, the 1910 publication of elastic rebound after the 1906 earthquake, the specific 1937 citric-acid-cycle milestone, the edited posthumous origins of Saussure's Course, and MOND's speculative standing. Miasma remains prominently superseded; useful approximations retain their stated domains.
+
+Some publisher references expose abstracts or bibliographic records rather than full text. This is a curated introductory synthesis with source review, not independent specialist peer review. Automated tests establish structural integrity and rendering behavior, not the truth of every historical claim or future availability of external URLs.
 
 ## Preview images
 
-![Desktop atlas](preview-desktop.png)
+![Desktop branch floors and bundled connections](preview-desktop.png)
 
-![Mobile formula view](preview-mobile.png)
+![A cited bundle with its member relationships](preview-bundles.png)
+
+![Full tower with growing sections and era markers](preview-overview.png)
+
+![Mobile medicine formula sheet](preview-mobile.png)

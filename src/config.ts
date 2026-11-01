@@ -6,7 +6,10 @@ export const disciplines: Record<Discipline, {label:string;color:string;symbol:s
  biology:{label:'Life sciences',color:'#547c57',symbol:'ψ'},
  earth:{label:'Earth & environment',color:'#8b7747',symbol:'◒'},
  astronomy:{label:'Astronomy',color:'#766391',symbol:'✧'},
- computing:{label:'Computation',color:'#427f80',symbol:'⌘'},
+ computing:{label:'Computing',color:'#427f80',symbol:'⌘'},
+ engineering:{label:'Engineering',color:'#65748c',symbol:'⚙'},
+ materials:{label:'Materials science',color:'#936d80',symbol:'◇'},
+ medicine:{label:'Medicine',color:'#9b685a',symbol:'✚'},
  society:{label:'Mind & society',color:'#a06676',symbol:'◎'},
  methods:{label:'Methods & instruments',color:'#697575',symbol:'⌁'}
 };

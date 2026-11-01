@@ -7,7 +7,7 @@
         "Hippocratic medicine",
         "case histories"
       ],
-      "discipline": "biology",
+      "discipline": "medicine",
       "tags": [
         "medicine",
         "observation"
@@ -40,7 +40,8 @@
         "history": [
           "le-hippocratic"
         ]
-      }
+      },
+      "branchId": "medicine-disease"
     },
     {
       "id": "humoral-theory",
@@ -49,7 +50,7 @@
         "humoralism",
         "humorism"
       ],
-      "discipline": "biology",
+      "discipline": "medicine",
       "tags": [
         "medicine",
         "historical theory"
@@ -86,7 +87,8 @@
         "history": [
           "le-humors"
         ]
-      }
+      },
+      "branchId": "medicine-disease"
     },
     {
       "id": "natural-classification",
@@ -133,7 +135,8 @@
         "history": [
           "le-classification"
         ]
-      }
+      },
+      "branchId": "biology-evolution"
     },
     {
       "id": "comparative-anatomy",
@@ -180,7 +183,8 @@
           "le-anatomy"
         ]
       },
-      "example": "Comparing a human jaw with an animal jaw can reveal why a description transferred between species is misleading."
+      "example": "Comparing a human jaw with an animal jaw can reveal why a description transferred between species is misleading.",
+      "branchId": "biology-physiology"
     },
     {
       "id": "blood-circulation",
@@ -229,7 +233,8 @@
           "le-circulation",
           "le-pulmonary"
         ]
-      }
+      },
+      "branchId": "biology-physiology"
     },
     {
       "id": "cell-observation",
@@ -272,7 +277,8 @@
           "le-hooke"
         ]
       },
-      "example": "A thin slice of cork looks like a honeycomb under magnification."
+      "example": "A thin slice of cork looks like a honeycomb under magnification.",
+      "branchId": "biology-cells"
     },
     {
       "id": "microorganisms",
@@ -318,7 +324,8 @@
         "history": [
           "le-leeuwenhoek"
         ]
-      }
+      },
+      "branchId": "biology-cells"
     },
     {
       "id": "vaccination",
@@ -327,7 +334,7 @@
         "immunization",
         "smallpox vaccine"
       ],
-      "discipline": "biology",
+      "discipline": "medicine",
       "tags": [
         "immunology",
         "medicine"
@@ -368,7 +375,8 @@
         "history": [
           "le-vaccination"
         ]
-      }
+      },
+      "branchId": "medicine-immunity"
     },
     {
       "id": "cell-theory",
@@ -425,7 +433,8 @@
         "sourceIds": [
           "le-cells"
         ]
-      }
+      },
+      "branchId": "biology-cells"
     },
     {
       "id": "evolution",
@@ -480,7 +489,8 @@
         "sourceIds": [
           "le-evolution"
         ]
-      }
+      },
+      "branchId": "biology-evolution"
     },
     {
       "id": "germ-theory",
@@ -488,7 +498,7 @@
       "aliases": [
         "microbial disease causation"
       ],
-      "discipline": "biology",
+      "discipline": "medicine",
       "tags": [
         "microbiology",
         "medicine"
@@ -525,7 +535,8 @@
         "history": [
           "le-germs"
         ]
-      }
+      },
+      "branchId": "medicine-disease"
     },
     {
       "id": "mendelian-genetics",
@@ -575,7 +586,8 @@
         "sourceIds": [
           "le-mendel"
         ]
-      }
+      },
+      "branchId": "biology-genetics"
     },
     {
       "id": "ecology",
@@ -624,7 +636,8 @@
         "history": [
           "le-ecology"
         ]
-      }
+      },
+      "branchId": "biology-evolution"
     },
     {
       "id": "neuron-doctrine",
@@ -673,7 +686,8 @@
         "history": [
           "le-neuron"
         ]
-      }
+      },
+      "branchId": "biology-physiology"
     },
     {
       "id": "chromosome-theory",
@@ -727,7 +741,8 @@
         "history": [
           "le-chromosomes"
         ]
-      }
+      },
+      "branchId": "biology-genetics"
     },
     {
       "id": "adaptive-immunity",
@@ -736,7 +751,7 @@
         "acquired immunity",
         "immune memory"
       ],
-      "discipline": "biology",
+      "discipline": "medicine",
       "tags": [
         "immunology",
         "cells"
@@ -780,7 +795,8 @@
           "le-immunity",
           "le-immunity-history"
         ]
-      }
+      },
+      "branchId": "medicine-immunity"
     },
     {
       "id": "synaptic-transmission",
@@ -826,7 +842,8 @@
         "history": [
           "le-synapse"
         ]
-      }
+      },
+      "branchId": "biology-physiology"
     },
     {
       "id": "homeostasis",
@@ -872,7 +889,8 @@
           "le-homeostasis"
         ]
       },
-      "example": "Sweating increases heat loss when body temperature rises, forming part of a feedback process."
+      "example": "Sweating increases heat loss when body temperature rises, forming part of a feedback process.",
+      "branchId": "biology-physiology"
     },
     {
       "id": "population-genetics",
@@ -929,7 +947,8 @@
         "sourceIds": [
           "rep-population"
         ]
-      }
+      },
+      "branchId": "biology-evolution"
     },
     {
       "id": "modern-synthesis",
@@ -982,7 +1001,8 @@
         "history": [
           "le-synthesis"
         ]
-      }
+      },
+      "branchId": "biology-evolution"
     },
     {
       "id": "dna-as-genetic-material",
@@ -1032,7 +1052,8 @@
         "history": [
           "le-dna-material"
         ]
-      }
+      },
+      "branchId": "biology-genetics"
     },
     {
       "id": "phylogenetics",
@@ -1078,7 +1099,8 @@
         "history": [
           "le-phylogeny"
         ]
-      }
+      },
+      "branchId": "biology-evolution"
     },
     {
       "id": "action-potential",
@@ -1121,7 +1143,8 @@
           "le-action"
         ]
       },
-      "example": "Opening sodium channels can rapidly depolarize a membrane; delayed potassium flow helps restore its voltage."
+      "example": "Opening sodium channels can rapidly depolarize a membrane; delayed potassium flow helps restore its voltage.",
+      "branchId": "biology-physiology"
     },
     {
       "id": "dna-structure",
@@ -1188,7 +1211,8 @@
           "le-dna",
           "le-franklin"
         ]
-      }
+      },
+      "branchId": "biology-genetics"
     },
     {
       "id": "molecular-biology",
@@ -1247,7 +1271,8 @@
           "le-dogma",
           "le-dogma-history"
         ]
-      }
+      },
+      "branchId": "biology-genetics"
     },
     {
       "id": "gene-regulation",
@@ -1294,7 +1319,8 @@
           "le-regulation"
         ]
       },
-      "example": "A bacterium can increase production of lactose-processing machinery when the appropriate signals are present."
+      "example": "A bacterium can increase production of lactose-processing machinery when the appropriate signals are present.",
+      "branchId": "biology-genetics"
     },
     {
       "id": "genetic-code",
@@ -1353,7 +1379,8 @@
         "sourceIds": [
           "le-code"
         ]
-      }
+      },
+      "branchId": "biology-genetics"
     },
     {
       "id": "endosymbiosis",
@@ -1403,7 +1430,11 @@
         "history": [
           "le-endosymbiosis"
         ]
-      }
+      },
+      "branchId": "biology-evolution",
+      "relatedBranchIds": [
+        "biology-cells"
+      ]
     },
     {
       "id": "neutral-theory",
@@ -1449,7 +1480,8 @@
         "history": [
           "le-neutral"
         ]
-      }
+      },
+      "branchId": "biology-evolution"
     },
     {
       "id": "recombinant-dna",
@@ -1492,7 +1524,8 @@
           "le-recombinant"
         ]
       },
-      "example": "A plasmid can carry an inserted gene that is copied when the host bacterium reproduces."
+      "example": "A plasmid can carry an inserted gene that is copied when the host bacterium reproduces.",
+      "branchId": "biology-genetics"
     },
     {
       "id": "evolutionary-developmental-biology",
@@ -1542,7 +1575,8 @@
           "le-homeobox",
           "le-homeobox-history"
         ]
-      }
+      },
+      "branchId": "biology-evolution"
     },
     {
       "id": "pcr",
@@ -1599,7 +1633,8 @@
           "le-pcr",
           "le-pcr-definition"
         ]
-      }
+      },
+      "branchId": "biology-genetics"
     },
     {
       "id": "genomics",
@@ -1641,7 +1676,8 @@
         "history": [
           "le-genomics"
         ]
-      }
+      },
+      "branchId": "biology-genetics"
     },
     {
       "id": "systems-biology",
@@ -1686,7 +1722,8 @@
         "history": [
           "le-systems"
         ]
-      }
+      },
+      "branchId": "biology-physiology"
     },
     {
       "id": "crispr",
@@ -1732,7 +1769,8 @@
         "history": [
           "le-crispr"
         ]
-      }
+      },
+      "branchId": "biology-genetics"
     },
     {
       "id": "earth-measurement",
@@ -1786,7 +1824,8 @@
         "sourceIds": [
           "le-earth-size"
         ]
-      }
+      },
+      "branchId": "earth-geology"
     },
     {
       "id": "water-cycle",
@@ -1844,7 +1883,8 @@
           "le-hydrology-history",
           "le-hydrology"
         ]
-      }
+      },
+      "branchId": "earth-water"
     },
     {
       "id": "stratigraphy",
@@ -1888,7 +1928,8 @@
           "le-strata"
         ]
       },
-      "example": "A fault cutting several sedimentary layers formed after the layers it cuts."
+      "example": "A fault cutting several sedimentary layers formed after the layers it cuts.",
+      "branchId": "earth-geology"
     },
     {
       "id": "fossil-organisms",
@@ -1934,7 +1975,8 @@
         "history": [
           "le-fossils"
         ]
-      }
+      },
+      "branchId": "earth-geology"
     },
     {
       "id": "geological-time",
@@ -1981,7 +2023,8 @@
           "le-deep-time"
         ]
       },
-      "example": "Tilted old layers beneath younger horizontal layers record deposition, deformation, erosion, and renewed deposition."
+      "example": "Tilted old layers beneath younger horizontal layers record deposition, deformation, erosion, and renewed deposition.",
+      "branchId": "earth-geology"
     },
     {
       "id": "greenhouse-effect",
@@ -2030,7 +2073,8 @@
         "history": [
           "le-greenhouse"
         ]
-      }
+      },
+      "branchId": "earth-climate"
     },
     {
       "id": "uniformitarianism",
@@ -2077,7 +2121,8 @@
           "le-uniformity"
         ]
       },
-      "example": "Ripple marks in modern sand help interpret similar structures preserved in sandstone."
+      "example": "Ripple marks in modern sand help interpret similar structures preserved in sandstone.",
+      "branchId": "earth-geology"
     },
     {
       "id": "ice-age-theory",
@@ -2123,7 +2168,8 @@
         "history": [
           "le-ice-age"
         ]
-      }
+      },
+      "branchId": "earth-climate"
     },
     {
       "id": "isostasy",
@@ -2169,7 +2215,8 @@
           "le-isostasy"
         ]
       },
-      "example": "A mountain range can be associated with a deep crustal root, analogous in a limited way to the submerged part of an iceberg."
+      "example": "A mountain range can be associated with a deep crustal root, analogous in a limited way to the submerged part of an iceberg.",
+      "branchId": "earth-geology"
     },
     {
       "id": "ocean-circulation",
@@ -2218,7 +2265,8 @@
           "le-ocean",
           "le-ocean-history"
         ]
-      }
+      },
+      "branchId": "earth-water"
     },
     {
       "id": "seismology",
@@ -2268,7 +2316,8 @@
         "history": [
           "le-seismic"
         ]
-      }
+      },
+      "branchId": "earth-geology"
     },
     {
       "id": "radiometric-dating",
@@ -2326,7 +2375,8 @@
         "sourceIds": [
           "le-radiometric"
         ]
-      }
+      },
+      "branchId": "earth-geology"
     },
     {
       "id": "continental-drift",
@@ -2372,7 +2422,8 @@
         "history": [
           "le-drift"
         ]
-      }
+      },
+      "branchId": "earth-geology"
     },
     {
       "id": "biogeochemical-cycles",
@@ -2419,7 +2470,12 @@
           "le-biosphere"
         ]
       },
-      "example": "Photosynthesis transfers carbon into organisms; respiration, decay, transport, and burial move it through other reservoirs."
+      "example": "Photosynthesis transfers carbon into organisms; respiration, decay, transport, and burial move it through other reservoirs.",
+      "branchId": "earth-climate",
+      "relatedBranchIds": [
+        "earth-water",
+        "biology-physiology"
+      ]
     },
     {
       "id": "ecosystem",
@@ -2427,7 +2483,7 @@
       "aliases": [
         "ecological systems"
       ],
-      "discipline": "earth",
+      "discipline": "biology",
       "tags": [
         "ecology",
         "systems"
@@ -2461,7 +2517,8 @@
           "le-ecosystem"
         ]
       },
-      "example": "A pond study can track sunlight, nutrients, microbes, plants, animals, and exchanges with surrounding land."
+      "example": "A pond study can track sunlight, nutrients, microbes, plants, animals, and exchanges with surrounding land.",
+      "branchId": "biology-evolution"
     },
     {
       "id": "earth-interior",
@@ -2511,7 +2568,8 @@
           "le-core-history"
         ]
       },
-      "example": "A wave bent or reflected at an internal boundary can arrive at a detector that a simpler model places in shadow."
+      "example": "A wave bent or reflected at an internal boundary can arrive at a detector that a simpler model places in shadow.",
+      "branchId": "earth-geology"
     },
     {
       "id": "anthropogenic-warming",
@@ -2560,7 +2618,8 @@
           "le-warming",
           "le-greenhouse"
         ]
-      }
+      },
+      "branchId": "earth-climate"
     },
     {
       "id": "milankovitch-cycles",
@@ -2609,7 +2668,8 @@
           "le-milankovitch",
           "le-milankovitch-history"
         ]
-      }
+      },
+      "branchId": "earth-climate"
     },
     {
       "id": "paleomagnetism",
@@ -2655,7 +2715,8 @@
         "history": [
           "le-paleomagnetic"
         ]
-      }
+      },
+      "branchId": "earth-geology"
     },
     {
       "id": "seafloor-spreading",
@@ -2707,7 +2768,8 @@
           "le-spreading",
           "le-magnetic-stripes"
         ]
-      }
+      },
+      "branchId": "earth-geology"
     },
     {
       "id": "plate-tectonics",
@@ -2769,7 +2831,8 @@
           "le-plates",
           "le-drift"
         ]
-      }
+      },
+      "branchId": "earth-geology"
     },
     {
       "id": "climate-modeling",
@@ -2815,7 +2878,8 @@
         "history": [
           "le-climate-models"
         ]
-      }
+      },
+      "branchId": "earth-climate"
     },
     {
       "id": "remote-sensing",
@@ -2864,7 +2928,8 @@
           "le-landsat",
           "le-norwood"
         ]
-      }
+      },
+      "branchId": "earth-climate"
     },
     {
       "id": "ozone-depletion",
@@ -2910,7 +2975,8 @@
         "history": [
           "le-ozone"
         ]
-      }
+      },
+      "branchId": "earth-climate"
     },
     {
       "id": "earth-system-science",
@@ -2956,7 +3022,8 @@
         "history": [
           "le-earth-system"
         ]
-      }
+      },
+      "branchId": "earth-climate"
     }
   ],
   "relationships": [

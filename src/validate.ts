@@ -1,7 +1,12 @@
 import type { Atlas } from './types';
 import { disciplines, relations, standings } from './config';
+import { branches,branchIndex,sectionOrder,branchVersion } from './branches';
 export function validateAtlas(atlas:Atlas){
  const errors:string[]=[];
+ if(!branchVersion||new Set(branches.map(b=>b.id)).size!==branches.length)errors.push('Branch catalog: missing version or duplicate IDs');
+ if(sectionOrder.length!==12||new Set(sectionOrder).size!==12)errors.push('Branch catalog: twelve unique major sections required');
+ for(const b of branches)if(!b.label||!sectionOrder.includes(b.discipline)||!Number.isInteger(b.order)||b.order<0)errors.push(`Branch catalog: invalid ${b.id}`);
+ for(const d of sectionOrder){const entries=branches.filter(b=>b.discipline===d);if(new Set(entries.map(b=>b.order)).size!==entries.length)errors.push(`Branch catalog: duplicate order in ${d}`);}
  const unique=(items:{id:string}[],type:string)=>{const ids=new Set<string>();for(const i of items){if(!i.id||ids.has(i.id))errors.push(`${type}: duplicate or empty ID ${i.id}`);ids.add(i.id);}return ids;};
  const ids=unique(atlas.concepts,'Concept'),sourceIds=unique(atlas.sources,'Source');unique(atlas.relationships,'Relationship');unique(atlas.tours,'Tour');
  const lookup=new Map(atlas.concepts.map(c=>[c.id,c]));
@@ -9,9 +14,11 @@ export function validateAtlas(atlas:Atlas){
  for(const c of atlas.concepts){
   for(const field of ['title','summary','problem','development','limitations'] as const)if(typeof c[field]!=='string'||c[field].trim().length<3)errors.push(`${c.id}: missing ${field}`);
   if(!(c.discipline in disciplines))errors.push(`${c.id}: invalid discipline`);
+  if(!branchIndex.has(c.branchId)||branchIndex.get(c.branchId)?.discipline!==c.discipline)errors.push(`${c.id}: invalid primary branch or discipline mismatch`);
+  if(c.relatedBranchIds&&(new Set(c.relatedBranchIds).size!==c.relatedBranchIds.length||c.relatedBranchIds.some(id=>!branchIndex.has(id)||id===c.branchId)))errors.push(`${c.id}: invalid related branches`);
   if(!(c.standing in standings))errors.push(`${c.id}: invalid standing`);
   if(!['concept','theory','method','discovery','mathematics','instrument'].includes(c.kind))errors.push(`${c.id}: invalid kind`);
-  if(!Number.isFinite(c.date?.year)||c.date.year===0||c.date.year>2026||!c.date.label)errors.push(`${c.id}: invalid date`);
+  if(!Number.isInteger(c.date?.year)||c.date.year===0||c.date.year>2026||!c.date.label)errors.push(`${c.id}: invalid date`);
   if(!['exact','approximate','range'].includes(c.date?.precision))errors.push(`${c.id}: invalid date precision`);
   if(c.date.precision!=='exact'&&!c.date.note?.trim())errors.push(`${c.id}: uncertain date lacks explanation`);
   if(!Array.isArray(c.aliases)||!Array.isArray(c.tags))errors.push(`${c.id}: aliases and tags must be arrays`);
@@ -39,8 +46,15 @@ export function validateAtlas(atlas:Atlas){
  ids.forEach(visit);
  for(const s of atlas.sources){try{const u=new URL(s.url);if(!['http:','https:'].includes(u.protocol))throw Error();}catch{errors.push(`${s.id}: invalid URL`);}if(!s.title||!s.publisher)errors.push(`${s.id}: incomplete source metadata`);}
  for(const t of atlas.tours){if(!t.title||!t.subtitle||!/^#[0-9a-f]{6}$/i.test(t.color))errors.push(`${t.id}: incomplete tour`);if(t.steps.length<8||t.steps.length>12)errors.push(`${t.id}: tour must have 8–12 stops`);for(const s of t.steps){if(!ids.has(s.conceptId))errors.push(`${t.id}: missing stop ${s.conceptId}`);if(!s.narration||s.narration.trim().length<30)errors.push(`${t.id}: missing narration`);}}
- if(atlas.concepts.length<200||atlas.concepts.length>300)errors.push('Atlas must contain 200–300 concepts');
+
  if(atlas.tours.length!==6)errors.push('Atlas must include six tours');
  if(!/^\d{4}-\d{2}-\d{2}$/.test(atlas.reviewedAt))errors.push('Missing content review date');
+ return errors;
+}
+
+export function validateReleaseCoverage(atlas:Atlas){
+ const errors:string[]=[];
+ if(atlas.concepts.length<430||atlas.concepts.length>470)errors.push('Expanded edition must contain 430–470 complete concepts');
+ for(const branch of branches)if(!atlas.concepts.some(c=>c.branchId===branch.id))errors.push(`Expanded edition: empty branch ${branch.id}`);
  return errors;
 }

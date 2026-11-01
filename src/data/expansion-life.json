@@ -1,0 +1,4253 @@
+{
+  "concepts": [
+    {
+      "id": "photosynthesis",
+      "title": "Photosynthesis",
+      "aliases": [
+        "carbon fixation",
+        "oxygenic photosynthesis"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-physiology",
+      "tags": [
+        "plants",
+        "energy"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1779,
+        "label": "1779 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Photosynthetic organisms use light energy to build organic material; oxygenic photosynthesis also releases oxygen.",
+      "problem": "How do plants alter air and accumulate material, and what role does sunlight play?",
+      "development": "Ingenhousz showed that green plant parts improved air in sunlight. Later experiments established carbon fixation, water’s role, and the separate light and carbon-assimilation reactions.",
+      "limitations": "The familiar overall equation compresses many reactions. Not all photosynthesis releases oxygen, and the first experiments did not establish the complete mechanism.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Jan Ingenhousz",
+          "role": "Demonstrated the importance of light and green tissues."
+        },
+        {
+          "name": "Joseph Priestley and later plant physiologists",
+          "role": "Investigated plant–air exchanges and extended their chemical explanation."
+        }
+      ],
+      "historicalSetting": "Late-eighteenth-century European plant experiments combined growing interest in gases with controlled comparisons of light and darkness.",
+      "sourceIds": [
+        "xl-photosynthesis-history",
+        "xl-photosynthesis"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-photosynthesis-history",
+          "xl-photosynthesis"
+        ],
+        "history": [
+          "xl-photosynthesis-history",
+          "xl-photosynthesis"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "6 CO₂ + 6 H₂O + light → C₆H₁₂O₆ + 6 O₂",
+        "explanation": "A simplified net equation for oxygenic photosynthesis. Real carbohydrate production proceeds through many intermediates.",
+        "sourceIds": [
+          "xl-photosynthesis-history",
+          "xl-photosynthesis"
+        ]
+      }
+    },
+    {
+      "id": "cellular-respiration",
+      "title": "The citric acid cycle",
+      "aliases": [
+        "Krebs cycle",
+        "TCA cycle",
+        "aerobic respiration"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-physiology",
+      "tags": [
+        "metabolism",
+        "energy"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1937,
+        "label": "1937 CE",
+        "precision": "exact",
+        "note": "1937 dates the citric acid cycle, a specific advance within the much longer study of cellular respiration."
+      },
+      "summary": "A repeating sequence of biochemical reactions oxidizes acetyl groups while supplying reduced carriers for cellular energy conversion.",
+      "problem": "How could apparently separate reactions in animal tissues form a coordinated pathway of fuel oxidation?",
+      "development": "Krebs and Johnson connected oxidation experiments into a cycle in which oxaloacetate is regenerated. Later work clarified coenzyme A and the coupling to respiratory electron transport.",
+      "limitations": "The cycle is one component of respiration, not its entirety. Its intermediates also support biosynthesis, and organisms can use modified pathways.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Hans Krebs and William Johnson",
+          "role": "Formulated the citric acid cycle from biochemical experiments."
+        },
+        {
+          "name": "Fritz Lipmann",
+          "role": "Later clarified the role of coenzyme A."
+        }
+      ],
+      "historicalSetting": "Biochemical research at Sheffield integrated experiments on tissue metabolism with knowledge of organic acids.",
+      "sourceIds": [
+        "xl-krebs"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-krebs"
+        ],
+        "history": [
+          "xl-krebs"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Acetyl-group oxidation coupled to regeneration of oxaloacetate",
+        "explanation": "The cycle produces carbon dioxide and reduced electron carriers; regeneration allows another turn.",
+        "sourceIds": [
+          "xl-krebs"
+        ]
+      }
+    },
+    {
+      "id": "osmosis",
+      "title": "Osmosis",
+      "aliases": [
+        "endosmosis",
+        "osmotic movement"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-cells",
+      "tags": [
+        "membranes",
+        "transport"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1827,
+        "label": "1826–1827",
+        "precision": "range",
+        "note": "Dates mark Dutrochet’s investigations and terminology; observations of the phenomenon predate them."
+      },
+      "summary": "Water can move across a selectively permeable barrier when the conditions on its two sides give it different chemical potentials.",
+      "problem": "Why do some membrane-bound compartments swell or shrink when placed in different solutions?",
+      "development": "Dutrochet investigated membrane-driven liquid movement in the 1820s, connecting a physical process with living tissues. Later thermodynamics supplied a quantitative explanation.",
+      "limitations": "Osmosis is not an active pump. Pressure, solute permeability, and the membrane’s properties determine the outcome; concentration alone is not a complete general rule.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Henri Dutrochet",
+          "role": "Investigated and named osmotic processes."
+        },
+        {
+          "name": "Jean-Antoine Nollet",
+          "role": "Earlier observed membrane-dependent liquid movement."
+        }
+      ],
+      "historicalSetting": "French experimental physiology examined how fluids cross thin animal and plant materials.",
+      "sourceIds": [
+        "xl-osmosis-history",
+        "xl-osmosis"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-osmosis-history",
+          "xl-osmosis"
+        ],
+        "history": [
+          "xl-osmosis-history",
+          "xl-osmosis"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Net water movement across a selectively permeable membrane",
+        "explanation": "Water moves toward lower water chemical potential until balanced by pressure or other constraints.",
+        "sourceIds": [
+          "xl-osmosis-history",
+          "xl-osmosis"
+        ]
+      }
+    },
+    {
+      "id": "lipid-bilayer",
+      "title": "The lipid bilayer",
+      "aliases": [
+        "bimolecular membrane"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-cells",
+      "tags": [
+        "membranes",
+        "structure"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1925,
+        "label": "1925 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Two layers of amphiphilic lipids form the basic physical scaffold of many biological membranes.",
+      "problem": "What arrangement of molecules could form a thin boundary around a cell?",
+      "development": "Gorter and Grendel compared lipids extracted from red blood cells with the area they covered as a monolayer. Their result supported a two-layer interpretation, later refined by additional structural evidence.",
+      "limitations": "The original measurement involved compensating errors. A pure bilayer is a useful model, but real membranes also contain proteins, carbohydrates, and asymmetric compositions.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Evert Gorter and François Grendel",
+          "role": "Proposed a bimolecular lipid layer from red-cell lipid measurements."
+        }
+      ],
+      "historicalSetting": "Laboratory studies of red blood cells connected surface chemistry with cell-boundary structure.",
+      "sourceIds": [
+        "xl-membranes"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-membranes"
+        ],
+        "history": [
+          "xl-membranes"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Two opposed lipid layers with hydrophobic interiors",
+        "explanation": "Polar head groups face water; nonpolar chains largely face inward.",
+        "sourceIds": [
+          "xl-membranes"
+        ]
+      }
+    },
+    {
+      "id": "fluid-mosaic",
+      "title": "The fluid mosaic membrane",
+      "aliases": [
+        "Singer–Nicolson model"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-cells",
+      "tags": [
+        "membranes",
+        "proteins"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1972,
+        "label": "1972 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "A cell membrane is a dynamic lipid matrix containing proteins with different positions, interactions, and degrees of mobility.",
+      "problem": "How could membrane structure explain both a stable boundary and mobile, specialized molecular functions?",
+      "development": "Singer and Nicolson integrated thermodynamic constraints with evidence about proteins and lipids. Their model placed many proteins within or across a fluid bilayer.",
+      "limitations": "Membranes are not uniform seas in which everything moves freely. Domains, cytoskeletal constraints, crowding, and asymmetry create organization beyond the simplest picture.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "S. Jonathan Singer and Garth Nicolson",
+          "role": "Proposed the fluid mosaic model."
+        }
+      ],
+      "historicalSetting": "By the early 1970s, membrane biochemistry, structural methods, and mobility experiments could be synthesized into a molecular model.",
+      "sourceIds": [
+        "xl-fluid-mosaic"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-fluid-mosaic"
+        ],
+        "history": [
+          "xl-fluid-mosaic"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "A dynamic lipid bilayer containing embedded proteins",
+        "explanation": "The model relates membrane organization to the chemical properties and interactions of its components.",
+        "sourceIds": [
+          "xl-fluid-mosaic"
+        ]
+      }
+    },
+    {
+      "id": "mitosis",
+      "title": "Mitosis",
+      "aliases": [
+        "mitotic division"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-cells",
+      "tags": [
+        "cells",
+        "division"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1882,
+        "label": "1882 CE",
+        "precision": "exact",
+        "note": "1882 dates Flemming’s book; his observations and earlier observations by others preceded it."
+      },
+      "summary": "Duplicated chromosomes are separated into daughter nuclei through an organized sequence of cellular events.",
+      "problem": "How can a dividing cell distribute its hereditary material reliably?",
+      "development": "Flemming used stains to follow chromosomes in salamander cells and described their changing arrangement. His 1882 synthesis made chromosome division a reproducible object of study.",
+      "limitations": "Chromosome segregation can fail, and nuclear division is distinct from division of the cytoplasm. Some specialized cells depart from the familiar textbook sequence.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Walther Flemming",
+          "role": "Documented chromosome movements and stages of mitosis."
+        }
+      ],
+      "historicalSetting": "Improved dyes and microscopy enabled nineteenth-century cytologists to follow structures within dividing cells.",
+      "sourceIds": [
+        "xl-mitosis"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-mitosis"
+        ],
+        "history": [
+          "xl-mitosis"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Segregation of replicated chromosomes into daughter nuclei",
+        "explanation": "In ordinary mitosis, each daughter nucleus receives the same chromosome complement as the starting nucleus.",
+        "sourceIds": [
+          "xl-mitosis"
+        ]
+      }
+    },
+    {
+      "id": "meiosis",
+      "title": "Meiosis",
+      "aliases": [
+        "reduction division"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-genetics",
+      "tags": [
+        "genetics",
+        "reproduction"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1905,
+        "label": "1905 CE",
+        "precision": "exact",
+        "note": "1905 is the terminology milestone, not the first observation of reduction division."
+      },
+      "summary": "Specialized cell divisions reduce chromosome number and reshuffle inherited material during sexual reproduction.",
+      "problem": "How can chromosome number remain stable across generations when fertilization combines two cells?",
+      "development": "Late-nineteenth-century cytology revealed reduction divisions. Farmer and Moore introduced the term meiosis in 1905, helping consolidate comparisons of the two successive divisions.",
+      "limitations": "Meiosis does more than halve chromosome number: pairing, recombination, and segregation are coordinated. The details and timing differ among organisms.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "John Bretland Farmer and John Edmund Sharrock Moore",
+          "role": "Introduced the term meiosis."
+        },
+        {
+          "name": "Édouard van Beneden and earlier cytologists",
+          "role": "Established key observations of chromosome reduction."
+        }
+      ],
+      "historicalSetting": "Cell biology and renewed interest in Mendelian inheritance converged on the behavior of chromosomes in reproduction.",
+      "sourceIds": [
+        "xl-meiosis"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-meiosis"
+        ],
+        "history": [
+          "xl-meiosis"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "One replication followed by two divisions that reduce ploidy",
+        "explanation": "In a typical diploid life cycle, meiosis produces haploid products with one member of each homologous pair.",
+        "sourceIds": [
+          "xl-meiosis"
+        ]
+      }
+    },
+    {
+      "id": "spontaneous-mutation",
+      "title": "Mutation before selection",
+      "aliases": [
+        "fluctuation test",
+        "Luria–Delbrück experiment"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-genetics",
+      "tags": [
+        "mutation",
+        "selection"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1943,
+        "label": "1943 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Heritable variants can arise before the environmental challenge that later favors them.",
+      "problem": "Does exposure to a bacterial virus create resistance on demand, or select resistant variants that already exist?",
+      "development": "Luria and Delbrück compared independent bacterial cultures. Large differences in resistant-colony counts supported mutations occurring during prior growth, rather than only after virus exposure.",
+      "limitations": "The experiment does not imply that environments never affect mutation rates. It distinguishes the timing of mutation from selection in the tested system.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Salvador Luria and Max Delbrück",
+          "role": "Designed and interpreted the fluctuation test."
+        }
+      ],
+      "historicalSetting": "Microbial genetics used rapidly growing bacterial cultures to test the origin of heritable variation.",
+      "sourceIds": [
+        "xl-mutation"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-mutation"
+        ],
+        "history": [
+          "xl-mutation"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Variation can precede the selective challenge",
+        "explanation": "Early mutations create many descendants, generating occasional large counts among otherwise similar cultures.",
+        "sourceIds": [
+          "xl-mutation"
+        ]
+      }
+    },
+    {
+      "id": "semiconservative-replication",
+      "title": "Semiconservative DNA replication",
+      "aliases": [
+        "Meselson–Stahl experiment"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-genetics",
+      "tags": [
+        "DNA",
+        "replication"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1958,
+        "label": "1958 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "After DNA replication, each daughter duplex contains one parental strand and one newly synthesized strand.",
+      "problem": "Which strand-copying model correctly describes DNA duplication?",
+      "development": "Meselson and Stahl shifted bacteria from heavy to light nitrogen and separated DNA by density. The pattern across generations distinguished semiconservative replication from competing models.",
+      "limitations": "The result establishes strand inheritance, not every enzymatic step. Replication initiation, fidelity, and chromosome organization require additional mechanisms.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Matthew Meselson and Franklin Stahl",
+          "role": "Used isotope labeling and density separation to test DNA replication models."
+        }
+      ],
+      "historicalSetting": "At Caltech, molecular structure and experimental chemistry were combined to test a central prediction about hereditary copying.",
+      "sourceIds": [
+        "xl-replication"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-replication"
+        ],
+        "history": [
+          "xl-replication"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Each daughter DNA duplex retains one parental strand",
+        "explanation": "Complementary base pairing guides synthesis of the other strand.",
+        "sourceIds": [
+          "xl-replication"
+        ]
+      }
+    },
+    {
+      "id": "genetic-recombination",
+      "title": "Chromosomal crossing-over",
+      "aliases": [
+        "crossing-over",
+        "meiotic recombination"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-genetics",
+      "tags": [
+        "chromosomes",
+        "variation"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1931,
+        "label": "1931 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Physical exchanges between homologous chromosomes can generate new combinations of inherited variants.",
+      "problem": "Did genetic recombination correspond to an actual exchange of chromosome material?",
+      "development": "Creighton and McClintock combined visible chromosome markers with genetic traits in maize, correlating their exchanges. Stern independently obtained related evidence in fruit flies.",
+      "limitations": "Crossing-over is one form of recombination. Its frequency varies along chromosomes, and observed genetic distances need not equal physical distances.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Harriet Creighton and Barbara McClintock",
+          "role": "Linked cytological exchanges with genetic recombination in maize."
+        },
+        {
+          "name": "Curt Stern",
+          "role": "Produced independent evidence in Drosophila."
+        }
+      ],
+      "historicalSetting": "Chromosome microscopy and breeding experiments supplied complementary evidence for the physical basis of genetic linkage.",
+      "sourceIds": [
+        "xl-recombination"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-recombination"
+        ],
+        "history": [
+          "xl-recombination"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Exchange between homologous chromosomes creates new allele combinations",
+        "explanation": "The 1931 evidence connected an inferred genetic event with a visible chromosome exchange.",
+        "sourceIds": [
+          "xl-recombination"
+        ]
+      }
+    },
+    {
+      "id": "epigenetic-regulation",
+      "title": "Epigenetic regulation",
+      "aliases": [
+        "DNA methylation",
+        "cellular memory"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-genetics",
+      "tags": [
+        "regulation",
+        "development"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1975,
+        "label": "1975 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Some patterns of gene activity are maintained through cell divisions by mechanisms beyond changes in the DNA base sequence.",
+      "problem": "How can differentiated cells remember which genes to use while sharing much of the same genome?",
+      "development": "Holliday and Pugh, and independently Riggs, proposed roles for DNA methylation in stable gene control. Subsequent work revealed several interacting chromatin and regulatory mechanisms.",
+      "limitations": "Epigenetic does not mean permanent or automatically transmitted between generations of organisms. Different usages of the term require explicit definitions.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Robin Holliday and John Pugh",
+          "role": "Proposed DNA modification mechanisms for developmental gene activity."
+        },
+        {
+          "name": "Arthur Riggs",
+          "role": "Developed a methylation-based account of stable differentiation and X inactivation."
+        }
+      ],
+      "historicalSetting": "Developmental genetics sought molecular explanations for stable cell differences and chromosome inactivation.",
+      "sourceIds": [
+        "xl-epigenetics",
+        "xl-riggs"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-epigenetics",
+          "xl-riggs"
+        ],
+        "history": [
+          "xl-epigenetics",
+          "xl-riggs"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Maintained gene-activity states without changing DNA sequence",
+        "explanation": "DNA methylation is one mechanism; the definition does not imply universal transgenerational inheritance.",
+        "sourceIds": [
+          "xl-epigenetics",
+          "xl-riggs"
+        ]
+      }
+    },
+    {
+      "id": "horizontal-gene-transfer",
+      "title": "Horizontal gene transfer",
+      "aliases": [
+        "lateral gene transfer",
+        "resistance plasmids"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-genetics",
+      "tags": [
+        "microbiology",
+        "gene flow"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1959,
+        "label": "1959 CE",
+        "precision": "exact",
+        "note": "1959 marks transferable multidrug resistance, not the first discovered mechanism of horizontal transfer."
+      },
+      "summary": "Genetic material can move between organisms outside direct parent-to-offspring descent.",
+      "problem": "How could resistance to several drugs spread rapidly among bacterial strains?",
+      "development": "Japanese groups studying enteric bacteria demonstrated transferable multidrug resistance. These results expanded earlier work on transformation, conjugation, and transduction into a major explanation of microbial genetic change.",
+      "limitations": "Not every transferred sequence persists or functions in its recipient. Transfer depends on ecological contact, molecular compatibility, and selection.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Tsutomu Watanabe and bacterial geneticists",
+          "role": "Developed the interpretation of transferable resistance factors."
+        },
+        {
+          "name": "Ochiai’s and Akiba’s research groups",
+          "role": "Reported transferable multidrug resistance in 1959."
+        }
+      ],
+      "historicalSetting": "Clinical bacteriology in Japan exposed a pattern of drug resistance that ordinary vertical inheritance could not explain alone.",
+      "sourceIds": [
+        "xl-hgt"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-hgt"
+        ],
+        "history": [
+          "xl-hgt"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Gene movement across lineages rather than only down generations",
+        "explanation": "Plasmids, viruses, and uptake of environmental DNA provide different transfer routes.",
+        "sourceIds": [
+          "xl-hgt"
+        ]
+      }
+    },
+    {
+      "id": "sexual-selection",
+      "title": "Sexual selection",
+      "aliases": [
+        "mate choice",
+        "mating competition"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-evolution",
+      "tags": [
+        "evolution",
+        "reproduction"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1871,
+        "label": "1871 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Differences in mating or fertilization success can favor traits even when those traits carry survival costs.",
+      "problem": "Why do some organisms possess elaborate ornaments or competitive structures that seem costly?",
+      "development": "Darwin distinguished competition for mates and mate preferences from selection through other aspects of survival. His 1871 treatment developed an argument introduced earlier.",
+      "limitations": "The theory does not require fixed sex roles or conscious choice. Modern work includes variation, conflict, mutual choice, and social context absent from many early accounts.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Charles Darwin",
+          "role": "Developed sexual selection as an evolutionary explanation."
+        }
+      ],
+      "historicalSetting": "Victorian natural history brought observations of animal ornamentation and reproductive behavior into evolutionary argument.",
+      "sourceIds": [
+        "xl-sexual-selection"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-sexual-selection"
+        ],
+        "history": [
+          "xl-sexual-selection"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Selection through differences in mating and fertilization success",
+        "explanation": "Such selection can reinforce or oppose effects on survival.",
+        "sourceIds": [
+          "xl-sexual-selection"
+        ]
+      }
+    },
+    {
+      "id": "kin-selection",
+      "title": "Kin selection",
+      "aliases": [
+        "inclusive fitness",
+        "Hamilton’s rule"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-evolution",
+      "tags": [
+        "evolution",
+        "social behavior"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1964,
+        "label": "1964 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "A social behavior can spread when its effects on relatives contribute sufficiently to the transmission of shared genetic variants.",
+      "problem": "How can a behavior with a cost to its actor be favored by natural selection?",
+      "development": "Hamilton formalized the genetic consequences of social effects using relatedness and inclusive fitness. The framework connected population genetics with altruistic behavior.",
+      "limitations": "The simple rule requires a clearly specified model and appropriate definitions of costs, benefits, and relatedness. It is not a moral rule or a complete account of human behavior.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "W. D. Hamilton",
+          "role": "Developed the inclusive-fitness framework for social evolution."
+        }
+      ],
+      "historicalSetting": "Theoretical population genetics was extended to interactions in which one organism alters another’s reproduction.",
+      "sourceIds": [
+        "xl-kin-selection"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-kin-selection"
+        ],
+        "history": [
+          "xl-kin-selection"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "rB > C",
+        "explanation": "In a simple additive formulation, relatedness r weights benefit B to a recipient against cost C to the actor.",
+        "sourceIds": [
+          "xl-kin-selection"
+        ]
+      }
+    },
+    {
+      "id": "logistic-growth",
+      "title": "Density-limited population growth",
+      "aliases": [
+        "Verhulst model",
+        "logistic equation"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-evolution",
+      "tags": [
+        "population dynamics",
+        "mathematics"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1838,
+        "label": "1838 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "A population can grow quickly when small and slow as density increases and resources become limiting.",
+      "problem": "How could a growth model avoid predicting unlimited exponential increase?",
+      "development": "Verhulst introduced a density-dependent correction to exponential growth. The logistic equation later became a basic model in population ecology.",
+      "limitations": "Carrying capacity is not necessarily fixed, and real populations have delays, age structure, migration, and environmental variation. The model is a useful baseline, not a universal trajectory.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Pierre François Verhulst",
+          "role": "Formulated an early logistic population model."
+        }
+      ],
+      "historicalSetting": "Nineteenth-century mathematical demography tested how resource limits could change simple growth laws.",
+      "sourceIds": [
+        "xl-logistic",
+        "xl-logistic-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-logistic"
+        ],
+        "history": [
+          "xl-logistic",
+          "xl-logistic-history"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "dN/dt = rN(1 − N/K)",
+        "explanation": "N is population size, r the low-density growth rate, and K a model carrying capacity.",
+        "sourceIds": [
+          "xl-logistic",
+          "xl-logistic-history"
+        ]
+      }
+    },
+    {
+      "id": "predator-prey",
+      "title": "Predator–prey dynamics",
+      "aliases": [
+        "Lotka–Volterra equations"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-evolution",
+      "tags": [
+        "ecology",
+        "population dynamics"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1925,
+        "label": "1925–1926",
+        "precision": "range",
+        "note": "1925 anchors Lotka’s synthesis; Volterra’s independent publications followed in 1926."
+      },
+      "summary": "Coupled growth equations show how interactions between consumers and their resources can create population cycles.",
+      "problem": "Could recurring rises and falls in populations arise from their interactions rather than only from external forcing?",
+      "development": "Lotka and Volterra independently modeled predator–prey interactions. Their simplest equations made feedback between prey abundance and predator growth mathematically explicit.",
+      "limitations": "The classic model assumes homogeneous encounters and omits many stabilizing or destabilizing effects. Real food webs need richer mechanisms and empirical tests.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Alfred Lotka and Vito Volterra",
+          "role": "Independently developed coupled population equations."
+        }
+      ],
+      "historicalSetting": "Mathematical biology and observations of fisheries stimulated models of interacting populations in the 1920s.",
+      "sourceIds": [
+        "xl-predation",
+        "xl-lotka-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-predation",
+          "xl-lotka-history"
+        ],
+        "history": [
+          "xl-predation",
+          "xl-lotka-history"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "dN/dt = aN − bNP; dP/dt = cbNP − dP",
+        "explanation": "N and P are prey and predator abundance; a and d describe uncoupled growth or loss, b encounters, and c conversion.",
+        "sourceIds": [
+          "xl-predation",
+          "xl-lotka-history"
+        ]
+      }
+    },
+    {
+      "id": "competitive-exclusion",
+      "title": "Competitive exclusion",
+      "aliases": [
+        "Gause’s principle"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-evolution",
+      "tags": [
+        "ecology",
+        "competition"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1934,
+        "label": "1934 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Under suitable constant conditions, species that depend on the same limiting resources in the same way cannot persist together indefinitely.",
+      "problem": "When do competitors coexist, and when does one replace another?",
+      "development": "Gause combined microbial experiments with mathematical competition models and natural-history ideas. His work made the conditions for exclusion experimentally discussable.",
+      "limitations": "The principle requires assumptions about resource overlap and environmental stability. Spatial variation, fluctuating conditions, and differing trade-offs can permit coexistence.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Georgii Gause",
+          "role": "Linked competition experiments with mathematical and niche-based explanations."
+        }
+      ],
+      "historicalSetting": "Laboratory cultures gave ecological competition a controlled setting for comparison with theory.",
+      "sourceIds": [
+        "xl-competition",
+        "xl-gause-models"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-competition",
+          "xl-gause-models"
+        ],
+        "history": [
+          "xl-competition",
+          "xl-gause-models"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Ecologically equivalent competitors cannot stably coexist under fixed limiting conditions",
+        "explanation": "The qualification matters: differences in resource use or environment can change the outcome.",
+        "sourceIds": [
+          "xl-competition",
+          "xl-gause-models"
+        ]
+      }
+    },
+    {
+      "id": "island-biogeography",
+      "title": "Island biogeography",
+      "aliases": [
+        "equilibrium biogeography"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-evolution",
+      "tags": [
+        "ecology",
+        "biodiversity"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1967,
+        "label": "1967 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Species richness on an island can be modeled as a balance between arrival and local extinction.",
+      "problem": "Why do isolated and differently sized islands tend to support different numbers of species?",
+      "development": "MacArthur and Wilson joined population processes with geographic comparisons, predicting turnover even when total richness is near equilibrium.",
+      "limitations": "Real islands differ in habitat, evolutionary history, and disturbance. The equilibrium model does not automatically predict the consequences of every habitat fragment.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Robert MacArthur and Edward O. Wilson",
+          "role": "Developed the equilibrium theory of island biogeography."
+        }
+      ],
+      "historicalSetting": "Theoretical ecology sought general predictions from geographic patterns rather than only species inventories.",
+      "sourceIds": [
+        "xl-islands"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-islands"
+        ],
+        "history": [
+          "xl-islands"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "dS/dt = I(S) − E(S)",
+        "explanation": "S is species richness, I immigration of new species, and E local extinction. Equilibrium occurs where the rates match.",
+        "sourceIds": [
+          "xl-islands"
+        ]
+      }
+    },
+    {
+      "id": "trophic-dynamics",
+      "title": "Trophic energy flows",
+      "aliases": [
+        "trophic levels",
+        "energy flow"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-evolution",
+      "tags": [
+        "ecology",
+        "energy"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1942,
+        "label": "1942 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Food relationships transfer energy through ecological systems, with only part of production reaching each successive trophic level.",
+      "problem": "Could diverse organisms be studied through shared rates of production, consumption, and loss?",
+      "development": "Lindeman combined ecosystem thinking with energy accounting in a lake study. The trophic-dynamic approach helped shift ecology toward material and energy budgets.",
+      "limitations": "Transfer efficiencies vary widely; a universal ten-percent rule is an oversimplification. Food webs also contain omnivory, detrital routes, and imports from other systems.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Raymond Lindeman",
+          "role": "Developed the trophic-dynamic approach to ecosystems."
+        }
+      ],
+      "historicalSetting": "Lake ecology connected organismal observations with quantitative budgets of energy and production.",
+      "sourceIds": [
+        "xl-trophic"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-trophic"
+        ],
+        "history": [
+          "xl-trophic"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "Efficiency = production at level n+1 / production at level n",
+        "explanation": "The ratio must use compatible units and time intervals; its value is measured rather than fixed universally.",
+        "sourceIds": [
+          "xl-trophic"
+        ]
+      }
+    },
+    {
+      "id": "ecological-niche",
+      "title": "The multidimensional niche",
+      "aliases": [
+        "niche hypervolume",
+        "fundamental niche",
+        "realized niche"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-evolution",
+      "tags": [
+        "ecology",
+        "biodiversity"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1957,
+        "label": "1957 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "A species’ niche can be represented by combinations of environmental conditions and resources under which it can persist.",
+      "problem": "How can ecological requirements be described beyond a species’ geographic address?",
+      "development": "Hutchinson formalized the niche as a multidimensional space and connected it with competition. This built on earlier natural-history meanings used by Grinnell and Elton.",
+      "limitations": "A niche is a model-dependent description, not a directly visible object. Interactions, dispersal, and change distinguish potential persistence from actual occupancy.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "G. Evelyn Hutchinson",
+          "role": "Formalized the niche as an environmental hypervolume."
+        },
+        {
+          "name": "Joseph Grinnell and Charles Elton",
+          "role": "Developed earlier influential niche concepts."
+        }
+      ],
+      "historicalSetting": "At a Cold Spring Harbor symposium, ecological debates were reframed using set-like descriptions of environmental requirements.",
+      "sourceIds": [
+        "xl-niche"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-niche"
+        ],
+        "history": [
+          "xl-niche"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "The set of environmental combinations permitting persistence",
+        "explanation": "The fundamental niche describes potential conditions; interactions and history help determine the realized niche.",
+        "sourceIds": [
+          "xl-niche"
+        ]
+      }
+    },
+    {
+      "id": "anatomical-pathology",
+      "title": "Anatomical pathology",
+      "aliases": [
+        "pathological anatomy",
+        "organ pathology"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-disease",
+      "tags": [
+        "diagnosis",
+        "pathology"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1761,
+        "label": "1761 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Clinical symptoms can be connected with specific structural changes in organs and tissues.",
+      "problem": "Where in the body does a disease act, and how can that location be investigated?",
+      "development": "Morgagni compared case histories with postmortem findings, organizing disease around anatomical lesions rather than only generalized bodily imbalance.",
+      "limitations": "Visible lesions do not always reveal the initiating cause, and functional illness may lack a gross anatomical change. Cellular and molecular pathology later extended the approach.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Giovanni Battista Morgagni",
+          "role": "Systematically connected clinical histories with autopsy findings."
+        }
+      ],
+      "historicalSetting": "Eighteenth-century Padua supplied a setting for integrating detailed medical cases with anatomical examination.",
+      "sourceIds": [
+        "xl-pathology"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-pathology"
+        ],
+        "history": [
+          "xl-pathology"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Correlating clinical disease with structural lesions",
+        "explanation": "A lesion is an abnormal structural change; correlation must be interpreted alongside other evidence.",
+        "sourceIds": [
+          "xl-pathology"
+        ]
+      }
+    },
+    {
+      "id": "miasma-theory",
+      "title": "Miasma theory",
+      "aliases": [
+        "bad-air theory"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-disease",
+      "tags": [
+        "history of disease",
+        "public health"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1700,
+        "label": "Early modern era",
+        "precision": "approximate",
+        "note": "1700 is a representative placement for early modern applications, not an invention date; air-based explanations existed much earlier."
+      },
+      "summary": "Miasma explanations attributed epidemic illness to harmful qualities of foul or corrupted air.",
+      "problem": "Why did disease cluster in crowded, dirty, or marshy environments?",
+      "development": "Early modern physicians and civic authorities often connected odors, decay, and illness. Such ideas encouraged some useful environmental improvements while supplying an incorrect general mechanism of infection.",
+      "limitations": "Bad smell is not a general cause of infectious disease. Some infections are airborne, but microbial aerosols are different from the historical miasma mechanism.",
+      "standing": "superseded",
+      "contributors": [
+        {
+          "name": "Early modern physicians and civic authorities",
+          "role": "Developed and applied varied accounts of disease-bearing air."
+        }
+      ],
+      "historicalSetting": "European plague and urban sanitation debates formed one influential setting for a much older family of air-based explanations.",
+      "sourceIds": [
+        "xl-miasma"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-miasma"
+        ],
+        "history": [
+          "xl-miasma"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Historical claim that corrupted air generates epidemic disease",
+        "explanation": "This is a superseded explanatory framework, distinct from modern evidence about airborne pathogens.",
+        "sourceIds": [
+          "xl-miasma"
+        ]
+      }
+    },
+    {
+      "id": "epidemiology",
+      "title": "Comparative epidemiology",
+      "aliases": [
+        "John Snow",
+        "disease mapping",
+        "population health"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-disease",
+      "tags": [
+        "epidemiology",
+        "causation"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1854,
+        "label": "1854 CE",
+        "precision": "exact",
+        "note": "1854 is a landmark investigation, not the origin of all epidemiological reasoning."
+      },
+      "summary": "Comparing disease occurrence across populations and exposures can reveal causes and guide prevention.",
+      "problem": "Could differences in water supply explain a cholera outbreak better than differences in surrounding air?",
+      "development": "Snow combined local investigation with comparisons of households served by different water companies. His work demonstrated causal reasoning about transmission before the responsible organism was generally accepted.",
+      "limitations": "A map alone does not prove causation. Confounding, selection, timing, and measurement errors must be evaluated in observational comparisons.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "John Snow",
+          "role": "Investigated cholera through exposure histories and population comparisons."
+        },
+        {
+          "name": "Henry Whitehead and local residents",
+          "role": "Contributed crucial local information to the outbreak investigation."
+        }
+      ],
+      "historicalSetting": "London’s 1854 cholera epidemic made competing explanations of transmission a practical public-health problem.",
+      "sourceIds": [
+        "xl-epidemiology"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-epidemiology"
+        ],
+        "history": [
+          "xl-epidemiology"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "Risk ratio = risk in exposed / risk in unexposed",
+        "explanation": "This modern comparison summarizes relative occurrence; causal interpretation requires a sound design and assumptions.",
+        "sourceIds": [
+          "xl-epidemiology"
+        ]
+      }
+    },
+    {
+      "id": "antisepsis",
+      "title": "Antiseptic surgery",
+      "aliases": [
+        "Listerian surgery",
+        "infection prevention"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-therapeutics",
+      "tags": [
+        "surgery",
+        "microbiology"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1867,
+        "label": "1867 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Reducing microbial contamination during surgery can prevent many postoperative infections.",
+      "problem": "Why did wounds often deteriorate after technically successful operations?",
+      "development": "Lister applied ideas about microbial contamination to surgical wounds and published an antiseptic approach in 1867. Later practice increasingly emphasized asepsis: preventing contamination in the first place.",
+      "limitations": "Historical carbolic-acid procedures are not modern surgical instructions. Infection prevention now combines validated sterilization, aseptic technique, and context-specific clinical measures.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Joseph Lister",
+          "role": "Connected microbial explanations with systematic surgical antisepsis."
+        }
+      ],
+      "historicalSetting": "Industrial-era hospital surgery faced severe wound infection despite improving anatomical and operative knowledge.",
+      "sourceIds": [
+        "xl-antisepsis"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-antisepsis"
+        ],
+        "history": [
+          "xl-antisepsis"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Preventing infection by reducing microorganisms at a vulnerable site",
+        "explanation": "Antisepsis acts against microbes; asepsis aims to prevent their introduction.",
+        "sourceIds": [
+          "xl-antisepsis"
+        ]
+      }
+    },
+    {
+      "id": "anesthesia",
+      "title": "Surgical anesthesia",
+      "aliases": [
+        "ether anesthesia",
+        "analgesia"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-therapeutics",
+      "tags": [
+        "surgery",
+        "pharmacology"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1846,
+        "label": "1846 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Anesthetic agents can reversibly suppress sensation or awareness sufficiently to permit otherwise intolerable procedures.",
+      "problem": "Could surgery be performed without the patient experiencing its full pain?",
+      "development": "An ether demonstration at Massachusetts General Hospital in 1846 accelerated adoption. Earlier work by Long and Wells, among others, makes the history a shared and disputed development rather than a single invention.",
+      "limitations": "Anesthesia is a family of controlled clinical techniques, not merely unconsciousness. Drug effects on breathing, circulation, and recovery require specialized management.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "William Morton",
+          "role": "Conducted the influential 1846 ether demonstration."
+        },
+        {
+          "name": "Crawford Long and Horace Wells",
+          "role": "Earlier used ether or nitrous oxide in clinical procedures."
+        },
+        {
+          "name": "John Collins Warren",
+          "role": "Performed the surgery in the Boston demonstration."
+        }
+      ],
+      "historicalSetting": "Nineteenth-century dentistry and surgery tested gases and vapors at the boundary of experimentation and clinical practice.",
+      "sourceIds": [
+        "xl-anesthesia"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-anesthesia"
+        ],
+        "history": [
+          "xl-anesthesia"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Reversible suppression of sensation, with or without awareness",
+        "explanation": "Different forms of anesthesia have different targets and monitoring requirements.",
+        "sourceIds": [
+          "xl-anesthesia"
+        ]
+      }
+    },
+    {
+      "id": "antibiotics",
+      "title": "Antibiotics and penicillin",
+      "aliases": [
+        "penicillin",
+        "antibacterial therapy"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-therapeutics",
+      "tags": [
+        "infection",
+        "pharmacology"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1929,
+        "label": "1929 CE",
+        "precision": "exact",
+        "note": "1929 dates Fleming’s publication; the observation occurred in 1928 and clinical development followed later."
+      },
+      "summary": "Some substances produced by microorganisms can inhibit or kill susceptible bacteria and become useful medicines.",
+      "problem": "Could microbial antagonism be turned into a treatment for bacterial infection?",
+      "development": "Fleming reported penicillin’s antibacterial action after a mold-contaminated culture. Later purification, testing, and production by Florey, Chain, and many collaborators transformed an observation into a practical therapy.",
+      "limitations": "The original report did not establish a ready-to-use drug. Activity depends on the organism, resistance, exposure, and patient context; antibiotics do not generally treat viral infections.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Alexander Fleming",
+          "role": "Reported penicillin’s antibacterial activity."
+        },
+        {
+          "name": "Howard Florey, Ernst Chain, and collaborators",
+          "role": "Developed therapeutic testing and production."
+        }
+      ],
+      "historicalSetting": "Bacteriological culture methods exposed interactions between molds and bacteria before large-scale pharmaceutical development.",
+      "sourceIds": [
+        "xl-penicillin",
+        "xl-penicillin-development"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-penicillin"
+        ],
+        "history": [
+          "xl-penicillin",
+          "xl-penicillin-development"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "A substance that inhibits or kills susceptible bacteria",
+        "explanation": "Clinical effectiveness requires more than activity in a culture dish.",
+        "sourceIds": [
+          "xl-penicillin",
+          "xl-penicillin-development"
+        ]
+      }
+    },
+    {
+      "id": "antimicrobial-resistance",
+      "title": "Mechanisms of antibiotic resistance",
+      "aliases": [
+        "penicillinase",
+        "AMR",
+        "antibiotic resistance"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-disease",
+      "tags": [
+        "infection",
+        "evolution"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1940,
+        "label": "1940 CE",
+        "precision": "exact",
+        "note": "1940 marks a biochemical mechanism, not the first existence or observation of resistance."
+      },
+      "summary": "Microbes can possess or acquire mechanisms that reduce susceptibility to an antimicrobial agent.",
+      "problem": "Why can an agent that inhibits one bacterial culture fail against another?",
+      "development": "Abraham and Chain identified an enzyme that destroyed penicillin. Such work exposed biochemical resistance mechanisms, later joined by changes in targets, uptake, export, and gene transfer.",
+      "limitations": "Resistance is a property of organisms in a defined setting, not a patient becoming resistant. A single mechanism does not explain every drug or infection.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Edward Abraham and Ernst Chain",
+          "role": "Identified a bacterial enzyme able to destroy penicillin."
+        }
+      ],
+      "historicalSetting": "Early penicillin research encountered bacterial defenses even before widespread clinical use.",
+      "sourceIds": [
+        "xl-resistance",
+        "xl-resistance-science"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-resistance",
+          "xl-resistance-science"
+        ],
+        "history": [
+          "xl-resistance"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Reduced microbial susceptibility through heritable or acquired mechanisms",
+        "explanation": "Drug inactivation is one mechanism among several; susceptibility is assessed under defined conditions.",
+        "sourceIds": [
+          "xl-resistance",
+          "xl-resistance-science"
+        ]
+      }
+    },
+    {
+      "id": "receptor-theory",
+      "title": "Receptor theory of drug action",
+      "aliases": [
+        "receptive substances",
+        "pharmacodynamics"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-therapeutics",
+      "tags": [
+        "pharmacology",
+        "signaling"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1905,
+        "label": "1905–1907",
+        "precision": "range",
+        "note": "The interval identifies Langley’s key experimental development of the receptor concept."
+      },
+      "summary": "Many drugs act by interacting with specific cellular targets rather than by altering tissue indiscriminately.",
+      "problem": "How could different chemicals selectively stimulate or block a tissue’s response?",
+      "development": "Langley’s experiments with nicotine and curare supported the idea of receptive substances. Related work by Ehrlich and later pharmacologists developed target binding into a general framework.",
+      "limitations": "Binding does not necessarily produce activation, and not all drugs act through classical receptors. Receptor state, downstream signaling, and tissue context affect the response.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "John Newport Langley",
+          "role": "Developed the receptive-substance account of selective drug effects."
+        },
+        {
+          "name": "Paul Ehrlich",
+          "role": "Contributed complementary ideas about chemical specificity and cellular targets."
+        }
+      ],
+      "historicalSetting": "Physiologists studying nerve–muscle preparations compared substances that excited or blocked the same tissue.",
+      "sourceIds": [
+        "xl-receptors"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-receptors"
+        ],
+        "history": [
+          "xl-receptors"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "A drug’s interaction with a target helps determine its effect",
+        "explanation": "Agonists activate a response; antagonists can block activation without producing the same response.",
+        "sourceIds": [
+          "xl-receptors"
+        ]
+      }
+    },
+    {
+      "id": "dose-response",
+      "title": "Concentration–response models",
+      "aliases": [
+        "Hill equation",
+        "Emax model",
+        "EC50"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-therapeutics",
+      "tags": [
+        "pharmacology",
+        "modeling"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1910,
+        "label": "1910 CE",
+        "precision": "exact",
+        "note": "1910 anchors Hill’s binding model; the displayed pharmacological form is a later generalization."
+      },
+      "summary": "Quantitative curves relate a substance’s concentration to the size of a measured biological response.",
+      "problem": "How can potency, maximal effect, and response steepness be compared consistently?",
+      "development": "Hill modeled oxygen–hemoglobin binding in 1910. Related mathematical forms were later adapted to pharmacological responses, separating descriptive curve fitting from detailed molecular mechanisms.",
+      "limitations": "A fitted slope is not automatically the number of binding sites. Responses depend on timing, tissue, baseline activity, and experimental conditions.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Archibald Hill",
+          "role": "Introduced a cooperative binding model that influenced later response modeling."
+        },
+        {
+          "name": "Later pharmacologists",
+          "role": "Adapted saturating models to drug concentration and effect."
+        }
+      ],
+      "historicalSetting": "Physiological measurements of binding and action helped make drug effects quantitatively comparable.",
+      "sourceIds": [
+        "xl-hill-history",
+        "xl-dose-response"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-hill-history",
+          "xl-dose-response"
+        ],
+        "history": [
+          "xl-hill-history",
+          "xl-dose-response"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "E = Emax Cⁿ / (EC₅₀ⁿ + Cⁿ)",
+        "explanation": "With zero baseline, C is concentration, Emax the maximal response, EC₅₀ the half-maximal concentration, and n a fitted slope parameter.",
+        "sourceIds": [
+          "xl-hill-history",
+          "xl-dose-response"
+        ]
+      }
+    },
+    {
+      "id": "pharmacokinetics",
+      "title": "Pharmacokinetics",
+      "aliases": [
+        "ADME",
+        "drug disposition"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-therapeutics",
+      "tags": [
+        "pharmacology",
+        "time"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1937,
+        "label": "1937 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Mathematical models describe how a substance is absorbed, distributed, transformed, and eliminated by the body.",
+      "problem": "Why does a drug’s concentration change over time after administration?",
+      "development": "Teorell represented physiological distribution with connected compartments and transfer rates. The approach helped distinguish what the body does to a drug from what a drug does to the body.",
+      "limitations": "Compartments are modeling abstractions and may not correspond to individual organs. Nonlinear processes and patient differences can invalidate simple predictions.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Torsten Teorell",
+          "role": "Developed influential physiological distribution models."
+        }
+      ],
+      "historicalSetting": "Quantitative physiology connected chemical measurements with rates of transfer between blood and tissues.",
+      "sourceIds": [
+        "xl-pharmacokinetics"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-pharmacokinetics"
+        ],
+        "history": [
+          "xl-pharmacokinetics"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "C(t) = C₀e^(−kt)",
+        "explanation": "A simple one-compartment, first-order elimination model after an instantaneous input; C₀ is initial concentration and k the elimination constant.",
+        "sourceIds": [
+          "xl-pharmacokinetics"
+        ]
+      }
+    },
+    {
+      "id": "insulin-therapy",
+      "title": "Insulin replacement",
+      "aliases": [
+        "therapeutic insulin"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-therapeutics",
+      "tags": [
+        "endocrinology",
+        "metabolism"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1922,
+        "label": "1922 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Replacing a missing pancreatic hormone can correct a central metabolic defect in insulin-deficient diabetes.",
+      "problem": "Could a pancreatic extract restore control of blood glucose rather than only restrict food intake?",
+      "development": "Toronto investigators developed and purified pancreatic extracts, and successful human treatment followed in 1922. The work connected experimental physiology with a transformative clinical intervention.",
+      "limitations": "Insulin treatment is not a cure for every form of diabetes. Formulations, dosing, monitoring, and individual physiology determine clinical use.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Frederick Banting and Charles Best",
+          "role": "Investigated pancreatic extracts."
+        },
+        {
+          "name": "James Collip",
+          "role": "Improved purification for clinical use."
+        },
+        {
+          "name": "John Macleod",
+          "role": "Provided physiological expertise, facilities, and research leadership."
+        }
+      ],
+      "historicalSetting": "The University of Toronto team combined animal physiology, biochemical purification, and hospital care.",
+      "sourceIds": [
+        "xl-insulin"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-insulin"
+        ],
+        "history": [
+          "xl-insulin"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Hormone replacement to address insulin deficiency",
+        "explanation": "Insulin helps regulate fuel use and storage; replacement must be matched to physiological needs.",
+        "sourceIds": [
+          "xl-insulin"
+        ]
+      }
+    },
+    {
+      "id": "vitamin-deficiency",
+      "title": "Vitamin deficiency diseases",
+      "aliases": [
+        "avitaminosis",
+        "micronutrients"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-disease",
+      "tags": [
+        "nutrition",
+        "metabolism"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1912,
+        "label": "1912 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Some diseases result from insufficient small quantities of essential dietary substances rather than infection or inadequate calories alone.",
+      "problem": "Why could apparently adequate diets still produce characteristic patterns of illness?",
+      "development": "Funk synthesized evidence for deficiency diseases and helped establish the vitamin concept. Earlier feeding experiments and clinical observations supplied essential clues.",
+      "limitations": "Vitamins are chemically diverse, and the original assumption that all were amines was wrong. Deficiency explanations apply to particular conditions, not to illness in general.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Casimir Funk",
+          "role": "Developed and named the vitamin concept."
+        },
+        {
+          "name": "Christiaan Eijkman and other nutritional investigators",
+          "role": "Connected dietary changes with deficiency-related disease."
+        }
+      ],
+      "historicalSetting": "Early nutritional science compared refined and unrefined foods and tested why particular diets failed.",
+      "sourceIds": [
+        "xl-vitamins"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-vitamins"
+        ],
+        "history": [
+          "xl-vitamins"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Disease caused by insufficient availability of an essential micronutrient",
+        "explanation": "A micronutrient is required in small amounts; this does not imply that more is always beneficial.",
+        "sourceIds": [
+          "xl-vitamins"
+        ]
+      }
+    },
+    {
+      "id": "blood-groups",
+      "title": "Blood groups and compatibility",
+      "aliases": [
+        "ABO system",
+        "transfusion compatibility"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-immunity",
+      "tags": [
+        "immunology",
+        "blood"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1901,
+        "label": "1901 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Human red blood cells differ in surface antigens that can trigger incompatible reactions during transfusion.",
+      "problem": "Why did blood transfusion sometimes succeed and sometimes cause dangerous clumping and destruction of cells?",
+      "development": "Landsteiner compared reactions between people’s red cells and sera, identifying distinct groups. Subsequent work completed the ABO system and discovered many additional blood-group systems.",
+      "limitations": "ABO compatibility is only part of transfusion safety. Other antigens, antibodies, screening, and clinical circumstances also matter.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Karl Landsteiner",
+          "role": "Identified systematic differences underlying the first blood groups."
+        },
+        {
+          "name": "Alfred von Decastello and Adriano Sturli",
+          "role": "Helped identify the AB pattern."
+        }
+      ],
+      "historicalSetting": "Laboratory immunology made previously unpredictable transfusion reactions amenable to systematic comparison.",
+      "sourceIds": [
+        "xl-blood-groups"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-blood-groups"
+        ],
+        "history": [
+          "xl-blood-groups"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Inherited red-cell antigens determine important compatibility patterns",
+        "explanation": "Antibodies can react against corresponding antigens absent from a recipient’s own red cells.",
+        "sourceIds": [
+          "xl-blood-groups"
+        ]
+      }
+    },
+    {
+      "id": "clonal-selection",
+      "title": "Clonal selection of lymphocytes",
+      "aliases": [
+        "lymphocyte selection"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-immunity",
+      "tags": [
+        "immunology",
+        "specificity"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1957,
+        "label": "1957 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "An antigen selects pre-existing lymphocytes with suitable receptors, which then proliferate and differentiate.",
+      "problem": "How can the immune system respond specifically to many unfamiliar targets without each target instructing a new antibody shape?",
+      "development": "Burnet developed clonal selection from selective theories of antibody formation, with important parallel contributions from Talmage. The idea linked cellular diversity, expansion, and memory.",
+      "limitations": "The original theory required later molecular and cellular refinements. Receptor generation, tolerance, cooperation, and affinity maturation add mechanisms beyond simple selection.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Frank Macfarlane Burnet",
+          "role": "Formulated the clonal selection account."
+        },
+        {
+          "name": "David Talmage",
+          "role": "Developed closely related selective ideas."
+        }
+      ],
+      "historicalSetting": "Mid-twentieth-century immunology debated whether antigens instruct specificity or select it from an existing repertoire.",
+      "sourceIds": [
+        "xl-clonal-selection"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-clonal-selection"
+        ],
+        "history": [
+          "xl-clonal-selection"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Antigen-driven expansion of cells with matching receptors",
+        "explanation": "Specificity precedes selection; the responding clone produces descendants with related receptor specificity.",
+        "sourceIds": [
+          "xl-clonal-selection"
+        ]
+      }
+    },
+    {
+      "id": "immune-tolerance",
+      "title": "Acquired immune tolerance",
+      "aliases": [
+        "immunological tolerance"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-immunity",
+      "tags": [
+        "immunology",
+        "transplantation"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1953,
+        "label": "1953 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "The immune system can become specifically unresponsive to particular antigens under defined developmental or experimental conditions.",
+      "problem": "Is rejection of foreign tissue fixed, or can recognition be altered by prior exposure?",
+      "development": "Billingham, Brent, and Medawar showed that early exposure to donor cells could permit later acceptance of tissue from that donor type. This supported developmental accounts of immune discrimination.",
+      "limitations": "Tolerance is specific and mechanistically diverse, not a general shutdown of immunity. Experimental induction does not translate directly into a universal transplant procedure.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Rupert Billingham, Leslie Brent, and Peter Medawar",
+          "role": "Demonstrated experimentally acquired tolerance to foreign cells."
+        }
+      ],
+      "historicalSetting": "Transplantation studies tested how developing immune systems distinguish tolerated from rejected material.",
+      "sourceIds": [
+        "xl-tolerance"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-tolerance"
+        ],
+        "history": [
+          "xl-tolerance"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Specific immune non-responsiveness to an antigen",
+        "explanation": "Tolerance can involve deletion, inactivation, or regulation of responsive cells.",
+        "sourceIds": [
+          "xl-tolerance"
+        ]
+      }
+    },
+    {
+      "id": "monoclonal-antibodies",
+      "title": "Monoclonal antibodies",
+      "aliases": [
+        "hybridoma technology"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-immunity",
+      "tags": [
+        "immunology",
+        "biotechnology"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1975,
+        "label": "1975 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "An antibody-producing cell lineage can provide a reproducible supply of antibodies with a selected specificity.",
+      "problem": "How could researchers obtain a consistent antibody rather than a changing mixture from an immunized animal?",
+      "development": "Köhler and Milstein fused antibody-producing cells with continuously growing myeloma cells, creating hybridomas. Subsequent technologies made antibodies major research, diagnostic, and therapeutic tools.",
+      "limitations": "A single binding specificity does not guarantee perfect selectivity or clinical effectiveness. Modern production methods extend beyond the original hybridoma approach.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Georges Köhler and César Milstein",
+          "role": "Developed hybridoma production of monoclonal antibodies."
+        }
+      ],
+      "historicalSetting": "Cambridge molecular immunology combined cell culture, cell fusion, and antibody specificity.",
+      "sourceIds": [
+        "xl-antibodies"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-antibodies"
+        ],
+        "history": [
+          "xl-antibodies"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Antibodies derived from one selected antibody-producing lineage",
+        "explanation": "The shared specificity supports reproducible detection or targeting, subject to cross-reactivity and context.",
+        "sourceIds": [
+          "xl-antibodies"
+        ]
+      }
+    },
+    {
+      "id": "sir-model",
+      "title": "Compartment models of epidemics",
+      "aliases": [
+        "SIR",
+        "Kermack–McKendrick model"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-disease",
+      "tags": [
+        "epidemiology",
+        "modeling"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1927,
+        "label": "1927 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "An epidemic can be modeled through transfers among susceptible, infectious, and removed population groups.",
+      "problem": "How can transmission grow, peak, and decline even without every person becoming infected?",
+      "development": "Kermack and McKendrick developed a mathematical account connecting infection dynamics with susceptible depletion and removal. Later SIR forms became a basic language of epidemic modeling.",
+      "limitations": "Homogeneous mixing, constant rates, and immunity assumptions often need revision. Forecasts require data and should not be confused with the behavior of a simplified demonstration.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "William Kermack and Anderson McKendrick",
+          "role": "Developed foundational mathematical epidemic models."
+        }
+      ],
+      "historicalSetting": "Population mathematics and infectious-disease research met at the Royal College of Physicians’ laboratory in Edinburgh.",
+      "sourceIds": [
+        "xl-sir"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-sir"
+        ],
+        "history": [
+          "xl-sir"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "dS/dt = −βSI/N; dI/dt = βSI/N − γI; dR/dt = γI",
+        "explanation": "S, I, and R are susceptible, infectious, and removed counts; N is the total population. β is the transmission coefficient and γ the removal rate in this simple closed-population form.",
+        "sourceIds": [
+          "xl-sir"
+        ]
+      }
+    },
+    {
+      "id": "evidence-based-medicine",
+      "title": "Evidence-based medicine",
+      "aliases": [
+        "EBM",
+        "critical appraisal"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-therapeutics",
+      "tags": [
+        "clinical reasoning",
+        "evidence"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1992,
+        "label": "1992 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Clinical decisions are strengthened by systematically finding, appraising, and applying research evidence together with clinical judgment.",
+      "problem": "How can clinicians distinguish reliable evidence from plausible mechanisms, tradition, or selective experience?",
+      "development": "The Evidence-Based Medicine Working Group articulated a teaching approach centered on critical appraisal and clinical research. Later formulations explicitly emphasized patient circumstances and preferences.",
+      "limitations": "Evidence quality varies, and an average study result may not fit an individual. The approach is a method of judgment, not a rule that a single study dictates care.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Evidence-Based Medicine Working Group",
+          "role": "Presented the influential 1992 framework."
+        },
+        {
+          "name": "Gordon Guyatt and David Sackett",
+          "role": "Helped develop and teach evidence appraisal in clinical practice."
+        }
+      ],
+      "historicalSetting": "McMaster-associated clinical educators sought to make literature appraisal part of everyday medical training.",
+      "sourceIds": [
+        "xl-ebm",
+        "xl-ebm-practice"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-ebm",
+          "xl-ebm-practice"
+        ],
+        "history": [
+          "xl-ebm",
+          "xl-ebm-practice"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Appraised research evidence integrated with clinical expertise and patient context",
+        "explanation": "Study design, bias, relevance, and uncertainty all affect how evidence should be used.",
+        "sourceIds": [
+          "xl-ebm",
+          "xl-ebm-practice"
+        ]
+      }
+    },
+    {
+      "id": "cancer-clonal-evolution",
+      "title": "Clonal evolution of cancer",
+      "aliases": [
+        "somatic evolution",
+        "tumor evolution"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-disease",
+      "tags": [
+        "oncology",
+        "evolution"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1976,
+        "label": "1976 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Tumors can evolve as heritable variants among cells differ in survival and reproduction.",
+      "problem": "Why do cancers become heterogeneous, progress, and sometimes develop resistance during treatment?",
+      "development": "Nowell synthesized cytogenetic and clinical observations into a model of successive selection among tumor-cell variants. Later sequencing revealed branching and diverse evolutionary histories.",
+      "limitations": "The original linear picture is not universal. Microenvironments, non-genetic states, and differing patterns of growth complicate a purely mutation-by-mutation account.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Peter Nowell",
+          "role": "Formulated an influential evolutionary model of tumor progression."
+        }
+      ],
+      "historicalSetting": "Cancer cytogenetics connected abnormal chromosome patterns with variation within tumors and changing clinical behavior.",
+      "sourceIds": [
+        "xl-cancer-evolution"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-cancer-evolution"
+        ],
+        "history": [
+          "xl-cancer-evolution"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Heritable variation and selection within a population of tumor cells",
+        "explanation": "The evolutionary unit here is a somatic cell lineage, not a species or a whole person.",
+        "sourceIds": [
+          "xl-cancer-evolution"
+        ]
+      }
+    },
+    {
+      "id": "immune-checkpoints",
+      "title": "Immune checkpoint blockade",
+      "aliases": [
+        "CTLA-4 blockade",
+        "PD-1 blockade",
+        "cancer immunotherapy"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-therapeutics",
+      "tags": [
+        "oncology",
+        "immunology"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1996,
+        "label": "1996 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Blocking some inhibitory immune signals can strengthen antitumor responses in selected settings.",
+      "problem": "Could a tumor escape because immune responses were restrained rather than because the immune system lacked all recognition?",
+      "development": "Leach, Krummel, and Allison showed antitumor effects of CTLA-4 blockade in mice. Parallel work on PD-1 by Honjo’s group helped establish another major inhibitory pathway and later therapies.",
+      "limitations": "The 1996 result was preclinical. Clinical benefit varies, and releasing immune inhibition can also cause harmful immune reactions; different checkpoints are not interchangeable.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "James Allison, Dana Leach, and Matthew Krummel",
+          "role": "Demonstrated antitumor effects of CTLA-4 blockade."
+        },
+        {
+          "name": "Tasuku Honjo and collaborators",
+          "role": "Discovered and investigated the PD-1 pathway."
+        }
+      ],
+      "historicalSetting": "Basic immunology at Berkeley and Kyoto revealed inhibitory receptors that could become cancer-treatment targets.",
+      "sourceIds": [
+        "xl-checkpoints",
+        "xl-checkpoint-history"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-checkpoints",
+          "xl-checkpoint-history"
+        ],
+        "history": [
+          "xl-checkpoints",
+          "xl-checkpoint-history"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Therapeutic interruption of inhibitory immune signaling",
+        "explanation": "The intervention can permit stronger T-cell activity; benefit depends on the tumor and biological context.",
+        "sourceIds": [
+          "xl-checkpoints",
+          "xl-checkpoint-history"
+        ]
+      },
+      "relatedBranchIds": [
+        "medicine-immunity"
+      ]
+    },
+    {
+      "id": "rock-cycle",
+      "title": "The rock cycle",
+      "aliases": [],
+      "discipline": "earth",
+      "branchId": "earth-geology",
+      "tags": [
+        "rocks",
+        "recycling"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1788,
+        "label": "1788 CE",
+        "precision": "exact",
+        "note": "Publication of Hutton’s Theory of the Earth; the modern textbook rock cycle includes subsequent developments."
+      },
+      "summary": "Rocks are transformed through processes including weathering, burial, heating, melting, crystallization, and uplift. The crust is continually remade rather than being a single unchanging deposit.",
+      "problem": "Explain how eroded continents can persist and how sedimentary, igneous, and metamorphic rocks are connected.",
+      "development": "James Hutton interpreted erosion, sedimentation, subterranean heat, and uplift as parts of a renewing Earth. His account helped establish geological recycling; later geology distinguished additional pathways and mechanisms.",
+      "limitations": "The familiar circular diagram is a teaching device. A rock can skip stages, remain unchanged for immense periods, or follow many different routes.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "James Hutton",
+          "role": "Connected erosion, deposition, heat, and uplift in a theory of Earth renewal."
+        }
+      ],
+      "historicalSetting": "Eighteenth-century Scottish field geology examined exposed strata, agricultural soils, and rock contacts to reconstruct processes extending beyond recorded history.",
+      "sourceIds": [
+        "xl-rock-cycle"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-rock-cycle"
+        ],
+        "history": [
+          "xl-rock-cycle"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Rock cycle = transformations among rock materials",
+        "explanation": "A network of processes, not a required sequence or a cycle with a fixed duration.",
+        "sourceIds": [
+          "xl-rock-cycle"
+        ]
+      }
+    },
+    {
+      "id": "elastic-rebound",
+      "title": "Elastic rebound and earthquakes",
+      "aliases": [],
+      "discipline": "earth",
+      "branchId": "earth-geology",
+      "tags": [
+        "earthquakes",
+        "faults"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1910,
+        "label": "1910 CE",
+        "precision": "exact",
+        "note": "Reid published the theory in the 1910 report on the 1906 earthquake."
+      },
+      "summary": "An earthquake can occur when accumulated elastic strain is suddenly released as rocks slip along a fault. The surrounding ground rebounds toward a less strained configuration.",
+      "problem": "Explain the abrupt displacement and energy release of the 1906 San Francisco earthquake.",
+      "development": "Harry Fielding Reid compared survey measurements before and after the earthquake. He inferred that gradual deformation preceded rapid fault movement, providing a physical account of earthquake generation.",
+      "limitations": "Elastic rebound explains an important mechanism, but does not predict the date of the next earthquake. Real faults have complex friction, geometry, and interactions.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Harry Fielding Reid",
+          "role": "Formulated elastic rebound using geodetic evidence from the 1906 earthquake."
+        }
+      ],
+      "historicalSetting": "After the 1906 California earthquake, survey records made it possible to compare regional deformation across an earthquake cycle.",
+      "sourceIds": [
+        "xl-rebound"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-rebound"
+        ],
+        "history": [
+          "xl-rebound"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Strain accumulation → fault slip → elastic rebound",
+        "explanation": "Slow deformation stores elastic energy; rapid slip releases some of it as seismic waves and permanent displacement.",
+        "sourceIds": [
+          "xl-rebound"
+        ]
+      }
+    },
+    {
+      "id": "mantle-convection",
+      "title": "Mantle convection",
+      "aliases": [],
+      "discipline": "earth",
+      "branchId": "earth-geology",
+      "tags": [
+        "mantle",
+        "heat",
+        "plates"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1931,
+        "label": "1931 CE",
+        "precision": "exact",
+        "note": "Holmes presented the argument in a 1928 Glasgow lecture; the associated paper appeared in 1931."
+      },
+      "summary": "Earth’s hot mantle can deform and flow over geological time. Temperature and density differences help drive circulation that participates in moving and recycling the lithosphere.",
+      "problem": "Supply a physically plausible mechanism for large-scale movement of continents and ocean floors.",
+      "development": "Arthur Holmes proposed subcrustal convection as a mechanism relevant to continental drift, with internal heat helping sustain motion. Later geophysics developed mantle convection within plate tectonics.",
+      "limitations": "The mantle is mostly solid. Modern models include slab pull, variable viscosity, phase changes, and boundary forces; simple circular conveyor belts are incomplete.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Arthur Holmes",
+          "role": "Advanced mantle convection as a mechanism for continental movement."
+        }
+      ],
+      "historicalSetting": "Early twentieth-century geologists debated continental drift while radioactive heating supplied a new way to think about Earth’s internal energy.",
+      "sourceIds": [
+        "xl-mantle"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-mantle"
+        ],
+        "history": [
+          "xl-mantle"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Mantle convection = slow buoyancy-related flow of mantle rock",
+        "explanation": "Solid rock can deform over long timescales, transporting heat and material without the mantle being a global liquid ocean.",
+        "sourceIds": [
+          "xl-mantle"
+        ]
+      }
+    },
+    {
+      "id": "magnetic-dynamo",
+      "title": "Magnetic dynamo action",
+      "aliases": [],
+      "discipline": "earth",
+      "branchId": "earth-geology",
+      "tags": [
+        "magnetism",
+        "core"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1919,
+        "label": "1919 CE",
+        "precision": "exact",
+        "note": "Dates Larmor’s solar dynamo proposal; its development into a geodynamo theory came later."
+      },
+      "summary": "Motion in an electrically conducting fluid can maintain a magnetic field by electromagnetic induction. This dynamo principle underlies modern explanations of Earth’s magnetic field.",
+      "problem": "Explain how astronomical magnetic fields can persist despite electrical resistance dissipating their energy.",
+      "development": "Joseph Larmor proposed a self-sustaining dynamo for solar magnetism. Later investigators, including Walter Elsasser, developed dynamo explanations for Earth’s conducting fluid core.",
+      "limitations": "The 1919 proposal was not a complete geodynamo theory. Sustaining a field requires suitable flow and energy supply; rotation or electrical conductivity alone is insufficient.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Joseph Larmor",
+          "role": "Proposed that conducting-fluid motion could sustain astronomical magnetic fields."
+        },
+        {
+          "name": "Walter Elsasser",
+          "role": "Developed the dynamo interpretation of Earth’s magnetic field in later work."
+        }
+      ],
+      "historicalSetting": "Solar and terrestrial magnetism posed a shared physical puzzle before numerical simulations could investigate complex conducting-fluid flows.",
+      "sourceIds": [
+        "xl-dynamo",
+        "xl-dynamo-history",
+        "xl-geodynamo"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-dynamo",
+          "xl-geodynamo"
+        ],
+        "history": [
+          "xl-dynamo",
+          "xl-dynamo-history"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Dynamo action = induction that offsets magnetic-field decay",
+        "explanation": "Mechanical motion supplies energy to a magnetic field through the motion of electrically conducting material.",
+        "sourceIds": [
+          "xl-dynamo",
+          "xl-dynamo-history",
+          "xl-geodynamo"
+        ]
+      }
+    },
+    {
+      "id": "groundwater-flow",
+      "title": "Darcy’s law of groundwater flow",
+      "aliases": [
+        "Darcy law",
+        "Darcy’s law"
+      ],
+      "discipline": "earth",
+      "branchId": "earth-water",
+      "tags": [
+        "aquifers",
+        "hydrology"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1856,
+        "label": "1856 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "The flow of water through a porous material is proportional to hydraulic gradient under appropriate conditions. Permeability and fluid properties determine how readily water moves.",
+      "problem": "Quantify water movement through sand filters and, later, aquifers.",
+      "development": "Henry Darcy measured discharge through sand-filled columns while studying the water supply of Dijon. His empirical relationship became a foundation of groundwater hydrology and porous-media transport.",
+      "limitations": "Darcy’s law is a continuum approximation most appropriate to slow flow. Fractures, turbulence, changing saturation, and spatially variable materials require additional treatment.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Henry Darcy",
+          "role": "Measured sand-column flow and formulated the discharge–gradient relationship."
+        }
+      ],
+      "historicalSetting": "Nineteenth-century municipal water engineering linked practical filtration problems with controlled experiments on water flow through sand.",
+      "sourceIds": [
+        "xl-darcy"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-darcy"
+        ],
+        "history": [
+          "xl-darcy"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "Q = −KA dh/dl",
+        "explanation": "Q is volumetric flow, K hydraulic conductivity, A cross-sectional area, and dh/dl hydraulic-head gradient. The minus sign indicates flow toward lower head.",
+        "sourceIds": [
+          "xl-darcy"
+        ]
+      }
+    },
+    {
+      "id": "ekman-transport",
+      "title": "Ekman transport",
+      "aliases": [],
+      "discipline": "earth",
+      "branchId": "earth-water",
+      "tags": [
+        "ocean",
+        "wind",
+        "rotation"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1905,
+        "label": "1905 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Wind-driven surface water is deflected by Earth’s rotation. In an idealized steady ocean, the depth-integrated transport is perpendicular to the wind stress.",
+      "problem": "Explain why wind-driven ice and surface currents need not move directly downwind.",
+      "development": "Vagn Walfrid Ekman combined friction and the Coriolis effect to explain observations associated with Fridtjof Nansen’s Arctic expedition. His ideal model produces a rotating current profile with depth.",
+      "limitations": "Real oceans have changing winds, stratification, waves, coasts, and mixed-layer turbulence. The simplest solution is unsuitable close to the equator, where the Coriolis parameter approaches zero.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Vagn Walfrid Ekman",
+          "role": "Derived the wind-driven rotating-fluid solution."
+        },
+        {
+          "name": "Fridtjof Nansen",
+          "role": "Drew attention to Arctic ice drift at an angle to the wind."
+        }
+      ],
+      "historicalSetting": "Arctic exploration supplied observations that oceanographers sought to explain with mechanics and mathematical descriptions of friction.",
+      "sourceIds": [
+        "xl-ekman"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-ekman"
+        ],
+        "history": [
+          "xl-ekman"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Ideal net transport: right of wind in the Northern Hemisphere; left in the Southern",
+        "explanation": "This describes integrated transport, not the direction of every current at every depth.",
+        "sourceIds": [
+          "xl-ekman"
+        ]
+      }
+    },
+    {
+      "id": "ocean-gyres",
+      "title": "Western intensification of ocean gyres",
+      "aliases": [
+        "western intensification"
+      ],
+      "discipline": "earth",
+      "branchId": "earth-water",
+      "tags": [
+        "ocean",
+        "gyres"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1948,
+        "label": "1948 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "Large wind-driven ocean circulations commonly have a narrow, fast western boundary current and a broad, slower return flow. Earth’s changing rotational effect with latitude helps create this asymmetry.",
+      "problem": "Explain why currents such as the Gulf Stream are concentrated on the western side of ocean basins.",
+      "development": "Henry Stommel constructed a simple rotating-basin model with wind stress and friction. Allowing the Coriolis effect to vary with latitude generated western intensification.",
+      "limitations": "The model establishes a mechanism, not a complete simulation of a real ocean. Coastlines, topography, eddies, stratification, and variable forcing shape actual currents.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Henry Stommel",
+          "role": "Demonstrated western intensification in a wind-driven ocean model."
+        }
+      ],
+      "historicalSetting": "Mid-twentieth-century physical oceanography used deliberately simplified basin models to explain persistent features of measured circulation.",
+      "sourceIds": [
+        "xl-gyres"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-gyres"
+        ],
+        "history": [
+          "xl-gyres"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Western intensification = concentrated poleward boundary flow on a basin’s western side",
+        "explanation": "The defining contrast is an asymmetric circulation pattern, not a claim that all ocean currents are western currents.",
+        "sourceIds": [
+          "xl-gyres"
+        ]
+      }
+    },
+    {
+      "id": "thermohaline-circulation",
+      "title": "Thermohaline feedback and multiple circulation states",
+      "aliases": [],
+      "discipline": "earth",
+      "branchId": "earth-water",
+      "tags": [
+        "ocean",
+        "feedback",
+        "overturning"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1961,
+        "label": "1961 CE",
+        "precision": "exact",
+        "note": "Dates Stommel’s influential two-box multiple-equilibria model, not the first recognition of density-driven ocean flow."
+      },
+      "summary": "Temperature and salinity affect seawater density. Their interaction with circulation can create feedbacks and, in simplified models, more than one stable circulation state.",
+      "problem": "Understand why ocean circulation might respond nonlinearly to changing heat and freshwater inputs.",
+      "development": "Henry Stommel’s two-reservoir model coupled transport to density differences produced by heating and salinity. It demonstrated how different equilibria could occur under the same imposed conditions.",
+      "limitations": "A two-box model cannot determine real-world thresholds. Ocean overturning also depends on winds, mixing, geography, and exchanges among many connected regions.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Henry Stommel",
+          "role": "Showed multiple equilibria in a simplified thermohaline convection model."
+        }
+      ],
+      "historicalSetting": "Idealized models allowed oceanographers to investigate climate–circulation feedbacks before comprehensive global ocean simulations were feasible.",
+      "sourceIds": [
+        "xl-thermohaline"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-thermohaline"
+        ],
+        "history": [
+          "xl-thermohaline"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Density-driven transport ↔ temperature and salinity contrasts",
+        "explanation": "Flow changes the contrasts that drive it, creating a feedback; the specific equilibria depend on the model’s assumptions.",
+        "sourceIds": [
+          "xl-thermohaline"
+        ]
+      }
+    },
+    {
+      "id": "enso",
+      "title": "Coupled ocean–atmosphere explanation of ENSO",
+      "aliases": [
+        "ENSO",
+        "Bjerknes feedback",
+        "El Niño–Southern Oscillation"
+      ],
+      "discipline": "earth",
+      "branchId": "earth-climate",
+      "tags": [
+        "Pacific",
+        "climate",
+        "feedback"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1969,
+        "label": "1969 CE",
+        "precision": "exact",
+        "note": "Date identifies the research milestone described here, not the first observation of the underlying phenomenon."
+      },
+      "summary": "El Niño and the Southern Oscillation form a coupled pattern of tropical Pacific ocean and atmospheric variability. Sea-surface temperatures, trade winds, and tropical convection influence one another.",
+      "problem": "Connect changes in Pacific ocean temperature with atmospheric pressure and wind anomalies.",
+      "development": "Jacob Bjerknes linked warm eastern Pacific conditions to changes in equatorial winds and the Walker circulation. This connected formerly separated oceanic and atmospheric observations in a feedback framework.",
+      "limitations": "ENSO is irregular, not a precise periodic clock. Seasonal effects, ocean adjustment, other climate variability, and background conditions complicate prediction.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Jacob Bjerknes",
+          "role": "Explained a coupled Pacific ocean–atmosphere feedback connecting El Niño and the Southern Oscillation."
+        }
+      ],
+      "historicalSetting": "Expanded twentieth-century observations made it possible to compare ocean temperatures with large-scale atmospheric circulation across the Pacific.",
+      "sourceIds": [
+        "xl-enso"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-enso"
+        ],
+        "history": [
+          "xl-enso"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Warmer eastern Pacific ↔ weaker trade winds",
+        "explanation": "Under suitable conditions, temperature changes weaken winds that normally maintain cool eastern waters, reinforcing the initial anomaly.",
+        "sourceIds": [
+          "xl-enso"
+        ]
+      }
+    },
+    {
+      "id": "ice-albedo-feedback",
+      "title": "Ice–albedo feedback in climate models",
+      "aliases": [],
+      "discipline": "earth",
+      "branchId": "earth-climate",
+      "tags": [
+        "ice",
+        "feedback",
+        "energy balance"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1969,
+        "label": "1969 CE",
+        "precision": "exact",
+        "note": "Dates Sellers’s model publication; recognition of reflective snow and ice and related modeling had earlier and parallel histories."
+      },
+      "summary": "Snow and ice reflect much incoming sunlight. When warming reduces their coverage, darker surfaces absorb more solar energy and can amplify the warming.",
+      "problem": "Understand how changes in reflective ice cover can strengthen climate changes and alter climate stability.",
+      "development": "William Sellers incorporated temperature-dependent reflectivity into a global energy-balance climate model. Such models showed how feedback between ice cover and absorbed sunlight could influence global temperature.",
+      "limitations": "Clouds, snow conditions, seasons, ocean heat transport, and geography affect the strength of the feedback. Simple energy-balance models do not resolve all of these processes.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "William Sellers",
+          "role": "Investigated ice-sensitive reflectivity in a global energy-balance model."
+        }
+      ],
+      "historicalSetting": "Simple computer-era climate models explored planetary energy balance while compressing the atmosphere and ocean into a small number of variables.",
+      "sourceIds": [
+        "xl-ice-feedback"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-ice-feedback"
+        ],
+        "history": [
+          "xl-ice-feedback"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "Absorbed solar energy ≈ (1 − α)S/4",
+        "explanation": "α is planetary albedo and S incoming solar flux at Earth’s orbit. The factor 1/4 converts disk interception to a spherical average.",
+        "sourceIds": [
+          "xl-ice-feedback"
+        ]
+      }
+    },
+    {
+      "id": "paleoclimate-proxies",
+      "title": "Oxygen-isotope records of past climate",
+      "aliases": [
+        "oxygen-isotope paleothermometry",
+        "marine isotope records"
+      ],
+      "discipline": "earth",
+      "branchId": "earth-climate",
+      "tags": [
+        "climate archives",
+        "isotopes"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1955,
+        "label": "1955 CE",
+        "precision": "exact",
+        "note": "Dates Emiliani’s Pleistocene Temperatures study; isotope thermometry and sampling methods had earlier foundations."
+      },
+      "summary": "The oxygen-isotope composition of preserved shells can provide evidence about past ocean conditions. Sediment cores turn such measurements into long climate records.",
+      "problem": "Reconstruct changes in ocean temperature and ice volume beyond the reach of instrumental records.",
+      "development": "Cesare Emiliani measured oxygen isotopes in marine microfossils to investigate Pleistocene temperature changes. Subsequent work clarified how global ice volume and local conditions also influence the signal.",
+      "limitations": "A proxy is an indirect measurement requiring calibration and dating. Oxygen isotopes reflect multiple processes, so a shell record is not a simple thermometer by itself.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Cesare Emiliani",
+          "role": "Used marine microfossil oxygen isotopes to reconstruct Pleistocene ocean changes."
+        }
+      ],
+      "historicalSetting": "Deep-sea cores and isotope measurement linked laboratory chemistry to the reconstruction of repeated ice-age climate changes.",
+      "sourceIds": [
+        "xl-proxies"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-proxies"
+        ],
+        "history": [
+          "xl-proxies"
+        ]
+      },
+      "representation": {
+        "kind": "definition",
+        "expression": "Proxy record = a preserved property interpreted through a calibrated relationship",
+        "explanation": "For shell oxygen isotopes, interpretation must account for seawater composition as well as temperature.",
+        "sourceIds": [
+          "xl-proxies"
+        ]
+      }
+    },
+    {
+      "id": "ocean-acidification",
+      "title": "Anthropogenic ocean acidification",
+      "aliases": [],
+      "discipline": "earth",
+      "branchId": "earth-water",
+      "tags": [
+        "ocean",
+        "carbon",
+        "pH"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 2003,
+        "label": "2003 CE",
+        "precision": "exact",
+        "note": "Dates a landmark modern projection; the underlying carbonate chemistry and earlier measurements predate 2003."
+      },
+      "summary": "When the ocean absorbs additional atmospheric carbon dioxide, seawater carbonate chemistry changes and pH decreases. The water can become less favorable for organisms that build calcium-carbonate structures.",
+      "problem": "Assess a chemical consequence of rising carbon dioxide that accompanies, but is distinct from, greenhouse warming.",
+      "development": "Ken Caldeira and Michael Wickett modeled the long-term ocean pH effects of anthropogenic carbon dioxide. Their study helped frame ocean acidification as a major consequence of continued emissions.",
+      "limitations": "Acidification means decreasing pH, not necessarily seawater becoming acidic below pH 7. Regional exposure, biological responses, and adaptation vary; the 2003 model did not settle every ecological outcome.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Ken Caldeira",
+          "role": "Modeled ocean carbonate chemistry under anthropogenic carbon dioxide emissions."
+        },
+        {
+          "name": "Michael Wickett",
+          "role": "Co-developed simulations of long-term ocean pH change."
+        }
+      ],
+      "historicalSetting": "Earth-system research increasingly examined how industrial carbon emissions altered ocean chemistry alongside the climate system.",
+      "sourceIds": [
+        "xl-acidification",
+        "xl-acidification-science"
+      ],
+      "claimSources": {
+        "summary": [
+          "xl-acidification",
+          "xl-acidification-science"
+        ],
+        "history": [
+          "xl-acidification"
+        ]
+      },
+      "representation": {
+        "kind": "formula",
+        "expression": "CO₂ + H₂O ⇌ H⁺ + HCO₃⁻",
+        "explanation": "This simplified net reaction shows how dissolved carbon dioxide can increase hydrogen-ion concentration; the full carbonate system includes additional equilibria.",
+        "sourceIds": [
+          "xl-acidification",
+          "xl-acidification-science"
+        ]
+      },
+      "relatedBranchIds": [
+        "earth-climate"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "experimental-method--photosynthesis",
+      "source": "experimental-method",
+      "target": "photosynthesis",
+      "type": "enables",
+      "explanation": "Conceptual connection: controlled comparisons of light and darkness made plant gas exchange experimentally testable. This does not assert direct transmission from Ibn al-Haytham.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-photosynthesis-history"
+      ]
+    },
+    {
+      "id": "biochemistry--cellular-respiration",
+      "source": "biochemistry",
+      "target": "cellular-respiration",
+      "type": "enables",
+      "explanation": "Conceptual connection: measuring enzyme-mediated reactions made it possible to assemble individual oxidation steps into a biochemical cycle.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-krebs"
+      ]
+    },
+    {
+      "id": "catalysis--cellular-respiration",
+      "source": "catalysis",
+      "target": "cellular-respiration",
+      "type": "enables",
+      "explanation": "Conceptual connection: the cycle depends on catalyzed reactions that regenerate intermediates; its discovery required specific biochemical experiments.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-krebs"
+      ]
+    },
+    {
+      "id": "experimental-method--osmosis",
+      "source": "experimental-method",
+      "target": "osmosis",
+      "type": "enables",
+      "explanation": "Conceptual connection: membrane experiments isolated the conditions of water movement. No direct transmission from the atlas’s medieval method node is asserted.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-osmosis-history"
+      ]
+    },
+    {
+      "id": "cell-theory--lipid-bilayer",
+      "source": "cell-theory",
+      "target": "lipid-bilayer",
+      "type": "influence",
+      "explanation": "Conceptual connection: treating cells as bounded biological units motivates the question of how their boundary is physically constructed.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-membranes"
+      ]
+    },
+    {
+      "id": "organic-chemistry--lipid-bilayer",
+      "source": "organic-chemistry",
+      "target": "lipid-bilayer",
+      "type": "enables",
+      "explanation": "Conceptual connection: extracting and characterizing cellular lipids enabled a molecular account of the cell boundary.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-membranes"
+      ]
+    },
+    {
+      "id": "lipid-bilayer--fluid-mosaic",
+      "source": "lipid-bilayer",
+      "target": "fluid-mosaic",
+      "type": "influence",
+      "explanation": "The fluid-mosaic model retained the lipid bilayer while placing proteins within a dynamic membrane structure.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xl-fluid-mosaic"
+      ]
+    },
+    {
+      "id": "chemical-thermodynamics--fluid-mosaic",
+      "source": "chemical-thermodynamics",
+      "target": "fluid-mosaic",
+      "type": "enables",
+      "explanation": "Conceptual connection: energetic constraints on hydrophobic and hydrophilic molecular regions help explain protein placement within the bilayer.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-fluid-mosaic"
+      ]
+    },
+    {
+      "id": "microscope--mitosis",
+      "source": "microscope",
+      "target": "mitosis",
+      "type": "enables",
+      "explanation": "Flemming’s stained-cell microscopy revealed the changing chromosome arrangements used to describe nuclear division.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xl-mitosis"
+      ]
+    },
+    {
+      "id": "cell-theory--mitosis",
+      "source": "cell-theory",
+      "target": "mitosis",
+      "type": "influence",
+      "explanation": "Conceptual connection: mitosis supplies a mechanism of nuclear continuity during the production of new cells.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-mitosis"
+      ]
+    },
+    {
+      "id": "mitosis--meiosis",
+      "source": "mitosis",
+      "target": "meiosis",
+      "type": "influence",
+      "explanation": "Conceptual connection: comparison with ordinary nuclear division clarifies the distinctive chromosome reduction and two divisions of meiosis.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-meiosis"
+      ]
+    },
+    {
+      "id": "chromosome-theory--meiosis",
+      "source": "chromosome-theory",
+      "target": "meiosis",
+      "type": "influence",
+      "explanation": "Conceptual connection: chromosome-based inheritance explains why reduction division is essential to maintaining chromosome number across sexual generations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-meiosis"
+      ]
+    },
+    {
+      "id": "evolution--spontaneous-mutation",
+      "source": "evolution",
+      "target": "spontaneous-mutation",
+      "type": "enables",
+      "explanation": "Conceptual connection: selection among pre-existing variants provides the evolutionary alternative tested by the fluctuation experiment.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-mutation"
+      ]
+    },
+    {
+      "id": "probability--spontaneous-mutation",
+      "source": "probability",
+      "target": "spontaneous-mutation",
+      "type": "foundation",
+      "explanation": "Conceptual connection: probabilistic predictions for culture-to-culture variation distinguish mutation before selection from induction by the selecting agent.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-mutation"
+      ]
+    },
+    {
+      "id": "dna-structure--semiconservative-replication",
+      "source": "dna-structure",
+      "target": "semiconservative-replication",
+      "type": "influence",
+      "explanation": "The strand structure of DNA suggested a copying mechanism that Meselson and Stahl tested with isotope-density measurements.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xl-replication"
+      ]
+    },
+    {
+      "id": "dna-as-genetic-material--semiconservative-replication",
+      "source": "dna-as-genetic-material",
+      "target": "semiconservative-replication",
+      "type": "influence",
+      "explanation": "Conceptual connection: identifying DNA as hereditary material made its copying mechanism a central question in inheritance.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-replication"
+      ]
+    },
+    {
+      "id": "chromosome-theory--genetic-recombination",
+      "source": "chromosome-theory",
+      "target": "genetic-recombination",
+      "type": "influence",
+      "explanation": "Creighton and McClintock tested whether inherited linkage changes corresponded to physical exchanges between marked chromosomes.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xl-recombination"
+      ]
+    },
+    {
+      "id": "mendelian-genetics--genetic-recombination",
+      "source": "mendelian-genetics",
+      "target": "genetic-recombination",
+      "type": "enables",
+      "explanation": "Conceptual connection: scoring inherited variants supplied the genetic outcomes to compare against visible chromosome exchanges.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-recombination"
+      ]
+    },
+    {
+      "id": "gene-regulation--epigenetic-regulation",
+      "source": "gene-regulation",
+      "target": "epigenetic-regulation",
+      "type": "influence",
+      "explanation": "Conceptual connection: stable gene control extends the question of regulation to how differentiated cells maintain activity patterns through division.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-epigenetics",
+        "xl-riggs"
+      ]
+    },
+    {
+      "id": "dna-structure--epigenetic-regulation",
+      "source": "dna-structure",
+      "target": "epigenetic-regulation",
+      "type": "enables",
+      "explanation": "Conceptual connection: methylation-based models distinguish chemical marking of DNA from alterations to its base sequence.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-epigenetics",
+        "xl-riggs"
+      ]
+    },
+    {
+      "id": "antimicrobial-resistance--horizontal-gene-transfer",
+      "source": "antimicrobial-resistance",
+      "target": "horizontal-gene-transfer",
+      "type": "influence",
+      "explanation": "Studies of transferable drug resistance connected bacterial resistance patterns with the movement of genetic determinants between strains.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xl-hgt"
+      ]
+    },
+    {
+      "id": "dna-as-genetic-material--horizontal-gene-transfer",
+      "source": "dna-as-genetic-material",
+      "target": "horizontal-gene-transfer",
+      "type": "enables",
+      "explanation": "Conceptual connection: genetic material can cross lineage boundaries as well as pass from parent to offspring.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-hgt"
+      ]
+    },
+    {
+      "id": "evolution--sexual-selection",
+      "source": "evolution",
+      "target": "sexual-selection",
+      "type": "influence",
+      "explanation": "Darwin developed selection through mating success as part of his wider account of evolutionary change.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xl-sexual-selection"
+      ]
+    },
+    {
+      "id": "population-genetics--kin-selection",
+      "source": "population-genetics",
+      "target": "kin-selection",
+      "type": "foundation",
+      "explanation": "Conceptual connection: tracking genetic transmission allows social effects on relatives to be incorporated into evolutionary fitness accounting.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-kin-selection"
+      ]
+    },
+    {
+      "id": "differential-equations--logistic-growth",
+      "source": "differential-equations",
+      "target": "logistic-growth",
+      "type": "foundation",
+      "explanation": "Conceptual connection: a differential equation expresses how population growth changes with population density and an imposed limiting level.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-logistic-history"
+      ]
+    },
+    {
+      "id": "differential-equations--predator-prey",
+      "source": "differential-equations",
+      "target": "predator-prey",
+      "type": "foundation",
+      "explanation": "Conceptual connection: coupled rates of change model how prey availability and predator abundance modify one another’s growth.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-predation"
+      ]
+    },
+    {
+      "id": "ecology--predator-prey",
+      "source": "ecology",
+      "target": "predator-prey",
+      "type": "influence",
+      "explanation": "Conceptual connection: ecological questions about interacting populations supplied a problem that coupled mathematical models could investigate.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-lotka-history"
+      ]
+    },
+    {
+      "id": "predator-prey--competitive-exclusion",
+      "source": "predator-prey",
+      "target": "competitive-exclusion",
+      "type": "influence",
+      "explanation": "Gause used the broader Lotka–Volterra modeling tradition to compare laboratory population interactions with mathematical predictions.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xl-gause-models"
+      ]
+    },
+    {
+      "id": "logistic-growth--competitive-exclusion",
+      "source": "logistic-growth",
+      "target": "competitive-exclusion",
+      "type": "foundation",
+      "explanation": "Conceptual connection: competition models extend density-dependent population growth by including the effects of another population.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-gause-models"
+      ]
+    },
+    {
+      "id": "ecology--island-biogeography",
+      "source": "ecology",
+      "target": "island-biogeography",
+      "type": "influence",
+      "explanation": "Conceptual connection: immigration and extinction processes turn geographic species counts into a dynamical ecological explanation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-islands"
+      ]
+    },
+    {
+      "id": "ecological-niche--island-biogeography",
+      "source": "ecological-niche",
+      "target": "island-biogeography",
+      "type": "influence",
+      "explanation": "Conceptual connection: species’ ecological requirements constrain which arrivals can persist, although the simple island model summarizes species collectively.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-islands"
+      ]
+    },
+    {
+      "id": "ecosystem--trophic-dynamics",
+      "source": "ecosystem",
+      "target": "trophic-dynamics",
+      "type": "influence",
+      "explanation": "Lindeman explicitly used the ecosystem as a unit for analyzing production and energy transfer.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xl-trophic"
+      ]
+    },
+    {
+      "id": "energy-conservation--trophic-dynamics",
+      "source": "energy-conservation",
+      "target": "trophic-dynamics",
+      "type": "enables",
+      "explanation": "Conceptual connection: energy accounting organizes transfer among trophic levels while distinguishing biological production from heat loss.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-trophic"
+      ]
+    },
+    {
+      "id": "photosynthesis--trophic-dynamics",
+      "source": "photosynthesis",
+      "target": "trophic-dynamics",
+      "type": "enables",
+      "explanation": "Conceptual connection: photosynthetic production supplies an entry point for energy into the lake food relationships Lindeman analyzed.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-trophic"
+      ]
+    },
+    {
+      "id": "competitive-exclusion--ecological-niche",
+      "source": "competitive-exclusion",
+      "target": "ecological-niche",
+      "type": "influence",
+      "explanation": "Hutchinson connected the niche’s multidimensional formulation with the ecological problem of competition and coexistence.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xl-niche"
+      ]
+    },
+    {
+      "id": "ecology--ecological-niche",
+      "source": "ecology",
+      "target": "ecological-niche",
+      "type": "influence",
+      "explanation": "Conceptual connection: ecological study of species requirements is formalized as the combinations of conditions permitting persistence.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-niche"
+      ]
+    },
+    {
+      "id": "comparative-anatomy--anatomical-pathology",
+      "source": "comparative-anatomy",
+      "target": "anatomical-pathology",
+      "type": "enables",
+      "explanation": "Conceptual connection: knowledge of organ structure makes it possible to correlate localized lesions with symptoms and clinical histories.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-pathology"
+      ]
+    },
+    {
+      "id": "humoral-theory--anatomical-pathology",
+      "source": "humoral-theory",
+      "target": "anatomical-pathology",
+      "type": "revision",
+      "explanation": "Conceptual connection: organ-specific lesions challenged generalized imbalance explanations without making every disease anatomically visible.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-pathology"
+      ]
+    },
+    {
+      "id": "miasma-theory--epidemiology",
+      "source": "miasma-theory",
+      "target": "epidemiology",
+      "type": "revision",
+      "explanation": "Snow’s cholera investigations challenged prevailing foul-air explanations by comparing evidence for waterborne transmission.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xl-epidemiology"
+      ]
+    },
+    {
+      "id": "statistics--epidemiology",
+      "source": "statistics",
+      "target": "epidemiology",
+      "type": "enables",
+      "explanation": "Conceptual connection: comparing disease frequencies in differently exposed populations supports causal investigation beyond isolated case descriptions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-epidemiology"
+      ]
+    },
+    {
+      "id": "germ-theory--antisepsis",
+      "source": "germ-theory",
+      "target": "antisepsis",
+      "type": "influence",
+      "explanation": "Lister applied the microbial account associated with Pasteur’s research to preventing wound infection during surgery.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xl-antisepsis"
+      ]
+    },
+    {
+      "id": "experimental-method--anesthesia",
+      "source": "experimental-method",
+      "target": "anesthesia",
+      "type": "enables",
+      "explanation": "Conceptual connection: trials of gases and vapors tested reversible suppression of pain and awareness; no direct medieval transmission is asserted.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-anesthesia"
+      ]
+    },
+    {
+      "id": "microorganisms--antibiotics",
+      "source": "microorganisms",
+      "target": "antibiotics",
+      "type": "enables",
+      "explanation": "Conceptual connection: cultivation and observation of microorganisms made antibacterial interactions between molds and bacteria visible.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-penicillin"
+      ]
+    },
+    {
+      "id": "germ-theory--antibiotics",
+      "source": "germ-theory",
+      "target": "antibiotics",
+      "type": "influence",
+      "explanation": "Conceptual connection: recognizing susceptible bacteria as causes of infection makes selective bacterial inhibition a therapeutic strategy.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-penicillin"
+      ]
+    },
+    {
+      "id": "antibiotics--antimicrobial-resistance",
+      "source": "antibiotics",
+      "target": "antimicrobial-resistance",
+      "type": "influence",
+      "explanation": "Abraham and Chain identified an enzyme that inactivated penicillin during early investigation of the antibiotic.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xl-resistance"
+      ]
+    },
+    {
+      "id": "evolution--antimicrobial-resistance",
+      "source": "evolution",
+      "target": "antimicrobial-resistance",
+      "type": "influence",
+      "explanation": "Conceptual connection: inherited resistance can be favored by drug exposure; resistance mechanisms did not begin with human antibiotic use.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-resistance-science"
+      ]
+    },
+    {
+      "id": "cell-theory--receptor-theory",
+      "source": "cell-theory",
+      "target": "receptor-theory",
+      "type": "influence",
+      "explanation": "Conceptual connection: specific cellular targets provide a physical level at which selective drug effects can be explained.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-receptors"
+      ]
+    },
+    {
+      "id": "receptor-theory--dose-response",
+      "source": "receptor-theory",
+      "target": "dose-response",
+      "type": "influence",
+      "explanation": "Conceptual connection: target binding helps interpret concentration–effect relationships, although a fitted Hill curve alone does not establish a receptor mechanism.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-dose-response"
+      ]
+    },
+    {
+      "id": "chemical-equilibrium--dose-response",
+      "source": "chemical-equilibrium",
+      "target": "dose-response",
+      "type": "foundation",
+      "explanation": "Conceptual connection: equilibrium binding provides a mathematical route to concentration-dependent occupancy; measured responses may require additional assumptions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-hill-history",
+        "xl-dose-response"
+      ]
+    },
+    {
+      "id": "blood-circulation--pharmacokinetics",
+      "source": "blood-circulation",
+      "target": "pharmacokinetics",
+      "type": "enables",
+      "explanation": "Conceptual connection: circulation transports substances among tissues, motivating compartments connected by rates of transfer.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-pharmacokinetics"
+      ]
+    },
+    {
+      "id": "differential-equations--pharmacokinetics",
+      "source": "differential-equations",
+      "target": "pharmacokinetics",
+      "type": "foundation",
+      "explanation": "Conceptual connection: rate equations quantify distribution and elimination across connected physiological compartments.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-pharmacokinetics"
+      ]
+    },
+    {
+      "id": "biochemistry--insulin-therapy",
+      "source": "biochemistry",
+      "target": "insulin-therapy",
+      "type": "enables",
+      "explanation": "Conceptual connection: preparing and purifying an active pancreatic substance connected metabolic experiments with hormone replacement.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-insulin"
+      ]
+    },
+    {
+      "id": "anatomical-pathology--insulin-therapy",
+      "source": "anatomical-pathology",
+      "target": "insulin-therapy",
+      "type": "influence",
+      "explanation": "Conceptual connection: connecting diabetes with pancreatic dysfunction supplied the organ-specific question addressed by pancreatic extracts.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-insulin"
+      ]
+    },
+    {
+      "id": "biochemistry--vitamin-deficiency",
+      "source": "biochemistry",
+      "target": "vitamin-deficiency",
+      "type": "enables",
+      "explanation": "Conceptual connection: identifying necessary dietary substances gave deficiency diseases a chemical explanation beyond calories alone.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-vitamins"
+      ]
+    },
+    {
+      "id": "blood-circulation--blood-groups",
+      "source": "blood-circulation",
+      "target": "blood-groups",
+      "type": "enables",
+      "explanation": "Conceptual connection: transfusion uses the circulation, while group-specific reactions explain why exchanging blood can be incompatible.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-blood-groups"
+      ]
+    },
+    {
+      "id": "adaptive-immunity--clonal-selection",
+      "source": "adaptive-immunity",
+      "target": "clonal-selection",
+      "type": "influence",
+      "explanation": "Conceptual connection: specificity and memory are explained through selection and expansion of cells bearing suitable receptors.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-clonal-selection"
+      ]
+    },
+    {
+      "id": "immune-tolerance--clonal-selection",
+      "source": "immune-tolerance",
+      "target": "clonal-selection",
+      "type": "influence",
+      "explanation": "Conceptual connection: selective unresponsiveness constrains theories of how antibody-producing cell populations recognize antigens.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-clonal-selection"
+      ]
+    },
+    {
+      "id": "adaptive-immunity--immune-tolerance",
+      "source": "adaptive-immunity",
+      "target": "immune-tolerance",
+      "type": "revision",
+      "explanation": "Conceptual connection: antigen exposure can produce specific unresponsiveness under defined conditions, qualifying the expectation that exposure always promotes a response.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-tolerance"
+      ]
+    },
+    {
+      "id": "clonal-selection--monoclonal-antibodies",
+      "source": "clonal-selection",
+      "target": "monoclonal-antibodies",
+      "type": "enables",
+      "explanation": "Conceptual connection: a selected antibody-producing cell lineage supplies the specificity retained by a hybridoma.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-antibodies"
+      ]
+    },
+    {
+      "id": "cell-theory--monoclonal-antibodies",
+      "source": "cell-theory",
+      "target": "monoclonal-antibodies",
+      "type": "enables",
+      "explanation": "Conceptual connection: cultured cells can preserve and propagate a useful biological property—in this case, antibody production.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-antibodies"
+      ]
+    },
+    {
+      "id": "epidemiology--sir-model",
+      "source": "epidemiology",
+      "target": "sir-model",
+      "type": "influence",
+      "explanation": "Conceptual connection: population-level transmission questions are expressed as changes among susceptible, infectious, and removed groups.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-sir"
+      ]
+    },
+    {
+      "id": "differential-equations--sir-model",
+      "source": "differential-equations",
+      "target": "sir-model",
+      "type": "foundation",
+      "explanation": "Conceptual connection: coupled rate equations connect infection and removal with depletion of susceptible individuals.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-sir"
+      ]
+    },
+    {
+      "id": "randomized-trials--evidence-based-medicine",
+      "source": "randomized-trials",
+      "target": "evidence-based-medicine",
+      "type": "enables",
+      "explanation": "Evidence-based practice appraises clinical trials when appropriate; different clinical questions can require other study designs.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xl-ebm-practice"
+      ]
+    },
+    {
+      "id": "epidemiology--evidence-based-medicine",
+      "source": "epidemiology",
+      "target": "evidence-based-medicine",
+      "type": "influence",
+      "explanation": "Conceptual connection: comparing populations and assessing bias underpin critical appraisal of clinical evidence.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-ebm",
+        "xl-ebm-practice"
+      ]
+    },
+    {
+      "id": "evolution--cancer-clonal-evolution",
+      "source": "evolution",
+      "target": "cancer-clonal-evolution",
+      "type": "influence",
+      "explanation": "Nowell applied heritable variation and selection to competing tumor-cell populations.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xl-cancer-evolution"
+      ]
+    },
+    {
+      "id": "spontaneous-mutation--cancer-clonal-evolution",
+      "source": "spontaneous-mutation",
+      "target": "cancer-clonal-evolution",
+      "type": "enables",
+      "explanation": "Conceptual connection: variants can exist before treatment selects among them, clarifying one route to changing tumor behavior.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-cancer-evolution"
+      ]
+    },
+    {
+      "id": "monoclonal-antibodies--immune-checkpoints",
+      "source": "monoclonal-antibodies",
+      "target": "immune-checkpoints",
+      "type": "enables",
+      "explanation": "The 1996 CTLA-4 experiments used antibody blockade to test whether releasing an inhibitory signal enhanced antitumor responses.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xl-checkpoints"
+      ]
+    },
+    {
+      "id": "adaptive-immunity--immune-checkpoints",
+      "source": "adaptive-immunity",
+      "target": "immune-checkpoints",
+      "type": "influence",
+      "explanation": "Conceptual connection: checkpoint therapies modify inhibitory regulation of adaptive immune responses to tumors.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-checkpoint-history"
+      ]
+    },
+    {
+      "id": "stratigraphy--rock-cycle",
+      "source": "stratigraphy",
+      "target": "rock-cycle",
+      "type": "enables",
+      "explanation": "Conceptual connection: layered rocks preserve evidence of deposition and later transformation, allowing reconstruction of crustal recycling.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-rock-cycle"
+      ]
+    },
+    {
+      "id": "geological-time--rock-cycle",
+      "source": "geological-time",
+      "target": "rock-cycle",
+      "type": "enables",
+      "explanation": "Conceptual connection: repeated erosion, burial, and uplift require an Earth history extending far beyond human records.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-rock-cycle"
+      ]
+    },
+    {
+      "id": "seismology--elastic-rebound",
+      "source": "seismology",
+      "target": "elastic-rebound",
+      "type": "influence",
+      "explanation": "Conceptual connection: earthquake observations and measured deformation supply the event-scale evidence that elastic rebound explains.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-rebound"
+      ]
+    },
+    {
+      "id": "classical-mechanics--elastic-rebound",
+      "source": "classical-mechanics",
+      "target": "elastic-rebound",
+      "type": "enables",
+      "explanation": "Conceptual connection: stored elastic strain and its release provide a mechanical account of fault displacement and seismic energy.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-rebound"
+      ]
+    },
+    {
+      "id": "continental-drift--mantle-convection",
+      "source": "continental-drift",
+      "target": "mantle-convection",
+      "type": "influence",
+      "explanation": "Holmes proposed subcrustal convection as a mechanism capable of helping explain continental movement.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xl-mantle"
+      ]
+    },
+    {
+      "id": "radioactivity--mantle-convection",
+      "source": "radioactivity",
+      "target": "mantle-convection",
+      "type": "enables",
+      "explanation": "Conceptual connection: radioactive heat supplied an internal-energy source relevant to Holmes’s convection argument.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-mantle"
+      ]
+    },
+    {
+      "id": "electromagnetic-induction--magnetic-dynamo",
+      "source": "electromagnetic-induction",
+      "target": "magnetic-dynamo",
+      "type": "enables",
+      "explanation": "Conceptual connection: motion-induced electric currents and magnetic feedback supply the physical principle of a self-sustaining fluid dynamo.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-dynamo",
+        "xl-geodynamo"
+      ]
+    },
+    {
+      "id": "water-cycle--groundwater-flow",
+      "source": "water-cycle",
+      "target": "groundwater-flow",
+      "type": "enables",
+      "explanation": "Conceptual connection: groundwater storage and movement become quantitative parts of hydrology through a flow–gradient relationship.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-darcy"
+      ]
+    },
+    {
+      "id": "hydrostatics--groundwater-flow",
+      "source": "hydrostatics",
+      "target": "groundwater-flow",
+      "type": "enables",
+      "explanation": "Conceptual connection: pressure contributes to hydraulic head, whose gradient drives flow through porous material.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-darcy"
+      ]
+    },
+    {
+      "id": "classical-mechanics--ekman-transport",
+      "source": "classical-mechanics",
+      "target": "ekman-transport",
+      "type": "foundation",
+      "explanation": "Conceptual connection: rotating-frame mechanics and friction permit a mathematical balance for wind-driven ocean motion.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-ekman"
+      ]
+    },
+    {
+      "id": "ocean-circulation--ekman-transport",
+      "source": "ocean-circulation",
+      "target": "ekman-transport",
+      "type": "influence",
+      "explanation": "Conceptual connection: observed current directions become a specific explanation of wind forcing in a rotating ocean.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-ekman"
+      ]
+    },
+    {
+      "id": "ekman-transport--ocean-gyres",
+      "source": "ekman-transport",
+      "target": "ocean-gyres",
+      "type": "influence",
+      "explanation": "Conceptual connection: wind-driven rotating-ocean theory is extended from local vertical transport to circulation constrained by a basin.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-gyres"
+      ]
+    },
+    {
+      "id": "differential-equations--ocean-gyres",
+      "source": "differential-equations",
+      "target": "ocean-gyres",
+      "type": "foundation",
+      "explanation": "Conceptual connection: spatial flow equations represent how wind, friction, and latitude-dependent rotation create an asymmetric gyre.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-gyres"
+      ]
+    },
+    {
+      "id": "ocean-circulation--thermohaline-circulation",
+      "source": "ocean-circulation",
+      "target": "thermohaline-circulation",
+      "type": "influence",
+      "explanation": "Conceptual connection: circulation driven by density contrasts becomes a feedback problem when transport itself changes temperature and salinity.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-thermohaline"
+      ]
+    },
+    {
+      "id": "differential-equations--thermohaline-circulation",
+      "source": "differential-equations",
+      "target": "thermohaline-circulation",
+      "type": "foundation",
+      "explanation": "Conceptual connection: coupled reservoir balances allow multiple circulation equilibria to be derived under explicit idealizations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-thermohaline"
+      ]
+    },
+    {
+      "id": "ocean-circulation--enso",
+      "source": "ocean-circulation",
+      "target": "enso",
+      "type": "influence",
+      "explanation": "Conceptual connection: equatorial ocean-temperature changes and currents participate in the coupled Pacific feedback described by Bjerknes.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-enso"
+      ]
+    },
+    {
+      "id": "climate-modeling--enso",
+      "source": "climate-modeling",
+      "target": "enso",
+      "type": "enables",
+      "explanation": "Conceptual connection: representing interactions between climate components makes ocean–atmosphere feedback explicit; this is not a claimed transmission from one model.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-enso"
+      ]
+    },
+    {
+      "id": "ice-age-theory--ice-albedo-feedback",
+      "source": "ice-age-theory",
+      "target": "ice-albedo-feedback",
+      "type": "influence",
+      "explanation": "Conceptual connection: changing ice coverage raises the energy-balance question of how reflected sunlight amplifies climatic shifts.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-ice-feedback"
+      ]
+    },
+    {
+      "id": "climate-modeling--ice-albedo-feedback",
+      "source": "climate-modeling",
+      "target": "ice-albedo-feedback",
+      "type": "enables",
+      "explanation": "Conceptual connection: energy-balance modeling allows temperature-dependent reflectivity to be included as a climate feedback.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-ice-feedback"
+      ]
+    },
+    {
+      "id": "ice-age-theory--paleoclimate-proxies",
+      "source": "ice-age-theory",
+      "target": "paleoclimate-proxies",
+      "type": "influence",
+      "explanation": "Conceptual connection: marine isotope records provide an independent archive for investigating repeated glacial and interglacial conditions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-proxies"
+      ]
+    },
+    {
+      "id": "stratigraphy--paleoclimate-proxies",
+      "source": "stratigraphy",
+      "target": "paleoclimate-proxies",
+      "type": "enables",
+      "explanation": "Conceptual connection: sedimentary sequence places isotope measurements into an ordered record of environmental change.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-proxies"
+      ]
+    },
+    {
+      "id": "acid-base-theories--ocean-acidification",
+      "source": "acid-base-theories",
+      "target": "ocean-acidification",
+      "type": "enables",
+      "explanation": "Conceptual connection: hydrogen-ion concentration and acid–base equilibria explain why added carbon dioxide changes seawater pH.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-acidification-science"
+      ]
+    },
+    {
+      "id": "biogeochemical-cycles--ocean-acidification",
+      "source": "biogeochemical-cycles",
+      "target": "ocean-acidification",
+      "type": "influence",
+      "explanation": "Conceptual connection: uptake of anthropogenic carbon links the atmospheric carbon cycle to changes in marine carbonate chemistry.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-acidification",
+        "xl-acidification-science"
+      ]
+    },
+    {
+      "id": "earth-system-science--ocean-acidification",
+      "source": "earth-system-science",
+      "target": "ocean-acidification",
+      "type": "enables",
+      "explanation": "Conceptual connection: coupled carbon-cycle calculations extend emissions scenarios into long-term projections of ocean chemistry.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xl-acidification"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "xl-photosynthesis-history",
+      "title": "Experiments upon vegetables (1779)",
+      "url": "https://library.si.edu/digital-library/book/experimentsuponv00inge",
+      "publisher": "Smithsonian Libraries"
+    },
+    {
+      "id": "xl-photosynthesis",
+      "title": "Biology 2e: Overview of Photosynthesis",
+      "url": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "xl-krebs",
+      "title": "The citric acid cycle: Hans Krebs’s Nobel lecture",
+      "url": "https://www.nobelprize.org/uploads/2018/06/krebs-lecture.pdf",
+      "publisher": "Nobel Prize"
+    },
+    {
+      "id": "xl-osmosis-history",
+      "title": "Discovering the movement of life: osmosis and microstructure in 1826",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7960449/",
+      "publisher": "Medical History / PubMed"
+    },
+    {
+      "id": "xl-osmosis",
+      "title": "Biology 2e: Passive Transport",
+      "url": "https://openstax.org/books/biology-2e/pages/5-2-passive-transport",
+      "publisher": "OpenStax, Rice University"
+    },
+    {
+      "id": "xl-membranes",
+      "title": "Model Answers to Lipid Membrane Questions",
+      "url": "https://cshperspectives.cshlp.org/content/3/9/a004622.full",
+      "publisher": "Cold Spring Harbor Perspectives in Biology"
+    },
+    {
+      "id": "xl-mitosis",
+      "title": "1879: Mitosis observed",
+      "url": "https://www.genome.gov/25520234/online-education-kit-1879-mitosis-observed",
+      "publisher": "National Human Genome Research Institute"
+    },
+    {
+      "id": "xl-meiosis",
+      "title": "Meiosis through three centuries",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11180163/",
+      "publisher": "Chromosoma / PubMed Central"
+    },
+    {
+      "id": "xl-mutation",
+      "title": "Mutations of Bacteria from Virus Sensitivity to Virus Resistance (1943)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17247100/",
+      "publisher": "Genetics / PubMed"
+    },
+    {
+      "id": "xl-replication",
+      "title": "The replication of DNA in Escherichia coli (1958)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16590258/",
+      "publisher": "Proceedings of the National Academy of Sciences / PubMed"
+    },
+    {
+      "id": "xl-recombination",
+      "title": "A Correlation of Cytological and Genetical Crossing-Over in Zea Mays (1931)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16587654/",
+      "publisher": "Proceedings of the National Academy of Sciences / PubMed"
+    },
+    {
+      "id": "xl-epigenetics",
+      "title": "DNA modification mechanisms and gene activity during development (1975)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1111098/",
+      "publisher": "Science / PubMed"
+    },
+    {
+      "id": "xl-riggs",
+      "title": "X inactivation, differentiation, and DNA methylation (1975)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1093816/",
+      "publisher": "Cytogenetics and Cell Genetics / PubMed"
+    },
+    {
+      "id": "xl-hgt",
+      "title": "Infectious Drug Resistance in Enteric Bacteria",
+      "url": "https://www.nejm.org/doi/abs/10.1056/NEJM196610202751607",
+      "publisher": "New England Journal of Medicine"
+    },
+    {
+      "id": "xl-sexual-selection",
+      "title": "The Descent of Man, and Selection in Relation to Sex (1871)",
+      "url": "https://darwin-online.org.uk/content/contentblock?basepage=1&itemID=F937.1&viewtype=text",
+      "publisher": "Darwin Online"
+    },
+    {
+      "id": "xl-kin-selection",
+      "title": "The genetical evolution of social behaviour I (1964)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/5875341/",
+      "publisher": "Journal of Theoretical Biology / PubMed"
+    },
+    {
+      "id": "xl-logistic",
+      "title": "Differential equations exercises: logistic population growth",
+      "url": "https://www.homepages.ucl.ac.uk/~ucahoan/ode/homework_all.pdf",
+      "publisher": "University College London"
+    },
+    {
+      "id": "xl-predation",
+      "title": "Contribution to the Mathematical Theory of Capture (1932)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1076182/pdf/pnas01730-0040.pdf",
+      "publisher": "Proceedings of the National Academy of Sciences"
+    },
+    {
+      "id": "xl-lotka-history",
+      "title": "Alfred J. Lotka and the origins of theoretical population ecology",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4534218/",
+      "publisher": "Proceedings of the National Academy of Sciences"
+    },
+    {
+      "id": "xl-competition",
+      "title": "Gause’s The Struggle for Existence and the Integration of Natural History and Mathematical Models",
+      "url": "https://www.journals.uchicago.edu/doi/10.1086/734003",
+      "publisher": "The American Naturalist"
+    },
+    {
+      "id": "xl-islands",
+      "title": "The Theory of Island Biogeography (1967)",
+      "url": "https://www.jstor.org/stable/j.ctt19cc1t2",
+      "publisher": "Princeton University Press"
+    },
+    {
+      "id": "xl-trophic",
+      "title": "The Trophic-Dynamic Aspect of Ecology (1942)",
+      "url": "https://esajournals.onlinelibrary.wiley.com/doi/10.2307/1930126",
+      "publisher": "Ecological Society of America"
+    },
+    {
+      "id": "xl-niche",
+      "title": "Concluding Remarks (1957)",
+      "url": "https://www.wsl.ch/lud/biodiversity_events/papers/Hutchinson-1957bc.pdf",
+      "publisher": "Cold Spring Harbor Symposia / Swiss Federal Research Institute WSL"
+    },
+    {
+      "id": "xl-pathology",
+      "title": "Pathology and the case-history in Morgagni’s On the Seats and Causes of Diseases (1761)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11618738/",
+      "publisher": "Journal of the History of Medicine and Allied Sciences / PubMed"
+    },
+    {
+      "id": "xl-miasma",
+      "title": "Deadly stinks and life-saving aromas in plague-stricken London",
+      "url": "https://wellcomecollection.org/stories/deadly-stinks-and-life-saving-aromas-in-plague-stricken-london",
+      "publisher": "Wellcome Collection"
+    },
+    {
+      "id": "xl-epidemiology",
+      "title": "150th Anniversary of John Snow and the Pump Handle",
+      "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5334a1.htm",
+      "publisher": "Centers for Disease Control and Prevention"
+    },
+    {
+      "id": "xl-antisepsis",
+      "title": "On the Antiseptic Principle in the Practice of Surgery (1867)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20744875/",
+      "publisher": "British Medical Journal / PubMed"
+    },
+    {
+      "id": "xl-anesthesia",
+      "title": "Morton Family Collection: historical account",
+      "url": "https://sirismm.si.edu/EADpdfs/NMAH.AC.0118.pdf",
+      "publisher": "Smithsonian National Museum of American History"
+    },
+    {
+      "id": "xl-penicillin",
+      "title": "On the antibacterial action of cultures of a Penicillium (1929)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11545337/",
+      "publisher": "British Journal of Experimental Pathology / PubMed"
+    },
+    {
+      "id": "xl-resistance",
+      "title": "An Enzyme from Bacteria able to Destroy Penicillin (1940)",
+      "url": "https://www.nature.com/articles/146837a0",
+      "publisher": "Nature"
+    },
+    {
+      "id": "xl-receptors",
+      "title": "Receptive Substances: Langley and his Path to a Receptor Theory of Drug Action",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC546337/",
+      "publisher": "Medical History / PubMed Central"
+    },
+    {
+      "id": "xl-hill-history",
+      "title": "The possible effects of aggregation on haemoglobin dissociation curves (1910)",
+      "url": "https://stuff.mit.edu/afs/athena/course/8/8.592/OldFiles/spring11/lectures/lec25/Hill_equation_J%20Physiol-1910.pdf",
+      "publisher": "Journal of Physiology / Massachusetts Institute of Technology"
+    },
+    {
+      "id": "xl-dose-response",
+      "title": "Pharmacodynamic principles and the time course of immediate drug effects",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7033401/",
+      "publisher": "Translational and Clinical Pharmacology"
+    },
+    {
+      "id": "xl-pharmacokinetics",
+      "title": "Torsten Teorell and the origins of pharmacokinetics",
+      "url": "https://ujms.net/index.php/ujms/article/download/6690/12485",
+      "publisher": "Upsala Journal of Medical Sciences"
+    },
+    {
+      "id": "xl-insulin",
+      "title": "The Discovery That Changed Medicine",
+      "url": "https://magazine.utoronto.ca/campus/history/history-of-insulin-banting-best-macleod-collip/",
+      "publisher": "University of Toronto"
+    },
+    {
+      "id": "xl-vitamins",
+      "title": "The etiology of the deficiency diseases (1912), historical reprint",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1095967/",
+      "publisher": "Nutrition Reviews / PubMed"
+    },
+    {
+      "id": "xl-blood-groups",
+      "title": "Karl Landsteiner: Facts",
+      "url": "https://www.nobelprize.org/prizes/medicine/1930/landsteiner/facts/",
+      "publisher": "Nobel Prize"
+    },
+    {
+      "id": "xl-clonal-selection",
+      "title": "Sir Frank Macfarlane Burnet: clonal selection theory",
+      "url": "https://www.nature.com/articles/ni1007-1009",
+      "publisher": "Nature Immunology"
+    },
+    {
+      "id": "xl-tolerance",
+      "title": "Actively acquired tolerance of foreign cells (1953)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/13099277/",
+      "publisher": "Nature / PubMed"
+    },
+    {
+      "id": "xl-antibodies",
+      "title": "Continuous cultures of fused cells secreting antibody of predefined specificity (1975)",
+      "url": "https://www.nature.com/articles/256495a0",
+      "publisher": "Nature"
+    },
+    {
+      "id": "xl-sir",
+      "title": "Contributions to the mathematical theory of epidemics I (1927)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2059741/",
+      "publisher": "Bulletin of Mathematical Biology, historical reprint / PubMed"
+    },
+    {
+      "id": "xl-ebm",
+      "title": "Evidence-Based Medicine: A New Approach to Teaching the Practice of Medicine (1992)",
+      "url": "https://jamanetwork.com/journals/jama/article-abstract/400956",
+      "publisher": "JAMA"
+    },
+    {
+      "id": "xl-cancer-evolution",
+      "title": "The clonal evolution of tumor cell populations (1976)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/959840/",
+      "publisher": "Science / PubMed"
+    },
+    {
+      "id": "xl-checkpoints",
+      "title": "Enhancement of antitumor immunity by CTLA-4 blockade (1996)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8596936/",
+      "publisher": "Science / PubMed"
+    },
+    {
+      "id": "xl-checkpoint-history",
+      "title": "Discovery of cancer therapy by inhibition of negative immune regulation",
+      "url": "https://www.nobelprize.org/prizes/medicine/2018/advanced-information/",
+      "publisher": "Nobel Prize"
+    },
+    {
+      "id": "xl-rock-cycle",
+      "title": "James Hutton and the development of modern geology",
+      "url": "https://www.amnh.org/learn-teach/curriculum-collections/earth-inside-and-out/james-hutton",
+      "publisher": "American Museum of Natural History"
+    },
+    {
+      "id": "xl-rebound",
+      "title": "Reid’s Elastic Rebound Theory",
+      "url": "https://earthquake.usgs.gov/earthquakes/events/1906calif/18april/reid.php",
+      "publisher": "US Geological Survey"
+    },
+    {
+      "id": "xl-mantle",
+      "title": "Arthur Holmes and mantle convection",
+      "url": "https://geologyglasgow.org.uk/arthur-holmes/",
+      "publisher": "Geological Society of Glasgow"
+    },
+    {
+      "id": "xl-dynamo",
+      "title": "How could a Rotating Body such as the Sun become a Magnet? (1919)",
+      "url": "https://courses.seas.harvard.edu/climate/eli/Courses/EPS281r/Sources/Earth-dynamo/3-Larmor-1919-original-text.pdf",
+      "publisher": "British Association / Harvard University"
+    },
+    {
+      "id": "xl-darcy",
+      "title": "National Engineering Handbook: Groundwater Investigations",
+      "url": "https://directives.nrcs.usda.gov/sites/default/files2/1720462262/Chapter%2031%20-%20Groundwater%20Investigations.pdf",
+      "publisher": "US Department of Agriculture, NRCS"
+    },
+    {
+      "id": "xl-ekman",
+      "title": "On the Influence of the Earth’s Rotation on Ocean-Currents (1905)",
+      "url": "https://empslocal.ex.ac.uk/people/staff/gv219/classics.d/Ekman05.pdf",
+      "publisher": "Arkiv för Matematik, Astronomi och Fysik / University of Exeter"
+    },
+    {
+      "id": "xl-gyres",
+      "title": "The westward intensification of wind-driven ocean currents (1948)",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/TR029i002p00202",
+      "publisher": "American Geophysical Union"
+    },
+    {
+      "id": "xl-thermohaline",
+      "title": "Thermohaline Convection with Two Stable Regimes of Flow (1961)",
+      "url": "https://doi.org/10.3402/TELLUSA.V13I2.9491",
+      "publisher": "Tellus"
+    },
+    {
+      "id": "xl-enso",
+      "title": "Atmospheric Teleconnections from the Equatorial Pacific (1969)",
+      "url": "https://courses.seas.harvard.edu/climate/eli/Courses/EPS281r/Sources/ENSO/Bjerknes-1969.pdf",
+      "publisher": "Monthly Weather Review / Harvard University"
+    },
+    {
+      "id": "xl-ice-feedback",
+      "title": "A Global Climatic Model Based on the Energy Balance of the Earth-Atmosphere System (1969)",
+      "url": "https://journals.ametsoc.org/doi/pdf/10.1175/1520-0450%281969%29008%3C0392%3AAGCMBO%3E2.0.CO%3B2",
+      "publisher": "American Meteorological Society"
+    },
+    {
+      "id": "xl-proxies",
+      "title": "Pleistocene Temperatures (1955)",
+      "url": "https://www.journals.uchicago.edu/doi/10.1086/626295",
+      "publisher": "The Journal of Geology"
+    },
+    {
+      "id": "xl-acidification",
+      "title": "Anthropogenic carbon and ocean pH (2003)",
+      "url": "https://www.nature.com/articles/425365a",
+      "publisher": "Nature"
+    },
+    {
+      "id": "xl-fluid-mosaic",
+      "title": "The fluid mosaic model of the structure of cell membranes (1972)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/4333397/",
+      "publisher": "Science / PubMed"
+    },
+    {
+      "id": "xl-ebm-practice",
+      "title": "Evidence based medicine: what it is and what it isn’t (1996)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2349778/",
+      "publisher": "BMJ / PubMed Central"
+    },
+    {
+      "id": "xl-dynamo-history",
+      "title": "Walter M. Elsasser: Biographical Memoir",
+      "url": "https://www.nasonline.org/wp-content/uploads/2024/10/Elsasser_Walter.pdf",
+      "publisher": "National Academy of Sciences"
+    },
+    {
+      "id": "xl-geodynamo",
+      "title": "How does the Earth’s core generate a magnetic field?",
+      "url": "https://www.usgs.gov/faqs/how-does-earths-core-generate-a-magnetic-field",
+      "publisher": "U.S. Geological Survey"
+    },
+    {
+      "id": "xl-acidification-science",
+      "title": "What is Ocean Acidification?",
+      "url": "https://oceanservice.noaa.gov/facts/acidification.html",
+      "publisher": "NOAA National Ocean Service"
+    },
+    {
+      "id": "xl-logistic-history",
+      "title": "Verhulst et l’équation logistique (1838)",
+      "url": "https://ummisco.pages.ird.fr/france/bacaer/Verhulst.html",
+      "publisher": "Nicolas Bacaër / Institut de recherche pour le développement"
+    },
+    {
+      "id": "xl-gause-models",
+      "title": "gauseR: Simple methods for fitting Lotka–Volterra models describing Gause’s Struggle for Existence",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7713957/",
+      "publisher": "Ecology and Evolution / PubMed Central"
+    },
+    {
+      "id": "xl-resistance-science",
+      "title": "About Antimicrobial Resistance",
+      "url": "https://www.cdc.gov/antimicrobial-resistance/about/",
+      "publisher": "Centers for Disease Control and Prevention"
+    },
+    {
+      "id": "xl-penicillin-development",
+      "title": "Sir Howard Florey: Biographical",
+      "url": "https://www.nobelprize.org/prizes/medicine/1945/florey/biographical/",
+      "publisher": "Nobel Prize Outreach"
+    }
+  ]
+}

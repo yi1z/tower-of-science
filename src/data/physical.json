@@ -45,7 +45,8 @@
         "sourceIds": [
           "ph-buoyancy"
         ]
-      }
+      },
+      "branchId": "physics-mechanics"
     },
     {
       "id": "atomism",
@@ -87,7 +88,8 @@
         "history": [
           "ph-atoms-early"
         ]
-      }
+      },
+      "branchId": "physics-quantum"
     },
     {
       "id": "geometric-optics",
@@ -126,7 +128,8 @@
         "history": [
           "ph-optics"
         ]
-      }
+      },
+      "branchId": "physics-fields"
     },
     {
       "id": "inertia",
@@ -177,7 +180,8 @@
           "ph-inertia",
           "ph-galileo-history"
         ]
-      }
+      },
+      "branchId": "physics-mechanics"
     },
     {
       "id": "galilean-relativity",
@@ -224,7 +228,8 @@
           "ph-relativity",
           "ph-galileo-history"
         ]
-      }
+      },
+      "branchId": "physics-mechanics"
     },
     {
       "id": "classical-mechanics",
@@ -278,7 +283,8 @@
           "ph-newton",
           "ph-gravity"
         ]
-      }
+      },
+      "branchId": "physics-mechanics"
     },
     {
       "id": "universal-gravitation",
@@ -326,7 +332,8 @@
         "sourceIds": [
           "ph-gravity"
         ]
-      }
+      },
+      "branchId": "physics-mechanics"
     },
     {
       "id": "momentum",
@@ -374,7 +381,8 @@
         "sourceIds": [
           "ph-momentum"
         ]
-      }
+      },
+      "branchId": "physics-mechanics"
     },
     {
       "id": "least-action",
@@ -429,7 +437,8 @@
         "sourceIds": [
           "ph-action"
         ]
-      }
+      },
+      "branchId": "physics-mechanics"
     },
     {
       "id": "electric-charge",
@@ -475,7 +484,8 @@
         "sourceIds": [
           "rep-coulomb"
         ]
-      }
+      },
+      "branchId": "physics-fields"
     },
     {
       "id": "wave-optics",
@@ -528,7 +538,8 @@
         "sourceIds": [
           "ph-interference"
         ]
-      }
+      },
+      "branchId": "physics-fields"
     },
     {
       "id": "thermodynamics",
@@ -572,7 +583,8 @@
         "history": [
           "ph-carnot"
         ]
-      }
+      },
+      "branchId": "physics-thermal"
     },
     {
       "id": "electromagnetic-induction",
@@ -621,7 +633,8 @@
         "sourceIds": [
           "rep-faraday"
         ]
-      }
+      },
+      "branchId": "physics-fields"
     },
     {
       "id": "energy-conservation",
@@ -673,7 +686,8 @@
         "sourceIds": [
           "ph-energy"
         ]
-      }
+      },
+      "branchId": "physics-thermal"
     },
     {
       "id": "kinetic-theory",
@@ -713,7 +727,8 @@
         "history": [
           "ph-gas-model"
         ]
-      }
+      },
+      "branchId": "physics-thermal"
     },
     {
       "id": "entropy",
@@ -766,7 +781,8 @@
           "ph-statistical",
           "ph-clausius-history"
         ]
-      }
+      },
+      "branchId": "physics-thermal"
     },
     {
       "id": "electromagnetism",
@@ -822,7 +838,8 @@
         "sourceIds": [
           "rep-maxwell"
         ]
-      }
+      },
+      "branchId": "physics-fields"
     },
     {
       "id": "statistical-mechanics",
@@ -875,7 +892,8 @@
           "ph-gibbs-history",
           "ph-brownian"
         ]
-      }
+      },
+      "branchId": "physics-thermal"
     },
     {
       "id": "electron",
@@ -917,7 +935,8 @@
         "history": [
           "ph-atomic-evolution"
         ]
-      }
+      },
+      "branchId": "physics-quantum"
     },
     {
       "id": "radioactivity",
@@ -969,7 +988,8 @@
         "sourceIds": [
           "ph-chemistry-history"
         ]
-      }
+      },
+      "branchId": "physics-quantum"
     },
     {
       "id": "blackbody-quanta",
@@ -1015,7 +1035,8 @@
         "sourceIds": [
           "ph-quanta"
         ]
-      }
+      },
+      "branchId": "physics-quantum"
     },
     {
       "id": "special-relativity",
@@ -1067,7 +1088,8 @@
         "sourceIds": [
           "ph-relativity"
         ]
-      }
+      },
+      "branchId": "physics-fields"
     },
     {
       "id": "photoelectric-effect",
@@ -1117,7 +1139,8 @@
         "sourceIds": [
           "ph-photoelectric"
         ]
-      }
+      },
+      "branchId": "physics-quantum"
     },
     {
       "id": "brownian-motion",
@@ -1164,7 +1187,8 @@
           "ph-brownian"
         ]
       },
-      "example": "The average squared displacement grows with elapsed time even though the average directional displacement can be zero."
+      "example": "The average squared displacement grows with elapsed time even though the average directional displacement can be zero.",
+      "branchId": "physics-thermal"
     },
     {
       "id": "nuclear-atom",
@@ -1206,7 +1230,8 @@
         "history": [
           "ph-atomic-evolution"
         ]
-      }
+      },
+      "branchId": "physics-quantum"
     },
     {
       "id": "general-relativity",
@@ -1262,7 +1287,8 @@
         "sourceIds": [
           "rep-einstein"
         ]
-      }
+      },
+      "branchId": "physics-fields"
     },
     {
       "id": "quantum-mechanics",
@@ -1318,7 +1344,8 @@
         "sourceIds": [
           "rep-schrodinger"
         ]
-      }
+      },
+      "branchId": "physics-quantum"
     },
     {
       "id": "uncertainty-principle",
@@ -1366,7 +1393,8 @@
         "sourceIds": [
           "ph-uncertainty"
         ]
-      }
+      },
+      "branchId": "physics-quantum"
     },
     {
       "id": "quantum-field-theory",
@@ -1419,7 +1447,8 @@
           "ph-dirac-original",
           "ph-qed-history"
         ]
-      }
+      },
+      "branchId": "physics-quantum"
     },
     {
       "id": "antimatter",
@@ -1459,7 +1488,8 @@
         "history": [
           "ph-antimatter"
         ]
-      }
+      },
+      "branchId": "physics-quantum"
     },
     {
       "id": "quantum-electrodynamics",
@@ -1505,7 +1535,8 @@
         "history": [
           "ph-qed-history"
         ]
-      }
+      },
+      "branchId": "physics-quantum"
     },
     {
       "id": "superconductivity",
@@ -1546,7 +1577,8 @@
           "ph-superconductivity"
         ]
       },
-      "example": "A persistent current can flow in a superconducting loop without a continuing applied voltage."
+      "example": "A persistent current can flow in a superconducting loop without a continuing applied voltage.",
+      "branchId": "physics-condensed"
     },
     {
       "id": "nuclear-fission",
@@ -1586,7 +1618,8 @@
         "history": [
           "ph-fission"
         ]
-      }
+      },
+      "branchId": "physics-quantum"
     },
     {
       "id": "semiconductor-band-theory",
@@ -1628,7 +1661,8 @@
         "history": [
           "ph-bands"
         ]
-      }
+      },
+      "branchId": "physics-condensed"
     },
     {
       "id": "gauge-theory",
@@ -1666,7 +1700,8 @@
         "history": [
           "ph-gauge"
         ]
-      }
+      },
+      "branchId": "physics-quantum"
     },
     {
       "id": "quark-model",
@@ -1708,7 +1743,8 @@
         "history": [
           "ph-quarks"
         ]
-      }
+      },
+      "branchId": "physics-quantum"
     },
     {
       "id": "standard-model",
@@ -1760,7 +1796,8 @@
         "sourceIds": [
           "ph-standard"
         ]
-      }
+      },
+      "branchId": "physics-quantum"
     },
     {
       "id": "renormalization-group",
@@ -1803,7 +1840,8 @@
           "ph-rg"
         ]
       },
-      "example": "Fluids and magnets can share critical exponents despite having very different microscopic constituents."
+      "example": "Fluids and magnets can share critical exponents despite having very different microscopic constituents.",
+      "branchId": "physics-quantum"
     },
     {
       "id": "string-theory",
@@ -1843,7 +1881,8 @@
         "history": [
           "ph-string"
         ]
-      }
+      },
+      "branchId": "physics-quantum"
     },
     {
       "id": "quantum-entanglement",
@@ -1891,7 +1930,8 @@
         "history": [
           "ph-entanglement"
         ]
-      }
+      },
+      "branchId": "physics-quantum"
     },
     {
       "id": "metallurgy",
@@ -1928,7 +1968,8 @@
           "ph-metallurgy"
         ]
       },
-      "example": "Changing processing conditions or alloy composition changes hardness and workability."
+      "example": "Changing processing conditions or alloy composition changes hardness and workability.",
+      "branchId": "chemistry-reactions"
     },
     {
       "id": "four-elements",
@@ -1968,7 +2009,8 @@
         "history": [
           "ph-empedocles"
         ]
-      }
+      },
+      "branchId": "chemistry-structure"
     },
     {
       "id": "alchemy",
@@ -2011,7 +2053,8 @@
           "ph-alchemy",
           "ph-arabic-alchemy"
         ]
-      }
+      },
+      "branchId": "chemistry-reactions"
     },
     {
       "id": "phlogiston",
@@ -2051,7 +2094,8 @@
         "history": [
           "ph-lavoisier"
         ]
-      }
+      },
+      "branchId": "chemistry-reactions"
     },
     {
       "id": "conservation-of-mass",
@@ -2104,7 +2148,8 @@
           "ph-periodic-history",
           "ph-lavoisier"
         ]
-      }
+      },
+      "branchId": "chemistry-reactions"
     },
     {
       "id": "combustion-oxygen",
@@ -2146,7 +2191,8 @@
         "history": [
           "ph-oxygen-history"
         ]
-      }
+      },
+      "branchId": "chemistry-reactions"
     },
     {
       "id": "atomic-theory",
@@ -2191,7 +2237,8 @@
           "ph-dalton",
           "ph-atoms-early"
         ]
-      }
+      },
+      "branchId": "chemistry-structure"
     },
     {
       "id": "gas-laws",
@@ -2239,7 +2286,8 @@
         "sourceIds": [
           "ph-gas-laws"
         ]
-      }
+      },
+      "branchId": "chemistry-reactions"
     },
     {
       "id": "avogadro-hypothesis",
@@ -2291,7 +2339,8 @@
           "ph-avogadro",
           "ph-gas-laws"
         ]
-      }
+      },
+      "branchId": "chemistry-structure"
     },
     {
       "id": "electrochemistry",
@@ -2338,7 +2387,8 @@
           "ph-cells",
           "ph-periodic"
         ]
-      }
+      },
+      "branchId": "chemistry-reactions"
     },
     {
       "id": "organic-chemistry",
@@ -2380,7 +2430,8 @@
         "history": [
           "ph-urea"
         ]
-      }
+      },
+      "branchId": "chemistry-organic"
     },
     {
       "id": "chemical-structure",
@@ -2425,7 +2476,8 @@
           "ph-structure"
         ]
       },
-      "example": "Ethanol and dimethyl ether share a formula but connect their atoms differently."
+      "example": "Ethanol and dimethyl ether share a formula but connect their atoms differently.",
+      "branchId": "chemistry-structure"
     },
     {
       "id": "periodic-table",
@@ -2473,7 +2525,8 @@
         "history": [
           "ph-periodic"
         ]
-      }
+      },
+      "branchId": "chemistry-structure"
     },
     {
       "id": "chemical-kinetics",
@@ -2524,7 +2577,8 @@
         "sourceIds": [
           "rep-rates"
         ]
-      }
+      },
+      "branchId": "chemistry-reactions"
     },
     {
       "id": "chemical-equilibrium",
@@ -2575,7 +2629,8 @@
         "sourceIds": [
           "rep-equilibrium"
         ]
-      }
+      },
+      "branchId": "chemistry-reactions"
     },
     {
       "id": "chemical-thermodynamics",
@@ -2623,7 +2678,8 @@
           "ph-free-energy",
           "ph-gibbs-history"
         ]
-      }
+      },
+      "branchId": "chemistry-reactions"
     },
     {
       "id": "stereochemistry",
@@ -2666,7 +2722,8 @@
           "ph-structure"
         ]
       },
-      "example": "Mirror-image molecules can interact differently with a chiral enzyme."
+      "example": "Mirror-image molecules can interact differently with a chiral enzyme.",
+      "branchId": "chemistry-structure"
     },
     {
       "id": "chemical-bonding",
@@ -2711,7 +2768,8 @@
           "ph-lewis-history"
         ]
       },
-      "example": "A line between two atoms in a Lewis structure represents a shared electron pair."
+      "example": "A line between two atoms in a Lewis structure represents a shared electron pair.",
+      "branchId": "chemistry-structure"
     },
     {
       "id": "acid-base-theories",
@@ -2768,7 +2826,8 @@
           "ph-lewis",
           "ph-lewis-history"
         ]
-      }
+      },
+      "branchId": "chemistry-reactions"
     },
     {
       "id": "quantum-chemistry",
@@ -2813,7 +2872,8 @@
           "ph-valence",
           "ph-schrodinger"
         ]
-      }
+      },
+      "branchId": "chemistry-structure"
     },
     {
       "id": "molecular-orbital-theory",
@@ -2852,7 +2912,8 @@
           "ph-orbitals",
           "ph-chemistry-history"
         ]
-      }
+      },
+      "branchId": "chemistry-structure"
     },
     {
       "id": "polymer-science",
@@ -2894,7 +2955,8 @@
         "history": [
           "ph-polymer"
         ]
-      }
+      },
+      "branchId": "chemistry-organic"
     },
     {
       "id": "chromatography",
@@ -2936,7 +2998,8 @@
           "ph-chromatography-history",
           "ph-chemistry-history"
         ]
-      }
+      },
+      "branchId": "chemistry-organic"
     },
     {
       "id": "biochemistry",
@@ -2979,7 +3042,8 @@
         "history": [
           "ph-buchner"
         ]
-      }
+      },
+      "branchId": "chemistry-biochemistry"
     },
     {
       "id": "catalysis",
@@ -3023,7 +3087,8 @@
           "ph-fulhame"
         ]
       },
-      "example": "Enzymes accelerate selected biochemical reactions while returning to a state able to act again."
+      "example": "Enzymes accelerate selected biochemical reactions while returning to a state able to act again.",
+      "branchId": "chemistry-reactions"
     }
   ],
   "relationships": [

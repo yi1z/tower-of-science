@@ -4,9 +4,11 @@ The source of truth is the JSON in `src/data/`. Edit it directly. There is no ru
 
 ## Add a concept
 
-Choose the most appropriate collection: `foundations.json`, `physical.json`, `life-earth.json`, or `space-computing.json`. Add a unique kebab-case ID that will remain stable if the title changes. The complete interface is `Concept` in `src/types.ts`.
+Choose the most appropriate collection: `foundations.json`, `physical.json`, `life-earth.json`, `space-computing.json`, or one of the three `expansion-*.json` collections. Add a unique kebab-case ID that will remain stable if the title changes. The complete interface is `Concept` in `src/types.ts`.
 
-Required fields are title, aliases, primary discipline, tags, kind, date, summary, problem, development, limitations, standing, contributors, source IDs, and separate citation lists for the summary and history. Contributors must include a role. Credit an unnamed community when evidence does not identify individuals; do not invent a first discoverer.
+Required fields are title, aliases, primary discipline, primary `branchId`, tags, kind, date, summary, problem, development, limitations, standing, contributors, source IDs, and separate citation lists for the summary and history. Contributors must include a role. Credit an unnamed community when evidence does not identify individuals; do not invent a first discoverer.
+
+Choose an explicit primary branch from `branches.json`; its parent must match the primary discipline. Optional `relatedBranchIds` express interdisciplinary associations without duplicating the node. The taxonomy is retrospective navigation, not a claim about historical disciplinary boundaries. Add a `historicalSetting` when a separate description of place, institution, or intellectual context helps; avoid repeating it verbatim in `development`.
 
 Use a negative integer for BCE and a positive integer for CE; there is no year zero. The year is a sorting anchor, while the visible label can represent an approximate period. Explain any approximate date, disputed priority, publication delay, or distinction between first proposal and later evidence in `date.note`. Do not equate the first surviving record with the first human use.
 
@@ -46,3 +48,15 @@ Avoid self-links, duplicate pairs, cycles, or backward dates. When a later mathe
 Run `npm run validate`, `npm test`, and `npm run build`. Inspect the changed concept and its traced ancestry in the local application. Check references manually, review historical and conceptual claims separately, and inspect layout and readability at desktop and mobile sizes. Update the editorial review date in `src/data/atlas.ts` when revising the collection.
 
 The content validator checks shape, required references, IDs, chronology, cycles, and tours. It cannot establish scholarly accuracy, link availability over time, or completeness of attribution; those require source review.
+
+## Branches, periods, and rendering
+
+`branches.json` has its own version, a stable section order, and ordered branch IDs. Keep IDs stable when renaming labels. The expanded release covers all 12 sections and 43 subbranches. `validateReleaseCoverage` checks 430–470 concepts and nonempty branches separately from the reusable content contract; revise those release targets intentionally for a later edition.
+
+Dates remain exact sorting anchors. The layout uses prehistory before 5000 BCE, 500-year floors to 500 BCE, 100-year floors to 1500, 25-year floors to 1850, 10-year floors to 1900, and five-year floors afterward. Era boundaries split periods. Empty floors are omitted. The precise chronological index is unaffected by these visual bins. Similar height means approximate contemporaneity, not simultaneous discovery.
+
+An era reserves each active subbranch's width according to its busiest floor. Branches stay in catalog order; sections are centered as a whole and may grow or shrink between eras. Filtering must use the original precomputed layout, never rerun it on a subset. Test containment, centering, wide fixtures, and node/edge collisions after geometry changes.
+
+Bundles are derived UI objects grouped by section/subbranch pair, source/target era, relationship type, and evidence classification. They have no place in the authoritative relationship JSON and must never enter ancestry or pillar calculations. Filter membership and count distinct edge IDs. Keep their representative route fixed when filters change. A bundle path stands for a group, not an extra historical claim; expansion shows every actual route.
+
+Legacy hashes remain valid. New optional keys are `branches` (comma-separated branch IDs) and `connections` (`bundled`, `focus`, `all`). An absent or invalid connection mode defaults to `bundled`.

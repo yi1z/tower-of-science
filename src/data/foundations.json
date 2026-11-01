@@ -43,7 +43,8 @@
         "sourceIds": [
           "f-numerical-cognition"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "tally-marks",
@@ -81,7 +82,8 @@
           "f-ishango",
           "f-world"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "measurement",
@@ -120,7 +122,8 @@
           "f-metrology-history"
         ]
       },
-      "example": "A length of five cubits means five repetitions of a reference length."
+      "example": "A length of five cubits means five repetitions of a reference length.",
+      "branchId": "methods-instruments"
     },
     {
       "id": "arithmetic",
@@ -165,7 +168,8 @@
         "sourceIds": [
           "f-arithmetic-history"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "egyptian-numerals",
@@ -201,7 +205,8 @@
         "history": [
           "f-egypt-num"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "fractions",
@@ -246,7 +251,8 @@
         "sourceIds": [
           "f-fractions"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "geometry",
@@ -291,7 +297,8 @@
         "sourceIds": [
           "f-egypt"
         ]
-      }
+      },
+      "branchId": "math-geometry"
     },
     {
       "id": "positional-notation",
@@ -339,7 +346,8 @@
         "sourceIds": [
           "f-babylon"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "quadratic-equations",
@@ -383,7 +391,8 @@
         "sourceIds": [
           "rep-quadratic"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "deductive-proof",
@@ -423,7 +432,8 @@
         "history": [
           "f-euclid"
         ]
-      }
+      },
+      "branchId": "math-logic"
     },
     {
       "id": "irrational-numbers",
@@ -468,7 +478,8 @@
         "sourceIds": [
           "f-irrational"
         ]
-      }
+      },
+      "branchId": "math-geometry"
     },
     {
       "id": "chinese-rods",
@@ -504,7 +515,8 @@
         "history": [
           "f-chinese"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "zero-placeholder",
@@ -549,7 +561,8 @@
         "sourceIds": [
           "f-zero"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "formal-logic",
@@ -588,7 +601,8 @@
         "history": [
           "f-logic"
         ]
-      }
+      },
+      "branchId": "math-logic"
     },
     {
       "id": "euclidean-geometry",
@@ -624,7 +638,8 @@
         "history": [
           "f-euclid"
         ]
-      }
+      },
+      "branchId": "math-geometry"
     },
     {
       "id": "prime-numbers",
@@ -668,7 +683,8 @@
         "sourceIds": [
           "f-prime"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "negative-numbers",
@@ -716,7 +732,8 @@
         "sourceIds": [
           "f-nine"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "trigonometry",
@@ -768,7 +785,8 @@
         "sourceIds": [
           "f-trig"
         ]
-      }
+      },
+      "branchId": "math-geometry"
     },
     {
       "id": "maya-numerals",
@@ -807,7 +825,8 @@
         "history": [
           "f-maya"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "decimal-numerals",
@@ -847,7 +866,8 @@
         "history": [
           "f-india"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "zero-number",
@@ -895,7 +915,8 @@
         "sourceIds": [
           "f-brahmagupta"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "algebra",
@@ -939,7 +960,8 @@
         "sourceIds": [
           "f-khwarizmi"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "algorithms",
@@ -975,7 +997,8 @@
         "history": [
           "f-khwarizmi"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "complex-numbers",
@@ -1023,7 +1046,8 @@
         "sourceIds": [
           "f-bombelli"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "logarithms",
@@ -1071,7 +1095,8 @@
         "sourceIds": [
           "f-napier"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "analytic-geometry",
@@ -1120,7 +1145,8 @@
         "sourceIds": [
           "f-descartes"
         ]
-      }
+      },
+      "branchId": "math-geometry"
     },
     {
       "id": "probability",
@@ -1169,7 +1195,8 @@
         "sourceIds": [
           "f-pascal"
         ]
-      }
+      },
+      "branchId": "math-probability"
     },
     {
       "id": "optimization",
@@ -1213,7 +1240,8 @@
         "sourceIds": [
           "f-fermat"
         ]
-      }
+      },
+      "branchId": "math-analysis"
     },
     {
       "id": "calculus",
@@ -1264,7 +1292,8 @@
         "sourceIds": [
           "f-calculus"
         ]
-      }
+      },
+      "branchId": "math-analysis"
     },
     {
       "id": "differential-equations",
@@ -1312,7 +1341,8 @@
         "sourceIds": [
           "f-bernoulli"
         ]
-      }
+      },
+      "branchId": "math-analysis"
     },
     {
       "id": "binary-numbers",
@@ -1357,7 +1387,8 @@
         "sourceIds": [
           "f-leibniz"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "graph-theory",
@@ -1405,7 +1436,8 @@
           "f-euler",
           "f-euler-index"
         ]
-      }
+      },
+      "branchId": "math-logic"
     },
     {
       "id": "statistics",
@@ -1457,7 +1489,8 @@
           "f-stats",
           "f-achenwall"
         ]
-      }
+      },
+      "branchId": "math-probability"
     },
     {
       "id": "bayes-theorem",
@@ -1512,7 +1545,8 @@
         "sourceIds": [
           "f-bayes"
         ]
-      }
+      },
+      "branchId": "math-probability"
     },
     {
       "id": "fourier-analysis",
@@ -1549,7 +1583,8 @@
           "f-fourier"
         ]
       },
-      "example": "A musical note contains a fundamental frequency and harmonics; Fourier methods separate these components."
+      "example": "A musical note contains a fundamental frequency and harmonics; Fourier methods separate these components.",
+      "branchId": "math-analysis"
     },
     {
       "id": "differential-geometry",
@@ -1586,7 +1621,8 @@
           "f-gauss"
         ]
       },
-      "example": "A sphere’s curvature can be detected by measuring sufficiently large triangles on its surface."
+      "example": "A sphere’s curvature can be detected by measuring sufficiently large triangles on its surface.",
+      "branchId": "math-geometry"
     },
     {
       "id": "non-euclidean-geometry",
@@ -1626,7 +1662,8 @@
         "history": [
           "f-non-euclid"
         ]
-      }
+      },
+      "branchId": "math-geometry"
     },
     {
       "id": "group-theory",
@@ -1675,7 +1712,8 @@
         "sourceIds": [
           "f-group"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "vectors",
@@ -1723,7 +1761,8 @@
         "sourceIds": [
           "rep-vectors"
         ]
-      }
+      },
+      "branchId": "math-geometry"
     },
     {
       "id": "boolean-algebra",
@@ -1768,7 +1807,8 @@
         "sourceIds": [
           "f-boole"
         ]
-      }
+      },
+      "branchId": "math-logic"
     },
     {
       "id": "linear-algebra",
@@ -1817,7 +1857,8 @@
         "sourceIds": [
           "f-matrix"
         ]
-      }
+      },
+      "branchId": "math-number"
     },
     {
       "id": "real-numbers",
@@ -1865,7 +1906,8 @@
         "sourceIds": [
           "f-real"
         ]
-      }
+      },
+      "branchId": "math-analysis"
     },
     {
       "id": "set-theory",
@@ -1910,7 +1952,8 @@
         "sourceIds": [
           "f-set"
         ]
-      }
+      },
+      "branchId": "math-logic"
     },
     {
       "id": "mathematical-logic",
@@ -1958,7 +2001,8 @@
         "sourceIds": [
           "f-frege"
         ]
-      }
+      },
+      "branchId": "math-logic"
     },
     {
       "id": "topology",
@@ -2003,7 +2047,8 @@
         "sourceIds": [
           "f-topology"
         ]
-      }
+      },
+      "branchId": "math-geometry"
     },
     {
       "id": "tensor-calculus",
@@ -2043,7 +2088,8 @@
         "history": [
           "f-ricci"
         ]
-      }
+      },
+      "branchId": "math-geometry"
     },
     {
       "id": "measure-theory",
@@ -2083,7 +2129,8 @@
         "history": [
           "f-lebesgue"
         ]
-      }
+      },
+      "branchId": "math-analysis"
     },
     {
       "id": "incompleteness",
@@ -2122,7 +2169,8 @@
         "history": [
           "f-godel"
         ]
-      }
+      },
+      "branchId": "math-logic"
     },
     {
       "id": "category-theory",
@@ -2170,7 +2218,8 @@
         "sourceIds": [
           "f-eilenberg"
         ]
-      }
+      },
+      "branchId": "math-logic"
     },
     {
       "id": "chaos-theory",
@@ -2207,7 +2256,8 @@
           "f-lorenz"
         ]
       },
-      "example": "Two nearly identical initial states can evolve toward substantially different trajectories."
+      "example": "Two nearly identical initial states can evolve toward substantially different trajectories.",
+      "branchId": "math-analysis"
     },
     {
       "id": "fractals",
@@ -2244,7 +2294,8 @@
           "f-fractals"
         ]
       },
-      "example": "A coastline’s measured length changes as the measuring scale becomes finer."
+      "example": "A coastline’s measured length changes as the measuring scale becomes finer.",
+      "branchId": "math-geometry"
     },
     {
       "id": "homotopy-type-theory",
@@ -2287,7 +2338,8 @@
         "history": [
           "f-hott"
         ]
-      }
+      },
+      "branchId": "math-logic"
     },
     {
       "id": "experimental-method",
@@ -2327,7 +2379,8 @@
           "f-haytham",
           "f-haytham-method"
         ]
-      }
+      },
+      "branchId": "methods-inference"
     },
     {
       "id": "microscope",
@@ -2367,7 +2420,8 @@
         "history": [
           "f-microscope"
         ]
-      }
+      },
+      "branchId": "methods-instruments"
     },
     {
       "id": "telescope",
@@ -2407,7 +2461,8 @@
         "history": [
           "f-telescope"
         ]
-      }
+      },
+      "branchId": "methods-instruments"
     },
     {
       "id": "controlled-trials",
@@ -2443,7 +2498,8 @@
         "history": [
           "f-lind"
         ]
-      }
+      },
+      "branchId": "methods-inference"
     },
     {
       "id": "spectroscopy",
@@ -2483,7 +2539,8 @@
         "history": [
           "f-fraunhofer"
         ]
-      }
+      },
+      "branchId": "methods-instruments"
     },
     {
       "id": "peer-review",
@@ -2519,7 +2576,8 @@
         "history": [
           "f-peer"
         ]
-      }
+      },
+      "branchId": "methods-inference"
     },
     {
       "id": "falsifiability",
@@ -2555,7 +2613,8 @@
         "history": [
           "f-popper"
         ]
-      }
+      },
+      "branchId": "methods-inference"
     },
     {
       "id": "randomized-trials",
@@ -2595,7 +2654,8 @@
         "history": [
           "f-rct"
         ]
-      }
+      },
+      "branchId": "methods-inference"
     }
   ],
   "relationships": [

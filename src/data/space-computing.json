@@ -39,7 +39,8 @@
         "history": [
           "sc-ancient"
         ]
-      }
+      },
+      "branchId": "astronomy-observation"
     },
     {
       "id": "geocentrism",
@@ -84,7 +85,8 @@
         "history": [
           "sc-ancient"
         ]
-      }
+      },
+      "branchId": "astronomy-observation"
     },
     {
       "id": "heliocentrism",
@@ -125,7 +127,8 @@
         "history": [
           "sc-copernicus"
         ]
-      }
+      },
+      "branchId": "astronomy-observation"
     },
     {
       "id": "kepler-laws",
@@ -177,7 +180,8 @@
         "sourceIds": [
           "sc-kepler"
         ]
-      }
+      },
+      "branchId": "astronomy-observation"
     },
     {
       "id": "stellar-parallax",
@@ -229,7 +233,8 @@
         "sourceIds": [
           "sc-parallax"
         ]
-      }
+      },
+      "branchId": "astronomy-observation"
     },
     {
       "id": "stellar-classification",
@@ -274,7 +279,8 @@
         "history": [
           "sc-spectra"
         ]
-      }
+      },
+      "branchId": "astronomy-stars"
     },
     {
       "id": "period-luminosity",
@@ -315,7 +321,8 @@
         "history": [
           "sc-cepheid"
         ]
-      }
+      },
+      "branchId": "astronomy-observation"
     },
     {
       "id": "hertzsprung-russell",
@@ -360,7 +367,8 @@
         "history": [
           "sc-hr"
         ]
-      }
+      },
+      "branchId": "astronomy-stars"
     },
     {
       "id": "cosmic-expansion",
@@ -416,7 +424,8 @@
         "sourceIds": [
           "sc-expansion"
         ]
-      }
+      },
+      "branchId": "astronomy-cosmology"
     },
     {
       "id": "big-bang",
@@ -460,7 +469,8 @@
         "history": [
           "sc-bigbang"
         ]
-      }
+      },
+      "branchId": "astronomy-cosmology"
     },
     {
       "id": "stellar-fusion",
@@ -505,7 +515,8 @@
         "history": [
           "sc-fusion"
         ]
-      }
+      },
+      "branchId": "astronomy-stars"
     },
     {
       "id": "stellar-nucleosynthesis",
@@ -548,7 +559,8 @@
         "history": [
           "sc-b2fh"
         ]
-      }
+      },
+      "branchId": "astronomy-stars"
     },
     {
       "id": "white-dwarfs",
@@ -593,7 +605,8 @@
         "history": [
           "sc-dwarfs"
         ]
-      }
+      },
+      "branchId": "astronomy-stars"
     },
     {
       "id": "neutron-stars",
@@ -639,7 +652,8 @@
           "sc-neutron",
           "sc-supernova1934"
         ]
-      }
+      },
+      "branchId": "astronomy-stars"
     },
     {
       "id": "black-holes",
@@ -683,7 +697,8 @@
         "history": [
           "sc-blackholes"
         ]
-      }
+      },
+      "branchId": "astronomy-stars"
     },
     {
       "id": "cosmic-microwave-background",
@@ -728,7 +743,8 @@
         "history": [
           "sc-cmb"
         ]
-      }
+      },
+      "branchId": "astronomy-cosmology"
     },
     {
       "id": "dark-matter",
@@ -772,7 +788,8 @@
         "history": [
           "sc-darkmatter"
         ]
-      }
+      },
+      "branchId": "astronomy-cosmology"
     },
     {
       "id": "inflation",
@@ -816,7 +833,8 @@
         "history": [
           "sc-inflation"
         ]
-      }
+      },
+      "branchId": "astronomy-cosmology"
     },
     {
       "id": "dark-energy",
@@ -860,7 +878,8 @@
         "history": [
           "sc-darkenergy"
         ]
-      }
+      },
+      "branchId": "astronomy-cosmology"
     },
     {
       "id": "exoplanets",
@@ -904,7 +923,8 @@
         "history": [
           "sc-exoplanets"
         ]
-      }
+      },
+      "branchId": "astronomy-observation"
     },
     {
       "id": "gravitational-lensing",
@@ -949,7 +969,8 @@
         "history": [
           "sc-lensing"
         ]
-      }
+      },
+      "branchId": "astronomy-observation"
     },
     {
       "id": "gravitational-wave-astronomy",
@@ -990,7 +1011,8 @@
         "history": [
           "sc-waves"
         ]
-      }
+      },
+      "branchId": "astronomy-observation"
     },
     {
       "id": "radio-astronomy",
@@ -1034,7 +1056,8 @@
         "history": [
           "sc-radio"
         ]
-      }
+      },
+      "branchId": "astronomy-observation"
     },
     {
       "id": "large-scale-structure",
@@ -1076,7 +1099,8 @@
         "history": [
           "sc-slice"
         ]
-      }
+      },
+      "branchId": "astronomy-cosmology"
     },
     {
       "id": "lcdm",
@@ -1117,7 +1141,8 @@
         "history": [
           "sc-wmap"
         ]
-      }
+      },
+      "branchId": "astronomy-cosmology"
     },
     {
       "id": "abacus",
@@ -1159,7 +1184,8 @@
         "history": [
           "sc-abacus"
         ]
-      }
+      },
+      "branchId": "computing-systems"
     },
     {
       "id": "mechanical-calculator",
@@ -1204,7 +1230,8 @@
         "history": [
           "sc-abacus"
         ]
-      }
+      },
+      "branchId": "computing-systems"
     },
     {
       "id": "analytical-engine",
@@ -1249,7 +1276,8 @@
         "history": [
           "sc-babbage"
         ]
-      }
+      },
+      "branchId": "computing-systems"
     },
     {
       "id": "turing-machine",
@@ -1297,7 +1325,8 @@
         "sourceIds": [
           "sc-turing"
         ]
-      }
+      },
+      "branchId": "computing-algorithms"
     },
     {
       "id": "lambda-calculus",
@@ -1347,7 +1376,8 @@
         "sourceIds": [
           "sc-lambda"
         ]
-      }
+      },
+      "branchId": "computing-algorithms"
     },
     {
       "id": "halting-problem",
@@ -1400,7 +1430,8 @@
         "sourceIds": [
           "sc-turing"
         ]
-      }
+      },
+      "branchId": "computing-algorithms"
     },
     {
       "id": "neural-networks",
@@ -1441,7 +1472,8 @@
         "history": [
           "sc-neurons"
         ]
-      }
+      },
+      "branchId": "computing-learning"
     },
     {
       "id": "stored-program",
@@ -1489,7 +1521,8 @@
         "history": [
           "sc-computers"
         ]
-      }
+      },
+      "branchId": "computing-systems"
     },
     {
       "id": "information-theory",
@@ -1539,7 +1572,8 @@
         "sourceIds": [
           "sc-shannon"
         ]
-      }
+      },
+      "branchId": "computing-information"
     },
     {
       "id": "cybernetics",
@@ -1583,7 +1617,8 @@
         "history": [
           "sc-cybernetics"
         ]
-      }
+      },
+      "branchId": "computing-systems"
     },
     {
       "id": "error-correction",
@@ -1624,7 +1659,8 @@
         "history": [
           "sc-hamming"
         ]
-      }
+      },
+      "branchId": "computing-information"
     },
     {
       "id": "artificial-intelligence",
@@ -1664,7 +1700,8 @@
         "history": [
           "sc-dartmouth"
         ]
-      }
+      },
+      "branchId": "computing-learning"
     },
     {
       "id": "machine-learning",
@@ -1705,7 +1742,8 @@
         "history": [
           "sc-samuel"
         ]
-      }
+      },
+      "branchId": "computing-learning"
     },
     {
       "id": "computational-complexity",
@@ -1753,7 +1791,8 @@
         "sourceIds": [
           "sc-complexity"
         ]
-      }
+      },
+      "branchId": "computing-algorithms"
     },
     {
       "id": "np-completeness",
@@ -1802,7 +1841,8 @@
         "history": [
           "sc-cook"
         ]
-      }
+      },
+      "branchId": "computing-algorithms"
     },
     {
       "id": "public-key-cryptography",
@@ -1843,7 +1883,8 @@
         "history": [
           "sc-cryptography"
         ]
-      }
+      },
+      "branchId": "computing-information"
     },
     {
       "id": "distributed-consensus",
@@ -1884,7 +1925,8 @@
         "history": [
           "sc-consensus"
         ]
-      }
+      },
+      "branchId": "computing-systems"
     },
     {
       "id": "quantum-computing",
@@ -1937,7 +1979,8 @@
         "sourceIds": [
           "sc-quantum-compute"
         ]
-      }
+      },
+      "branchId": "computing-systems"
     },
     {
       "id": "quantum-information",
@@ -1978,7 +2021,8 @@
         "history": [
           "sc-quantum-info"
         ]
-      }
+      },
+      "branchId": "computing-information"
     },
     {
       "id": "backpropagation",
@@ -2026,7 +2070,8 @@
         "sourceIds": [
           "sc-backprop"
         ]
-      }
+      },
+      "branchId": "computing-learning"
     },
     {
       "id": "reinforcement-learning",
@@ -2072,7 +2117,8 @@
         "history": [
           "sc-rl-history"
         ]
-      }
+      },
+      "branchId": "computing-learning"
     },
     {
       "id": "bayesian-networks",
@@ -2121,7 +2167,8 @@
         "sourceIds": [
           "sc-bayesnets"
         ]
-      }
+      },
+      "branchId": "computing-learning"
     },
     {
       "id": "causal-inference",
@@ -2170,7 +2217,8 @@
         "sourceIds": [
           "sc-causality"
         ]
-      }
+      },
+      "branchId": "computing-learning"
     },
     {
       "id": "deep-learning",
@@ -2211,7 +2259,8 @@
         "history": [
           "sc-deep"
         ]
-      }
+      },
+      "branchId": "computing-learning"
     },
     {
       "id": "transformers",
@@ -2260,7 +2309,8 @@
         "sourceIds": [
           "sc-attention"
         ]
-      }
+      },
+      "branchId": "computing-learning"
     },
     {
       "id": "diffusion-models",
@@ -2300,7 +2350,8 @@
         "history": [
           "sc-diffusion"
         ]
-      }
+      },
+      "branchId": "computing-learning"
     },
     {
       "id": "algorithmic-information",
@@ -2341,7 +2392,8 @@
         "history": [
           "sc-algorithmic"
         ]
-      }
+      },
+      "branchId": "computing-algorithms"
     },
     {
       "id": "formal-verification",
@@ -2386,7 +2438,8 @@
         "history": [
           "sc-hoare"
         ]
-      }
+      },
+      "branchId": "computing-algorithms"
     },
     {
       "id": "programming-languages",
@@ -2431,7 +2484,8 @@
         "history": [
           "sc-fortran"
         ]
-      }
+      },
+      "branchId": "computing-systems"
     },
     {
       "id": "support-vector-machines",
@@ -2472,7 +2526,8 @@
         "history": [
           "sc-svm"
         ]
-      }
+      },
+      "branchId": "computing-learning"
     },
     {
       "id": "division-of-labor",
@@ -2513,7 +2568,8 @@
         "history": [
           "sc-division"
         ]
-      }
+      },
+      "branchId": "society-economics"
     },
     {
       "id": "comparative-advantage",
@@ -2555,7 +2611,8 @@
           "sc-comparative"
         ]
       },
-      "example": "A person can be faster at two tasks yet gain by specializing in the one where their relative advantage is larger."
+      "example": "A person can be faster at two tasks yet gain by specializing in the one where their relative advantage is larger.",
+      "branchId": "society-economics"
     },
     {
       "id": "marginal-utility",
@@ -2608,7 +2665,8 @@
         "sourceIds": [
           "sc-marginal"
         ]
-      }
+      },
+      "branchId": "society-economics"
     },
     {
       "id": "supply-demand",
@@ -2659,7 +2717,8 @@
           "sc-supply",
           "sc-demand"
         ]
-      }
+      },
+      "branchId": "society-economics"
     },
     {
       "id": "psychophysics",
@@ -2712,7 +2771,8 @@
         "sourceIds": [
           "sc-fechner"
         ]
-      }
+      },
+      "branchId": "society-psychology"
     },
     {
       "id": "experimental-psychology",
@@ -2757,7 +2817,8 @@
         "history": [
           "sc-psych-history"
         ]
-      }
+      },
+      "branchId": "society-psychology"
     },
     {
       "id": "conditioning",
@@ -2798,7 +2859,8 @@
         "history": [
           "sc-conditioning"
         ]
-      }
+      },
+      "branchId": "society-psychology"
     },
     {
       "id": "behaviorism",
@@ -2839,7 +2901,8 @@
         "history": [
           "sc-watson"
         ]
-      }
+      },
+      "branchId": "society-psychology"
     },
     {
       "id": "gestalt",
@@ -2884,7 +2947,8 @@
         "history": [
           "sc-gestalt"
         ]
-      }
+      },
+      "branchId": "society-psychology"
     },
     {
       "id": "operant-conditioning",
@@ -2929,7 +2993,8 @@
         "history": [
           "sc-operant"
         ]
-      }
+      },
+      "branchId": "society-psychology"
     },
     {
       "id": "cognitive-psychology",
@@ -2974,7 +3039,8 @@
         "history": [
           "sc-miller"
         ]
-      }
+      },
+      "branchId": "society-psychology"
     },
     {
       "id": "working-memory",
@@ -3015,7 +3081,8 @@
         "history": [
           "sc-working"
         ]
-      }
+      },
+      "branchId": "society-psychology"
     },
     {
       "id": "social-learning",
@@ -3057,7 +3124,8 @@
         "history": [
           "sc-social"
         ]
-      }
+      },
+      "branchId": "society-psychology"
     },
     {
       "id": "cognitive-dissonance",
@@ -3102,7 +3170,8 @@
         "history": [
           "sc-dissonance"
         ]
-      }
+      },
+      "branchId": "society-psychology"
     },
     {
       "id": "game-theory",
@@ -3143,7 +3212,8 @@
         "history": [
           "sc-game"
         ]
-      }
+      },
+      "branchId": "society-economics"
     },
     {
       "id": "nash-equilibrium",
@@ -3193,7 +3263,8 @@
         "sourceIds": [
           "sc-nash"
         ]
-      }
+      },
+      "branchId": "society-economics"
     },
     {
       "id": "expected-utility",
@@ -3247,7 +3318,8 @@
         "sourceIds": [
           "sc-utility"
         ]
-      }
+      },
+      "branchId": "society-economics"
     },
     {
       "id": "prospect-theory",
@@ -3289,7 +3361,8 @@
         "history": [
           "sc-prospect"
         ]
-      }
+      },
+      "branchId": "society-economics"
     },
     {
       "id": "behavioral-economics",
@@ -3334,7 +3407,8 @@
         "history": [
           "sc-behavioral"
         ]
-      }
+      },
+      "branchId": "society-economics"
     },
     {
       "id": "randomized-development",
@@ -3380,7 +3454,8 @@
         "history": [
           "sc-field"
         ]
-      }
+      },
+      "branchId": "society-economics"
     }
   ],
   "relationships": [
