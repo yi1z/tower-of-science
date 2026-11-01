@@ -4,6 +4,8 @@ An interactive museum atlas of **450 scientific concepts**, from early counting 
 
 The application runs locally and builds into a static website. Its content and fonts are bundled; opening a source citation is the only interaction that needs an external site. No account, backend, API key, or deployment is required.
 
+**Explore the published atlas:** [Tower of Science](https://yi1z.github.io/tower-of-science/).
+
 ## Run locally
 
 Use Node.js 22.12 or newer and npm.
@@ -21,6 +23,14 @@ npm test           # Graph, filtering, search, links, and validation tests
 npm run build      # Validate, type-check, and build dist/
 npm run preview    # Serve the production build locally
 ```
+
+## GitHub Pages
+
+The [deployment workflow](.github/workflows/deploy-pages.yml) automatically publishes updates pushed to `main`. It installs the lockfile dependencies with Node.js 22, runs the tests, validates the content, type-checks the application, and builds the site before uploading only `dist/`. A separate deployment job publishes the successful build to the `github-pages` environment. Deployments are serialized; a running deployment is never canceled by a newer push.
+
+To deploy manually, open the repository's **Actions → Deploy to GitHub Pages → Run workflow**, select **main**, and run it. To retry a failed deployment, open its workflow run and choose **Re-run failed jobs** after resolving the cause. Only `main` can publish. Under **Settings → Pages → Build and deployment**, the source must be **GitHub Actions**.
+
+The workflow sets `VITE_BASE_PATH=/tower-of-science/` so JavaScript, styles, fonts, and the favicon resolve under the project URL. Local commands keep the relative `./` base by default. Concept, filter, and journey links use the URL hash and support refresh and browser Back/Forward on Pages without server rewrites.
 
 ## Explore
 
