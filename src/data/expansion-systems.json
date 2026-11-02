@@ -3663,6 +3663,188 @@
           "xs-linguistic-relativity"
         ]
       }
+    },
+    {
+      "id": "sequence-recurrent-networks",
+      "title": "Sequence recurrent networks",
+      "aliases": [
+        "simple recurrent network",
+        "Elman network",
+        "sequence RNN"
+      ],
+      "discipline": "computing",
+      "branchId": "computing-learning",
+      "tags": [
+        "sequences",
+        "context",
+        "learning"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1990,
+        "label": "1990",
+        "precision": "exact",
+        "note": "Elman’s simple recurrent network is the selected milestone, not the invention of recurrence; it builds on earlier recurrent models."
+      },
+      "summary": "A sequence RNN updates a hidden state using the current input and the previous state, carrying a learned trace of context through time.",
+      "problem": "A word or sound means different things depending on what came before. How can a neural network use order and context when inputs arrive one at a time?",
+      "development": "Elman fed a copy of the previous hidden state into the next computation. Trained to predict the next item, the network learned internal patterns reflecting sequence structure. This is a running context for successive inputs, distinct from Hopfield associative memory, which settles toward stored patterns.",
+      "limitations": "A compact state can lose earlier details. Gradient signals across many recurrent steps can shrink or grow, making long dependencies difficult to learn; each state also depends on the preceding computation.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Jeffrey L. Elman",
+          "role": "Demonstrated how a simple recurrent network could learn temporal structure and context-sensitive representations."
+        }
+      ],
+      "sourceIds": [
+        "xs-sequence-rnn",
+        "xs-lstm"
+      ],
+      "claimSources": {
+        "summary": [
+          "xs-sequence-rnn"
+        ],
+        "history": [
+          "xs-sequence-rnn",
+          "xs-lstm"
+        ]
+      },
+      "historicalSetting": "Connectionist research sought representations that emerged from experience with ordered events, including language, rather than from hand-built symbolic rules.",
+      "example": "While predicting the next word, the hidden state can carry clues from earlier words instead of treating the current word in isolation.",
+      "representation": {
+        "kind": "definition",
+        "expression": "current input + previous hidden state → updated hidden state",
+        "explanation": "The same learned update is reused at successive positions. The hidden state is a changing numerical summary, not a verbatim record of the sequence.",
+        "sourceIds": [
+          "xs-sequence-rnn"
+        ]
+      }
+    },
+    {
+      "id": "long-short-term-memory",
+      "title": "Long short-term memory",
+      "aliases": [
+        "LSTM",
+        "gated recurrent memory"
+      ],
+      "discipline": "computing",
+      "branchId": "computing-learning",
+      "tags": [
+        "sequences",
+        "memory",
+        "gradients"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1997,
+        "label": "1997",
+        "precision": "exact",
+        "note": "Publication of Hochreiter and Schmidhuber’s original LSTM architecture; later variants are not all part of this milestone."
+      },
+      "summary": "LSTM is a recurrent architecture with memory cells and learned gates that help preserve information and training signals across long intervals.",
+      "problem": "In ordinary recurrent learning, an early clue may have little influence on a much later error because gradients decay, or training may become unstable when they grow.",
+      "development": "Hochreiter and Schmidhuber designed a memory path that could carry an error signal without repeatedly shrinking it. In the original model, input and output gates controlled writing to and exposing the memory. Training could learn when a clue should enter memory and when it should affect an output.",
+      "limitations": "Gated memory improves long-range learning but does not guarantee perfect recall. States still update sequentially, and compressing an entire sequence into a final state can still discard useful detail.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Sepp Hochreiter",
+          "role": "Co-developed LSTM to address error decay in learning long time dependencies."
+        },
+        {
+          "name": "Jürgen Schmidhuber",
+          "role": "Co-developed memory cells and multiplicative gating for long-range recurrent learning."
+        }
+      ],
+      "sourceIds": [
+        "xs-lstm",
+        "xs-seq2seq-lstm"
+      ],
+      "claimSources": {
+        "summary": [
+          "xs-lstm"
+        ],
+        "history": [
+          "xs-lstm"
+        ]
+      },
+      "historicalSetting": "Recurrent-network research confronted the difficulty of assigning credit to events many time steps before a prediction error.",
+      "example": "A gated cell can retain an early cue through intervening inputs, then make it available when a later prediction needs that information.",
+      "representation": {
+        "kind": "definition",
+        "expression": "gated memory = a persistent state with learned controls for writing and reading",
+        "explanation": "Think of a running note with controls over what enters and what is revealed. This describes the original input/output gating intuitively, not a full set of equations for every later LSTM variant.",
+        "sourceIds": [
+          "xs-lstm"
+        ]
+      }
+    },
+    {
+      "id": "sequence-to-sequence",
+      "title": "Encoder–decoder sequence learning",
+      "aliases": [
+        "sequence-to-sequence",
+        "seq2seq",
+        "RNN encoder–decoder"
+      ],
+      "discipline": "computing",
+      "branchId": "computing-learning",
+      "tags": [
+        "sequences",
+        "translation",
+        "representation"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 2014,
+        "label": "2014",
+        "precision": "exact",
+        "note": "Cho and colleagues posted their encoder–decoder preprint on June 3; Sutskever and colleagues posted their LSTM sequence-to-sequence paper on September 10. Attention research overlapped with this work."
+      },
+      "summary": "An encoder reads an input sequence into a learned representation; a decoder uses it to generate an output sequence that may have a different length.",
+      "problem": "Translation must map one ordered sequence to another without assuming the same number of words or a fixed one-to-one alignment.",
+      "development": "Cho and colleagues jointly trained recurrent encoders and decoders for phrase representations. Sutskever, Vinyals, and Le demonstrated an LSTM system for sentence translation. Both used a fixed-length vector between encoder and decoder, letting the system learn a mapping across variable-length sequences.",
+      "limitations": "A single fixed-length vector must carry every detail needed by the decoder, creating a bottleneck for long inputs. Recurrent encoding and output generation also proceed step by step.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Kyunghyun Cho, Bart van Merrienboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares, Holger Schwenk, and Yoshua Bengio",
+          "role": "Introduced the RNN Encoder–Decoder for learning phrase representations in translation."
+        },
+        {
+          "name": "Ilya Sutskever, Oriol Vinyals, and Quoc V. Le",
+          "role": "Demonstrated multilayer LSTM sequence-to-sequence learning for sentence translation."
+        }
+      ],
+      "sourceIds": [
+        "xs-encoder-decoder",
+        "xs-seq2seq-lstm",
+        "xs-attention-mechanisms"
+      ],
+      "claimSources": {
+        "summary": [
+          "xs-encoder-decoder",
+          "xs-seq2seq-lstm"
+        ],
+        "history": [
+          "xs-encoder-decoder",
+          "xs-seq2seq-lstm",
+          "xs-attention-mechanisms"
+        ]
+      },
+      "historicalSetting": "These were overlapping developments in 2014: Cho’s June encoder–decoder preprint preceded Bahdanau, Cho, and Bengio’s September 1 attention preprint; the September 10 Sutskever paper did not precede that attention preprint.",
+      "example": "An encoder reads an English sentence; a decoder uses its representation and the words already produced to generate a French sentence of a different length.",
+      "representation": {
+        "kind": "definition",
+        "expression": "input sequence → encoder → fixed-length vector → decoder → output sequence",
+        "explanation": "This is the early fixed-vector design. The vector has a fixed number of components even when the input grows; attention later lets the decoder consult multiple input representations.",
+        "sourceIds": [
+          "xs-encoder-decoder",
+          "xs-seq2seq-lstm",
+          "xs-attention-mechanisms"
+        ]
+      }
     }
   ],
   "relationships": [
@@ -4045,10 +4227,11 @@
       "source": "attention-mechanisms",
       "target": "transformers",
       "type": "influence",
-      "explanation": "Editorial conceptual connection: Transformers further developed attention into the central mechanism for sequence modeling.",
-      "evidence": "conceptual",
+      "explanation": "Vaswani and colleagues cite Bahdanau, Cho, and Bengio’s attention-based translation model as part of the attention lineage. The Transformer makes self-attention central and also uses encoder–decoder attention, removing recurrent layers from its original architecture.",
+      "evidence": "documented",
       "sourceIds": [
-        "xs-attention-mechanisms"
+        "xs-attention-mechanisms",
+        "sc-attention"
       ]
     },
     {
@@ -5139,6 +5322,87 @@
       "sourceIds": [
         "xs-optimal-control"
       ]
+    },
+    {
+      "id": "neural-networks--sequence-recurrent-networks",
+      "source": "neural-networks",
+      "target": "sequence-recurrent-networks",
+      "type": "influence",
+      "explanation": "Elman’s network extends neural processing with feedback from hidden units, making a previous internal state part of the next input. His paper develops this sequence-processing architecture from connectionist models.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xs-sequence-rnn"
+      ]
+    },
+    {
+      "id": "backpropagation--sequence-recurrent-networks",
+      "source": "backpropagation",
+      "target": "sequence-recurrent-networks",
+      "type": "enables",
+      "explanation": "Elman trained the network’s adjustable connections with backpropagation while copying hidden activity into context units. This supports the learning connection without claiming that his experiments used full backpropagation through time.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xs-sequence-rnn"
+      ]
+    },
+    {
+      "id": "sequence-recurrent-networks--long-short-term-memory",
+      "source": "sequence-recurrent-networks",
+      "target": "long-short-term-memory",
+      "type": "revision",
+      "explanation": "Editorial conceptual connection: sequence RNNs establish the running-state problem that LSTM addresses with gated memory. LSTM responds to recurrent learning’s long-lag gradient difficulties generally; this edge does not assert a direct derivation from Elman’s architecture.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "xs-sequence-rnn",
+        "xs-lstm"
+      ]
+    },
+    {
+      "id": "backpropagation--long-short-term-memory",
+      "source": "backpropagation",
+      "target": "long-short-term-memory",
+      "type": "enables",
+      "explanation": "The original LSTM paper analyzes decaying error flow in recurrent learning and designs memory cells to preserve it. Its training method uses a truncated gradient procedure; it changes the architecture through which error is propagated.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xs-lstm"
+      ]
+    },
+    {
+      "id": "long-short-term-memory--sequence-to-sequence",
+      "source": "long-short-term-memory",
+      "target": "sequence-to-sequence",
+      "type": "enables",
+      "explanation": "Sutskever, Vinyals, and Le explicitly used multilayer LSTMs to encode an input sequence and decode its translation. This documents the LSTM version of sequence learning, not the architecture of Cho’s separate encoder–decoder model.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xs-seq2seq-lstm"
+      ]
+    },
+    {
+      "id": "sequence-to-sequence--attention-mechanisms",
+      "source": "sequence-to-sequence",
+      "target": "attention-mechanisms",
+      "type": "revision",
+      "explanation": "Bahdanau, Cho, and Bengio identified the single-vector bottleneck in encoder–decoder translation and let the decoder weight source positions. Cho’s June 2014 work supplies the earlier context; their September 1 attention preprint preceded Sutskever’s September 10 preprint.",
+      "evidence": "documented",
+      "sourceIds": [
+        "xs-encoder-decoder",
+        "xs-attention-mechanisms"
+      ]
+    },
+    {
+      "id": "sequence-to-sequence--transformers",
+      "source": "sequence-to-sequence",
+      "target": "transformers",
+      "type": "revision",
+      "explanation": "The Transformer paper cites Cho’s and Sutskever’s sequence models, retaining the encoder–decoder organization while replacing recurrence with attention and position-wise feed-forward layers in the original translation architecture.",
+      "evidence": "documented",
+      "sourceIds": [
+        "sc-attention",
+        "xs-encoder-decoder",
+        "xs-seq2seq-lstm"
+      ]
     }
   ],
   "sources": [
@@ -5591,6 +5855,30 @@
       "title": "International and U.S. perspectives: The Guide to the Expression of Uncertainty in Measurement",
       "url": "https://physics.nist.gov/cuu/Uncertainty/international2.html",
       "publisher": "National Institute of Standards and Technology"
+    },
+    {
+      "id": "xs-sequence-rnn",
+      "title": "Finding Structure in Time",
+      "url": "https://doi.org/10.1207/s15516709cog1402_1",
+      "publisher": "Jeffrey L. Elman / Cognitive Science (1990)"
+    },
+    {
+      "id": "xs-lstm",
+      "title": "Long Short-Term Memory",
+      "url": "https://people.idsia.ch/~juergen/lstm1997-2024head.pdf",
+      "publisher": "Sepp Hochreiter and Jürgen Schmidhuber / Neural Computation (1997)"
+    },
+    {
+      "id": "xs-encoder-decoder",
+      "title": "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation",
+      "url": "https://arxiv.org/abs/1406.1078",
+      "publisher": "Kyunghyun Cho and colleagues / EMNLP (2014)"
+    },
+    {
+      "id": "xs-seq2seq-lstm",
+      "title": "Sequence to Sequence Learning with Neural Networks",
+      "url": "https://arxiv.org/abs/1409.3215",
+      "publisher": "Ilya Sutskever, Oriol Vinyals, and Quoc V. Le / NeurIPS (2014)"
     }
   ]
 }

@@ -61,7 +61,7 @@ test('Chinese IME composition is recognized including the legacy key event',()=>
 
 test('the complete Chinese edition passes coverage and source freshness checks',()=>{
  assert.deepEqual(validateTranslations(),[]);
- assert.equal(chineseAtlas.concepts.length,450);assert.equal(chineseAtlas.relationships.length,824);assert.equal(chineseAtlas.tours.length,6);
+ assert.equal(chineseAtlas.concepts.length,atlas.concepts.length);assert.equal(chineseAtlas.relationships.length,atlas.relationships.length);assert.equal(chineseAtlas.tours.length,atlas.tours.length);
 });
 
 test('translation validation catches omissions, stale source, misalignment, and unsafe structural additions',()=>{

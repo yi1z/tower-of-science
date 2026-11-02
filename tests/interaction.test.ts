@@ -41,8 +41,8 @@ test('overview levels have hysteresis on both boundaries',()=>{
 test('unselected summaries cover all visible concepts exactly once, within their branch and era',()=>{
  for(const level of ['section','branch'] as const){
   const view=buildSummaryView(atlas.concepts,layout,all,new Set(),level);
-  assert.equal(view.endpoints.size,450);
-  assert.equal(view.summaries.reduce((n,s)=>n+s.memberIds.length,0),450);
+  assert.equal(view.endpoints.size,atlas.concepts.length);
+  assert.equal(view.summaries.reduce((n,s)=>n+s.memberIds.length,0),atlas.concepts.length);
   for(const summary of view.summaries)for(const id of summary.memberIds){const c=index.byId.get(id)!;assert.equal(summary.eraId,eraFor(c.date.year).id);assert.equal(summary.groupId,level==='section'?c.discipline:c.branchId);}
  }
  assert.equal(buildSummaryView(atlas.concepts,layout,all,new Set(),'cards').summaries.length,0);

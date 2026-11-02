@@ -1,12 +1,35 @@
 # Edition 2 verification
 
-Reviewed on 2026-11-01. Local implementation only; nothing was deployed.
+Current release reviewed locally on 2026-11-01. Publication uses the existing GitHub Pages workflow; earlier review sections below retain their historical counts.
+
+## Neural networks to Transformers journey
+
+Added the seventh journey, **From neural networks to Transformers / 从神经网络到Transformer**, with stable ID `neural-networks-to-transformers`. Its eight stops are artificial neural networks, machine learning, backpropagation, sequence RNNs, LSTM, encoder–decoder sequence learning, neural attention, and the original 2017 Transformer. The original six journeys and all 71 of their stops remain unchanged.
+
+The three new AI & learning concepts have complete English and Simplified Chinese details, contributor roles, historical context, limitations, examples, prose definitions, and primary sources. Seven new relationships join them to the atlas; the attention → Transformer relationship now cites the Transformer paper’s documented lineage. The sequence RNN → LSTM connection is explicitly conceptual. Hopfield associative memory remains a separate entry, and the 2014 narration distinguishes Cho’s June work, Bahdanau’s September 1 attention preprint, and Sutskever’s September 10 preprint. The expanded Transformer detail covers embeddings, position, queries/keys/values, attention heads, feed-forward layers, residual connections, normalization, and parallel training versus autoregressive generation.
+
+`npm run validate`, all **57 tests**, and the production build pass with `VITE_BASE_PATH=/tower-of-science/`. Coverage includes the exact eight-stop order in both languages, unchanged original journey orders, primary citations, translated definitions and search, source digests, share-link round trips at every stop, and collection-derived journey validation. All 831 individual routes and the existing node, branch, and summary geometry checks pass.
+
+Browser verification used the production preview at 1280 × 720 desktop and 390 × 844 / 390 × 650 mobile. It covered:
+
+- All eight stops in English and Chinese, Previous/Next, progress buttons, and completion in both languages.
+- Refresh of English and Chinese shared journey links, formula mode retained across stops, and Back/Forward restoring both steps and language changes.
+- Switching languages at the sequence RNN stop while preserving the concept, step, and display mode.
+- All three new concept definitions and citations, the Transformer formula, desktop and mobile narration, and the About dialog’s seven-journey statistic.
+- Mobile detail scrolling with enough bottom clearance for source links. Long narration scrolls within a bounded panel while controls stay visible; Chinese headings use balanced wrapping. The document stays within the 390px viewport.
+- The preview browser console reported no warnings or errors.
+
+![English journey and sequence-learning definition](preview-transformer-journey-desktop.jpg)
+
+![Chinese desktop journey and Transformer formula](preview-transformer-journey-chinese-desktop.jpg)
+
+![Chinese mobile Transformer formula and narration](preview-transformer-journey-mobile.jpg)
 
 ## Simplified Chinese edition
 
 Implemented and verified locally on 2026-11-01. All **450 concepts, 824 relationship explanations, six journeys / 71 stops, 43 branches, and interface messages** have Simplified Chinese presentation. Citations and mathematical notation retain their original form. Both languages use the same historical graph, source records, sorting years, layout, bundle membership, and pillar rankings.
 
-The current suite passes **52 tests**, including language resolution, invalid/legacy/shared hashes, optional storage failure, bilingual search, IME key guards, exact translation coverage, source freshness, historical date labels, mathematical notation, structural invariants, and font-aware caption measurements. The production build passes validation and TypeScript checking with `VITE_BASE_PATH=/tower-of-science/`.
+The Chinese-support release passed **52 tests**, including language resolution, invalid/legacy/shared hashes, optional storage failure, bilingual search, IME key guards, exact translation coverage, source freshness, historical date labels, mathematical notation, structural invariants, and font-aware caption measurements. The production build passes validation and TypeScript checking with `VITE_BASE_PATH=/tower-of-science/`.
 
 Browser checks covered saved language preference on a fresh visit, URL overrides, refresh and Back/Forward, English search while displaying Chinese, original English titles, Chinese contributor search, all six journey introductions, next-stop navigation, mid-tour language changes, reset retaining language and formula mode, invalid-link recovery, methodology, and connection bundles. The inspected two-member bundle kept both cited relationships when switched to English. Switching the selected general-relativity view between languages preserved the exact camera transform.
 
@@ -22,13 +45,13 @@ Translations were machine-assisted, with an editorial pass on titles, terminolog
 
 ## Release content
 
-The atlas contains **450 concepts, 824 relationships, 533 source records, 283 representative formulas/definitions, 47 pillars, and six journeys with 71 narrated stops**. There are 12 major sections and 43 populated subbranches. The expansion adds 190 complete entries; all original concept IDs and tour stops remain valid.
+The atlas contains **453 concepts, 831 relationships, 537 source records, 286 representative formulas/definitions, 48 pillars, and seven journeys with 79 narrated stops**. There are 12 major sections and 43 populated subbranches. The initial expansion added 190 complete entries; this journey adds three more. All original concept IDs and tour stops remain valid.
 
 | Section | Concepts |
 | --- | ---: |
 | Mathematics | 71 |
 | Methods & instruments | 15 |
-| Computing | 50 |
+| Computing | 53 |
 | Engineering | 18 |
 | Physics | 62 |
 | Astronomy | 37 |
@@ -43,19 +66,19 @@ Existing entries were explicitly classified rather than assigned from free-form 
 
 ## Automated verification
 
-`npm test` passes all **52 tests**. `npm run build` passes content and translation validation, TypeScript checking, and the Vite production build without chunk-size warnings. The committed npm lockfile matches version 2.0.0.
+`npm test` passes all **57 tests**. `npm run build` passes content and translation validation, TypeScript checking, and the Vite production build without chunk-size warnings. The committed npm lockfile matches version 2.0.0.
 
 Validation checks required content, contributor roles, citations, representation citations, unique IDs, branch/discipline consistency, related branches, date precision notes, valid endpoints, duplicate relationships, chronological contradictions, cycles, tour references, release coverage, and node overlaps.
 
 Tests cover:
 
-- Multi-parent ancestry, unique descendant counts, pillar eligibility and sorting, and six complete tours.
+- Multi-parent ancestry, unique descendant counts, pillar eligibility and sorting, and all complete journeys.
 - Combined branch, discipline, era, standing, and relationship filters; filtered ancestors retained as context; empty results.
 - Search aliases, contributors and diacritics; legacy hashes and new branch/connection/display state; invalid state normalization.
 - Deterministic placement independent of input order, shared period boundaries, chronological floor order, centered era bounds and branch cells, section containment, and correct era identification near floor boundaries.
 - A synthetic crowded period that expands horizontally without wrapping; nearby unequal dates in different branches retain separate horizontal regions.
 - Distinct bundle membership separated by type/evidence, filtered counts, individual-edge exclusion, stable representative routes, and unchanged graph statistics.
-- All **824 individual routes** avoid unrelated cards. Dense synthetic cases cover many parents, same-floor links, long links, changing era widths, deterministic routing, and fanned ports. Rounded corners remain inside the tested clearance margins.
+- All **831 individual routes** avoid unrelated cards. Dense synthetic cases cover many parents, same-floor links, long links, changing era widths, deterministic routing, and fanned ports. Rounded corners remain inside the tested clearance margins.
 
 ## Zoom-in heading reset regression
 

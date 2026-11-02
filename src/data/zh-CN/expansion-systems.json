@@ -2118,6 +2118,115 @@
         "expression": "语言习惯可能影响认知习惯"
       },
       "sourceDigest": "521dbfd24a6668db32337c6e120b6973e8fe6c6435a9c13e046758f242c38427"
+    },
+    "sequence-recurrent-networks": {
+      "sourceDigest": "dc67ac6689d55bac04c086627aeb15d303ebfc9a90cb1df1f2b4a62d6657c1b3",
+      "title": "序列循环神经网络",
+      "aliases": [
+        "简单循环网络",
+        "埃尔曼网络",
+        "序列RNN"
+      ],
+      "tags": [
+        "序列",
+        "上下文",
+        "学习"
+      ],
+      "date": {
+        "label": "1990年",
+        "note": "以埃尔曼的简单循环网络为代表性里程碑，并非将循环连接的发明归于这一年；该工作建立在更早的循环模型之上。"
+      },
+      "summary": "序列循环神经网络根据当前输入和上一时刻的隐藏状态更新状态，将学习到的上下文线索沿时间传递。",
+      "problem": "一个词或声音的意义取决于前面的内容。当输入逐个到来时，神经网络如何利用顺序和上下文？",
+      "development": "埃尔曼将上一时刻隐藏状态的副本送入下一次计算。网络通过预测下一个输入，学习到反映序列结构的内部模式。这种状态用于连续输入的上下文处理，与通过收敛到存储模式来实现联想记忆的霍普菲尔德网络不同。",
+      "limitations": "紧凑的状态可能丢失较早的细节。梯度信号经过许多循环步骤后可能衰减或放大，使长距离依赖难以学习；每一步的状态计算也依赖前一步。",
+      "contributors": [
+        {
+          "name": "杰弗里·埃尔曼",
+          "role": "展示了简单循环网络如何学习时间结构和随上下文变化的表示。"
+        }
+      ],
+      "historicalSetting": "联结主义研究希望从有序事件的经验中学习表示，包括语言序列，而不是完全依靠人工编写的符号规则。",
+      "example": "预测下一个词时，隐藏状态可以携带前面词语的线索，而不只是孤立地处理当前词语。",
+      "representation": {
+        "expression": "当前输入 + 上一时刻的隐藏状态 → 更新后的隐藏状态",
+        "explanation": "同一套学得的更新规则在各个位置重复使用。隐藏状态是不断变化的数值摘要，并非序列的逐字记录。"
+      }
+    },
+    "long-short-term-memory": {
+      "sourceDigest": "1d834191f9d4fd8b94e18397c3f390ee0dc8e4dbbb954d2f077f2b8d9ecdb776",
+      "title": "长短期记忆",
+      "aliases": [
+        "LSTM",
+        "门控循环记忆"
+      ],
+      "tags": [
+        "序列",
+        "记忆",
+        "梯度"
+      ],
+      "date": {
+        "label": "1997年",
+        "note": "霍赫赖特和施密德胡贝尔发表原始LSTM架构；后来的各种变体并不都属于这一里程碑。"
+      },
+      "summary": "LSTM是一种带有记忆单元和可学习门控的循环网络架构，能帮助信息和训练信号跨越较长的时间间隔。",
+      "problem": "普通循环网络训练时，梯度衰减可能使早期线索几乎无法影响很久之后的误差；梯度放大又可能让训练不稳定。",
+      "development": "霍赫赖特和施密德胡贝尔设计了一条记忆通路，使误差信号不必在每一步都缩小。原始模型用输入门和输出门控制信息的写入与输出。网络可以通过训练，学习何时将线索写入记忆、何时让它影响预测。",
+      "limitations": "门控记忆改善了长距离学习，但不保证完美记忆。状态仍需逐步更新；若把整个序列压缩为最终状态，有用的细节依然可能丢失。",
+      "contributors": [
+        {
+          "name": "塞普·霍赫赖特",
+          "role": "共同提出LSTM，缓解学习长时间依赖时的误差衰减。"
+        },
+        {
+          "name": "于尔根·施密德胡贝尔",
+          "role": "共同设计记忆单元和乘法门控，用于跨较长时间间隔的循环学习。"
+        }
+      ],
+      "historicalSetting": "循环网络研究面临一个难题：如何将预测误差追溯到许多个时间步之前的事件，并据此调整参数。",
+      "example": "门控记忆单元可以在一连串中间输入之后仍保留早期线索，在后续预测需要时再提供这些信息。",
+      "representation": {
+        "expression": "门控记忆 = 持续保存的状态 + 学习得到的读写控制",
+        "explanation": "可以把它想成一份持续更新的笔记，门控决定写入和展示什么。这是对原始输入门、输出门的直观描述，并非后来所有LSTM变体的完整方程。"
+      }
+    },
+    "sequence-to-sequence": {
+      "sourceDigest": "1be4d4a120f9d71598a8c30e22f65f71db2f1c9865b2f55b24a6f7e2b31c281c",
+      "title": "编码器—解码器序列学习",
+      "aliases": [
+        "序列到序列",
+        "seq2seq",
+        "循环神经网络编码器—解码器"
+      ],
+      "tags": [
+        "序列",
+        "翻译",
+        "表示"
+      ],
+      "date": {
+        "label": "2014年",
+        "note": "Cho等人于6月3日发布编码器—解码器预印本；Sutskever等人于9月10日发布基于LSTM的序列到序列论文。注意力研究与这些工作在时间上相互交叠。"
+      },
+      "summary": "编码器将输入序列转化为学习得到的表示；解码器利用这一表示生成输出序列，输入和输出的长度可以不同。",
+      "problem": "翻译需要把一个有序序列映射为另一个序列，不能假定两者词数相等，也不能依赖固定的一一对齐。",
+      "development": "Cho等人联合训练循环编码器和解码器，用于学习短语表示。Sutskever、Vinyals和Le展示了用于句子翻译的LSTM系统。两项工作都在编码器与解码器之间使用固定长度的向量，让系统学习不同长度序列之间的映射。",
+      "limitations": "一个固定长度的向量必须承载解码器需要的所有细节，长输入因而容易遇到信息瓶颈。循环编码和输出生成也都需要逐步进行。",
+      "contributors": [
+        {
+          "name": "Kyunghyun Cho, Bart van Merrienboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares, Holger Schwenk, and Yoshua Bengio",
+          "role": "提出循环神经网络编码器—解码器，用于学习翻译中的短语表示。"
+        },
+        {
+          "name": "Ilya Sutskever, Oriol Vinyals, and Quoc V. Le",
+          "role": "展示了用于句子翻译的多层LSTM序列到序列学习。"
+        }
+      ],
+      "historicalSetting": "2014年的这些进展相互交叠：Cho团队6月的编码器—解码器预印本早于Bahdanau、Cho和Bengio于9月1日发布的注意力预印本；Sutskever团队9月10日的论文并不早于该注意力预印本。",
+      "example": "编码器读入一个英语句子；解码器利用其表示以及已经生成的词语，逐步输出长度可能不同的法语句子。",
+      "representation": {
+        "expression": "输入序列 → 编码器 → 固定长度向量 → 解码器 → 输出序列",
+        "explanation": "这里描述的是早期固定向量设计。即使输入变长，向量的分量数量也保持不变；注意力机制则让解码器能够查阅多个输入位置的表示。"
+      }
     }
   },
   "relationships": {
@@ -2258,8 +2367,8 @@
       "sourceDigest": "7715db34dd57b304f31c21f0c764f905d687a72370fa762a256fae1ccefb4192"
     },
     "attention-mechanisms--transformers": {
-      "explanation": "编者标注的概念性联系：Transformer进一步将注意力机制置于序列建模的中心。",
-      "sourceDigest": "b6aa4a18bd1af8ceae661abf578adccb9da55c6bf1f9b67a0f861be6f1079f5e"
+      "sourceDigest": "07e6af220efc69a547ac3512655ef25d4c0a1b13752041890a3b73b088e3079f",
+      "explanation": "Vaswani及其合作者将Bahdanau、Cho和Bengio基于注意力的翻译模型列为注意力研究的重要前序工作。Transformer以自注意力为核心，同时使用编码器—解码器注意力，在其原始架构中移除了循环层。"
     },
     "differential-equations--control-theory": {
       "explanation": "微分方程描述了调节器和机器的相互作用运动。",
@@ -2656,6 +2765,34 @@
     "control-theory--optimal-control": {
       "explanation": "编者标注的概念性联系：优化为动态系统的控制问题添加了性能目标。",
       "sourceDigest": "ffb0a39b0b60ba3380e575f11f7fa0f68047d9ade250938be77d4d432fb30cf7"
+    },
+    "neural-networks--sequence-recurrent-networks": {
+      "sourceDigest": "7ed467cd6a4a062da1f47bd2216eac6c5f7427d009888384c5b1ac56cce000b8",
+      "explanation": "埃尔曼的网络在神经计算中加入隐藏单元的反馈，使上一时刻的内部状态成为下一次输入的一部分。他的论文在联结主义模型基础上发展了这种序列处理架构。"
+    },
+    "backpropagation--sequence-recurrent-networks": {
+      "sourceDigest": "d177d37396d159ce7846b8dcefd31495badd40580f71dcf11a81c29a7712eeae",
+      "explanation": "埃尔曼将隐藏层活动复制到上下文单元，并用反向传播训练网络中的可调连接。这一联系说明了训练方法的作用，并不意味着他的实验使用了完整的时间反向传播。"
+    },
+    "sequence-recurrent-networks--long-short-term-memory": {
+      "sourceDigest": "8e335d34d1c9504f5c5d53b33fdd2920184a8ae0b777d36108beb14bbb101c74",
+      "explanation": "编辑性概念联系：序列循环网络展示了持续更新状态的问题，LSTM则以门控记忆加以改善。LSTM针对的是循环学习中普遍存在的长时间间隔梯度难题；此连线不主张它直接由埃尔曼架构推导而来。"
+    },
+    "backpropagation--long-short-term-memory": {
+      "sourceDigest": "76a50951013f0acc5c096a6e9ff1717edc73c863446fd0d825ed4db6a03dabca",
+      "explanation": "原始LSTM论文分析了循环学习中误差信号的衰减，并设计记忆单元来保存这一信号。其训练采用截断的梯度计算方法，改变了误差传播所经过的网络结构。"
+    },
+    "long-short-term-memory--sequence-to-sequence": {
+      "sourceDigest": "923f0b7b666a79913480e42ca628b74c9771f5bf6dbbd5404319a0383baf1a9f",
+      "explanation": "Sutskever、Vinyals和Le明确使用多层LSTM来编码输入序列并解码译文。这条连线对应序列学习的LSTM版本，而非Cho团队另一个编码器—解码器模型的具体架构。"
+    },
+    "sequence-to-sequence--attention-mechanisms": {
+      "sourceDigest": "1caea16ec2f6002ad97d5442ea3077d1764f7ba11e09933c3e25cc22ebd4e618",
+      "explanation": "Bahdanau、Cho和Bengio指出了编码器—解码器翻译中的单向量瓶颈，让解码器对不同源位置赋予权重。较早的背景是Cho团队2014年6月的工作；他们9月1日的注意力预印本早于Sutskever团队9月10日的预印本。"
+    },
+    "sequence-to-sequence--transformers": {
+      "sourceDigest": "b389f335cc93815e8f0a7ad329e11a027a86c5afc790a1db701b4b9b4cc8ddb6",
+      "explanation": "Transformer论文引用了Cho和Sutskever团队的序列模型，在保留编码器—解码器组织方式的同时，于原始翻译架构中用注意力和逐位置前馈层替代循环计算。"
     }
   }
 }

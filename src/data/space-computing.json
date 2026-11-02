@@ -2264,7 +2264,7 @@
     },
     {
       "id": "transformers",
-      "title": "Attention-based transformers",
+      "title": "Attention-based Transformers",
       "aliases": [
         "self-attention",
         "Transformer"
@@ -2280,15 +2280,15 @@
         "precision": "exact",
         "note": "Publication of Attention Is All You Need."
       },
-      "summary": "Attention lets a model combine information from different positions in a sequence according to learned relevance.",
-      "problem": "Sequential processing made some language-model computations slow and long-range relationships difficult.",
-      "development": "Vaswani and collaborators built an attention-centered sequence architecture. Parallel training made it influential across language and other modalities.",
-      "limitations": "Attention scores are not a complete explanation of reasoning; learned patterns can reproduce errors and bias.",
+      "summary": "The original Transformer is an encoder–decoder network that builds contextual sequence representations with attention, without recurrent layers.",
+      "problem": "Recurrent networks process states in order. Could a translation model connect distant positions more directly and train on many positions in parallel?",
+      "development": "Vaswani and colleagues turn tokens into numerical embeddings and add positional information to preserve order. Attention forms queries (what a position seeks), keys (what other positions offer), and values (the information to combine). Several heads learn different comparisons; their results are joined. Small feed-forward networks refine each position. Residual connections add a layer’s input back to its output, and layer normalization keeps activations on a steadier scale. The encoder uses self-attention; the decoder uses masked self-attention plus attention to encoder outputs.",
+      "limitations": "Training can process known sequence positions in parallel, with a mask hiding future output tokens. Autoregressive generation still produces one token after another. Full self-attention compares all position pairs, so its cost grows quadratically with sequence length; attention weights alone do not explain every model decision.",
       "standing": "established",
       "contributors": [
         {
-          "name": "Ashish Vaswani and seven collaborators",
-          "role": "Introduced the Transformer architecture"
+          "name": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin",
+          "role": "Introduced the Transformer and evaluated its attention-based encoder–decoder architecture on machine translation."
         }
       ],
       "sourceIds": [
@@ -2305,12 +2305,14 @@
       "representation": {
         "kind": "formula",
         "expression": "Attention = softmax(QKᵀ/√d_{k})V",
-        "explanation": "Scaled dot-product attention compares queries Q with keys K, normalizes their scores, and combines values V. dₖ is key dimension; masking and additional layers depend on the architecture.",
+        "explanation": "Queries Q are compared with keys K; dividing by √dₖ scales the scores, and softmax turns them into weights for combining values V. Each head learns its own projections. Positional information, feed-forward layers, residual connections, and normalization surround this attention operation.",
         "sourceIds": [
           "sc-attention"
         ]
       },
-      "branchId": "computing-learning"
+      "branchId": "computing-learning",
+      "historicalSetting": "The 2017 translation model drew on encoder–decoder learning and neural attention. It replaced recurrent sequence computation while retaining a layered neural network trained from examples.",
+      "example": "When translating a sentence, a token can gather context directly from distant words. The decoder then consults the encoded source and its earlier output to predict the next translated token."
     },
     {
       "id": "diffusion-models",

@@ -47,7 +47,7 @@ export function validateAtlas(atlas:Atlas){
  for(const s of atlas.sources){try{const u=new URL(s.url);if(!['http:','https:'].includes(u.protocol))throw Error();}catch{errors.push(`${s.id}: invalid URL`);}if(!s.title||!s.publisher)errors.push(`${s.id}: incomplete source metadata`);}
  for(const t of atlas.tours){if(!t.title||!t.subtitle||!/^#[0-9a-f]{6}$/i.test(t.color))errors.push(`${t.id}: incomplete tour`);if(t.steps.length<8||t.steps.length>12)errors.push(`${t.id}: tour must have 8–12 stops`);for(const s of t.steps){if(!ids.has(s.conceptId))errors.push(`${t.id}: missing stop ${s.conceptId}`);if(!s.narration||s.narration.trim().length<30)errors.push(`${t.id}: missing narration`);}}
 
- if(atlas.tours.length!==6)errors.push('Atlas must include six tours');
+ if(!atlas.tours.length)errors.push('Atlas must include at least one journey');
  if(!/^\d{4}-\d{2}-\d{2}$/.test(atlas.reviewedAt))errors.push('Missing content review date');
  return errors;
 }

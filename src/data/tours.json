@@ -330,5 +330,45 @@
         "narration": "Psychological evidence enters economic modeling. The resulting explanations connect decision research with markets and institutions, while treating context, measurement, and the limits of generalization as part of the science."
       }
     ]
+  },
+  {
+    "id": "neural-networks-to-transformers",
+    "title": "From neural networks to Transformers",
+    "subtitle": "How context, memory, and attention led to the original 2017 Transformer.",
+    "color": "#4f8074",
+    "steps": [
+      {
+        "conceptId": "neural-networks",
+        "narration": "Start with connected units that transform inputs into patterns of activity. The 1943 logical neuron model showed how simple units could support computation; it did not yet teach a network to learn. Adjustable connections would later let networks build useful representations. How should those connections be chosen?"
+      },
+      {
+        "conceptId": "machine-learning",
+        "narration": "Machine learning shifts some of that work from handwritten rules to examples. A model adjusts its behavior to improve on a task, but learning is a broad idea, not a recipe for training every network. Multilayer networks still needed a way to work out which hidden connections caused an error."
+      },
+      {
+        "conceptId": "backpropagation",
+        "narration": "Backpropagation traces an error backward through computations, telling us how to adjust each connection. It made learning hidden representations practical. Applied across a long chain of repeated steps, however, gradient signals can fade or grow. To see why that matters, give the network a sequence and a memory of what came before."
+      },
+      {
+        "conceptId": "sequence-recurrent-networks",
+        "narration": "A sequence RNN carries a hidden state from one position to the next, so an input can be interpreted in context. Elman’s 1990 model is our milestone, distinct from Hopfield associative recall. A running state helps with order, but old clues and their training signals can be difficult to preserve across many steps."
+      },
+      {
+        "conceptId": "long-short-term-memory",
+        "narration": "LSTM adds memory cells with learned gates: controls over writing information and exposing it when needed. Hochreiter and Schmidhuber’s 1997 design helps training signals survive longer intervals. This improves recurrent memory, but processing is still sequential. And even a better memory faces a bottleneck if a whole sentence must fit into one final summary."
+      },
+      {
+        "conceptId": "sequence-to-sequence",
+        "narration": "An encoder reads a sequence; a decoder generates another, possibly of a different length. Cho’s June 2014 encoder–decoder and Sutskever’s September LSTM work used a fixed-size bridge between them. That bridge can lose details. Attention research overlapped: Bahdanau’s September 1 preprint appeared before Sutskever’s September 10 paper, not after it."
+      },
+      {
+        "conceptId": "attention-mechanisms",
+        "narration": "Instead of consulting only one compressed summary, the decoder learns to weight relevant input positions at each output step. Bahdanau, Cho, and Bengio used this learned alignment to ease translation’s bottleneck. Their model still used recurrence. Could attention also build the sequence representations themselves, connecting positions without passing through every intervening recurrent state?"
+      },
+      {
+        "conceptId": "transformers",
+        "narration": "The 2017 Transformer makes self-attention central: token embeddings plus position information feed multiple attention heads and surrounding network layers. Positions can exchange context directly, and training can process known sequences in parallel. The original encoder–decoder still generates translations one token at a time. This journey ends at that breakthrough; attention brings new costs, not unlimited memory."
+      }
+    ]
   }
 ]

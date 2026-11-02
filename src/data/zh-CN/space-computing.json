@@ -1367,32 +1367,34 @@
       "sourceDigest": "70c791aab2ae182b5a3c9a0cb9a56855108b8453a6048a72545984d44933bf2b"
     },
     "transformers": {
-      "title": "基于注意力机制的Transformer",
+      "sourceDigest": "192491a4a66fdfcdd8c9739aa07d75d6b52c4d0c4f8d33b432fdb5451aa6152b",
+      "title": "基于注意力的Transformer",
       "aliases": [
-        "自我关注",
+        "自注意力",
         "Transformer"
       ],
       "tags": [
         "信息"
       ],
-      "summary": "注意力让模型根据学习到的相关性将序列中不同位置的信息组合起来。",
-      "problem": "顺序处理使得一些语言模型计算变慢并且使得远程关系变得困难。",
-      "development": "Vaswani 和合作者构建了一个以注意力为中心的序列架构。并行培训使其对语言和其他模式产生影响。",
-      "limitations": "注意力分数并不能完整地解释推理；习得的模式可以重现错误和偏见。",
       "date": {
         "label": "2017年",
-        "note": "您所需要的就是发布关注。"
+        "note": "《Attention Is All You Need》论文发表。"
       },
+      "summary": "原始Transformer是一种编码器—解码器网络，通过注意力构建包含上下文的序列表示，不使用循环层。",
+      "problem": "循环网络必须按顺序计算状态。翻译模型能否更直接地连接远处的位置，并在训练时并行处理多个位置？",
+      "development": "Vaswani及其合作者先把词元转化为数值嵌入，再加入位置信息以保留顺序。注意力生成查询（当前位置寻找什么）、键（其他位置提供什么线索）和值（需要汇总的信息）。多个注意力头学习不同的比较方式，再合并结果。小型前馈网络进一步加工每个位置的表示。残差连接把一层的输入加回其输出，层归一化则使激活值的尺度更稳定。编码器使用自注意力；解码器同时使用带掩码的自注意力和对编码器输出的注意力。",
+      "limitations": "训练时已知序列中的多个位置可以并行计算，掩码用于遮住未来的输出词元。自回归生成仍需逐个产生词元。完整自注意力比较所有位置对，因此开销随序列长度呈平方增长；注意力权重本身也不能解释模型的每一个决定。",
+      "historicalSetting": "这一2017年的翻译模型继承了编码器—解码器学习和神经注意力的研究成果。它替换了循环序列计算，仍然是从样例中训练的多层神经网络。",
+      "example": "翻译句子时，一个词元可以直接汇总远处词语提供的上下文。解码器随后结合编码后的源句和已生成的内容，预测下一个译文词元。",
       "contributors": [
         {
-          "name": "Ashish Vaswani 和七位合作者",
-          "role": "引入Transformer架构"
+          "name": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin",
+          "role": "提出Transformer，并在机器翻译中评估其基于注意力的编码器—解码器架构。"
         }
       ],
       "representation": {
-        "explanation": "缩放点积注意力将查询 Q 与键 K 进行比较，标准化它们的分数，并组合值 V。dₖ 是关键维度；掩蔽和附加层取决于架构。"
-      },
-      "sourceDigest": "e5766ea73dd90d4463b5fc7d8ed006ff237186bcddbf2d2db8e6aa766e5b9c21"
+        "explanation": "查询Q与键K进行比较；除以√dₖ来调整分数的尺度，softmax再将分数转为汇总值V的权重。每个注意力头学习自己的投影。位置信息、前馈层、残差连接和归一化共同围绕这一注意力运算构成网络。"
+      }
     },
     "diffusion-models": {
       "title": "扩散生成模型",

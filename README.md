@@ -1,6 +1,6 @@
 # Tower of Science
 
-An interactive museum atlas of **450 scientific concepts**, from early counting to modern theoretical frameworks. Follow historical influences, mathematical foundations, enabling discoveries, and revisions across 12 science sections and 43 named subbranches.
+An interactive museum atlas of **453 scientific concepts**, from early counting to modern theoretical frameworks. Follow historical influences, mathematical foundations, enabling discoveries, and revisions across 12 science sections and 43 named subbranches.
 
 The application runs locally and builds into a static website. Its content and Latin fonts are bundled; Chinese text uses local system fonts. Opening a source citation is the only interaction that needs an external site. No account, backend, API key, or deployment is required.
 
@@ -40,12 +40,13 @@ The workflow sets `VITE_BASE_PATH=/tower-of-science/` so JavaScript, styles, fon
 - Select a concept to see its introduction, origins, contributors, limitations, and supporting references. Closing its detail panel preserves your camera position and zoom. The index also preserves the camera until you select a different concept.
 - Drag from blank space, an edge, a bundle count, or a collapsed pillar to pan. A short click still opens the relationship; dragging never opens it accidentally.
 - Zoom out to see inactive subbranches, then major sections, represented by serif names and discipline symbols centered inside their existing pillars. Narrow pillars rotate their titles; they never move or become floating cards. Select a pillar to reveal its ideas without changing selection or filters. Active paths remain individual; summary bundles retain all original relationship evidence.
-- Switch between **Words** and **Formulas & definitions** in the toolbar or detail panel. The 283 sourced representations include symbol explanations and assumptions; other entries retain their prose. This choice is included in shared links and retained during tours and resets.
+- Switch between **Words** and **Formulas & definitions** in the toolbar or detail panel. The 286 sourced representations include symbol explanations and assumptions; other entries retain their prose. This choice is included in shared links and retained during tours and resets.
 - Use **Trace origins** or **Follow influence** to highlight multiple generations. Filtered-out connecting concepts remain visible as dashed context nodes.
 - Choose **Bundled**, **Focus only**, or **All connections**. Open a counted bundle (or the bundle index beside the selector) to inspect all member relationships and citations, then **Expand these connections** to see their individual paths. Selecting an idea reveals its immediate links.
 - Select a connection or expand **Why they connect** in a concept panel to read its evidence.
 - Navigate by era, section, or subbranch. Expand a section in the sidebar: tick checkboxes to filter, or use a branch arrow to visit its region in the current era. The sticky ruler provides the same navigation. Combine branch, discipline, standing, and relationship filters without moving cards.
-- Use **Index** for a chronological reading view, **Pillars** for concepts with many descendants, or **Journeys** for six narrated tours.
+- Follow **[From neural networks to Transformers](https://yi1z.github.io/tower-of-science/#lang=en&concept=neural-networks&tour=neural-networks-to-transformers&step=0)** / **[从神经网络到Transformer](https://yi1z.github.io/tower-of-science/#lang=zh-CN&concept=neural-networks&tour=neural-networks-to-transformers&step=0)** through eight stops on context, memory, encoder–decoder learning, and attention, ending with the original 2017 architecture.
+- Use **Index** for a chronological reading view, **Pillars** for concepts with many descendants, or **Journeys** for seven narrated tours.
 - Copy a view’s browser address to preserve its selected concept, tour step, filters, connection mode, and content display mode. Browser Back and Forward restore these selections.
 - Read **About the atlas** for dating conventions, source policy, relationship definitions, and limits of coverage.
 
@@ -55,7 +56,7 @@ React and TypeScript render the application; React Flow supplies the graph viewp
 
 Content lives in seven JSON collections in the versioned atlas under `src/data/`, with separate tour and versioned branch catalogs. `src/types.ts` defines the content interfaces and `src/validate.ts` enforces the authoring contract. The atlas metadata records its edition and editorial review date.
 
-`src/i18n/` holds interface messages, localized taxonomy, language preference handling, and presentation composition. The Simplified Chinese edition in `src/data/zh-CN/` covers all 450 concepts, 824 relationship explanations, and six journeys. Both languages share the same IDs, source records, dates used for ordering, graph geometry, and traversal. Translations are bundled static content; no runtime translation service or new dependency is used. Validation rejects missing translations and translations whose English source has changed.
+`src/i18n/` holds interface messages, localized taxonomy, language preference handling, and presentation composition. The Simplified Chinese edition in `src/data/zh-CN/` covers all 453 concepts, 831 relationship explanations, and seven journeys. Both languages share the same IDs, source records, dates used for ordering, graph geometry, and traversal. Translations are bundled static content; no runtime translation service or new dependency is used. Validation rejects missing translations and translations whose English source has changed.
 
 The visual design uses locally packaged DM Sans and Libre Caslon Display, Chinese system font fallbacks, CSS, and SVG. Font licenses are included with their npm packages. React Flow attribution remains visible.
 

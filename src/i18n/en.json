@@ -47,7 +47,7 @@
   "Current standing": "Current standing",
   "Filter by current standing": "Filter by current standing",
   "All standings": "All standings",
-  "SIX PATHS THROUGH THE TOWER": "SIX PATHS THROUGH THE TOWER",
+  "PATHS THROUGH THE TOWER": "PATHS THROUGH THE TOWER",
   "A few connected ideas can change how you see everything.": "A few connected ideas can change how you see everything.",
   "stops · Guided journey": "stops · Guided journey",
   "IDEAS THAT SUPPORT OTHERS": "IDEAS THAT SUPPORT OTHERS",
@@ -202,5 +202,5 @@
   "Press Enter to select an edge. Press Escape to cancel.": "Press Enter to select an edge. Press Escape to cancel.",
   "Measuring…": "Measuring…",
   "This concept is not in this edition. Search the atlas to find another idea.": "This concept is not in this edition. Search the atlas to find another idea.",
-  "That journey could not be found. Choose one of the six journeys.": "That journey could not be found. Choose one of the six journeys."
+  "That journey could not be found. Choose an available journey.": "That journey could not be found. Choose an available journey."
 }

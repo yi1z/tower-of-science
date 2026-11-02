@@ -41,7 +41,9 @@ Avoid self-links, duplicate pairs, cycles, or backward dates. When a later mathe
 
 ## Edit a tour
 
-`tours.json` contains six tours with 8–12 stops each. Every stop references an existing concept and supplies substantive narration. Explain branch changes; two consecutive stops need not have an edge, and tour order must not be presented as proof of derivation.
+`tours.json` contains guided journeys with 8–12 stops each. Append new journeys to preserve the existing order and keep their IDs stable for shared links. Interface statistics derive from the collection; validation does not require a fixed number of journeys. Every stop references an existing concept and supplies substantive narration. Explain branch changes; two consecutive stops need not have an edge, and tour order must not be presented as proof of derivation.
+
+The `neural-networks-to-transformers` journey distinguishes sequence-processing RNNs (`sequence-recurrent-networks`) from Hopfield associative memory (`recurrent-networks`). Its 2014 stops describe overlapping encoder–decoder and attention work: Cho’s June preprint preceded Bahdanau’s September 1 preprint, whereas Sutskever’s September 10 preprint did not. Preserve these qualifications when editing the narration or connections.
 
 ## Maintain the Chinese edition
 

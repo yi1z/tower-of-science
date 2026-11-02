@@ -47,7 +47,7 @@
   "Current standing": "当前科学地位",
   "Filter by current standing": "按当前科学地位筛选",
   "All standings": "所有科学地位",
-  "SIX PATHS THROUGH THE TOWER": "六条探索路线",
+  "PATHS THROUGH THE TOWER": "穿越科学之塔的探索路径",
   "A few connected ideas can change how you see everything.": "几个相连的思想，就能改变我们观察世界的方式。",
   "stops · Guided journey": "站点 · 导游带领",
   "IDEAS THAT SUPPORT OTHERS": "为后续思想奠基",
@@ -202,5 +202,5 @@
   "Press Enter to select an edge. Press Escape to cancel.": "按回车键选择联系，按Esc键取消。",
   "Measuring…": "正在测量…",
   "This concept is not in this edition. Search the atlas to find another idea.": "本版未收录这个概念，请搜索其他概念。",
-  "That journey could not be found. Choose one of the six journeys.": "未找到该导览，请选择六条现有路线之一。"
+  "That journey could not be found. Choose an available journey.": "找不到该导览。请选择现有导览。"
 }
