@@ -2,6 +2,24 @@
 
 Reviewed on 2026-11-01. Local implementation only; nothing was deployed.
 
+## Simplified Chinese edition
+
+Implemented and verified locally on 2026-11-01. All **450 concepts, 824 relationship explanations, six journeys / 71 stops, 43 branches, and interface messages** have Simplified Chinese presentation. Citations and mathematical notation retain their original form. Both languages use the same historical graph, source records, sorting years, layout, bundle membership, and pillar rankings.
+
+The current suite passes **52 tests**, including language resolution, invalid/legacy/shared hashes, optional storage failure, bilingual search, IME key guards, exact translation coverage, source freshness, historical date labels, mathematical notation, structural invariants, and font-aware caption measurements. The production build passes validation and TypeScript checking with `VITE_BASE_PATH=/tower-of-science/`.
+
+Browser checks covered saved language preference on a fresh visit, URL overrides, refresh and Back/Forward, English search while displaying Chinese, original English titles, Chinese contributor search, all six journey introductions, next-stop navigation, mid-tour language changes, reset retaining language and formula mode, invalid-link recovery, methodology, and connection bundles. The inspected two-member bundle kept both cited relationships when switched to English. Switching the selected general-relativity view between languages preserved the exact camera transform.
+
+Visual checks used 1488 × 1244 desktop, 820 × 900 tablet, and 390 × 844 mobile viewports. The mobile header keeps the language selector and search accessible above the detail sheet. Mobile document width and height equal the viewport; the tablet split-view index has matching 250px client and scroll widths. The final browser console had no warnings or errors. Viewport emulation and an automated composition-key guard test do not constitute a physical-device or native Chinese IME certification.
+
+Translations were machine-assisted, with an editorial pass on titles, terminology, summaries, dates, interface text, and journey narration. This is not independent specialist translation review. Automated checks establish completeness and structural consistency, not the accuracy of every translated historical claim.
+
+![Simplified Chinese desktop](preview-chinese-desktop.jpg)
+
+![Simplified Chinese tablet split view](preview-chinese-tablet.jpg)
+
+![Simplified Chinese mobile formula sheet](preview-chinese-mobile.jpg)
+
 ## Release content
 
 The atlas contains **450 concepts, 824 relationships, 533 source records, 283 representative formulas/definitions, 47 pillars, and six journeys with 71 narrated stops**. There are 12 major sections and 43 populated subbranches. The expansion adds 190 complete entries; all original concept IDs and tour stops remain valid.
@@ -25,7 +43,7 @@ Existing entries were explicitly classified rather than assigned from free-form 
 
 ## Automated verification
 
-`npm test` passes all **39 tests**. `npm run build` passes content validation, TypeScript checking, and the Vite production build without chunk-size warnings. The committed npm lockfile matches version 2.0.0.
+`npm test` passes all **52 tests**. `npm run build` passes content and translation validation, TypeScript checking, and the Vite production build without chunk-size warnings. The committed npm lockfile matches version 2.0.0.
 
 Validation checks required content, contributor roles, citations, representation citations, unique IDs, branch/discipline consistency, related branches, date precision notes, valid endpoints, duplicate relationships, chronological contradictions, cycles, tour references, release coverage, and node overlaps.
 

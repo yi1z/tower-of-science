@@ -8,12 +8,15 @@ export class PillarLabels {
  private widths=new Map<string,number>();
  private context:CanvasRenderingContext2D|null=null;
  register(element:HTMLElement,summary:BranchSummary){
-  const font=summary.level==='section'?23:18,text=element.querySelector('strong')!.textContent!;
-  const key=`${font}:${text}`;
+  const heading=element.querySelector('strong')!,font=summary.level==='section'?23:18,text=heading.textContent!;
+  const computed=typeof getComputedStyle==='function'?getComputedStyle(heading):null;
+  const family=computed?.fontFamily||'"Libre Caslon Display", Georgia, serif',weight=computed?.fontWeight||'400';
+  const key=`${weight}:${font}:${family}:${text}`;
   if(!this.widths.has(key)){
    this.context??=document.createElement('canvas').getContext('2d');
-   if(this.context)this.context.font=`${font}px "Libre Caslon Display", Georgia, serif`;
-   this.widths.set(key,(this.context?.measureText(text).width??text.length*font*.55)+text.length*.3+2);
+   if(this.context)this.context.font=`${weight} ${font}px ${family}`;
+   const fallback=[...text].reduce((width,char)=>width+font*(/[\u3400-\u9fff]/.test(char)?1:.55),0);
+   this.widths.set(key,(this.context?.measureText(text).width??fallback)+text.length*.3+2);
   }
   this.entries.set(element,{summary,width:this.widths.get(key)!,font});this.draw(element);
   return()=>{

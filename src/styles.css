@@ -139,3 +139,18 @@ body{font-size:var(--text-ui)}
 .connection-canvas .react-flow__edge-path{stroke-width:calc(var(--edge-width,1) * var(--edge-zoom,1))!important}
 .connection-canvas .react-flow__edge-interaction{stroke-width:calc(12px * var(--edge-zoom,1))!important}
 [data-small-scale="true"] .connection-canvas .react-flow__edge:not(.active):not(.selected){opacity:.6}
+/* Language selection and Chinese typography use local system fonts. */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.language-picker{flex-shrink:0}.language-picker select{min-height:40px;max-width:125px;padding:7px 25px 7px 9px;border:1px solid var(--line);border-radius:4px;background:#f8f6ef;color:var(--ink);font-size:14px}
+.masthead{gap:20px}.search-wrap{min-width:100px;flex:1;max-width:480px}.original-title{font-family:'DM Sans Variable',Arial,sans-serif;color:var(--muted);margin-top:-10px}
+:root:lang(zh-CN){font-family:'DM Sans Variable','PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif;--serif:'Libre Caslon Display','Songti SC','SimSun','Noto Serif CJK SC',serif}
+:lang(zh-CN) .brand{min-width:190px}:lang(zh-CN) .brand strong{letter-spacing:2px}:lang(zh-CN) .brand small,:lang(zh-CN) .eyebrow,:lang(zh-CN) .canvas-display>span{letter-spacing:.5px}
+:lang(zh-CN) .sidebar-intro h1{font-size:36px;line-height:1.3}:lang(zh-CN) .canvas-caption h2{line-height:1.35}:lang(zh-CN) .detail-identity h2{line-height:1.3}
+:lang(zh-CN) .concept-node strong,:lang(zh-CN) [data-card-detail="medium"] .concept-node strong{font-size:26px;line-height:1.25;letter-spacing:0;-webkit-line-clamp:2}
+:lang(zh-CN) .concept-node.formal-node strong,:lang(zh-CN) [data-card-detail="medium"] .concept-node.formal-node strong{font-size:25px;line-height:1.25}
+:lang(zh-CN) .display-switch button span,:lang(zh-CN) .index-item p.index-representation.definition{font-family:inherit}
+:lang(zh-CN) .node-representation.formula,:lang(zh-CN) .representation-detail>div{font-family:'Cambria Math','STIX Two Math','Microsoft YaHei','PingFang SC',serif}
+:lang(zh-CN) .detail-scroll p,:lang(zh-CN) .methodology-modal section p{line-height:1.9;overflow-wrap:break-word}:lang(zh-CN) .index-item time{width:96px}
+@media(max-width:1150px){.masthead{gap:12px;padding-inline:18px}.brand{min-width:240px}.method-button span{display:none}}
+@media(max-width:759px){.masthead{height:112px;display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:6px 10px;padding:10px 14px}.brand,:lang(zh-CN) .brand{min-width:0;grid-column:1;grid-row:1}.brand strong{font-size:23px}.brand small{display:none}.language-picker{grid-column:2;grid-row:1}.language-picker select{max-width:115px;min-height:38px}.mobile-toggle{grid-column:3;grid-row:1}.search-wrap{grid-column:1 / -1;grid-row:2;width:100%;max-width:none;margin:0;height:36px}.method-button{display:none}.search-wrap kbd{display:none}.original-title{font-size:14px}}
+@media(max-width:759px){.search-wrap{position:relative;top:auto;left:auto}.search-results{width:100%}.detail-panel{inset:112px 0 0}.sidebar{top:112px}.nav-backdrop{inset:112px 0 0}}

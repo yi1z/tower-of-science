@@ -43,7 +43,21 @@ Avoid self-links, duplicate pairs, cycles, or backward dates. When a later mathe
 
 `tours.json` contains six tours with 8–12 stops each. Every stop references an existing concept and supplies substantive narration. Explain branch changes; two consecutive stops need not have an edge, and tour order must not be presented as proof of derivation.
 
-## Verify
+## Maintain the Chinese edition
+
+English entries remain authoritative for structure and evidence. Add or update their matching text overlays in `src/data/zh-CN/<collection>.json`; concepts and relationships are keyed by stable ID. `tours.json` uses the same journey IDs, with narration aligned to the original step order. Translate titles, aliases, tags, prose, contributor names and roles, date notes, and representation explanations. Keep contributor and alias arrays aligned. Optional fields must match the English entry. Do not add source records, graph endpoints, dates used for ordering, statuses, or other structural fields to overlays.
+
+Keep original bibliographic records unchanged. Contributor names are displayed alongside the original name automatically, so do not append it in the overlay. Use `chineseDateLabel` in `src/i18n/dates.ts` for visible date labels; add an explicitly reviewed format there when a new authored date is introduced. Sorting years remain in the English entry.
+
+Translate prose definitions in `representation.expression`. Mathematical formulas remain canonical; reviewed word-only substitutions belong in `src/i18n/formulas.ts`. Its `symbolicDefinitions` set lists definition entries that contain mathematical or formal-language notation only and must retain that notation. Do not translate symbols, function names, or operators as ordinary words.
+
+Every translated concept, relationship, and journey records a `sourceDigest`: SHA-256 of `JSON.stringify` on its complete English entry. After reviewing and updating a translation, obtain the digest with `sourceDigest(entry)` from `src/i18n/validate.ts` and record it in that overlay. Do not refresh digests in bulk without reviewing the corresponding source changes. The validator reports missing IDs, stale sources, incorrect dates, misaligned arrays, missing definition text, and invalid overlay fields.
+
+Interface messages live in `src/i18n/en.json` and `zh-CN.json`, with typed message keys and matching `{placeholder}` names. Use whole messages for counts rather than joining translated fragments. Taxonomy labels live in `src/i18n/taxonomy.ts`; branch IDs, colors, and ordering stay canonical.
+
+Review revised scientific wording against the English source, including uncertainty and historical qualifications. The initial Chinese edition was machine-assisted and edited, not independently specialist-reviewed. Structural validation cannot establish translation accuracy. Check both languages in the browser, including bilingual search, Chinese input composition, formula display, and narrow layouts.
+
+## Verify both editions
 
 Run `npm run validate`, `npm test`, and `npm run build`. Inspect the changed concept and its traced ancestry in the local application. Check references manually, review historical and conceptual claims separately, and inspect layout and readability at desktop and mobile sizes. Update the editorial review date in `src/data/atlas.ts` when revising the collection.
 

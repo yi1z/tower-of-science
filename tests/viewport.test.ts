@@ -14,6 +14,20 @@ function fontMeasurement(t:test.TestContext){
  t.after(()=>{if(previous)Object.defineProperty(globalThis,'document',previous);else Reflect.deleteProperty(globalThis,'document');});
 }
 
+test('pillar measurement caches by the actual language, text, and font family',t=>{
+ const oldDocument=Object.getOwnPropertyDescriptor(globalThis,'document'),oldStyle=Object.getOwnPropertyDescriptor(globalThis,'getComputedStyle');
+ let family='Georgia',text='Mathematics';const measured:string[]=[];
+ const context={font:'',measureText(value:string){measured.push(`${this.font}:${value}`);return {width:value.length*20};}};
+ Object.defineProperty(globalThis,'document',{configurable:true,value:{createElement:()=>({getContext:()=>context})}});
+ Object.defineProperty(globalThis,'getComputedStyle',{configurable:true,value:()=>({fontFamily:family,fontWeight:'400'})});
+ t.after(()=>{for(const [key,value] of [['document',oldDocument],['getComputedStyle',oldStyle]] as const){if(value)Object.defineProperty(globalThis,key,value);else Reflect.deleteProperty(globalThis,key);}});
+ const element=caption();element.querySelector=(()=>({get textContent(){return text;}})) as typeof element.querySelector;
+ const labels=new PillarLabels();labels.register(element,summary);labels.register(element,summary);assert.equal(measured.length,1);
+ family='SimSun';labels.register(element,summary);assert.equal(measured.length,2);assert.match(measured[1],/SimSun/);
+ text='数学';labels.register(element,summary);assert.equal(measured.length,3);assert.match(measured[2],/数学/);
+ labels.refreshFonts();assert.equal(measured.length,4);
+});
+
 test('leaving summary mode clears rotation and scale before an element can become a branch heading',t=>{
  fontMeasurement(t);
  const labels=new PillarLabels(),element=caption(),unregister=labels.register(element,summary);

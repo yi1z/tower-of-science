@@ -5,10 +5,10 @@ import {useReactFlow} from '@xyflow/react';
 export const benchmarkEnabled=typeof window!=='undefined'&&new URLSearchParams(window.location.search).has('benchmark');
 const counters:Record<string,number>={};
 export function recordRender(name:string){if(benchmarkEnabled)counters[name]=(counters[name]??0)+1;}
-export function MotionBenchmark({center}:{center:{x:number;y:number}}){
+export function MotionBenchmark({center,labels}:{center:{x:number;y:number};labels:{title:string;run:string;measuring:string}}){
  const {getViewport,setViewport}=useReactFlow(),[result,setResult]=useState(''),[running,setRunning]=useState(false),cancel=useRef(false);
  async function run(){
-  setRunning(true);setResult('Measuring…');cancel.current=false;
+  setRunning(true);setResult('');cancel.current=false;
   const original=getViewport(),output=[];
   for(const [name,low,high] of [['cards',.65,.85],['subbranches',.17,.27],['sections',.045,.075]] as const){
    const element=document.querySelector('.react-flow')!,rect=element.getBoundingClientRect();
@@ -33,5 +33,5 @@ export function MotionBenchmark({center}:{center:{x:number;y:number}}){
   }
   await setViewport(original,{duration:0});setResult(JSON.stringify(output,null,2));setRunning(false);
  }
- return <details className="motion-benchmark" style={{position:'absolute',left:12,bottom:45,zIndex:50,background:'#fffdf4',padding:8,maxWidth:330,maxHeight:320,overflow:'auto',fontSize:12}}><summary>Local motion benchmark</summary><button disabled={running} onClick={run}>Run motion benchmark</button><pre data-benchmark-result>{result}</pre></details>;
+ return <details className="motion-benchmark" style={{position:'absolute',left:12,bottom:45,zIndex:50,background:'#fffdf4',padding:8,maxWidth:330,maxHeight:320,overflow:'auto',fontSize:12}}><summary>{labels.title}</summary><button disabled={running} onClick={run}>{labels.run}</button><pre data-benchmark-result>{running?labels.measuring:result}</pre></details>;
 }

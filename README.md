@@ -2,7 +2,7 @@
 
 An interactive museum atlas of **450 scientific concepts**, from early counting to modern theoretical frameworks. Follow historical influences, mathematical foundations, enabling discoveries, and revisions across 12 science sections and 43 named subbranches.
 
-The application runs locally and builds into a static website. Its content and fonts are bundled; opening a source citation is the only interaction that needs an external site. No account, backend, API key, or deployment is required.
+The application runs locally and builds into a static website. Its content and Latin fonts are bundled; Chinese text uses local system fonts. Opening a source citation is the only interaction that needs an external site. No account, backend, API key, or deployment is required.
 
 **Explore the published atlas:** [Tower of Science](https://yi1z.github.io/tower-of-science/).
 
@@ -34,6 +34,8 @@ The workflow sets `VITE_BASE_PATH=/tower-of-science/` so JavaScript, styles, fon
 
 ## Explore
 
+- Choose **English** or **简体中文** in the header. The first visit follows the browser language, and manual choices are remembered. Shared links include `lang=en` or `lang=zh-CN`, which takes precedence over the saved choice. Existing links without a language remain valid.
+- Search in either language, including Chinese or English concept names and contributor names. Chinese details retain the original English title and contributor names for cross-reference.
 - Search for a concept, alias, or contributor. Press Ctrl/Cmd+K to focus search.
 - Select a concept to see its introduction, origins, contributors, limitations, and supporting references. Closing its detail panel preserves your camera position and zoom. The index also preserves the camera until you select a different concept.
 - Drag from blank space, an edge, a bundle count, or a collapsed pillar to pan. A short click still opens the relationship; dragging never opens it accidentally.
@@ -53,13 +55,17 @@ React and TypeScript render the application; React Flow supplies the graph viewp
 
 Content lives in seven JSON collections in the versioned atlas under `src/data/`, with separate tour and versioned branch catalogs. `src/types.ts` defines the content interfaces and `src/validate.ts` enforces the authoring contract. The atlas metadata records its edition and editorial review date.
 
-The visual design uses locally packaged DM Sans and Libre Caslon Display, CSS, and SVG. Font licenses are included with their npm packages. React Flow attribution remains visible.
+`src/i18n/` holds interface messages, localized taxonomy, language preference handling, and presentation composition. The Simplified Chinese edition in `src/data/zh-CN/` covers all 450 concepts, 824 relationship explanations, and six journeys. Both languages share the same IDs, source records, dates used for ordering, graph geometry, and traversal. Translations are bundled static content; no runtime translation service or new dependency is used. Validation rejects missing translations and translations whose English source has changed.
+
+The visual design uses locally packaged DM Sans and Libre Caslon Display, Chinese system font fallbacks, CSS, and SVG. Font licenses are included with their npm packages. React Flow attribution remains visible.
 
 ## Editorial boundaries
 
 This is an introductory, source-linked synthesis, not an exhaustive history or a specialist-reviewed scholarly edition. Approximate dates select milestones for navigation. Similar ideas do not establish historical transmission. Conceptual edges explicitly identify editorial inferences. Open and speculative proposals are distinguished from established frameworks; obsolete models remain for historical context.
 
 Source records include original papers, scholarly histories, official scientific institutions, and textbooks. Some publishers restrict full text; their public abstracts or publication records support bibliographic milestones. Automated validation checks reference integrity and graph structure, not the truth of every claim. Continued specialist review is valuable.
+
+The Chinese edition uses machine-assisted translation with an editorial pass for terminology, summaries, date conventions, interface text, and journey narration. It has not received independent specialist translation review. Bibliographic titles, publishers, URLs, and citations retain their original form. Mathematical notation is preserved; explanatory prose and prose definitions are translated.
 
 See [Content authoring](docs/content-authoring.md) to add or revise an entry.
 

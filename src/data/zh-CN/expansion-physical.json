@@ -1,0 +1,2380 @@
+{
+  "concepts": {
+    "pythagorean-theorem": {
+      "title": "直角三角形关系",
+      "aliases": [],
+      "tags": [],
+      "summary": "在欧几里得直角三角形中，斜边的平方等于垂直边的平方之和。",
+      "problem": "从另外两条边求未知长度。",
+      "development": "希腊的演示和印度的几何传统随后给出了不同的处理方式；这个熟悉的名字并不能证明毕达哥拉斯是它的第一个发现者。",
+      "limitations": "该方程需要直角和欧几里得几何。单独的数值例子并不能作为一般证明。",
+      "historicalSetting": "古巴比伦泥板在数值问题中使用直角三角形关系。",
+      "date": {
+        "label": "约公元前1800年",
+        "note": "古巴比伦的数字里程碑；幸存的一般示威是后来的事。"
+      },
+      "contributors": [
+        {
+          "name": "美索不达米亚抄写员",
+          "role": "保留的数值问题"
+        },
+        {
+          "name": "希腊和印度数学家",
+          "role": "开发了后期的演示和应用"
+        }
+      ],
+      "representation": {
+        "explanation": "a和b以直角相交； c 是相反的一侧。"
+      },
+      "sourceDigest": "acfca871f6d5d5662140727f2a75de14c174e84775c0887c05f0d69e7a79d118"
+    },
+    "euclidean-algorithm": {
+      "title": "欧几里得算法",
+      "aliases": [],
+      "tags": [],
+      "summary": "反复进行带余除法，可以求出两个整数的最大公约数。",
+      "problem": "找到一个共享单位而不列出每个除数。",
+      "development": "用除法代替重复的减法给出了数论和计算中使用的熟悉的高效算法。",
+      "limitations": "输入必须属于具有适当划分的域。欧几里得的原始表述与现代整数表示法不同。",
+      "historicalSetting": "在希腊化时期的亚历山大，欧几里得记录了常用度量的减法程序。",
+      "date": {
+        "label": "约公元前300年",
+        "note": "《要素》中现存的部分论述，并非发明日期。"
+      },
+      "contributors": [
+        {
+          "name": "欧几里得",
+          "role": "保留了共同测量程序及其证明"
+        }
+      ],
+      "representation": {
+        "explanation": "对于正整数，替换该对直到余数为零。"
+      },
+      "sourceDigest": "5a8053269b1448c794bfc64cc067eacf9fa2ba6277d261cb40b372d18e852356"
+    },
+    "conic-sections": {
+      "title": "圆锥曲线",
+      "aliases": [],
+      "tags": [],
+      "summary": "切割圆锥的平面会产生椭圆、抛物线和双曲线。",
+      "problem": "统一几何构造中出现的曲线。",
+      "development": "后来的坐标方法和力学使这些曲线成为透镜、轨迹和轨道的中心。",
+      "limitations": "单独的几何分类并不能解释为什么物理轨迹具有这种形状。",
+      "historicalSetting": "阿波罗尼乌斯的圆锥曲线将早期希腊研究系统化，并建立了有影响力的术语。",
+      "date": {
+        "label": "约公元前200年",
+        "note": "阿波罗尼乌斯合成的大致日期；早期的希腊著作在此之前。"
+      },
+      "contributors": [
+        {
+          "name": "佩尔加的阿波罗尼乌斯",
+          "role": "二次曲线几何系统化"
+        },
+        {
+          "name": "墨奈奇姆斯",
+          "role": "之前研究过二次曲线"
+        }
+      ],
+      "representation": {
+        "explanation": "剖切面的不同方向产生非简并圆锥曲线族。",
+        "expression": "椭圆·抛物线·双曲线"
+      },
+      "sourceDigest": "2a144d0dfdf89e329d2ee5761886ff06ee5aac3da04318d8b86425e520520e60"
+    },
+    "combinatorics": {
+      "title": "排列与组合计数",
+      "aliases": [],
+      "tags": [],
+      "summary": "组合学计算并组织可能的排列，而不逐一枚举。",
+      "problem": "有多少个不同的选择或顺序满足一条规则？",
+      "development": "印度早期的工作也解决了此类问题。后来的概率和离散数学极大地扩展了该学科。",
+      "limitations": "当顺序很重要、允许重复或对象无法区分时，答案就会改变。",
+      "historicalSetting": "在梵文数学教学中，巴斯卡拉二世的利拉瓦蒂将组合与算术一起对待。",
+      "date": {
+        "label": "约1150年",
+        "note": "巴斯卡拉二世在更古老的印度和其他计数传统中具有里程碑意义。"
+      },
+      "contributors": [
+        {
+          "name": "巴斯卡拉二世",
+          "role": "提出组合计数问题"
+        },
+        {
+          "name": "马哈维亚",
+          "role": "制定了早期的印度计数规则"
+        }
+      ],
+      "representation": {
+        "explanation": "从n中无序地选择r个不同的对象； 0≤r≤n。"
+      },
+      "sourceDigest": "b8d3069d6940a129754e4ba6c0c9e4328529f8786a76a56468acec8fbea442dd"
+    },
+    "binomial-theorem": {
+      "title": "广义二项式级数",
+      "aliases": [],
+      "tags": [],
+      "summary": "和的幂可以展开为具有系统相关系数的级数。",
+      "problem": "通过更简单的多项式项计算非整数幂。",
+      "development": "由此产生的无穷级数成为早期微积分的工具。后来的分析提供了收敛条件。",
+      "limitations": "对于一般实指数，显示的级数保证为 |x| <1；边界行为需要单独分析。",
+      "historicalSetting": "牛顿在英国研究求积时，将旧的有限二项式模式扩展到分数和负指数。",
+      "date": {
+        "label": "约1665年",
+        "note": "日期是牛顿的发现，而不是发表或完全严格的收敛性证明。"
+      },
+      "contributors": [
+        {
+          "name": "艾萨克·牛顿",
+          "role": "将二项式模式扩展到非整数指数"
+        }
+      ],
+      "representation": {
+        "explanation": "α 是指数；系数按连续递减因子继续。"
+      },
+      "sourceDigest": "ef2ce0a70dc8edc2251ca776ccf38b1c69b4da54b0d4f78e063d0eca4eb6170d"
+    },
+    "taylor-series": {
+      "title": "泰勒展开式",
+      "aliases": [],
+      "tags": [],
+      "summary": "某一点的导数确定附近函数的多项式近似值。",
+      "problem": "用可控的局部逼近代替复杂的函数。",
+      "development": "后来的分析将带有误差项的有限近似与实际上收敛于其函数的无限级数分开。",
+      "limitations": "无穷多个导数不能保证与泰勒级数相等。误差估计在数值使用中至关重要。",
+      "historicalSetting": "布鲁克·泰勒（Brook Taylor）发表了十八世纪早期英国的一般扩展。",
+      "date": {
+        "label": "1715年",
+        "note": "泰勒 Methodus Incretorum 的出版里程碑；相关扩展较早存在。"
+      },
+      "contributors": [
+        {
+          "name": "布鲁克·泰勒",
+          "role": "发布了基于衍生品的通用扩展"
+        }
+      ],
+      "representation": {
+        "explanation": "h为小位移；省略的项决定了近似误差。"
+      },
+      "sourceDigest": "fb141341f52a07567bc6e33e49b7903bef89a2bf77fb924da21e476533c8f7b3"
+    },
+    "eulers-formula": {
+      "title": "欧拉复指数公式",
+      "aliases": [],
+      "tags": [],
+      "summary": "复指数将普通旋转与三角振荡结合起来。",
+      "problem": "将指数增长规则与正弦和余弦联系起来。",
+      "development": "这个恒等式后来简化了波计算、电信号和量子相位。",
+      "limitations": "显示标识中的角度以弧度为单位测量。复振幅是一种数学表示，而不是额外的物理维度。",
+      "historicalSetting": "欧拉十八世纪的分析将指数函数和三角函数引入了一个共同的框架。",
+      "date": {
+        "label": "1748年",
+        "note": "精选教材阐述； Cotes 于 1714 年发表了相关的对数关系。"
+      },
+      "contributors": [
+        {
+          "name": "莱昂哈德·欧拉",
+          "role": "发展了指数三角关系"
+        },
+        {
+          "name": "罗杰·科特斯",
+          "role": "发布了相关的早期身份"
+        }
+      ],
+      "representation": {
+        "explanation": "i² = −1； θ 是一个以弧度表示的角度，表示单位圆上的一个点。"
+      },
+      "sourceDigest": "775cc58f417d131451f2a6c830f93dfd66032d50bc81dac784866280876f2e29"
+    },
+    "calculus-of-variations": {
+      "title": "变分法",
+      "aliases": [],
+      "tags": [],
+      "summary": "变分微积分优化整个曲线或函数而不是单个数字。",
+      "problem": "哪种路径或形状使累积量静止？",
+      "development": "他们的方法组织了涉及最短路径和行动的问题，准备了系统的分析力学。",
+      "limitations": "固定并不一定意味着最小。边界条件和允许的变化是问题的一部分。",
+      "historicalSetting": "拉格朗日从都灵发出的信件向欧拉介绍了一种通用的分析技术。",
+      "date": {
+        "label": "1755年",
+        "note": "拉格朗日给欧拉的信标志着一种新方法的出现。欧拉和伯努利方程较早地提出了变分问题。"
+      },
+      "contributors": [
+        {
+          "name": "约瑟夫·路易斯·拉格朗日",
+          "role": "引入了一般变分方法"
+        },
+        {
+          "name": "莱昂哈德·欧拉",
+          "role": "开发了变分方程和早期方法"
+        }
+      ],
+      "representation": {
+        "explanation": "对于函数 y 允许的微小变化，函数 J 的一阶变化消失。"
+      },
+      "sourceDigest": "b7a91fc4879b3cd051c8afc787b06c79c7cdf9e857b352b7a8187bb45a1c8c9a"
+    },
+    "lagrange-multipliers": {
+      "title": "拉格朗日乘子",
+      "aliases": [],
+      "tags": [],
+      "summary": "辅助变量在寻求极值的同时强制约束。",
+      "problem": "当变量不能独立变化时优化数量。",
+      "development": "该技术成为约束几何、经济学和工程的通用工具。",
+      "limitations": "基本规则需要可微性和正则约束。它确定仍需要分类的候选人。",
+      "historicalSetting": "拉格朗日在他的巴黎时代的分析力学中使用了未定乘数。",
+      "date": {
+        "label": "1788年",
+        "note": "分析力学中使用的日期；一般有限变量规则出现于 1797 年。"
+      },
+      "contributors": [
+        {
+          "name": "约瑟夫·路易斯·拉格朗日",
+          "role": "针对约束问题开发乘数方法"
+        }
+      ],
+      "representation": {
+        "explanation": "在规则约束极值处，目标梯度 ∇f 与约束梯度 ∇g 平行。"
+      },
+      "sourceDigest": "d0cba66cb108aa0f5cfc697d45c4de3f7d3a34680bcf3cd7c442cb05e1eae701"
+    },
+    "least-squares": {
+      "title": "最小二乘估计",
+      "aliases": [],
+      "tags": [],
+      "summary": "通过最小化预测与观察之间的差异平方和来拟合模型。",
+      "problem": "合并因误差而不一致的测量结果。",
+      "development": "高斯和后来的统计学家将其与误差分布和估计联系起来，而优先级争议则涉及出版前的使用。",
+      "limitations": "异常值可以主导平方误差。统计结论取决于对观察结果和模型的假设。",
+      "historicalSetting": "勒让德在法国发表了天文计算方法。",
+      "date": {
+        "label": "1805年",
+        "note": "勒让德的第一篇出版物；高斯后来声称先前使用过并提供了概率说明。"
+      },
+      "contributors": [
+        {
+          "name": "阿德里安·玛丽·勒让德",
+          "role": "首次公开方法"
+        },
+        {
+          "name": "卡尔·弗里德里希·高斯",
+          "role": "开发了概率论证并声称更早使用"
+        }
+      ],
+      "representation": {
+        "explanation": "将观测值 yᵢ 与模型预测 ŷᵢ 进行比较。"
+      },
+      "sourceDigest": "1d9d8390212e6a594deeac1ae1344b6ed5ce07b800b1e4048797f1c7d8765608"
+    },
+    "central-limit-theorem": {
+      "title": "中心极限定理",
+      "aliases": [],
+      "tags": [],
+      "summary": "在适当的条件下，许多随机量的归一化总和接近正态分布。",
+      "problem": "解释为什么钟形误差在不同的测量中会重复出现。",
+      "development": "后来的证明澄清了独立性、方差和收敛性假设，为统计数据架起了从个体不确定性到总体行为的桥梁。",
+      "limitations": "重尾或依赖性会使基本形式失效；有限样本可能会缓慢收敛。",
+      "historicalSetting": "拉普拉斯扩展了法国早期的概率近似。",
+      "date": {
+        "label": "1810年",
+        "note": "选择拉普拉斯概括；德莫弗尔曾提出过一个较早的特例。"
+      },
+      "contributors": [
+        {
+          "name": "皮埃尔·西蒙·拉普拉斯",
+          "role": "发展了广泛的早期极限定理"
+        },
+        {
+          "name": "亚伯拉罕·德·莫弗尔",
+          "role": "建立二项式到正态的特例"
+        }
+      ],
+      "representation": {
+        "explanation": "对于具有均值 μ 和有限非零方差 σ² 的独立同分布变量，收敛是分布的。"
+      },
+      "sourceDigest": "09169f94a0bc31da65c336648e04cdbc6c53ed364a8441af2cfbd8f92400c8e3"
+    },
+    "limits": {
+      "title": "极限与严格收敛",
+      "aliases": [],
+      "tags": [],
+      "summary": "极限指定任意接近的值，而不要求达到该值。",
+      "problem": "使无限过程足够精确以证明微积分的合理性。",
+      "development": "随后的数学家明确了连续性和收敛性的定义，暴露了一些早期论点中的缺陷。",
+      "limitations": "极限的存在需要证明。交换无穷和、导数和极限可以改变答案。",
+      "historicalSetting": "柯西在巴黎综合理工学院的教学围绕限制行为进行了分析。",
+      "date": {
+        "label": "1821年",
+        "note": "柯西的分析课程是一个里程碑；随着时间的推移，现代的 epsilon-delta 公式得到了发展。"
+      },
+      "contributors": [
+        {
+          "name": "奥古斯丁·路易斯·柯西",
+          "role": "将限制作为有影响力的分析教科书的核心"
+        }
+      ],
+      "representation": {
+        "explanation": "输出接近 L，输入接近 a； f(a) 值可能不同或未定义。"
+      },
+      "sourceDigest": "5577bc5f5a7855f1296113de39bb12b50105156b365d62e9eda1fcebca6692ba"
+    },
+    "complex-analysis": {
+      "title": "复变函数理论",
+      "aliases": [],
+      "tags": [],
+      "summary": "复平面上的可微性带来很强的结构约束，将局部函数值与围道积分联系起来。",
+      "problem": "了解实线之外的函数和积分。",
+      "development": "黎曼和维尔斯特拉斯后来提供了互补的观点，使复分析在整个数学物理中发挥作用。",
+      "limitations": "对于柯西积分定理来说，仅连续性是不够的；全纯性和域的拓扑很重要。",
+      "historicalSetting": "柯西 1825 年在巴黎出版的回忆录在早期对定积分的研究之后发展了复积分。",
+      "date": {
+        "label": "1825年",
+        "note": "精选关于复数定积分的论文，而不是首次使用复杂函数。"
+      },
+      "contributors": [
+        {
+          "name": "奥古斯丁·路易斯·柯西",
+          "role": "发展了复积分及其定理"
+        }
+      ],
+      "representation": {
+        "explanation": "对于单连通域上的全纯 f，该域中的每个闭合围道 γ 的积分为零。"
+      },
+      "sourceDigest": "10ec0415db9064ef028cd34326cef8da66fb0d2a0601e68fab47c0451053031f"
+    },
+    "galois-theory": {
+      "title": "伽罗瓦理论",
+      "aliases": [],
+      "tags": [],
+      "summary": "多项式根之间的对称性揭示了哪些方程可以使用根式求解。",
+      "problem": "解释为什么有些方程无法通过根和算术得出公式。",
+      "development": "后来的场论将这种联系强化为子群和中间场之间的对应关系。",
+      "limitations": "熟悉的根式可解性准则需要适当的场和可分离性假设；当根式失效时，数值近似仍然是可能的。",
+      "historicalSetting": "在法国，伽罗瓦将方程求解与保留代数关系的排列联系起来。",
+      "date": {
+        "label": "1832年",
+        "note": "伽罗瓦最后的数学遗嘱的日期；刘维尔于 1846 年发表了他的主要著作。"
+      },
+      "contributors": [
+        {
+          "name": "埃瓦里斯特·伽罗瓦",
+          "role": "连通根对称性与可解性"
+        },
+        {
+          "name": "约瑟夫·刘维尔",
+          "role": "认可并出版伽罗瓦的作品"
+        }
+      ],
+      "representation": {
+        "explanation": "自同构保留了所选基域上的域运算和所有关系。",
+        "expression": "根的对称性 ↔ 域的结构"
+      },
+      "sourceDigest": "aeee8bf47d3fd4b87874ed340c9e70cf9df2cb8a7255bcb3d312600c6fcdc20b"
+    },
+    "riemannian-geometry": {
+      "title": "黎曼几何",
+      "aliases": [],
+      "tags": [],
+      "summary": "空间可以有自己平滑变化的规则来测量长度和角度。",
+      "problem": "描述曲率而不假设周围的欧几里得空间。",
+      "development": "张量方法后来开发了这种语言；相对论使用具有不定度量而不是正定度量的相关几何。",
+      "limitations": "数学度量本身并不识别物理时空。必须区分黎曼签名和洛伦兹签名。",
+      "historicalSetting": "黎曼在哥廷根将曲面几何推广到任意维度的流形。",
+      "date": {
+        "label": "1854年",
+        "note": "黎曼的哥廷根训练讲座；随后于 1868 年出版。"
+      },
+      "contributors": [
+        {
+          "name": "伯恩哈德·黎曼",
+          "role": "引入了流形的通用度量方法"
+        }
+      ],
+      "representation": {
+        "explanation": "正定度量系数 gᵢⱼ 确定无穷小的平方距离。"
+      },
+      "sourceDigest": "37a6dc4e6d7ff7cad409c69b36890ceba3716151392d24641e0926ae289d861b"
+    },
+    "stochastic-processes": {
+      "title": "马尔可夫链",
+      "aliases": [
+        "马尔可夫过程",
+        "随机过程"
+      ],
+      "tags": [],
+      "summary": "马尔可夫链按概率演化，其下一状态分布由其当前状态决定。",
+      "problem": "研究依赖性，同时保留可管理的不确定性模型。",
+      "development": "他后来对元音和辅音的分析说明了这个框架。随机过程还包括许多非马尔可夫模型。",
+      "limitations": "无记忆是一种建模假设，通常只能通过选择足够信息的状态来实现。",
+      "historicalSetting": "在圣彼得堡，马尔可夫研究了相关序列和极限定律。",
+      "date": {
+        "label": "1906年",
+        "note": "日期是马尔可夫的连锁调查，而不是所有随机过程理论的开始。"
+      },
+      "contributors": [
+        {
+          "name": "安德烈·马尔科夫",
+          "role": "开发了因随机变量链"
+        }
+      ],
+      "representation": {
+        "explanation": "一旦知道当前状态，早期状态就不会改变下一步的概率。"
+      },
+      "sourceDigest": "91b3ef48988460804bdcc6c7250bd9607b38f70d2a367913ecb2968f4fe5a450"
+    },
+    "hilbert-spaces": {
+      "title": "希尔伯特空间",
+      "aliases": [],
+      "tags": [],
+      "summary": "希尔伯特空间把长度和角度的概念推广到完备的函数空间或无穷序列空间。",
+      "problem": "用几何和线性方法处理无限维问题。",
+      "development": "后来的抽象公式成为光谱理论和量子数学的核心。",
+      "limitations": "并非每个函数空间都是希尔伯特空间；完整性和内积规范至关重要。",
+      "historicalSetting": "对积分方程和傅里叶级数的研究使希尔伯特、里斯和费舍尔走向了等价序列和函数空间。",
+      "date": {
+        "label": "1907年",
+        "note": "里斯-费舍尔对应是选定的里程碑；随后出现了抽象希尔伯特空间公理。"
+      },
+      "contributors": [
+        {
+          "name": "大卫·希尔伯特",
+          "role": "开发无限维方法"
+        },
+        {
+          "name": "弗里吉斯·里斯和恩斯特·费舍尔",
+          "role": "独立证明了1907年的对应关系"
+        }
+      ],
+      "representation": {
+        "explanation": "每个柯西序列都收敛于由内积定义的范数。",
+        "expression": "完备的内积空间"
+      },
+      "sourceDigest": "5d66ae743c733cad8296cee7d4dbbf1aa975f49694930299579cfe0de7e7dd57"
+    },
+    "noethers-theorem": {
+      "title": "诺特对称定理",
+      "aliases": [],
+      "tags": [],
+      "summary": "在适当条件下，作用量的每一种连续对称性都对应一个守恒量。",
+      "problem": "解释为什么守恒定律伴随着物理对称性。",
+      "development": "这一结果阐明了分析力学，并成为场论的基础。",
+      "limitations": "离散对称性不会自动产生相同类型的守恒定律。边界项和局部规范对称性需要小心。",
+      "historicalSetting": "艾美·诺特 (Emmy Noether) 在哥廷根研究变分问题，将对称性与微分恒等式和守恒定律联系起来。",
+      "date": {
+        "label": "1918年",
+        "note": "不变变分问题的发布；这篇文章强调了第一个定理。"
+      },
+      "contributors": [
+        {
+          "name": "艾美·诺特",
+          "role": "证明变分对称定理"
+        }
+      ],
+      "representation": {
+        "explanation": "时间平移给出了能量守恒；当作用量具有这些对称性时，空间平移会产生动量守恒。",
+        "expression": "作用量的连续对称性 ⇒ 守恒流"
+      },
+      "sourceDigest": "65abd478b6aa701ce26ed37a10f74ea1d1772083bb458256aa364d9e5228150b"
+    },
+    "distribution-theory": {
+      "title": "广义函数与广义导数",
+      "aliases": [],
+      "tags": [],
+      "summary": "广义函数作用于平滑测试函数，允许具有跳跃或集中质量的对象的导数。",
+      "problem": "将有用的奇异计算置于严格的基础上。",
+      "development": "索博列夫的早期工作和物理学家的操作方法提供了相关的先例；分布对于微分方程来说变得不可或缺。",
+      "limitations": "任意分布的乘积通常没有定义。所选的测试函数空间会影响理论。",
+      "historicalSetting": "在战时和战后的法国，施瓦茨开发了一个超越普通函数的总体框架。",
+      "date": {
+        "label": "约1945年",
+        "note": "施瓦茨最初制定的日期；大型博览会出现在 20 世纪 40 年代后期和 1950 年代。"
+      },
+      "contributors": [
+        {
+          "name": "洛朗·施瓦茨",
+          "role": "系统化分配理论"
+        },
+        {
+          "name": "谢尔盖·索博列夫",
+          "role": "开发了早期的广义函数方法"
+        }
+      ],
+      "representation": {
+        "explanation": "导数 T' 由其对平滑紧支撑测试函数 φ 的作用来定义。"
+      },
+      "sourceDigest": "a110bc14da38d08ff7c29d6df08462ce96be78caaaf2eaaca83e80b33a387d19"
+    },
+    "numerical-analysis": {
+      "title": "数值稳定性和误差分析",
+      "aliases": [],
+      "tags": [],
+      "summary": "数值分析研究算法如何逼近数学答案并传播误差。",
+      "problem": "区分可靠的计算和看似精确的错误结果。",
+      "development": "他们的工作帮助组织了一门具有更古老计算根源的学科。",
+      "limitations": "稳定的算法无法消除病态问题固有的不确定性；必须对有限精度进行预算。",
+      "historicalSetting": "冯·诺依曼和戈德斯坦 1947 年在美国进行的矩阵求逆研究分析了电子计算的舍入、误差源和稳定性。",
+      "date": {
+        "label": "1947年",
+        "note": "现代计算时代的里程碑，而不是数值近似的起源。"
+      },
+      "contributors": [
+        {
+          "name": "约翰·冯·诺依曼",
+          "role": "计算及误差分析"
+        },
+        {
+          "name": "赫尔曼·戈德斯坦",
+          "role": "共同撰写矩阵求逆研究"
+        }
+      ],
+      "representation": {
+        "explanation": "小的输入变化和小的计算误差是不同的问题，必须单独分析。",
+        "expression": "调节：问题敏感性；稳定性：算法行为"
+      },
+      "sourceDigest": "2c406c2714e4ed5705808c6b7e9f66c039a86aa62471afc8572b5ce7fb68ad9a"
+    },
+    "oscillations": {
+      "title": "摆和周期运动",
+      "aliases": [],
+      "tags": [],
+      "summary": "振荡围绕平衡反复交换运动并储存能量。",
+      "problem": "建造能够通过重复运动可靠地测量时间的时钟。",
+      "development": "他于 1673 年发表的论文分析了振荡体和特殊的摆线路径，有助于将重复运动转化为精确的力学。",
+      "limitations": "简单摆公式假设角度小、摩擦力可忽略不计且枢轴固定；大的波动并不完全和谐。",
+      "historicalSetting": "惠更斯将荷兰钟表制造与钟摆的数学研究结合起来。",
+      "date": {
+        "label": "1673年",
+        "note": "惠更斯的《Horologium Oscillatorium》出版物；对振荡的观察要古老得多。"
+      },
+      "contributors": [
+        {
+          "name": "克里斯蒂安·惠更斯",
+          "role": "开发了摆钟和数学振荡理论"
+        }
+      ],
+      "representation": {
+        "explanation": "对于小摆动，周期 T 取决于摆长 ℓ 和重力加速度 g。"
+      },
+      "sourceDigest": "dcc26a16419dcdfda02b33ac14e0af660c29e9047fa7c7a5215dc144a496defe"
+    },
+    "elasticity": {
+      "title": "弹性响应和胡克定律",
+      "aliases": [],
+      "tags": [],
+      "summary": "弹性体在负载去除后能够恢复形状；小变形通常会随着力的增加而扩大。",
+      "problem": "将弹簧的伸长量与其承载的载荷联系起来。",
+      "development": "后来的连续介质力学将弹性推广到应力、应变和方向相关的固体。",
+      "limitations": "比例性超出了线性范围，塑性变形可能是永久性的。",
+      "historicalSetting": "胡克在伦敦使用仪器和材料，制定了比例弹簧响应。",
+      "date": {
+        "label": "1678年",
+        "note": "胡克弹簧定律的出版；他于 1676 年以字谜的形式宣布了这一点。"
+      },
+      "contributors": [
+        {
+          "name": "罗伯特·胡克",
+          "role": "公布武力延伸法"
+        }
+      ],
+      "representation": {
+        "explanation": "对于理想弹簧，恢复力 F 与位移 x 相反； k 是刚度。"
+      },
+      "sourceDigest": "4cc286a0ac40df43b47ea0dc21e4bb8f07dbd770785ecb95b3fa0e75fba92124"
+    },
+    "wave-equation": {
+      "title": "波动方程",
+      "aliases": [],
+      "tags": [],
+      "summary": "波动方程描述了以特征速度在空间中传播的扰动。",
+      "problem": "解释弹拨的琴弦如何沿其长度传递运动。",
+      "development": "欧拉和其他分析师扩展了这场争论，这有助于形成函数和波传播的数学概念。",
+      "limitations": "最简单的方程假设线性、均匀、非色散介质；真实的波可以是阻尼的或非线性的。",
+      "historicalSetting": "达朗贝尔在十八世纪的欧洲使用偏微分方程对振动弦进行建模。",
+      "date": {
+        "label": "1747年",
+        "note": "精选达朗贝尔振动弦配方。"
+      },
+      "contributors": [
+        {
+          "name": "让·达朗贝尔",
+          "role": "制定并求解振动弦方程"
+        },
+        {
+          "name": "莱昂哈德·欧拉",
+          "role": "扩展数学理论"
+        }
+      ],
+      "representation": {
+        "explanation": "u 是位移，x 位置，t 时间，c 是传播速度。"
+      },
+      "sourceDigest": "4c608b9d80776ce3144165aaeaa9ff8ddb732c370093a762bdfbe7d1534b5aeb"
+    },
+    "fluid-dynamics": {
+      "title": "连续介质流体力学",
+      "aliases": [],
+      "tags": [],
+      "summary": "移动的流体由速度、密度和压力场表示，而不是通过跟踪每个分子。",
+      "problem": "预测水流、涡流和物质传输。",
+      "development": "后来的粘度项催生了纳维-斯托克斯方程，将应用范围从理想流动扩展到工程和大气模型。",
+      "limitations": "连续体模型需要合适的尺度和边界条件；即使方程已知，湍流仍然很困难。",
+      "historicalSetting": "欧拉在柏林的工作将流体运动置于分析力学中。",
+      "date": {
+        "label": "1757年",
+        "note": "欧拉的论文写于 1755 年，发表于 1757 年。"
+      },
+      "contributors": [
+        {
+          "name": "莱昂哈德·欧拉",
+          "role": "理想流体运动的连续方程"
+        },
+        {
+          "name": "克劳德·路易斯·纳维尔和乔治·斯托克斯",
+          "role": "开发粘性流方程"
+        }
+      ],
+      "representation": {
+        "explanation": "欧拉方程平衡惯性与每单位质量的压力和体积力 f，忽略粘度。"
+      },
+      "sourceDigest": "a58a65d030c05cc858430fbd342dfb7f0a20d1c555760f9a0ac2fd2380d32c58"
+    },
+    "lagrangian-mechanics": {
+      "title": "拉格朗日力学",
+      "aliases": [],
+      "tags": [],
+      "summary": "运动方程可以从坐标和速度的标量函数导出。",
+      "problem": "处理链接的实体和约束，无需单独求解每个力。",
+      "development": "这种灵活的表述后来自然地扩展到了场和相对论理论。",
+      "limitations": "拉格朗日量必须适合系统；简单的 T−V 模型不会自动涵盖耗散。",
+      "historicalSetting": "拉格朗日在巴黎的论文通过广义坐标和变分方法系统化了分析力学。",
+      "date": {
+        "label": "1788年",
+        "note": "出版《Mécanique analytique》；更早的变分力学出现在它之前。"
+      },
+      "contributors": [
+        {
+          "name": "约瑟夫·路易斯·拉格朗日",
+          "role": "统一分析力学方法"
+        }
+      ],
+      "representation": {
+        "explanation": "L是拉格朗日量； qᵢ 是广义坐标，具有适当的约束并且没有额外的广义力。"
+      },
+      "sourceDigest": "22f0d6db43da24d9f48528a82fe6842bd8e5896815927b5eb743867ebff396a7"
+    },
+    "hamiltonian-mechanics": {
+      "title": "哈密顿力学",
+      "aliases": [],
+      "tags": [],
+      "summary": "使用成对坐标和动量在相空间中描述运动。",
+      "problem": "找到光学和动力学背后的共同数学结构。",
+      "development": "由此产生的方程成为通向统计力学、规范变换和量子公式的桥梁。",
+      "limitations": "哈密顿量只有在合适的条件下才等于总能量；单一受限系统需要额外的机械。",
+      "historicalSetting": "1834 年至 1835 年间，汉密尔顿将其爱尔兰光学研究的方法应用到了力学中。",
+      "date": {
+        "label": "1834年",
+        "note": "动力学论文中的第一个通用方法； 1835 年又发生了第二次。"
+      },
+      "contributors": [
+        {
+          "name": "威廉·罗文·汉密尔顿",
+          "role": "发展了规范动力学方程"
+        }
+      ],
+      "representation": {
+        "explanation": "H 是哈密顿量； qᵢ 和 pᵢ 是规范的坐标动量对。"
+      },
+      "sourceDigest": "585142eaf64a0445a4f260b4010d263053093003089e7ff3649d22a932294e28"
+    },
+    "diffusion-laws": {
+      "title": "菲克扩散定律",
+      "aliases": [],
+      "tags": [],
+      "summary": "即使没有大量流体运动，浓度梯度也可以驱动净物质传输。",
+      "problem": "预测溶解的物质如何扩散和混合。",
+      "development": "他的定律将可测量的梯度与通量联系起来，后来支持了生理学、化学和材料加工。",
+      "limitations": "菲克输运假定适当的局部扩散率；拥挤、反应或异常传输可能需要其他模型。",
+      "historicalSetting": "在苏黎世，生理学家阿道夫·菲克将热流的数学类比应用于盐扩散。",
+      "date": {
+        "label": "1855年",
+        "note": "菲克液体扩散研究的发表。"
+      },
+      "contributors": [
+        {
+          "name": "阿道夫·菲克",
+          "role": "制定并测试扩散定律"
+        }
+      ],
+      "representation": {
+        "explanation": "当标量扩散系数 D 为正时，通量 J 指向浓度梯度 ∇c 下方。"
+      },
+      "sourceDigest": "6b9a6937af14052cd32aee731b4190d3e219b61bc90e2c648841961ed6130949"
+    },
+    "acoustics": {
+      "title": "数学声学",
+      "aliases": [],
+      "tags": [],
+      "summary": "声学将振动、波传播和共振与声音的产生和行为联系起来。",
+      "problem": "定量预测音调、共鸣和声场。",
+      "development": "它的处理有助于将仪器、振动结构和流体压力波统一在一门学科中。",
+      "limitations": "线性声学是一种近似；冲击、强振幅、复杂边界和损失需要扩展。",
+      "historicalSetting": "英国瑞利的综合组织了十九世纪关于声音的数学和实验工作。",
+      "date": {
+        "label": "1877年",
+        "note": "瑞利声音理论第一卷；声学有着古老和早期现代的根源。"
+      },
+      "contributors": [
+        {
+          "name": "约翰·威廉·斯特拉特，雷利勋爵",
+          "role": "综合数学声音理论"
+        },
+        {
+          "name": "赫尔曼·冯·亥姆霍兹",
+          "role": "连接共鸣和听觉分析"
+        }
+      ],
+      "representation": {
+        "explanation": "对于波，速度 v 等于频率 f 乘以波长 λ；介质决定速度。"
+      },
+      "sourceDigest": "eed3141f589aeca9e0303ce7d50c32467ce2d1fab6f0cd60b121d4e1d5dcb36d"
+    },
+    "electromagnetic-waves": {
+      "title": "电磁波的实验证实",
+      "aliases": [],
+      "tags": [],
+      "summary": "电扰动和磁扰动一起传播，在空间中携带能量。",
+      "problem": "测试麦克斯韦预测的波是否物理存在于可见光之外。",
+      "development": "这些实验支持了麦克斯韦场论，并促成了后续的无线研究。",
+      "limitations": "火花实验并没有立即产生实用的无线电系统；天线、检测和信号控制需要进一步的工作。",
+      "historicalSetting": "在卡尔斯鲁厄，赫兹用火花装置产生并检测了波，并研究了它们的光学行为。",
+      "date": {
+        "label": "1888年",
+        "note": "选定赫兹演示时段；他的实验跨越了 1886 年至 1889 年。"
+      },
+      "contributors": [
+        {
+          "name": "海因里希·赫兹",
+          "role": "产生和检测到的电磁波"
+        },
+        {
+          "name": "詹姆斯·克拉克·麦克斯韦",
+          "role": "根据电磁方程预测波"
+        }
+      ],
+      "representation": {
+        "explanation": "真空介电常数ε₀和磁导率μ₀决定电磁波速度c。"
+      },
+      "sourceDigest": "6d2588ec6ed5a9c29cd4c383af31f551fd56565885a23e37e3bd02b927bad7f5"
+    },
+    "bose-einstein-statistics": {
+      "title": "玻色-爱因斯坦统计",
+      "aliases": [
+        "玻色统计"
+      ],
+      "tags": [],
+      "summary": "不可分辨的玻色子可以占据同一量子态，这决定了各态占据数如何依赖于能量。",
+      "problem": "一致地计算光量子，而不将排列视为不同的排列。",
+      "development": "玻色计算光子态；爱因斯坦将该方法应用于具有质量的粒子并预测在最低状态下的积累。后来稀释的原子气体使得这种集体效应可以直接实现。",
+      "limitations": "理想气体公式忽略了相互作用。凝聚态和超流态是具有不同定义的相关现象。",
+      "historicalSetting": "达卡和柏林的工作将量子辐射与气体的统计数据联系起来。",
+      "date": {
+        "label": "1924年",
+        "note": "玻色的光子统计和爱因斯坦的扩展始于 1924 年；预计 1924 年至 1925 年期间会发生凝结。"
+      },
+      "contributors": [
+        {
+          "name": "萨蒂延德拉·纳特·博斯",
+          "role": "1924 年提出光子计数"
+        },
+        {
+          "name": "阿尔伯特·爱因斯坦",
+          "role": "将统计扩展到物质粒子"
+        }
+      ],
+      "representation": {
+        "explanation": "该规则计算不可分辨的粒子；它并不要求每个玻色子都占据相同的状态。",
+        "expression": "玻色子允许重复占据一种量子态。"
+      },
+      "sourceDigest": "7a13956fa3389169037814f84500a61a49edaaaa13bad7fe2f79b40ee914b842"
+    },
+    "pauli-exclusion": {
+      "title": "泡利不相容原理",
+      "aliases": [],
+      "tags": [],
+      "summary": "两个相同的费米子不能占据相同的单粒子量子态。",
+      "problem": "解释现有量子规则无法组织的原子壳层结构和光谱模式。",
+      "development": "泡利引入了使用四个量子数的限制。电子自旋后来澄清了额外的自由度，反对称多粒子态给出了现代公式。",
+      "limitations": "该限制涉及完整的状态，而不是禁止共享位置的粒子。它适用于相同的费米子，而不是玻色子。",
+      "historicalSetting": "欧洲原子光谱揭示了旧量子理论中无法解释的壳层种群。",
+      "date": {
+        "label": "1925年",
+        "note": "泡利在一月份矩阵力学和电子自旋出版物发布之前宣布了这一规则。"
+      },
+      "contributors": [
+        {
+          "name": "沃尔夫冈·泡利",
+          "role": "引入了原子电子的排除规则"
+        }
+      ],
+      "representation": {
+        "explanation": "当两个电子的自旋态不同时，它们可以共享一个空间轨道。",
+        "expression": "每个单粒子态至多有一个相同的费米子。"
+      },
+      "sourceDigest": "9c62cb0ce59a95641bbe85d025dd23e073564866da0667edbbb813b3110a36eb"
+    },
+    "electron-spin": {
+      "title": "电子自旋",
+      "aliases": [],
+      "tags": [],
+      "summary": "电子具有固有角动量，沿着选定的测量轴有两个可能的投影。",
+      "problem": "考虑原子理论中使用的光谱多重态和额外量子数。",
+      "development": "乌伦贝克和古德斯密特提出了电子的固有角动量。量子力学用二元态和角动量算子取代了字面上的旋转球体图。",
+      "limitations": "自旋并不是一个在太空中旋转的微小带电球体。沿着另一个轴进行测量并不能揭示第二个同时确定的经典方向。",
+      "historicalSetting": "莱顿原子物理学家正在解释光谱学和泡利的新量子数限制。",
+      "date": {
+        "label": "1925年",
+        "note": "Uhlenbeck 和 Goudsmit 发表的提案；克罗尼格早些时候曾考虑过类似的想法，但没有发表。"
+      },
+      "contributors": [
+        {
+          "name": "乔治·乌伦贝克",
+          "role": "共同提出的电子自旋"
+        },
+        {
+          "name": "塞缪尔·古德斯密特",
+          "role": "自旋与原子光谱的关联"
+        },
+        {
+          "name": "拉尔夫·克罗尼格",
+          "role": "被认为是早期未发布的模型"
+        }
+      ],
+      "representation": {
+        "explanation": "电子沿 z 方向的自旋投影的测量给出任一符号； ℏ 是普朗克常数除以 2π。"
+      },
+      "sourceDigest": "f676b8551367b80023564866ec84dc17189a81f4b16f0d38f5eb36dbb0958d5b"
+    },
+    "fermi-dirac-statistics": {
+      "title": "费米-狄拉克统计",
+      "aliases": [],
+      "tags": [],
+      "summary": "不可分辨的费米子遵循不相容原理占据量子态，在零温下形成清晰的占据边界。",
+      "problem": "描述经典计数失败的电子气体或其他粒子。",
+      "development": "费米将泡利限制应用于理想气体。狄拉克将结果与量子力学联系起来；它成为物质中电子行为的核心。",
+      "limitations": "基本占据公式描述了热平衡中的独立粒子。强相关性可能需要更详细的多体描述。",
+      "historicalSetting": "新的量子力学和原子排除规则使粒子计数的新处理方法成为可能。",
+      "date": {
+        "label": "1926年",
+        "note": "费米于二月发表；狄拉克随后通过不同的处理得到了等效的计数规则。"
+      },
+      "contributors": [
+        {
+          "name": "恩里科·费米",
+          "role": "推导了遵循不相容原理的气体统计"
+        },
+        {
+          "name": "保罗·狄拉克",
+          "role": "独立获得量子统计结果"
+        }
+      ],
+      "representation": {
+        "explanation": "一个量子态为空或被单个粒子占据；系综描述其平均占据概率。",
+        "expression": "费米子的态占据遵循泡利不相容原理。"
+      },
+      "sourceDigest": "ab6cb91431dd3f48efd8de3f6af7e92c87557dc5a2273557d27519d8adb55a78"
+    },
+    "quantum-tunneling": {
+      "title": "量子隧道效应",
+      "aliases": [],
+      "tags": [],
+      "summary": "量子态可以延伸穿过有限的势垒并产生传输，其中相同能量的经典粒子将被反射。",
+      "problem": "解释尽管有势垒限制带电阿尔法粒子的核衰变率。",
+      "development": "伽莫夫以及格尼和康登独立地将波力学应用于阿尔法衰变。对势垒宽度和能量的指数敏感性后来使得隧道设备和显微镜成为可能。",
+      "limitations": "传输不需要借用能量或打破能量守恒。矩形势垒近似不是详细的核模型。",
+      "historicalSetting": "1928 年，波力学被应用于研究令人费解的放射性寿命。",
+      "date": {
+        "label": "1928年",
+        "note": "里程碑：对阿尔法衰变的独立解释，而不是对每种屏障穿透效应的首次讨论。"
+      },
+      "contributors": [
+        {
+          "name": "乔治·伽莫夫",
+          "role": "解释阿尔法衰变与屏障穿透"
+        },
+        {
+          "name": "罗纳德·格尼和爱德华·康登",
+          "role": "独立开发α衰变解释"
+        }
+      ],
+      "representation": {
+        "explanation": "“禁止”意味着在指定的能量下经典运动是不可能的，而不是量子振幅必须消失。",
+        "expression": "非零透射波可以存在于有限的禁止障碍之外。"
+      },
+      "sourceDigest": "9dfc9d746adb8e1613f3ff2d05d54aded479758e0678c7fbecb472135421a10d"
+    },
+    "landau-phase-transitions": {
+      "title": "朗道相变理论",
+      "aliases": [],
+      "tags": [],
+      "summary": "将自由能按序参量展开，并满足系统的对称性要求，可以建立相变模型。",
+      "problem": "解释非常不同的材料的转变之间的常见模式。",
+      "development": "兰道通过自由能最小值组织了可能的阶段。该框架影响了磁性、结构转变和超导理论；后来的波动需要改进。",
+      "limitations": "平均场展开可能会给出不正确的关键指数，并且在没有适当的局部阶参数的情况下可能会错过转换。",
+      "historicalSetting": "苏联理论物理学寻求对物质组织变化的共同描述。",
+      "date": {
+        "label": "1937年",
+        "note": "兰道的一般治疗可以追溯到 1937 年；后来的扩展引入了空间变化和波动。"
+      },
+      "contributors": [
+        {
+          "name": "列夫·兰道",
+          "role": "开发对称性和序参量框架"
+        }
+      ],
+      "representation": {
+        "explanation": "对于 m → −m 下的对称系统，m 是阶次参数，a,b 取决于条件； b > 0 稳定了这个简单的截断。"
+      },
+      "sourceDigest": "56524793368e5b55fcd5f227f66ef3fd0c9a9890ee11dac75c3acfc308574c43"
+    },
+    "superfluidity": {
+      "title": "超流性",
+      "aliases": [],
+      "tags": [],
+      "summary": "在适当条件下，温度低于转变温度的液氦能呈现测不出黏滞阻力的流动。",
+      "problem": "了解为什么极冷的氦气不像普通液体那样流过狭窄的通道。",
+      "development": "卡皮察以及艾伦和米塞纳独立观察到了异常流动。二流体和量子理论将这种行为与集体激发和超流体成分联系起来。",
+      "limitations": "超流在超过临界条件时可能会崩溃。涡流、边界和法向分量意味着“任何地方都没有摩擦”是一个不准确的描述。",
+      "historicalSetting": "苏联和英国的低温实验室研究了液氦。",
+      "date": {
+        "label": "1938年",
+        "note": "经过 1937 年的实验后，独立观察结果于 1938 年 1 月发表。"
+      },
+      "contributors": [
+        {
+          "name": "彼得·卡皮察",
+          "role": "测量的异常氦流量"
+        },
+        {
+          "name": "约翰·艾伦和唐·米森纳",
+          "role": "独立观察狭窄通道中的流动"
+        }
+      ],
+      "representation": {
+        "explanation": "这种行为属于集体量子相，而不是液体变成完美的经典气体。",
+        "expression": "超流体在适当的条件下支持持续、相干的质量流。"
+      },
+      "sourceDigest": "e752664c5a247588c935f067c9c48a2db422f2ab3e003b27248a16ae2414dee5"
+    },
+    "weak-interaction": {
+      "title": "费米弱衰变理论",
+      "aliases": [],
+      "tags": [],
+      "summary": "局域相互作用将中子转化为质子，同时产生电子和中微子对应物。",
+      "problem": "解释 β 衰变，同时保留能量计算并允许连续的电子光谱。",
+      "development": "费米将泡利的中微子提议纳入粒子创造的量子理论中。后来的电弱理论用大量弱玻色子的交换取代了它的点相互作用。",
+      "limitations": "原始相互作用是一种有效的低能描述。它缺乏后来的宇称破坏结构，并且不能外推到任意高的能量。",
+      "historicalSetting": "欧洲核物理学面临着连续贝塔谱和所提出的中微子。",
+      "date": {
+        "label": "1934年",
+        "note": "1933 年出现了初步提案；完整的β衰变理论于1934年发表。"
+      },
+      "contributors": [
+        {
+          "name": "恩里科·费米",
+          "role": "构建了β衰变相互作用"
+        },
+        {
+          "name": "沃尔夫冈·泡利",
+          "role": "提出在能源核算中使用中性粒子"
+        }
+      ],
+      "representation": {
+        "explanation": "现代符号：中子、质子、电子和电子反中微子。费米最初的命名法先于现代的区分。"
+      },
+      "sourceDigest": "452db9a6b6a22393adf42e50ec6393e4989a50cae4d585f29afe97a3535a0f75"
+    },
+    "higgs-mechanism": {
+      "title": "布劳特-恩格勒特-希格斯机制",
+      "aliases": [],
+      "tags": [],
+      "summary": "真空中的非零场值可以给出规范玻色子质量，同时保持规范理论的一致性。",
+      "problem": "将大量弱力载流子与规范相互作用的数学结构相协调。",
+      "development": "独立小组展示了对称性破缺如何避免规范理论中不必要的无质量激发。该机制成为弱电理论的一部分。",
+      "limitations": "该机制无法解释所有粒子质量的值。大多数普通质子质量来自强相互作用能量，而不是直接来自希格斯场。",
+      "historicalSetting": "粒子理论家寻求对短程弱力的一致描述。",
+      "date": {
+        "label": "1964年",
+        "note": "1964年的几篇独立论文建立了该机制； 2012年观察到相关的玻色子。"
+      },
+      "contributors": [
+        {
+          "name": "弗朗索瓦·恩格勒特和罗伯特·布劳特",
+          "role": "发表独立规范对称性破缺机制"
+        },
+        {
+          "name": "彼得·希格斯",
+          "role": "确定了机制和相关的标量激励"
+        },
+        {
+          "name": "杰拉尔德·古拉尼克、卡尔·哈根和汤姆·基布尔",
+          "role": "开发出独立的理论表述"
+        }
+      ],
+      "representation": {
+        "explanation": "真空并不缺乏场结构；大规模生产并不是与介质的摩擦。",
+        "expression": "与对称破缺标量扇区耦合的规范场可以获得大量激励。"
+      },
+      "sourceDigest": "f17d44d041afee904077ca09a6ff1b051f1b9d100ad933b1b3fbd493d380782b"
+    },
+    "electroweak-theory": {
+      "title": "电弱统一",
+      "aliases": [],
+      "tags": [],
+      "summary": "电磁和弱相互作用符合一种规范理论，其对称性隐藏在低能量下。",
+      "problem": "一致地描述弱力载流子和光子，并预测以前未见过的中性弱过程。",
+      "development": "Glashow 制定了扩大的仪表结构。温伯格和萨拉姆结合了对称性破缺，产生了光子和大量的 W 和 Z 玻色子；随后的实验验证了这些预测。",
+      "limitations": "最小的原始模型具有无质量中微子，并且无法解释耦合和质量参数。它的成功并不意味着它成为所有力量的理论。",
+      "historicalSetting": "规范理论和对称性破缺在 20 世纪 60 年代的粒子物理学中趋于一致。",
+      "date": {
+        "label": "1967年",
+        "note": "Weinberg 的 1967 年模型被选为里程碑； Glashow 的工作可以追溯到 1961 年，Salam 的相关表述可以追溯到 1968 年。"
+      },
+      "contributors": [
+        {
+          "name": "谢尔顿·格拉肖",
+          "role": "介绍弱电规结构"
+        },
+        {
+          "name": "史蒂文·温伯格",
+          "role": "1967年将其与对称破缺结合起来"
+        },
+        {
+          "name": "阿卜杜勒·萨拉姆",
+          "role": "制定了相关统一配方"
+        }
+      ],
+      "representation": {
+        "explanation": "对称性破缺使光子失去质量，而弱力载流子则具有质量。",
+        "expression": "电磁学和弱相互作用共享一个潜在的规范结构。"
+      },
+      "sourceDigest": "692d6767a5a7ca744d7411383f384221e220d9f1c5a41a44931ccaa26cd7b0e5"
+    },
+    "quantum-chromodynamics": {
+      "title": "量子色动力学",
+      "aliases": [
+        "量子色动力学"
+      ],
+      "tags": [],
+      "summary": "夸克通过携带强力色荷的胶子场相互作用。",
+      "problem": "解释为什么夸克在高能探测器中几乎可以自由地活动，但却没有被观察为孤立的粒子。",
+      "development": "色规模型与渐近自由的发现相结合，将高能散射与基本相互作用联系起来。 QCD 成为标准模型的强相互作用组件。",
+      "limitations": "在低能量下，耦合很强，因此简单的微扰展开会失败。许多预测需要数值晶格计算或有效的描述。",
+      "historicalSetting": "深层非弹性散射和夸克模型向理论学家提出了解释强相互作用的挑战。",
+      "date": {
+        "label": "1973年",
+        "note": "1973 年的渐近自由结果使正在发展的色规理论成为引人注目的强相互作用候选者。"
+      },
+      "contributors": [
+        {
+          "name": "大卫·格罗斯和弗兰克·维尔切克",
+          "role": "非阿贝尔规范理论中的渐近自由度"
+        },
+        {
+          "name": "大卫·波利策",
+          "role": "独立导出的渐近自由"
+        },
+        {
+          "name": "哈拉尔德·弗里茨奇和默里·盖尔曼",
+          "role": "帮助制定色标描述"
+        }
+      ],
+      "representation": {
+        "explanation": "这种渐近自由是一种高能属性；这并不意味着在核距离上力量很弱。",
+        "expression": "有效的强耦合在距离较短时变弱。"
+      },
+      "sourceDigest": "107c3c34a7cebf32dd1f0430222c415fb70893eec18982fc77471f90c1b1293b"
+    },
+    "neutrino-oscillations": {
+      "title": "中微子振荡",
+      "aliases": [],
+      "tags": [],
+      "summary": "以一种味态产生的中微子，之后可能以另一种味态被探测到，因为味态是不同质量态的混合。",
+      "problem": "解释弱相互作用粒子的检测到的身份在传播过程中如何变化。",
+      "development": "庞泰科尔沃提出中微子可能发生振荡；牧二郎、中川昌美和坂田昌一建立了味混合理论。超级神冈与SNO实验确认了大气和太阳中微子的味态变化。",
+      "limitations": "振荡测量质量差异和混合，而不是绝对质量尺度。物质效应和三味态干涉使最简单的两味态图景变得复杂。",
+      "historicalSetting": "中微子的发现和中性粒子混合在敏感振荡实验之前几十年激发了一项提议。",
+      "date": {
+        "label": "1957年",
+        "note": "庞泰科尔沃的第一个提议并不是完整的现代味态理论；味态混合于 1962 年发展起来，决定性的证据随后在 1998 年至 2002 年出现。"
+      },
+      "contributors": [
+        {
+          "name": "布鲁诺·庞泰科尔沃",
+          "role": "提出的早期中微子振荡想法"
+        },
+        {
+          "name": "牧二郎、中川昌美和坂田昌一",
+          "role": "开发了味态混合框架"
+        },
+        {
+          "name": "Super-Kamiokande 与 SNO 合作",
+          "role": "建立了决定性的实验证据"
+        }
+      ],
+      "representation": {
+        "explanation": "因此，检测概率随行进距离和能量的变化而变化；这不是一个周期性改变其内部标签的经典粒子。",
+        "expression": "味态是具有不同演化相位的质量态的叠加。"
+      },
+      "sourceDigest": "2851f9d15abfd427cd100c58945f91f578c5cdee1874780ab7300f3c175b3590"
+    },
+    "bell-theorem": {
+      "title": "贝尔定理",
+      "aliases": [],
+      "tags": [],
+      "summary": "某些量子相关性无法通过满足定理独立性假设的局部隐变量模型来重现。",
+      "problem": "将关于量子完整性和局域性的争论转化为可通过实验测试的约束。",
+      "development": "贝尔分析了爱因斯坦-波多尔斯基-罗森挑战。后来的不平等和越来越受控的实验测试了预测的违规行为，并帮助启动了量子信息研究。",
+      "limitations": "违规行为不会实现超光速消息传递。结论取决于明确指定的局部性和统计独立性假设，而不是单一模糊的现实主义概念。",
+      "historicalSetting": "关于纠缠粒子的基本问题在欧洲核子研究中心进行了定量测试。",
+      "date": {
+        "label": "1964年",
+        "note": "贝尔最初的不等式出现于 1964 年； 1969 年广泛使用的 CHSH 实验形式随之而来。"
+      },
+      "contributors": [
+        {
+          "name": "约翰·贝尔",
+          "role": "推导出最初的不相容定理"
+        },
+        {
+          "name": "约翰·克劳瑟、迈克尔·霍恩、阿布纳·希莫尼和理查德·霍尔特",
+          "role": "提出了后来可检验的不等式"
+        }
+      ],
+      "representation": {
+        "explanation": "实验必须在解决检测、通信和设置选择假设的同时测试合适的界限。",
+        "expression": "局部隐变量相关性遵守某些纠缠量子态所违反的界限。"
+      },
+      "sourceDigest": "a3efb2dfd153ad1e6b7cbab0e5bf1378484e6242c1843d4948b5a5666eb84df5"
+    },
+    "stoichiometry": {
+      "title": "化学计量学",
+      "aliases": [],
+      "tags": [],
+      "summary": "反应方程描述了消耗和形成的物质的比例。",
+      "problem": "计算需要多少反应物以及可以获得多少产物。",
+      "development": "里克特研究了中和量并引入了化学计量。后来原子和分子公式将组合比例转化为平衡方程和摩尔比。",
+      "limitations": "平衡比例并不决定反应速率、途径或实际产量。非化学计量固体需要额外描述。",
+      "historicalSetting": "十八世纪末的化学家正在测量酸、碱和盐的可重复比例。",
+      "date": {
+        "label": "1792年",
+        "note": "里希特的三卷本作品出版于 1792 年至 1794 年；定量反应测量有着更早的根源。"
+      },
+      "contributors": [
+        {
+          "name": "杰里米亚斯·本杰明·里希特",
+          "role": "系统化的配合量并命名为化学计量"
+        }
+      ],
+      "representation": {
+        "explanation": "两份氢分子与一份氧结合，生成两份水；系数保留原子计数。"
+      },
+      "sourceDigest": "702e0191de3ed878b2c4def73aadb8a445593ec5021eb6cb4c7d418f4a21781a"
+    },
+    "valence": {
+      "title": "化合价和结合能力",
+      "aliases": [],
+      "tags": [],
+      "summary": "原子表现出独特的组合能力，有助于组织分子式和连接性。",
+      "problem": "解释为什么元素以特定的数字模式重复组合。",
+      "development": "弗兰克兰从有机金属化合物推广而来。后来的结构化学使用化合价来绘制分子连接，而电子理论提供了微观解释。",
+      "limitations": "化合价与氧化态或配位数不同。变价和多中心键合超出了严格的固定数量规则。",
+      "historicalSetting": "含金属有机化合物的研究挑战了十九世纪化学中相互竞争的公式惯例。",
+      "date": {
+        "label": "1852年",
+        "note": "Frankland 1852 年的论文被选为里程碑；价这个词和结构解释是后来发展起来的。"
+      },
+      "contributors": [
+        {
+          "name": "爱德华·弗兰克兰",
+          "role": "提议的特征组合能力"
+        },
+        {
+          "name": "奥古斯特·凯库勒和其他结构化学家",
+          "role": "开发化合价作为分子连接的工具"
+        }
+      ],
+      "representation": {
+        "explanation": "甲烷中碳的四键就是一个常见的例子。这个概念并不是完整的键合量子理论。",
+        "expression": "化合价计算指定键合模型中的结合能力。"
+      },
+      "sourceDigest": "730c2e819e1e07e8b307f4e3185fe2c11aa3b4eb27df505d600d960433dfe035"
+    },
+    "coordination-chemistry": {
+      "title": "配位理论",
+      "aliases": [],
+      "tags": [],
+      "summary": "金属中心可与周围配体结合，配体的数目与几何排列解释了不同类型的配位化合物。",
+      "problem": "解释其化学式和异构体无法用简单链和价态图表示的化合物。",
+      "development": "沃纳区分了不同的组合作用，并提出了围绕金属的空间布置。在后来的电子理论解释其能量学之前，合成和异构体研究建立了配位几何。",
+      "limitations": "仅靠几何形状并不能预测每种化合物的稳定性、颜色或反应速率。现代配体场和分子轨道方法扩展了原始框架。",
+      "historicalSetting": "苏黎世对无机化合物的研究挑战了金属-氨络合物的直链理论。",
+      "date": {
+        "label": "1893年",
+        "note": "维尔纳 (Werner) 的基础文章发表于 1893 年；随后继续进行实验测试和立体化学工作。"
+      },
+      "contributors": [
+        {
+          "name": "阿尔弗雷德·维尔纳",
+          "role": "制定配位理论并测试几何布置"
+        }
+      ],
+      "representation": {
+        "explanation": "配体是与中心结合的离子或分子；配位数计算附着的供体原子。",
+        "expression": "中心金属+周围配体→配位络合物。"
+      },
+      "sourceDigest": "e92aec05c944933f3e52f9b8f2e2a9ac79725daae0a4b550cc4485210d872fa6"
+    },
+    "redox-reactions": {
+      "title": "氧化态的记账方法",
+      "aliases": [],
+      "tags": [],
+      "summary": "氧化态以形式化方式分配电子归属，便于配平电子转移并追踪化学组成的变化。",
+      "problem": "比较不同化合物的氧化还原反应，无需完整计算电子密度。",
+      "development": "早期的氧转移和电子转移思想先于拉蒂默的有影响力的治疗。现代定义使用离子近似来结合和识别具有不明确分配的情况。",
+      "limitations": "氧化态是正式的计算值，而不是通常测量的原子电荷。离域键和氧化还原活性配体可以使分配不唯一。",
+      "historicalSetting": "二十世纪的电化学家寻求一种一致的方法来组织氧化水平和电极电位。",
+      "date": {
+        "label": "1938年",
+        "note": "选定的里程碑：Latimer 系统的氧化态术语和电化学处理，而不是氧化或还原的起源。"
+      },
+      "contributors": [
+        {
+          "name": "温德尔·拉蒂默",
+          "role": "系统化的氧化态和电位描述"
+        },
+        {
+          "name": "IUPAC 工作组",
+          "role": "完善的现代定义和分配规则"
+        }
+      ],
+      "representation": {
+        "explanation": "这些变化在反应中平衡。诸如+2之类的形式状态不需要等于原子的实际部分电荷。",
+        "expression": "氧化提高氧化态；减少会降低它。"
+      },
+      "sourceDigest": "66a7384546c448400e2989e158a50c99fc1bb2b2c9d090b67d361c31fff367e9"
+    },
+    "le-chatelier-principle": {
+      "title": "勒夏特列原理",
+      "aliases": [],
+      "tags": [],
+      "summary": "在特定的约束条件下，被扰动的平衡经常会朝着部分抵消所施加的变化的方向移动。",
+      "problem": "预测温度、压力或成分变化如何影响平衡混合物。",
+      "development": "勒夏特列将化学变化与热平衡和机械平衡联系起来。后来的热力学分析表明，这句口号必须转化为指定的控制变量。",
+      "limitations": "定性措辞并不是对每一个耦合变化都无限制的法则。对于不明确的情况，平衡常数和自由能计算更安全。",
+      "historicalSetting": "工业化学和物理化学正在将可逆反应转变为定量研究对象。",
+      "date": {
+        "label": "1884年",
+        "note": "勒夏特列概括了早期的平衡观察，包括范特霍夫的温度规则。"
+      },
+      "contributors": [
+        {
+          "name": "亨利·勒夏特列",
+          "role": "提出一般定性平衡规则"
+        },
+        {
+          "name": "雅各布斯·范特霍夫",
+          "role": "开发了较早的温度平衡关系"
+        }
+      ],
+      "representation": {
+        "explanation": "对于放热可逆反应，在通常的平衡约束下，升高温度有利于吸热的相反方向。",
+        "expression": "在预测转变之前，先说明哪些内容发生了变化，哪些内容保持不变。"
+      },
+      "sourceDigest": "f9631072dc86f7b2d75d2fa340b2fd543851fe7571e8c2fa65a192b203a2a9e9"
+    },
+    "arrhenius-equation": {
+      "title": "阿累尼乌斯方程",
+      "aliases": [],
+      "tags": [],
+      "summary": "许多反应速率常数随绝对温度的倒数近似呈指数变化。",
+      "problem": "预测温度对反应速度的强烈影响。",
+      "development": "阿累尼乌斯解释了通过活化分子测量到的速率变化。后来的碰撞和过渡态理论提供了对激活和前因子的更详细的描述。",
+      "limitations": "A 和活化能可随温度或机制而变化。一些多步和隧道主导的反应不遵循单一的直线阿累尼乌斯图。",
+      "historicalSetting": "物理化学家将反应速率测量与新兴的分子解释结合起来。",
+      "date": {
+        "label": "1889年",
+        "note": "阿累尼乌斯采用并解释了与范特霍夫早期分析相关的温度依赖性形式。"
+      },
+      "contributors": [
+        {
+          "name": "斯万特·阿累尼乌斯",
+          "role": "应用并解释速率-温度关系"
+        },
+        {
+          "name": "雅各布斯·范特霍夫",
+          "role": "开发了前体温度分析"
+        }
+      ],
+      "representation": {
+        "explanation": "k 是速率常数，A 是前置因子，Eₐ 活化能，R 是气体常数，T 是绝对温度。"
+      },
+      "sourceDigest": "377e5124cbc9ff3d0b772959211bbef9e1fc6d7bfe622281f2b37d8bb1cfc6e7"
+    },
+    "chemical-potential": {
+      "title": "化学势",
+      "aliases": [],
+      "tags": [],
+      "summary": "化学势测量在特定条件下添加少量组分时自由能的变化。",
+      "problem": "使用一种热力学量表达相和反应混合物之间的平衡。",
+      "development": "吉布斯将可变成分纳入热力学。各相化学势相等成为物质平衡的标准和相图的基础。",
+      "limitations": "该值取决于成分、温度、压力和参考约定。它不仅仅是分子储存的键能。",
+      "historicalSetting": "吉布斯在耶鲁大学的工作将热力学推理扩展到化学成分变化的系统。",
+      "date": {
+        "label": "1876年",
+        "note": "吉布斯在 1876 年至 1878 年期间发展了平衡处理；本条目使用第一部分作为其锚点。"
+      },
+      "contributors": [
+        {
+          "name": "乔赛亚·威拉德·吉布斯",
+          "role": "在异质平衡中引入组分电势"
+        }
+      ],
+      "representation": {
+        "explanation": "G 是吉布斯能量，nᵢ 是组分 i 的量；导数是其偏摩尔吉布斯能量。"
+      },
+      "sourceDigest": "9d459f567042168eb17d985249be2036dbf0e462b31d3f269f33bf6552852219"
+    },
+    "nuclear-magnetic-resonance": {
+      "title": "核磁共振",
+      "aliases": [
+        "核磁共振"
+      ],
+      "tags": [],
+      "summary": "具有磁矩的原子核在磁场及其分子周围环境形成的共振下吸收和发射射频能量。",
+      "problem": "通过核行为探测物质而不破坏其化学结构。",
+      "development": "哈佛大学和斯坦福大学的独立团队检测到了大量核共振。化学位移和耦合随后将这种现象转变为一种强大的结构光谱方法。",
+      "limitations": "只有合适的原子核才能产生有用的信号。敏感性、重叠峰和分子运动会使结构解释变得复杂；核磁共振比医学成像更广泛。",
+      "historicalSetting": "战后实验室将射频技术应用于普通物质中原子核的磁性。",
+      "date": {
+        "label": "1946年",
+        "note": "块体物质实验于 1945 年末取得成功，并于 1946 年发表；分子束磁共振出现在他们之前。"
+      },
+      "contributors": [
+        {
+          "name": "爱德华·珀塞尔、亨利·托里和罗伯特·庞德",
+          "role": "在固体样品中检测到共振"
+        },
+        {
+          "name": "菲利克斯·布洛赫、威廉·汉森和马丁·帕卡德",
+          "role": "独立检测到液态水中的核感应"
+        }
+      ],
+      "representation": {
+        "explanation": "电子稍微改变局部场，因此共振位置报告化学环境。",
+        "expression": "磁场将核自旋能级分开；无线电波可以驱动转变。"
+      },
+      "sourceDigest": "fe9019c91ac921dee3746f775d42b76306c22e88be07fb4f6e2451c8fdfe33fe"
+    },
+    "mass-spectrometry": {
+      "title": "质谱分析",
+      "aliases": [
+        "多发性硬化症"
+      ],
+      "tags": [],
+      "summary": "电离的原子和分子通过其质荷比来分离或识别。",
+      "problem": "区分同位素并确定物质的特性和成分。",
+      "development": "汤姆森的正射线实验分离了氖物种。阿斯顿等人改进了聚焦和精确度；后来的电离方法将该技术扩展到复杂分子。",
+      "limitations": "峰测量质荷比，而不仅仅是质量。电离和碎裂可能会使信号产生偏差，并且相同的标称质量可能需要更高的分辨率。",
+      "historicalSetting": "卡文迪什实验室对放电的研究从电子扩展到正离子。",
+      "date": {
+        "label": "1913年",
+        "note": "锚点：汤姆森的阳性射线和氖同位素证据的发表；早期的离子偏转工作和后来的仪器改进得到了认可。"
+      },
+      "contributors": [
+        {
+          "name": "J·J·汤姆森",
+          "role": "开发了正射线分析并报告了氖同位素证据"
+        },
+        {
+          "name": "弗朗西斯·阿斯顿",
+          "role": "改进的质量聚焦和同位素测量"
+        }
+      ],
+      "representation": {
+        "explanation": "不同的电荷状态或碎片可以从相同的原始物质产生不同的峰。",
+        "expression": "m/z 确定离子相对于其电荷数的质量。"
+      },
+      "sourceDigest": "a8da17fdbde1a4ea8905b3442517a0afc4f4206ee61d139c817644c7744b0a6e"
+    },
+    "reaction-mechanisms": {
+      "title": "亲核取代机制",
+      "aliases": [
+        "SN1",
+        "SN2"
+      ],
+      "tags": [],
+      "summary": "取代可以通过逐步的离子形成途径或通过耦合的断键和成键事件进行。",
+      "problem": "解释为什么改变底物、溶剂或攻击试剂会改变反应速度和立体化学。",
+      "development": "休斯和英戈尔德将动力学证据与结构推理相结合来区分限制机制。该框架使有机反应可以理解为序列，而不仅仅是平衡的公式。",
+      "limitations": "SN1和SN2是限制模型，不是完整的替代分类。离子配对、溶剂效应和竞争消除可以产生更复杂的行为。",
+      "historicalSetting": "伦敦大学学院的化学家使用反应速率来测试有机转化的电子解释。",
+      "date": {
+        "label": "1935年",
+        "note": "选定的里程碑：系统的SN1/SN2符号和讨论；休斯和英戈尔德于 1933 年描述了前身的双重机制。"
+      },
+      "contributors": [
+        {
+          "name": "爱德华·休斯",
+          "role": "设计和解释反应动力学研究"
+        },
+        {
+          "name": "克里斯托弗·英戈尔德",
+          "role": "开发反应机理概念和符号"
+        }
+      ],
+      "representation": {
+        "explanation": "这些数字是指特征动力学步骤中的分子数，而不是整个反应中的步骤数。",
+        "expression": "SN1：逐步电离； SN2：耦合位移。"
+      },
+      "sourceDigest": "6a1816056a87469dab4d470f090915e6c75821221b6febd5b29cb398d871042c"
+    },
+    "supramolecular-chemistry": {
+      "title": "分子识别与超分子化学",
+      "aliases": [],
+      "tags": [],
+      "summary": "分子可以通过形状匹配和非共价相互作用识别其他化学物种，并与之组装。",
+      "problem": "设计超越单个共价键合分子的选择性结合和有组织的组装体。",
+      "development": "佩德森的冠醚将金属离子束缚在空腔中。莱恩和克拉姆开发了越来越有选择性的主体，将化学设计扩展到识别和有组织的分子系统。",
+      "limitations": "结合取决于溶剂、竞争、熵以及几何拟合。仅凭一张锁和钥匙的图片就可能夸大其特殊性。",
+      "historicalSetting": "合成化学开始设计空腔和选择性相互作用，部分是受到生物识别的启发。",
+      "date": {
+        "label": "1967年",
+        "note": "Pedersen 的冠醚出版物是一个里程碑；随后出现了更广泛的领域和术语。"
+      },
+      "contributors": [
+        {
+          "name": "查尔斯·佩德森",
+          "role": "发现冠醚及其离子结合特性"
+        },
+        {
+          "name": "让-马里·莱恩",
+          "role": "开发了穴状配体和超分子概念"
+        },
+        {
+          "name": "唐纳德·克拉姆",
+          "role": "开发选择性主客系统"
+        }
+      ],
+      "representation": {
+        "explanation": "组装的复合物可以解离而不破坏每个分子的主要共价框架。",
+        "expression": "主体通过互补的非共价相互作用结合客体。"
+      },
+      "sourceDigest": "08c0daaa7ba67ace1cd0c273eea0d6085781929095392b25a79e1acbd37f1cf7"
+    },
+    "click-chemistry": {
+      "title": "点击化学",
+      "aliases": [],
+      "tags": [],
+      "summary": "这一合成策略采用一小组选择性好、可靠且便于产物处理和纯化的反应，连接分子构件。",
+      "problem": "高效构建有用的分子，无需为每个目标重新设计困难的反应序列。",
+      "development": "科尔布、芬恩和夏普莱斯阐述了这一战略。铜催化的叠氮化物-炔偶联和后来的生物正交反应拓宽了其在合成和生物标记中的用途。",
+      "limitations": "反应的可靠性取决于其伙伴和条件。铜的毒性限制了一些生物用途，激发了替代反应；点击并不意味着普遍无害或定量。",
+      "historicalSetting": "在世纪之交，化学家寻求文库、材料和生物探针的模块化合成。",
+      "date": {
+        "label": "2001年",
+        "note": "定义性评论出现于 2001 年；该名称和程序早前已有讨论，其中著名的铜催化反应出现于2001-2002年。"
+      },
+      "contributors": [
+        {
+          "name": "哈特穆斯·科尔布、M·G·芬恩和巴里·夏普莱斯",
+          "role": "制定点击化学策略"
+        },
+        {
+          "name": "莫滕·梅尔达尔和合作者",
+          "role": "独立开发了基础铜催化偶联"
+        },
+        {
+          "name": "卡罗琳·贝尔托齐和合作者",
+          "role": "与生命系统的扩展选择性耦合"
+        }
+      ],
+      "representation": {
+        "explanation": "该标签描述了一种设计标准和一系列反应，而不是一种通用反应机制。",
+        "expression": "选择性+可靠的转化率+简单的产品指导反应选择。"
+      },
+      "sourceDigest": "3f7b961179fa29f2a613883c77dee083ba3fa7e4877bb1e33dff58db014b8d80"
+    },
+    "crystal-lattices": {
+      "title": "晶格",
+      "aliases": [],
+      "tags": [],
+      "summary": "格子描述了平移重复：等效位置在几个基本步骤的整数组合处重复出现。",
+      "problem": "对晶体形状和物理性质背后的规则空间结构进行分类。",
+      "development": "布拉维纠正并统一了早期的格分类。在每个晶格点添加原子排列将几何形状与材料结构和衍射联系起来。",
+      "limitations": "晶格是理想的周期性支架，而不是完整的晶体结构。缺陷、表面和非周期性晶体需要扩展。",
+      "historicalSetting": "十九世纪的晶体学家从外表面和角度测量推断出内部规律性。",
+      "date": {
+        "label": "1850年",
+        "note": "Bravais 对 14 种三维晶格类型的分类是选定的里程碑；几何晶体学有着丰富的早期传统。"
+      },
+      "contributors": [
+        {
+          "name": "奥古斯特·布拉维",
+          "role": "对14种三维晶格类型进行分类"
+        },
+        {
+          "name": "莫里茨·弗兰肯海姆",
+          "role": "开发了早期的格枚举"
+        }
+      ],
+      "representation": {
+        "explanation": "n 个值是整数，a、b、c 是原始平移向量；必须添加原子基础才能指定晶体。"
+      },
+      "sourceDigest": "0a451106bb8daac918231ca215210c29f0e0ddb25281d4a26e95d26208229a85"
+    },
+    "x-ray-diffraction": {
+      "title": "X射线衍射",
+      "aliases": [],
+      "tags": [],
+      "summary": "有序物质散射的 X 射线的干涉揭示了原子间距并有助于重建晶体结构。",
+      "problem": "测试内部晶体顺序并测量对于光学显微镜来说太小的排列。",
+      "development": "弗里德里希和克尼平在劳厄的推动下进行了实验。劳伦斯·布拉格 (Lawrence Bragg) 提供了平面间距解释，而布拉格 (Braggs) 则发展了结构分析。历史学家区分这些贡献并对简化的发现故事提出质疑。",
+      "limitations": "衍射强度并不直接揭示所有散射相。无序、小样本和辐射损伤使重建变得复杂。",
+      "historicalSetting": "慕尼黑和英国实验室研究了 X 射线的性质和晶体的内部秩序。",
+      "date": {
+        "label": "1912年",
+        "note": "第一次衍射实验和布拉格的初步解释发生于 1912 年；完整的布拉格论文于 1913 年印刷。"
+      },
+      "contributors": [
+        {
+          "name": "马克斯·冯·劳厄",
+          "role": "提议测试晶体中的 X 射线干扰"
+        },
+        {
+          "name": "沃尔特·弗里德里希和保罗·尼平",
+          "role": "进行了决定性的实验"
+        },
+        {
+          "name": "威廉·劳伦斯·布拉格和威廉·亨利·布拉格",
+          "role": "发达的解释和结构测量"
+        }
+      ],
+      "representation": {
+        "explanation": "d 是平面间距，θ 是平面角度，λ 是波长，整数 n 是衍射级。"
+      },
+      "sourceDigest": "990880897f35e95929d48c22cd2e9c5805ee8ead4b03be5e42eda7aef1c8ac1b"
+    },
+    "dislocations": {
+      "title": "位错和塑性变形",
+      "aliases": [],
+      "tags": [],
+      "summary": "线缺陷可以在晶体中移动，从而使变形逐渐进行，而不是一次性滑动整个原子平面。",
+      "problem": "解释为什么晶体的屈服应力远低于完美晶格的估计值。",
+      "development": "Orowan、Polanyi 和 Taylor 将缺陷与塑性变形联系起来。后来的成像和缺陷力学使位错运动成为理解金属强度和加工硬化的核心。",
+      "limitations": "不同的缺陷、晶界和温度相关过程也控制变形。简单的孤立位错模型并不能预测每种材料的行为。",
+      "historicalSetting": "两次世界大战之间的研究人员将测量的晶体强度与预测的无缺陷晶格的更大强度进行了比较。",
+      "date": {
+        "label": "1934年",
+        "note": "1934 年对晶体可塑性的独立解释是锚；数学缺陷描述很早就存在了。"
+      },
+      "contributors": [
+        {
+          "name": "埃贡·奥罗万",
+          "role": "连接移动缺陷与塑性流动"
+        },
+        {
+          "name": "迈克尔·波兰尼",
+          "role": "独立提出错位解释"
+        },
+        {
+          "name": "G.I.泰勒",
+          "role": "开发了基于位错的晶体强度解释"
+        }
+      ],
+      "representation": {
+        "explanation": "它的运动让连续的局部债券重新排列；阻碍这种运动可以强化金属。",
+        "expression": "位错是一种导致晶格闭合失配的线缺陷。"
+      },
+      "sourceDigest": "d5358b29b5fcf1a14f3ce39643556f4013ee7d5d7b5b2ef01da0505d224668a3"
+    },
+    "phase-diagrams": {
+      "title": "平衡合金相图",
+      "aliases": [],
+      "tags": [],
+      "summary": "相图描绘了在指定温度、压力和成分下共存的相。",
+      "problem": "将合金成分和热条件与材料可包含的相联系起来。",
+      "development": "热测量提供了过渡曲线。鲁兹布姆利用吉布斯的平衡约束来修改铁碳图，将描述性图变成热力学一致的指南。",
+      "limitations": "平衡图不指定转变速度或微观结构。淬火可以保留亚稳态相，并且熟悉的铁-渗碳体图本身使用亚稳态碳化物描述。",
+      "historicalSetting": "冶金学家在二十世纪初将钢铁测量与热力学结合起来。",
+      "date": {
+        "label": "1900年",
+        "note": "锚点：鲁兹布姆的热力学一致铁碳图；早期的温度-成分图包括 Roberts-Austen 1897 年的作品。"
+      },
+      "contributors": [
+        {
+          "name": "亨德里克·威廉·巴克胡斯·鲁兹布姆",
+          "role": "将热力学相约束应用于合金图"
+        },
+        {
+          "name": "威廉·罗伯茨·奥斯汀",
+          "role": "产生有影响力的实验温度-成分数据"
+        },
+        {
+          "name": "乔赛亚·威拉德·吉布斯",
+          "role": "提供热力学框架"
+        }
+      ],
+      "representation": {
+        "explanation": "在两相区域中，相组成位于边界处；它们的比例遵循物质平衡。",
+        "expression": "相图中的点指定其规定约束下的平衡相。"
+      },
+      "sourceDigest": "ae694120fb4c1184ecee1eb47ce8e2c9baa33d1a4123b80508aea2bacc50f989"
+    },
+    "amorphous-materials": {
+      "title": "玻璃的随机网络模型",
+      "aliases": [],
+      "tags": [],
+      "summary": "玻璃可以保留局部键合排列，同时缺乏晶体的重复长程图案。",
+      "problem": "解释为什么固体玻璃在没有周期性晶格的情况下表现得一致。",
+      "development": "Zachariasen 提出了氧化物玻璃具有可变几何形状的连接原子网络。这使得短程组织与平移周期性的缺失兼容。",
+      "limitations": "最初的规则涉及重要的氧化物网络，而不是所有金属、聚合物或分子玻璃。玻璃结构和动力学取决于制备历史。",
+      "historicalSetting": "晶体学家寻求一种与周期性固体根本不同的玻璃的原子解释。",
+      "date": {
+        "label": "1932年",
+        "note": "Zachariasen 的原子网络论文是一个里程碑；玻璃制造和对非结晶性的认识要古老得多。"
+      },
+      "contributors": [
+        {
+          "name": "威廉·扎卡里亚森",
+          "role": "提出玻璃结构的非周期网络理论描述"
+        }
+      ],
+      "representation": {
+        "explanation": "“无定形”并不意味着原子没有结构关系；邻近债券仍然受到限制。",
+        "expression": "局部协调可以持续存在，而无需长距离周期性重复。"
+      },
+      "sourceDigest": "276bc27210f57202c851bf521c1b26b18711fac5818b9cb460231d3a566e6b45"
+    },
+    "liquid-crystals": {
+      "title": "液晶",
+      "aliases": [],
+      "tags": [],
+      "summary": "一些材料在能够流动的同时，保留定向或分层的分子有序性，介于普通液体与晶体之间。",
+      "problem": "解释显示出不止一种明显熔化转变和不寻常光学行为的物质。",
+      "development": "赖尼策尔观察到胆固醇衍生物的明显转变并咨询了莱曼。光学研究建立了有序的流体相，后来实现了电控显示。",
+      "limitations": "有许多不同的液晶相，而不是一种普遍的“第四态”。温度、浓度和分子形状决定了哪种顺序能够幸存。",
+      "historicalSetting": "通过关于不寻常熔化行为的通信，布拉格的植物化学与卡尔斯鲁厄的晶体光学相遇。",
+      "date": {
+        "label": "1888年",
+        "note": "1888年Reinitzer的观察开启了持续的研究；莱曼的解释和术语如下。"
+      },
+      "contributors": [
+        {
+          "name": "弗里德里希·雷尼茨",
+          "role": "观察到胆固醇苯甲酸酯的异常转变"
+        },
+        {
+          "name": "奥托·莱曼",
+          "role": "研究光学有序性并开发液晶解释"
+        }
+      ],
+      "representation": {
+        "explanation": "分子倾向于沿着共同方向排列，而它们的中心保持流体状。",
+        "expression": "向列相具有取向顺序，但没有长程位置顺序。"
+      },
+      "sourceDigest": "8892a2742031cf9e2539123d59552d430ad6ed98334781ef182552c473a4f4e4"
+    },
+    "piezoelectricity": {
+      "title": "压电性",
+      "aliases": [],
+      "tags": [],
+      "summary": "机械应力可以在合适的材料中产生电极化，并且施加的电场可以产生应变。",
+      "problem": "将晶体对称性与机械和电气行为之间的可测量耦合联系起来。",
+      "development": "雅克和皮埃尔·居里测量了受应力晶体产生的电荷。相互机电耦合在谐振器、传感器和声换能器中变得有用。",
+      "limitations": "效果取决于材料的对称性和方向。输出能量来自机械或电力输入；该材料是能量转换器，而不是能源。",
+      "historicalSetting": "巴黎关于晶体电特性的实验将矿物学与精密测量联系起来。",
+      "date": {
+        "label": "1880年",
+        "note": "居里兄弟于 1880 年证明了这种直接效应；随后预测并证实了相反的效果。"
+      },
+      "contributors": [
+        {
+          "name": "雅克·居里和皮埃尔·居里",
+          "role": "发现应力引起的电极化"
+        },
+        {
+          "name": "加布里埃尔·李普曼",
+          "role": "预测了相互的机电效应"
+        }
+      ],
+      "representation": {
+        "explanation": "耦合的强度和方向取决于材料以及晶体的取向方式。",
+        "expression": "应力 ↔ 极化，电场 ↔ 应变。"
+      },
+      "sourceDigest": "70de9e1b3c64c77ef6976ed9b608b6d4982cceb7e297cd6cdb701e042136bf56"
+    },
+    "ferroelectricity": {
+      "title": "铁电性",
+      "aliases": [],
+      "tags": [],
+      "summary": "铁电体具有可通过电场切换的自发电极化。",
+      "problem": "解释罗谢尔盐和相关材料的历史相关极化。",
+      "development": "瓦拉塞克观察到极化磁滞回线。后来的工作将可切换偏振与可用于存储器和机电设备的域、结构转变和材料联系起来。",
+      "limitations": "单独的滞后形测量可能会产生误导。必须排除泄漏和其他影响。开关、温度限制和疲劳取决于材料。",
+      "historicalSetting": "明尼苏达大学对罗谢尔盐的研究揭示了磁滞的电学对应物。",
+      "date": {
+        "label": "1920年",
+        "note": "瓦拉塞克的观察结果于 1920 年提出并于 1921 年发表；现代术语和定义随后演变。"
+      },
+      "contributors": [
+        {
+          "name": "约瑟夫·瓦拉塞克",
+          "role": "观察到罗谢尔盐中的电滞现象"
+        },
+        {
+          "name": "W·F·G·斯旺",
+          "role": "监督并介绍了早期工作"
+        }
+      ],
+      "representation": {
+        "explanation": "“Ferro”表达了与磁滞现象的类比；铁电体不需要含有铁。",
+        "expression": "铁电极化可以通过施加电场来逆转。"
+      },
+      "sourceDigest": "68e5b4bb4f44d8fd87683485d8675e58baeda20af62e3b2d905005106d69bafa"
+    },
+    "shape-memory-alloys": {
+      "title": "形状记忆合金：镍钛诺",
+      "aliases": [
+        "镍钛合金"
+      ],
+      "tags": [],
+      "summary": "合适的合金可以通过可逆的固态结构转变恢复预定的形状。",
+      "problem": "将相变转化为受控机械运动和可恢复变形。",
+      "development": "海军军械实验室研究人员将镍钛特性与温度相关结构联系起来。该材料的可逆转变后来使得紧凑型执行器和适应性设备成为可能。",
+      "limitations": "恢复具有有限的应变和疲劳极限。传热、负载历史和精确的成分控制性能；永久性塑料损坏不会自动恢复。",
+      "historicalSetting": "美国海军材料实验室研究了具有不寻常的温度依赖性机械行为的镍钛合金。",
+      "date": {
+        "label": "1963年",
+        "note": "锚：1963 年 NiTi 相变出版物；实验室的发现出现在 20 世纪 60 年代初期，其他合金的形状记忆效应也更早为人所知。"
+      },
+      "contributors": [
+        {
+          "name": "威廉·布勒、约翰·吉尔弗里奇和拉尔夫·威利",
+          "role": "镍钛合金中低温相效应的报道"
+        },
+        {
+          "name": "弗雷德里克·王",
+          "role": "帮助解释转变行为"
+        }
+      ],
+      "representation": {
+        "explanation": "适当的低温变形后加热可以恢复较高温度的结构。",
+        "expression": "可逆马氏体转变将变形状态与准备好的形状联系起来。"
+      },
+      "sourceDigest": "8d23b8ceabbb6b02ff8292d24c25dbe0ef09944502d17d08c455460fee68e261"
+    },
+    "li-ion-intercalation": {
+      "title": "嵌锂电极",
+      "aliases": [],
+      "tags": [],
+      "summary": "锂离子可以进入和离开主体固体，同时其大部分结构框架保持完整。",
+      "problem": "反复储存和释放电能，而无需完全重建电极的化学结构。",
+      "development": "惠廷厄姆使用层状二硫化钛作为插入阴极。后来的氧化物阴极和碳基阳极将这一原理发展到实用的锂离子电池中。",
+      "limitations": "早期电池使用活性锂金属，并不等同于现代锂离子电池。结构损坏、副反应和运输限制仍然影响循环寿命。",
+      "historicalSetting": "20 世纪 70 年代的储能研究寻求使用层状固体化合物的可充电电极。",
+      "date": {
+        "label": "1976年",
+        "note": "锚：Whittingham 1976 年的科学报告；发现、专利和早期论文跨越 20 世纪 70 年代初至中期。"
+      },
+      "contributors": [
+        {
+          "name": "M·斯坦利·惠廷厄姆",
+          "role": "开发可逆插层阴极"
+        },
+        {
+          "name": "约翰·古迪纳夫",
+          "role": "开发出更高电压的氧化物阴极"
+        },
+        {
+          "name": "吉野彰",
+          "role": "帮助开发带有碳基阳极的实用电池"
+        }
+      ],
+      "representation": {
+        "explanation": "插入改变了电荷平衡和成分，同时保留了足够的结构以进行重复逆转。",
+        "expression": "主体+锂离子+电子⇌含锂主体。"
+      },
+      "sourceDigest": "b36cb8d3c77ef78e078adee644a6c5837411b22c1c07226fd57df38b3cb56086"
+    },
+    "graphene": {
+      "title": "石墨烯与独立原子层",
+      "aliases": [],
+      "tags": [],
+      "summary": "蜂窝状排列的单个碳片提供了一种异常容易获得的二维电子材料。",
+      "problem": "测试原子级薄晶体是否仍然可用并揭示其电学行为。",
+      "development": "海姆、诺沃肖洛夫和合作者分离出薄石墨片并测量了它们的场相关传导。对石墨烯的研究帮助建立了更广泛的二维材料系列。",
+      "limitations": "理想的石墨烯缺乏传统的带隙，使一些晶体管的使用变得复杂。基材、缺陷、边缘和制造条件会改变其性能。",
+      "historicalSetting": "曼彻斯特领导的实验使极薄的碳片可以进行电子测量。",
+      "date": {
+        "label": "2004年",
+        "note": "2004 年的运输实验被选定为里程碑；碳单层理论和早期的表面研究先于它们。"
+      },
+      "contributors": [
+        {
+          "name": "安德烈·海姆和康斯坦丁·诺沃肖洛夫",
+          "role": "领导隔离和运输研究"
+        },
+        {
+          "name": "谢尔盖·莫罗佐夫、大江、张远波、谢尔盖·杜博诺斯、伊琳娜·格里戈里耶娃和亚历山大·菲尔索夫",
+          "role": "2004年电子测量合作"
+        }
+      ],
+      "representation": {
+        "explanation": "尽管片材的电子和周围环境需要完整的物理描述，但片材在结构上是二维的。",
+        "expression": "一个碳原子层形成二维蜂窝网络。"
+      },
+      "sourceDigest": "c4c924d8699032df583ae10468e758ae380f77373e16563cea37240b57df0d72"
+    },
+    "topological-insulators": {
+      "title": "拓扑绝缘体",
+      "aliases": [],
+      "tags": [],
+      "summary": "一些材料具有绝缘内部，但导电边界态受到其电子结构的拓扑和对称性的限制。",
+      "problem": "区分普通局部对称性和带隙描述所对待的绝缘相。",
+      "development": "凯恩和梅勒发现了时间反转对称系统的拓扑区别。对半导体量子阱的预测和随后的实验使得受保护的边缘传导变得可测量。",
+      "limitations": "保护取决于相关的对称性和间隙。它并不能消除实际样品中的所有电阻、无序效应或意外的整体传导。",
+      "historicalSetting": "凝聚态理论将能带结构与拓扑相结合，并在工程半导体层中进行了测试。",
+      "date": {
+        "label": "2005年",
+        "note": "Kane 和 Mele 2005 年的分类是核心； 2007 年出现了二维实验证据，随后又出现了三维实现。"
+      },
+      "contributors": [
+        {
+          "name": "查尔斯·凯恩和尤金·梅勒",
+          "role": "引入了关键的拓扑分类"
+        },
+        {
+          "name": "B. Andrei Bernevig、Taylor Hughes 和张首晟",
+          "role": "预测量子阱的实现"
+        },
+        {
+          "name": "马库斯·柯尼格 (Markus König)、劳伦斯·莫伦坎普 (Laurens Molenkamp) 及其合作者",
+          "role": "观察到支持量子阱输运的证据"
+        }
+      ],
+      "representation": {
+        "explanation": "对于原始的时间反转保护情况，重要的 Z2 指数将相位与普通绝缘体区分开来。",
+        "expression": "体电子拓扑限制了可能的边界态。"
+      },
+      "sourceDigest": "6adac177dc3e252f1c1178c672b94183876cd2a38214578413665f4be4c887e0"
+    }
+  },
+  "relationships": {
+    "geometry--pythagorean-theorem": {
+      "explanation": "测量矩形图形可以设置边和对角线之间的关系；这是一个概念上的联系。",
+      "sourceDigest": "f1e55a022bb3c7d906424f83dcf6f048aaf045e899369c4e9a6ff271e5cd4fb1"
+    },
+    "arithmetic--euclidean-algorithm": {
+      "explanation": "除法和减法将公约数问题简化为更小的问题。",
+      "sourceDigest": "f0dc45ff3581aadd901dde4eca37a6a5e1280b8143f8404763a77a6c128c7021"
+    },
+    "deductive-proof--euclidean-algorithm": {
+      "explanation": "欧几里得证明了约简保留了最大公测度。",
+      "sourceDigest": "095f5dea4980e50fca4e00dae90bcc40aa9d652d097cae437e9f82c7bf35353c"
+    },
+    "euclidean-geometry--conic-sections": {
+      "explanation": "圆锥曲线演示使用希腊几何的空间和演绎方法。",
+      "sourceDigest": "3b71b25354a11a21ad5ff12e779b37cca50ac82818c5bd247eda57d1b7124f84"
+    },
+    "arithmetic--combinatorics": {
+      "explanation": "产品算连续选择；除法删除重复的排序。",
+      "sourceDigest": "4e39274a421a76815d460c2bda664d71f5b2382ec65b6b84395224c4080cded2"
+    },
+    "algebra--binomial-theorem": {
+      "explanation": "和的扩展乘积提供了推广到非整数幂的有限模式。",
+      "sourceDigest": "391c65eff9f2fa06daab3196d956a626b6785f0e595605b6d560e169c8c94d36"
+    },
+    "calculus--taylor-series": {
+      "explanation": "连续导数测量由多项式项编码的局部变化。",
+      "sourceDigest": "ef96ed53d044e17579965c314fbd940d1e2c0c1de2871ec8388a360996420341"
+    },
+    "complex-numbers--eulers-formula": {
+      "explanation": "虚数单位将指数表达式扩展到复平面。",
+      "sourceDigest": "0ba95d0c6d3295c33507bf53c265c0ccf05ad6b14b73357dddc67d4c20459206"
+    },
+    "trigonometry--eulers-formula": {
+      "explanation": "正弦和余弦提供旋转的实部和虚部。",
+      "sourceDigest": "d784b21bb347438b608f6f648a7683c8da22a92ec10bd4ce27cd28b6b697cef7"
+    },
+    "calculus--calculus-of-variations": {
+      "explanation": "微分和积分从变量扩展到函数族。",
+      "sourceDigest": "59d9b3a98df4a01dcda2915d3e395c4502edfb4edddc5192f5ffff5607f392d3"
+    },
+    "least-action--calculus-of-variations": {
+      "explanation": "作用原理为拉格朗日开发的变分方法提供了重要的问题。",
+      "sourceDigest": "c4c3d0d3220091ad6c7f591efc93376e03ecb7745a614eebf7c25e5548fce55e"
+    },
+    "optimization--lagrange-multipliers": {
+      "explanation": "约束缩小了极值问题的可行点。",
+      "sourceDigest": "2bb05ac426531e4abd39935b452d10d65462d4bd9c757f057991b00ee0bcf9a0"
+    },
+    "calculus--lagrange-multipliers": {
+      "explanation": "梯度表示目标和约束如何局部变化。",
+      "sourceDigest": "33704795b8795ae95dae7affeb3eac4325766eaa94929a339593a7f05972d85b"
+    },
+    "statistics--least-squares": {
+      "explanation": "结合不同的观察结果可以激发拟合值的数值标准。",
+      "sourceDigest": "1e71f81876d44527fffe10d99bd2a828a57c1adef167aae507fed4c21495e797"
+    },
+    "calculus--least-squares": {
+      "explanation": "导数找到平方误差目标的最小值。",
+      "sourceDigest": "71e39eed125fe340e9e714c62d6dbdcb22ca6261c04ffbf5033128467211e4fc"
+    },
+    "probability--central-limit-theorem": {
+      "explanation": "该定理描述了随机变量之和的极限分布。",
+      "sourceDigest": "31a3532611c0ae44227bd343e814948b13fade6ae01c0a80051987a0b8732168"
+    },
+    "calculus--limits": {
+      "explanation": "基于极限的分析为微积分中已经实践的运算提供了更严格的基础。",
+      "sourceDigest": "db27a24801e1d41d1ab5fb95526c872aa60d534a3ece8faeba6bf48a8f639b70"
+    },
+    "complex-numbers--complex-analysis": {
+      "explanation": "复数提供了所研究函数的域和值。",
+      "sourceDigest": "4925136322239e3ae34417855de52732071590d6003fa961ac91160f4a52fbd9"
+    },
+    "calculus--complex-analysis": {
+      "explanation": "积分和限制运算扩展到复杂变量。",
+      "sourceDigest": "ad47dc34a7ef0ff9c50f882c9e933ae61c69212e47bd73893359b2b1c304dcc0"
+    },
+    "group-theory--galois-theory": {
+      "explanation": "群组织多项式根的允许排列。",
+      "sourceDigest": "9aeaa890907e5c42f41e2dc146334c652d1d7c2ef4f66bdee1c9c47304272f54"
+    },
+    "algebra--galois-theory": {
+      "explanation": "多项式方程及其根定义了可解性问题。",
+      "sourceDigest": "39da73f03824baad7e9615f78b082bcfaa02fc9c8759ba6fab4d16dcd3f406d2"
+    },
+    "differential-geometry--riemannian-geometry": {
+      "explanation": "固有表面曲率提供了推广到更高维流形的早期设置。",
+      "sourceDigest": "e0c88e976f8fbc1b441eb309c71fcc74b659cc2243a293e2990b30fa092a6827"
+    },
+    "riemannian-geometry--tensor-calculus": {
+      "explanation": "公制几何激发了对几何量的坐标无关运算。",
+      "sourceDigest": "58380697ccbae83b344856eb8f21fb4f399b7a909c8fb1ea0c583ecc54522239"
+    },
+    "probability--stochastic-processes": {
+      "explanation": "条件概率指定链的转换。",
+      "sourceDigest": "53605bf91d455ce9b4b55b996650e89b1bdc30dcd8348fd641a229c60af367ee"
+    },
+    "linear-algebra--hilbert-spaces": {
+      "explanation": "内积和正交性扩展了有限维向量几何。",
+      "sourceDigest": "5bae2ab44ad3112c883e0efd9bda9b4d7e62b764244d652c5752baf2ebb5b9af"
+    },
+    "fourier-analysis--hilbert-spaces": {
+      "explanation": "平方可积函数与其傅里叶系数之间的关系激发了里斯-费舍尔定理。",
+      "sourceDigest": "fcd41d19b83fec94019587df9330a349094adfcec209f109cb1c616dea62d38e"
+    },
+    "least-action--noethers-theorem": {
+      "explanation": "诺特的结果涉及变分作用问题的对称性。",
+      "sourceDigest": "0fa69226d70cb0f53b710e543cdc37e603ab0ceed0a86c0fa08657c9bb7404f8"
+    },
+    "group-theory--noethers-theorem": {
+      "explanation": "连续变换群组织定理中的对称性。",
+      "sourceDigest": "94751072de38a052969b477de9b62b7bc99a3b9717be6b7ee8c426e7de451f76"
+    },
+    "calculus--distribution-theory": {
+      "explanation": "微分从普通函数扩展到测试函数的连续线性作用。",
+      "sourceDigest": "7bb9c2965bdc9157755421524bbcceb6d7a3ae0ebed8398f941e4dc8b7cc0a5a"
+    },
+    "fourier-analysis--distribution-theory": {
+      "explanation": "广义傅里叶变换是分布框架及其应用的一部分。",
+      "sourceDigest": "6db89c1a58b5a643655dd116b509664113bb011968b393812d1b14a431ea99f7"
+    },
+    "linear-algebra--numerical-analysis": {
+      "explanation": "矩阵求逆提供了用于分析计算误差的具体问题。",
+      "sourceDigest": "4d52468931749a4f08d606b1aa229f38579cf144dbef4fe80cfb08b4b7ad2ea6"
+    },
+    "algorithms--numerical-analysis": {
+      "explanation": "算术运算的顺序决定了舍入误差如何累积。",
+      "sourceDigest": "78b540298202d5675008c2c0f8ec4bfd8982ff88059a78d3eed5d4a485ace005"
+    },
+    "geometry--oscillations": {
+      "explanation": "圆形和摆线路径的几何分析有助于表征摆运动。",
+      "sourceDigest": "104f33ddd3ac86fe848005a2d5956b6d7e2a6eb0686739924900e773f75b93ec"
+    },
+    "measurement--oscillations": {
+      "explanation": "将重复周期与时间标准进行比较使得规律性可以通过实验进行测试。",
+      "sourceDigest": "42fe87bcd80eca6f87d02622f4167411eda67755ea2ab887df8efaef5264cc13"
+    },
+    "measurement--elasticity": {
+      "explanation": "比较载荷与延伸揭示了比例机制。",
+      "sourceDigest": "56b71247c41845b91a218cf9f6eaa99242ae03a8614ccc8941331c47eca6a0d5"
+    },
+    "differential-equations--wave-equation": {
+      "explanation": "偏导数将局部加速度与弦的空间曲率联系起来。",
+      "sourceDigest": "23dda7abeba3267ec86c6618d5f2ef00ce058861d36d6ab8af6a20f606249cef"
+    },
+    "classical-mechanics--wave-equation": {
+      "explanation": "沿着弦施加的力和加速度产生其动力学方程。",
+      "sourceDigest": "4e5e04c7a23c5e830bfbc0299c14b65b0493971bc221f32a27224a8e830b9abf"
+    },
+    "classical-mechanics--fluid-dynamics": {
+      "explanation": "动量平衡适用于连续分布的物质。",
+      "sourceDigest": "80eccf0b7b5ad4edcd63d24a5856d1eeca384ae32ed975276c3bb3cb5ab3383b"
+    },
+    "differential-equations--fluid-dynamics": {
+      "explanation": "速度场和压力场通过耦合偏微分方程演化。",
+      "sourceDigest": "f87c50e1d910e49b30bdec7014e530f52db4094b9ef9abb235676bff2156c94a"
+    },
+    "classical-mechanics--lagrangian-mechanics": {
+      "explanation": "分析力学重新表述了牛顿动力学，同时保留了其经典领域。",
+      "sourceDigest": "c6cfb69c041ba04abab3e4dd84000f46715a1ec0b5d2b68101240e78d8d157a2"
+    },
+    "least-action--lagrangian-mechanics": {
+      "explanation": "动作的平稳性为运动方程提供了统一的路径。",
+      "sourceDigest": "d5c0bc6a1da1dc0bc3281461d05bad5ffdb017bce3a696edacbb9430e7e873c8"
+    },
+    "least-action--hamiltonian-mechanics": {
+      "explanation": "汉密尔顿的特征函数将行为与典型动力学联系起来。",
+      "sourceDigest": "a17321510b95db40d04a94bdfbee4a5083c2ae52b7ea3e0467eec6db2578e2b0"
+    },
+    "geometric-optics--hamiltonian-mechanics": {
+      "explanation": "汉密尔顿将他的光学射线理论的思想转移到了动力学中。",
+      "sourceDigest": "e28d24ac537681736359956a9815fe2b0d9cba20ddcf50d0cfa8500c92098ac8"
+    },
+    "fourier-analysis--diffusion-laws": {
+      "explanation": "菲克明确地借鉴了傅里叶对热流的数学处理。",
+      "sourceDigest": "dee434d0888d596efc0e5f57e44e29470b9a5a0a3e59900d0e885c5af0c5a957"
+    },
+    "differential-equations--diffusion-laws": {
+      "explanation": "通量守恒将局部梯度规则转化为演化方程。",
+      "sourceDigest": "a6ad1ce0649ff0a3d288346af8df152d98c741e38cdbaecd27182989bea34ad0"
+    },
+    "classical-mechanics--acoustics": {
+      "explanation": "声音始于物质系统的运动及其相互作用。",
+      "sourceDigest": "8e353ce4bbcd68f2828394221f8eb383464996ecb81db8ba757a343626e2e031"
+    },
+    "fourier-analysis--acoustics": {
+      "explanation": "将振动分解为谐波分量可以解释复杂的音调和模式。",
+      "sourceDigest": "281c491e1b01bb9cb62e26a6c6bb9e319804d19c0600f755efc395d4d41891b2"
+    },
+    "electromagnetism--electromagnetic-waves": {
+      "explanation": "麦克斯韦的理论预测是赫兹实验研究的目标。",
+      "sourceDigest": "4611348957e61a923f9a802de009d79382ba90e52070d493cd5effaf394bda77"
+    },
+    "blackbody-quanta--bose-einstein-statistics": {
+      "explanation": "玻色的计算直接解决了量子辐射定律背后的计数问题。",
+      "sourceDigest": "3318e4d144d32a3292c428e617d194db7cef92f643fc94310748a5738620f646"
+    },
+    "statistical-mechanics--bose-einstein-statistics": {
+      "explanation": "这是一种用于统计描述许多粒子的量子计数方案。",
+      "sourceDigest": "1d6d36e36b6179b81b3e1389f521a944d1aa69479ec027ecdae80fb28bd8fdd0"
+    },
+    "spectroscopy--pauli-exclusion": {
+      "explanation": "原子光谱规律性是激发泡利限制的经验问题之一。",
+      "sourceDigest": "84aca5dcc0efe0e0fc02c160d4817c49cb904fde8f2dff55319c531f1ffc02cb"
+    },
+    "nuclear-atom--pauli-exclusion": {
+      "explanation": "问题在于如何组织核原子中的电子。该地图集连接标识了该设置，而不是声称卢瑟福导出了该规则。",
+      "sourceDigest": "8b13685b36ffa3ff0e9a0aa121eec29f76893c4a0b500743adebaa8ef33cfaa3"
+    },
+    "electron--electron-spin": {
+      "explanation": "自旋是早期实验所确定的电子的固有属性。",
+      "sourceDigest": "6a0c627bd8282818f43c9844f64bef0f1309b22e9ad6dd43f930e8b48bb6705a"
+    },
+    "pauli-exclusion--electron-spin": {
+      "explanation": "泡利额外的量子自由度是自旋提案面临的直接问题的一部分。",
+      "sourceDigest": "7b637a98af0dceb2cb7c9eefff3be49612c935c600472ecfac8a8d016be670fa"
+    },
+    "pauli-exclusion--fermi-dirac-statistics": {
+      "explanation": "费米明确地使用了相同粒子不能倍增并占据一个状态的限制。",
+      "sourceDigest": "fbaab21811a21300ca974ff3ecacc7df5ed57b540ba1c14d7f79e830bdf9ac76"
+    },
+    "quantum-mechanics--fermi-dirac-statistics": {
+      "explanation": "狄拉克通过量子力学导出了计数，建立了其与粒子不可区分性的关系。",
+      "sourceDigest": "05ed447c1fc9dbf70a3b32681c3d2273e382186f551d7f296853999a7fbd4c47"
+    },
+    "quantum-mechanics--quantum-tunneling": {
+      "explanation": "波动方程允许障碍物内的衰减幅度和障碍物之外的透射分量。",
+      "sourceDigest": "962962f7b1074bdbbb19270a6a8de305969d4327319f1bb2f21a536028c12ccb"
+    },
+    "radioactivity--quantum-tunneling": {
+      "explanation": "阿尔法衰变寿命提供了 1928 年独立论文中处理的历史问题。",
+      "sourceDigest": "b481b16f54da1e534b091fdd1432eddb36e04f9621bac46a97985bd0090d03c4"
+    },
+    "chemical-thermodynamics--landau-phase-transitions": {
+      "explanation": "自由能最小化提供了朗道展开式中使用的平衡准则。",
+      "sourceDigest": "94cc599e238a551758153306dcaa59bef60309851b4d09b76aca07ba48cdc0bb"
+    },
+    "statistical-mechanics--landau-phase-transitions": {
+      "explanation": "序参数概括了集体微观行为；平均场统计模型推动了扩张。",
+      "sourceDigest": "8d0d0f385804c711b31708275fe150371257838f958eb44049c13e938ce0d257"
+    },
+    "superconductivity--superfluidity": {
+      "explanation": "卡皮察用无电阻电传输进行类比来命名这种新现象。",
+      "sourceDigest": "ac5b3b4161f40eea154ffe97c6d64b3dd86fc4b9788e1fcab99f683a8a7c6932"
+    },
+    "quantum-mechanics--superfluidity": {
+      "explanation": "量子集体行为是后来解释的基础；这是一种概念上的联系，而不是声称最初的观察结果遵循完整的理论。",
+      "sourceDigest": "7ad261093249c8baf39ceef0d6e7e77187b92dcac4d9544c6b62e1615d6e7e1a"
+    },
+    "radioactivity--weak-interaction": {
+      "explanation": "贝塔放射性是该理论旨在解释的特定衰变过程。",
+      "sourceDigest": "094bf1327841776d6c562b77c55d8e60f81980224f48d2cbe6a74b7bfe015603"
+    },
+    "quantum-field-theory--weak-interaction": {
+      "explanation": "费米使用场论框架处理相互作用过程中产生的发射粒子。",
+      "sourceDigest": "30643d3a5df1730a22535d13266e91c76a3c167955587e12546570cac02681c7"
+    },
+    "gauge-theory--higgs-mechanism": {
+      "explanation": "这一机制的提出，是为了使具有局域规范对称性的理论能够包含有质量的激发。",
+      "sourceDigest": "8bbc1ae6af467042c7309a767d5bd4dd3ad9c0fa2e9a2b6c69efca8bb8d5853c"
+    },
+    "electromagnetism--electroweak-theory": {
+      "explanation": "该理论将电磁相互作用嵌入到更大的结构中，同时保留了麦克斯韦成功的低能域。",
+      "sourceDigest": "c7a95cf8c760ba1737fe5e0643d7ccdbc384963a063dd4d4b859b6aed760ecc7"
+    },
+    "weak-interaction--electroweak-theory": {
+      "explanation": "大量载流子交换解释了费米点相互作用的低能量成功和局限性。",
+      "sourceDigest": "6358f199e415ddc25c6223c2ad41c7d658d3886b9a9b9fa6802a3c1334704965"
+    },
+    "higgs-mechanism--electroweak-theory": {
+      "explanation": "对称性破缺为统一规范框架内的弱力载流子提供了质量。",
+      "sourceDigest": "376c08e98f07c6ab3baf3210a18bf6c0e018b869d618dadc52c5676ae1cef8d9"
+    },
+    "quark-model--quantum-chromodynamics": {
+      "explanation": "QCD 使夸克及其颜色自由度成为场论的动力学组成部分。",
+      "sourceDigest": "a9a298f1c04ba389769895083294f969bfe77a0d37173da9d946d0f73230d378"
+    },
+    "gauge-theory--quantum-chromodynamics": {
+      "explanation": "QCD是一种非阿贝尔规范理论；胶子的自相互作用对其行为至关重要。",
+      "sourceDigest": "dc7e186ee4c7399748e53aad31565675395a2979e22dbe146cc746519584c289"
+    },
+    "renormalization-group--quantum-chromodynamics": {
+      "explanation": "运行耦合及其尺度依赖性的符号使渐近自由变得精确。",
+      "sourceDigest": "dc10b0fb350aaa1cb56fdfc942b9b0b7f1f5a7eae773938aad1cf6abe3875ad4"
+    },
+    "weak-interaction--neutrino-oscillations": {
+      "explanation": "弱生产和检测可识别中微子味道并提供测试振荡所需的实验过程。",
+      "sourceDigest": "af9d3a3aa9f2d0f037c88be928ada7830a83ddd8d9bbf422f56eafa7bfc36f25"
+    },
+    "quantum-mechanics--neutrino-oscillations": {
+      "explanation": "叠加和相对相位演化产生振荡概率。",
+      "sourceDigest": "4b6072925127410064457bde690bb3513f1fa08610746777ba88d3c22a8cad34"
+    },
+    "quantum-entanglement--bell-theorem": {
+      "explanation": "EPR 相关性及其量子描述是贝尔明确的出发点。",
+      "sourceDigest": "6cf6f8b789f2ec0da0f262f055206aea83dfec46485b9f3695f3956c2cacbab7"
+    },
+    "probability--bell-theorem": {
+      "explanation": "贝尔界限限制了既定假设下的联合统计相关性；这标志着数学联系，而不是早期概率文本的历史传播。",
+      "sourceDigest": "24792a7314eedb533b1a19b424f48802944924a441727125ee7914b70775d864"
+    },
+    "conservation-of-mass--stoichiometry": {
+      "explanation": "平衡反应物和产物表示化学反应中的物质守恒；这是一种概念关系，而不是记录在案的个人传播。",
+      "sourceDigest": "52f7040710c86fb0db08a1f5ab30c5878b99179cd25955aa9b76a02f3134aac6"
+    },
+    "arithmetic--stoichiometry": {
+      "explanation": "合并金额通过比率和比例算术计算。",
+      "sourceDigest": "c2be45fcc20d1cf823c700f8a4ffcd30a7fd01854352298d9015c6268ff64a16"
+    },
+    "atomic-theory--valence": {
+      "explanation": "结合能力以原子及其数值组合来表示。",
+      "sourceDigest": "da6a97c76ba29bac7cf20ff7de1f91919ef660988ebf51edb11d65a7c322d80b"
+    },
+    "organic-chemistry--valence": {
+      "explanation": "弗兰克兰对有机金属化合物的研究直接激发了这一提议。",
+      "sourceDigest": "227d7ec8b09fc99279d0c080230fb5bb901f409c372a26ac85886eaa13de1cef"
+    },
+    "valence--coordination-chemistry": {
+      "explanation": "沃纳将协调与早期的能力组合规则分开，解释了那些处理不当的规则的复合情况。",
+      "sourceDigest": "31a7abd72bcaa9aead143dd7d7789d580ed11fb3b73f755da2dfa57d9acb92d3"
+    },
+    "stereochemistry--coordination-chemistry": {
+      "explanation": "空间排列和异构体计数提供了从分子立体化学到金属配合物的概念桥梁。",
+      "sourceDigest": "2956e9b4136b7f696d26befaad23b0115274a685ac89534d239f2a70c515ed70"
+    },
+    "electrochemistry--redox-reactions": {
+      "explanation": "电极反应和电势由参与物质的形式氧化水平组织。",
+      "sourceDigest": "b243a4bdefe128aa8a4eb48901642f6a6ee6fb7d56f673d48c1273b464dcfc61"
+    },
+    "electron--redox-reactions": {
+      "explanation": "基于电子的叙述将旧的氧化和还原语言重新表述为形式上的损失和增益。",
+      "sourceDigest": "391da67e79e28cd59efafd2a28cab56d976e9ef1f99b2a79f7b8aa39dd2e40c5"
+    },
+    "chemical-equilibrium--le-chatelier-principle": {
+      "explanation": "该原理明确概括了观察到的平衡对温度和其他变化的响应。",
+      "sourceDigest": "8860d1a96ca1b40a8aa80565ed9e62dbbee9b0c586e58d87ad7bc9c3ebe72589"
+    },
+    "chemical-kinetics--arrhenius-equation": {
+      "explanation": "该方程模拟了测量的速率常数，即化学动力学的核心量。",
+      "sourceDigest": "09e2b5c298a20117d579442d2e63f28d857c77d78477fc1cbb09971fd2d93330"
+    },
+    "thermodynamics--arrhenius-equation": {
+      "explanation": "范特霍夫的温度平衡分析提供了阿伦尼乌斯解释速率的数学形式。",
+      "sourceDigest": "91cbaf4ef1da7b781cf6ab3b55bd558cdf8f15ffa60ccc0daa583e882769a974"
+    },
+    "chemical-thermodynamics--chemical-potential": {
+      "explanation": "化学势是吉布斯热力学框架内的组成导数。",
+      "sourceDigest": "0921bb41595801a85e177991e939fc281520aa6567bb83c8449459112a6aed96"
+    },
+    "calculus--chemical-potential": {
+      "explanation": "受约束的偏导数定义了势；这是一种数学依赖性，而不是关于吉布斯阅读的历史主张。",
+      "sourceDigest": "58296282817933041363cad42346a7424f1740cbf0fe9108f20e07f32d04e1c4"
+    },
+    "quantum-mechanics--nuclear-magnetic-resonance": {
+      "explanation": "量子化的核自旋状态和跃迁支撑了共振描述。",
+      "sourceDigest": "4229c1098bd1d4cc7eabab97122781f9850507ee8fe432a4c7a836f7c0175430"
+    },
+    "electromagnetism--nuclear-magnetic-resonance": {
+      "explanation": "静态场、射频激励和感应电信号使测量成为可能。",
+      "sourceDigest": "058325cb1c4ae255116de06e5c459ad8a85662bf11e37b8c4197bbf1e87fdcc8"
+    },
+    "electromagnetism--mass-spectrometry": {
+      "explanation": "电场和磁场使早期仪器中的离子偏转，揭示质荷差异。",
+      "sourceDigest": "7daf0e5726cd7a9805b03927563a9ff2dbb7382cdfed6dade66674257ec3f6ca"
+    },
+    "atomic-theory--mass-spectrometry": {
+      "explanation": "原子量和同位素特性为早期质量分析提供了核心问题。边缘是编辑概念链接。",
+      "sourceDigest": "6a1171b166cc2d509488bdbc1c411ec83b4fad0dc6e717c992c35ab7d9d8c63e"
+    },
+    "chemical-kinetics--reaction-mechanisms": {
+      "explanation": "不同的浓度依赖性使得竞争性取代途径得以区分。",
+      "sourceDigest": "e33d2b910a694913ca35d9ccf11185dad25fd01a4eb724cf3724f534306febeb"
+    },
+    "stereochemistry--reaction-mechanisms": {
+      "explanation": "空间配置的变化限制了哪些替代途径是合理的。",
+      "sourceDigest": "c4a7e0c02769a9e52f444cafb244f3f29bdf812a059615df9fbac5620ce4f01e"
+    },
+    "coordination-chemistry--supramolecular-chemistry": {
+      "explanation": "金属离子配位解释了冠醚结合的一个重要部分；更广泛的领域还包括非金属嘉宾。",
+      "sourceDigest": "4205bf6bf8747eb7d0c1a450488d6da5eec611e6f885dc15a77d308d092f0f63"
+    },
+    "organic-chemistry--supramolecular-chemistry": {
+      "explanation": "有机合成方法使设计的空腔和主体结构变得容易实现。",
+      "sourceDigest": "26dab900d5d8231ca0b54179301fffe70f3f6e2bf1935ca9ad84d9d601aee3b1"
+    },
+    "organic-chemistry--click-chemistry": {
+      "explanation": "点击化学是通过选定的反应组装有机结构单元的明确策略。",
+      "sourceDigest": "685ecd74ed601a0378352635e68233185bd117f53cc518d84bb3ffc86c789a90"
+    },
+    "catalysis--click-chemistry": {
+      "explanation": "铜催化实现了具有里程碑意义的叠氮化物-炔烃快速且选择性的偶联；其他点击反应使用不同的激活方法。",
+      "sourceDigest": "83a942cd130f268f611a94c0359cf07bab55ade42d40556d61081550cba61718"
+    },
+    "geometry--crystal-lattices": {
+      "explanation": "格分类形式化了空间周期性和对称性；这是概念上的数学依赖性。",
+      "sourceDigest": "68b014049dd378f1898ac9b0938f9500989c8cf4a6b7be8a177d7daba0c73762"
+    },
+    "vectors--crystal-lattices": {
+      "explanation": "平移向量的整数组合用现代符号表示格；这并不是说布拉维采用了特定的矢量教科书。",
+      "sourceDigest": "b96d150b0df9444a39eb560daa593ba02cb8b23cee5b6a8832857ab6fbdc4df1"
+    },
+    "crystal-lattices--x-ray-diffraction": {
+      "explanation": "周期性空间顺序提供了散射几何形状，从中导出衍射条件。",
+      "sourceDigest": "8226286d38bb5cb338478c185ea0b2985b0a5965f01fa23e93c5acd7d83afbf1"
+    },
+    "wave-optics--x-ray-diffraction": {
+      "explanation": "相长干涉解释了为什么某些散射方向会相互增强。",
+      "sourceDigest": "61e50186db23527c2bbb285293dc6dae32b0668b607b63a26abf12cd34f6d65c"
+    },
+    "crystal-lattices--dislocations": {
+      "explanation": "位错是相对于晶格的有序平移来定义的。",
+      "sourceDigest": "6f4ee4b3209eabe0b5c1a13ad4c374b9c4d2669ba9f7182f82a8b0725b1bf074"
+    },
+    "elasticity--dislocations": {
+      "explanation": "弹性应变和应力场描述位错周围的变形。",
+      "sourceDigest": "1c4be8b066614b673c4a2cf4dd5e25aa24fa041027ddbc91380a8bfc4da4f41e"
+    },
+    "chemical-potential--phase-diagrams": {
+      "explanation": "共存相服从组分化学势平衡，限制了允许的图。",
+      "sourceDigest": "a1de2c5f932b48769825ff363afa02382b0a6f6ddddf2595769cb6a8dc78427e"
+    },
+    "metallurgy--phase-diagrams": {
+      "explanation": "合金加工和测量的铁碳转变提供了实际问题和数据。",
+      "sourceDigest": "d266e1c46ba403219cd7c021cde2a8eaa08470d9d89c030cc1d377956fa60791"
+    },
+    "crystal-lattices--amorphous-materials": {
+      "explanation": "随机网络描述解释了一种固体，其局部键不需要形成周期性晶格；它扩展了结构思维，而不是使晶体模型失效。",
+      "sourceDigest": "32b2975dd021985879a00da6019c69908ccee9453be4f90be0e7c5dd67c33d4a"
+    },
+    "chemical-bonding--amorphous-materials": {
+      "explanation": "Zachariasen 的网络受到当地债券和协调要求的限制。",
+      "sourceDigest": "1b7ece8b0aed07cdc3fb4ff6823f5297f4c3246984599f91c3b6e9c391a785ce"
+    },
+    "chemical-structure--liquid-crystals": {
+      "explanation": "分子形状和相互作用限制了可以形成哪些有序流体相；这是现代的解释联系。",
+      "sourceDigest": "05f358216307cacdf9910c88ef04e8e0a1be00b5cc854731121e07c8301ab803"
+    },
+    "crystal-lattices--liquid-crystals": {
+      "explanation": "液晶表明，即使没有完整的三维周期晶格，某些类型的顺序仍然存在。",
+      "sourceDigest": "23b480056af2a2ff474c0d55c28294d8fa67517d0aa2863ce12fa85c7baecebd"
+    },
+    "elasticity--piezoelectricity": {
+      "explanation": "机械应力和应变提供了耦合响应的一方面。",
+      "sourceDigest": "ed4de00e5493e99f889a8ee745e9082cbe15e537d605ee9598881ccd41e20707"
+    },
+    "electric-charge--piezoelectricity": {
+      "explanation": "该实验检测机械负载引起的电荷分离。",
+      "sourceDigest": "0a68a69c8f5a90b55adc8058c7d0cb03bb33cbb3f3803c02e1440212c0099649"
+    },
+    "piezoelectricity--ferroelectricity": {
+      "explanation": "对罗谢尔盐压电行为的研究导致了异常极化的观察。",
+      "sourceDigest": "73b775cde8d885f9a5e4a305536a1cdecc8d067bcdb0ff782951dc0c3afa3d75"
+    },
+    "electric-charge--ferroelectricity": {
+      "explanation": "极化描述了材料内电荷的组织。",
+      "sourceDigest": "1bae8f71bb2546c4397edd967b2d8c947538d1698bc874944ab6968f34360561"
+    },
+    "phase-diagrams--shape-memory-alloys": {
+      "explanation": "结构相变为温度相关响应提供了概念框架；平衡图本身并不能预测其动力学。",
+      "sourceDigest": "0872f63e3c550a38378de2f1b27386e119d17d1ea5a81ab6ff84342deed6b267"
+    },
+    "metallurgy--shape-memory-alloys": {
+      "explanation": "合金制备和加工生产出具有可恢复相变行为的镍钛组合物。",
+      "sourceDigest": "0e96b2dfb1d38aa96e8fbe0d3fffaab23dcd278f661312e958789e59e072b8f0"
+    },
+    "electrochemistry--li-ion-intercalation": {
+      "explanation": "在充电和放电期间，离子插入通过外部电路与电子转移耦合。",
+      "sourceDigest": "9432106d7c97f97e2755c19592cf6a461e5de75f93aae402bb95abb9d89ccc17"
+    },
+    "crystal-lattices--li-ion-intercalation": {
+      "explanation": "主体的层状原子结构提供了可逆锂插入的位点。",
+      "sourceDigest": "776f35e3a352569538830fff3d06aa23693b1d74a64d691ed61c692f4778d0f0"
+    },
+    "chemical-bonding--graphene": {
+      "explanation": "碳键合解释了连接的蜂窝板及其描述中使用的电子态。",
+      "sourceDigest": "f9c4f3743375fd31a48429ea3bebc0d0f8d7f256b295719c599b58eeab5849b1"
+    },
+    "semiconductor-band-theory--graphene": {
+      "explanation": "能带描述组织了石墨烯不寻常的传导和价态；这种联系并没有将石墨烯归类为普通的带隙半导体。",
+      "sourceDigest": "7e4a07171957f483e85ff7190964a237ec374a3cb8fc2118a379c2bb91c5c9b6"
+    },
+    "semiconductor-band-theory--topological-insulators": {
+      "explanation": "该分类涉及占据的电子能带及其间隙的特性。",
+      "sourceDigest": "b4f085896b2332309c8a46c64cb7dccac6fe6a21fb5abe687564809f636420e2"
+    },
+    "topology--topological-insulators": {
+      "explanation": "拓扑不变量区分在维持规定条件的同时无法平滑连接的相。",
+      "sourceDigest": "799fde022e8d32391264e6261e837bfe3f1618b763be77303720927ab110fd42"
+    },
+    "electron-spin--topological-insulators": {
+      "explanation": "自旋轨道耦合和时间反转行为进入原始的量子自旋霍尔结构。",
+      "sourceDigest": "b9ee7502ae8fd6a299416224e3445b9399ac2b288f4047d32052deb76c2baac5"
+    },
+    "stoichiometry--atomic-theory": {
+      "explanation": "可重复的组合比例提供了原子组合可以解释的证据，而无需从逻辑上证明原子假设。",
+      "sourceDigest": "c6e6fa8f65ffb8a42d3124435c513a2c066254689154d5d90718bb1b8be85cba"
+    },
+    "valence--chemical-structure": {
+      "explanation": "将能力组合发展成结构公式中使用的连接规则。",
+      "sourceDigest": "ff5814f74a4ee695ac9fb9c7bc67b3934794287a5e5993ae1ee095ac5efeddc7"
+    },
+    "electroweak-theory--standard-model": {
+      "explanation": "统一的电磁和弱相互作用部门与强相互作用部门一起是标准模型的组成部分。",
+      "sourceDigest": "b74af6811159a4f634c8a3f3a6d6dd57802edfb5979bb109a8c972a0fa5e8735"
+    },
+    "quantum-chromodynamics--standard-model": {
+      "explanation": "QCD 通过夸克、胶子和色规对称性提供标准模型的强相互作用部分。",
+      "sourceDigest": "03d2300d4ab410760268abf18d9f2e43ecea8e0541b677790aff4f2f73bdff14"
+    }
+  }
+}
