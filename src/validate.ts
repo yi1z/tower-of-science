@@ -54,7 +54,8 @@ export function validateAtlas(atlas:Atlas){
 
 export function validateReleaseCoverage(atlas:Atlas){
  const errors:string[]=[];
- if(atlas.concepts.length<430||atlas.concepts.length>470)errors.push('Expanded edition must contain 430–470 complete concepts');
+ if(atlas.concepts.length!==573)errors.push('Edition 2.1 must contain exactly 573 complete concepts');
+ if(atlas.tours.length!==10)errors.push('Edition 2.1 must contain exactly 10 journeys');
  for(const branch of branches)if(!atlas.concepts.some(c=>c.branchId===branch.id))errors.push(`Expanded edition: empty branch ${branch.id}`);
  return errors;
 }

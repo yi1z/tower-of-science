@@ -370,5 +370,149 @@
         "narration": "The 2017 Transformer makes self-attention central: token embeddings plus position information feed multiple attention heads and surrounding network layers. Positions can exchange context directly, and training can process known sequences in parallel. The original encoder–decoder still generates translations one token at a time. This journey ends at that breakthrough; attention brings new costs, not unlimited memory."
       }
     ]
+  },
+  {
+    "id": "materials-bend-break-strengthen",
+    "title": "Why materials bend, break, and strengthen",
+    "subtitle": "Follow a loaded piece of metal from its first reversible stretch to the cracks and interfaces that determine its fate.",
+    "color": "#936849",
+    "steps": [
+      {
+        "conceptId": "elasticity",
+        "narration": "Gently bend a metal ruler, then let go. If it springs back, its shape changed without permanent deformation. What inside the metal sets the limits of that response?"
+      },
+      {
+        "conceptId": "crystal-lattices",
+        "narration": "Zoom in on one grain of the ruler. A lattice describes repeating positions; it supplies the reference pattern we need in order to recognize an imperfection."
+      },
+      {
+        "conceptId": "phase-diagrams",
+        "narration": "Now heat an alloy. Its phase diagram tells us which phases can coexist at equilibrium for a given temperature and composition. It does not tell us how fast they will appear."
+      },
+      {
+        "conceptId": "point-defects",
+        "narration": "Return to one lattice site. An empty site can give a neighboring atom somewhere to jump. A tiny departure from perfect order helps explain how atoms can move through a solid."
+      },
+      {
+        "conceptId": "dislocations",
+        "narration": "A missing atom is only one kind of defect. A dislocation extends along a line: as it moves, successive rows slip, leaving a permanent change of shape without sliding an entire plane at once."
+      },
+      {
+        "conceptId": "grain-boundaries",
+        "narration": "Follow a moving dislocation to the edge of its grain. Across that boundary the lattice changes orientation, so slip does not simply continue along the same plane."
+      },
+      {
+        "conceptId": "precipitation-hardening",
+        "narration": "Step back to 1911, before the grain-boundary work just visited. An aluminum alloy could harden while resting after heat treatment. Small precipitates formed within grains can obstruct dislocations too."
+      },
+      {
+        "conceptId": "hall-petch",
+        "narration": "Keep composition fixed and vary grain size instead. In many polycrystalline metals, smaller grains require more stress to start permanent deformation. This empirical trend has limits at very small sizes."
+      },
+      {
+        "conceptId": "fracture-mechanics",
+        "narration": "Turn the clock back to Griffith in 1921 and change the question. Even a strong material may fail if an existing crack can release enough stored elastic energy to create new surfaces."
+      },
+      {
+        "conceptId": "composite-materials",
+        "narration": "Finish by designing the load path. In a fiber composite, the matrix transfers load to the fibers. Fiber direction and the strength of the interface help decide whether a crack crosses, turns, or pulls fibers out."
+      }
+    ]
+  },
+  {
+    "id": "learning-from-noisy-evidence",
+    "title": "How science learns from noisy evidence",
+    "subtitle": "Follow the decisions behind an estimate: whom to measure, what to compare, and how to check the result.",
+    "color": "#46766a",
+    "steps": [
+      {
+        "conceptId": "probability",
+        "narration": "Suppose two fields get different fertilizers and their yields differ. Chance alone can produce some difference. Probability supplies a language for asking how much variation a model predicts."
+      },
+      {
+        "conceptId": "statistical-sampling",
+        "narration": "Before comparing yields, decide which fields enter the study. Known selection probabilities let a sample speak for a defined population; a larger convenience sample cannot by itself repair selection bias."
+      },
+      {
+        "conceptId": "design-of-experiments",
+        "narration": "Sampling chooses the fields; assignment chooses which fertilizer each receives. Randomize treatment, replicate it, and group similar plots into blocks so soil differences are less likely to obscure an effect."
+      },
+      {
+        "conceptId": "randomized-trials",
+        "narration": "Carry assignment into a clinical trial. A random allocation can make treatment groups comparable on average. Losses to follow-up and differences in care can still complicate the comparison."
+      },
+      {
+        "conceptId": "confidence-intervals",
+        "narration": "Step back from the 1948 trial to a 1937 question: how precise is an estimate? A 95% procedure is calibrated to cover the fixed target in about 95% of repeated studies under its assumptions."
+      },
+      {
+        "conceptId": "principal-component-analysis",
+        "narration": "Move further back, to 1901. If a study records dozens of correlated measurements, PCA finds directions that capture their variation. A direction of large variation need not be a cause of the outcome."
+      },
+      {
+        "conceptId": "missing-data-mechanisms",
+        "narration": "Some rows now have blank cells. Did an instrument fail at random, or were unusually low values never reported? The reason a value is absent governs what can be inferred from the remaining data."
+      },
+      {
+        "conceptId": "bootstrap-resampling",
+        "narration": "To estimate sampling variation, draw repeated samples with replacement from the observed cases and recompute the statistic. This imitates a sampling process; it cannot restore missing groups or fix biased recruitment."
+      },
+      {
+        "conceptId": "meta-analysis",
+        "narration": "Go back three years, from the 1979 bootstrap to the 1976 name for a different operation. Meta-analysis combines results across studies, so comparability and unpublished studies matter as much as sample size."
+      },
+      {
+        "conceptId": "reproducible-research",
+        "narration": "Give another team the data, code, and settings needed to repeat the analysis. Reproducing the number checks how it was obtained; an independent study can ask whether the result holds in new observations."
+      }
+    ]
+  },
+  {
+    "id": "predicting-earths-climate",
+    "title": "How we predict Earth’s climate",
+    "subtitle": "Trace energy from a measurement through the atmosphere, then ask what a model can say about decades or millions of years.",
+    "color": "#496e8c",
+    "steps": [
+      {
+        "conceptId": "measurement",
+        "narration": "Start with a thermometer and a repeatable reading. To compare places or decades, observers need consistent units, calibration, and a record of how and where they measured."
+      },
+      {
+        "conceptId": "greenhouse-effect",
+        "narration": "A surface temperature raises an energy-budget question. Earth absorbs sunlight and emits infrared radiation. Gases that absorb and emit infrared change how readily the surface loses energy to space."
+      },
+      {
+        "conceptId": "radiative-transfer",
+        "narration": "Follow a beam through one layer of air. Its intensity changes as radiation is removed or added along the path. Repeating the calculation across wavelengths and layers links gas properties to energy flux."
+      },
+      {
+        "conceptId": "numerical-weather-prediction",
+        "narration": "Air also moves heat. A numerical forecast starts from an estimated atmospheric state and advances equations on a grid. Here the question is what weather follows a particular starting point."
+      },
+      {
+        "conceptId": "climate-modeling",
+        "narration": "Change the question from next Tuesday’s weather to a change in long-term climate. An early radiative–convective model asked how the temperature profile responds when atmospheric carbon dioxide changes."
+      },
+      {
+        "conceptId": "ice-albedo-feedback",
+        "narration": "Let the surface respond too. When bright ice retreats, darker ground or water can absorb more sunlight and amplify the initial warming. This feedback changes the response; it need not start the warming."
+      },
+      {
+        "conceptId": "carbon-silicate-cycle",
+        "narration": "Stretch the clock to geological time. Silicate weathering and eventual carbonate burial can draw down carbon dioxide while volcanism returns it. That slow feedback cannot cancel a rapid pulse of emissions."
+      },
+      {
+        "conceptId": "earth-system-science",
+        "narration": "Couple the pieces. A change in the atmosphere can alter the ocean, ice, and living systems, which in turn affect the atmosphere. Exchanges of energy, water, and carbon must be counted across their boundaries."
+      },
+      {
+        "conceptId": "climate-tipping-elements",
+        "narration": "Now ask whether a subsystem can change disproportionately as forcing crosses a threshold. Ice-sheet and circulation examples pose different questions about timing, reversibility, and the strength of the evidence."
+      },
+      {
+        "conceptId": "uncertainty-quantification",
+        "narration": "End by returning from 2008 to a 1993 measurement guide. Its distinction between a best estimate and uncertainty is useful here too. For climate projections, compare observations, models, and emissions scenarios rather than treating one run as a forecast of everything."
+      }
+    ]
   }
 ]

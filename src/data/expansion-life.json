@@ -2830,6 +2830,1331 @@
       "relatedBranchIds": [
         "earth-climate"
       ]
+    },
+    {
+      "id": "geostrophic-balance",
+      "title": "Geostrophic balance",
+      "aliases": [
+        "geostrophic wind"
+      ],
+      "discipline": "earth",
+      "branchId": "earth-climate",
+      "tags": [
+        "Geostrophic balance"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1857,
+        "label": "1857",
+        "precision": "exact",
+        "note": "The 1857 empirical wind law is a qualitative milestone, not a full derivation of modern geostrophic dynamics."
+      },
+      "summary": "At large scales away from the equator, horizontal pressure-gradient and Coriolis accelerations can nearly cancel.",
+      "problem": "Why does large-scale wind often run roughly parallel to isobars instead of straight toward low pressure?",
+      "development": "Buys Ballot’s wind–pressure observations provided a qualitative rule. Rotating-fluid dynamics explains the approximate balance also used in oceanography.",
+      "limitations": "Near the equator, ground, tight curves, or rapid accelerations, other terms can be comparable.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Christophorus Buys Ballot",
+          "role": "Documented the relation between wind direction and pressure patterns."
+        }
+      ],
+      "sourceIds": [
+        "e21-geostrophic-balance",
+        "e21-geostrophic-balance-reference"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-geostrophic-balance-reference"
+        ],
+        "history": [
+          "e21-geostrophic-balance"
+        ]
+      },
+      "example": "On a midlatitude pressure map, closely spaced isobars can indicate stronger geostrophic winds.",
+      "representation": {
+        "kind": "formula",
+        "expression": "f k̂ × v_{g} = −∇ₕp/ρ",
+        "explanation": "In steady large-scale flow away from the equator with negligible friction, f is the Coriolis parameter, k̂ points upward, and v_g is horizontal geostrophic velocity. The horizontal pressure gradient ∇ₕp divided by density ρ gives the opposing pressure force per unit mass, with the sign shown.",
+        "sourceIds": [
+          "e21-geostrophic-balance-reference"
+        ]
+      }
+    },
+    {
+      "id": "radiative-transfer",
+      "title": "Radiative transfer",
+      "aliases": [],
+      "discipline": "earth",
+      "branchId": "earth-climate",
+      "tags": [
+        "Radiative transfer"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1906,
+        "label": "1906",
+        "precision": "exact",
+        "note": "Schwarzschild’s solar-atmosphere work is an early transfer milestone, not the first study of absorption."
+      },
+      "summary": "Radiation along a path changes as matter absorbs, emits, or scatters energy at different wavelengths.",
+      "problem": "How much radiation escapes after passing through many atmospheric layers?",
+      "development": "Atmospheric transfer theory connects local interactions with the radiation seen at a boundary. It serves both stellar-atmosphere and terrestrial climate calculations.",
+      "limitations": "Clouds, scattering, spectral lines, and three-dimensional structure complicate simple one-dimensional models.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Karl Schwarzschild",
+          "role": "Developed a radiative-equilibrium atmosphere model."
+        }
+      ],
+      "sourceIds": [
+        "e21-radiative-transfer",
+        "e21-radiative-transfer-2"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-radiative-transfer",
+          "e21-radiative-transfer-2"
+        ],
+        "history": [
+          "e21-radiative-transfer",
+          "e21-radiative-transfer-2"
+        ]
+      },
+      "example": "Infrared radiation emitted at one altitude may be absorbed and re-emitted higher up.",
+      "representation": {
+        "kind": "formula",
+        "expression": "dIν/ds = −ανIν + jν",
+        "explanation": "Iν is spectral intensity along path s, αν extinction per length and jν emission into the ray, including scattered light if modeled.",
+        "sourceIds": [
+          "e21-radiative-transfer",
+          "e21-radiative-transfer-2"
+        ]
+      }
+    },
+    {
+      "id": "numerical-weather-prediction",
+      "title": "Numerical weather prediction",
+      "aliases": [
+        "NWP"
+      ],
+      "discipline": "earth",
+      "branchId": "earth-climate",
+      "tags": [
+        "Numerical weather prediction"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1950,
+        "label": "1950",
+        "precision": "exact",
+        "note": "The 1950 electronic-computer forecast is the milestone; Richardson’s earlier numerical work preceded it."
+      },
+      "summary": "Numerical forecasts advance a physical model from an estimated atmospheric state to predict the evolving weather.",
+      "problem": "Can observations of today’s atmosphere be turned into a calculation of tomorrow’s flow?",
+      "development": "The ENIAC experiment integrated a simplified vorticity equation. Modern forecasts use more complete dynamics, observations, assimilation, and ensembles.",
+      "limitations": "Initial-state uncertainty grows, and unresolved processes introduce model error; an individual forecast has a limited useful horizon.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Jule Charney, Ragnar Fjørtoft, and John von Neumann",
+          "role": "Computed forecasts with a simplified atmospheric equation."
+        }
+      ],
+      "sourceIds": [
+        "e21-numerical-weather-prediction"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-numerical-weather-prediction"
+        ],
+        "history": [
+          "e21-numerical-weather-prediction"
+        ]
+      },
+      "example": "Predict the movement of a midlatitude pressure pattern by advancing gridded atmospheric fields.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Observed initial state + dynamical equations → forecast trajectory",
+        "explanation": "Weather forecasts target particular evolving states; climate simulations also examine long-term statistics.",
+        "sourceIds": [
+          "e21-numerical-weather-prediction"
+        ]
+      }
+    },
+    {
+      "id": "carbon-silicate-cycle",
+      "title": "Carbon–silicate cycle",
+      "aliases": [
+        "silicate weathering feedback"
+      ],
+      "discipline": "earth",
+      "branchId": "earth-climate",
+      "tags": [
+        "Carbon–silicate cycle"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1981,
+        "label": "1981",
+        "precision": "exact",
+        "note": "The 1981 feedback model is the anchor, not the beginning of weathering or carbon-cycle research."
+      },
+      "summary": "Silicate weathering and carbonate burial can remove atmospheric carbon dioxide over geological time, while solid-Earth processes return it.",
+      "problem": "What processes can counter sustained changes in planetary temperature over deep time?",
+      "development": "Walker and colleagues linked warming and weathering to carbon dioxide drawdown, describing a possible stabilizing climate feedback.",
+      "limitations": "Weathering can be limited by rock supply, water, or biology. Its slow response does not neutralize rapid emissions on human timescales.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "James Walker, Paul Hays, and James Kasting",
+          "role": "Modeled a long-term weathering–climate feedback."
+        }
+      ],
+      "sourceIds": [
+        "e21-carbon-silicate-cycle"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-carbon-silicate-cycle"
+        ],
+        "history": [
+          "e21-carbon-silicate-cycle"
+        ]
+      },
+      "example": "Enhanced silicate weathering followed by marine carbonate burial can lower atmospheric CO₂ over long intervals.",
+      "representation": {
+        "kind": "formula",
+        "expression": "CaSiO₃ + CO₂ → CaCO₃ + SiO₂",
+        "explanation": "This idealized net reaction combines weathering and carbonate burial; many intermediate aqueous reactions are omitted.",
+        "sourceIds": [
+          "e21-carbon-silicate-cycle"
+        ]
+      }
+    },
+    {
+      "id": "sequence-stratigraphy",
+      "title": "Sequence stratigraphy",
+      "aliases": [],
+      "discipline": "earth",
+      "branchId": "earth-geology",
+      "tags": [
+        "Sequence stratigraphy"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1977,
+        "label": "1977",
+        "precision": "exact",
+        "note": "The 1977 seismic-stratigraphy synthesis is the milestone within a longer history of sequence concepts."
+      },
+      "summary": "Sedimentary packages and their bounding surfaces record changing deposition, erosion, and the space available for sediment.",
+      "problem": "How can strata be correlated where erosion or nondeposition interrupted the record?",
+      "development": "Seismic profiles revealed patterns such as onlap and truncation that could be interpreted as parts of depositional sequences.",
+      "limitations": "Local tectonics and sediment supply can resemble sea-level effects; a boundary alone is not proof of a global event.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Robert Mitchum, Peter Vail, and John Sangree",
+          "role": "Interpreted depositional sequences from seismic reflection patterns."
+        }
+      ],
+      "sourceIds": [
+        "e21-sequence-stratigraphy"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-sequence-stratigraphy"
+        ],
+        "history": [
+          "e21-sequence-stratigraphy"
+        ]
+      },
+      "example": "Reflectors terminating against an older surface can reveal the geometry of a depositional episode.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Interpret sedimentary packages using bounding surfaces and stacking patterns",
+        "explanation": "The interpretation requires geological context and independent age or environmental constraints where available.",
+        "sourceIds": [
+          "e21-sequence-stratigraphy"
+        ]
+      }
+    },
+    {
+      "id": "sediment-transport",
+      "title": "Sediment transport",
+      "aliases": [
+        "Shields parameter"
+      ],
+      "discipline": "earth",
+      "branchId": "earth-water",
+      "tags": [
+        "Sediment transport"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1936,
+        "label": "1936",
+        "precision": "exact",
+        "note": "Shields’s threshold study is the selected milestone; rivers moved sediment and were studied long before it."
+      },
+      "summary": "Flow can entrain grains, move them along a bed, or keep them suspended, reshaping channels and coasts.",
+      "problem": "When does the force exerted by moving water overcome a grain’s resistance to motion?",
+      "development": "Shields compared bed shear stress with the submerged weight scale of grains, organizing observations across grain sizes.",
+      "limitations": "Thresholds vary with grain shape, packing, cohesion, slope, and turbulence.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Albert Shields",
+          "role": "Used similarity analysis to study the onset of bed-load motion."
+        }
+      ],
+      "sourceIds": [
+        "e21-sediment-transport"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-sediment-transport"
+        ],
+        "history": [
+          "e21-sediment-transport"
+        ]
+      },
+      "example": "A flood can mobilize gravel that remains immobile at normal discharge.",
+      "representation": {
+        "kind": "formula",
+        "expression": "θ = τᵦ / [(ρₛ − ρ)gd]",
+        "explanation": "θ is dimensionless bed stress; τᵦ is bed shear, ρₛ and ρ sediment and fluid densities, g gravity and d grain diameter.",
+        "sourceIds": [
+          "e21-sediment-transport"
+        ]
+      }
+    },
+    {
+      "id": "reactive-transport",
+      "title": "Reactive transport",
+      "aliases": [],
+      "discipline": "earth",
+      "branchId": "earth-water",
+      "tags": [
+        "Reactive transport"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1985,
+        "label": "1985",
+        "precision": "exact",
+        "note": "The 1985 hydrothermal continuum model is a selected application."
+      },
+      "summary": "Reactive transport follows moving chemical species while reactions create, consume, or immobilize them.",
+      "problem": "Where will dissolved material travel if it reacts with the rocks along its path?",
+      "development": "Lichtner combined advective and diffusive transport with reversible and irreversible reactions, allowing the fluid and rock chemistry to evolve together.",
+      "limitations": "Reaction rates, reactive surface area, pore structure, and unresolved mixing can dominate uncertainty.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Peter Lichtner",
+          "role": "Coupled fluid transport with geochemical reactions in porous media."
+        }
+      ],
+      "sourceIds": [
+        "e21-reactive-transport"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-reactive-transport"
+        ],
+        "history": [
+          "e21-reactive-transport"
+        ]
+      },
+      "example": "A dissolved metal plume can slow where precipitation removes ions from groundwater.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Accumulation = transport into a volume + net chemical production",
+        "explanation": "The balance is written for each conserved component or reacting species with consistent units.",
+        "sourceIds": [
+          "e21-reactive-transport"
+        ]
+      }
+    },
+    {
+      "id": "climate-tipping-elements",
+      "title": "Climate tipping elements",
+      "aliases": [
+        "climate tipping points"
+      ],
+      "discipline": "earth",
+      "branchId": "earth-climate",
+      "tags": [
+        "Climate tipping elements"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 2008,
+        "label": "2008",
+        "precision": "exact",
+        "note": "The 2008 synthesis organized candidate tipping elements; nonlinear climate transitions were studied earlier."
+      },
+      "summary": "A large climate subsystem may reorganize qualitatively when a controlling influence crosses a critical range.",
+      "problem": "When might a gradual forcing cause a disproportionately large change?",
+      "development": "Lenton and colleagues evaluated candidate subsystems using physical mechanisms, models, observations, and expert assessment.",
+      "limitations": "Thresholds, timescales, reversibility, and evidence differ by subsystem. Crossing a threshold need not mean instantaneous completion of a change.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Timothy Lenton and collaborators",
+          "role": "Defined tipping elements and assessed candidate climate subsystems."
+        }
+      ],
+      "sourceIds": [
+        "e21-climate-tipping-elements"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-climate-tipping-elements"
+        ],
+        "history": [
+          "e21-climate-tipping-elements"
+        ]
+      },
+      "example": "An ice sheet could commit to long-term retreat before most of its ice is lost.",
+      "representation": {
+        "kind": "definition",
+        "expression": "A small control change near a threshold can trigger qualitative reorganization",
+        "explanation": "Candidate mechanisms and their confidence must be evaluated separately for each subsystem.",
+        "sourceIds": [
+          "e21-climate-tipping-elements"
+        ]
+      }
+    },
+    {
+      "id": "atp-energy-coupling",
+      "title": "ATP energy coupling",
+      "aliases": [],
+      "discipline": "biology",
+      "branchId": "biology-physiology",
+      "tags": [
+        "ATP energy coupling"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1941,
+        "label": "1941",
+        "precision": "exact",
+        "note": "Lipmann’s 1941 synthesis concerns metabolic function, not the discovery of ATP."
+      },
+      "summary": "Cells couple ATP-consuming reactions to other processes so that the combined change in free energy can favor work.",
+      "problem": "How can a cell drive a reaction that is unfavorable by itself?",
+      "development": "Lipmann organized evidence that phosphate transfer links energy-yielding and energy-consuming pathways. Enzymes connect the reactions through shared intermediates or conformational changes.",
+      "limitations": "Breaking a bond alone costs energy; the overall free-energy change of reactants, products, and environment is what matters.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Fritz Lipmann",
+          "role": "Synthesized the role of phosphate transfer in metabolic coupling."
+        }
+      ],
+      "sourceIds": [
+        "e21-atp-energy-coupling",
+        "e21-atp-energy-coupling-2"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-atp-energy-coupling",
+          "e21-atp-energy-coupling-2"
+        ],
+        "history": [
+          "e21-atp-energy-coupling",
+          "e21-atp-energy-coupling-2"
+        ]
+      },
+      "example": "A kinase couples ATP conversion to phosphorylation of a sugar.",
+      "representation": {
+        "kind": "formula",
+        "expression": "ΔGₙₑₜ = ΔG₁ + ΔG₂",
+        "explanation": "ΔG₁ and ΔG₂ are Gibbs free-energy changes for reactions combined in the stated proportions under the same conditions. A negative sum favors the coupled process, but only a shared chemical or mechanical step can couple the reactions.",
+        "sourceIds": [
+          "e21-atp-energy-coupling",
+          "e21-atp-energy-coupling-2"
+        ]
+      }
+    },
+    {
+      "id": "apoptosis",
+      "title": "Apoptosis",
+      "aliases": [],
+      "discipline": "biology",
+      "branchId": "biology-cells",
+      "tags": [
+        "Apoptosis"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1972,
+        "label": "1972",
+        "precision": "exact",
+        "note": "The 1972 paper proposed the term from tissue observations; molecular pathways were worked out later."
+      },
+      "summary": "Apoptosis is a regulated cell-death process often involving shrinkage, chromatin condensation, and orderly removal of cell fragments.",
+      "problem": "How are unwanted or damaged cells removed while preserving surrounding tissue?",
+      "development": "Comparative microscopy revealed a recurring morphology distinct from many injury-associated deaths. Later research connected it to regulated molecular machinery.",
+      "limitations": "Morphology alone does not identify every pathway; apoptosis is only one form of regulated cell death.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "John Kerr, Andrew Wyllie, and Alastair Currie",
+          "role": "Named and described a characteristic pattern of cell death."
+        }
+      ],
+      "sourceIds": [
+        "e21-apoptosis"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-apoptosis"
+        ],
+        "history": [
+          "e21-apoptosis"
+        ]
+      },
+      "example": "During tissue remodeling, selected cells can fragment and be engulfed by neighbors or phagocytes.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Regulated dismantling and clearance of an individual cell",
+        "explanation": "The pattern concerns what happens to the dying cell and its fragments, not simply a decrease in cell count.",
+        "sourceIds": [
+          "e21-apoptosis"
+        ]
+      }
+    },
+    {
+      "id": "autophagy",
+      "title": "Autophagy",
+      "aliases": [
+        "macroautophagy"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-cells",
+      "tags": [
+        "Autophagy"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1992,
+        "label": "1992",
+        "precision": "exact",
+        "note": "The 1992 yeast experiments made the pathway accessible to genetics; earlier microscopy had identified autophagy in other cells."
+      },
+      "summary": "Cells deliver portions of their own contents to degradative compartments, recycling material or clearing damaged components.",
+      "problem": "How can cells recycle cytoplasm when nutrients become scarce?",
+      "development": "Yeast unable to digest material normally accumulated autophagic bodies in their vacuoles during starvation, exposing a tractable recycling process.",
+      "limitations": "Autophagy comprises several pathways; more visible vesicles may indicate increased formation or impaired clearance.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Keiji Takeshige, Yoshinori Ohsumi, and collaborators",
+          "role": "Demonstrated starvation-induced autophagy in yeast."
+        }
+      ],
+      "sourceIds": [
+        "e21-autophagy"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-autophagy"
+        ],
+        "history": [
+          "e21-autophagy"
+        ]
+      },
+      "example": "A yeast cell can recycle cytoplasmic proteins through its vacuole during starvation.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Cellular cargo is delivered to a lysosome or vacuole for degradation",
+        "explanation": "In macroautophagy a double-membrane carrier encloses cargo; other routes differ.",
+        "sourceIds": [
+          "e21-autophagy"
+        ]
+      }
+    },
+    {
+      "id": "cell-cycle-checkpoints",
+      "title": "Cell-cycle checkpoints",
+      "aliases": [],
+      "discipline": "biology",
+      "branchId": "biology-cells",
+      "tags": [
+        "Cell-cycle checkpoints"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1989,
+        "label": "1989",
+        "precision": "exact",
+        "note": "The 1989 formulation distinguished regulatory checkpoints from simple physical dependencies."
+      },
+      "summary": "Checkpoint mechanisms delay later cell-cycle events when earlier processes are incomplete or damage is detected.",
+      "problem": "How can a cell avoid dividing before its genetic material is ready?",
+      "development": "Genetic experiments distinguished cells unable to perform a step from mutants unable to delay a subsequent step when something went wrong.",
+      "limitations": "A checkpoint reduces risk but does not guarantee error-free division; different checkpoints monitor different conditions.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Leland Hartwell and Ted Weinert",
+          "role": "Formulated checkpoint controls as dependencies between cell-cycle events."
+        }
+      ],
+      "sourceIds": [
+        "e21-cell-cycle-checkpoints"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-cell-cycle-checkpoints"
+        ],
+        "history": [
+          "e21-cell-cycle-checkpoints"
+        ]
+      },
+      "example": "DNA damage can delay division while repair pathways operate.",
+      "representation": {
+        "kind": "definition",
+        "expression": "A surveillance signal makes one event conditional on another",
+        "explanation": "Removing the control may allow progression without correcting the original defect.",
+        "sourceIds": [
+          "e21-cell-cycle-checkpoints"
+        ]
+      }
+    },
+    {
+      "id": "alternative-rna-splicing",
+      "title": "Alternative RNA splicing",
+      "aliases": [
+        "alternative splicing"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-genetics",
+      "tags": [
+        "Alternative RNA splicing"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1982,
+        "label": "1982",
+        "precision": "exact",
+        "note": "The milestone is an experimentally studied case of alternative processing, rather than the earlier discovery of split genes."
+      },
+      "summary": "Different selections of splice sites in one precursor RNA can produce different mature RNAs from the same gene.",
+      "problem": "How can one gene produce several distinct transcripts?",
+      "development": "After split genes were discovered, Gilbert suggested that coding segments might be combined in different ways. In 1982 Amara and colleagues found that the calcitonin gene produces distinct messenger RNAs through alternative processing.",
+      "limitations": "Not every detected transcript yields a stable functional protein; abundance and tissue context matter.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Walter Gilbert",
+          "role": "Discussed the possibility of combining coding segments in different ways."
+        },
+        {
+          "name": "Susan Amara and colleagues",
+          "role": "Identified alternative processing of calcitonin gene transcripts."
+        }
+      ],
+      "sourceIds": [
+        "e21-alternative-rna-splicing",
+        "e21-alternative-rna-splicing-2"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-alternative-rna-splicing-2"
+        ],
+        "history": [
+          "e21-alternative-rna-splicing",
+          "e21-alternative-rna-splicing-2"
+        ]
+      },
+      "example": "The calcitonin gene produces predominantly calcitonin messenger RNA in the thyroid, but predominantly RNA for calcitonin gene-related peptide in the hypothalamus.",
+      "representation": {
+        "kind": "definition",
+        "expression": "One precursor RNA → alternative mature transcripts",
+        "explanation": "The nucleotide sequence of the gene need not change; RNA processing changes which segments are joined.",
+        "sourceIds": [
+          "e21-alternative-rna-splicing-2"
+        ]
+      }
+    },
+    {
+      "id": "rna-interference",
+      "title": "RNA interference",
+      "aliases": [
+        "RNAi"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-genetics",
+      "tags": [
+        "RNA interference"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1998,
+        "label": "1998",
+        "precision": "exact",
+        "note": "The 1998 nematode experiment followed earlier observations of gene silencing in other organisms."
+      },
+      "summary": "Double-stranded RNA can trigger sequence-directed suppression of matching gene expression through small-RNA pathways.",
+      "problem": "How can introducing RNA silence a gene without changing its DNA sequence?",
+      "development": "Fire and colleagues found double-stranded RNA much more effective than either strand alone in their worm experiments. Later work identified small guide RNAs and effector complexes.",
+      "limitations": "Knockdown can be incomplete or affect unintended transcripts; delivery and pathway details vary.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Andrew Fire, Craig Mello, and collaborators",
+          "role": "Demonstrated sequence-specific silencing triggered by double-stranded RNA in worms."
+        }
+      ],
+      "sourceIds": [
+        "e21-rna-interference"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-rna-interference"
+        ],
+        "history": [
+          "e21-rna-interference"
+        ]
+      },
+      "example": "Silence a worm gene and compare the resulting phenotype with that of untreated animals.",
+      "representation": {
+        "kind": "definition",
+        "expression": "A guide RNA directs silencing toward a complementary transcript",
+        "explanation": "Sequence complementarity helps provide specificity; silencing is not necessarily permanent.",
+        "sourceIds": [
+          "e21-rna-interference"
+        ]
+      }
+    },
+    {
+      "id": "transposable-elements",
+      "title": "Transposable elements",
+      "aliases": [
+        "jumping genes"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-genetics",
+      "tags": [
+        "Transposable elements"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1950,
+        "label": "1950",
+        "precision": "exact",
+        "note": "McClintock’s 1950 maize report is the historical anchor."
+      },
+      "summary": "Some DNA sequences can change position or generate new copies at other genomic sites.",
+      "problem": "Why can a genetic locus change its behavior between cell lineages?",
+      "development": "McClintock connected unstable maize traits with mobile elements. Later molecular work distinguished DNA-based movement from retrotransposition through RNA.",
+      "limitations": "Many genomic copies are inactive; insertion effects depend on location and regulation.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Barbara McClintock",
+          "role": "Inferred mobile controlling elements from maize genetics."
+        }
+      ],
+      "sourceIds": [
+        "e21-transposable-elements"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-transposable-elements"
+        ],
+        "history": [
+          "e21-transposable-elements"
+        ]
+      },
+      "example": "An element moving out of a pigment gene can produce a colored sector in a maize kernel.",
+      "representation": {
+        "kind": "definition",
+        "expression": "A sequence can move or copy to a new genomic position",
+        "explanation": "Movement may disrupt or modulate other sequences; transposition is not ordinary meiotic crossing-over.",
+        "sourceIds": [
+          "e21-transposable-elements"
+        ]
+      }
+    },
+    {
+      "id": "stem-cell-pluripotency",
+      "title": "Stem-cell pluripotency",
+      "aliases": [
+        "induced pluripotency"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-genetics",
+      "tags": [
+        "Stem-cell pluripotency"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 2006,
+        "label": "2006",
+        "precision": "exact",
+        "note": "The 2006 mouse reprogramming experiment is the anchor; embryonic pluripotency was known earlier."
+      },
+      "summary": "Pluripotent cells can generate derivatives of all three embryonic germ layers; defined factors can reprogram differentiated cells toward that state.",
+      "problem": "Is a specialized cell’s developmental potential permanently fixed?",
+      "development": "Takahashi and Yamanaka introduced four factors into mouse fibroblasts, identifying induced pluripotent stem cell lines with multiple embryonic-stem-cell traits.",
+      "limitations": "Pluripotent does not mean totipotent; reprogrammed lines vary and markers alone do not establish every functional property.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Kazutoshi Takahashi and Shinya Yamanaka",
+          "role": "Induced a pluripotent-like state in mouse fibroblasts using defined factors."
+        }
+      ],
+      "sourceIds": [
+        "e21-stem-cell-pluripotency"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-stem-cell-pluripotency"
+        ],
+        "history": [
+          "e21-stem-cell-pluripotency"
+        ]
+      },
+      "example": "A reprogrammed cell line can be differentiated into neural cells for laboratory study.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Developmental potential across the three embryonic germ layers",
+        "explanation": "This is a property of a cell state; it does not imply independent development into a complete organism.",
+        "sourceIds": [
+          "e21-stem-cell-pluripotency"
+        ]
+      }
+    },
+    {
+      "id": "hebbian-plasticity",
+      "title": "Hebbian plasticity",
+      "aliases": [
+        "Hebbian learning"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-physiology",
+      "tags": [
+        "Hebbian plasticity"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1949,
+        "label": "1949",
+        "precision": "exact",
+        "note": "Hebb’s 1949 postulate predates later experiments on synaptic potentiation."
+      },
+      "summary": "A connection may strengthen when activity in one neuron repeatedly contributes to the firing of another.",
+      "problem": "How could repeated experience leave a lasting change in neural circuits?",
+      "development": "Hebb proposed a mechanism linking repeated causal coactivation to cell assemblies; later experimental and computational rules gave more specific conditions.",
+      "limitations": "Timing, inhibition, neuromodulation, and homeostasis matter; not every correlation strengthens a synapse.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Donald Hebb",
+          "role": "Proposed activity-dependent strengthening of effective neuronal connections."
+        }
+      ],
+      "sourceIds": [
+        "e21-hebbian-plasticity"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-hebbian-plasticity"
+        ],
+        "history": [
+          "e21-hebbian-plasticity"
+        ]
+      },
+      "example": "A simplified model increases a synaptic weight when both presynaptic and postsynaptic units are active.",
+      "representation": {
+        "kind": "formula",
+        "expression": "Δw = ηxy",
+        "explanation": "This illustrative learning rule uses activities x,y and positive learning rate η; it is not Hebb’s original wording or a universal biological law.",
+        "sourceIds": [
+          "e21-hebbian-plasticity"
+        ]
+      }
+    },
+    {
+      "id": "ecological-resilience",
+      "title": "Ecological resilience",
+      "aliases": [
+        "ecosystem resilience"
+      ],
+      "discipline": "biology",
+      "branchId": "biology-evolution",
+      "tags": [
+        "Ecological resilience"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1973,
+        "label": "1973",
+        "precision": "exact",
+        "note": "Holling’s 1973 synthesis is the selected ecological formulation."
+      },
+      "summary": "Ecological resilience concerns how much disturbance a system can absorb while retaining its key relationships and regime.",
+      "problem": "Is rapid recovery from a small shock the same as persistence through a large one?",
+      "development": "Holling contrasted local stability with persistence across wider disturbances, redirecting attention toward alternative regimes and variability.",
+      "limitations": "Resilience depends on which functions, disturbances, spatial scale, and time horizon are specified.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "C. S. Holling",
+          "role": "Distinguished persistence under disturbance from rapid return to equilibrium."
+        }
+      ],
+      "sourceIds": [
+        "e21-ecological-resilience"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-ecological-resilience"
+        ],
+        "history": [
+          "e21-ecological-resilience"
+        ]
+      },
+      "example": "A lake may recover from modest nutrient pulses yet shift into a different regime after sustained loading.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Persistence of system relationships under disturbance",
+        "explanation": "Persistence is distinct from the speed of return near one equilibrium.",
+        "sourceIds": [
+          "e21-ecological-resilience"
+        ]
+      }
+    },
+    {
+      "id": "innate-pattern-recognition",
+      "title": "Innate immune pattern recognition",
+      "aliases": [
+        "pattern recognition receptors"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-immunity",
+      "tags": [
+        "Innate immune pattern recognition"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1989,
+        "label": "1989",
+        "precision": "exact",
+        "note": "Janeway’s 1989 proposal preceded identification of several receptor pathways."
+      },
+      "summary": "Innate receptors detect recurring molecular features associated with microbes or damage and initiate signaling responses.",
+      "problem": "How does the immune system recognize danger before it has expanded antigen-specific clones?",
+      "development": "Janeway proposed that inherited receptors help initiate adaptive immunity. Experimental studies of Toll and Toll-like receptors later identified concrete signaling mechanisms.",
+      "limitations": "A molecular pattern is not a unique identifier of a pathogen; receptor location and tissue context shape the response.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Charles Janeway Jr.",
+          "role": "Proposed germline-encoded recognition of microbial patterns as a trigger of adaptive responses."
+        }
+      ],
+      "sourceIds": [
+        "e21-innate-pattern-recognition",
+        "e21-innate-pattern-recognition-2"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-innate-pattern-recognition",
+          "e21-innate-pattern-recognition-2"
+        ],
+        "history": [
+          "e21-innate-pattern-recognition",
+          "e21-innate-pattern-recognition-2"
+        ]
+      },
+      "example": "Bacterial lipopolysaccharide can trigger signaling through the TLR4 receptor complex.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Shared molecular pattern → receptor activation → innate signaling",
+        "explanation": "These receptors are germline encoded, unlike the individually rearranged antigen receptors of lymphocytes.",
+        "sourceIds": [
+          "e21-innate-pattern-recognition",
+          "e21-innate-pattern-recognition-2"
+        ]
+      }
+    },
+    {
+      "id": "antigen-presentation",
+      "title": "Antigen presentation",
+      "aliases": [
+        "MHC restriction"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-immunity",
+      "tags": [
+        "Antigen presentation"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1974,
+        "label": "1974",
+        "precision": "exact",
+        "note": "The 1974 restriction experiments preceded structural identification of the peptide-binding groove."
+      },
+      "summary": "Classical MHC molecules display peptides at a cell’s surface so that T cells can inspect a sample of proteins associated with that cell.",
+      "problem": "How does a T cell recognize a cell containing a virus?",
+      "development": "Experiments showed cytotoxic recognition depended on an appropriate host MHC context as well as infection. Structural work later revealed a groove accommodating bound material.",
+      "limitations": "Different MHC classes and alleles present different peptides; presentation alone does not guarantee an effective immune response.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Rolf Zinkernagel and Peter Doherty",
+          "role": "Demonstrated MHC restriction in antiviral T-cell recognition."
+        },
+        {
+          "name": "Pamela Bjorkman and collaborators",
+          "role": "Revealed the structure of an MHC class I molecule."
+        }
+      ],
+      "sourceIds": [
+        "e21-antigen-presentation",
+        "e21-antigen-presentation-2"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-antigen-presentation",
+          "e21-antigen-presentation-2"
+        ],
+        "history": [
+          "e21-antigen-presentation",
+          "e21-antigen-presentation-2"
+        ]
+      },
+      "example": "A virus-infected cell displays viral peptides on class I MHC to CD8 T cells.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Peptide + MHC molecule → recognizable surface complex",
+        "explanation": "A conventional T-cell receptor recognizes the combined peptide–MHC surface.",
+        "sourceIds": [
+          "e21-antigen-presentation",
+          "e21-antigen-presentation-2"
+        ]
+      }
+    },
+    {
+      "id": "complement-system",
+      "title": "Complement system",
+      "aliases": [
+        "alexin"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-immunity",
+      "tags": [
+        "Complement system"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1895,
+        "label": "1895",
+        "precision": "exact",
+        "note": "Bordet’s 1895 serum experiments anchor an early functional distinction; the component cascade was mapped later."
+      },
+      "summary": "Complement is a regulated network of proteins that amplifies immune recognition, marks targets for clearance, and can damage susceptible membranes.",
+      "problem": "Why does heating immune serum remove part of its ability to kill bacteria?",
+      "development": "Bordet separated a heat-sensitive activity from antibody specificity. Subsequent studies identified converging activation pathways and terminal membrane attack.",
+      "limitations": "Complement can be triggered without antibodies, and regulation is needed to avoid injury to host tissue.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Jules Bordet",
+          "role": "Distinguished a heat-sensitive serum factor cooperating with specific antibodies."
+        }
+      ],
+      "sourceIds": [
+        "e21-complement-system"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-complement-system"
+        ],
+        "history": [
+          "e21-complement-system"
+        ]
+      },
+      "example": "Complement deposition on a microbe can promote its uptake by phagocytes.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Recognition → amplified protein cascade → clearance or membrane attack",
+        "explanation": "Membrane lysis is one possible outcome; opsonization and inflammatory signals are also important.",
+        "sourceIds": [
+          "e21-complement-system"
+        ]
+      }
+    },
+    {
+      "id": "mrna-vaccines",
+      "title": "mRNA vaccines",
+      "aliases": [
+        "messenger RNA vaccines"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-immunity",
+      "tags": [
+        "mRNA vaccines"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 2005,
+        "label": "2005",
+        "precision": "exact",
+        "note": "The 2005 nucleoside-modification study was an enabling step, not a clinical vaccine trial or the first delivery of mRNA."
+      },
+      "summary": "Delivered messenger RNA transiently instructs cells to produce an antigen that can elicit an immune response.",
+      "problem": "How can an antigen be produced in the recipient without administering the pathogen itself?",
+      "development": "Nucleoside modification helped tune innate sensing; delivery systems and extensive antigen design and testing were also needed for effective vaccines.",
+      "limitations": "Performance depends on antigen choice, delivery, dose, and evidence for each product; not all mRNA vaccines require identical chemistry.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Katalin Karikó, Drew Weissman, and collaborators",
+          "role": "Demonstrated effects of nucleoside modification on innate RNA sensing."
+        }
+      ],
+      "sourceIds": [
+        "e21-mrna-vaccines",
+        "e21-mrna-vaccines-2"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-mrna-vaccines",
+          "e21-mrna-vaccines-2"
+        ],
+        "history": [
+          "e21-mrna-vaccines",
+          "e21-mrna-vaccines-2"
+        ]
+      },
+      "example": "A lipid nanoparticle can protect an mRNA encoding a viral antigen until it reaches cells.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Delivered mRNA → transient antigen production → immune recognition",
+        "explanation": "The message is translated in the cytoplasm; immunity depends on the ensuing response, not permanent retention of the RNA.",
+        "sourceIds": [
+          "e21-mrna-vaccines",
+          "e21-mrna-vaccines-2"
+        ]
+      }
+    },
+    {
+      "id": "two-hit-hypothesis",
+      "title": "Two-hit tumor-suppressor hypothesis",
+      "aliases": [
+        "Knudson hypothesis"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-disease",
+      "tags": [
+        "Two-hit tumor-suppressor hypothesis"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1971,
+        "label": "1971",
+        "precision": "exact",
+        "note": "The statistical inference predates molecular identification of the RB1 gene."
+      },
+      "summary": "For a classic tumor-suppressor mechanism, loss of both functional gene copies in a cell can remove an important growth restraint.",
+      "problem": "Why does inherited retinoblastoma often present differently from sporadic disease?",
+      "development": "Knudson modeled age and case patterns using two events. An inherited first alteration leaves fewer cellular events before the relevant restraint is lost.",
+      "limitations": "This mechanism fits important examples, not all cancers or suppressor genes; additional changes can affect tumor development.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Alfred Knudson Jr.",
+          "role": "Inferred a two-event model from retinoblastoma incidence patterns."
+        }
+      ],
+      "sourceIds": [
+        "e21-two-hit-hypothesis"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-two-hit-hypothesis"
+        ],
+        "history": [
+          "e21-two-hit-hypothesis"
+        ]
+      },
+      "example": "A retinal precursor inheriting one inactive RB1 copy can lose the remaining functional copy in a somatic event.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Inherited or somatic first hit + loss of remaining function",
+        "explanation": "A hit denotes functional inactivation and need not be a particular kind of point mutation.",
+        "sourceIds": [
+          "e21-two-hit-hypothesis"
+        ]
+      }
+    },
+    {
+      "id": "oncogenes",
+      "title": "Oncogenes",
+      "aliases": [
+        "proto-oncogene activation"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-disease",
+      "tags": [
+        "Oncogenes"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1976,
+        "label": "1976",
+        "precision": "exact",
+        "note": "The 1976 finding concerns the cellular origin of a viral transforming sequence, not the first observation of tumor viruses."
+      },
+      "summary": "Certain genes can promote cancer when activated or expressed inappropriately; many derive from normal regulators of cell growth or survival.",
+      "problem": "Could a tumor virus’s transforming gene have a counterpart in normal cells?",
+      "development": "Viral probe experiments found related sequences in normal avian DNA, connecting retroviral transformation with cellular proto-oncogenes.",
+      "limitations": "A proto-oncogene is not itself a diagnosis of cancer. Effects depend on alteration, tissue context, and cooperating changes.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Dominique Stéhelin, Harold Varmus, J. Michael Bishop, and Peter Vogt",
+          "role": "Found evidence for a cellular counterpart of a viral transforming gene."
+        }
+      ],
+      "sourceIds": [
+        "e21-oncogenes"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-oncogenes"
+        ],
+        "history": [
+          "e21-oncogenes"
+        ]
+      },
+      "example": "Excessive signaling from an activated growth-regulating protein can favor cell proliferation.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Normal growth regulator → activating alteration → oncogenic signaling",
+        "explanation": "Gain of function differs from loss of a tumor suppressor’s restraint.",
+        "sourceIds": [
+          "e21-oncogenes"
+        ]
+      }
+    },
+    {
+      "id": "pharmacogenomics",
+      "title": "Pharmacogenomics",
+      "aliases": [],
+      "discipline": "medicine",
+      "branchId": "medicine-therapeutics",
+      "tags": [
+        "Pharmacogenomics"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1999,
+        "label": "1999",
+        "precision": "exact",
+        "note": "The 1999 synthesis broadened earlier single-gene pharmacogenetic studies."
+      },
+      "summary": "Genetic variation can help explain differences in drug metabolism, molecular targets, effects, or adverse responses.",
+      "problem": "Why can the same drug exposure produce different responses in different people?",
+      "development": "Studies of inherited enzyme activities supplied concrete gene–drug examples; functional genomics broadened the search across pathways.",
+      "limitations": "Genotype explains only part of variability. A gene–drug association requires appropriate clinical evidence before it can guide a decision.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "William Evans and Mary Relling",
+          "role": "Connected functional genomic variation with drug disposition and response."
+        }
+      ],
+      "sourceIds": [
+        "e21-pharmacogenomics",
+        "e21-pharmacogenomics-2"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-pharmacogenomics",
+          "e21-pharmacogenomics-2"
+        ],
+        "history": [
+          "e21-pharmacogenomics",
+          "e21-pharmacogenomics-2"
+        ]
+      },
+      "example": "Inherited differences in TPMT activity can affect how thiopurine drugs are metabolized.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Genomic variation can modify drug disposition or response",
+        "explanation": "The effect is specific to the variant, drug, and clinical context; it is not a dosage rule.",
+        "sourceIds": [
+          "e21-pharmacogenomics",
+          "e21-pharmacogenomics-2"
+        ]
+      }
+    },
+    {
+      "id": "oral-rehydration",
+      "title": "Oral rehydration physiology",
+      "aliases": [
+        "sodium–glucose cotransport"
+      ],
+      "discipline": "medicine",
+      "branchId": "medicine-therapeutics",
+      "tags": [
+        "Oral rehydration physiology"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1968,
+        "label": "1968",
+        "precision": "exact",
+        "note": "The 1968 clinical and intestinal studies build on earlier transport physiology and parallel clinical work."
+      },
+      "summary": "Intestinal sodium–glucose uptake can remain functional during secretory diarrhea; solute absorption supports water absorption.",
+      "problem": "How can fluid still be absorbed when the intestine is also secreting large volumes?",
+      "development": "Physiological studies showed that glucose promoted sodium absorption in cholera. Maintenance studies translated this mechanism into a tested oral fluid strategy.",
+      "limitations": "The mechanism replaces losses and does not eliminate the pathogen. The historical maintenance trials distinguished rehydration needs by severity.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "David Nalin, Richard Cash, and collaborators",
+          "role": "Tested oral glucose–electrolyte maintenance therapy in cholera."
+        }
+      ],
+      "sourceIds": [
+        "e21-oral-rehydration",
+        "e21-oral-rehydration-2"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-oral-rehydration",
+          "e21-oral-rehydration-2"
+        ],
+        "history": [
+          "e21-oral-rehydration",
+          "e21-oral-rehydration-2"
+        ]
+      },
+      "example": "Intestinal perfusion studies compared net fluid and electrolyte movement with and without glucose.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Coupled sodium–glucose uptake supports net water absorption",
+        "explanation": "This describes a physiological mechanism, not a recipe; concentration and clinical condition matter.",
+        "sourceIds": [
+          "e21-oral-rehydration",
+          "e21-oral-rehydration-2"
+        ]
+      }
     }
   ],
   "relationships": [
@@ -3850,6 +5175,464 @@
       "sourceIds": [
         "xl-acidification"
       ]
+    },
+    {
+      "id": "coriolis-effect--geostrophic-balance",
+      "source": "coriolis-effect",
+      "target": "geostrophic-balance",
+      "type": "foundation",
+      "explanation": "Rotation supplies the sideways acceleration that balances a horizontal pressure gradient.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-geostrophic-balance"
+      ]
+    },
+    {
+      "id": "spectroscopy--radiative-transfer",
+      "source": "spectroscopy",
+      "target": "radiative-transfer",
+      "type": "enables",
+      "explanation": "Spectral absorption and emission measurements constrain how gases interact with radiation at different frequencies.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-radiative-transfer",
+        "e21-radiative-transfer-2"
+      ]
+    },
+    {
+      "id": "greenhouse-effect--radiative-transfer",
+      "source": "greenhouse-effect",
+      "target": "radiative-transfer",
+      "type": "foundation",
+      "explanation": "Transfer equations quantify how atmospheric absorption and emission alter outgoing radiation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-radiative-transfer",
+        "e21-radiative-transfer-2"
+      ]
+    },
+    {
+      "id": "fluid-dynamics--numerical-weather-prediction",
+      "source": "fluid-dynamics",
+      "target": "numerical-weather-prediction",
+      "type": "foundation",
+      "explanation": "Atmospheric motion is represented by fluid equations whose numerical solutions evolve in time.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-numerical-weather-prediction"
+      ]
+    },
+    {
+      "id": "numerical-analysis--numerical-weather-prediction",
+      "source": "numerical-analysis",
+      "target": "numerical-weather-prediction",
+      "type": "enables",
+      "explanation": "Discrete time stepping approximates the evolution of a continuous atmospheric field.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-numerical-weather-prediction"
+      ]
+    },
+    {
+      "id": "biogeochemical-cycles--carbon-silicate-cycle",
+      "source": "biogeochemical-cycles",
+      "target": "carbon-silicate-cycle",
+      "type": "foundation",
+      "explanation": "Carbon exchange among rock, water, air, and organisms provides the reservoir framework.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-carbon-silicate-cycle"
+      ]
+    },
+    {
+      "id": "greenhouse-effect--carbon-silicate-cycle",
+      "source": "greenhouse-effect",
+      "target": "carbon-silicate-cycle",
+      "type": "foundation",
+      "explanation": "Changes in atmospheric CO₂ connect geochemical carbon removal to radiative forcing.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-carbon-silicate-cycle"
+      ]
+    },
+    {
+      "id": "stratigraphy--sequence-stratigraphy",
+      "source": "stratigraphy",
+      "target": "sequence-stratigraphy",
+      "type": "revision",
+      "explanation": "Sequence analysis adds depositional boundaries and geometry to the reading of layered rocks.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-sequence-stratigraphy"
+      ]
+    },
+    {
+      "id": "dimensional-analysis--sediment-transport",
+      "source": "dimensional-analysis",
+      "target": "sediment-transport",
+      "type": "foundation",
+      "explanation": "Nondimensionalizing bed shear allows comparison of sediment motion across scales.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-sediment-transport"
+      ]
+    },
+    {
+      "id": "groundwater-flow--reactive-transport",
+      "source": "groundwater-flow",
+      "target": "reactive-transport",
+      "type": "enables",
+      "explanation": "Fluid flow carries dissolved constituents through the reacting porous medium.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-reactive-transport"
+      ]
+    },
+    {
+      "id": "chemical-kinetics--reactive-transport",
+      "source": "chemical-kinetics",
+      "target": "reactive-transport",
+      "type": "foundation",
+      "explanation": "Rate laws describe production and consumption that cannot be treated as instantaneous equilibrium.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-reactive-transport"
+      ]
+    },
+    {
+      "id": "earth-system-science--climate-tipping-elements",
+      "source": "earth-system-science",
+      "target": "climate-tipping-elements",
+      "type": "foundation",
+      "explanation": "Tipping elements are defined as interacting subsystems within the coupled Earth system.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-climate-tipping-elements"
+      ]
+    },
+    {
+      "id": "ice-albedo-feedback--climate-tipping-elements",
+      "source": "ice-albedo-feedback",
+      "target": "climate-tipping-elements",
+      "type": "foundation",
+      "explanation": "Positive feedback can amplify change; its existence alone does not establish a tipping threshold.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-climate-tipping-elements"
+      ]
+    },
+    {
+      "id": "chemical-thermodynamics--atp-energy-coupling",
+      "source": "chemical-thermodynamics",
+      "target": "atp-energy-coupling",
+      "type": "foundation",
+      "explanation": "Free-energy accounting distinguishes favorable net coupling from an isolated unfavorable step.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-atp-energy-coupling",
+        "e21-atp-energy-coupling-2"
+      ]
+    },
+    {
+      "id": "cell-theory--apoptosis",
+      "source": "cell-theory",
+      "target": "apoptosis",
+      "type": "foundation",
+      "explanation": "Treating tissues as populations of individual cells makes selective cell loss a distinct process to explain.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-apoptosis"
+      ]
+    },
+    {
+      "id": "cell-theory--autophagy",
+      "source": "cell-theory",
+      "target": "autophagy",
+      "type": "foundation",
+      "explanation": "Autophagy explains internal turnover within a living cell rather than the death of the cell as a whole.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-autophagy"
+      ]
+    },
+    {
+      "id": "mitosis--cell-cycle-checkpoints",
+      "source": "mitosis",
+      "target": "cell-cycle-checkpoints",
+      "type": "foundation",
+      "explanation": "Ordered chromosome segregation is one of the cell-cycle events that checkpoints protect.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-cell-cycle-checkpoints"
+      ]
+    },
+    {
+      "id": "gene-regulation--alternative-rna-splicing",
+      "source": "gene-regulation",
+      "target": "alternative-rna-splicing",
+      "type": "foundation",
+      "explanation": "Regulation can act on RNA processing as well as on transcription initiation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-alternative-rna-splicing",
+        "e21-alternative-rna-splicing-2"
+      ]
+    },
+    {
+      "id": "gene-regulation--rna-interference",
+      "source": "gene-regulation",
+      "target": "rna-interference",
+      "type": "revision",
+      "explanation": "RNA-directed silencing adds a post-transcriptional route to controlling gene output.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-rna-interference"
+      ]
+    },
+    {
+      "id": "chromosome-theory--transposable-elements",
+      "source": "chromosome-theory",
+      "target": "transposable-elements",
+      "type": "foundation",
+      "explanation": "Locating traits on chromosomes made changes of element position experimentally interpretable.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-transposable-elements"
+      ]
+    },
+    {
+      "id": "gene-regulation--stem-cell-pluripotency",
+      "source": "gene-regulation",
+      "target": "stem-cell-pluripotency",
+      "type": "enables",
+      "explanation": "Changing transcription-factor activity can reset regulatory networks that sustain cell identity.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-stem-cell-pluripotency"
+      ]
+    },
+    {
+      "id": "synaptic-transmission--hebbian-plasticity",
+      "source": "synaptic-transmission",
+      "target": "hebbian-plasticity",
+      "type": "foundation",
+      "explanation": "A change in efficacy of transmission supplies the physical candidate for a learned connection.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-hebbian-plasticity"
+      ]
+    },
+    {
+      "id": "ecosystem--ecological-resilience",
+      "source": "ecosystem",
+      "target": "ecological-resilience",
+      "type": "foundation",
+      "explanation": "Linked populations and environmental processes define the system whose persistence is assessed.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-ecological-resilience"
+      ]
+    },
+    {
+      "id": "adaptive-immunity--innate-pattern-recognition",
+      "source": "adaptive-immunity",
+      "target": "innate-pattern-recognition",
+      "type": "revision",
+      "explanation": "The proposal explains how innate recognition can help initiate and shape antigen-specific responses.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-innate-pattern-recognition",
+        "e21-innate-pattern-recognition-2"
+      ]
+    },
+    {
+      "id": "adaptive-immunity--antigen-presentation",
+      "source": "adaptive-immunity",
+      "target": "antigen-presentation",
+      "type": "foundation",
+      "explanation": "Antigen-specific T-cell recognition gives peptide presentation its immunological function.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-antigen-presentation",
+        "e21-antigen-presentation-2"
+      ]
+    },
+    {
+      "id": "germ-theory--complement-system",
+      "source": "germ-theory",
+      "target": "complement-system",
+      "type": "foundation",
+      "explanation": "Experimental study of identifiable microbes made serum-mediated killing a measurable biological question.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-complement-system"
+      ]
+    },
+    {
+      "id": "vaccination--mrna-vaccines",
+      "source": "vaccination",
+      "target": "mrna-vaccines",
+      "type": "revision",
+      "explanation": "The intervention supplies instructions for an antigen instead of supplying a whole organism or preformed antigen.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-mrna-vaccines",
+        "e21-mrna-vaccines-2"
+      ]
+    },
+    {
+      "id": "innate-pattern-recognition--mrna-vaccines",
+      "source": "innate-pattern-recognition",
+      "target": "mrna-vaccines",
+      "type": "enables",
+      "explanation": "The 2005 experiments directly examined how RNA modifications alter Toll-like receptor activation.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-mrna-vaccines",
+        "e21-mrna-vaccines-2"
+      ]
+    },
+    {
+      "id": "mendelian-genetics--two-hit-hypothesis",
+      "source": "mendelian-genetics",
+      "target": "two-hit-hypothesis",
+      "type": "foundation",
+      "explanation": "Inheritance of a predisposition distinguishes a germline first event from two somatic events.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-two-hit-hypothesis"
+      ]
+    },
+    {
+      "id": "dna-as-genetic-material--oncogenes",
+      "source": "dna-as-genetic-material",
+      "target": "oncogenes",
+      "type": "foundation",
+      "explanation": "Comparing viral and cellular DNA made the proposed sequence relationship experimentally testable.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-oncogenes"
+      ]
+    },
+    {
+      "id": "pharmacokinetics--pharmacogenomics",
+      "source": "pharmacokinetics",
+      "target": "pharmacogenomics",
+      "type": "foundation",
+      "explanation": "Variants in handling enzymes can change drug exposure over time.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-pharmacogenomics",
+        "e21-pharmacogenomics-2"
+      ]
+    },
+    {
+      "id": "genomics--pharmacogenomics",
+      "source": "genomics",
+      "target": "pharmacogenomics",
+      "type": "enables",
+      "explanation": "Genomic tools extend candidate-gene studies to many variants and pathways.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-pharmacogenomics",
+        "e21-pharmacogenomics-2"
+      ]
+    },
+    {
+      "id": "osmosis--oral-rehydration",
+      "source": "osmosis",
+      "target": "oral-rehydration",
+      "type": "foundation",
+      "explanation": "Water movement follows osmotic gradients created in part by solute transport.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-oral-rehydration",
+        "e21-oral-rehydration-2"
+      ]
+    },
+    {
+      "id": "molecular-biology--oncogenes",
+      "source": "molecular-biology",
+      "target": "oncogenes",
+      "type": "enables",
+      "explanation": "Investigators used a viral DNA probe to detect related sequences in normal avian DNA, testing a molecular explanation for transformation.",
+      "evidence": "documented",
+      "sourceIds": [
+        "le-dogma",
+        "e21-oncogenes"
+      ]
+    },
+    {
+      "id": "geostrophic-balance--ocean-gyres",
+      "source": "geostrophic-balance",
+      "target": "ocean-gyres",
+      "type": "foundation",
+      "explanation": "Away from frictional layers, much large-scale horizontal flow around a gyre reflects a balance between pressure gradients and the Coriolis effect; wind stress helps drive the circulation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-geostrophic-balance",
+        "xl-gyres"
+      ]
+    },
+    {
+      "id": "radiative-transfer--climate-modeling",
+      "source": "radiative-transfer",
+      "target": "climate-modeling",
+      "type": "enables",
+      "explanation": "Radiative–convective calculations follow absorbed and emitted energy through atmospheric layers to estimate how temperature responds to changing gas concentrations.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-radiative-transfer",
+        "le-climate-models"
+      ]
+    },
+    {
+      "id": "carbon-silicate-cycle--earth-system-science",
+      "source": "carbon-silicate-cycle",
+      "target": "earth-system-science",
+      "type": "foundation",
+      "explanation": "Weathering moves carbon between the atmosphere, oceans, and rocks. Accounting for those exchanges connects climate to solid Earth over geologic time.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-carbon-silicate-cycle",
+        "le-earth-system"
+      ]
+    },
+    {
+      "id": "atp-energy-coupling--chemiosmosis",
+      "source": "atp-energy-coupling",
+      "target": "chemiosmosis",
+      "type": "foundation",
+      "explanation": "ATP coupling identifies the usable chemical product; chemiosmosis explains how an ion gradient can power its synthesis across a membrane.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-atp-energy-coupling",
+        "e21-chemiosmosis"
+      ]
+    },
+    {
+      "id": "hebbian-plasticity--recurrent-networks",
+      "source": "hebbian-plasticity",
+      "target": "recurrent-networks",
+      "type": "foundation",
+      "explanation": "Correlation-based weights store patterns in a Hopfield memory. This gives a computational use for a Hebbian rule without asserting that biological synapses obey precisely that equation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-hebbian-plasticity",
+        "xs-recurrent-networks"
+      ]
+    },
+    {
+      "id": "antigen-presentation--immune-checkpoints",
+      "source": "antigen-presentation",
+      "target": "immune-checkpoints",
+      "type": "foundation",
+      "explanation": "A T cell can recognize a presented peptide and still receive an inhibitory signal. Checkpoint blockade changes that brake rather than specifying which antigen the cell recognizes.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-antigen-presentation",
+        "xl-checkpoints"
+      ]
     }
   ],
   "sources": [
@@ -4248,6 +6031,216 @@
       "title": "Sir Howard Florey: Biographical",
       "url": "https://www.nobelprize.org/prizes/medicine/1945/florey/biographical/",
       "publisher": "Nobel Prize Outreach"
+    },
+    {
+      "id": "e21-geostrophic-balance",
+      "title": "Buys Ballot’s law",
+      "url": "https://glossary.ametsoc.org/wiki/buys-ballot-s-law/",
+      "publisher": "American Meteorological Society / Glossary of Meteorology"
+    },
+    {
+      "id": "e21-radiative-transfer",
+      "title": "Equilibria and the protomodel of the Sun’s atmosphere by Karl Schwarzschild in hindsight",
+      "url": "https://doi.org/10.1140/epjh/s13129-024-00083-6",
+      "publisher": "European Physical Journal H (2024)"
+    },
+    {
+      "id": "e21-radiative-transfer-2",
+      "title": "Radiative Transfer",
+      "url": "https://astronomy.nmsu.edu/cwc/CWC/atmosphere-book.pdf",
+      "publisher": "New Mexico State University / stellar atmospheres teaching text"
+    },
+    {
+      "id": "e21-numerical-weather-prediction",
+      "title": "Numerical Integration of the Barotropic Vorticity Equation",
+      "url": "https://doi.org/10.1111/j.2153-3490.1950.tb00336.x",
+      "publisher": "Jule Charney, Ragnar Fjørtoft, and John von Neumann / Tellus (1950)"
+    },
+    {
+      "id": "e21-carbon-silicate-cycle",
+      "title": "A negative feedback mechanism for the long-term stabilization of Earth’s surface temperature",
+      "url": "https://doi.org/10.1029/JC086iC10p09776",
+      "publisher": "J. C. G. Walker, P. B. Hays, and J. F. Kasting / JGR (1981)"
+    },
+    {
+      "id": "e21-sequence-stratigraphy",
+      "title": "Seismic Stratigraphy and Global Changes of Sea Level, Part 6: Stratigraphic Interpretation of Seismic Reflection Patterns in Depositional Sequences",
+      "url": "https://pubs.geoscienceworld.org/aapg/books/edited-volume/1451/chapter-abstract/107174784/Seismic-Stratigraphy-and-Global-Changes-of-Sea",
+      "publisher": "R. M. Mitchum, P. R. Vail, and J. B. Sangree / AAPG Memoir 26 (1977)"
+    },
+    {
+      "id": "e21-sediment-transport",
+      "title": "Application of similarity principles and turbulence research to bed-load movement",
+      "url": "https://authors.library.caltech.edu/records/1hysg-j4j53",
+      "publisher": "Albert Shields / CaltechAUTHORS (1936)"
+    },
+    {
+      "id": "e21-reactive-transport",
+      "title": "Continuum model for simultaneous chemical reactions and mass transport in hydrothermal systems",
+      "url": "https://www.sciencedirect.com/science/article/pii/0016703785901723",
+      "publisher": "Peter C. Lichtner / Geochimica et Cosmochimica Acta (1985)"
+    },
+    {
+      "id": "e21-climate-tipping-elements",
+      "title": "Tipping elements in the Earth’s climate system",
+      "url": "https://doi.org/10.1073/pnas.0705414105",
+      "publisher": "Timothy M. Lenton and colleagues / PNAS (2008)"
+    },
+    {
+      "id": "e21-atp-energy-coupling",
+      "title": "Metabolic Generation and Utilization of Phosphate Bond Energy",
+      "url": "https://doi.org/10.1002/9780470122464.ch4",
+      "publisher": "Fritz Lipmann / Advances in Enzymology (1941)"
+    },
+    {
+      "id": "e21-atp-energy-coupling-2",
+      "title": "How Enzymes Handle the Energy Derived from the Cleavage of High-energy Phosphate Compounds",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3366780/",
+      "publisher": "Journal of Biological Chemistry"
+    },
+    {
+      "id": "e21-apoptosis",
+      "title": "Apoptosis: A Basic Biological Phenomenon with Wide-ranging Implications in Tissue Kinetics",
+      "url": "https://doi.org/10.1038/bjc.1972.33",
+      "publisher": "J. F. R. Kerr, A. H. Wyllie, and A. R. Currie / British Journal of Cancer (1972)"
+    },
+    {
+      "id": "e21-autophagy",
+      "title": "Autophagy in yeast demonstrated with proteinase-deficient mutants and conditions for its induction",
+      "url": "https://doi.org/10.1083/jcb.119.2.301",
+      "publisher": "K. Takeshige and colleagues / Journal of Cell Biology (1992)"
+    },
+    {
+      "id": "e21-cell-cycle-checkpoints",
+      "title": "Checkpoints: Controls that Ensure the Order of Cell Cycle Events",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2683079/",
+      "publisher": "Leland H. Hartwell and Ted A. Weinert / Science (1989)"
+    },
+    {
+      "id": "e21-alternative-rna-splicing",
+      "title": "Why genes in pieces?",
+      "url": "https://doi.org/10.1038/271501a0",
+      "publisher": "Walter Gilbert / Nature (1978)"
+    },
+    {
+      "id": "e21-alternative-rna-splicing-2",
+      "title": "Alternative RNA processing in calcitonin gene expression generates mRNAs encoding different polypeptide products",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6283379/",
+      "publisher": "S. G. Amara and colleagues / Nature (1982)"
+    },
+    {
+      "id": "e21-rna-interference",
+      "title": "Potent and specific genetic interference by double-stranded RNA in Caenorhabditis elegans",
+      "url": "https://doi.org/10.1038/35888",
+      "publisher": "Andrew Fire and colleagues / Nature (1998)"
+    },
+    {
+      "id": "e21-transposable-elements",
+      "title": "The Origin and Behavior of Mutable Loci in Maize",
+      "url": "https://doi.org/10.1073/pnas.36.6.344",
+      "publisher": "Barbara McClintock / PNAS (1950)"
+    },
+    {
+      "id": "e21-stem-cell-pluripotency",
+      "title": "Induction of Pluripotent Stem Cells from Mouse Embryonic and Adult Fibroblast Cultures by Defined Factors",
+      "url": "https://doi.org/10.1016/j.cell.2006.07.024",
+      "publisher": "Kazutoshi Takahashi and Shinya Yamanaka / Cell (2006)"
+    },
+    {
+      "id": "e21-hebbian-plasticity",
+      "title": "The Organization of Behavior, chapter 4: The First Stage of Perception",
+      "url": "https://www.dengfanxin.cn/wp-content/uploads/2016/03/1949Hebb.pdf",
+      "publisher": "Donald O. Hebb / Wiley (1949)"
+    },
+    {
+      "id": "e21-ecological-resilience",
+      "title": "Resilience and Stability of Ecological Systems",
+      "url": "https://doi.org/10.1146/annurev.es.04.110173.000245",
+      "publisher": "C. S. Holling / Annual Review of Ecology and Systematics (1973)"
+    },
+    {
+      "id": "e21-innate-pattern-recognition",
+      "title": "Approaching the asymptote? Evolution and revolution in immunology",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2700931/",
+      "publisher": "Charles A. Janeway Jr. / Cold Spring Harbor Symposia (1989)"
+    },
+    {
+      "id": "e21-innate-pattern-recognition-2",
+      "title": "The Nobel Prize in Physiology or Medicine 2011: activation of innate immunity",
+      "url": "https://www.nobelprize.org/prizes/medicine/2011/press-release/",
+      "publisher": "Nobel Assembly at Karolinska Institutet"
+    },
+    {
+      "id": "e21-antigen-presentation",
+      "title": "Restriction of in vitro T cell-mediated cytotoxicity in lymphocytic choriomeningitis within a syngeneic or semiallogeneic system",
+      "url": "https://doi.org/10.1038/248701a0",
+      "publisher": "Rolf Zinkernagel and Peter Doherty / Nature (1974)"
+    },
+    {
+      "id": "e21-antigen-presentation-2",
+      "title": "Structure of the human class I histocompatibility antigen, HLA-A2",
+      "url": "https://doi.org/10.1038/329506a0",
+      "publisher": "Pamela Bjorkman and colleagues / Nature (1987)"
+    },
+    {
+      "id": "e21-complement-system",
+      "title": "Jules Bordet (1870–1961): antibodies and complement",
+      "url": "https://www.pasteur.fr/en/about-us/jules-bordet-1870-1961",
+      "publisher": "Institut Pasteur"
+    },
+    {
+      "id": "e21-mrna-vaccines",
+      "title": "Suppression of RNA recognition by Toll-like receptors: the impact of nucleoside modification and the evolutionary origin of RNA",
+      "url": "https://doi.org/10.1016/j.immuni.2005.06.008",
+      "publisher": "Katalin Karikó and colleagues / Immunity (2005)"
+    },
+    {
+      "id": "e21-mrna-vaccines-2",
+      "title": "Nucleoside base modifications that enabled the development of effective mRNA vaccines against COVID-19",
+      "url": "https://www.nobelprize.org/uploads/2023/10/advanced-medicinprize2023-3.pdf",
+      "publisher": "Nobel Assembly at Karolinska Institutet (2023)"
+    },
+    {
+      "id": "e21-two-hit-hypothesis",
+      "title": "Mutation and Cancer: Statistical Study of Retinoblastoma",
+      "url": "https://doi.org/10.1073/pnas.68.4.820",
+      "publisher": "Alfred G. Knudson Jr. / PNAS (1971)"
+    },
+    {
+      "id": "e21-oncogenes",
+      "title": "DNA related to the transforming gene(s) of avian sarcoma viruses is present in normal avian DNA",
+      "url": "https://www.nature.com/articles/260170a0",
+      "publisher": "Dominique Stéhelin, Harold Varmus, J. Michael Bishop, and Peter Vogt / Nature (1976)"
+    },
+    {
+      "id": "e21-pharmacogenomics",
+      "title": "Pharmacogenomics: translating functional genomics into rational therapeutics",
+      "url": "https://doi.org/10.1126/science.286.5439.487",
+      "publisher": "William E. Evans and Mary V. Relling / Science (1999)"
+    },
+    {
+      "id": "e21-pharmacogenomics-2",
+      "title": "Mercaptopurine pharmacogenetics: monogenic inheritance of erythrocyte thiopurine methyltransferase activity",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7191632/",
+      "publisher": "Richard Weinshilboum and Susan Sladek / American Journal of Human Genetics (1980)"
+    },
+    {
+      "id": "e21-oral-rehydration",
+      "title": "Oral maintenance therapy for cholera in adults",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/4173788/",
+      "publisher": "David Nalin, Richard Cash, Rafiqul Islam, M. Molla, and Robert Phillips / Lancet (1968)"
+    },
+    {
+      "id": "e21-oral-rehydration-2",
+      "title": "Decrease in Net Stool Output in Cholera during Intestinal Perfusion with Glucose-Containing Solutions",
+      "url": "https://doi.org/10.1056/NEJM196807252790402",
+      "publisher": "New England Journal of Medicine (1968)"
+    },
+    {
+      "id": "e21-geostrophic-balance-reference",
+      "title": "Introduction to Physical Oceanography, §10.2: Geostrophic Equations",
+      "url": "https://geo.libretexts.org/Bookshelves/Oceanography/Introduction_to_Physical_Oceanography_%28Stewart%29/10%3A_Geostrophic_Currents/10.02%3A_Geostrophic_Equations",
+      "publisher": "Robert H. Stewart / Texas A&M University, via Geosciences LibreTexts"
     }
   ]
 }

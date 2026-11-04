@@ -1865,6 +1865,1216 @@
         "expression": "体电子拓扑限制了可能的边界态。"
       },
       "sourceDigest": "6adac177dc3e252f1c1178c672b94183876cd2a38214578413665f4be4c887e0"
+    },
+    "michaelis-menten-kinetics": {
+      "title": "米氏酶动力学",
+      "aliases": [
+        "酶饱和动力学"
+      ],
+      "tags": [
+        "米氏酶动力学"
+      ],
+      "date": {
+        "label": "1913年",
+        "note": "以1913年的转化酶研究为锚点；常见的稳态推导出现得更晚。"
+      },
+      "summary": "简单酶机制预言反应速率随底物浓度增加而趋于最大值。",
+      "problem": "为何持续增加底物最终很少提高反应速度？",
+      "development": "米夏埃利斯和门滕将转化酶活性与底物结合联系起来；后来的稳态分析扩展了方程的应用。",
+      "limitations": "简单形式不含协同性、抑制及许多多步骤效应；K_m 并不总是结合解离常数。",
+      "contributors": [
+        {
+          "name": "莱昂诺尔·米夏埃利斯与莫德·门滕",
+          "role": "定量研究了依赖底物浓度的酶反应速率。"
+        }
+      ],
+      "example": "大多数活性位点被占据时，酶趋于饱和。",
+      "representation": {
+        "explanation": "对于单底物反应，若产物可忽略且酶–底物复合物近似稳态，初速率 v 随底物浓度 [S] 增大而趋近极限速率 V_max。K_m 是速率达到该极限一半时的底物浓度。"
+      },
+      "sourceDigest": "ec4593796fa9783eeaf1a008e8002b3d9bb4de90ae8c0b1f410e49f2d6d35e40"
+    },
+    "enzyme-allostery": {
+      "title": "酶的变构调节",
+      "aliases": [],
+      "tags": [
+        "酶的变构调节"
+      ],
+      "date": {
+        "label": "1965年",
+        "note": "1965年的莫诺—怀曼—尚热模型是里程碑，并非首次观察到调节。"
+      },
+      "summary": "一个位点的结合可通过改变蛋白质构象集合，影响另一位点的活性或结合。",
+      "problem": "代谢物怎样不占据催化位点却调节酶？",
+      "development": "莫诺、怀曼和尚热建立蛋白质状态协同转换模型；其他模型允许依次发生改变。",
+      "limitations": "协同转换模型不能描述所有变构蛋白；变构与正协同性并非同义。",
+      "contributors": [
+        {
+          "name": "雅克·莫诺、杰弗里斯·怀曼与让-皮埃尔·尚热",
+          "role": "提出了协同变构模型。"
+        }
+      ],
+      "example": "代谢途径的终产物可降低前面某个酶的活性。",
+      "representation": {
+        "explanation": "调节相互作用可激活或抑制，不一定遵循最简单的两态模型。",
+        "expression": "结合改变蛋白质状态，并影响别处的活性"
+      },
+      "sourceDigest": "a140bce7b3b9961329279b930331a75a53a6f59dc51e2490ea6e857c6a1577e5"
+    },
+    "chemiosmosis": {
+      "title": "化学渗透学说",
+      "aliases": [],
+      "tags": [
+        "化学渗透学说"
+      ],
+      "date": {
+        "label": "1961年",
+        "note": "米切尔于1961年提出偶联机制，实验证据随后逐步积累。"
+      },
+      "summary": "跨膜质子的电化学梯度可驱动ATP合成。",
+      "problem": "电子传递如何无需一种共同化学中间体就驱动ATP生成？",
+      "development": "米切尔提出，膜两侧的质子运输是电子流与磷酸化之间的偶联机制。",
+      "limitations": "膜必须限制不受控的离子泄漏；实际ATP产量取决于运输、偶联比和损耗。",
+      "contributors": [
+        {
+          "name": "彼得·米切尔",
+          "role": "提出了化学渗透能量偶联。"
+        }
+      ],
+      "example": "线粒体ATP合酶利用呼吸产生的质子梯度。",
+      "representation": {
+        "explanation": "该梯度包含电势差与浓度差两部分。",
+        "expression": "电子传递 → 质子梯度 → ATP合成"
+      },
+      "sourceDigest": "0d129751590b627639ab580933335b909d843a51d145f74a2efb976b6aa2cacc"
+    },
+    "protein-folding-thermodynamics": {
+      "title": "蛋白质折叠热力学",
+      "aliases": [],
+      "tags": [
+        "蛋白质折叠热力学"
+      ],
+      "date": {
+        "label": "1973年",
+        "note": "以安芬森1973年的综合论述为锚点；其复性实验开展得更早。"
+      },
+      "summary": "对适当蛋白质和条件，氨基酸序列规定了在周围热力学环境中有利的天然折叠态。",
+      "problem": "线性链怎样恢复有功能的三维结构？",
+      "development": "安芬森的核糖核酸酶复性研究支持了基于序列的天然结构热力学解释。",
+      "limitations": "动力学陷阱、聚集、分子伴侣及内在无序蛋白使一条序列对应一个刚性形状并非普适规则。",
+      "contributors": [
+        {
+          "name": "克里斯蒂安·安芬森",
+          "role": "将复性实验与热力学假说联系起来。"
+        }
+      ],
+      "example": "变性的核糖核酸酶可在恢复适当条件后重新获得活性。",
+      "representation": {
+        "explanation": "折叠自由能取决于焓 H、熵 S、温度 T 和溶剂；平衡下有利的折叠过程具有负 ΔG。"
+      },
+      "sourceDigest": "5201ba1fe362d1da953fae8d6926b33dc7a4239b1649b48f32f55de55f65caff"
+    },
+    "transition-state-theory": {
+      "title": "过渡态理论",
+      "aliases": [],
+      "tags": [
+        "过渡态理论"
+      ],
+      "date": {
+        "label": "1935年",
+        "note": "艾林以及独立工作的埃文斯和波兰尼于1935年发展了活化络合物处理方法。"
+      },
+      "summary": "反应速率可由能垒附近构型的分布及通过速率估计。",
+      "problem": "分子能量学能否解释反应速率常数？",
+      "development": "活化络合物理论将统计力学与跨越能垒相联系，为依赖温度的速率提供分子解释。",
+      "limitations": "能垒重穿越、隧穿及非平衡动力学可能需要修正。",
+      "contributors": [
+        {
+          "name": "亨利·艾林",
+          "role": "发展了活化络合物速率理论。"
+        },
+        {
+          "name": "梅雷迪思·埃文斯与迈克尔·波兰尼",
+          "role": "独立发展了过渡态处理方法。"
+        }
+      ],
+      "example": "不同活化自由能可解释同温下相差很大的反应速率。",
+      "representation": {
+        "explanation": "对于一级反应速率常数 k，T 为绝对温度，k_B 和 h 分别为玻尔兹曼常数和普朗克常数，R 为摩尔气体常数，ΔG‡ 为摩尔活化自由能。这里把传递系数取为一。"
+      },
+      "sourceDigest": "d4d03926c795cfb91062d4f357150c8ae360a976fada25fe4abe13a018366393"
+    },
+    "resonance-delocalization": {
+      "title": "共振与电子离域",
+      "aliases": [],
+      "tags": [
+        "共振与电子离域"
+      ],
+      "date": {
+        "label": "1931年",
+        "note": "以鲍林1931年的化学键研究为量子成键理论发展中的所选里程碑。"
+      },
+      "summary": "分子可能需要多种电子结构的组合来描述，而非单一局域化学键图。",
+      "problem": "为何有些键的性质介于单键和双键之间？",
+      "development": "量子价键推理将不同成键排列视为同一态的贡献。共振式是描述工具，并非分子在其间来回切换。",
+      "limitations": "少量结构图只是近似，不能直接确定所有定量性质。",
+      "contributors": [
+        {
+          "name": "莱纳斯·鲍林",
+          "role": "发展了量子成键和共振描述。"
+        }
+      ],
+      "example": "苯中等价的碳碳键不是交替固定的单键和双键。",
+      "representation": {
+        "explanation": "各贡献结构并非处于化学平衡的不同物种。",
+        "expression": "多种电子描述共同构成一个分子态"
+      },
+      "sourceDigest": "bfd35a7c24dc9709ad81d1db4135ff34e0235a1062848998f27407cf1e680e79"
+    },
+    "ligand-field-theory": {
+      "title": "配体场理论",
+      "aliases": [],
+      "tags": [
+        "配体场理论"
+      ],
+      "date": {
+        "label": "1955年",
+        "note": "以奥格尔1955年对过渡金属光谱的解释为所选里程碑；晶体场及共价性思想更早。"
+      },
+      "summary": "周围配体使金属d轨道能量分裂，影响配合物的颜色、磁性和成键。",
+      "problem": "为何同一金属的配合物有不同颜色和磁性状态？",
+      "development": "配体场处理利用轨道相互作用和光谱学扩展了静电晶体场图景。",
+      "limitations": "简单分裂图省略了详细共价性、畸变及多电子效应。",
+      "contributors": [
+        {
+          "name": "莱斯利·奥格尔",
+          "role": "用配体场思想解释了过渡金属光谱。"
+        }
+      ],
+      "example": "八面体配体将五个d轨道分裂为三个和两个两组。",
+      "representation": {
+        "explanation": "八面体模型是基于对称性的近似，并非完整电子计算。",
+        "expression": "配体环境 → 轨道分裂 → 光谱与自旋态"
+      },
+      "sourceDigest": "8b556ee5bb7bb5182c9184abd2c68e49ae7549fb03f0b01126e862235e34cf2f"
+    },
+    "density-functional-theory": {
+      "title": "密度泛函理论",
+      "aliases": [
+        "DFT"
+      ],
+      "tags": [
+        "密度泛函理论"
+      ],
+      "date": {
+        "label": "1964年",
+        "note": "1964年的霍恩伯格—科恩定理早于1965年实用的科恩—沈构造。"
+      },
+      "summary": "基态电子性质可用电子密度表述，而无需直接使用完整多电子波函数。",
+      "problem": "多电子计算能否采用更简单的核心变量？",
+      "development": "霍恩伯格和科恩建立了基于密度的变分框架。科恩和沈引入辅助轨道系统以进行实际计算。",
+      "limitations": "精确交换关联泛函通常未知；近似可能在强关联或弱结合体系中失效。",
+      "contributors": [
+        {
+          "name": "皮埃尔·霍恩伯格与沃尔特·科恩",
+          "role": "建立了基于密度的基态定理。"
+        }
+      ],
+      "example": "近似DFT可估计分子键长和固体能量。",
+      "representation": {
+        "explanation": "外势给定时，在满足粒子数要求的允许电子密度 n 中，精确能量泛函 E[n] 的最小值就是基态能量 E₀。实际计算需对泛函的某些部分作近似。"
+      },
+      "sourceDigest": "8e6db35375a769c7f4ef0c0c6d0e1367e5c2d267e109c9d18159a525af646431"
+    },
+    "pericyclic-selection-rules": {
+      "title": "周环反应选择规则",
+      "aliases": [
+        "伍德沃德—霍夫曼规则"
+      ],
+      "tags": [
+        "周环反应选择规则"
+      ],
+      "date": {
+        "label": "1965年",
+        "note": "1965年的电环化反应论文开启了已发表的轨道对称性研究纲领。"
+      },
+      "summary": "轨道对称性约束沿环状排列重组化学键的有利协同反应路径。",
+      "problem": "为何加热与光照会给出不同立体化学结果？",
+      "development": "伍德沃德和霍夫曼将立体化学规律与协同反应路径上的轨道对称性守恒联系起来。",
+      "limitations": "“禁阻”指所假设协同路径不利，并非一切替代机制都不可能。",
+      "contributors": [
+        {
+          "name": "罗伯特·伯恩斯·伍德沃德与罗阿尔德·霍夫曼",
+          "role": "发展了轨道对称性选择规则。"
+        }
+      ],
+      "example": "四π电子电环化关环在热条件下倾向同旋，在光化学条件下倾向对旋。",
+      "representation": {
+        "explanation": "热反应与光化学规则假设不同的电子占据。",
+        "expression": "电子数 + 轨道对称性 + 激发方式 → 允许的协同路径"
+      },
+      "sourceDigest": "48a653785582fd097e33c5d933a92b13b05665d09016af4ea5e9f3fdcc7ffae7"
+    },
+    "rna-world": {
+      "title": "RNA世界假说",
+      "aliases": [],
+      "tags": [
+        "RNA世界假说"
+      ],
+      "date": {
+        "label": "1986年",
+        "note": "吉尔伯特于1986年命名RNA世界；更早的研究者已提出RNA的原始作用。"
+      },
+      "summary": "早期生命的某个阶段可能在现代DNA—蛋白质系统之前，由RNA同时承担遗传与催化。",
+      "problem": "在现代分工出现之前，遗传信息与催化功能如何形成？",
+      "development": "催化RNA的发现使兼具信息与催化作用的情景更具可行性；吉尔伯特的表述帮助组织了研究方向。",
+      "limitations": "完整历史路径尚未确立；前生物合成、复制、区室化及替代混合系统仍在研究中。",
+      "contributors": [
+        {
+          "name": "沃尔特·吉尔伯特",
+          "role": "命名并阐述了RNA世界情景。"
+        }
+      ],
+      "example": "核酶展示了RNA能催化反应，但不能证明早期生命遵循某一特定路线。",
+      "representation": {
+        "explanation": "这是生命起源假说，并非声称当代细胞无需蛋白质即可运作。",
+        "expression": "RNA同时充当遗传信息与催化剂"
+      },
+      "sourceDigest": "c5a075a0bed6c86d0a6e1dc0391485ded0315821700ecd7fb28d440b9476242d"
+    },
+    "doppler-effect": {
+      "title": "多普勒效应",
+      "aliases": [],
+      "tags": [
+        "多普勒效应"
+      ],
+      "date": {
+        "label": "1842年",
+        "note": "以多普勒1842年的提议为锚点；其最初对恒星颜色的应用并不充分。"
+      },
+      "summary": "波源与观测者之间的相对运动会改变观测到的频率。",
+      "problem": "为什么经过身边的声源音调会改变？",
+      "development": "多普勒将运动与波频率联系起来；后来的声学实验和光谱学确立了超出其最初天文论证的应用。",
+      "limitations": "声波取决于相对介质的运动；高速下的光需要相对论公式。",
+      "contributors": [
+        {
+          "name": "克里斯蒂安·多普勒",
+          "role": "提出了频移原理。"
+        }
+      ],
+      "example": "靠近的警笛听起来比远离时音调高。",
+      "representation": {
+        "explanation": "对静止的听者，f 是声源发出的频率，f′ 是声源靠近时听到的较高频率。假定介质静止，声速为 v，声源向听者运动的速度 vₛ 大于零且小于 v。"
+      },
+      "sourceDigest": "68011ac321aa37dced17f2116af4b9c3dc1bc88772861e1552df2876b933d4ac"
+    },
+    "coriolis-effect": {
+      "title": "科里奥利效应",
+      "aliases": [],
+      "tags": [
+        "科里奥利效应"
+      ],
+      "date": {
+        "label": "1835年",
+        "note": "以科里奥利1835年的相对运动分析为里程碑，并非首次观察旋转系统效应。"
+      },
+      "summary": "在旋转参考系中，运动物体具有与速度和旋转速率相关的表观侧向加速度。",
+      "problem": "为何在旋转平台上看，本来笔直的轨迹会弯曲？",
+      "development": "科里奥利分析了旋转参考系中的机械。这一参考系项后来成为大气和海洋动力学的重要部分。",
+      "limitations": "它是依赖参考系的惯性项，并非额外相互作用；日常小尺度水流未必由地球自转主导。",
+      "contributors": [
+        {
+          "name": "加斯帕尔-古斯塔夫·科里奥利",
+          "role": "推导了旋转参考系的运动项。"
+        }
+      ],
+      "example": "大尺度风相对旋转的地球发生偏转。",
+      "representation": {
+        "explanation": "Ω 为参考系角速度，v 为在该参考系内测得的速度。"
+      },
+      "sourceDigest": "ea451edf36db5c62df1a45dca6b4f3acf13bb1bc30f3fd9eaa0fe8de321ffff4"
+    },
+    "turbulent-energy-cascade": {
+      "title": "湍流能量级联",
+      "aliases": [],
+      "tags": [
+        "湍流能量级联"
+      ],
+      "date": {
+        "label": "1941年",
+        "note": "柯尔莫哥洛夫1941年的标度理论继承理查森的级联思想，形式化了惯性区图景。"
+      },
+      "summary": "在三维湍流中，能量可由大涡传向小尺度运动，最终由黏性耗散。",
+      "problem": "湍流运动不规则，为何统计上仍呈现标度规律？",
+      "development": "柯尔莫哥洛夫利用局部各向同性和不依赖尺度的能量通量推导惯性区相似律。",
+      "limitations": "间歇性、边界、层化和二维逆级联限制了这一简单图景。",
+      "contributors": [
+        {
+          "name": "安德烈·柯尔莫哥洛夫",
+          "role": "提出了惯性区相似理论。"
+        }
+      ],
+      "example": "高雷诺数流体中，搅拌产生的大涡向更小尺度的波动传递能量。",
+      "representation": {
+        "explanation": "E 为能谱，k 为波数，ε 为单位质量平均耗散率；该标度要求适当的惯性区。"
+      },
+      "sourceDigest": "0fdbb4387677f62753e73aff837e8f0f401585d973c78567bc9c8b78c29746e9"
+    },
+    "fluctuation-dissipation-theorem": {
+      "title": "涨落耗散定理",
+      "aliases": [],
+      "tags": [
+        "涨落耗散定理"
+      ],
+      "date": {
+        "label": "1951年",
+        "note": "卡伦和韦尔顿1951年的推广建立在早期布朗运动和电噪声结果之上。"
+      },
+      "summary": "平衡态涨落与系统受到微弱扰动时耗散能量的方式相联系。",
+      "problem": "自发噪声能否揭示系统对外力的响应？",
+      "development": "卡伦和韦尔顿用量子统计关系统一了噪声与耗散，推广了早期特例。",
+      "limitations": "通常形式要求热平衡和线性响应；强驱动系统需要推广。",
+      "contributors": [
+        {
+          "name": "赫伯特·卡伦与西奥多·韦尔顿",
+          "role": "推导了广义噪声与响应关系。"
+        }
+      ],
+      "example": "电阻器的热电压噪声与电阻和温度有关。",
+      "representation": {
+        "explanation": "这一关系取决于温度和频率；量子形式与经典形式不同。",
+        "expression": "平衡态噪声 ↔ 耗散性线性响应"
+      },
+      "sourceDigest": "8cca7324a2ee53295b99f8a73396128a83eeec7893e4240b33ec292c03bf5f82"
+    },
+    "spontaneous-symmetry-breaking": {
+      "title": "自发对称性破缺",
+      "aliases": [],
+      "tags": [
+        "自发对称性破缺"
+      ],
+      "date": {
+        "label": "1960年",
+        "note": "以南部1960年的超导分析为所选场论里程碑；有序相的研究更早。"
+      },
+      "summary": "系统所处状态的对称性可以低于支配它的定律。",
+      "problem": "对称定律如何产生选定方向或相位的有序态？",
+      "development": "南部以超导为基础，发展了连接对称性破缺、集体模态和场论的思想。",
+      "limitations": "整体对称性与规范对称性需区别处理；规范冗余本身不是可观测的物理对称性。",
+      "contributors": [
+        {
+          "name": "南部阳一郎",
+          "role": "联系了超导与场论对称性破缺。"
+        }
+      ],
+      "example": "铁磁体可在理想旋转对称定律下选择一个磁化方向。",
+      "representation": {
+        "explanation": "是状态从多种可能中作出选择，而非支配定律显式不对称。",
+        "expression": "定律对称，状态的对称性较低"
+      },
+      "sourceDigest": "e3448b9c3efa9b5bbc8fd82c9ac12000d7bd239173f4b5a3a9ad5a25ca9efc10"
+    },
+    "bcs-superconductivity": {
+      "title": "BCS超导理论",
+      "aliases": [
+        "库珀配对"
+      ],
+      "tags": [
+        "BCS超导理论"
+      ],
+      "date": {
+        "label": "1957年",
+        "note": "完整的巴丁—库珀—施里弗理论发表于1957年，继承了库珀1956年的配对论证。"
+      },
+      "summary": "电子配对的集体态解释了常规超导及其能隙。",
+      "problem": "什么微观机制使常规超导体出现无电阻导电？",
+      "development": "巴丁、库珀和施里弗构建了由有效吸引稳定的多电子态，这种吸引通常由晶格振动介导。",
+      "limitations": "最简单的弱耦合声子模型不能解释所有非常规超导体。",
+      "contributors": [
+        {
+          "name": "约翰·巴丁、利昂·库珀与约翰·罗伯特·施里弗",
+          "role": "发展了微观配对理论。"
+        }
+      ],
+      "example": "该理论将理想弱耦合超导体的能隙与临界温度联系起来。",
+      "representation": {
+        "explanation": "Δ(0) 是零温能隙，k_B 是玻尔兹曼常数，T_c 是超导转变温度。这个比值适用于各向同性的弱耦合配对。"
+      },
+      "sourceDigest": "7be3bf94b4be733cd16830a26e8f8eec4a202736dd1a7877eac2c112010958ea"
+    },
+    "bose-einstein-condensation": {
+      "title": "稀薄气体中的玻色—爱因斯坦凝聚",
+      "aliases": [
+        "玻色凝聚"
+      ],
+      "tags": [
+        "稀薄气体中的玻色—爱因斯坦凝聚"
+      ],
+      "date": {
+        "label": "1995年",
+        "note": "1995年标记稀薄原子气体中的观测，并非爱因斯坦1924—1925年的预言。"
+      },
+      "summary": "在足够低的温度下，大量玻色原子可占据同一量子态。",
+      "problem": "宏观数量的粒子能否呈现共同的物质波态？",
+      "development": "激光冷却与蒸发冷却使1995年的铷和钠实验实现了稀薄气体凝聚。",
+      "limitations": "有限尺寸、俘获和相互作用会修正理想气体预言；凝聚与超流有关但并不相同。",
+      "contributors": [
+        {
+          "name": "埃里克·康奈尔、卡尔·威曼与沃尔夫冈·克特勒",
+          "role": "领导了稀薄原子气体凝聚实验。"
+        }
+      ],
+      "example": "冷却原子云发生凝聚时，会出现窄的低动量峰。",
+      "representation": {
+        "explanation": "宏观占据指有限比例的粒子处于同一状态。",
+        "expression": "宏观数量的粒子占据同一量子态"
+      },
+      "sourceDigest": "08fcfecff2c5fda9654f2aa80bd13c172f0882c335d5aafc4f1746840f822b08"
+    },
+    "quantum-decoherence": {
+      "title": "量子退相干",
+      "aliases": [],
+      "tags": [
+        "量子退相干"
+      ],
+      "date": {
+        "label": "1970年",
+        "note": "策1970年的论文是环境退相干研究的早期里程碑；后来的工作扩展了其现代范围。"
+      },
+      "summary": "与环境相互作用会抑制子系统中某些备选态之间可观测的干涉。",
+      "problem": "为何大型开放系统常表现得仿佛量子备选态之间没有干涉？",
+      "development": "策强调测量中的环境纠缠。对环境自由度取偏迹，可解释局部相干性丧失，而无需假设基本动力学非幺正。",
+      "limitations": "退相干本身并不选择唯一测量结果，也不解决量子力学的所有诠释问题。",
+      "contributors": [
+        {
+          "name": "海因茨-迪特·策",
+          "role": "发展了相干性丧失的环境解释。"
+        }
+      ],
+      "example": "散射光子可以带走物体位置的信息。",
+      "representation": {
+        "explanation": "约化态 ρ_S 对环境 E 取偏迹；环境关联可抑制选定基底中的干涉。"
+      },
+      "sourceDigest": "5574a0489d2d14892b9a948f886763d70c5898caf6955df7d57654343e9c7f94"
+    },
+    "loop-quantum-gravity": {
+      "title": "圈量子引力",
+      "aliases": [],
+      "tags": [
+        "圈量子引力"
+      ],
+      "date": {
+        "label": "1988年",
+        "note": "以罗韦利和斯莫林1988年的圈构造为这一较大研究纲领中的所选里程碑。"
+      },
+      "summary": "这一方法试图在不预设固定背景时空度规的情况下量子化引力几何。",
+      "problem": "时空几何本身能否由量子自由度描述？",
+      "development": "圈变量建立在相对论的联络表述上。后来的自旋网络描述给出了量子几何态与几何算子。",
+      "limitations": "经确认的实证检验及完整恢复已观测低能物理仍未解决；形式体系中的离散谱并非对时空原子的直接测量。",
+      "contributors": [
+        {
+          "name": "卡洛·罗韦利与李·斯莫林",
+          "role": "发展了基于圈的量子引力态。"
+        }
+      ],
+      "example": "自旋网络标记候选量子几何态，而非普通物质晶格。",
+      "representation": {
+        "explanation": "这是研究目标与构造策略，并非已由实验确立的自然描述。",
+        "expression": "在无固定背景度规下量子化几何"
+      },
+      "sourceDigest": "570a9cb300045d178fd41c20adc399477c5d49444eacda2d6bb28c114bd28542"
+    },
+    "holographic-principle": {
+      "title": "全息原理",
+      "aliases": [],
+      "tags": [
+        "全息原理"
+      ],
+      "date": {
+        "label": "1993年",
+        "note": "以特霍夫特1993年的维数约化提议为锚点，早于后来的对偶构造。"
+      },
+      "summary": "这一提议认为，引力区域的独立信息可能受边界面积而非体积约束。",
+      "problem": "为什么黑洞熵与视界面积成比例？",
+      "development": "黑洞熵论证推动了特霍夫特的提议；后续工作发展了熵界及具体引力对偶形式。",
+      "limitations": "特定对偶和熵界具有明确假设；适用于我们宇宙时空的普适描述尚未确立。",
+      "contributors": [
+        {
+          "name": "赫拉尔杜斯·特霍夫特",
+          "role": "从引力信息界提出维数约化。"
+        }
+      ],
+      "example": "黑洞热力学促使人们比较所存信息与视界面积。",
+      "representation": {
+        "explanation": "在半经典黑洞模型中，熵 S_BH 取决于视界面积 A、玻尔兹曼常数 k_B 和普朗克长度 ℓ_P。面积定律启发了全息思想，却不能证明所有被提出的对偶关系。"
+      },
+      "sourceDigest": "9caddb3f10f5f0297a9c4b0b9c5b138cf0f0d92cd48332f9fd7d22462db86f10"
+    },
+    "modular-arithmetic": {
+      "title": "模算术",
+      "aliases": [
+        "同余算术"
+      ],
+      "tags": [
+        "模算术"
+      ],
+      "date": {
+        "label": "1801年",
+        "note": "高斯的《算术研究》确立了同余记号；余数计算的历史远早于此。"
+      },
+      "summary": "整数按除以固定模数所得的余数分类，使周期性循环也能进行算术运算。",
+      "problem": "不同整数怎样表示同一周期位置？",
+      "development": "高斯将同余组织为系统的整数理论。同余不同于通常的相等，它把差能被模数整除的整数视为同类。",
+      "limitations": "除法并非总能进行：只有与模数互素的剩余类才有乘法逆元。",
+      "contributors": [
+        {
+          "name": "卡尔·弗里德里希·高斯",
+          "role": "系统化了同余算术。"
+        }
+      ],
+      "example": "在十二小时制时钟上，十点再过五小时是三点。",
+      "representation": {
+        "explanation": "正整数 m 是模数；符号 ∣ 表示整除。"
+      },
+      "sourceDigest": "96cdf34cbf383231bb246b0045b0ef1891225cd78427bd6e285d6f6e5b368bcc"
+    },
+    "fundamental-theorem-calculus": {
+      "title": "微积分基本定理",
+      "aliases": [],
+      "tags": [
+        "微积分基本定理"
+      ],
+      "date": {
+        "label": "1670年",
+        "note": "以巴罗几何讲义的出版为锚点；牛顿、莱布尼茨及后来的分析学家给出了更一般的表述。"
+      },
+      "summary": "在适当条件下，微分与积分互为逆运算，因此可通过原函数计算累积变化。",
+      "problem": "求面积与求斜率能否统一为一种方法？",
+      "development": "巴罗给出了这种逆关系的几何形式。牛顿和莱布尼茨将它置于微积分核心，后来的工作明确了连续性与可积性条件。",
+      "limitations": "初等表述要求 f 连续且 F 为其原函数；不连续函数和广义积分需要更精确的版本。",
+      "contributors": [
+        {
+          "name": "艾萨克·巴罗",
+          "role": "建立了几何形式的逆关系。"
+        },
+        {
+          "name": "艾萨克·牛顿与戈特弗里德·威廉·莱布尼茨",
+          "role": "围绕这一联系发展了系统的微积分。"
+        }
+      ],
+      "example": "对非负速率按时间积分可得到行程。",
+      "representation": {
+        "explanation": "这里 F′ = f，且 f 在闭区间 [a,b] 上连续。"
+      },
+      "sourceDigest": "6e11b2d5ff4c40d503c058f896c627294461e041f5d7b99515ae7d13442e5de1"
+    },
+    "prime-number-theorem": {
+      "title": "素数定理",
+      "aliases": [],
+      "tags": [
+        "素数定理"
+      ],
+      "date": {
+        "label": "1896年",
+        "note": "阿达马和德拉瓦莱·普桑于1896年独立证明了此前已被猜想的渐近规律。"
+      },
+      "summary": "不大于 x 的素数个数渐近地等于 x 除以其自然对数。",
+      "problem": "在越来越大的整数中，素数稀疏的速度如何？",
+      "development": "两个证明使用了复分析及泽塔函数的性质。该定理描述总体密度，不是列举单个素数的算法。",
+      "limitations": "渐近等价并不表示有限 x 下精确相等，也不直接给出最精细的误差界。",
+      "contributors": [
+        {
+          "name": "雅克·阿达马",
+          "role": "独立证明了这一渐近规律。"
+        },
+        {
+          "name": "夏尔-让·德拉瓦莱·普桑",
+          "role": "给出了独立证明。"
+        }
+      ],
+      "example": "在很大的 x 附近，素数密度可粗略估计为 1/ln x。",
+      "representation": {
+        "explanation": "π(x) 是不大于 x 的素数个数；∼ 表示 x 趋于无穷时两边之比趋于1。"
+      },
+      "sourceDigest": "93d4917b1c27bafb93dec43ceb8557d501c6565e50f3996c41f6e018878db58e"
+    },
+    "spectral-theorem": {
+      "title": "谱定理",
+      "aliases": [],
+      "tags": [
+        "谱定理"
+      ],
+      "date": {
+        "label": "1829年",
+        "note": "柯西1829年关于对称形式的研究是早期有限维里程碑；算子版本出现得更晚。"
+      },
+      "summary": "实对称矩阵可用相互正交的特征向量和实特征值描述。",
+      "problem": "耦合的线性变换何时能分解为独立方向？",
+      "development": "二次型和振动研究推动了对称系统的对角化。后来的谱理论将相关思想扩展到无限维空间中的适当算子。",
+      "limitations": "这一实矩阵表述要求对称性；任意矩阵可能没有完备特征向量基，无界算子还需规定定义域。",
+      "contributors": [
+        {
+          "name": "奥古斯丁-路易·柯西",
+          "role": "推进了对称二次型和特征根理论。"
+        }
+      ],
+      "example": "主振动模态可分离理想对称机械系统的小振动。",
+      "representation": {
+        "explanation": "对实对称矩阵 A，Q 的各列是相互正交的单位特征向量，Λ 的对角元为相应的特征值。Qᵀ 表示转置，I 是单位矩阵。"
+      },
+      "sourceDigest": "eb29396e100fa71e17bcf53cc5495f51cacbb647007a286add9a8bcabd33c2a4"
+    },
+    "singular-value-decomposition": {
+      "title": "奇异值分解",
+      "aliases": [
+        "SVD"
+      ],
+      "tags": [
+        "奇异值分解"
+      ],
+      "date": {
+        "label": "1873年",
+        "note": "以贝尔特拉米1873年的工作为早期里程碑；若尔当、西尔维斯特、施密特及数值分析学家发展了后续形式。"
+      },
+      "summary": "任何实矩阵都可分解为正交坐标变换和沿独立轴的非负伸缩。",
+      "problem": "怎样提取矩形数据矩阵中最强的结构？",
+      "development": "十九世纪关于双线性形式的工作产生了这种分解。数值算法后来使其成为最小二乘和低秩近似的实用工具。",
+      "limitations": "数学上强的方向未必具有科学意义；尺度、噪声和计算成本会影响解释。",
+      "contributors": [
+        {
+          "name": "欧金尼奥·贝尔特拉米",
+          "role": "发表了双线性形式的早期分解。"
+        }
+      ],
+      "example": "保留少数较大的奇异值可近似压缩图像矩阵。",
+      "representation": {
+        "explanation": "U 和 V 为正交矩阵；矩形对角矩阵 Σ 含非负奇异值。"
+      },
+      "sourceDigest": "dfcc4019b11a57576c13b965e059846188b60ebfcf4ae3ec3d93c6437fdd3e2c"
+    },
+    "law-large-numbers": {
+      "title": "大数定律",
+      "aliases": [
+        "大数法则"
+      ],
+      "tags": [
+        "大数定律"
+      ],
+      "date": {
+        "label": "1713年",
+        "note": "伯努利的《猜度术》于1713年在其去世后出版；后来的大数定律适用于更广泛的情形。"
+      },
+      "summary": "在适当条件下，大量重复观测的平均值趋近其期望值。",
+      "problem": "单次结果不可预测，为何长期频率仍能稳定？",
+      "development": "伯努利证明了重复二元试验的结论。后来的表述区分了不同收敛方式，并明确了独立性与矩条件。",
+      "limitations": "更多数据无法消除系统偏差；相关观测或缺少所需矩的分布需要不同结论。",
+      "contributors": [
+        {
+          "name": "雅各布·伯努利",
+          "role": "证明了原始二元试验形式的大数定律。"
+        }
+      ],
+      "example": "独立抛掷公平硬币时，正面比例趋近二分之一。",
+      "representation": {
+        "explanation": "对均值 μ 有限的独立同分布观测，样本均值依概率收敛；ε 为任意正容差。"
+      },
+      "sourceDigest": "1014652e0646f12bb2b03760d084a079d050f71915feeb3c9560afe70f9d42eb"
+    },
+    "stochastic-calculus": {
+      "title": "随机微积分",
+      "aliases": [
+        "伊藤微积分"
+      ],
+      "tags": [
+        "随机微积分"
+      ],
+      "date": {
+        "label": "1944年",
+        "note": "以伊藤1944年的随机积分论文为锚点；其他积分约定另有发展历史。"
+      },
+      "summary": "随机微积分为布朗运动等没有通常导数的噪声路径定义积分及微分规则。",
+      "problem": "微分方程怎样容纳持续波动的噪声？",
+      "development": "伊藤利用不预知未来的被积过程构造积分。布朗运动的二次变差使变量替换规则多出二阶导数项。",
+      "limitations": "伊藤积分与斯特拉托诺维奇积分不同；必须说明信息、系数及噪声的假设。",
+      "contributors": [
+        {
+          "name": "伊藤清",
+          "role": "构造了随机积分及相应微积分。"
+        }
+      ],
+      "example": "扩散模型将系统性漂移与随机微观运动结合。",
+      "representation": {
+        "explanation": "W 为标准布朗运动，f 二阶连续可微；这是单变量伊藤公式。"
+      },
+      "sourceDigest": "496e6bb5eee5c7bdf7a23f5ab451b781c937f12efa734516c4635aa46e36058b"
+    },
+    "algebraic-topology": {
+      "title": "代数拓扑",
+      "aliases": [],
+      "tags": [
+        "代数拓扑"
+      ],
+      "date": {
+        "label": "1895年",
+        "note": "庞加莱的《位置分析》是代数不变量发展的里程碑，并非一切拓扑思想的起点。"
+      },
+      "summary": "代数拓扑将群等不变量赋予空间，用以区分连续变形下保持不变的洞、环等结构。",
+      "problem": "不测量长度和角度，怎样区分形状？",
+      "development": "庞加莱发展了同调和基本群。这些代数工具是拓扑中的特定方法，并非整个学科的另一名称。",
+      "limitations": "单一不变量通常不足以分类所有空间；同调相同的空间在拓扑上仍可能不同。",
+      "contributors": [
+        {
+          "name": "昂利·庞加莱",
+          "role": "发展了空间的代数不变量。"
+        }
+      ],
+      "example": "圆周上有无法在圆周内连续收缩为一点的环路。",
+      "representation": {
+        "explanation": "基本群记录固定基点的环路在连续变形下的类别；同调是另一种互补不变量。",
+        "expression": "环路和洞 → 代数不变量"
+      },
+      "sourceDigest": "5b5dfb833e94b03a69a98c0272ab5b1ee0d9c44ebe12d16cd0f07eb18a47bed5"
+    },
+    "optimal-transport": {
+      "title": "最优输运",
+      "aliases": [],
+      "tags": [
+        "最优输运"
+      ],
+      "date": {
+        "label": "1781年",
+        "note": "以蒙日的土方搬运问题为历史锚点；允许质量分拆的输运方案属于康托罗维奇后来的表述。"
+      },
+      "summary": "最优输运研究如何以最小总成本将一种物质分布变为另一种分布。",
+      "problem": "搬运存在成本时，各目的地应由哪个来源供应？",
+      "development": "蒙日提出几何分配问题。康托罗维奇后来允许质量分送不同目的地，形成用于比较分布的线性优化框架。",
+      "limitations": "成本函数决定何谓接近；不同成本或约束可得到不同最优方案。",
+      "contributors": [
+        {
+          "name": "加斯帕尔·蒙日",
+          "role": "提出了土方搬运问题。"
+        },
+        {
+          "name": "列昂尼德·康托罗维奇",
+          "role": "引入了放宽约束的输运方案。"
+        }
+      ],
+      "example": "将开挖点的土运到筑堤点，同时最小化运输距离。",
+      "representation": {
+        "explanation": "这是输运问题的定义；现代输运方案可将一个来源分配给多个目的地。",
+        "expression": "在满足供给与需求的条件下最小化输运成本"
+      },
+      "sourceDigest": "7ed19da907cd36348f7cbf2e789c11470cc72fd86f69bc270eefc3fb3e71c67b"
+    },
+    "riemann-hypothesis": {
+      "title": "黎曼猜想",
+      "aliases": [],
+      "tags": [
+        "黎曼猜想"
+      ],
+      "date": {
+        "label": "1859年",
+        "note": "黎曼在1859年关于素数计数的论文中提出这一猜想。"
+      },
+      "summary": "这一猜想断言黎曼泽塔函数的所有非平凡零点都位于复平面中的一条特定竖直线上。",
+      "problem": "素数分布的偏差能被约束到多精确？",
+      "development": "黎曼将素数计数与泽塔函数的解析延拓联系起来。该猜想研究其零点，并非生成素数的概率规则。",
+      "limitations": "该猜想仍未被证明。检验有限个零点不能证明关于所有零点的结论；依赖它的推论必须保留条件。",
+      "contributors": [
+        {
+          "name": "伯恩哈德·黎曼",
+          "role": "提出了泽塔函数零点猜想。"
+        }
+      ],
+      "example": "若获证明，可更精确地控制素数计数平滑估计的误差。",
+      "representation": {
+        "explanation": "这一蕴含关系尚未得到证明。ζ 是解析延拓后的黎曼泽塔函数，s 是复变量，Re(s) 表示其实部。所列条带不包括已知的负偶整数处的平凡零点。"
+      },
+      "sourceDigest": "c28ac38a4e91eb51e5d0307d1e4f76b19db6ff626f30c0830bea3ef3586b3bdb"
+    },
+    "point-defects": {
+      "title": "点缺陷",
+      "aliases": [
+        "弗伦克尔缺陷"
+      ],
+      "tags": [
+        "点缺陷"
+      ],
+      "date": {
+        "label": "1926年",
+        "note": "弗伦克尔于1926年提出空位—间隙离子对。"
+      },
+      "summary": "原子缺失、额外插入或被替代，会在局部打断晶体的重复排列。",
+      "problem": "原子或电荷如何穿过看似刚性的晶体？",
+      "development": "弗伦克尔将离子传导与离位离子联系起来。邻近原子跳入空位即可使空位移动，而整个晶格仍保持完整。",
+      "limitations": "缺陷类型和浓度取决于温度、成分及电荷平衡。",
+      "contributors": [
+        {
+          "name": "雅科夫·弗伦克尔",
+          "role": "提出离子离位及留下空位的模型。"
+        }
+      ],
+      "example": "离子从正常格点移到间隙位置时形成两个局部缺陷。",
+      "representation": {
+        "explanation": "这是弗伦克尔缺陷对的定义，只是点缺陷组合的一种。",
+        "expression": "同种粒子的空位与间隙粒子对"
+      },
+      "sourceDigest": "3cb4c4dfe881e56301701d53ce219e47009de79bac79faec40b6ec5e574ad58b"
+    },
+    "diffusion-in-solids": {
+      "title": "固态扩散",
+      "aliases": [],
+      "tags": [
+        "固态扩散"
+      ],
+      "date": {
+        "label": "1896年",
+        "note": "1896年的实验给出了可测量的固态金属实例。"
+      },
+      "summary": "即使低于熔点，原子也能在固体中迁移，使成分随时间重新分布。",
+      "problem": "两种金属不熔化也能混合吗？",
+      "development": "罗伯茨-奥斯汀追踪了金渗入铅的过程。后来的原子模型区分了空位、间隙和快速晶界路径。",
+      "limitations": "跨越不同相、晶界或很大成分变化时，单一扩散系数可能不适用。",
+      "contributors": [
+        {
+          "name": "威廉·钱德勒·罗伯茨-奥斯汀",
+          "role": "测量了固态金属中的互扩散。"
+        }
+      ],
+      "example": "热处理可使碳进入钢的表层。",
+      "representation": {
+        "explanation": "在扩散系数 D 恒定的普通扩散中，特征距离 ℓ 随经过时间 t 的平方根增长。"
+      },
+      "sourceDigest": "11344cb9a79f6af2f6b865586952530f393fee2f43e949b9fe70f652e9049842"
+    },
+    "grain-boundaries": {
+      "title": "晶界",
+      "aliases": [],
+      "tags": [
+        "晶界"
+      ],
+      "date": {
+        "label": "1950年",
+        "note": "此日期标记里德—肖克利模型，而非晶粒的发现。"
+      },
+      "summary": "晶界是固体中取向不同的相邻晶粒之间的界面。",
+      "problem": "固体如何在没有宏观空隙的情况下容纳许多晶体取向？",
+      "development": "里德和肖克利将小角度晶界的能量与容纳取向差的位错阵列联系起来。",
+      "limitations": "在取向差很大时，简单位错阵列图景的准确性下降。",
+      "contributors": [
+        {
+          "name": "威廉·里德与威廉·肖克利",
+          "role": "用位错描述小角度晶界。"
+        }
+      ],
+      "example": "两个略微倾斜的晶区可沿一排刃型位错接合。",
+      "representation": {
+        "explanation": "取向差不同于化学相的变化。",
+        "expression": "分隔不同取向晶粒的界面"
+      },
+      "sourceDigest": "2e17e4a2df79c847bfbfffe75a71a9c096c7367be7b3c39912eae3ba7980b0e0"
+    },
+    "recrystallization": {
+      "title": "变形后的再结晶",
+      "aliases": [
+        "再结晶"
+      ],
+      "tags": [
+        "变形后的再结晶"
+      ],
+      "date": {
+        "label": "1952年",
+        "note": "该日期标记对更早冶金观测的综合论述。"
+      },
+      "summary": "退火过程中，含较少变形缺陷的新晶粒可取代冷加工材料。",
+      "problem": "为何加热能在加工硬化后恢复延展性？",
+      "development": "晶界迁移使低缺陷晶粒向变形区生长，降低储存的变形能。",
+      "limitations": "回复、再结晶及后续晶粒长大是不同过程；不同加工历史不具有统一固定的再结晶温度。",
+      "contributors": [
+        {
+          "name": "伯克与戴维·特恩布尔",
+          "role": "综合了再结晶与晶粒长大的研究证据。"
+        }
+      ],
+      "example": "冷轧铜板经退火可软化，便于继续成形。",
+      "representation": {
+        "explanation": "这里指变形后的固态再结晶，无需熔化。",
+        "expression": "低缺陷新晶粒取代变形晶粒"
+      },
+      "sourceDigest": "277b2719f7ef0de793e5f055d8bfd7e56962b45e4b87fa0705bf71a504ba84a8"
+    },
+    "precipitation-hardening": {
+      "title": "析出强化",
+      "aliases": [
+        "时效硬化"
+      ],
+      "tags": [
+        "析出强化"
+      ],
+      "date": {
+        "label": "1911年",
+        "note": "此处采用维尔姆的发表年份；对析出机制的认识更晚。"
+      },
+      "summary": "金属基体内细小弥散的颗粒可阻碍位错运动，提高强度。",
+      "problem": "为何合金淬火后仅经放置就能变硬？",
+      "development": "维尔姆观察到铝合金的延迟硬化。后来的显微观测和理论将其与溶质分布变化及析出物联系起来。",
+      "limitations": "过时效可使颗粒粗化并降低强度；强化效果取决于尺寸、间距及其与基体的作用。",
+      "contributors": [
+        {
+          "name": "阿尔弗雷德·维尔姆",
+          "role": "报道铝合金的时效硬化。"
+        }
+      ],
+      "example": "铝铜合金经固溶处理、淬火和控制时效后可得到强化。",
+      "representation": {
+        "explanation": "热处理控制颗粒群体；硬度不会无限单调增加。",
+        "expression": "过饱和固溶体 → 弥散强化颗粒"
+      },
+      "sourceDigest": "b049e4eba255ceb0906cd228719b567639b46e3bb6de78f6b314175e9457c347"
+    },
+    "hall-petch": {
+      "title": "霍尔—佩奇关系",
+      "aliases": [
+        "细晶强化"
+      ],
+      "tags": [
+        "霍尔—佩奇关系"
+      ],
+      "date": {
+        "label": "1951年",
+        "note": "以霍尔1951年的论文为锚点；佩奇于1953年报道了相关结果。"
+      },
+      "summary": "在一定范围内，细化晶粒通常可提高多晶金属的屈服应力。",
+      "problem": "为何相同合金的两个样品会具有不同的屈服强度？",
+      "development": "霍尔将低碳钢屈服与晶粒尺寸联系起来。晶界可阻碍滑移，但微观解释因材料而异。",
+      "limitations": "这一经验关系并非普适，尤其不适用于极小晶粒或不同变形机制。",
+      "contributors": [
+        {
+          "name": "霍尔与佩奇",
+          "role": "在不同研究中将强度与晶粒尺寸联系起来。"
+        }
+      ],
+      "example": "细化晶粒可在不改变名义成分的情况下强化钢。",
+      "representation": {
+        "explanation": "在拟合适用的晶粒尺寸范围内，σ_y 是屈服应力，d 是平均晶粒直径。σ₀ 为外推得到的截距，k 描述该材料屈服应力对晶粒尺寸的依赖程度。"
+      },
+      "sourceDigest": "60ac924a41f917d87a19cc050bd2efa5f41cc73213ef2d915a14ad711d8091bb"
+    },
+    "fracture-mechanics": {
+      "title": "断裂力学",
+      "aliases": [],
+      "tags": [
+        "断裂力学"
+      ],
+      "date": {
+        "label": "1921年",
+        "note": "以格里菲思能量判据的发表为所选里程碑。"
+      },
+      "summary": "裂纹扩展释放的储能足以支付断裂能量代价时，裂纹可继续生长。",
+      "problem": "为何小缺陷能使材料在低于理想强度时破坏？",
+      "development": "格里菲思的脆性断裂理论将注意力从名义应力转向缺陷尺寸和裂纹处的能量平衡。",
+      "limitations": "延性固体还通过塑性变形耗能，仅用表面能会低估断裂阻力。",
+      "contributors": [
+        {
+          "name": "艾伦·阿诺德·格里菲思",
+          "role": "比较裂纹表面能与释放的弹性能。"
+        }
+      ],
+      "example": "玻璃纤维上的划痕可显著降低断裂应力。",
+      "representation": {
+        "explanation": "G 为单位裂纹扩展面积释放的能量；G_c 为指定条件下的断裂阻力。"
+      },
+      "sourceDigest": "38f30ef2a8563db92b9b581f4cf3cf5429acc6a24e14a4c09f8b29950496545a"
+    },
+    "viscoelasticity": {
+      "title": "黏弹性",
+      "aliases": [],
+      "tags": [
+        "黏弹性"
+      ],
+      "date": {
+        "label": "1867年",
+        "note": "以麦克斯韦发表的弛豫处理作为模型里程碑。"
+      },
+      "summary": "材料可在短时间内弹性储能，又可在较长时间尺度上耗能或发生应力弛豫。",
+      "problem": "为何同一种材料对快速与缓慢加载的响应不同？",
+      "development": "麦克斯韦模型将弹簧与黏性元件串联，引入特征应力弛豫时间。",
+      "limitations": "真实聚合物常具有多种弛豫时间；单组线性元件不能描述所有加载历史。",
+      "contributors": [
+        {
+          "name": "詹姆斯·克拉克·麦克斯韦",
+          "role": "发展了联系弹性与黏性响应的弛豫模型。"
+        }
+      ],
+      "example": "聚合物试样保持固定伸长时，所施加的力可能逐渐减小。",
+      "representation": {
+        "explanation": "在线性麦克斯韦元件中，弛豫时间 τ 等于黏度 η 除以弹簧模量 E。"
+      },
+      "sourceDigest": "3b4d102a323f27bbca166fb8beced398ec7a68abe34baa12337840f8bc6d5f2c"
+    },
+    "glass-transition": {
+      "title": "玻璃化转变",
+      "aliases": [],
+      "tags": [
+        "玻璃化转变"
+      ],
+      "date": {
+        "label": "1961年",
+        "note": "1961年的自由体积模型是解释这一现象的里程碑；玻璃制造及软化观测远早于此。"
+      },
+      "summary": "当结构弛豫慢于观测时间尺度时，非晶材料表现得像刚性固体。",
+      "problem": "液体如何在不结晶的情况下固化？",
+      "development": "自由体积模型将分子重排受限与弛豫变慢相联系；其他描述探讨能量景观及协同运动。",
+      "limitations": "测得的转变温度取决于冷却速率与测量流程；没有单一微观模型能解释所有玻璃形成体。",
+      "contributors": [
+        {
+          "name": "戴维·特恩布尔与莫雷尔·科恩",
+          "role": "发展了玻璃化的自由体积解释。"
+        }
+      ],
+      "example": "聚合物冷却时可由橡胶态转为玻璃态。",
+      "representation": {
+        "explanation": "这一动力学描述将玻璃化与平衡结晶区分开来。",
+        "expression": "弛豫慢于观测"
+      },
+      "sourceDigest": "08414f6db3df03fe3700aac9ba04edf9dbeb92535a1bcc951024a7bd68c17602"
+    },
+    "martensitic-transformations": {
+      "title": "马氏体相变",
+      "aliases": [],
+      "tags": [
+        "马氏体相变"
+      ],
+      "date": {
+        "label": "1953年",
+        "note": "以1953年的晶体学理论为锚点，而非首次观测到淬硬钢。"
+      },
+      "summary": "晶格的协调重排在不发生长程原子扩散的情况下改变晶体结构。",
+      "problem": "固体如何快速相变并保持特定的取向关系？",
+      "development": "晶体学理论将晶格畸变与变形协调相结合，以预测形状改变和界面取向。",
+      "limitations": "无扩散相变并不意味着每种合金都能可逆转变或具有形状记忆。",
+      "contributors": [
+        {
+          "name": "韦克斯勒、利伯曼与里德",
+          "role": "发展了相变的晶体学理论。"
+        }
+      ],
+      "example": "快速冷却可使钢中的奥氏体转为坚硬的马氏体。",
+      "representation": {
+        "explanation": "原子以协同短程位移重排，而非通过长程扩散分离。",
+        "expression": "协调的无扩散晶格转变"
+      },
+      "sourceDigest": "12ddd5c2249c5f76fd8395c27f186586e2ef1cb83239fab3d55d38dbd9f480b2"
+    },
+    "percolation": {
+      "title": "渗流理论",
+      "aliases": [],
+      "tags": [
+        "渗流理论"
+      ],
+      "date": {
+        "label": "1957年",
+        "note": "1957年关于晶体和迷宫的论文形式化了渗流问题。"
+      },
+      "summary": "随着连通格点或键的比例增加，局部联系可形成贯穿整个系统的路径。",
+      "problem": "加入多少导电填料才能让绝缘复合材料导电？",
+      "development": "布罗德本特和哈默斯利研究了由介质连通性控制通行的随机介质，区别于仅由运动粒子产生的随机性。",
+      "limitations": "阈值取决于几何、相关性和有限尺寸；理想晶格阈值不能直接用于任意材料。",
+      "contributors": [
+        {
+          "name": "西蒙·布罗德本特与约翰·哈默斯利",
+          "role": "建立了随机介质中的概率连通性模型。"
+        }
+      ],
+      "example": "聚合物中的碳颗粒可能形成连通导电网络。",
+      "representation": {
+        "explanation": "阈值描述指定模型中大连通簇的出现。",
+        "expression": "随机占据介质中的贯通连通性"
+      },
+      "sourceDigest": "ad7920b4781faa63993002ee17060974792bdaecaa4df2d3f61e8e5f61cd87fa"
+    },
+    "composite-materials": {
+      "title": "复合材料",
+      "aliases": [],
+      "tags": [
+        "复合材料"
+      ],
+      "date": {
+        "label": "1952年",
+        "note": "科克斯的力学论文是建模里程碑，并非复合材料的发明。"
+      },
+      "summary": "不同组分通过界面共同承载，因此性能既取决于成分，也取决于排列方式。",
+      "problem": "应力如何传到嵌在较软基体中的增强纤维？",
+      "development": "科克斯分析了应力如何传入纤维。长度、取向及界面结合共同决定增强效果。",
+      "limitations": "简单混合平均无法描述脱粘、偏轴载荷或损伤积累。",
+      "contributors": [
+        {
+          "name": "H. L. 科克斯",
+          "role": "建立了纤维材料的载荷传递模型。"
+        }
+      ],
+      "example": "定向玻璃纤维可显著提高树脂沿纤维方向的刚度。",
+      "representation": {
+        "explanation": "理想轴向混合定则假设连续定向纤维、应变相同且结合良好；V 表示体积分数，E 表示模量。"
+      },
+      "sourceDigest": "5ea05a2441aa43ba5dd39cb3eb960cad457d5dfd06d038b2f4cf4b0457a04b7f"
+    },
+    "metamaterials": {
+      "title": "电磁超材料",
+      "aliases": [
+        "超材料"
+      ],
+      "tags": [
+        "电磁超材料"
+      ],
+      "date": {
+        "label": "2000年",
+        "note": "2000年的复合介质实现继承了韦谢拉戈更早的理论预言。"
+      },
+      "summary": "小于波长的人造结构可使介质产生不同于单独组分的电磁响应。",
+      "problem": "能否利用几何结构控制电磁波在材料中的传播？",
+      "development": "导线阵列与谐振器组合，在微波频段实现了特殊的有效介电常数和磁导率。",
+      "limitations": "有效参数依赖频率；损耗与单元尺寸限制带宽和均匀化近似。",
+      "contributors": [
+        {
+          "name": "戴维·史密斯及其合作者",
+          "role": "构建了具有负有效电磁参数的复合介质。"
+        }
+      ],
+      "example": "微波复合介质可在某一频带内同时具有负有效介电常数与负磁导率。",
+      "representation": {
+        "explanation": "负折射是可能行为之一，并非每种超材料的必要条件。",
+        "expression": "亚波长结构调控有效波响应"
+      },
+      "sourceDigest": "0b4e5984b82b19f931dd333c46d8d61f840d3306225863a3f0da243e88f25602"
+    },
+    "high-entropy-alloys": {
+      "title": "高熵合金",
+      "aliases": [
+        "多主元合金"
+      ],
+      "tags": [
+        "高熵合金"
+      ],
+      "date": {
+        "label": "2004年",
+        "note": "以叶均蔚团队2004年的设计论文为锚点；同期也有其他多组元合金研究。"
+      },
+      "summary": "多种主元素可按较高比例共同构成合金，超出单一基体金属的传统成分空间。",
+      "problem": "能否围绕数种主元素设计合金，而非只在一种基体中少量添加元素？",
+      "development": "高熵策略强调构型混合熵，并推动探索过去较少研究的成分组合。",
+      "limitations": "混合熵本身不保证单相；焓、有序化、温度和加工同样重要。",
+      "contributors": [
+        {
+          "name": "叶均蔚及其合作者",
+          "role": "提出了多主元合金设计策略。"
+        }
+      ],
+      "example": "近等原子比合金可与由相同元素构成的传统稀合金比较。",
+      "representation": {
+        "explanation": "对理想随机置换固溶体，xᵢ 为元素 i 的摩尔分数，R 为气体常数。"
+      },
+      "sourceDigest": "12777642acbb68eb17f22520b876b92d3153649b4a1c6070020195d08ca75077"
     }
   },
   "relationships": {
@@ -2375,6 +3585,310 @@
     "quantum-chromodynamics--standard-model": {
       "explanation": "QCD 通过夸克、胶子和色规对称性提供标准模型的强相互作用部分。",
       "sourceDigest": "03d2300d4ab410760268abf18d9f2e43ecea8e0541b677790aff4f2f73bdff14"
+    },
+    "chemical-kinetics--michaelis-menten-kinetics": {
+      "explanation": "酶饱和是反应速率的一种具体机制模型。",
+      "sourceDigest": "fad2cf8e6b83685fab0c998320e7657f3f254d00cf20cfc986177bf6ae2fca1f"
+    },
+    "biochemistry--michaelis-menten-kinetics": {
+      "explanation": "无细胞酶研究使定量催化速率实验成为可能。",
+      "sourceDigest": "f71f92bc999043518623ee3a91ff0fe80a194ebe8ab33a004717e4f84cbb37ba"
+    },
+    "michaelis-menten-kinetics--enzyme-allostery": {
+      "explanation": "变构调节解释了简单独立位点饱和模型之外的行为。",
+      "sourceDigest": "ee930a369280b81c3ba1f06733e67dfc412ed6ca2eeb4dbc89a4dd2f730fdd0d"
+    },
+    "cellular-respiration--chemiosmosis": {
+      "explanation": "化学渗透解释呼吸能量如何与磷酸化偶联。",
+      "sourceDigest": "5c572ee9cdd7b25d43dc6862e20b97aeeea621a844270e59180c5ea725322055"
+    },
+    "lipid-bilayer--chemiosmosis": {
+      "explanation": "膜屏障使电化学梯度得以维持。",
+      "sourceDigest": "a6b13d226d4ec4b33bf7fbc21c3e5168fb9cac02728e2f632c6e2ec4f523c710"
+    },
+    "chemical-thermodynamics--protein-folding-thermodynamics": {
+      "explanation": "自由能差用于比较规定条件下的天然态与展开态。",
+      "sourceDigest": "58b76f6e17ccfc327249641c664a273fbcb0cbe4d7d9db1dd590eeda2ef4a54e"
+    },
+    "molecular-biology--protein-folding-thermodynamics": {
+      "explanation": "氨基酸序列将分子信息与折叠行为联系起来。",
+      "sourceDigest": "5ea0b10d5d568141f15f621054fe61ec5e2147654fb9ae9607af01294160c029"
+    },
+    "arrhenius-equation--transition-state-theory": {
+      "explanation": "过渡态理论用活化自由能和前因子解释速率与温度的关系。",
+      "sourceDigest": "c4d47d9056cf5ca1da259503a6824327783a3fd30d4569586495c06d543245aa"
+    },
+    "statistical-mechanics--transition-state-theory": {
+      "explanation": "统计分布提供对过渡态构型占据情况的估计。",
+      "sourceDigest": "6b3b75d084ccca6284d3ccd0580f646ddf32ad1444f5ce575e6dd3c42d6f7178"
+    },
+    "quantum-chemistry--resonance-delocalization": {
+      "explanation": "量子态叠加解释了单一局域键描述为何可能不足。",
+      "sourceDigest": "467ea66d30f6602772e92353147f4c184edcae9f7fe4cc10dfe455ce4fc976b6"
+    },
+    "coordination-chemistry--ligand-field-theory": {
+      "explanation": "配体场为配位化合物的性质提供电子层面的解释。",
+      "sourceDigest": "c37178d1331879d37a5327adaa2ba9acf35425d2a9a6de062b0d9bbfe0abb70b"
+    },
+    "molecular-orbital-theory--ligand-field-theory": {
+      "explanation": "轨道混合扩展了金属与配体相互作用的纯静电描述。",
+      "sourceDigest": "26541a3a6830477b8a8fdb1ae4e4b542fc189c591c3a6fc1be47b6fbfaf1f974"
+    },
+    "quantum-chemistry--density-functional-theory": {
+      "explanation": "DFT围绕密度重新组织电子基态问题。",
+      "sourceDigest": "7c145a9e347a238265247e2d83b1ce0708618c2375a76145a5bfe072c2398993"
+    },
+    "molecular-orbital-theory--pericyclic-selection-rules": {
+      "explanation": "轨道相位决定重排化学键时如何保持对称性。",
+      "sourceDigest": "38d30f5daa833aa71afb9cf5ad1fe5e5df1ed9853fd640d10d5e57e36a232770"
+    },
+    "stereochemistry--pericyclic-selection-rules": {
+      "explanation": "立体化学观测提供了这些规则需要解释的规律。",
+      "sourceDigest": "f92e81672809fcc46965649b872fbd9bfb1dbc6a3969cf0177358bf4af938473"
+    },
+    "molecular-biology--rna-world": {
+      "explanation": "分子信息与功能的分工启发了RNA可能兼具两种作用的情景。",
+      "sourceDigest": "096bd762686460a3cc777489a71893cac551e2ed9b65a7ec15e6e395046b040c"
+    },
+    "catalysis--rna-world": {
+      "explanation": "该假说除信息储存外还要求催化活性。",
+      "sourceDigest": "8355aba4bd4d76e27e6984ab1b89db33eb9bee0c067843b543718da9ad66a37d"
+    },
+    "wave-equation--doppler-effect": {
+      "explanation": "波传播为联系发射间隔与到达间隔提供框架。",
+      "sourceDigest": "5082226c070cc093fdfa7f415d3b6715e8067b60ab45d7c8c079821c34f00c31"
+    },
+    "classical-mechanics--coriolis-effect": {
+      "explanation": "把牛顿运动方程变换到旋转坐标系会引入科里奥利项。",
+      "sourceDigest": "c15cf3ee728d111a10a71323bea824c38f08a90faac81bd432b4fede9dec2236"
+    },
+    "fluid-dynamics--turbulent-energy-cascade": {
+      "explanation": "级联描述连续介质流体运动的统计行为。",
+      "sourceDigest": "afc74e03d36e02b1466df6e957fc3c539c66ee672d0b48f7521d87bfd61d7e36"
+    },
+    "dimensional-analysis--turbulent-energy-cascade": {
+      "explanation": "量纲推理利用能量通量和长度尺度约束惯性区标度。",
+      "sourceDigest": "f37480896a31ee0172c6ecc787be256639b8447e9a10b3f9a8e83f4a5260685e"
+    },
+    "statistical-mechanics--fluctuation-dissipation-theorem": {
+      "explanation": "平衡态关联把微观涨落与宏观响应联系起来。",
+      "sourceDigest": "4624f51156757320681730a1c4beea1bd2507ca06ec20502cd247c5cefda3d80"
+    },
+    "brownian-motion--fluctuation-dissipation-theorem": {
+      "explanation": "广义定理包含布朗涨落与阻力之间的关系。",
+      "sourceDigest": "145cf6e10f5d8de20ddf496de3467542c016a990da230985428463161117762c"
+    },
+    "bcs-superconductivity--spontaneous-symmetry-breaking": {
+      "explanation": "南部明确分析了BCS超导态，以发展场论处理方法。",
+      "sourceDigest": "d03079aedfca3845b4bf01fa478716822be4e2389f73c0fe983b48a70dd1d8d4"
+    },
+    "landau-phase-transitions--spontaneous-symmetry-breaking": {
+      "explanation": "序参量描述状态如何不再保持某种对称性。",
+      "sourceDigest": "2745d27a98005c1a37ef1315b8ec569eeec2e2fa8e9aa4e1871e1c889592d0f8"
+    },
+    "superconductivity--bcs-superconductivity": {
+      "explanation": "BCS为此前观察到的超导相提供了微观解释。",
+      "sourceDigest": "93de2bee8295671357e92add6583ca6111b3ec9324e6b466929cc65d34157302"
+    },
+    "fermi-dirac-statistics--bcs-superconductivity": {
+      "explanation": "配对理论针对占据费米面附近状态的电子建立。",
+      "sourceDigest": "07eb9204cde935e52ad50b4d30d93daf78a74163bc4c7a23840362ec0d45aec4"
+    },
+    "bose-einstein-statistics--bose-einstein-condensation": {
+      "explanation": "玻色占据统计允许构成凝聚基础的粒子聚集。",
+      "sourceDigest": "5c6bd17795a233caeadedc0547438ce1d6830b21e329dbdff7924711918ccf6a"
+    },
+    "quantum-mechanics--bose-einstein-condensation": {
+      "explanation": "凝聚体由共同量子态描述，而非独立的经典轨迹。",
+      "sourceDigest": "49f5d92ebb377525b1d3d541a213edc5cee214cd1d8d1d70f803d964152ebd5c"
+    },
+    "quantum-entanglement--quantum-decoherence": {
+      "explanation": "系统与环境的纠缠是退相干约化态描述的基础。",
+      "sourceDigest": "dd50961c5e834ef10f400cb690ceda43cbb76da03044d05b180c2961dfd3c390"
+    },
+    "general-relativity--loop-quantum-gravity": {
+      "explanation": "该纲领寻求广义相对论动态几何的量子描述。",
+      "sourceDigest": "35e42ab5462f43374bf5bb07d8a1e3044705fc7a1407b07a7f1036fcfed767c5"
+    },
+    "quantum-mechanics--loop-quantum-gravity": {
+      "explanation": "量子态和算子为所提量子化提供框架。",
+      "sourceDigest": "bc6dc6b6824f83149c958359ed02e64bc1849bc89af8202844655369ff6d7a7d"
+    },
+    "black-holes--holographic-principle": {
+      "explanation": "黑洞熵为基于边界的信息计数提供了动机。",
+      "sourceDigest": "0ccc219612667a6f345eb939736dfd568498d7f38b44f33d078450d0cbedf45d"
+    },
+    "entropy--holographic-principle": {
+      "explanation": "熵为引力信息界中的可访问状态提供度量。",
+      "sourceDigest": "b697f71e7aa2684dc17e858c0d9744f4ef5942359f81a8622e8cf602787e2062"
+    },
+    "euclidean-algorithm--modular-arithmetic": {
+      "explanation": "欧几里得算法计算的最大公约数决定哪些剩余类有逆元；这是数学联系，并非直接传播的历史断言。",
+      "sourceDigest": "a6207aec3167bcf17e573995e75884bcabb67737a507abee40ffa5a3586c43e5"
+    },
+    "geometry--fundamental-theorem-calculus": {
+      "explanation": "巴罗用几何方式表达切线与累积面积之间的关系。",
+      "sourceDigest": "bac304fa18c2c820aea3f42230be4f6130153ae9149f456075e176037b43fde9"
+    },
+    "prime-numbers--prime-number-theorem": {
+      "explanation": "素数计数给出了该定理所描述的渐近密度对象。",
+      "sourceDigest": "922bfa383e0f3b384d54da824e802feefb8744a4e54fd78f4913fe30a3d54316"
+    },
+    "complex-analysis--prime-number-theorem": {
+      "explanation": "1896年的证明使用了泽塔函数的解析性质。",
+      "sourceDigest": "2d636f0fc55f7ea26f004ac0dbf847ad99c59e4b2b587203089dbb757909ecfc"
+    },
+    "quadratic-equations--spectral-theorem": {
+      "explanation": "二次型推广了标量二次表达式，其主轴问题引出对称谱分解；这是概念联系。",
+      "sourceDigest": "a9141036556c0e17b2deb8a9715a065df1cd35f08c0a38503c5819770f7eb70f"
+    },
+    "linear-algebra--singular-value-decomposition": {
+      "explanation": "这种分解将矩阵分解为较简单的线性映射。",
+      "sourceDigest": "e8ba050f8dc318bc39c11e6ef730fb0c116ee7077209c057fca19699da541c4e"
+    },
+    "spectral-theorem--singular-value-decomposition": {
+      "explanation": "对于实矩阵 A，对称矩阵 AᵀA 给出右奇异向量和奇异值的平方。",
+      "sourceDigest": "afb417f072520a3055b4a422c87a5b83bb93f5b55b173d032c63f5a81a5338f7"
+    },
+    "probability--law-large-numbers": {
+      "explanation": "重复试验的概率使经验频率集中成为精确的数学问题。",
+      "sourceDigest": "4cb95bd6ef083330b26b8caf350fedbe7f32d863ab386cf54e7cc7c72b4efbbe"
+    },
+    "brownian-motion--stochastic-calculus": {
+      "explanation": "布朗路径是伊藤微积分中典型的随机积分驱动过程。",
+      "sourceDigest": "f9cff7ba1ef77719309389fa6152e4b9d0471f9106685ba3f1e38d93ecc7b4da"
+    },
+    "measure-theory--stochastic-calculus": {
+      "explanation": "概率测度和随机变量的极限为随机积分提供形式框架。",
+      "sourceDigest": "813cb4698c27db107c9d68db9c81cb0dfa2cf2922842747d67d7c638f6edbfb3"
+    },
+    "topology--algebraic-topology": {
+      "explanation": "代数不变量为更广泛的连续变形研究提供工具。",
+      "sourceDigest": "ec3bc3b83cdb1d8ca02bfdafe8c018948b9970d8438c9eed743721f8fc137e51"
+    },
+    "group-theory--algebraic-topology": {
+      "explanation": "基本群用群运算编码环路的复合。",
+      "sourceDigest": "797f300fc8249ae8fd106c7a6e1f735763551d781d96e62520a8ee1e97ed4584"
+    },
+    "optimization--optimal-transport": {
+      "explanation": "输运是在来源和目的地数量已规定时的约束最小化问题。",
+      "sourceDigest": "9bebe4b8cf6490098ee642dacca348bd969a336dc3476cf58268954c6f96a7a8"
+    },
+    "complex-analysis--riemann-hypothesis": {
+      "explanation": "解析延拓使泽塔函数及其临界带零点成为这一猜想的研究对象。",
+      "sourceDigest": "8838272507736ae0fddd921ca34dbcb199164db615dcc1f939aab70b17bb2dfe"
+    },
+    "prime-numbers--riemann-hypothesis": {
+      "explanation": "这一问题是在研究素数分布时提出的。",
+      "sourceDigest": "8c7e191063a3439b49dbd8d557dc8a66946fe9139af7de4ef7d96fad7d118074"
+    },
+    "crystal-lattices--point-defects": {
+      "explanation": "参考晶格界定哪些位置为空位、占据格点或间隙。",
+      "sourceDigest": "fb3271432d9f04cbb22a1f552ff516a9be026ee34bf8e70d0cff9be337de4bf4"
+    },
+    "diffusion-laws--diffusion-in-solids": {
+      "explanation": "菲克输运定律将测得的渗透分布与扩散系数联系起来。",
+      "sourceDigest": "101106143733a71191c9932c60ee461b9e2764ecaa807af1e1e9e8b7e4f238b3"
+    },
+    "dislocations--grain-boundaries": {
+      "explanation": "里德—肖克利模型用位错构造小角度晶界。",
+      "sourceDigest": "8f8e6688faace0fb0ebc6640b94791b37c72d29a0a46940e78eeb7014874a922"
+    },
+    "crystal-lattices--grain-boundaries": {
+      "explanation": "比较晶格取向即可定义相邻晶粒的取向差。",
+      "sourceDigest": "2e6846c6c7bb907b5687e144c1e326d4ccc66b34a81eae0b3dd6ee744e25134c"
+    },
+    "grain-boundaries--recrystallization": {
+      "explanation": "可移动的晶界使新晶粒吞并变形组织。",
+      "sourceDigest": "5d1b94537b7b6ae80cacedb406c89cb688c22428eac6b788d05a01e24eca8dd0"
+    },
+    "dislocations--recrystallization": {
+      "explanation": "高位错密度储存的能量可驱动再结晶。",
+      "sourceDigest": "db614065065c213d53832405cec3608730011f734c2405aa27607a5dafbb54dd"
+    },
+    "phase-diagrams--precipitation-hardening": {
+      "explanation": "随温度变化的溶解度有助于解释淬火和时效为何可以产生第二相。",
+      "sourceDigest": "5786ae171860e8d9714b69d499a6f8ed248ede5a130337dab5192dc352d9b104"
+    },
+    "diffusion-in-solids--precipitation-hardening": {
+      "explanation": "固体中溶质的移动使析出物能够形成并长大。",
+      "sourceDigest": "c14adac66072ef29d2d7f7bc50377a59bda6c8e499d4fda4e7ee2f0d4f404f45"
+    },
+    "grain-boundaries--hall-petch": {
+      "explanation": "改变晶粒尺寸会改变多晶体中滑移遇到的晶界间距。",
+      "sourceDigest": "a703746f7c8ccfe2546d529d238b30b3d279697408e2dd5f4738e65a8ac16118"
+    },
+    "elasticity--fracture-mechanics": {
+      "explanation": "脆性裂纹扩展所释放的能量来自储存的弹性应变能。",
+      "sourceDigest": "454b44cb6b46dfdb82cb0fcd48c145530296d6f54b4685a4492b6a5558d02ee9"
+    },
+    "elasticity--viscoelasticity": {
+      "explanation": "依赖时间的黏性贡献扩展了瞬时弹性响应。",
+      "sourceDigest": "c309dd622a7026ac45c7624531016ab913e7399f519be5f2e46e7d52511cec98"
+    },
+    "amorphous-materials--glass-transition": {
+      "explanation": "玻璃化转变涉及缺乏长程晶序的结构中运动变慢。",
+      "sourceDigest": "8e51ed6c417103a3d6940f1b875a197f3c314682c12f84eb3450136f91248ef4"
+    },
+    "crystal-lattices--martensitic-transformations": {
+      "explanation": "晶体学对应关系用于比较母相与产物相的晶格。",
+      "sourceDigest": "c4e1abe2bf2bb087969af23e88612b1c01c686b27441eedbc66d158e220d6a63"
+    },
+    "probability--percolation": {
+      "explanation": "随机格点或键占据定义了可能连通路径的集合。",
+      "sourceDigest": "0a422de89cec179feff81f476d2224591931b68ff3a39cce4c3600578f795375"
+    },
+    "graph-theory--percolation": {
+      "explanation": "通过网络顶点与边之间的路径判断连通性。",
+      "sourceDigest": "46c25d15332f132b40b705aaa08d52e07ded6bade88bed8a1aba0f5158d89f9e"
+    },
+    "elasticity--composite-materials": {
+      "explanation": "各组分中的弹性应力与应变决定理想载荷分担。",
+      "sourceDigest": "34be58f6af5d5d02265d1eac3b7f60a6ab04f294cf187abe08b94a13f44a791c"
+    },
+    "electromagnetism--metamaterials": {
+      "explanation": "麦克斯韦方程将设计的电、磁响应与波传播联系起来。",
+      "sourceDigest": "62077ce2ef68a73041f785475d689b480b70c561d9e731d50dccf83b5c368f11"
+    },
+    "composite-materials--metamaterials": {
+      "explanation": "组合不同结构单元可产生单独单元所不具备的有效响应。",
+      "sourceDigest": "345eee3fb6cd0de0f988f1789f10e14095483d75819c509e8c54ad92891874ae"
+    },
+    "entropy--high-entropy-alloys": {
+      "explanation": "构型熵量化随机混合对自由能的一项贡献。",
+      "sourceDigest": "917c65dd8674351121d66ea3ba2eac8d86880058af2ab34a635d1079259d5cb5"
+    },
+    "phase-diagrams--high-entropy-alloys": {
+      "explanation": "探索多元素成分时仍须检查相平衡。",
+      "sourceDigest": "cee1c2e01ee22a5b066525ec6378e52e1f9b5361e55455945d9e62a44108579a"
+    },
+    "modular-arithmetic--public-key-cryptography": {
+      "explanation": "在迪菲–赫尔曼方案中，双方都对同一个素数进行模幂运算；借助同余规则，次序不同的计算能够得到同一秘密值。",
+      "sourceDigest": "ff0f064f902a564b7d47a613a8083916f5d49dc0a841064578a1cc6210754159"
+    },
+    "fundamental-theorem-calculus--calculus": {
+      "explanation": "在适当条件下，对累积函数求导能还原被积函数。这一联系解释了为什么可以利用原函数求定积分。",
+      "sourceDigest": "47d6e0fa8cff13d446e05192d1b6f9b838ec2599a6c2aa1f5f04bd7b29dfdfd5"
+    },
+    "law-large-numbers--monte-carlo": {
+      "explanation": "如果样本独立同分布且均值有限，随着抽取次数增加，蒙特卡洛样本均值会收敛到所要估计的期望。",
+      "sourceDigest": "fc682ee56ec3aae7877f1f4c613967e3db93ad85cfa231b2c1775d65939927fe"
+    },
+    "martensitic-transformations--shape-memory-alloys": {
+      "explanation": "可逆马氏体相变能使某些变形材料在加热时恢复先前的形状；并非含马氏体的每种合金都有这种行为。",
+      "sourceDigest": "0d10acba940e14c1150c2a91b6c6df9824381bcaca7c67140b4ed606350b2eda"
+    },
+    "diffusion-in-solids--li-ion-intercalation": {
+      "explanation": "锂离子进入固态主体后还需到达内部可用的位置；固体中的扩散可能限制嵌入型电极的充电速度。",
+      "sourceDigest": "74500d15faa1fa5664513c782581c8e452ee9ca50980ece907fc8dc718e829fe"
+    },
+    "coriolis-effect--ekman-transport": {
+      "explanation": "在理想的风驱表层中，科里奥利加速度使水流转向；它与外加应力的平衡使净输运方向偏离风向。",
+      "sourceDigest": "1231695f81a421fab6181df5f69b5057ad23dcc0e091117fa75a4ca9f88080f3"
+    },
+    "spontaneous-symmetry-breaking--higgs-mechanism": {
+      "explanation": "在含适当标量场的规范理论中，破缺对称性的基态能使某些规范场获得质量；仅有整体对称性的破缺并不产生同样的机制。",
+      "sourceDigest": "cbe372b8cd557d3343fc6993c94e30648c7c820e7dfdb7577dfb6ca030589fab"
     }
   }
 }

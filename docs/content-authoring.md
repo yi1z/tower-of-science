@@ -67,7 +67,7 @@ The content validator checks shape, required references, IDs, chronology, cycles
 
 ## Branches, periods, and rendering
 
-`branches.json` has its own version, a stable section order, and ordered branch IDs. Keep IDs stable when renaming labels. The expanded release covers all 12 sections and 43 subbranches. `validateReleaseCoverage` checks 430–470 concepts and nonempty branches separately from the reusable content contract; revise those release targets intentionally for a later edition.
+`branches.json` has its own version, a stable section order, and ordered branch IDs. Keep IDs stable when renaming labels. Edition 2.1 covers all 12 sections and 43 subbranches. `validateReleaseCoverage` requires exactly 573 concepts, ten journeys, and nonempty branches. These release checks are separate from the reusable content contract; revise the targets intentionally for a later edition.
 
 Dates remain exact sorting anchors. The layout uses prehistory before 5000 BCE, 500-year floors to 500 BCE, 100-year floors to 1500, 25-year floors to 1850, 10-year floors to 1900, and five-year floors afterward. Era boundaries split periods. Empty floors are omitted. The precise chronological index is unaffected by these visual bins. Similar height means approximate contemporaneity, not simultaneous discovery.
 

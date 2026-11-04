@@ -47,7 +47,6 @@ test('new AI entries have bilingual details, prose definitions, searchable names
   for(const url of urls)assert(en.sourceIds.some(sourceId=>atlas.sources.find(s=>s.id===sourceId)?.url===url));
   for(const locale of ['en','zh-CN'] as const)for(const query of [en.title,zh.title])assert(searchLocalizedConcepts(query,locale).some(c=>c.id===id));
  }
- assert.equal(atlas.concepts.length,453);assert.equal(atlas.relationships.length,831);
 });
 
 test('sequence lineage is cited and separates editorial connections from documented influence',()=>{

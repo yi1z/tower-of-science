@@ -3845,6 +3845,2494 @@
           "xs-attention-mechanisms"
         ]
       }
+    },
+    {
+      "id": "confidence-intervals",
+      "title": "Confidence intervals",
+      "aliases": [
+        "frequentist coverage"
+      ],
+      "discipline": "methods",
+      "branchId": "methods-inference",
+      "tags": [
+        "Confidence intervals"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1937,
+        "label": "1937",
+        "precision": "exact",
+        "note": "Neyman’s 1937 exposition is the selected publication."
+      },
+      "summary": "A confidence procedure produces intervals that cover a fixed unknown parameter at a stated rate under repeated sampling.",
+      "problem": "How does uncertainty change when the same sampling procedure is repeated?",
+      "development": "Neyman defined the guarantee for a procedure across possible samples. This gives an interval a different interpretation from a Bayesian credible interval.",
+      "limitations": "A realized 95% interval does not assign a 95% posterior probability to its fixed parameter; incorrect sampling assumptions can spoil coverage.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Jerzy Neyman",
+          "role": "Formulated interval estimation through repeated-sampling coverage."
+        }
+      ],
+      "sourceIds": [
+        "e21-confidence-intervals"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-confidence-intervals"
+        ],
+        "history": [
+          "e21-confidence-intervals"
+        ]
+      },
+      "example": "A survey reports an interval around a population proportion using its sampling design.",
+      "representation": {
+        "kind": "formula",
+        "expression": "Pθ(L(X) ≤ θ ≤ U(X)) ≥ 1 − α",
+        "explanation": "L and U depend on random data X; θ is fixed and α is the nominal noncoverage level.",
+        "sourceIds": [
+          "e21-confidence-intervals"
+        ]
+      }
+    },
+    {
+      "id": "bootstrap-resampling",
+      "title": "Bootstrap resampling",
+      "aliases": [
+        "bootstrap"
+      ],
+      "discipline": "methods",
+      "branchId": "methods-inference",
+      "tags": [
+        "Bootstrap resampling"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1979,
+        "label": "1979",
+        "precision": "exact",
+        "note": "Efron’s 1979 paper introduced the named method."
+      },
+      "summary": "Repeated samples drawn from the observed data approximate how a statistic varies under sampling.",
+      "problem": "How can uncertainty be estimated when an analytic sampling distribution is difficult to obtain?",
+      "development": "Efron treated the empirical distribution as a stand-in for the population. Recomputing a statistic on resamples produces an estimated sampling distribution.",
+      "limitations": "Naive independent resampling breaks time or cluster dependence; rare extremes may be absent from the sample.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Bradley Efron",
+          "role": "Introduced the bootstrap resampling framework."
+        }
+      ],
+      "sourceIds": [
+        "e21-bootstrap-resampling"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-bootstrap-resampling"
+        ],
+        "history": [
+          "e21-bootstrap-resampling"
+        ]
+      },
+      "example": "Resample observations with replacement to estimate the standard error of a median.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Resample observations, recompute the statistic, inspect its variation",
+        "explanation": "The ordinary nonparametric bootstrap uses samples of the original size drawn with replacement.",
+        "sourceIds": [
+          "e21-bootstrap-resampling"
+        ]
+      }
+    },
+    {
+      "id": "meta-analysis",
+      "title": "Meta-analysis",
+      "aliases": [
+        "quantitative evidence synthesis"
+      ],
+      "discipline": "methods",
+      "branchId": "methods-inference",
+      "tags": [
+        "Meta-analysis"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1976,
+        "label": "1976",
+        "precision": "exact",
+        "note": "Glass introduced the term in 1976; quantitative pooling had earlier precedents."
+      },
+      "summary": "Meta-analysis combines comparable numerical results from several studies to estimate an overall effect or explore variation.",
+      "problem": "What does a collection of conflicting or imprecise studies jointly support?",
+      "development": "Glass distinguished analysis of study results from analysis of original observations. Later methods formalized weighting, heterogeneity, and sensitivity checks.",
+      "limitations": "Pooling cannot repair selective publication, incompatible outcomes, or bias shared by the included studies.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Gene V. Glass",
+          "role": "Named and advocated statistical analysis across studies."
+        }
+      ],
+      "sourceIds": [
+        "e21-meta-analysis"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-meta-analysis"
+        ],
+        "history": [
+          "e21-meta-analysis"
+        ]
+      },
+      "example": "Combine estimates of the same intervention effect while checking whether populations differ.",
+      "representation": {
+        "kind": "formula",
+        "expression": "θ̂ = Σwᵢθ̂ᵢ / Σwᵢ",
+        "explanation": "For a weighted common-effect summary, θ̂ᵢ is a study estimate and wᵢ a specified weight; agreement of estimands is essential.",
+        "sourceIds": [
+          "e21-meta-analysis"
+        ]
+      }
+    },
+    {
+      "id": "survival-analysis",
+      "title": "Survival analysis",
+      "aliases": [
+        "Kaplan–Meier estimator"
+      ],
+      "discipline": "methods",
+      "branchId": "methods-inference",
+      "tags": [
+        "Survival analysis"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1958,
+        "label": "1958",
+        "precision": "exact",
+        "note": "The product-limit paper anchors this entry; life-table methods predate it."
+      },
+      "summary": "Time-to-event analysis can use incomplete follow-up without treating everyone last seen as having had the event.",
+      "problem": "How can a study estimate time until failure if observation ends first for some units?",
+      "development": "Kaplan and Meier multiplied conditional survival fractions at successive event times, adjusting the risk set as observations ended.",
+      "limitations": "Informative censoring and competing events can invalidate a simple interpretation.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Edward Kaplan and Paul Meier",
+          "role": "Developed the product-limit estimator."
+        }
+      ],
+      "sourceIds": [
+        "e21-survival-analysis"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-survival-analysis"
+        ],
+        "history": [
+          "e21-survival-analysis"
+        ]
+      },
+      "example": "A still-functioning device at the end of a test contributes censored service time.",
+      "representation": {
+        "kind": "formula",
+        "expression": "Ŝ(t) = ∏_{tᵢ≤t}(1 − dᵢ/nᵢ)",
+        "explanation": "dᵢ counts events and nᵢ units at risk just before tᵢ; the standard interpretation assumes independent censoring.",
+        "sourceIds": [
+          "e21-survival-analysis"
+        ]
+      }
+    },
+    {
+      "id": "design-of-experiments",
+      "title": "Design of experiments",
+      "aliases": [
+        "experimental design"
+      ],
+      "discipline": "methods",
+      "branchId": "methods-inference",
+      "tags": [
+        "Design of experiments"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1935,
+        "label": "1935",
+        "precision": "exact",
+        "note": "Fisher’s 1935 book consolidated methods developed in agricultural experiments."
+      },
+      "summary": "The arrangement of treatments, replicates, and blocks determines which effects can be separated from background variation.",
+      "problem": "How can an experiment distinguish a treatment effect from differences between plots or batches?",
+      "development": "Fisher formalized designs that deliberately control the comparison before data collection. Factorial arrangements can also reveal interactions.",
+      "limitations": "Randomization does not remove measurement error, noncompliance, or poor choice of experimental units.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Ronald A. Fisher",
+          "role": "Systematized randomization, replication, and blocking in experimental design."
+        }
+      ],
+      "sourceIds": [
+        "e21-design-of-experiments"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-design-of-experiments"
+        ],
+        "history": [
+          "e21-design-of-experiments"
+        ]
+      },
+      "example": "Randomize fertilizer within soil blocks and repeat the treatments across blocks.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Plan comparisons before observing outcomes",
+        "explanation": "Randomization addresses allocation; replication estimates variation; blocking accounts for known differences.",
+        "sourceIds": [
+          "e21-design-of-experiments"
+        ]
+      }
+    },
+    {
+      "id": "principal-component-analysis",
+      "title": "Principal component analysis",
+      "aliases": [
+        "PCA"
+      ],
+      "discipline": "methods",
+      "branchId": "methods-inference",
+      "tags": [
+        "Principal component analysis"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1901,
+        "label": "1901",
+        "precision": "exact",
+        "note": "Pearson’s geometric fitting paper is the anchor; Hotelling later developed the component formulation."
+      },
+      "summary": "PCA finds perpendicular directions that successively account for as much variation in centered data as possible.",
+      "problem": "Can many correlated measurements be summarized with fewer coordinates?",
+      "development": "Pearson fitted lower-dimensional subspaces by minimizing perpendicular distances. A modern computation uses the covariance eigenvectors or the data matrix’s singular vectors.",
+      "limitations": "High variance need not mean scientific importance; scaling variables can rotate the components.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Karl Pearson",
+          "role": "Studied least-distance fitting of lines and planes to data."
+        }
+      ],
+      "sourceIds": [
+        "e21-principal-component-analysis"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-principal-component-analysis"
+        ],
+        "history": [
+          "e21-principal-component-analysis"
+        ]
+      },
+      "example": "Summarize correlated measurements of length, width, and height along a dominant size axis.",
+      "representation": {
+        "kind": "formula",
+        "expression": "Cv = λv",
+        "explanation": "For centered observations C is their covariance matrix; its largest eigenvalue λ identifies a maximum-variance unit direction v.",
+        "sourceIds": [
+          "e21-principal-component-analysis"
+        ]
+      }
+    },
+    {
+      "id": "missing-data-mechanisms",
+      "title": "Missing-data mechanisms",
+      "aliases": [
+        "missing at random"
+      ],
+      "discipline": "methods",
+      "branchId": "methods-inference",
+      "tags": [
+        "Missing-data mechanisms"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1976,
+        "label": "1976",
+        "precision": "exact",
+        "note": "Rubin’s 1976 paper distinguished assumptions about the missingness process."
+      },
+      "summary": "Inference depends on why values are missing, particularly whether absence depends on unobserved values after accounting for recorded information.",
+      "problem": "When can analysts ignore the mechanism that prevented a measurement?",
+      "development": "Rubin separated the data model from the response mechanism and stated conditions for ignorable likelihood or Bayesian inference.",
+      "limitations": "Missing at random is an assumption about conditional dependence; the observed data alone usually cannot verify it.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Donald Rubin",
+          "role": "Formalized conditions under which missingness can be ignored for inference."
+        }
+      ],
+      "sourceIds": [
+        "e21-missing-data-mechanisms"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-missing-data-mechanisms"
+        ],
+        "history": [
+          "e21-missing-data-mechanisms"
+        ]
+      },
+      "example": "If patients skip follow-up because of an unrecorded symptom, observed covariates may not explain absence.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Under MAR, missingness depends on observed rather than missing values, conditional on the observed data",
+        "explanation": "Ignorability also depends on the inferential setting and parameter assumptions.",
+        "sourceIds": [
+          "e21-missing-data-mechanisms"
+        ]
+      }
+    },
+    {
+      "id": "multiple-testing-control",
+      "title": "Multiple-testing control",
+      "aliases": [
+        "false discovery rate"
+      ],
+      "discipline": "methods",
+      "branchId": "methods-inference",
+      "tags": [
+        "Multiple-testing control"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1995,
+        "label": "1995",
+        "precision": "exact",
+        "note": "The 1995 paper introduced FDR control; familywise approaches existed earlier."
+      },
+      "summary": "Testing many hypotheses calls for an explicit choice of which aggregate error rate to control.",
+      "problem": "How many apparent discoveries might arise from running many tests?",
+      "development": "Benjamini and Hochberg controlled the expected fraction of false rejections among rejections, a different target from preventing any false positive.",
+      "limitations": "The guarantee depends on valid p-values and assumptions about test dependence; it does not give the error probability of each reported result.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Yoav Benjamini and Yosef Hochberg",
+          "role": "Introduced a step-up procedure for false discovery rate control."
+        }
+      ],
+      "sourceIds": [
+        "e21-multiple-testing-control"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-multiple-testing-control"
+        ],
+        "history": [
+          "e21-multiple-testing-control"
+        ]
+      },
+      "example": "Screen thousands of genes while controlling the expected proportion of false discoveries.",
+      "representation": {
+        "kind": "formula",
+        "expression": "FDR = E[V / max(R,1)]",
+        "explanation": "The false discovery rate (FDR) is the expected fraction of rejected hypotheses that are actually true: V counts false rejections, R counts all rejections, and E averages over repeated data. When R is zero the fraction is defined as zero.",
+        "sourceIds": [
+          "e21-multiple-testing-control"
+        ]
+      }
+    },
+    {
+      "id": "reproducible-research",
+      "title": "Computationally reproducible research",
+      "aliases": [
+        "reproducible research"
+      ],
+      "discipline": "methods",
+      "branchId": "methods-inference",
+      "tags": [
+        "Computationally reproducible research"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1992,
+        "label": "1992",
+        "precision": "exact",
+        "note": "The 1992 electronic-document demonstration anchors computational reproducibility, not all practices of replication."
+      },
+      "summary": "A computational result is reproducible when another analyst can regenerate it from the specified inputs and procedures.",
+      "problem": "Can a reader regenerate a published figure rather than merely inspect it?",
+      "development": "Geophysical researchers bundled programs and processing instructions with results so computations could be rerun and examined.",
+      "limitations": "Rerunning faulty code can faithfully reproduce an error; independent replication with new data addresses a different question.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Jon Claerbout and Martin Karrenbach",
+          "role": "Demonstrated executable research documents in geophysics."
+        }
+      ],
+      "sourceIds": [
+        "e21-reproducible-research"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-reproducible-research"
+        ],
+        "history": [
+          "e21-reproducible-research"
+        ]
+      },
+      "example": "A seismic image can be rebuilt from the recorded input traces and processing sequence.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Specified inputs + executable procedure → recoverable result",
+        "explanation": "Software versions, parameters, and random seeds can be part of the procedure.",
+        "sourceIds": [
+          "e21-reproducible-research"
+        ]
+      }
+    },
+    {
+      "id": "atomic-clocks",
+      "title": "Atomic clocks",
+      "aliases": [
+        "cesium atomic clock"
+      ],
+      "discipline": "methods",
+      "branchId": "methods-instruments",
+      "tags": [
+        "Atomic clocks"
+      ],
+      "kind": "instrument",
+      "date": {
+        "year": 1955,
+        "label": "1955",
+        "precision": "exact",
+        "note": "The British cesium resonator is the milestone; earlier molecular frequency standards preceded it."
+      },
+      "summary": "An atomic clock locks an oscillator to a reproducible transition frequency and counts cycles to measure time.",
+      "problem": "How can distant laboratories realize a common time interval?",
+      "development": "Essen and Parry compared a microwave oscillator with a cesium transition, providing a stable frequency reference independent of an astronomical day.",
+      "limitations": "Environmental shifts, oscillator noise, and relativistic effects still require correction.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Louis Essen and J. V. L. Parry",
+          "role": "Demonstrated a practical cesium frequency standard."
+        }
+      ],
+      "sourceIds": [
+        "e21-atomic-clocks"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-atomic-clocks"
+        ],
+        "history": [
+          "e21-atomic-clocks"
+        ]
+      },
+      "example": "Frequency comparisons reveal tiny drifts between clocks in separate laboratories.",
+      "representation": {
+        "kind": "formula",
+        "expression": "t = N / ν",
+        "explanation": "N counted cycles at frequency ν measure elapsed time t when the frequency reference is maintained.",
+        "sourceIds": [
+          "e21-atomic-clocks"
+        ]
+      }
+    },
+    {
+      "id": "scanning-tunneling-microscopy",
+      "title": "Scanning tunneling microscopy",
+      "aliases": [
+        "STM"
+      ],
+      "discipline": "methods",
+      "branchId": "methods-instruments",
+      "tags": [
+        "Scanning tunneling microscopy"
+      ],
+      "kind": "instrument",
+      "date": {
+        "year": 1982,
+        "label": "1982",
+        "precision": "exact",
+        "note": "The 1982 surface-study paper is the selected experimental report."
+      },
+      "summary": "A sharp conducting tip scans a surface while a tunneling current probes local electronic structure with atomic-scale sensitivity.",
+      "problem": "How can a surface be mapped below the wavelength limit of optical microscopes?",
+      "development": "Feedback adjusts the tip height to maintain a target current, or measures changes in current at fixed height.",
+      "limitations": "Contrast reflects electronic states as well as geometry; tip condition and surface conductivity matter.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Gerd Binnig, Heinrich Rohrer, Christoph Gerber, and Edmund Weibel",
+          "role": "Demonstrated scanning tunneling surface measurements."
+        }
+      ],
+      "sourceIds": [
+        "e21-scanning-tunneling-microscopy"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-scanning-tunneling-microscopy"
+        ],
+        "history": [
+          "e21-scanning-tunneling-microscopy"
+        ]
+      },
+      "example": "Scanning a crystalline surface can resolve a repeating atomic-scale pattern.",
+      "representation": {
+        "kind": "formula",
+        "expression": "I ∝ exp(−2κz)",
+        "explanation": "In a simple barrier approximation z is tip–sample separation and κ a decay constant; bias and electronic states also affect current.",
+        "sourceIds": [
+          "e21-scanning-tunneling-microscopy"
+        ]
+      }
+    },
+    {
+      "id": "cryo-electron-microscopy",
+      "title": "Cryo-electron microscopy",
+      "aliases": [
+        "cryo-EM"
+      ],
+      "discipline": "methods",
+      "branchId": "methods-instruments",
+      "tags": [
+        "Cryo-electron microscopy"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1984,
+        "label": "1984",
+        "precision": "exact",
+        "note": "The 1984 report of vitrified virus suspensions is a preparation milestone, not the invention of every cryo-EM technique."
+      },
+      "summary": "Rapid freezing can preserve hydrated biological specimens in vitreous ice for low-dose electron imaging.",
+      "problem": "How can an electron microscope image delicate molecules without drying or crystallizing their surroundings?",
+      "development": "Vitrification solved a preparation problem. Image alignment, averaging, and reconstruction then allowed many noisy projections to yield structural information.",
+      "limitations": "Radiation damage, preferred orientations, and molecular heterogeneity limit attainable detail.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Jacques Dubochet and collaborators",
+          "role": "Demonstrated vitrified aqueous specimens for electron microscopy."
+        }
+      ],
+      "sourceIds": [
+        "e21-cryo-electron-microscopy"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-cryo-electron-microscopy"
+        ],
+        "history": [
+          "e21-cryo-electron-microscopy"
+        ]
+      },
+      "example": "Combine many particle images to reconstruct a protein complex in three dimensions.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Vitrified specimen + low-dose projections → structural reconstruction",
+        "explanation": "Single-particle reconstruction is one cryo-EM workflow; not every experiment uses isolated identical particles.",
+        "sourceIds": [
+          "e21-cryo-electron-microscopy"
+        ]
+      }
+    },
+    {
+      "id": "gradient-descent",
+      "title": "Gradient descent",
+      "aliases": [
+        "steepest descent"
+      ],
+      "discipline": "computing",
+      "branchId": "computing-algorithms",
+      "tags": [
+        "Gradient descent"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1847,
+        "label": "1847",
+        "precision": "exact",
+        "note": "Cauchy’s 1847 procedure predates electronic computation and modern machine learning."
+      },
+      "summary": "An iterative algorithm moves parameters opposite a function’s local gradient to reduce its value.",
+      "problem": "How can a minimum be approached without solving for it directly?",
+      "development": "Cauchy used local derivative information to reduce a residual objective. The same update principle now fits models with many parameters.",
+      "limitations": "A large step can increase the objective; nonconvex objectives need not lead to a global minimum.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Augustin-Louis Cauchy",
+          "role": "Described an iterative descent method for simultaneous equations."
+        }
+      ],
+      "sourceIds": [
+        "e21-gradient-descent",
+        "e21-gradient-descent-2"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-gradient-descent",
+          "e21-gradient-descent-2"
+        ],
+        "history": [
+          "e21-gradient-descent",
+          "e21-gradient-descent-2"
+        ]
+      },
+      "example": "Adjust a regression slope in the direction that reduces squared prediction error.",
+      "representation": {
+        "kind": "formula",
+        "expression": "xₖ₊₁ = xₖ − η∇f(xₖ)",
+        "explanation": "For a differentiable objective f, xₖ is the current parameter vector, ∇f(xₖ) its gradient, and η a positive step size. Subtracting the gradient takes a locally downhill step in Euclidean coordinates if η is small enough.",
+        "sourceIds": [
+          "e21-gradient-descent",
+          "e21-gradient-descent-2"
+        ]
+      }
+    },
+    {
+      "id": "automatic-differentiation",
+      "title": "Automatic differentiation",
+      "aliases": [
+        "algorithmic differentiation"
+      ],
+      "discipline": "computing",
+      "branchId": "computing-algorithms",
+      "tags": [
+        "Automatic differentiation"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1964,
+        "label": "1964",
+        "precision": "exact",
+        "note": "Wengert’s 1964 program is an implementation milestone within an older mathematical tradition."
+      },
+      "summary": "Apply the chain rule to the elementary operations actually performed by a program to compute derivatives.",
+      "problem": "How can a long numerical computation yield derivatives without hand differentiation?",
+      "development": "Wengert organized computations into a sequence of intermediate values. Forward and reverse accumulation propagate derivative information along such dependencies.",
+      "limitations": "Nondifferentiable operations and executed branches require care; numerical roundoff remains.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "R. E. Wengert",
+          "role": "Recorded elementary operations for automatic derivative evaluation."
+        }
+      ],
+      "sourceIds": [
+        "e21-automatic-differentiation"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-automatic-differentiation"
+        ],
+        "history": [
+          "e21-automatic-differentiation"
+        ]
+      },
+      "example": "Differentiate a simulation’s output with respect to an input parameter.",
+      "representation": {
+        "kind": "formula",
+        "expression": "dy/dx = (dy/du)(du/dx)",
+        "explanation": "For a differentiable composition y(u(x)), local derivatives multiply; contributions from multiple paths add.",
+        "sourceIds": [
+          "e21-automatic-differentiation"
+        ]
+      }
+    },
+    {
+      "id": "decision-trees",
+      "title": "Decision trees",
+      "aliases": [
+        "ID3"
+      ],
+      "discipline": "computing",
+      "branchId": "computing-learning",
+      "tags": [
+        "Decision trees"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1986,
+        "label": "1986",
+        "precision": "exact",
+        "note": "Quinlan’s ID3 exposition is the anchor; decision trees and earlier induction systems predate it."
+      },
+      "summary": "A decision tree predicts by following a sequence of feature tests to a leaf.",
+      "problem": "How can examples be turned into a sequence of understandable tests?",
+      "development": "ID3 selected splits using information gain, recursively separating training examples into more homogeneous groups.",
+      "limitations": "Greedy splits need not be globally best, and deep trees can memorize noise.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "J. Ross Quinlan",
+          "role": "Developed and analyzed ID3 tree induction."
+        }
+      ],
+      "sourceIds": [
+        "e21-decision-trees"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-decision-trees"
+        ],
+        "history": [
+          "e21-decision-trees"
+        ]
+      },
+      "example": "Classify a specimen by successive tests of visible traits.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Feature test → branch → leaf prediction",
+        "explanation": "A learned tree selects the tests from data; the leaf stores a class or numerical estimate.",
+        "sourceIds": [
+          "e21-decision-trees"
+        ]
+      }
+    },
+    {
+      "id": "ensemble-learning",
+      "title": "Ensemble learning",
+      "aliases": [
+        "bagging"
+      ],
+      "discipline": "computing",
+      "branchId": "computing-learning",
+      "tags": [
+        "Ensemble learning"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1996,
+        "label": "1996",
+        "precision": "exact",
+        "note": "Bagging is the dated example, not the first use of multiple predictors."
+      },
+      "summary": "Several predictors can be combined so that their errors partly offset one another.",
+      "problem": "How can an unstable learner give more stable predictions?",
+      "development": "Breiman trained models on bootstrap versions of a dataset and combined their predictions. Boosting and other ensembles use different training rules.",
+      "limitations": "Highly correlated errors limit improvement; aggregation does not automatically correct shared bias.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Leo Breiman",
+          "role": "Developed bootstrap aggregation of predictors."
+        }
+      ],
+      "sourceIds": [
+        "e21-ensemble-learning"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-ensemble-learning"
+        ],
+        "history": [
+          "e21-ensemble-learning"
+        ]
+      },
+      "example": "Average predictions from regression trees fitted to different resamples.",
+      "representation": {
+        "kind": "formula",
+        "expression": "ŷ = (1/B)Σ f_{b}(x)",
+        "explanation": "In bagged regression, f_b is the predictor fitted to bootstrap sample b. ŷ averages their predictions for the same input x over B samples; classification can instead use votes.",
+        "sourceIds": [
+          "e21-ensemble-learning"
+        ]
+      }
+    },
+    {
+      "id": "self-supervised-learning",
+      "title": "Self-supervised learning",
+      "aliases": [],
+      "discipline": "computing",
+      "branchId": "computing-learning",
+      "tags": [
+        "Self-supervised learning"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 2015,
+        "label": "2015",
+        "precision": "exact",
+        "note": "The date identifies a visual context-prediction example; predicting parts of data from other parts has earlier precedents."
+      },
+      "summary": "Training targets are constructed from the data themselves, allowing a model to learn useful representations without manually labeling each example.",
+      "problem": "Can unlabeled observations supply their own learning signal?",
+      "development": "A context-prediction task asked a network to infer the relative position of image patches, encouraging sensitivity to visual structure.",
+      "limitations": "A proxy task may reward shortcuts rather than transferable features; downstream evaluation is essential.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Carl Doersch, Abhinav Gupta, and Alexei Efros",
+          "role": "Demonstrated visual representation learning by context prediction."
+        }
+      ],
+      "sourceIds": [
+        "e21-self-supervised-learning"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-self-supervised-learning"
+        ],
+        "history": [
+          "e21-self-supervised-learning"
+        ]
+      },
+      "example": "Hide part of an image and train a model to infer information about it from the rest.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Construct a target from the input data, then predict it",
+        "explanation": "The automatically generated target differs from a human annotation.",
+        "sourceIds": [
+          "e21-self-supervised-learning"
+        ]
+      }
+    },
+    {
+      "id": "graph-neural-networks",
+      "title": "Graph neural networks",
+      "aliases": [
+        "GNN"
+      ],
+      "discipline": "computing",
+      "branchId": "computing-learning",
+      "tags": [
+        "Graph neural networks"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 2009,
+        "label": "2009",
+        "precision": "exact",
+        "note": "The 2009 journal issue, following online publication in 2008, is the dated milestone."
+      },
+      "summary": "A graph neural network updates representations using connections among entities, rather than assuming a rectangular grid.",
+      "problem": "How can a learning model use a molecule’s bonds as well as its atom labels?",
+      "development": "Scarselli and colleagues defined node states through neighborhood interactions and a convergent update. Later message-passing models also use finite stacks of layers.",
+      "limitations": "Local aggregation can miss distinctions between different graphs; repeated mixing can blur node differences.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Franco Scarselli and collaborators",
+          "role": "Formulated a neural model on graph-structured data."
+        }
+      ],
+      "sourceIds": [
+        "e21-graph-neural-networks"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-graph-neural-networks"
+        ],
+        "history": [
+          "e21-graph-neural-networks"
+        ]
+      },
+      "example": "Aggregate bonded neighbors’ features to predict a molecular property.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Neighbor messages → node update → prediction",
+        "explanation": "Neighborhood aggregation should respect the intended invariance to node ordering.",
+        "sourceIds": [
+          "e21-graph-neural-networks"
+        ]
+      }
+    },
+    {
+      "id": "differential-privacy",
+      "title": "Differential privacy",
+      "aliases": [],
+      "discipline": "computing",
+      "branchId": "computing-information",
+      "tags": [
+        "Differential privacy"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 2006,
+        "label": "2006",
+        "precision": "exact",
+        "note": "The 2006 formulation is the anchor for the mathematical guarantee."
+      },
+      "summary": "A randomized analysis is differentially private when changing one participant’s contribution changes output probabilities only within specified bounds.",
+      "problem": "Can statistics be released with a quantified limit on one record’s influence?",
+      "development": "Dwork and colleagues compared output distributions on neighboring datasets, replacing informal anonymization with a mechanism-level guarantee.",
+      "limitations": "The privacy definition depends on adjacency and parameters; repeated releases consume privacy budget and noise can reduce utility.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Cynthia Dwork and collaborators",
+          "role": "Developed a formal neighboring-dataset privacy guarantee."
+        }
+      ],
+      "sourceIds": [
+        "e21-differential-privacy"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-differential-privacy"
+        ],
+        "history": [
+          "e21-differential-privacy"
+        ]
+      },
+      "example": "Release a count after adding noise calibrated to a single record’s maximum effect.",
+      "representation": {
+        "kind": "formula",
+        "expression": "P(M(D) ∈ S) ≤ e^{ε}P(M(D′) ∈ S)",
+        "explanation": "D and D′ differ in one person’s record. For every output event S, the probabilities under randomized mechanism M differ by at most the multiplicative factor e^ε in either direction. Smaller ε gives a tighter pure-privacy bound.",
+        "sourceIds": [
+          "e21-differential-privacy"
+        ]
+      }
+    },
+    {
+      "id": "zero-knowledge-proofs",
+      "title": "Zero-knowledge proofs",
+      "aliases": [],
+      "discipline": "computing",
+      "branchId": "computing-information",
+      "tags": [
+        "Zero-knowledge proofs"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1985,
+        "label": "1985",
+        "precision": "exact",
+        "note": "The 1985 conference paper precedes the expanded journal treatment."
+      },
+      "summary": "A prover can convince a verifier of a statement while the verifier’s view can be simulated without the secret witness.",
+      "problem": "How can someone demonstrate knowledge without revealing the knowledge itself?",
+      "development": "Goldwasser, Micali, and Rackoff made simulation central to measuring what an interactive proof reveals beyond the truth of its claim.",
+      "limitations": "Security depends on the proof model and assumptions; zero knowledge does not make a false statement true.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Shafi Goldwasser, Silvio Micali, and Charles Rackoff",
+          "role": "Defined knowledge complexity for interactive proofs."
+        }
+      ],
+      "sourceIds": [
+        "e21-zero-knowledge-proofs"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-zero-knowledge-proofs"
+        ],
+        "history": [
+          "e21-zero-knowledge-proofs"
+        ]
+      },
+      "example": "Demonstrate possession of a witness to a mathematical relation without sending the witness.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Verifier’s view is simulatable without the witness",
+        "explanation": "Formal variants require perfect, statistical, or computational indistinguishability.",
+        "sourceIds": [
+          "e21-zero-knowledge-proofs"
+        ]
+      }
+    },
+    {
+      "id": "quantum-error-correction",
+      "title": "Quantum error correction",
+      "aliases": [
+        "QEC"
+      ],
+      "discipline": "computing",
+      "branchId": "computing-information",
+      "tags": [
+        "Quantum error correction"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1995,
+        "label": "1995",
+        "precision": "exact",
+        "note": "Shor’s 1995 code is the selected milestone."
+      },
+      "summary": "Quantum information can be encoded across several physical qubits so that error syndromes reveal correctable damage without reading the logical state.",
+      "problem": "How can a fragile unknown quantum state be protected when it cannot simply be copied?",
+      "development": "Shor combined redundancy against bit and phase errors in an entangled encoding. Syndrome measurements extract error information rather than the encoded amplitudes.",
+      "limitations": "A code corrects only its specified error set; noisy gates, correlated faults, and overhead complicate implementation.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Peter Shor",
+          "role": "Constructed a nine-qubit quantum error-correcting code."
+        }
+      ],
+      "sourceIds": [
+        "e21-quantum-error-correction"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-quantum-error-correction"
+        ],
+        "history": [
+          "e21-quantum-error-correction"
+        ]
+      },
+      "example": "A nine-qubit code protects one logical qubit against an arbitrary error on one physical qubit.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Encode logical state → measure syndrome → recover",
+        "explanation": "The redundant encoding is not a collection of independent copies of an unknown state.",
+        "sourceIds": [
+          "e21-quantum-error-correction"
+        ]
+      }
+    },
+    {
+      "id": "flp-impossibility",
+      "title": "FLP impossibility",
+      "aliases": [
+        "asynchronous consensus impossibility"
+      ],
+      "discipline": "computing",
+      "branchId": "computing-systems",
+      "tags": [
+        "FLP impossibility"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1985,
+        "label": "1985",
+        "precision": "exact",
+        "note": "The 1985 journal article is the selected publication milestone."
+      },
+      "summary": "No deterministic consensus protocol can guarantee both agreement and termination in every admissible fully asynchronous execution with even one possible crash.",
+      "problem": "How can a process distinguish a crashed peer from an arbitrarily slow one?",
+      "development": "The proof constructs an execution that remains undecided by carefully scheduling events. The issue is guaranteed progress under the model’s timing assumptions.",
+      "limitations": "Randomization, timing assumptions, or failure detectors change the model; the theorem does not say practical consensus never works.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Michael Fischer, Nancy Lynch, and Michael Paterson",
+          "role": "Proved the asynchronous deterministic consensus limit."
+        }
+      ],
+      "sourceIds": [
+        "e21-flp-impossibility"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-flp-impossibility"
+        ],
+        "history": [
+          "e21-flp-impossibility"
+        ]
+      },
+      "example": "A delayed message cannot reliably certify that its sender has crashed.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Full asynchrony + possible crash preclude guaranteed deterministic consensus termination",
+        "explanation": "Consensus also requires agreement and nontrivial validity; merely returning a fixed value is not a solution.",
+        "sourceIds": [
+          "e21-flp-impossibility"
+        ]
+      }
+    },
+    {
+      "id": "transfer-functions",
+      "title": "Transfer functions",
+      "aliases": [],
+      "discipline": "engineering",
+      "branchId": "engineering-control",
+      "tags": [
+        "Transfer functions"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1940,
+        "label": "1940",
+        "precision": "exact",
+        "note": "Bode’s amplifier analysis anchors an application, not the invention of transform methods."
+      },
+      "summary": "A transfer function summarizes a linear time-invariant system’s input–output behavior in a transformed frequency variable.",
+      "problem": "Can a system be analyzed without tracing all its internal motions?",
+      "development": "Network and feedback engineers expressed differential-equation behavior through algebraic functions. Multiplication then describes cascaded stages under appropriate interconnection assumptions.",
+      "limitations": "The usual ratio assumes zero initial conditions; distinct internal realizations can have identical input–output transfers.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Hendrik W. Bode",
+          "role": "Applied frequency-domain transfer analysis to feedback amplifiers."
+        }
+      ],
+      "sourceIds": [
+        "e21-transfer-functions",
+        "e21-transfer-functions-2"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-transfer-functions",
+          "e21-transfer-functions-2"
+        ],
+        "history": [
+          "e21-transfer-functions",
+          "e21-transfer-functions-2"
+        ]
+      },
+      "example": "A first-order thermal sensor attenuates fast temperature changes.",
+      "representation": {
+        "kind": "formula",
+        "expression": "G(s) = Y(s)/U(s)",
+        "explanation": "Y and U are Laplace transforms of output and input for a single-input, single-output linear time-invariant system at zero initial state.",
+        "sourceIds": [
+          "e21-transfer-functions",
+          "e21-transfer-functions-2"
+        ]
+      }
+    },
+    {
+      "id": "bode-plots",
+      "title": "Bode plots",
+      "aliases": [
+        "frequency response plot"
+      ],
+      "discipline": "engineering",
+      "branchId": "engineering-control",
+      "tags": [
+        "Bode plots"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1940,
+        "label": "1940",
+        "precision": "exact",
+        "note": "The 1940 paper is the selected frequency-response milestone."
+      },
+      "summary": "Separate magnitude and phase plots show how a linear system responds as the input frequency changes.",
+      "problem": "Which frequencies are amplified, delayed in phase, or strongly attenuated?",
+      "development": "Bode’s feedback work linked frequency response to stability and design. Logarithmic frequency axes make behavior across many decades readable.",
+      "limitations": "Magnitude alone does not determine arbitrary phase; simple margin rules require the appropriate loop assumptions.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Hendrik W. Bode",
+          "role": "Related magnitude and phase in feedback-amplifier design."
+        }
+      ],
+      "sourceIds": [
+        "e21-transfer-functions"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-transfer-functions"
+        ],
+        "history": [
+          "e21-transfer-functions"
+        ]
+      },
+      "example": "A first-order low-pass filter rolls off at about 20 dB per decade well above its corner frequency.",
+      "representation": {
+        "kind": "formula",
+        "expression": "M(ω) = 20 log₁₀(∣G(iω)∣)",
+        "explanation": "At angular frequency ω, evaluate transfer function G at iω, where i² = −1. M is the magnitude of a dimensionless amplitude ratio in decibels; the companion plot gives its phase angle.",
+        "sourceIds": [
+          "e21-transfer-functions"
+        ]
+      }
+    },
+    {
+      "id": "observability",
+      "title": "Observability",
+      "aliases": [],
+      "discipline": "engineering",
+      "branchId": "engineering-control",
+      "tags": [
+        "Observability"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1960,
+        "label": "1960",
+        "precision": "exact",
+        "note": "Kalman’s 1960 control-system formulation is the anchor."
+      },
+      "summary": "A system is observable when different initial states can be distinguished from measured outputs over time given known inputs.",
+      "problem": "Can hidden states be reconstructed from the available sensors?",
+      "development": "State-space analysis converted a question about sensor information into algebraic tests for linear systems.",
+      "limitations": "Mathematical observability does not guarantee accurate estimates with noisy or poorly conditioned measurements.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Rudolf Kalman",
+          "role": "Formalized state reconstruction and its dual relation to controllability."
+        }
+      ],
+      "sourceIds": [
+        "e21-observability"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-observability"
+        ],
+        "history": [
+          "e21-observability"
+        ]
+      },
+      "example": "Position measured over time may reveal an unmeasured velocity.",
+      "representation": {
+        "kind": "formula",
+        "expression": "rank([C; CA; …; CA^{n−1}]) = n",
+        "explanation": "For an n-state linear time-invariant model, A evolves the state and C maps it to output; semicolons stack rows.",
+        "sourceIds": [
+          "e21-observability"
+        ]
+      }
+    },
+    {
+      "id": "controllability",
+      "title": "Controllability",
+      "aliases": [],
+      "discipline": "engineering",
+      "branchId": "engineering-control",
+      "tags": [
+        "Controllability"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1960,
+        "label": "1960",
+        "precision": "exact",
+        "note": "The 1960 formulation anchors the finite-dimensional linear criterion."
+      },
+      "summary": "A controllable linear system can be steered between arbitrary states in finite time by suitable inputs.",
+      "problem": "Can the available actuators actually move every state direction?",
+      "development": "Kalman related input directions and their evolution under the system dynamics to the span of reachable states.",
+      "limitations": "An unconstrained rank test does not account for input saturation, energy limits, or uncertainty.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Rudolf Kalman",
+          "role": "Formalized reachability by available control inputs."
+        }
+      ],
+      "sourceIds": [
+        "e21-observability"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-observability"
+        ],
+        "history": [
+          "e21-observability"
+        ]
+      },
+      "example": "An actuator cannot steer an independent mode to which its input has no coupling.",
+      "representation": {
+        "kind": "formula",
+        "expression": "rank([B, AB, …, A^{n−1}B]) = n",
+        "explanation": "For a continuous-time n-state linear time-invariant system, B maps inputs to states and A gives the dynamics.",
+        "sourceIds": [
+          "e21-observability"
+        ]
+      }
+    },
+    {
+      "id": "robust-control",
+      "title": "Robust control",
+      "aliases": [
+        "H-infinity control"
+      ],
+      "discipline": "engineering",
+      "branchId": "engineering-control",
+      "tags": [
+        "Robust control"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1981,
+        "label": "1981",
+        "precision": "exact",
+        "note": "Zames’s 1981 formulation marks a milestone in H-infinity design, not all robustness analysis."
+      },
+      "summary": "Robust control designs feedback to retain specified stability or performance over a stated set of uncertainties.",
+      "problem": "Will a controller still work if the plant differs from its nominal model?",
+      "development": "Worst-case sensitivity formulations use bounds on disturbance amplification to guide controller synthesis.",
+      "limitations": "A guarantee covers only the modeled uncertainty set; overly broad bounds can make a design conservative.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "George Zames",
+          "role": "Formulated a worst-case feedback sensitivity design problem."
+        }
+      ],
+      "sourceIds": [
+        "e21-robust-control"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-robust-control"
+        ],
+        "history": [
+          "e21-robust-control"
+        ]
+      },
+      "example": "Limit the largest amplification of a disturbance over a chosen range of modeled dynamics.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Bound worst-case closed-loop response",
+        "explanation": "A design must specify the uncertainty, disturbance, and performance measure it promises to handle.",
+        "sourceIds": [
+          "e21-robust-control"
+        ]
+      }
+    },
+    {
+      "id": "adaptive-control",
+      "title": "Adaptive control",
+      "aliases": [
+        "self-tuning regulator"
+      ],
+      "discipline": "engineering",
+      "branchId": "engineering-control",
+      "tags": [
+        "Adaptive control"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1973,
+        "label": "1973",
+        "precision": "exact",
+        "note": "The 1973 self-tuning regulator is a representative adaptive strategy; other approaches predate it."
+      },
+      "summary": "An adaptive controller updates its parameters during operation using measurements of how the system behaves.",
+      "problem": "How can control remain useful when a plant’s parameters are initially unknown or changing?",
+      "development": "Åström and Wittenmark combined online estimation with a regulator computed from the estimated model.",
+      "limitations": "Insufficient excitation, noise, or fast changes can undermine estimates; adaptation alone does not guarantee stability.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Karl J. Åström and Björn Wittenmark",
+          "role": "Analyzed a self-tuning regulator using estimated dynamics."
+        }
+      ],
+      "sourceIds": [
+        "e21-adaptive-control"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-adaptive-control"
+        ],
+        "history": [
+          "e21-adaptive-control"
+        ]
+      },
+      "example": "A regulator updates its gains as measurements reveal a changing process response.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Estimate dynamics → update control law → observe response",
+        "explanation": "This loop describes indirect adaptive control; other adaptive schemes update control parameters directly.",
+        "sourceIds": [
+          "e21-adaptive-control"
+        ]
+      }
+    },
+    {
+      "id": "system-identification",
+      "title": "System identification",
+      "aliases": [],
+      "discipline": "engineering",
+      "branchId": "engineering-control",
+      "tags": [
+        "System identification"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1965,
+        "label": "1965",
+        "precision": "exact",
+        "note": "The 1965 operating-record study is the selected computational milestone."
+      },
+      "summary": "System identification fits a dynamical model to time-ordered observations of inputs and outputs.",
+      "problem": "What model of a process is supported by its measured responses?",
+      "development": "Åström and Bohlin studied numerical estimation for discrete-time systems. Model choice, experimental excitation, and residual checks all affect the result.",
+      "limitations": "Different models can fit the same limited data; predictive fit does not establish a unique physical mechanism.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Karl J. Åström and Torsten Bohlin",
+          "role": "Estimated dynamical models from operating records."
+        }
+      ],
+      "sourceIds": [
+        "e21-system-identification"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-system-identification"
+        ],
+        "history": [
+          "e21-system-identification"
+        ]
+      },
+      "example": "Fit a building’s thermal response from heating inputs and recorded room temperatures.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Measured input and output histories → fitted dynamical model",
+        "explanation": "Use separate validation data or prediction errors to check how well the model generalizes.",
+        "sourceIds": [
+          "e21-system-identification"
+        ]
+      }
+    },
+    {
+      "id": "finite-volume-method",
+      "title": "Finite-volume method",
+      "aliases": [
+        "control-volume discretization"
+      ],
+      "discipline": "engineering",
+      "branchId": "engineering-mechanical",
+      "tags": [
+        "Finite-volume method"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1972,
+        "label": "1972",
+        "precision": "exact",
+        "note": "The 1972 flow procedure exemplifies finite-volume practice; it is not the first use of balance volumes."
+      },
+      "summary": "Divide a domain into cells and update each cell’s conserved quantity from fluxes through its faces and sources inside.",
+      "problem": "How can a numerical flow solver conserve what leaves one cell and enters the next?",
+      "development": "Control-volume methods integrate conservation laws over cells. Using a single shared interface flux makes neighboring contributions cancel exactly in the discrete balance.",
+      "limitations": "Conservation alone does not ensure accuracy or stability; flux approximation, mesh, and time step matter.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Suhas Patankar and Dudley Spalding",
+          "role": "Developed an influential control-volume flow calculation."
+        }
+      ],
+      "sourceIds": [
+        "e21-finite-volume-method"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-finite-volume-method"
+        ],
+        "history": [
+          "e21-finite-volume-method"
+        ]
+      },
+      "example": "Track heat flowing through the six faces of a rectangular cell.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Change in cell content = net inward flux + internal sources",
+        "explanation": "All terms must refer to the same cell, conserved quantity, and time interval.",
+        "sourceIds": [
+          "e21-finite-volume-method"
+        ]
+      }
+    },
+    {
+      "id": "structural-buckling",
+      "title": "Structural buckling",
+      "aliases": [
+        "Euler buckling"
+      ],
+      "discipline": "engineering",
+      "branchId": "engineering-mechanical",
+      "tags": [
+        "Structural buckling"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1744,
+        "label": "1744",
+        "precision": "exact",
+        "note": "Euler’s 1744 elastic-curve work anchors the ideal column calculation."
+      },
+      "summary": "A compressed structure can lose stability by deflecting sideways before its material reaches crushing strength.",
+      "problem": "Why can a long slender column fail under a much smaller load than a short block?",
+      "development": "Euler analyzed stability of elastic columns, relating the critical load to bending stiffness, length, and end restraint.",
+      "limitations": "Imperfections, inelasticity, eccentric loading, and local modes can invalidate the ideal prediction.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Leonhard Euler",
+          "role": "Derived an elastic critical-load relation for slender columns."
+        }
+      ],
+      "sourceIds": [
+        "e21-structural-buckling"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-structural-buckling"
+        ],
+        "history": [
+          "e21-structural-buckling"
+        ]
+      },
+      "example": "Doubling the length of an otherwise identical pin-ended ideal column quarters its critical load.",
+      "representation": {
+        "kind": "formula",
+        "expression": "P_{cr} = π²EI / L²",
+        "explanation": "P_cr is the ideal load at which a straight, slender, pin-ended column becomes unstable under axial compression. E is Young’s modulus, I the second moment of area about the bending axis, and L the column length.",
+        "sourceIds": [
+          "e21-structural-buckling"
+        ]
+      }
+    },
+    {
+      "id": "fatigue-life",
+      "title": "Fatigue life",
+      "aliases": [
+        "S–N curve"
+      ],
+      "discipline": "engineering",
+      "branchId": "engineering-mechanical",
+      "tags": [
+        "Fatigue life"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1910,
+        "label": "1910",
+        "precision": "exact",
+        "note": "Basquin’s 1910 stress–life relation followed Wöhler’s nineteenth-century fatigue tests."
+      },
+      "summary": "Repeated loading can initiate and grow damage until a component fails, even below its static strength.",
+      "problem": "How many load cycles can a part endure under specified conditions?",
+      "development": "Stress–life tests relate a cyclic stress level to observed lifetimes. Basquin expressed an empirical power-law regime on logarithmic axes.",
+      "limitations": "Life is scattered and sensitive to surface, mean stress, environment, and variable loading; one curve is not universal.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Olin Hanson Basquin",
+          "role": "Related alternating stress amplitude to cycles to failure."
+        }
+      ],
+      "sourceIds": [
+        "e21-fatigue-life"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-fatigue-life"
+        ],
+        "history": [
+          "e21-fatigue-life"
+        ]
+      },
+      "example": "A rotating axle can fail after many stress cycles without a single severe overload.",
+      "representation": {
+        "kind": "formula",
+        "expression": "σₐ = A Nᵇ",
+        "explanation": "In an empirical stress–life regime, N is cycles to failure, σₐ stress amplitude, and A,b are fitted for a specified test.",
+        "sourceIds": [
+          "e21-fatigue-life"
+        ]
+      }
+    },
+    {
+      "id": "electrical-impedance",
+      "title": "Electrical impedance",
+      "aliases": [
+        "AC impedance"
+      ],
+      "discipline": "engineering",
+      "branchId": "engineering-electrical",
+      "tags": [
+        "Electrical impedance"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1893,
+        "label": "1893",
+        "precision": "exact",
+        "note": "Kennelly’s 1893 paper is the complex-analysis milestone; Heaviside had introduced the term earlier."
+      },
+      "summary": "Impedance relates sinusoidal voltage and current in both magnitude and phase.",
+      "problem": "How can resistance, capacitance, and inductance be combined in an AC circuit?",
+      "development": "Complex-number representations encode relative phase, turning linear sinusoidal circuit equations into algebraic relations.",
+      "limitations": "A single impedance at one frequency does not describe arbitrary nonlinear or transient behavior.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Arthur Edwin Kennelly",
+          "role": "Presented a complex-number treatment of impedance."
+        }
+      ],
+      "sourceIds": [
+        "e21-electrical-impedance"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-electrical-impedance"
+        ],
+        "history": [
+          "e21-electrical-impedance"
+        ]
+      },
+      "example": "A capacitor’s impedance magnitude decreases as frequency increases.",
+      "representation": {
+        "kind": "formula",
+        "expression": "Z(ω) = Ṽ(ω)/Ĩ(ω)",
+        "explanation": "Voltage and current are steady-state phasors at angular frequency ω; Z is measured in ohms.",
+        "sourceIds": [
+          "e21-electrical-impedance"
+        ]
+      }
+    },
+    {
+      "id": "matched-filtering",
+      "title": "Matched filtering",
+      "aliases": [],
+      "discipline": "engineering",
+      "branchId": "engineering-electrical",
+      "tags": [
+        "Matched filtering"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1943,
+        "label": "1943",
+        "precision": "exact",
+        "note": "North’s 1943 report precedes the 1963 journal reprint."
+      },
+      "summary": "A filter matched to a known waveform maximizes the output signal-to-noise ratio at a chosen decision time in white noise.",
+      "problem": "How can a faint known pulse be detected against random fluctuations?",
+      "development": "Radar receiver analysis showed that correlating with the expected shape coherently combines signal contributions while unrelated noise adds differently.",
+      "limitations": "Colored noise, unknown waveform shape, or parameter mismatch requires modified processing.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Dwight O. North",
+          "role": "Derived an optimal receiver filter for known pulse shapes in noise."
+        }
+      ],
+      "sourceIds": [
+        "e21-matched-filtering"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-matched-filtering"
+        ],
+        "history": [
+          "e21-matched-filtering"
+        ]
+      },
+      "example": "Compare a returned radar echo with the transmitted pulse to locate its delay.",
+      "representation": {
+        "kind": "formula",
+        "expression": "h(t) ∝ s*(T − t)",
+        "explanation": "In white noise, filter h is proportional to the conjugate time reversal of known signal s about decision time T.",
+        "sourceIds": [
+          "e21-matched-filtering"
+        ]
+      }
+    },
+    {
+      "id": "jeans-instability",
+      "title": "Jeans instability",
+      "aliases": [],
+      "discipline": "astronomy",
+      "branchId": "astronomy-stars",
+      "tags": [
+        "Jeans instability"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1902,
+        "label": "1902",
+        "precision": "exact",
+        "note": "Jeans’s 1902 stability analysis supplies the historical anchor."
+      },
+      "summary": "In a sufficiently large gas disturbance, inward self-gravity can overcome pressure support so that density differences grow.",
+      "problem": "Which clumps in a gas cloud can collapse rather than disperse?",
+      "development": "Jeans compared gravitational amplification with the propagation of pressure disturbances, identifying a characteristic instability scale.",
+      "limitations": "The elementary uniform-medium calculation omits magnetic fields, turbulence, rotation, and realistic cloud boundaries.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "James Jeans",
+          "role": "Analyzed the competition between pressure and self-gravity."
+        }
+      ],
+      "sourceIds": [
+        "e21-jeans-instability"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-jeans-instability"
+        ],
+        "history": [
+          "e21-jeans-instability"
+        ]
+      },
+      "example": "Cooling a cloud lowers sound speed and can reduce the scale required for collapse.",
+      "representation": {
+        "kind": "formula",
+        "expression": "λ_{J} = cₛ √(π/Gρ)",
+        "explanation": "For a uniform idealized gas, cₛ is sound speed, G the gravitational constant and ρ the background mass density.",
+        "sourceIds": [
+          "e21-jeans-instability"
+        ]
+      }
+    },
+    {
+      "id": "accretion-disks",
+      "title": "Accretion disks",
+      "aliases": [],
+      "discipline": "astronomy",
+      "branchId": "astronomy-stars",
+      "tags": [
+        "Accretion disks"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1973,
+        "label": "1973",
+        "precision": "exact",
+        "note": "The 1973 model is a specific thin-disk milestone, not the first inference of disks."
+      },
+      "summary": "Orbiting material can move inward while stresses transfer angular momentum outward and gravitational energy becomes heat and radiation.",
+      "problem": "Why does orbiting gas fall inward instead of remaining on a circular orbit?",
+      "development": "Shakura and Sunyaev parameterized stresses in a thin disk to connect accretion with observable radiation from compact systems.",
+      "limitations": "The thin, efficient disk model does not apply unchanged to thick, strongly advective, or highly magnetized flows.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Nikolai Shakura and Rashid Sunyaev",
+          "role": "Developed a thin-disk model with parametrized angular-momentum transport."
+        }
+      ],
+      "sourceIds": [
+        "e21-accretion-disks"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-accretion-disks"
+        ],
+        "history": [
+          "e21-accretion-disks"
+        ]
+      },
+      "example": "Gas transferred from a companion can form a luminous disk around a compact object.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Inward mass flow with outward angular-momentum transport",
+        "explanation": "Stress redistributes angular momentum; it does not destroy it.",
+        "sourceIds": [
+          "e21-accretion-disks"
+        ]
+      }
+    },
+    {
+      "id": "eddington-luminosity",
+      "title": "Eddington luminosity limit",
+      "aliases": [
+        "Eddington limit"
+      ],
+      "discipline": "astronomy",
+      "branchId": "astronomy-stars",
+      "tags": [
+        "Eddington luminosity limit"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1916,
+        "label": "1916",
+        "precision": "exact",
+        "note": "The date marks Eddington’s radiative equilibrium analysis, not a universal upper bound observed in all sources."
+      },
+      "summary": "At a characteristic luminosity, outward radiative acceleration balances inward gravity in a spherical flow of specified opacity.",
+      "problem": "How bright can a source be before radiation pushes its surrounding material outward?",
+      "development": "Balancing forces per unit mass connects the limiting scale to mass and opacity, giving a benchmark for stars and accreting objects.",
+      "limitations": "Geometry, opacity variations, beaming, and time dependence can permit apparent or real super-Eddington emission.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Arthur Eddington",
+          "role": "Analyzed the role of radiation pressure in stellar equilibrium."
+        }
+      ],
+      "sourceIds": [
+        "e21-eddington-luminosity"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-eddington-luminosity"
+        ],
+        "history": [
+          "e21-eddington-luminosity"
+        ]
+      },
+      "example": "At fixed opacity, doubling the mass doubles the Eddington scale.",
+      "representation": {
+        "kind": "formula",
+        "expression": "L_{Edd} = 4πGMc/κ",
+        "explanation": "In spherical symmetry L_Edd is the luminosity at which outward radiation force balances gravity. M is the central mass, κ is opacity per unit mass, G the gravitational constant, and c the speed of light.",
+        "sourceIds": [
+          "e21-eddington-luminosity"
+        ]
+      }
+    },
+    {
+      "id": "core-accretion",
+      "title": "Core accretion of giant planets",
+      "aliases": [
+        "planetary core accretion"
+      ],
+      "discipline": "astronomy",
+      "branchId": "astronomy-stars",
+      "tags": [
+        "Core accretion of giant planets"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1996,
+        "label": "1996",
+        "precision": "exact",
+        "note": "The 1996 calculations tested a developed core-accretion scenario, not its first proposal."
+      },
+      "summary": "A growing solid core can bind a gaseous envelope whose cooling and growth may lead to rapid gas accretion before the disk disperses.",
+      "problem": "How can a planetary embryo gather enough gas to become a giant planet?",
+      "development": "Pollack’s team coupled solid capture, envelope structure, and energy loss to follow growth in a protoplanetary disk.",
+      "limitations": "Growth times depend on disk lifetime, opacity, and solid supply; this is not the sole proposed formation channel.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "James Pollack and collaborators",
+          "role": "Modeled concurrent accretion of solids and gas."
+        }
+      ],
+      "sourceIds": [
+        "e21-core-accretion"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-core-accretion"
+        ],
+        "history": [
+          "e21-core-accretion"
+        ]
+      },
+      "example": "A massive icy-rocky embryo can accumulate an extended hydrogen-rich envelope.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Solid core growth + envelope cooling → possible rapid gas capture",
+        "explanation": "Gas capture requires an available disk reservoir before dispersal.",
+        "sourceIds": [
+          "e21-core-accretion"
+        ]
+      }
+    },
+    {
+      "id": "asteroseismology",
+      "title": "Asteroseismology",
+      "aliases": [
+        "stellar seismology"
+      ],
+      "discipline": "astronomy",
+      "branchId": "astronomy-observation",
+      "tags": [
+        "Asteroseismology"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 2001,
+        "label": "2001",
+        "precision": "exact",
+        "note": "The Alpha Centauri A detection anchors a specific stellar application; solar oscillations and pulsating-star studies came earlier."
+      },
+      "summary": "Oscillation frequencies carry information about a star’s interior because waves sample structure below its visible surface.",
+      "problem": "How can astronomers probe layers hidden beneath a star’s surface?",
+      "development": "Doppler measurements revealed multiple oscillation modes in a Sun-like star, allowing comparisons with interior models.",
+      "limitations": "Mode identification, stellar activity, and model assumptions affect inferred ages and internal profiles.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "François Bouchy and Fabien Carrier",
+          "role": "Measured solar-like oscillations in Alpha Centauri A."
+        }
+      ],
+      "sourceIds": [
+        "e21-asteroseismology"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-asteroseismology"
+        ],
+        "history": [
+          "e21-asteroseismology"
+        ]
+      },
+      "example": "Frequency spacings can constrain the sound-travel time through a star.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Observed mode frequencies constrain stellar interior models",
+        "explanation": "Different modes probe different regions; the spectrum is not a direct photograph of the interior.",
+        "sourceIds": [
+          "e21-asteroseismology"
+        ]
+      }
+    },
+    {
+      "id": "type-ia-standardization",
+      "title": "Type Ia supernova standardization",
+      "aliases": [
+        "Phillips relation"
+      ],
+      "discipline": "astronomy",
+      "branchId": "astronomy-observation",
+      "tags": [
+        "Type Ia supernova standardization"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 1993,
+        "label": "1993",
+        "precision": "exact",
+        "note": "Phillips’s 1993 study calibrated a decline-rate relation; later analyses added color and other corrections."
+      },
+      "summary": "Type Ia supernovae are standardizable candles: light-curve properties help correct differences in their intrinsic brightness.",
+      "problem": "How can explosions of unequal peak brightness be used to measure distances?",
+      "development": "Nearby events showed that faster post-maximum decline generally accompanies lower luminosity. Correcting for this reduces scatter in distance estimates.",
+      "limitations": "Dust extinction, sample selection, and population differences can bias calibration.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Mark Phillips",
+          "role": "Quantified the relation between light-curve decline and peak luminosity."
+        }
+      ],
+      "sourceIds": [
+        "e21-type-ia-standardization"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-type-ia-standardization"
+        ],
+        "history": [
+          "e21-type-ia-standardization"
+        ]
+      },
+      "example": "Two similarly bright-looking supernovae need not be equally distant if their light curves decline differently.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Correct peak magnitude using light-curve shape",
+        "explanation": "The correction is empirical and calibrated; it does not assume identical explosions.",
+        "sourceIds": [
+          "e21-type-ia-standardization"
+        ]
+      }
+    },
+    {
+      "id": "cosmic-distance-ladder",
+      "title": "Cosmic distance ladder",
+      "aliases": [
+        "extragalactic distance scale"
+      ],
+      "discipline": "astronomy",
+      "branchId": "astronomy-observation",
+      "tags": [
+        "Cosmic distance ladder"
+      ],
+      "kind": "method",
+      "date": {
+        "year": 2001,
+        "label": "2001",
+        "precision": "exact",
+        "note": "The HST Key Project synthesis is a modern application, not the first distance ladder."
+      },
+      "summary": "Overlapping distance methods transfer calibration from nearby objects to progressively more distant ones.",
+      "problem": "How can distances be measured beyond the reach of a single geometric method?",
+      "development": "The Key Project used Cepheid distances to calibrate secondary distance indicators and compare measurements of cosmic expansion.",
+      "limitations": "Errors in a common anchor can propagate through several rungs; apparently independent estimates can share systematics.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Wendy Freedman and the HST Key Project team",
+          "role": "Combined calibrated distance indicators in a distance-scale measurement."
+        }
+      ],
+      "sourceIds": [
+        "e21-cosmic-distance-ladder"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-cosmic-distance-ladder"
+        ],
+        "history": [
+          "e21-cosmic-distance-ladder"
+        ]
+      },
+      "example": "Cepheids in galaxies that hosted Type Ia supernovae link two distance indicators.",
+      "representation": {
+        "kind": "formula",
+        "expression": "m − M = 5 log₁₀(d/10 pc)",
+        "explanation": "After correcting apparent magnitude m for extinction, compare it with calibrated absolute magnitude M to obtain distance d in parsecs (pc). At cosmological distances d means luminosity distance.",
+        "sourceIds": [
+          "e21-cosmic-distance-ladder"
+        ]
+      }
+    },
+    {
+      "id": "primordial-black-holes",
+      "title": "Primordial black holes",
+      "aliases": [
+        "PBHs"
+      ],
+      "discipline": "astronomy",
+      "branchId": "astronomy-cosmology",
+      "tags": [
+        "Primordial black holes"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1971,
+        "label": "1971",
+        "precision": "exact",
+        "note": "Hawking’s 1971 paper is an early selected proposal; related Soviet work preceded it."
+      },
+      "summary": "Hypothetical black holes could form from dense regions in the early universe rather than from dying stars.",
+      "problem": "Could gravitational collapse before stars existed leave compact objects observable today?",
+      "development": "Early-universe collapse models allow masses outside ordinary stellar formation channels. Later searches constrain their possible abundance.",
+      "limitations": "No population has been confirmed as primordial; bounds depend on mass distribution and astrophysical assumptions. They are a candidate, not an established identity for dark matter.",
+      "standing": "speculative",
+      "contributors": [
+        {
+          "name": "Stephen Hawking",
+          "role": "Investigated black holes formed under early-universe conditions."
+        }
+      ],
+      "sourceIds": [
+        "e21-primordial-black-holes",
+        "e21-primordial-black-holes-2"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-primordial-black-holes",
+          "e21-primordial-black-holes-2"
+        ],
+        "history": [
+          "e21-primordial-black-holes",
+          "e21-primordial-black-holes-2"
+        ]
+      },
+      "example": "Microlensing surveys can bound the abundance of compact lenses in selected mass ranges.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Early-universe collapse produces a black hole before stellar evolution",
+        "explanation": "Primordial designates the proposed formation channel, not a particular present mass.",
+        "sourceIds": [
+          "e21-primordial-black-holes",
+          "e21-primordial-black-holes-2"
+        ]
+      }
+    },
+    {
+      "id": "predictive-processing",
+      "title": "Predictive processing",
+      "aliases": [
+        "predictive coding"
+      ],
+      "discipline": "society",
+      "branchId": "society-psychology",
+      "tags": [
+        "Predictive processing"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1999,
+        "label": "1999",
+        "precision": "exact",
+        "note": "The 1999 visual model exemplifies predictive coding; neither prediction nor the broader framework began with this paper."
+      },
+      "summary": "In predictive-processing models, higher levels predict lower-level signals and mismatches help update the predictions.",
+      "problem": "Why might context outside a neuron’s classical receptive field change its response?",
+      "development": "Rao and Ballard trained a hierarchical model on natural images and reproduced some visual response patterns. Its feedback carried predictions while feedforward signals carried residuals.",
+      "limitations": "Success in a visual simulation does not establish one universal mechanism for perception, action, and cognition.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Rajesh Rao and Dana Ballard",
+          "role": "Modeled hierarchical prediction and residual signals in vision."
+        }
+      ],
+      "sourceIds": [
+        "e21-predictive-processing"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-predictive-processing"
+        ],
+        "history": [
+          "e21-predictive-processing"
+        ]
+      },
+      "example": "A predictable continuation of a contour can evoke less residual activity than an unexpected ending.",
+      "representation": {
+        "kind": "formula",
+        "expression": "e = x − x̂",
+        "explanation": "In a simple layer, e is the residual between incoming signal x and prediction x̂; this is a model quantity.",
+        "sourceIds": [
+          "e21-predictive-processing"
+        ]
+      }
+    },
+    {
+      "id": "theory-of-mind",
+      "title": "Theory of mind",
+      "aliases": [
+        "mental-state attribution"
+      ],
+      "discipline": "society",
+      "branchId": "society-psychology",
+      "tags": [
+        "Theory of mind"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1978,
+        "label": "1978",
+        "precision": "exact",
+        "note": "The 1978 question about chimpanzees supplied the influential term, not a final answer about animal minds."
+      },
+      "summary": "An observer attributes beliefs, goals, or other mental states to another agent to interpret or predict behavior.",
+      "problem": "Can behavior reveal whether an observer distinguishes another’s belief from reality?",
+      "development": "Premack and Woodruff used problems about another agent’s goals to frame comparative experiments; later work distinguished tasks involving goals, knowledge, and false beliefs.",
+      "limitations": "Task performance can reflect learned cues, language, or memory demands; passing one task does not demonstrate every mental-state capacity.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "David Premack and Guy Woodruff",
+          "role": "Framed mental-state attribution as an experimental question."
+        }
+      ],
+      "sourceIds": [
+        "e21-theory-of-mind"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-theory-of-mind"
+        ],
+        "history": [
+          "e21-theory-of-mind"
+        ]
+      },
+      "example": "Predict where someone will search for an object after it was moved without their seeing.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Use another agent’s perspective to predict action",
+        "explanation": "The attributed belief can differ from the observer’s own knowledge.",
+        "sourceIds": [
+          "e21-theory-of-mind"
+        ]
+      }
+    },
+    {
+      "id": "cognitive-load-theory",
+      "title": "Cognitive load theory",
+      "aliases": [],
+      "discipline": "society",
+      "branchId": "society-psychology",
+      "tags": [
+        "Cognitive load theory"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1988,
+        "label": "1988",
+        "precision": "exact",
+        "note": "Sweller’s 1988 problem-solving study is the milestone."
+      },
+      "summary": "Instructional tasks compete for limited working-memory resources, so the way a problem is presented can affect what a learner retains.",
+      "problem": "Why can successfully solving a problem still produce little transferable learning?",
+      "development": "Sweller analyzed how means–ends search could consume resources needed to learn useful problem schemas.",
+      "limitations": "Load is not directly observed, and helpful support for novices can become redundant for experts.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "John Sweller",
+          "role": "Investigated how problem-solving demands affect learning."
+        }
+      ],
+      "sourceIds": [
+        "e21-cognitive-load-theory"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-cognitive-load-theory"
+        ],
+        "history": [
+          "e21-cognitive-load-theory"
+        ]
+      },
+      "example": "A worked example may free a novice to study why each step follows.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Task demands interact with available working memory and prior schemas",
+        "explanation": "The framework predicts conditional effects, not one best lesson format for everyone.",
+        "sourceIds": [
+          "e21-cognitive-load-theory"
+        ]
+      }
+    },
+    {
+      "id": "common-pool-governance",
+      "title": "Common-pool resource governance",
+      "aliases": [
+        "commons governance"
+      ],
+      "discipline": "society",
+      "branchId": "society-economics",
+      "tags": [
+        "Common-pool resource governance"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1990,
+        "label": "1990",
+        "precision": "exact",
+        "note": "Ostrom’s 1990 comparative study anchors the institutional framework."
+      },
+      "summary": "Users can sometimes sustain a shared, subtractable resource through locally organized rules, monitoring, and collective decisions.",
+      "problem": "When can people avoid depleting a resource from which exclusion is costly?",
+      "development": "Ostrom compared long-lived and unsuccessful arrangements, examining boundaries, rulemaking, monitoring, sanctions, and conflict resolution.",
+      "limitations": "Design principles describe patterns, not a universal recipe; ecology, power, and institutions matter.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Elinor Ostrom",
+          "role": "Compared institutions governing shared resource systems."
+        }
+      ],
+      "sourceIds": [
+        "e21-common-pool-governance"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-common-pool-governance"
+        ],
+        "history": [
+          "e21-common-pool-governance"
+        ]
+      },
+      "example": "Irrigators can agree on water turns and monitor withdrawals from a shared canal.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Costly exclusion with subtractable use",
+        "explanation": "Unlike a pure public good, one person’s withdrawal can reduce what remains for others.",
+        "sourceIds": [
+          "e21-common-pool-governance"
+        ]
+      }
+    },
+    {
+      "id": "externalities",
+      "title": "Externalities",
+      "aliases": [
+        "spillover costs and benefits"
+      ],
+      "discipline": "society",
+      "branchId": "society-economics",
+      "tags": [
+        "Externalities"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1920,
+        "label": "1920",
+        "precision": "exact",
+        "note": "Pigou’s 1920 welfare analysis is the anchor; spillover effects were discussed earlier."
+      },
+      "summary": "An activity creates an externality when costs or benefits fall on others without being fully reflected in the actor’s decision.",
+      "problem": "Why can a privately attractive choice have a different social value?",
+      "development": "Pigou examined gaps between private and social returns, providing a framework for studying corrective incentives.",
+      "limitations": "Valuing spillovers and choosing policy require evidence about behavior, administration, and alternatives.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Arthur Cecil Pigou",
+          "role": "Analyzed divergences between private and social net products."
+        }
+      ],
+      "sourceIds": [
+        "e21-externalities"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-externalities"
+        ],
+        "history": [
+          "e21-externalities"
+        ]
+      },
+      "example": "Pollution can impose damage on downstream users outside a producer’s accounts.",
+      "representation": {
+        "kind": "formula",
+        "expression": "MSC = MPC + MEC",
+        "explanation": "For one extra unit of production, marginal social cost (MSC) is the producer’s marginal private cost (MPC) plus marginal external cost (MEC) borne by others. This simple account counts each effect once.",
+        "sourceIds": [
+          "e21-externalities"
+        ]
+      }
+    },
+    {
+      "id": "weak-ties",
+      "title": "The strength of weak ties",
+      "aliases": [
+        "weak ties"
+      ],
+      "discipline": "society",
+      "branchId": "society-networks",
+      "tags": [
+        "The strength of weak ties"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1973,
+        "label": "1973",
+        "precision": "exact",
+        "note": "Granovetter’s 1973 article is the selected formulation."
+      },
+      "summary": "Less intimate acquaintances can bridge otherwise separate social circles and provide access to different information.",
+      "problem": "Why can a casual contact provide news that close friends do not?",
+      "development": "Granovetter argued that close contacts often share many neighbors, while some weaker links connect less overlapping groups.",
+      "limitations": "Not every weak tie is a bridge; trust, network structure, and the kind of information affect usefulness.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Mark Granovetter",
+          "role": "Linked tie strength, network overlap, and access to information."
+        }
+      ],
+      "sourceIds": [
+        "e21-weak-ties"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-weak-ties"
+        ],
+        "history": [
+          "e21-weak-ties"
+        ]
+      },
+      "example": "An acquaintance in another occupation may hear about a job unavailable within one’s immediate circle.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Low-overlap ties can bridge social circles",
+        "explanation": "The claim relates structural position to potential information flow; weak tie and bridge are not identical definitions.",
+        "sourceIds": [
+          "e21-weak-ties"
+        ]
+      }
+    },
+    {
+      "id": "speech-acts",
+      "title": "Speech acts",
+      "aliases": [],
+      "discipline": "society",
+      "branchId": "society-language",
+      "tags": [
+        "Speech acts"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1962,
+        "label": "1962",
+        "precision": "exact",
+        "note": "The posthumous 1962 book records lectures delivered in 1955."
+      },
+      "summary": "An utterance can perform an action, such as promising, requesting, or naming, when the context and conventions support it.",
+      "problem": "What does a speaker do by uttering a sentence, beyond describing a situation?",
+      "development": "Austin distinguished the words uttered, the act performed in saying them, and their effects on listeners.",
+      "limitations": "The same words can perform different acts; speaker authority, uptake, and social context matter.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "J. L. Austin",
+          "role": "Distinguished actions performed in speaking from the words’ descriptive content."
+        }
+      ],
+      "sourceIds": [
+        "e21-speech-acts"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-speech-acts"
+        ],
+        "history": [
+          "e21-speech-acts"
+        ]
+      },
+      "example": "“I promise to return it” can create a commitment under appropriate circumstances.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Utterance in context → communicative act",
+        "explanation": "Illocutionary force concerns the act performed, such as a promise or request.",
+        "sourceIds": [
+          "e21-speech-acts"
+        ]
+      }
+    },
+    {
+      "id": "compositional-semantics",
+      "title": "Compositional semantics",
+      "aliases": [
+        "Montague semantics"
+      ],
+      "discipline": "society",
+      "branchId": "society-language",
+      "tags": [
+        "Compositional semantics"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1970,
+        "label": "1970",
+        "precision": "exact",
+        "note": "Montague’s 1970 formal treatment is the anchor, not the origin of the general compositionality idea."
+      },
+      "summary": "A complex expression’s interpretation is built from its parts and the way syntax combines them.",
+      "problem": "How can speakers understand new sentences they have never heard?",
+      "development": "Montague paired grammatical rules with mathematical interpretation rules, connecting natural-language analysis to formal logic.",
+      "limitations": "Idioms, ambiguity, context dependence, and pragmatic inference complicate a simple compositional account.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Richard Montague",
+          "role": "Gave formal interpretation rules paired with syntactic composition."
+        }
+      ],
+      "sourceIds": [
+        "e21-compositional-semantics"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-compositional-semantics"
+        ],
+        "history": [
+          "e21-compositional-semantics"
+        ]
+      },
+      "example": "Reordering the same names in “Ada sees Bo” changes who sees whom.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Meaning of parts + rule of combination → interpretation of whole",
+        "explanation": "The rule follows syntactic structure; concatenating dictionary meanings alone is insufficient.",
+        "sourceIds": [
+          "e21-compositional-semantics"
+        ]
+      }
     }
   ],
   "relationships": [
@@ -5403,6 +7891,810 @@
         "xs-encoder-decoder",
         "xs-seq2seq-lstm"
       ]
+    },
+    {
+      "id": "statistical-sampling--confidence-intervals",
+      "source": "statistical-sampling",
+      "target": "confidence-intervals",
+      "type": "foundation",
+      "explanation": "A sampling distribution determines how often the interval procedure covers the parameter.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-confidence-intervals"
+      ]
+    },
+    {
+      "id": "statistical-sampling--bootstrap-resampling",
+      "source": "statistical-sampling",
+      "target": "bootstrap-resampling",
+      "type": "foundation",
+      "explanation": "Resampling mimics a sampling experiment with the empirical distribution replacing the unknown population.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-bootstrap-resampling"
+      ]
+    },
+    {
+      "id": "statistics--meta-analysis",
+      "source": "statistics",
+      "target": "meta-analysis",
+      "type": "foundation",
+      "explanation": "Studies are the units whose effect estimates are summarized statistically.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-meta-analysis"
+      ]
+    },
+    {
+      "id": "probability--survival-analysis",
+      "source": "probability",
+      "target": "survival-analysis",
+      "type": "foundation",
+      "explanation": "Conditional survival probabilities multiply along successive risk sets.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-survival-analysis"
+      ]
+    },
+    {
+      "id": "controlled-trials--design-of-experiments",
+      "source": "controlled-trials",
+      "target": "design-of-experiments",
+      "type": "revision",
+      "explanation": "Formal design develops controlled comparison into a planned allocation and analysis scheme.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-design-of-experiments"
+      ]
+    },
+    {
+      "id": "singular-value-decomposition--principal-component-analysis",
+      "source": "singular-value-decomposition",
+      "target": "principal-component-analysis",
+      "type": "foundation",
+      "explanation": "Right singular vectors of a centered observation matrix yield its principal directions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-principal-component-analysis"
+      ]
+    },
+    {
+      "id": "least-squares--principal-component-analysis",
+      "source": "least-squares",
+      "target": "principal-component-analysis",
+      "type": "foundation",
+      "explanation": "PCA’s best-fitting subspace minimizes squared perpendicular distances.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-principal-component-analysis"
+      ]
+    },
+    {
+      "id": "maximum-likelihood--missing-data-mechanisms",
+      "source": "maximum-likelihood",
+      "target": "missing-data-mechanisms",
+      "type": "foundation",
+      "explanation": "The likelihood treatment specifies when the missingness mechanism can be omitted.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-missing-data-mechanisms"
+      ]
+    },
+    {
+      "id": "hypothesis-testing--multiple-testing-control",
+      "source": "hypothesis-testing",
+      "target": "multiple-testing-control",
+      "type": "revision",
+      "explanation": "The criterion extends error accounting from a single test to a family of decisions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-multiple-testing-control"
+      ]
+    },
+    {
+      "id": "programming-languages--reproducible-research",
+      "source": "programming-languages",
+      "target": "reproducible-research",
+      "type": "enables",
+      "explanation": "Executable programs make processing steps inspectable and repeatable.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-reproducible-research"
+      ]
+    },
+    {
+      "id": "spectroscopy--atomic-clocks",
+      "source": "spectroscopy",
+      "target": "atomic-clocks",
+      "type": "enables",
+      "explanation": "Resolving an atomic transition supplies the frequency reference used to discipline the oscillator.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-atomic-clocks"
+      ]
+    },
+    {
+      "id": "quantum-tunneling--scanning-tunneling-microscopy",
+      "source": "quantum-tunneling",
+      "target": "scanning-tunneling-microscopy",
+      "type": "enables",
+      "explanation": "Tunneling across the tip gap creates the distance-sensitive measurement signal.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-scanning-tunneling-microscopy"
+      ]
+    },
+    {
+      "id": "electron-microscopy--cryo-electron-microscopy",
+      "source": "electron-microscopy",
+      "target": "cryo-electron-microscopy",
+      "type": "enables",
+      "explanation": "The electron microscope supplies the imaging platform adapted to cryogenic specimens.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-cryo-electron-microscopy"
+      ]
+    },
+    {
+      "id": "glass-transition--cryo-electron-microscopy",
+      "source": "glass-transition",
+      "target": "cryo-electron-microscopy",
+      "type": "foundation",
+      "explanation": "The preparation must avoid crystalline ice; vitrification arrests molecular rearrangement on cooling.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-cryo-electron-microscopy"
+      ]
+    },
+    {
+      "id": "calculus--gradient-descent",
+      "source": "calculus",
+      "target": "gradient-descent",
+      "type": "foundation",
+      "explanation": "Derivatives determine the local direction of steepest change.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-gradient-descent",
+        "e21-gradient-descent-2"
+      ]
+    },
+    {
+      "id": "optimization--gradient-descent",
+      "source": "optimization",
+      "target": "gradient-descent",
+      "type": "foundation",
+      "explanation": "Descent supplies an algorithm for a minimization objective.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-gradient-descent",
+        "e21-gradient-descent-2"
+      ]
+    },
+    {
+      "id": "calculus--automatic-differentiation",
+      "source": "calculus",
+      "target": "automatic-differentiation",
+      "type": "foundation",
+      "explanation": "The chain rule provides the derivative update for each operation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-automatic-differentiation"
+      ]
+    },
+    {
+      "id": "programming-languages--automatic-differentiation",
+      "source": "programming-languages",
+      "target": "automatic-differentiation",
+      "type": "enables",
+      "explanation": "Programs expose elementary operations whose derivative rules can be composed.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-automatic-differentiation"
+      ]
+    },
+    {
+      "id": "information-theory--decision-trees",
+      "source": "information-theory",
+      "target": "decision-trees",
+      "type": "foundation",
+      "explanation": "ID3 measures how much a split reduces class uncertainty.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-decision-trees"
+      ]
+    },
+    {
+      "id": "machine-learning--decision-trees",
+      "source": "machine-learning",
+      "target": "decision-trees",
+      "type": "foundation",
+      "explanation": "Tree induction learns a prediction rule from labeled examples.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-decision-trees"
+      ]
+    },
+    {
+      "id": "bootstrap-resampling--ensemble-learning",
+      "source": "bootstrap-resampling",
+      "target": "ensemble-learning",
+      "type": "enables",
+      "explanation": "Bagging explicitly trains predictors on bootstrap replicas of the data.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-ensemble-learning"
+      ]
+    },
+    {
+      "id": "decision-trees--ensemble-learning",
+      "source": "decision-trees",
+      "target": "ensemble-learning",
+      "type": "enables",
+      "explanation": "Breiman tested aggregation on unstable tree predictors.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-ensemble-learning"
+      ]
+    },
+    {
+      "id": "convolutional-networks--self-supervised-learning",
+      "source": "convolutional-networks",
+      "target": "self-supervised-learning",
+      "type": "enables",
+      "explanation": "The context-prediction experiment trained convolutional features from pairs of image patches.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-self-supervised-learning"
+      ]
+    },
+    {
+      "id": "graph-theory--graph-neural-networks",
+      "source": "graph-theory",
+      "target": "graph-neural-networks",
+      "type": "foundation",
+      "explanation": "Vertices and edges specify which entities exchange information.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-graph-neural-networks"
+      ]
+    },
+    {
+      "id": "neural-networks--graph-neural-networks",
+      "source": "neural-networks",
+      "target": "graph-neural-networks",
+      "type": "foundation",
+      "explanation": "Learned transformations turn graph neighborhoods into predictive representations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-graph-neural-networks"
+      ]
+    },
+    {
+      "id": "probability--differential-privacy",
+      "source": "probability",
+      "target": "differential-privacy",
+      "type": "foundation",
+      "explanation": "The guarantee compares probability distributions, rather than requiring identical outputs.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-differential-privacy"
+      ]
+    },
+    {
+      "id": "computational-complexity--zero-knowledge-proofs",
+      "source": "computational-complexity",
+      "target": "zero-knowledge-proofs",
+      "type": "foundation",
+      "explanation": "Efficient simulation and computational distinguishability use resource-bounded computation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-zero-knowledge-proofs"
+      ]
+    },
+    {
+      "id": "error-correction--quantum-error-correction",
+      "source": "error-correction",
+      "target": "quantum-error-correction",
+      "type": "revision",
+      "explanation": "Quantum codes adapt redundancy to errors that include phase changes as well as bit flips.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-quantum-error-correction"
+      ]
+    },
+    {
+      "id": "quantum-decoherence--quantum-error-correction",
+      "source": "quantum-decoherence",
+      "target": "quantum-error-correction",
+      "type": "influence",
+      "explanation": "Shor explicitly targeted decoherence in a quantum memory.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-quantum-error-correction"
+      ]
+    },
+    {
+      "id": "distributed-consensus--flp-impossibility",
+      "source": "distributed-consensus",
+      "target": "flp-impossibility",
+      "type": "revision",
+      "explanation": "FLP establishes a boundary on guaranteed termination under asynchronous crash faults; it is distinct from Byzantine agreement bounds.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-flp-impossibility"
+      ]
+    },
+    {
+      "id": "differential-equations--transfer-functions",
+      "source": "differential-equations",
+      "target": "transfer-functions",
+      "type": "foundation",
+      "explanation": "Transforming a linear differential equation turns the input–output relation into algebra.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-transfer-functions",
+        "e21-transfer-functions-2"
+      ]
+    },
+    {
+      "id": "transfer-functions--bode-plots",
+      "source": "transfer-functions",
+      "target": "bode-plots",
+      "type": "foundation",
+      "explanation": "Evaluating a transfer function on the imaginary axis gives the plotted frequency response.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-transfer-functions"
+      ]
+    },
+    {
+      "id": "negative-feedback-amplifier--bode-plots",
+      "source": "negative-feedback-amplifier",
+      "target": "bode-plots",
+      "type": "influence",
+      "explanation": "Bode explicitly studied attenuation and phase to design feedback amplifiers.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-transfer-functions"
+      ]
+    },
+    {
+      "id": "state-space-control--observability",
+      "source": "state-space-control",
+      "target": "observability",
+      "type": "foundation",
+      "explanation": "Comparing state trajectories through an output map defines observability.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-observability"
+      ]
+    },
+    {
+      "id": "state-space-control--controllability",
+      "source": "state-space-control",
+      "target": "controllability",
+      "type": "foundation",
+      "explanation": "The state transition and input matrices specify which directions can be reached.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-observability"
+      ]
+    },
+    {
+      "id": "control-theory--robust-control",
+      "source": "control-theory",
+      "target": "robust-control",
+      "type": "foundation",
+      "explanation": "Robust design evaluates the closed feedback loop rather than the nominal plant alone.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-robust-control"
+      ]
+    },
+    {
+      "id": "system-identification--adaptive-control",
+      "source": "system-identification",
+      "target": "adaptive-control",
+      "type": "enables",
+      "explanation": "The self-tuning regulator estimates a model from measured input and output before recomputing control.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-adaptive-control"
+      ]
+    },
+    {
+      "id": "maximum-likelihood--system-identification",
+      "source": "maximum-likelihood",
+      "target": "system-identification",
+      "type": "foundation",
+      "explanation": "A stochastic data model can rank candidate parameter values by their likelihood.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-system-identification"
+      ]
+    },
+    {
+      "id": "fluid-dynamics--finite-volume-method",
+      "source": "fluid-dynamics",
+      "target": "finite-volume-method",
+      "type": "foundation",
+      "explanation": "The cell balances discretize continuum laws for mass and momentum transport.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-finite-volume-method"
+      ]
+    },
+    {
+      "id": "elasticity--structural-buckling",
+      "source": "elasticity",
+      "target": "structural-buckling",
+      "type": "foundation",
+      "explanation": "Elastic bending stiffness sets the restoring force that resists lateral deflection.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-structural-buckling"
+      ]
+    },
+    {
+      "id": "elasticity--fatigue-life",
+      "source": "elasticity",
+      "target": "fatigue-life",
+      "type": "foundation",
+      "explanation": "Cyclic elastic stresses can accumulate damage even when an individual cycle is below static failure stress.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-fatigue-life"
+      ]
+    },
+    {
+      "id": "complex-numbers--electrical-impedance",
+      "source": "complex-numbers",
+      "target": "electrical-impedance",
+      "type": "foundation",
+      "explanation": "A complex ratio encodes gain and phase in one quantity.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-electrical-impedance"
+      ]
+    },
+    {
+      "id": "circuit-laws--electrical-impedance",
+      "source": "circuit-laws",
+      "target": "electrical-impedance",
+      "type": "foundation",
+      "explanation": "Kirchhoff balances remain applicable when sinusoidal voltages and currents are represented as phasors.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-electrical-impedance"
+      ]
+    },
+    {
+      "id": "fourier-analysis--matched-filtering",
+      "source": "fourier-analysis",
+      "target": "matched-filtering",
+      "type": "foundation",
+      "explanation": "Frequency-domain weighting gives an equivalent view of matching a filter to a known signal spectrum.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-matched-filtering"
+      ]
+    },
+    {
+      "id": "universal-gravitation--jeans-instability",
+      "source": "universal-gravitation",
+      "target": "jeans-instability",
+      "type": "foundation",
+      "explanation": "Self-attraction supplies the growing inward force in the instability analysis.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-jeans-instability"
+      ]
+    },
+    {
+      "id": "fluid-dynamics--jeans-instability",
+      "source": "fluid-dynamics",
+      "target": "jeans-instability",
+      "type": "foundation",
+      "explanation": "Fluid pressure supplies the competing restoring response.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-jeans-instability"
+      ]
+    },
+    {
+      "id": "black-holes--accretion-disks",
+      "source": "black-holes",
+      "target": "accretion-disks",
+      "type": "influence",
+      "explanation": "The authors modeled accretion as a source of observable emission in black-hole binaries.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-accretion-disks"
+      ]
+    },
+    {
+      "id": "fluid-dynamics--accretion-disks",
+      "source": "fluid-dynamics",
+      "target": "accretion-disks",
+      "type": "foundation",
+      "explanation": "Fluid stresses and energy transport describe the disk’s evolution.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-accretion-disks"
+      ]
+    },
+    {
+      "id": "universal-gravitation--eddington-luminosity",
+      "source": "universal-gravitation",
+      "target": "eddington-luminosity",
+      "type": "foundation",
+      "explanation": "Newtonian gravitational acceleration supplies the inward term in the force balance.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-eddington-luminosity"
+      ]
+    },
+    {
+      "id": "nebular-hypothesis--core-accretion",
+      "source": "nebular-hypothesis",
+      "target": "core-accretion",
+      "type": "revision",
+      "explanation": "Core accretion gives a specific mechanism within the broader idea of formation from circumstellar material.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-core-accretion"
+      ]
+    },
+    {
+      "id": "doppler-effect--asteroseismology",
+      "source": "doppler-effect",
+      "target": "asteroseismology",
+      "type": "enables",
+      "explanation": "Small periodic line shifts reveal line-of-sight surface velocities.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-asteroseismology"
+      ]
+    },
+    {
+      "id": "stellar-evolution--asteroseismology",
+      "source": "stellar-evolution",
+      "target": "asteroseismology",
+      "type": "foundation",
+      "explanation": "Interior models predict which frequencies are compatible with a star’s structure.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-asteroseismology"
+      ]
+    },
+    {
+      "id": "astronomical-photography--type-ia-standardization",
+      "source": "astronomical-photography",
+      "target": "type-ia-standardization",
+      "type": "enables",
+      "explanation": "Repeated brightness measurements supply a light curve rather than a single peak observation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-type-ia-standardization"
+      ]
+    },
+    {
+      "id": "period-luminosity--cosmic-distance-ladder",
+      "source": "period-luminosity",
+      "target": "cosmic-distance-ladder",
+      "type": "enables",
+      "explanation": "Cepheid period–luminosity distances calibrated secondary indicators in the Key Project.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-cosmic-distance-ladder"
+      ]
+    },
+    {
+      "id": "type-ia-standardization--cosmic-distance-ladder",
+      "source": "type-ia-standardization",
+      "target": "cosmic-distance-ladder",
+      "type": "enables",
+      "explanation": "Calibrated supernovae extend distance measurements beyond galaxies with individually resolved Cepheids.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-cosmic-distance-ladder"
+      ]
+    },
+    {
+      "id": "black-holes--primordial-black-holes",
+      "source": "black-holes",
+      "target": "primordial-black-holes",
+      "type": "foundation",
+      "explanation": "The proposal applies gravitational collapse to matter in a different cosmic environment.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-primordial-black-holes",
+        "e21-primordial-black-holes-2"
+      ]
+    },
+    {
+      "id": "big-bang--primordial-black-holes",
+      "source": "big-bang",
+      "target": "primordial-black-holes",
+      "type": "foundation",
+      "explanation": "Early hot-universe conditions supply the setting for the proposed formation process.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-primordial-black-holes",
+        "e21-primordial-black-holes-2"
+      ]
+    },
+    {
+      "id": "neural-networks--predictive-processing",
+      "source": "neural-networks",
+      "target": "predictive-processing",
+      "type": "foundation",
+      "explanation": "Learned hierarchical connections implement prediction and error signals in the model.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-predictive-processing"
+      ]
+    },
+    {
+      "id": "cognitive-psychology--theory-of-mind",
+      "source": "cognitive-psychology",
+      "target": "theory-of-mind",
+      "type": "foundation",
+      "explanation": "Mental representations provide a vocabulary for distinguishing beliefs from observable actions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-theory-of-mind"
+      ]
+    },
+    {
+      "id": "working-memory--cognitive-load-theory",
+      "source": "working-memory",
+      "target": "cognitive-load-theory",
+      "type": "foundation",
+      "explanation": "Limited temporary processing capacity motivates the proposed load mechanism.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-cognitive-load-theory"
+      ]
+    },
+    {
+      "id": "public-goods--common-pool-governance",
+      "source": "public-goods",
+      "target": "common-pool-governance",
+      "type": "foundation",
+      "explanation": "Comparing exclusion and rivalry distinguishes common-pool resources from pure public goods.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-common-pool-governance"
+      ]
+    },
+    {
+      "id": "supply-demand--externalities",
+      "source": "supply-demand",
+      "target": "externalities",
+      "type": "revision",
+      "explanation": "An unpriced external cost separates the private supply decision from the social cost calculation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-externalities"
+      ]
+    },
+    {
+      "id": "social-network-analysis--weak-ties",
+      "source": "social-network-analysis",
+      "target": "weak-ties",
+      "type": "foundation",
+      "explanation": "Network neighborhoods and bridges make the argument about tie strength structurally testable.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-weak-ties"
+      ]
+    },
+    {
+      "id": "structural-linguistics--speech-acts",
+      "source": "structural-linguistics",
+      "target": "speech-acts",
+      "type": "foundation",
+      "explanation": "Distinguishing linguistic form from communicative function clarifies what a speech-act analysis adds; this is a conceptual comparison.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-speech-acts"
+      ]
+    },
+    {
+      "id": "mathematical-logic--compositional-semantics",
+      "source": "mathematical-logic",
+      "target": "compositional-semantics",
+      "type": "foundation",
+      "explanation": "Formal interpretation assigns meanings to structured expressions by rules.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-compositional-semantics"
+      ]
+    },
+    {
+      "id": "gradient-descent--backpropagation",
+      "source": "gradient-descent",
+      "target": "backpropagation",
+      "type": "enables",
+      "explanation": "Backpropagation calculates a loss gradient for each weight; the descent update uses those derivatives to change the weights during learning.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-gradient-descent",
+        "sc-backprop"
+      ]
+    },
+    {
+      "id": "automatic-differentiation--backpropagation",
+      "source": "automatic-differentiation",
+      "target": "backpropagation",
+      "type": "foundation",
+      "explanation": "Reverse-mode differentiation reuses intermediate derivatives along a computation graph. Backpropagation applies that chain-rule calculation to the network loss.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-automatic-differentiation",
+        "sc-backprop"
+      ]
+    },
+    {
+      "id": "matched-filtering--gravitational-wave-astronomy",
+      "source": "matched-filtering",
+      "target": "gravitational-wave-astronomy",
+      "type": "enables",
+      "explanation": "A search for binary mergers correlates detector data with predicted waveforms weighted by the noise spectrum. A good match helps identify a weak candidate signal.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-matched-filtering",
+        "sc-waves"
+      ]
+    },
+    {
+      "id": "meta-analysis--evidence-based-medicine",
+      "source": "meta-analysis",
+      "target": "evidence-based-medicine",
+      "type": "enables",
+      "explanation": "A clinical review can combine comparable effect estimates across studies. Evidence-based decisions also weigh the quality of those studies and the patient’s circumstances.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-meta-analysis",
+        "xl-ebm"
+      ]
+    },
+    {
+      "id": "type-ia-standardization--dark-energy",
+      "source": "type-ia-standardization",
+      "target": "dark-energy",
+      "type": "enables",
+      "explanation": "Supernova teams corrected for differences among Type Ia light curves before using distances at different redshifts to test whether cosmic expansion was slowing or speeding up.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-type-ia-standardization",
+        "sc-darkenergy"
+      ]
+    },
+    {
+      "id": "electrical-impedance--network-synthesis",
+      "source": "electrical-impedance",
+      "target": "network-synthesis",
+      "type": "foundation",
+      "explanation": "Network synthesis can start from a target impedance as a function of frequency and ask which passive circuit elements could realize it.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-electrical-impedance",
+        "xs-network-synthesis"
+      ]
+    },
+    {
+      "id": "bode-plots--robust-control",
+      "source": "bode-plots",
+      "target": "robust-control",
+      "type": "enables",
+      "explanation": "Frequency-response plots expose gain and phase margins, early indicators of sensitivity to perturbations. Robust-control methods ask how much uncertainty a specified design can tolerate.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-transfer-functions",
+        "e21-robust-control"
+      ]
     }
   ],
   "sources": [
@@ -5879,6 +9171,312 @@
       "title": "Sequence to Sequence Learning with Neural Networks",
       "url": "https://arxiv.org/abs/1409.3215",
       "publisher": "Ilya Sutskever, Oriol Vinyals, and Quoc V. Le / NeurIPS (2014)"
+    },
+    {
+      "id": "e21-confidence-intervals",
+      "title": "Outline of a Theory of Statistical Estimation Based on the Classical Theory of Probability",
+      "url": "https://wwwusers.ts.infn.it/~milotti/Didattica/StatisticaAvanzata/Neyman_1937.pdf",
+      "publisher": "Jerzy Neyman / Philosophical Transactions A (1937)"
+    },
+    {
+      "id": "e21-bootstrap-resampling",
+      "title": "Bootstrap Methods: Another Look at the Jackknife",
+      "url": "https://doi.org/10.1214/aos/1176344552",
+      "publisher": "Bradley Efron / Annals of Statistics (1979)"
+    },
+    {
+      "id": "e21-meta-analysis",
+      "title": "Primary, Secondary, and Meta-Analysis of Research",
+      "url": "https://doi.org/10.3102/0013189X005010003",
+      "publisher": "Gene V. Glass / Educational Researcher (1976)"
+    },
+    {
+      "id": "e21-survival-analysis",
+      "title": "Nonparametric Estimation from Incomplete Observations",
+      "url": "https://jhanley.biostat.mcgill.ca/bios601/SurvivalAnalysis/KaplanMeier1958.pdf",
+      "publisher": "E. L. Kaplan and Paul Meier / JASA (1958)"
+    },
+    {
+      "id": "e21-design-of-experiments",
+      "title": "The Design of Experiments",
+      "url": "https://home.iitk.ac.in/~shalab/anova/DOE-RAF.pdf",
+      "publisher": "R. A. Fisher / Oliver and Boyd (first edition 1935)"
+    },
+    {
+      "id": "e21-principal-component-analysis",
+      "title": "On lines and planes of closest fit to systems of points in space",
+      "url": "https://doi.org/10.1080/14786440109462720",
+      "publisher": "Karl Pearson / Philosophical Magazine (1901)"
+    },
+    {
+      "id": "e21-missing-data-mechanisms",
+      "title": "Inference and Missing Data",
+      "url": "https://dash.harvard.edu/entities/publication/73120378-8764-6bd4-e053-0100007fdf3b",
+      "publisher": "Donald B. Rubin / Biometrika (1976)"
+    },
+    {
+      "id": "e21-multiple-testing-control",
+      "title": "Controlling the False Discovery Rate: a Practical and Powerful Approach to Multiple Testing",
+      "url": "https://doi.org/10.1111/j.2517-6161.1995.tb02031.x",
+      "publisher": "Yoav Benjamini and Yosef Hochberg / JRSS B (1995)"
+    },
+    {
+      "id": "e21-reproducible-research",
+      "title": "Electronic Documents Give Reproducible Research a New Meaning",
+      "url": "https://sep.stanford.edu/oldsep/matt/join/redoc/web/seg92.html",
+      "publisher": "Jon Claerbout and Martin Karrenbach / Society of Exploration Geophysicists (1992)"
+    },
+    {
+      "id": "e21-atomic-clocks",
+      "title": "An Atomic Standard of Frequency and Time Interval: A Cæsium Resonator",
+      "url": "https://doi.org/10.1038/176280a0",
+      "publisher": "Louis Essen and J. V. L. Parry / Nature (1955)"
+    },
+    {
+      "id": "e21-scanning-tunneling-microscopy",
+      "title": "Surface Studies by Scanning Tunneling Microscopy",
+      "url": "https://doi.org/10.1103/PhysRevLett.49.57",
+      "publisher": "G. Binnig, H. Rohrer, Ch. Gerber, and E. Weibel / Physical Review Letters (1982)"
+    },
+    {
+      "id": "e21-cryo-electron-microscopy",
+      "title": "The Development of Cryo-Electron Microscopy: Scientific Background",
+      "url": "https://www.nobelprize.org/uploads/2018/06/advanced-chemistryprize2017.pdf",
+      "publisher": "Royal Swedish Academy of Sciences (2017)"
+    },
+    {
+      "id": "e21-gradient-descent",
+      "title": "Méthode générale pour la résolution des systèmes d’équations simultanées",
+      "url": "https://cs.uwaterloo.ca/~y328yu/classics/cauchy-fr.pdf",
+      "publisher": "Augustin-Louis Cauchy / Comptes rendus (1847)"
+    },
+    {
+      "id": "e21-gradient-descent-2",
+      "title": "Convex Optimization: Unconstrained Minimization",
+      "url": "https://web.stanford.edu/~boyd/cvxbook/",
+      "publisher": "Stephen Boyd and Lieven Vandenberghe / Cambridge University Press"
+    },
+    {
+      "id": "e21-automatic-differentiation",
+      "title": "A simple automatic derivative evaluation program",
+      "url": "https://doi.org/10.1145/355586.364791",
+      "publisher": "R. E. Wengert / Communications of the ACM (1964)"
+    },
+    {
+      "id": "e21-decision-trees",
+      "title": "Induction of decision trees",
+      "url": "https://doi.org/10.1007/BF00116251",
+      "publisher": "J. Ross Quinlan / Machine Learning (1986)"
+    },
+    {
+      "id": "e21-ensemble-learning",
+      "title": "Bagging predictors",
+      "url": "https://doi.org/10.1007/BF00058655",
+      "publisher": "Leo Breiman / Machine Learning (1996)"
+    },
+    {
+      "id": "e21-self-supervised-learning",
+      "title": "Unsupervised Visual Representation Learning by Context Prediction",
+      "url": "https://openaccess.thecvf.com/content_iccv_2015/html/Doersch_Unsupervised_Visual_Representation_ICCV_2015_paper.html",
+      "publisher": "Carl Doersch, Abhinav Gupta, and Alexei A. Efros / ICCV (2015)"
+    },
+    {
+      "id": "e21-graph-neural-networks",
+      "title": "The graph neural network model",
+      "url": "https://doi.org/10.1109/TNN.2008.2005605",
+      "publisher": "Franco Scarselli and colleagues / IEEE Transactions on Neural Networks (2009)"
+    },
+    {
+      "id": "e21-differential-privacy",
+      "title": "Differential Privacy",
+      "url": "https://doi.org/10.1007/11787006_1",
+      "publisher": "Cynthia Dwork / ICALP (2006)"
+    },
+    {
+      "id": "e21-zero-knowledge-proofs",
+      "title": "The knowledge complexity of interactive proof-systems",
+      "url": "https://doi.org/10.1145/22145.22178",
+      "publisher": "Shafi Goldwasser, Silvio Micali, and Charles Rackoff / STOC (1985)"
+    },
+    {
+      "id": "e21-quantum-error-correction",
+      "title": "Scheme for reducing decoherence in quantum computer memory",
+      "url": "https://doi.org/10.1103/PhysRevA.52.R2493",
+      "publisher": "Peter W. Shor / Physical Review A (1995)"
+    },
+    {
+      "id": "e21-flp-impossibility",
+      "title": "Impossibility of Distributed Consensus with One Faulty Process",
+      "url": "https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf",
+      "publisher": "Michael Fischer, Nancy Lynch, and Michael Paterson / JACM (1985)"
+    },
+    {
+      "id": "e21-transfer-functions",
+      "title": "Relations Between Attenuation and Phase in Feedback Amplifier Design",
+      "url": "https://doi.org/10.1002/j.1538-7305.1940.tb00839.x",
+      "publisher": "Hendrik W. Bode / Bell System Technical Journal (1940)"
+    },
+    {
+      "id": "e21-transfer-functions-2",
+      "title": "Feedback Systems, chapter 8: Transfer Functions",
+      "url": "https://www.cds.caltech.edu/~murray/books/AM08/pdf/am08-xferfcns_10Sep12.pdf",
+      "publisher": "Karl J. Åström and Richard M. Murray / Princeton University Press"
+    },
+    {
+      "id": "e21-observability",
+      "title": "On the General Theory of Control Systems",
+      "url": "https://www.control.utoronto.ca/~broucke/ece557f/kalman.pdf",
+      "publisher": "Rudolf E. Kalman / First IFAC Congress (1960)"
+    },
+    {
+      "id": "e21-robust-control",
+      "title": "Feedback and optimal sensitivity: Model reference transformations, multiplicative seminorms, and approximate inverses",
+      "url": "https://doi.org/10.1109/TAC.1981.1102603",
+      "publisher": "George Zames / IEEE Transactions on Automatic Control (1981)"
+    },
+    {
+      "id": "e21-adaptive-control",
+      "title": "On self tuning regulators",
+      "url": "https://doi.org/10.1016/0005-1098(73)90073-3",
+      "publisher": "Karl J. Åström and Björn Wittenmark / Automatica (1973)"
+    },
+    {
+      "id": "e21-system-identification",
+      "title": "Numerical Identification of Linear Dynamic Systems from Normal Operating Records",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1474667017690244",
+      "publisher": "Karl J. Åström and Torsten Bohlin / IFAC (1965)"
+    },
+    {
+      "id": "e21-finite-volume-method",
+      "title": "A calculation procedure for heat, mass and momentum transfer in three-dimensional parabolic flows",
+      "url": "https://doi.org/10.1016/0017-9310(72)90054-3",
+      "publisher": "S. V. Patankar and D. B. Spalding / International Journal of Heat and Mass Transfer (1972)"
+    },
+    {
+      "id": "e21-structural-buckling",
+      "title": "Column Buckling Theory: Historic Highlights",
+      "url": "https://doi.org/10.1061/(ASCE)0733-9445(1983)109:9(2086)",
+      "publisher": "Journal of Structural Engineering / ASCE (1983)"
+    },
+    {
+      "id": "e21-fatigue-life",
+      "title": "Cyclic fatigue damage characteristics observed for simple loadings extended to multiaxial life prediction",
+      "url": "https://ntrs.nasa.gov/api/citations/19880015632/downloads/19880015632.pdf",
+      "publisher": "David J. Jones and Peter Kurath / NASA CR-182126 (1988), section 1.1.2"
+    },
+    {
+      "id": "e21-electrical-impedance",
+      "title": "Arthur Edwin Kennelly: Biographical Memoir",
+      "url": "https://www.nasonline.org/wp-content/uploads/2024/06/kennelly-arthur.pdf",
+      "publisher": "National Academy of Sciences"
+    },
+    {
+      "id": "e21-matched-filtering",
+      "title": "An Analysis of the Factors Which Determine Signal/Noise Discrimination in Pulsed-Carrier Systems",
+      "url": "https://doi.org/10.1109/PROC.1963.2383",
+      "publisher": "D. O. North / RCA report (1943), reprinted in Proceedings of the IEEE (1963)"
+    },
+    {
+      "id": "e21-jeans-instability",
+      "title": "The stability of a spherical nebula",
+      "url": "https://doi.org/10.1098/rsta.1902.0012",
+      "publisher": "James H. Jeans / Philosophical Transactions A (1902)"
+    },
+    {
+      "id": "e21-accretion-disks",
+      "title": "Black holes in binary systems. Observational appearance.",
+      "url": "https://ui.adsabs.harvard.edu/abs/1973A%26A....24..337S/abstract",
+      "publisher": "N. I. Shakura and R. A. Sunyaev / Astronomy and Astrophysics (1973)"
+    },
+    {
+      "id": "e21-eddington-luminosity",
+      "title": "On the Radiative Equilibrium of the Stars",
+      "url": "https://doi.org/10.1093/mnras/77.1.16",
+      "publisher": "Arthur S. Eddington / MNRAS (1916)"
+    },
+    {
+      "id": "e21-core-accretion",
+      "title": "Formation of the Giant Planets by Concurrent Accretion of Solids and Gas",
+      "url": "https://doi.org/10.1006/icar.1996.0190",
+      "publisher": "James B. Pollack and colleagues / Icarus (1996)"
+    },
+    {
+      "id": "e21-asteroseismology",
+      "title": "Sounds of a Star",
+      "url": "https://www.eso.org/public/news/eso0125/",
+      "publisher": "European Southern Observatory (2001)"
+    },
+    {
+      "id": "e21-type-ia-standardization",
+      "title": "The Absolute Magnitudes of Type IA Supernovae",
+      "url": "https://doi.org/10.1086/186970",
+      "publisher": "Mark M. Phillips / Astrophysical Journal Letters (1993)"
+    },
+    {
+      "id": "e21-cosmic-distance-ladder",
+      "title": "Final Results from the Hubble Space Telescope Key Project to Measure the Hubble Constant",
+      "url": "https://ned.ipac.caltech.edu/level5/Sept01/Freedman/Freedman_contents.html",
+      "publisher": "Wendy L. Freedman and colleagues / Astrophysical Journal (2001)"
+    },
+    {
+      "id": "e21-primordial-black-holes",
+      "title": "Gravitationally Collapsed Objects of Very Low Mass",
+      "url": "https://doi.org/10.1093/mnras/152.1.75",
+      "publisher": "Stephen Hawking / MNRAS (1971)"
+    },
+    {
+      "id": "e21-primordial-black-holes-2",
+      "title": "Constraints on primordial black holes",
+      "url": "https://arxiv.org/abs/2007.10722",
+      "publisher": "Bernard Carr and colleagues / Reports on Progress in Physics"
+    },
+    {
+      "id": "e21-predictive-processing",
+      "title": "Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects",
+      "url": "https://www.nature.com/articles/nn0199_79",
+      "publisher": "Rajesh P. N. Rao and Dana H. Ballard / Nature Neuroscience (1999)"
+    },
+    {
+      "id": "e21-theory-of-mind",
+      "title": "Does the chimpanzee have a theory of mind?",
+      "url": "https://doi.org/10.1017/S0140525X00076512",
+      "publisher": "David Premack and Guy Woodruff / Behavioral and Brain Sciences (1978)"
+    },
+    {
+      "id": "e21-cognitive-load-theory",
+      "title": "Cognitive load during problem solving: Effects on learning",
+      "url": "https://doi.org/10.1016/0364-0213(88)90023-7",
+      "publisher": "John Sweller / Cognitive Science (1988)"
+    },
+    {
+      "id": "e21-common-pool-governance",
+      "title": "Governing the Commons: The Evolution of Institutions for Collective Action",
+      "url": "https://doi.org/10.1017/CBO9780511807763",
+      "publisher": "Elinor Ostrom / Cambridge University Press (1990)"
+    },
+    {
+      "id": "e21-externalities",
+      "title": "The Economics of Welfare",
+      "url": "https://www.routledge.com/The-Economics-of-Welfare/Pigou/p/book/9781351304368",
+      "publisher": "Arthur C. Pigou / Macmillan (1920; Routledge reissue)"
+    },
+    {
+      "id": "e21-weak-ties",
+      "title": "The Strength of Weak Ties",
+      "url": "https://doi.org/10.1086/225469",
+      "publisher": "Mark S. Granovetter / American Journal of Sociology (1973)"
+    },
+    {
+      "id": "e21-speech-acts",
+      "title": "How to Do Things with Words",
+      "url": "https://academic.oup.com/book/5162",
+      "publisher": "J. L. Austin / Oxford University Press"
+    },
+    {
+      "id": "e21-compositional-semantics",
+      "title": "Universal grammar",
+      "url": "https://doi.org/10.1111/j.1755-2567.1970.tb00434.x",
+      "publisher": "Richard Montague / Theoria (1970)"
     }
   ]
 }

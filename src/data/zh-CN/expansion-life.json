@@ -1669,6 +1669,748 @@
         "explanation": "这个简化的净反应表明溶解的二氧化碳如何增加氢离子浓度；完整的碳酸盐系统包括额外的平衡。"
       },
       "sourceDigest": "c686d396f89dc1d26c79996d311f9a58224bb3c6474ea41ba2a5bea132fece28"
+    },
+    "geostrophic-balance": {
+      "title": "地转平衡",
+      "aliases": [
+        "地转风"
+      ],
+      "tags": [
+        "地转平衡"
+      ],
+      "date": {
+        "label": "1857年",
+        "note": "1857年的经验风律是定性里程碑，并非现代地转动力学的完整推导。"
+      },
+      "summary": "在远离赤道的大尺度流动中，水平气压梯度加速度与科里奥利加速度可近似抵消。",
+      "problem": "为何大尺度风常近似沿等压线吹，而非直吹低压区？",
+      "development": "白贝罗的风压观测提供了定性规则。旋转流体动力学解释了这一也用于海洋学的近似平衡。",
+      "limitations": "在赤道附近、近地面、曲率很大或加速很快时，其他项可能同样重要。",
+      "contributors": [
+        {
+          "name": "克里斯托福鲁斯·白贝罗",
+          "role": "记录了风向与气压分布之间的关系。"
+        }
+      ],
+      "example": "在中纬度气压图上，等压线密集可表示较强的地转风。",
+      "representation": {
+        "explanation": "在远离赤道、摩擦可忽略的稳态大尺度流动中，f 是科里奥利参数，k̂ 指向上方，v_g 是水平地转速度。压强 p 的水平梯度 ∇ₕp 除以密度 ρ 再取负号，给出单位质量所受的水平压强梯度力。"
+      },
+      "sourceDigest": "8de3319213840f00377b7daff2273a5cf1c48221af76a18daaad35ff9bfea0a7"
+    },
+    "radiative-transfer": {
+      "title": "辐射传输",
+      "aliases": [],
+      "tags": [
+        "辐射传输"
+      ],
+      "date": {
+        "label": "1906年",
+        "note": "史瓦西的太阳大气工作是早期传输理论里程碑，并非首次研究吸收。"
+      },
+      "summary": "沿路径传播的辐射随物质在不同波长的吸收、发射或散射而改变。",
+      "problem": "穿过许多大气层后，有多少辐射能够逸出？",
+      "development": "大气辐射传输理论将局地相互作用与边界观测辐射相连，同时服务于恒星大气与地球气候计算。",
+      "limitations": "云、散射、谱线与三维结构使简单一维模型更复杂。",
+      "contributors": [
+        {
+          "name": "卡尔·史瓦西",
+          "role": "发展了辐射平衡大气模型。"
+        }
+      ],
+      "example": "某一高度发出的红外辐射可能在更高处被吸收并重新发射。",
+      "representation": {
+        "explanation": "Iν 为沿路径 s 的谱强度，αν 为单位长度消光系数，jν 为射入该方向的发射项；建模时也可包括散射入射。"
+      },
+      "sourceDigest": "955874fd402c6f05645742787dc1fb6d68cf8a8dfefde2371099b85c44f2f0ff"
+    },
+    "numerical-weather-prediction": {
+      "title": "数值天气预报",
+      "aliases": [
+        "数值预报"
+      ],
+      "tags": [
+        "数值天气预报"
+      ],
+      "date": {
+        "label": "1950年",
+        "note": "以1950年的电子计算机预报为里程碑；理查森此前已开展数值研究。"
+      },
+      "summary": "数值预报从估计的大气状态出发推进物理模型，以预测天气演变。",
+      "problem": "今天的大气观测能否变成对明天气流的计算？",
+      "development": "ENIAC实验积分了简化涡度方程。现代预报采用更完整的动力学、观测、资料同化与集合预报。",
+      "limitations": "初态不确定性会增长，未分辨过程引入模型误差；单次预报的有效时限有限。",
+      "contributors": [
+        {
+          "name": "朱尔·查尼、拉格纳·菲约托夫与约翰·冯·诺伊曼",
+          "role": "用简化大气方程计算预报。"
+        }
+      ],
+      "example": "推进网格化大气场，预测中纬度气压形势的移动。",
+      "representation": {
+        "explanation": "天气预报针对具体演变态；气候模拟还研究长期统计性质。",
+        "expression": "观测初态 + 动力方程 → 预报轨迹"
+      },
+      "sourceDigest": "cb8caea7aa7ab964d8782fc4be4a28a05d5e2fff79e306aba3f628d7c2a3f433"
+    },
+    "carbon-silicate-cycle": {
+      "title": "碳硅循环",
+      "aliases": [
+        "硅酸盐风化反馈"
+      ],
+      "tags": [
+        "碳硅循环"
+      ],
+      "date": {
+        "label": "1981年",
+        "note": "以1981年的反馈模型为锚点，并非风化或碳循环研究的开始。"
+      },
+      "summary": "在地质时间内，硅酸盐风化及碳酸盐埋藏可移除大气二氧化碳，固体地球过程则使其返回。",
+      "problem": "哪些过程能在深时尺度上抵消持续的行星温度变化？",
+      "development": "沃克等人将增温和风化与二氧化碳减少联系起来，描述了一种可能稳定气候的反馈。",
+      "limitations": "风化可能受岩石供应、水分或生物限制。其缓慢响应无法在人类时间尺度上抵消快速排放。",
+      "contributors": [
+        {
+          "name": "詹姆斯·沃克、保罗·海斯与詹姆斯·卡斯廷",
+          "role": "建立了长期风化与气候反馈模型。"
+        }
+      ],
+      "example": "加强硅酸盐风化并继以海洋碳酸盐埋藏，可在长期内降低大气CO₂。",
+      "representation": {
+        "explanation": "该理想净反应合并风化与碳酸盐埋藏，省略了许多水溶液中间反应。"
+      },
+      "sourceDigest": "f4cb1942eb56647219f56e470a1717767e8b7ab39d16e0027175d808f916a955"
+    },
+    "sequence-stratigraphy": {
+      "title": "层序地层学",
+      "aliases": [],
+      "tags": [
+        "层序地层学"
+      ],
+      "date": {
+        "label": "1977年",
+        "note": "以1977年的地震地层学综合为层序概念长期发展中的里程碑。"
+      },
+      "summary": "沉积岩层组合及其界面记录了沉积、侵蚀和可容空间的变化。",
+      "problem": "侵蚀或未沉积打断记录时，怎样进行地层对比？",
+      "development": "地震剖面显示了上超和削截等可解释为沉积层序组成部分的模式。",
+      "limitations": "局部构造及沉积物供给可产生类似海平面变化的效应；单一界面不能证明全球事件。",
+      "contributors": [
+        {
+          "name": "罗伯特·米彻姆、彼得·韦尔与约翰·桑格里",
+          "role": "利用地震反射模式解释沉积层序。"
+        }
+      ],
+      "example": "终止于较老界面的反射层可揭示某段沉积过程的几何形态。",
+      "representation": {
+        "explanation": "解释需要地质背景，并应在可能时结合独立年代或环境约束。",
+        "expression": "利用界面与叠置样式解释沉积岩层组合"
+      },
+      "sourceDigest": "009f6632a4029f841f18e76d7d2b90cf5f552d7569c3a2dd14c74f870e83d382"
+    },
+    "sediment-transport": {
+      "title": "泥沙输运",
+      "aliases": [
+        "希尔兹参数"
+      ],
+      "tags": [
+        "泥沙输运"
+      ],
+      "date": {
+        "label": "1936年",
+        "note": "以希尔兹的起动阈值研究为里程碑；河流输沙及相关研究均远早于此。"
+      },
+      "summary": "水流可起动颗粒，使其沿床面移动或保持悬浮，进而重塑河道与海岸。",
+      "problem": "流动水体施加的作用何时能克服颗粒的运动阻力？",
+      "development": "希尔兹比较床面剪应力与颗粒水下重量尺度，统一整理不同粒径的观测。",
+      "limitations": "起动阈值随颗粒形状、堆积、黏聚性、坡度和湍流而变。",
+      "contributors": [
+        {
+          "name": "阿尔伯特·希尔兹",
+          "role": "用相似分析研究推移质启动。"
+        }
+      ],
+      "example": "洪水可带动常规流量下保持静止的砾石。",
+      "representation": {
+        "explanation": "θ 为无量纲床面应力；τᵦ 为床面剪应力，ρₛ 和 ρ 为泥沙与流体密度，g 为重力加速度，d 为粒径。"
+      },
+      "sourceDigest": "e2a3d41040d8c08f24d76c8d7ac25d3c1ba9a18c344d9125044cc6b0c6511965"
+    },
+    "reactive-transport": {
+      "title": "反应输运",
+      "aliases": [],
+      "tags": [
+        "反应输运"
+      ],
+      "date": {
+        "label": "1985年",
+        "note": "以1985年的热液连续介质模型为所选应用。"
+      },
+      "summary": "反应输运追踪移动的化学物种，同时考虑反应对它们的生成、消耗或固定。",
+      "problem": "溶解物沿途与岩石反应时，最终会迁移到哪里？",
+      "development": "利希特纳将平流与扩散输运同可逆及不可逆反应结合，使流体和岩石化学共同演化。",
+      "limitations": "反应速率、活性表面积、孔隙结构及未分辨混合可能主导不确定性。",
+      "contributors": [
+        {
+          "name": "彼得·利希特纳",
+          "role": "将多孔介质中的流体输运与地球化学反应耦合。"
+        }
+      ],
+      "example": "地下水中的溶解金属羽流可因沉淀移除离子而减缓迁移。",
+      "representation": {
+        "explanation": "对每种守恒组分或反应物种，以一致单位列出平衡。",
+        "expression": "累积量 = 输运净流入量 + 化学生成净量"
+      },
+      "sourceDigest": "481d799d8f434dd630d1a96574be404283ae2de50d0afb45fd2bbe80a6deeefd"
+    },
+    "climate-tipping-elements": {
+      "title": "气候临界要素",
+      "aliases": [
+        "气候临界点"
+      ],
+      "tags": [
+        "气候临界要素"
+      ],
+      "date": {
+        "label": "2008年",
+        "note": "2008年的综合研究整理了候选临界要素；更早已有非线性气候转变研究。"
+      },
+      "summary": "控制因素越过临界范围时，大型气候子系统可能发生质的重组。",
+      "problem": "逐渐变化的强迫何时会引起不成比例的大变化？",
+      "development": "伦顿等人运用物理机制、模型、观测与专家评估考察候选子系统。",
+      "limitations": "阈值、时间尺度、可逆性与证据因子系统而异；跨过阈值不代表变化立即完成。",
+      "contributors": [
+        {
+          "name": "蒂莫西·伦顿及其合作者",
+          "role": "界定了临界要素并评估候选气候子系统。"
+        }
+      ],
+      "example": "冰盖可能在大部分冰尚未消失时，就已进入长期退缩过程。",
+      "representation": {
+        "explanation": "各子系统的候选机制及可信度必须分别评估。",
+        "expression": "临界点附近较小的控制变化可引起质的重组"
+      },
+      "sourceDigest": "14fdb9cd6f6f04101141a7f2dd9a96f8a33596ade3f371de53ad9a4b9dd2589f"
+    },
+    "atp-energy-coupling": {
+      "title": "ATP能量偶联",
+      "aliases": [],
+      "tags": [
+        "ATP能量偶联"
+      ],
+      "date": {
+        "label": "1941年",
+        "note": "李普曼1941年的综合论述涉及代谢功能，并非ATP的发现。"
+      },
+      "summary": "细胞将消耗ATP的反应与其他过程偶联，使总自由能变化有利于做功。",
+      "problem": "细胞如何驱动单独进行时不利的反应？",
+      "development": "李普曼整理了磷酸基团转移连接产能与耗能途径的证据。酶通过共同中间体或构象改变将反应联系起来。",
+      "limitations": "单独断键需要能量；关键是反应物、产物及环境的整体自由能变化。",
+      "contributors": [
+        {
+          "name": "弗里茨·李普曼",
+          "role": "综合阐述了磷酸基团转移在代谢偶联中的作用。"
+        }
+      ],
+      "example": "激酶将ATP转化与糖的磷酸化偶联。",
+      "representation": {
+        "explanation": "ΔG₁ 与 ΔG₂ 是相同条件下按给定比例组合的两个反应的吉布斯自由能变化。总和为负有利于耦合过程，但只有共享的化学或机械步骤才能使两个反应真正偶联。"
+      },
+      "sourceDigest": "0f45a85e1f8f725e38f122a5697c326e7068102a427aa02257568d5f701e31e0"
+    },
+    "apoptosis": {
+      "title": "细胞凋亡",
+      "aliases": [],
+      "tags": [
+        "细胞凋亡"
+      ],
+      "date": {
+        "label": "1972年",
+        "note": "1972年的论文根据组织观测提出术语，分子通路后来才逐步阐明。"
+      },
+      "summary": "细胞凋亡是调控性死亡过程，常伴随细胞皱缩、染色质凝集及细胞碎片有序清除。",
+      "problem": "如何移除不再需要或受损的细胞，同时保护周围组织？",
+      "development": "显微比较揭示了不同于许多损伤性死亡的反复出现的形态；后续研究将其与受调控的分子机制联系起来。",
+      "limitations": "单靠形态无法鉴别所有通路；凋亡只是调控性细胞死亡的一种形式。",
+      "contributors": [
+        {
+          "name": "约翰·克尔、安德鲁·怀利与阿拉斯泰尔·柯里",
+          "role": "命名并描述了具有特征形态的细胞死亡模式。"
+        }
+      ],
+      "example": "组织重塑时，部分细胞可分裂成碎片并被邻近细胞或吞噬细胞清除。",
+      "representation": {
+        "explanation": "这一模式关注死亡细胞及其碎片的命运，而非单纯细胞数量减少。",
+        "expression": "单个细胞受调控地解体并被清除"
+      },
+      "sourceDigest": "4d5530d152e3e897f6f9ee710c2e9663680b3712bafd3cf11fa565177477df15"
+    },
+    "autophagy": {
+      "title": "自噬",
+      "aliases": [
+        "巨自噬"
+      ],
+      "tags": [
+        "自噬"
+      ],
+      "date": {
+        "label": "1992年",
+        "note": "1992年的酵母实验使该通路可进行遗传学研究；此前显微观察已在其他细胞中发现自噬。"
+      },
+      "summary": "细胞将自身部分内容物送入降解区室，以回收物质或清除受损成分。",
+      "problem": "营养匮乏时，细胞如何回收细胞质？",
+      "development": "无法正常消化物质的酵母在饥饿时于液泡中积累自噬小体，使这一回收过程便于研究。",
+      "limitations": "自噬包含多条通路；可见囊泡增多可能表示形成增加，也可能表示清除受阻。",
+      "contributors": [
+        {
+          "name": "武重敬二、大隅良典及其合作者",
+          "role": "展示了酵母中饥饿诱导的自噬。"
+        }
+      ],
+      "example": "饥饿时，酵母细胞可通过液泡回收细胞质蛋白质。",
+      "representation": {
+        "explanation": "巨自噬中双层膜载体包裹货物，其他路径有所不同。",
+        "expression": "细胞货物被送至溶酶体或液泡降解"
+      },
+      "sourceDigest": "d2c4802cb7f54803e6b8986d7fce68ca984f420d0b8f9a8353fc38d01d1dca50"
+    },
+    "cell-cycle-checkpoints": {
+      "title": "细胞周期检查点",
+      "aliases": [],
+      "tags": [
+        "细胞周期检查点"
+      ],
+      "date": {
+        "label": "1989年",
+        "note": "1989年的表述将调控性检查点与简单物理依赖区分开来。"
+      },
+      "summary": "当前序过程未完成或检测到损伤时，检查点机制会延迟后续细胞周期事件。",
+      "problem": "细胞如何避免在遗传物质尚未准备好时分裂？",
+      "development": "遗传学实验区分了无法执行某步骤的细胞，以及出现问题时无法延迟后续步骤的突变体。",
+      "limitations": "检查点降低风险但不保证分裂无误，不同检查点监测不同条件。",
+      "contributors": [
+        {
+          "name": "利兰·哈特韦尔与特德·韦纳特",
+          "role": "将检查点控制表述为细胞周期事件之间的依赖关系。"
+        }
+      ],
+      "example": "DNA损伤可在修复通路发挥作用时延迟细胞分裂。",
+      "representation": {
+        "explanation": "解除控制可能允许过程继续，却不会修正原缺陷。",
+        "expression": "监测信号使一个事件依赖于另一个事件"
+      },
+      "sourceDigest": "297f9e05d7b4a89d206bc24adf5299647a8532dcadf978323174d0fbd4612c62"
+    },
+    "alternative-rna-splicing": {
+      "title": "RNA可变剪接",
+      "aliases": [
+        "选择性剪接"
+      ],
+      "tags": [
+        "RNA可变剪接"
+      ],
+      "date": {
+        "label": "1982年",
+        "note": "这里选取的是通过实验研究可变加工的一个具体里程碑；分裂基因的发现则更早。"
+      },
+      "summary": "同一前体RNA选择不同剪接位点，可由同一基因产生不同的成熟RNA。",
+      "problem": "一个基因如何产生多种不同转录本？",
+      "development": "分裂基因被发现后，吉尔伯特提出编码片段可能通过不同方式组合。1982年，阿马拉等人发现，降钙素基因的转录本可以通过不同的加工方式形成不同的信使RNA。",
+      "limitations": "不是每个检出的转录本都产生稳定有功能的蛋白质，还需考虑丰度与组织背景。",
+      "contributors": [
+        {
+          "name": "沃尔特·吉尔伯特",
+          "role": "讨论了以不同方式组合编码片段的可能性。"
+        },
+        {
+          "name": "苏珊·阿马拉及其同事",
+          "role": "发现降钙素基因的转录本可通过不同方式加工。"
+        }
+      ],
+      "example": "同一个降钙素基因，在甲状腺中主要产生编码降钙素的信使RNA，在下丘脑中则主要产生编码降钙素基因相关肽的信使RNA。",
+      "representation": {
+        "explanation": "基因的核苷酸序列无需改变，RNA加工改变所连接的片段。",
+        "expression": "一个前体RNA → 不同成熟转录本"
+      },
+      "sourceDigest": "ec16d181e0d5063224fff3d64cb582f2e24009ff8bca68aa83ed723029a97a2c"
+    },
+    "rna-interference": {
+      "title": "RNA干扰",
+      "aliases": [
+        "RNAi"
+      ],
+      "tags": [
+        "RNA干扰"
+      ],
+      "date": {
+        "label": "1998年",
+        "note": "1998年的线虫实验之前，其他生物中已观察到基因沉默。"
+      },
+      "summary": "双链RNA可通过小RNA通路引发针对匹配基因表达的序列导向抑制。",
+      "problem": "引入RNA如何无需改变DNA序列就使基因沉默？",
+      "development": "法尔等人发现在线虫实验中双链RNA远比任一单链有效。后续研究鉴定了小向导RNA与效应复合物。",
+      "limitations": "敲低可能不完整或影响非目标转录本；递送和通路细节因情况而异。",
+      "contributors": [
+        {
+          "name": "安德鲁·法尔、克雷格·梅洛及其合作者",
+          "role": "在蠕虫中展示了双链RNA触发的序列特异性沉默。"
+        }
+      ],
+      "example": "使线虫某基因沉默，将表型与未处理动物比较。",
+      "representation": {
+        "explanation": "序列互补有助于提供特异性；沉默不一定永久。",
+        "expression": "向导RNA将沉默作用导向互补转录本"
+      },
+      "sourceDigest": "c7c1dbc1106176226c856caa052422d619a338bb42e80a815a378caa7d0bd926"
+    },
+    "transposable-elements": {
+      "title": "转座元件",
+      "aliases": [
+        "跳跃基因"
+      ],
+      "tags": [
+        "转座元件"
+      ],
+      "date": {
+        "label": "1950年",
+        "note": "以麦克林托克1950年的玉米研究报告为历史锚点。"
+      },
+      "summary": "一些DNA序列可改变位置，或在基因组其他位点生成新拷贝。",
+      "problem": "为何一个遗传位点在不同细胞谱系中会改变行为？",
+      "development": "麦克林托克将不稳定玉米性状与可移动元件联系起来。分子研究后来区分了基于DNA的移动和通过RNA的逆转座。",
+      "limitations": "许多基因组拷贝已失活；插入效应取决于位置和调控。",
+      "contributors": [
+        {
+          "name": "芭芭拉·麦克林托克",
+          "role": "从玉米遗传学推断出可移动控制元件。"
+        }
+      ],
+      "example": "元件从色素基因移出，可使玉米籽粒出现着色斑块。",
+      "representation": {
+        "explanation": "移动可破坏或调节其他序列；转座不同于通常的减数分裂交换。",
+        "expression": "序列可移动或复制到新的基因组位置"
+      },
+      "sourceDigest": "91e1e2999430e66d6c0e8792e2d14c63bfc3cf0aa5d337baf9817eb01084c500"
+    },
+    "stem-cell-pluripotency": {
+      "title": "干细胞多能性",
+      "aliases": [
+        "诱导多能性"
+      ],
+      "tags": [
+        "干细胞多能性"
+      ],
+      "date": {
+        "label": "2006年",
+        "note": "以2006年的小鼠重编程实验为锚点；胚胎多能性此前已知。"
+      },
+      "summary": "多能细胞可产生三个胚层的衍生物；确定因子可使分化细胞向该状态重编程。",
+      "problem": "特化细胞的发育潜能是否永久固定？",
+      "development": "高桥与山中将四个因子导入小鼠成纤维细胞，获得具有多种胚胎干细胞特征的诱导多能干细胞系。",
+      "limitations": "多能不等于全能；重编程细胞系存在差异，单凭标记不能确立所有功能特性。",
+      "contributors": [
+        {
+          "name": "高桥和利与山中伸弥",
+          "role": "利用确定因子在小鼠成纤维细胞中诱导出多能样状态。"
+        }
+      ],
+      "example": "重编程细胞系可分化为神经细胞以供实验研究。",
+      "representation": {
+        "explanation": "这是细胞状态的属性，并非指能独立发育为完整生物体。",
+        "expression": "产生三个胚层衍生细胞的发育潜能"
+      },
+      "sourceDigest": "e6f1343df5c41952b55f6574ed2f5d14763320eb166e6a4d5cd97ce7134ac69c"
+    },
+    "hebbian-plasticity": {
+      "title": "赫布可塑性",
+      "aliases": [
+        "赫布学习"
+      ],
+      "tags": [
+        "赫布可塑性"
+      ],
+      "date": {
+        "label": "1949年",
+        "note": "赫布1949年的假设早于后来关于突触增强的实验。"
+      },
+      "summary": "一个神经元的活动反复促成另一个神经元放电时，二者连接可能增强。",
+      "problem": "重复经历如何在神经回路中留下持久改变？",
+      "development": "赫布提出机制，将反复的因果性共同激活与细胞集合联系起来；后来的实验和计算规则给出更具体条件。",
+      "limitations": "时序、抑制、神经调质及稳态机制都很重要；并非每种相关活动都会增强突触。",
+      "contributors": [
+        {
+          "name": "唐纳德·赫布",
+          "role": "提出有效神经连接可依赖活动而增强。"
+        }
+      ],
+      "example": "在简化模型中，突触前后单元都活跃时提高突触权重。",
+      "representation": {
+        "explanation": "示例规则使用活动 x、y 和正学习率 η；它并非赫布原文或普适生物定律。"
+      },
+      "sourceDigest": "18197c6a175115db4c8649d240990a7aacd402c9ab412e732cc7334648109f89"
+    },
+    "ecological-resilience": {
+      "title": "生态韧性",
+      "aliases": [
+        "生态系统韧性"
+      ],
+      "tags": [
+        "生态韧性"
+      ],
+      "date": {
+        "label": "1973年",
+        "note": "以霍林1973年的综合研究为所选生态学表述。"
+      },
+      "summary": "生态韧性关注系统在保留关键关系及状态格局时能吸收多大扰动。",
+      "problem": "小冲击后的快速恢复与大冲击下的持续存在是否相同？",
+      "development": "霍林将局地稳定性与更广扰动下的持续存在作比较，将注意力转向替代状态及变异。",
+      "limitations": "韧性取决于所指定的功能、扰动、空间尺度和时间范围。",
+      "contributors": [
+        {
+          "name": "克劳福德·霍林",
+          "role": "区分了受扰动后的持续存在与快速回归平衡。"
+        }
+      ],
+      "example": "湖泊可能从较小营养盐脉冲中恢复，却在持续输入后转入不同状态。",
+      "representation": {
+        "explanation": "持续性不同于某个平衡点附近的回归速度。",
+        "expression": "扰动下系统关系的持续保持"
+      },
+      "sourceDigest": "22d4834f6ff94e11783ea4c497238e475bb430bb8e3e8b2775ae6a429b4311a7"
+    },
+    "innate-pattern-recognition": {
+      "title": "固有免疫模式识别",
+      "aliases": [
+        "模式识别受体"
+      ],
+      "tags": [
+        "固有免疫模式识别"
+      ],
+      "date": {
+        "label": "1989年",
+        "note": "詹韦1989年的提议早于多条受体通路的鉴定。"
+      },
+      "summary": "固有免疫受体检测微生物或损伤相关的重复分子特征，并启动信号反应。",
+      "problem": "在抗原特异性克隆扩增前，免疫系统如何识别危险？",
+      "development": "詹韦提出遗传编码的受体有助于启动适应性免疫。后续对Toll及Toll样受体的实验揭示了具体信号机制。",
+      "limitations": "分子模式并非某一病原体的唯一标识；受体位置及组织环境影响反应。",
+      "contributors": [
+        {
+          "name": "小查尔斯·詹韦",
+          "role": "提出由胚系编码受体识别微生物模式以触发适应性反应。"
+        }
+      ],
+      "example": "细菌脂多糖可通过TLR4受体复合物触发信号。",
+      "representation": {
+        "explanation": "这些受体由胚系编码，不同于淋巴细胞中经个体重排形成的抗原受体。",
+        "expression": "共有分子模式 → 受体激活 → 固有免疫信号"
+      },
+      "sourceDigest": "b5a9b858437cab714b63043e0bf71b1a3ad7d3d6f00749e65b6ade6a3eea0a51"
+    },
+    "antigen-presentation": {
+      "title": "抗原呈递",
+      "aliases": [
+        "MHC限制性"
+      ],
+      "tags": [
+        "抗原呈递"
+      ],
+      "date": {
+        "label": "1974年",
+        "note": "1974年的限制性实验早于肽结合槽的结构鉴定。"
+      },
+      "summary": "经典MHC分子在细胞表面展示肽，使T细胞能够检查与该细胞相关的部分蛋白质信息。",
+      "problem": "T细胞如何识别含病毒的细胞？",
+      "development": "实验表明，细胞毒性识别除感染外还依赖适当的宿主MHC背景。后续结构研究揭示了容纳结合物的槽。",
+      "limitations": "不同MHC类别和等位基因呈递不同肽；仅有呈递不保证出现有效免疫反应。",
+      "contributors": [
+        {
+          "name": "罗尔夫·辛克纳吉与彼得·多尔蒂",
+          "role": "展示了抗病毒T细胞识别的MHC限制性。"
+        },
+        {
+          "name": "帕梅拉·比约克曼及其合作者",
+          "role": "揭示了MHCⅠ类分子的结构。"
+        }
+      ],
+      "example": "病毒感染细胞通过MHCⅠ类分子向CD8 T细胞展示病毒肽。",
+      "representation": {
+        "explanation": "常规T细胞受体识别由肽和MHC共同构成的表面。",
+        "expression": "肽 + MHC分子 → 可被识别的表面复合物"
+      },
+      "sourceDigest": "b20abd54c1b4caa0f37d1217fce5a20becfae7a7b65f2cd54d5e92b37b1c2e11"
+    },
+    "complement-system": {
+      "title": "补体系统",
+      "aliases": [
+        "补体的旧称：alexin"
+      ],
+      "tags": [
+        "补体系统"
+      ],
+      "date": {
+        "label": "1895年",
+        "note": "博尔代1895年的血清实验标记早期功能区分；各组成成分的级联通路后来才被厘清。"
+      },
+      "summary": "补体是受调控的蛋白质网络，可放大免疫识别、标记待清除靶标，并损伤敏感膜。",
+      "problem": "为何加热免疫血清会使其丧失部分杀菌能力？",
+      "development": "博尔代将热敏活性与抗体特异性区分开来。后续研究发现汇聚的激活途径及终末膜攻击过程。",
+      "limitations": "补体可不依赖抗体而被触发，并需要调控以避免损伤宿主组织。",
+      "contributors": [
+        {
+          "name": "朱尔·博尔代",
+          "role": "区分出与特异性抗体协同作用的热敏血清成分。"
+        }
+      ],
+      "example": "补体沉积在微生物上可促进吞噬细胞摄取。",
+      "representation": {
+        "explanation": "膜裂解只是可能结果之一；调理作用和炎症信号同样重要。",
+        "expression": "识别 → 蛋白级联放大 → 清除或膜攻击"
+      },
+      "sourceDigest": "428ebc5e942d2b1461ec1b0751012ef7f4c7f73f8cfdc87b7e308f8700eb9709"
+    },
+    "mrna-vaccines": {
+      "title": "mRNA疫苗",
+      "aliases": [
+        "信使RNA疫苗"
+      ],
+      "tags": [
+        "mRNA疫苗"
+      ],
+      "date": {
+        "label": "2005年",
+        "note": "2005年的核苷修饰研究是使能步骤，并非疫苗临床试验或首次递送mRNA。"
+      },
+      "summary": "递送的信使RNA暂时指导细胞产生可引发免疫反应的抗原。",
+      "problem": "如何在不给予病原体本身的情况下让受种者产生抗原？",
+      "development": "核苷修饰有助于调节固有免疫感知；有效疫苗还依赖递送系统、大量抗原设计及试验。",
+      "limitations": "效果取决于抗原选择、递送、剂量及各产品证据；不同mRNA疫苗并不都需相同化学修饰。",
+      "contributors": [
+        {
+          "name": "卡塔琳·考里科、德鲁·魏斯曼及其合作者",
+          "role": "展示了核苷修饰对固有RNA识别的影响。"
+        }
+      ],
+      "example": "脂质纳米颗粒可保护编码病毒抗原的mRNA并将其递送至细胞。",
+      "representation": {
+        "explanation": "信使RNA在细胞质中翻译；免疫效果依赖后续反应而非永久保留RNA。",
+        "expression": "递送mRNA → 暂时产生抗原 → 免疫识别"
+      },
+      "sourceDigest": "d3b1d37b320e2c93c7d62637d69241884b29ae5a33ee304350e127fc28d269ba"
+    },
+    "two-hit-hypothesis": {
+      "title": "抑癌基因二次打击假说",
+      "aliases": [
+        "努德森假说"
+      ],
+      "tags": [
+        "抑癌基因二次打击假说"
+      ],
+      "date": {
+        "label": "1971年",
+        "note": "该统计推断早于RB1基因的分子鉴定。"
+      },
+      "summary": "在经典抑癌机制中，细胞内两个功能性基因拷贝均失活，会移除重要的生长制约。",
+      "problem": "为何遗传性视网膜母细胞瘤的表现常不同于散发性病例？",
+      "development": "努德森用两个事件对年龄与病例模式建模。遗传的首次改变使丧失相应生长制约之前所需的细胞事件减少。",
+      "limitations": "该机制适用于一些重要实例，并不涵盖所有癌症或抑癌基因；其他改变也可影响肿瘤发展。",
+      "contributors": [
+        {
+          "name": "小阿尔弗雷德·努德森",
+          "role": "从视网膜母细胞瘤发病模式推断出双事件模型。"
+        }
+      ],
+      "example": "继承一个失活RB1拷贝的视网膜前体细胞可通过体细胞事件丢失剩余功能拷贝。",
+      "representation": {
+        "explanation": "打击指功能失活，并非必须为某种点突变。",
+        "expression": "遗传或体细胞首次打击 + 剩余功能丧失"
+      },
+      "sourceDigest": "35dd5bd072cc9a866d90d1bd94589b294a36874e610e54dae8f4b203b4a23188"
+    },
+    "oncogenes": {
+      "title": "癌基因",
+      "aliases": [
+        "原癌基因激活"
+      ],
+      "tags": [
+        "癌基因"
+      ],
+      "date": {
+        "label": "1976年",
+        "note": "1976年的发现涉及病毒转化序列的细胞起源，并非首次观察到肿瘤病毒。"
+      },
+      "summary": "某些基因被激活或表达异常时可促进癌症，其中许多源于正常的细胞生长或存活调节因子。",
+      "problem": "肿瘤病毒的转化基因在正常细胞中能否有对应序列？",
+      "development": "病毒探针实验在正常鸟类DNA中发现相关序列，将逆转录病毒转化与细胞原癌基因联系起来。",
+      "limitations": "存在原癌基因并不意味着患癌；效应取决于改变类型、组织背景及协同变化。",
+      "contributors": [
+        {
+          "name": "多米尼克·斯泰兰、哈罗德·瓦尔穆斯、迈克尔·毕晓普与彼得·沃格特",
+          "role": "发现病毒转化基因在细胞中具有对应序列的证据。"
+        }
+      ],
+      "example": "激活的生长调节蛋白若发出过强信号，可促进细胞增殖。",
+      "representation": {
+        "explanation": "功能获得不同于抑癌基因制约作用的丧失。",
+        "expression": "正常生长调节因子 → 激活性改变 → 促癌信号"
+      },
+      "sourceDigest": "a3b3d897e9766911a333a003493640ed65aa206699ce832b3a337c8f0f8904b6"
+    },
+    "pharmacogenomics": {
+      "title": "药物基因组学",
+      "aliases": [],
+      "tags": [
+        "药物基因组学"
+      ],
+      "date": {
+        "label": "1999年",
+        "note": "1999年的综合论述扩展了早期单基因药物遗传学研究。"
+      },
+      "summary": "遗传变异有助于解释药物代谢、分子靶点、作用或不良反应的个体差异。",
+      "problem": "为何同一种药物暴露会在不同人群中产生不同反应？",
+      "development": "遗传酶活性研究提供了具体的基因—药物实例；功能基因组学将研究扩展至多条通路。",
+      "limitations": "基因型只解释部分差异。基因—药物关联要用于决策，必须有适当的临床证据。",
+      "contributors": [
+        {
+          "name": "威廉·埃文斯与玛丽·雷林",
+          "role": "将功能基因组变异与药物处置和反应联系起来。"
+        }
+      ],
+      "example": "TPMT活性的遗传差异会影响硫嘌呤类药物的代谢。",
+      "representation": {
+        "explanation": "效应取决于变异、药物与临床背景；这不是剂量规则。",
+        "expression": "基因组变异可改变药物处置或反应"
+      },
+      "sourceDigest": "3a15f3509b887752dc1257b8922ad1d31c79228343dd849172cf9c9464abf3b0"
+    },
+    "oral-rehydration": {
+      "title": "口服补液的生理机制",
+      "aliases": [
+        "钠葡萄糖协同转运"
+      ],
+      "tags": [
+        "口服补液的生理机制"
+      ],
+      "date": {
+        "label": "1968年",
+        "note": "1968年的临床与肠道研究建立在更早的转运生理学及同期临床工作基础上。"
+      },
+      "summary": "分泌性腹泻时肠道钠葡萄糖吸收仍可发挥功能；溶质吸收有助于水分吸收。",
+      "problem": "肠道大量分泌液体时，液体如何仍能被吸收？",
+      "development": "生理学研究表明葡萄糖在霍乱中促进钠吸收。维持治疗研究将这一机制转化为经检验的口服补液策略。",
+      "limitations": "该机制补充流失的水盐，并不清除病原体。历史维持治疗试验根据严重程度区分补液需求。",
+      "contributors": [
+        {
+          "name": "戴维·纳林、理查德·卡什及其合作者",
+          "role": "在霍乱中检验了口服葡萄糖电解质维持治疗。"
+        }
+      ],
+      "example": "肠道灌注研究比较了有无葡萄糖时液体与电解质的净移动。",
+      "representation": {
+        "explanation": "此处描述生理机制，不是配方；浓度与临床状况都很重要。",
+        "expression": "钠葡萄糖偶联摄取有助于水分净吸收"
+      },
+      "sourceDigest": "cdaf8383479477c8addec8a6d1151e3783297389f3739b39e017626803a4816c"
     }
   },
   "relationships": {
@@ -2039,6 +2781,166 @@
     "earth-system-science--ocean-acidification": {
       "explanation": "概念联系：耦合碳循环计算将排放情景扩展到海洋化学的长期预测。",
       "sourceDigest": "12168fdfc9c6925cbe7258acac34e0de0be2f381441c3ed31a5f43a91ad8a1d5"
+    },
+    "coriolis-effect--geostrophic-balance": {
+      "explanation": "旋转提供与水平压力梯度相平衡的侧向加速度。",
+      "sourceDigest": "8b400fc21bf9379bb1b6e5012d92001fceea320fa585776efa90270e043842cc"
+    },
+    "spectroscopy--radiative-transfer": {
+      "explanation": "光谱吸收与发射测量约束气体在不同频率下与辐射的相互作用。",
+      "sourceDigest": "13f9232b4e261b1efd93df0e427669b8d009ec5e28990e4a219291e423e927a6"
+    },
+    "greenhouse-effect--radiative-transfer": {
+      "explanation": "传输方程定量描述大气吸收和发射如何改变向外辐射。",
+      "sourceDigest": "e3122837c9c3e033d4edb3bf376ff9fc358b54352e1009f459914fb584b01ad0"
+    },
+    "fluid-dynamics--numerical-weather-prediction": {
+      "explanation": "大气运动用流体方程表示，其数值解随时间演化。",
+      "sourceDigest": "f88bed93e4c38c348de34f051478e4b76bdc09b54ac2b3a8eab605c0599acb25"
+    },
+    "numerical-analysis--numerical-weather-prediction": {
+      "explanation": "离散时间推进近似连续大气场的演化。",
+      "sourceDigest": "c1de4284e5f9ee9ceedead37ced427614b12e31d6c4ff0ca981227b50180ba61"
+    },
+    "biogeochemical-cycles--carbon-silicate-cycle": {
+      "explanation": "岩石、水、大气和生物之间的碳交换提供了储库框架。",
+      "sourceDigest": "0edc405aad8572b6ecb2903947a78edfc469790e61577f2f47373321f8979384"
+    },
+    "greenhouse-effect--carbon-silicate-cycle": {
+      "explanation": "大气CO₂变化将地球化学除碳与辐射强迫联系起来。",
+      "sourceDigest": "8eb247a1668aaf16cc5b02c44d80ad2a0afcfdceb2bdd76e2a2feaa7bdacbfdf"
+    },
+    "stratigraphy--sequence-stratigraphy": {
+      "explanation": "层序分析在解读层状岩石时加入了沉积界面与几何关系。",
+      "sourceDigest": "81f4bc88a1a947e8bd2d84380226ae480d0c6ff42882023b3e5d78f69de59065"
+    },
+    "dimensional-analysis--sediment-transport": {
+      "explanation": "将床面剪应力无量纲化，使不同尺度的泥沙运动可相互比较。",
+      "sourceDigest": "2d7f02d59da97d6e1bfe34812e9ec88f15276b7d0d9dc3222abf789f8ec9e214"
+    },
+    "groundwater-flow--reactive-transport": {
+      "explanation": "流体流动携带溶质穿过发生反应的多孔介质。",
+      "sourceDigest": "50c0ab1fc77d7db6eaf5af40867fed387ad60eec9378781bce304006d76f786a"
+    },
+    "chemical-kinetics--reactive-transport": {
+      "explanation": "速率定律描述不能视为瞬时平衡的生成与消耗。",
+      "sourceDigest": "d8810ccd0595e99cbb28375d3df013e2ce2f522551b18758813105ab64f6f351"
+    },
+    "earth-system-science--climate-tipping-elements": {
+      "explanation": "临界要素被界定为耦合地球系统中相互作用的子系统。",
+      "sourceDigest": "9429076eaa1541c3be7383751666035f86d988c038430665c355d3d959c6de4a"
+    },
+    "ice-albedo-feedback--climate-tipping-elements": {
+      "explanation": "正反馈可放大变化，但仅有正反馈不能证明存在临界阈值。",
+      "sourceDigest": "9d4ddffbe71154a8dc0c0189eb3e306aacdf1bedcad9a9d096b7001fa85f5236"
+    },
+    "chemical-thermodynamics--atp-energy-coupling": {
+      "explanation": "自由能核算区分了有利的净偶联与孤立的不利步骤。",
+      "sourceDigest": "156f49b54462e0088930a1ca295c524879e880dd73ec127523cb004417d83983"
+    },
+    "cell-theory--apoptosis": {
+      "explanation": "将组织视为单个细胞组成的群体，使选择性细胞丧失成为需单独解释的过程。",
+      "sourceDigest": "4d684c3ad0db437fa8ce3d78af14b1d7d17fdb3ad25b17c381729896c341d062"
+    },
+    "cell-theory--autophagy": {
+      "explanation": "自噬解释活细胞内部的更新，而非整个细胞的死亡。",
+      "sourceDigest": "ca9c7cd1fae701d0151b42d9c87003a1b2df325a7d77ac98b0db40f651b35fdd"
+    },
+    "mitosis--cell-cycle-checkpoints": {
+      "explanation": "有序染色体分离是检查点保护的细胞周期事件之一。",
+      "sourceDigest": "0bcb9d9e075440e1ebfe8963b0aaf303bb333d281d2950ba11713e72d00b4cf0"
+    },
+    "gene-regulation--alternative-rna-splicing": {
+      "explanation": "调控既可作用于转录启动，也可作用于RNA加工。",
+      "sourceDigest": "bb3f14970cacca9ac7e68a2f92483baf6071b33d0b936e6a5889ca481ac36e6f"
+    },
+    "gene-regulation--rna-interference": {
+      "explanation": "RNA导向沉默为控制基因产物增加了转录后途径。",
+      "sourceDigest": "75b4dc2f3752c3c5d8f699e7ff6da691b404dadd2925483ae090b53e309f447f"
+    },
+    "chromosome-theory--transposable-elements": {
+      "explanation": "将性状定位到染色体，使元件位置改变可通过实验解释。",
+      "sourceDigest": "52928c22379c29f23d7653c67f6e9e0178386898d66ec1accb22c75b7e6adc59"
+    },
+    "gene-regulation--stem-cell-pluripotency": {
+      "explanation": "改变转录因子活性可重置维持细胞身份的调控网络。",
+      "sourceDigest": "8d8b985c67d43ab9a82f3e74653e8373d407d7ca1dffd87d8f55a8c9f9d47efe"
+    },
+    "synaptic-transmission--hebbian-plasticity": {
+      "explanation": "传递效能的改变为习得连接提供候选物理基础。",
+      "sourceDigest": "5cb429fb54c6b99994441764d1180fda0053a784f01db0e5b5e3bdbf2deba034"
+    },
+    "ecosystem--ecological-resilience": {
+      "explanation": "相互关联的种群与环境过程界定了被评估持续性的系统。",
+      "sourceDigest": "80f7f709101f81989ccb9a8e365127c7fdd4a6f1b7a6eeeba6d30d3719eab5ec"
+    },
+    "adaptive-immunity--innate-pattern-recognition": {
+      "explanation": "该提议解释固有识别如何帮助启动并塑造抗原特异性反应。",
+      "sourceDigest": "4c211ee35c1da307904cead3a2c3a06be4c61e52c61b771ea7277e0d409014a1"
+    },
+    "adaptive-immunity--antigen-presentation": {
+      "explanation": "抗原特异性T细胞识别赋予肽呈递免疫功能。",
+      "sourceDigest": "ba9f21e6ab7f3ae20630d14ab8bc0e44f89c7b6bca2828d572f85127daa1240c"
+    },
+    "germ-theory--complement-system": {
+      "explanation": "对可辨识微生物的实验研究使血清介导杀菌成为可测量的生物学问题。",
+      "sourceDigest": "78330d41b07b29ea60aa4cff7043ce3ac8b074dcaccad5c0d7e5294c8c8d3d0d"
+    },
+    "vaccination--mrna-vaccines": {
+      "explanation": "该方法提供生成抗原的指令，而非提供完整微生物或预制抗原。",
+      "sourceDigest": "c1acd47d450fe2894a3c2a2b3f9d4c1777e3adb189cfd7b09957e4ce9d667616"
+    },
+    "innate-pattern-recognition--mrna-vaccines": {
+      "explanation": "2005年的实验直接检验RNA修饰如何改变Toll样受体的激活。",
+      "sourceDigest": "46196c26e4bf2afb498d88ffa3d905c14ef8a37bb7ec1e7aeed21e65002309ed"
+    },
+    "mendelian-genetics--two-hit-hypothesis": {
+      "explanation": "易感性的遗传将胚系首次事件与两次体细胞事件区分开来。",
+      "sourceDigest": "dafc8ff4e882040d3839b92bcde670633eae9d68c058c4e83b3de8548770a487"
+    },
+    "dna-as-genetic-material--oncogenes": {
+      "explanation": "比较病毒与细胞DNA使所提序列关系可经实验检验。",
+      "sourceDigest": "a7b945c6d96deeb6284e7ce157ef882b6bea6844c0871da0b5a584e5eb729037"
+    },
+    "pharmacokinetics--pharmacogenomics": {
+      "explanation": "参与药物处置的酶发生变异可改变药物暴露的时间过程。",
+      "sourceDigest": "f414b04ae5771003665d8e5a120b7e85d864f9639d98d4986c023ee810ae6bf2"
+    },
+    "genomics--pharmacogenomics": {
+      "explanation": "基因组工具将候选基因研究扩展到众多变异与通路。",
+      "sourceDigest": "f23d806d4baf4532801520c1442c81e44f5a79c4dab6fefc73fc5bfa45e1ae33"
+    },
+    "osmosis--oral-rehydration": {
+      "explanation": "水沿渗透梯度移动，而溶质转运参与建立该梯度。",
+      "sourceDigest": "9cd1f20b4e5d53d7cd2a1615b18d971c06f3cd3482b9daa3b4512b33cb4b34b4"
+    },
+    "molecular-biology--oncogenes": {
+      "explanation": "研究者用病毒DNA探针在正常鸟类DNA中寻找相似序列，检验了细胞发生转化的一种分子解释。",
+      "sourceDigest": "a9bdd34402db77cfa0eba3ce2e1efc6b065ada90b87ff5def42feee0e599b546"
+    },
+    "geostrophic-balance--ocean-gyres": {
+      "explanation": "远离摩擦层时，环流中大尺度水平流动的很大一部分反映压强梯度与科里奥利效应的平衡，而风应力有助于驱动环流。",
+      "sourceDigest": "e5e41d6d559cba285811691f317bd90900e774eddb55a9800096614762ba8abe"
+    },
+    "radiative-transfer--climate-modeling": {
+      "explanation": "辐射对流模型追踪各层大气吸收和发射的能量，进而估计温度如何响应气体浓度的变化。",
+      "sourceDigest": "940a846b4bea3cee3326e5a299d3b1e999e9927a80a5ff9cdcebb358bcf29b3f"
+    },
+    "carbon-silicate-cycle--earth-system-science": {
+      "explanation": "风化把大气、海洋与岩石中的碳库联系起来；核算这些交换，可以在地质时间尺度上把气候与固体地球联系起来。",
+      "sourceDigest": "b3c9b3b52657a1d42a31787ebb30cf5a31e8d6c8b69c1e6aa531dfe71eb76da7"
+    },
+    "atp-energy-coupling--chemiosmosis": {
+      "explanation": "ATP能量偶联说明了哪种化学产物可供细胞使用；化学渗透则解释跨膜离子梯度如何驱动这种产物的合成。",
+      "sourceDigest": "12c865d4165dfeee091dc88a3c1a5300663351608b37ae8ac6238d52e424336a"
+    },
+    "hebbian-plasticity--recurrent-networks": {
+      "explanation": "霍普菲尔德记忆网络可用基于相关性的权重存储模式。这为赫布式规则提供了计算实例，并不等于真实突触严格遵循同一方程。",
+      "sourceDigest": "fa81ca8c2b094f4e6e766e1a5acf48c7f4d2259743846abedda35b21901c9622"
+    },
+    "antigen-presentation--immune-checkpoints": {
+      "explanation": "T细胞识别递呈的肽后仍可能收到抑制信号。阻断检查点是调节这道刹车，而不是决定T细胞识别哪种抗原。",
+      "sourceDigest": "a055a620800c43e0a827efe39304e4d7bd1d9608826c23a8f384fbc50a586876"
     }
   }
 }

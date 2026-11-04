@@ -1,6 +1,31 @@
 # Edition 2 verification
 
-Current release reviewed locally on 2026-11-01. Publication uses the existing GitHub Pages workflow; earlier review sections below retain their historical counts.
+Edition **2.1.0** was reviewed locally on **2026-11-04**. It contains **573 concepts, 1,019 relationships, 674 source records, 406 formulas or definitions, 61 pillars, and ten journeys with 109 narrated stops**. All 43 branches remain populated.
+
+## Edition 2.1.0: 120 concepts and three journeys
+
+| Discipline | Added | Total | Discipline | Added | Total |
+| --- | ---: | ---: | --- | ---: | ---: |
+| Mathematics | 10 | 81 | Astronomy | 8 | 45 |
+| Methods & instruments | 12 | 27 | Earth & environment | 8 | 44 |
+| Computing | 10 | 63 | Chemistry | 10 | 47 |
+| Engineering | 12 | 30 | Materials science | 14 | 26 |
+| Physics | 10 | 72 | Life sciences | 10 | 61 |
+| Mind & society | 8 | 44 | Medicine | 8 | 33 |
+
+The three journeys are `materials-bend-break-strengthen`, `learning-from-noisy-evidence`, and `predicting-earths-climate`. Each has ten stops in both languages. For example, the materials journey returns from the 1951 Hall–Petch relation to Griffith’s 1921 fracture analysis to ask how a crack grows. This is a change of question, not a historical influence arrow.
+
+The edition adds 188 cited relationships. The matched-filtering link to gravitational-wave astronomy is documented; the link from automatic differentiation to backpropagation describes a mathematical connection. Comparison with the previous catalog found all 453 original concepts, 831 relationships, 537 source records, and seven complete journey records unchanged, including their IDs and stop orders.
+
+- `npm run validate` passed the reference, chronology, cycle, branch, journey, layout, Chinese coverage, and translation freshness checks.
+- `npm test` passed all **62 tests**. The release tests check the 120 named additions by discipline, paths into the earlier atlas, bilingual search, frontier labels, and the new journey orders. All 30 new stops round-trip through shared links in both languages and both display modes. Existing geometry tests checked every individual relationship route for intersections with unrelated cards.
+- `VITE_BASE_PATH=/tower-of-science/ npm run build` passed validation, TypeScript checking, and production bundling without chunk-size warnings.
+
+Headless Chromium loaded the built `dist/` assets under the Pages URL path. At **1280 × 720** and **390 × 844**, in both English and Simplified Chinese, the browser opened each new journey from its card, advanced through every stop, and completed it. All 120 stop views showed the expected heading and narration; formulas, definitions, and controls stayed within the available width. Reloading the Hall–Petch stop restored its selection and formal display. The browser also opened the fluctuation–dissipation theorem card, traced its ancestry, and inspected and expanded a bundle containing two cited relationships. It reported no console warnings or errors.
+
+Screenshots: [materials journey on desktop](preview-2-1-materials-desktop.png) · [Chinese formula and narration on mobile](preview-2-1-materials-mobile-zh.png).
+
+Earlier reviews below retain their edition-specific counts.
 
 ## Neural networks to Transformers journey
 
@@ -43,7 +68,7 @@ Translations were machine-assisted, with an editorial pass on titles, terminolog
 
 ![Simplified Chinese mobile formula sheet](preview-chinese-mobile.jpg)
 
-## Release content
+## Edition 2.0.0 release content
 
 The atlas contains **453 concepts, 831 relationships, 537 source records, 286 representative formulas/definitions, 48 pillars, and seven journeys with 79 narrated stops**. There are 12 major sections and 43 populated subbranches. The initial expansion added 190 complete entries; this journey adds three more. All original concept IDs and tour stops remain valid.
 

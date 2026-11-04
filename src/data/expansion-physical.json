@@ -3396,6 +3396,2192 @@
           "xp-topological-experiment"
         ]
       }
+    },
+    {
+      "id": "michaelis-menten-kinetics",
+      "title": "Michaelis–Menten kinetics",
+      "aliases": [
+        "enzyme saturation kinetics"
+      ],
+      "discipline": "chemistry",
+      "branchId": "chemistry-biochemistry",
+      "tags": [
+        "Michaelis–Menten kinetics"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1913,
+        "label": "1913",
+        "precision": "exact",
+        "note": "The 1913 invertase study is the anchor; the familiar steady-state derivation came later."
+      },
+      "summary": "A simple enzyme mechanism predicts a reaction rate that approaches a maximum as substrate concentration rises.",
+      "problem": "Why does adding more substrate eventually produce little extra reaction speed?",
+      "development": "Michaelis and Menten related invertase activity to substrate binding; later steady-state analysis broadened the equation’s use.",
+      "limitations": "The simple form excludes cooperativity, inhibition, and many multistep effects; K_m is not always a binding dissociation constant.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Leonor Michaelis and Maud Menten",
+          "role": "Quantified substrate-dependent enzyme rates."
+        }
+      ],
+      "sourceIds": [
+        "e21-michaelis-menten-kinetics"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-michaelis-menten-kinetics"
+        ],
+        "history": [
+          "e21-michaelis-menten-kinetics"
+        ]
+      },
+      "example": "An enzyme approaches saturation when most active sites are occupied.",
+      "representation": {
+        "kind": "formula",
+        "expression": "v = V_{max}[S] / (K_{m} + [S])",
+        "explanation": "With one substrate, negligible product, and a steady enzyme–substrate complex, the initial rate v approaches V_max as substrate concentration [S] rises. K_m is the concentration at half that limiting rate.",
+        "sourceIds": [
+          "e21-michaelis-menten-kinetics"
+        ]
+      }
+    },
+    {
+      "id": "enzyme-allostery",
+      "title": "Enzyme allostery",
+      "aliases": [],
+      "discipline": "chemistry",
+      "branchId": "chemistry-biochemistry",
+      "tags": [
+        "Enzyme allostery"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1965,
+        "label": "1965",
+        "precision": "exact",
+        "note": "The 1965 Monod–Wyman–Changeux model is a milestone, not the first observation of regulation."
+      },
+      "summary": "Binding at one site can alter activity or binding at another through changes in a protein’s conformational ensemble.",
+      "problem": "How can a metabolite regulate an enzyme without occupying its catalytic site?",
+      "development": "Monod, Wyman, and Changeux modeled concerted transitions between protein states; other models allow sequential changes.",
+      "limitations": "The concerted model does not describe every allosteric protein; allostery and positive cooperativity are not synonyms.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Jacques Monod, Jeffries Wyman, and Jean-Pierre Changeux",
+          "role": "Proposed the concerted allosteric model."
+        }
+      ],
+      "sourceIds": [
+        "e21-enzyme-allostery"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-enzyme-allostery"
+        ],
+        "history": [
+          "e21-enzyme-allostery"
+        ]
+      },
+      "example": "A pathway’s end product can reduce an earlier enzyme’s activity.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Binding shifts protein states and changes activity elsewhere",
+        "explanation": "The regulatory interaction can activate or inhibit; it need not follow the simplest two-state model.",
+        "sourceIds": [
+          "e21-enzyme-allostery"
+        ]
+      }
+    },
+    {
+      "id": "chemiosmosis",
+      "title": "Chemiosmosis",
+      "aliases": [],
+      "discipline": "chemistry",
+      "branchId": "chemistry-biochemistry",
+      "tags": [
+        "Chemiosmosis"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1961,
+        "label": "1961",
+        "precision": "exact",
+        "note": "Mitchell proposed the coupling mechanism in 1961; experimental support accumulated afterward."
+      },
+      "summary": "An electrochemical proton gradient across a membrane can drive ATP synthesis.",
+      "problem": "How does electron transfer power ATP production without a single shared chemical intermediate?",
+      "development": "Mitchell proposed membrane-separated proton transport as the coupling mechanism between electron flow and phosphorylation.",
+      "limitations": "The membrane must restrict uncontrolled ion leakage; real ATP yields depend on transport, coupling ratios, and losses.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Peter Mitchell",
+          "role": "Proposed chemiosmotic energy coupling."
+        }
+      ],
+      "sourceIds": [
+        "e21-chemiosmosis"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-chemiosmosis"
+        ],
+        "history": [
+          "e21-chemiosmosis"
+        ]
+      },
+      "example": "Mitochondrial ATP synthase uses the proton gradient generated by respiration.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Electron transfer → proton gradient → ATP synthesis",
+        "explanation": "The gradient combines an electrical potential and a concentration difference.",
+        "sourceIds": [
+          "e21-chemiosmosis"
+        ]
+      }
+    },
+    {
+      "id": "protein-folding-thermodynamics",
+      "title": "Protein-folding thermodynamics",
+      "aliases": [],
+      "discipline": "chemistry",
+      "branchId": "chemistry-biochemistry",
+      "tags": [
+        "Protein-folding thermodynamics"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1973,
+        "label": "1973",
+        "precision": "exact",
+        "note": "Anfinsen’s 1973 synthesis is the anchor; his refolding experiments began earlier."
+      },
+      "summary": "For suitable proteins and conditions, amino-acid sequence specifies a native fold favored by the surrounding thermodynamic environment.",
+      "problem": "How does a linear chain recover a functional three-dimensional structure?",
+      "development": "Anfinsen’s ribonuclease refolding work supported a sequence-based thermodynamic account of native structure.",
+      "limitations": "Kinetic traps, aggregation, chaperones, and intrinsically disordered proteins prevent a universal one-sequence–one-rigid-shape rule.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Christian Anfinsen",
+          "role": "Connected refolding experiments with the thermodynamic hypothesis."
+        }
+      ],
+      "sourceIds": [
+        "e21-protein-folding-thermodynamics"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-protein-folding-thermodynamics"
+        ],
+        "history": [
+          "e21-protein-folding-thermodynamics"
+        ]
+      },
+      "example": "Denatured ribonuclease can recover activity after suitable conditions are restored.",
+      "representation": {
+        "kind": "formula",
+        "expression": "ΔG = ΔH − TΔS",
+        "explanation": "Folding free energy depends on enthalpy H, entropy S, temperature T, and the solvent; favorable equilibrium folding has negative ΔG.",
+        "sourceIds": [
+          "e21-protein-folding-thermodynamics"
+        ]
+      }
+    },
+    {
+      "id": "transition-state-theory",
+      "title": "Transition state theory",
+      "aliases": [],
+      "discipline": "chemistry",
+      "branchId": "chemistry-reactions",
+      "tags": [
+        "Transition state theory"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1935,
+        "label": "1935",
+        "precision": "exact",
+        "note": "Eyring and, independently, Evans and Polanyi developed activated-complex treatments in 1935."
+      },
+      "summary": "Reaction rates are estimated from the population and passage rate of configurations near an energy barrier.",
+      "problem": "Can molecular energetics explain a reaction-rate constant?",
+      "development": "Activated-complex theory linked statistical mechanics with barrier crossing, giving a molecular interpretation of temperature-dependent rates.",
+      "limitations": "Barrier recrossing, tunneling, and nonequilibrium dynamics can require corrections.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Henry Eyring",
+          "role": "Developed activated-complex rate theory."
+        },
+        {
+          "name": "Meredith Evans and Michael Polanyi",
+          "role": "Developed an independent transition-state treatment."
+        }
+      ],
+      "sourceIds": [
+        "e21-transition-state-theory"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-transition-state-theory"
+        ],
+        "history": [
+          "e21-transition-state-theory"
+        ]
+      },
+      "example": "Different activation free energies explain very different rates at the same temperature.",
+      "representation": {
+        "kind": "formula",
+        "expression": "k ≈ (k_{B}T/h) exp(−ΔG‡/RT)",
+        "explanation": "For a first-order rate constant k, T is absolute temperature, k_B and h are the Boltzmann and Planck constants, R is the molar gas constant, and ΔG‡ is the molar activation free energy. The transmission factor is taken as one.",
+        "sourceIds": [
+          "e21-transition-state-theory"
+        ]
+      }
+    },
+    {
+      "id": "resonance-delocalization",
+      "title": "Resonance and electron delocalization",
+      "aliases": [],
+      "discipline": "chemistry",
+      "branchId": "chemistry-structure",
+      "tags": [
+        "Resonance and electron delocalization"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1931,
+        "label": "1931",
+        "precision": "exact",
+        "note": "Pauling’s 1931 bonding work is the selected milestone in a wider development of quantum bonding."
+      },
+      "summary": "A molecule may require a combination of electronic structures rather than one localized bond drawing.",
+      "problem": "Why do some bonds have properties intermediate between single and double bonds?",
+      "development": "Quantum valence-bond reasoning treated alternative bonding arrangements as contributions to one state. Resonance structures are bookkeeping devices, not molecules switching back and forth.",
+      "limitations": "A small set of drawings is an approximation and does not directly determine every quantitative property.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Linus Pauling",
+          "role": "Developed quantum bonding and resonance descriptions."
+        }
+      ],
+      "sourceIds": [
+        "e21-resonance-delocalization"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-resonance-delocalization"
+        ],
+        "history": [
+          "e21-resonance-delocalization"
+        ]
+      },
+      "example": "Benzene’s equivalent carbon–carbon bonds are not alternating fixed single and double bonds.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Several electronic descriptions contribute to one molecular state",
+        "explanation": "Contributors are not distinct species in chemical equilibrium.",
+        "sourceIds": [
+          "e21-resonance-delocalization"
+        ]
+      }
+    },
+    {
+      "id": "ligand-field-theory",
+      "title": "Ligand field theory",
+      "aliases": [],
+      "discipline": "chemistry",
+      "branchId": "chemistry-structure",
+      "tags": [
+        "Ligand field theory"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1955,
+        "label": "1955",
+        "precision": "exact",
+        "note": "Orgel’s 1955 interpretation of transition-metal spectra is the selected milestone; crystal-field and covalency ideas preceded it."
+      },
+      "summary": "Surrounding ligands split metal d-orbital energies and influence a complex’s color, magnetism, and bonding.",
+      "problem": "Why do the same metal’s complexes have different colors and magnetic states?",
+      "development": "Ligand-field treatments extended electrostatic crystal-field pictures using orbital interactions and spectroscopy.",
+      "limitations": "Simple splitting diagrams omit detailed covalency, distortion, and many-electron effects.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Leslie Orgel",
+          "role": "Interpreted transition-metal spectra with ligand-field ideas."
+        }
+      ],
+      "sourceIds": [
+        "e21-ligand-field-theory"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-ligand-field-theory"
+        ],
+        "history": [
+          "e21-ligand-field-theory"
+        ]
+      },
+      "example": "Octahedral ligands split five d orbitals into groups of three and two.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Ligand environment → orbital splitting → spectra and spin states",
+        "explanation": "The octahedral model is a symmetry-based approximation, not a complete electronic calculation.",
+        "sourceIds": [
+          "e21-ligand-field-theory"
+        ]
+      }
+    },
+    {
+      "id": "density-functional-theory",
+      "title": "Density functional theory",
+      "aliases": [
+        "DFT"
+      ],
+      "discipline": "chemistry",
+      "branchId": "chemistry-structure",
+      "tags": [
+        "Density functional theory"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1964,
+        "label": "1964",
+        "precision": "exact",
+        "note": "The 1964 Hohenberg–Kohn theorems precede the practical 1965 Kohn–Sham construction."
+      },
+      "summary": "Ground-state electronic properties can be formulated in terms of electron density instead of the full many-electron wavefunction.",
+      "problem": "Can many-electron calculations use a simpler central variable?",
+      "development": "Hohenberg and Kohn established a density-based variational framework. Kohn and Sham introduced an auxiliary orbital system for practical calculations.",
+      "limitations": "Exact exchange-correlation functionals are generally unknown; approximations can fail for strongly correlated or weakly bound systems.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Pierre Hohenberg and Walter Kohn",
+          "role": "Established the density-based ground-state theorems."
+        }
+      ],
+      "sourceIds": [
+        "e21-density-functional-theory"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-density-functional-theory"
+        ],
+        "history": [
+          "e21-density-functional-theory"
+        ]
+      },
+      "example": "Approximate DFT estimates molecular bond lengths and solid-state energies.",
+      "representation": {
+        "kind": "formula",
+        "expression": "E₀ = min_{n} E[n]",
+        "explanation": "For a fixed external potential, the ground-state energy E₀ is the minimum of the exact energy functional E[n] over admissible electron densities n with the required particle number. Practical calculations approximate parts of E[n].",
+        "sourceIds": [
+          "e21-density-functional-theory"
+        ]
+      }
+    },
+    {
+      "id": "pericyclic-selection-rules",
+      "title": "Pericyclic selection rules",
+      "aliases": [
+        "Woodward–Hoffmann rules"
+      ],
+      "discipline": "chemistry",
+      "branchId": "chemistry-organic",
+      "tags": [
+        "Pericyclic selection rules"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1965,
+        "label": "1965",
+        "precision": "exact",
+        "note": "The 1965 electrocyclic-reaction paper began the published orbital-symmetry program."
+      },
+      "summary": "Orbital symmetry constrains favorable concerted routes for reactions that reorganize bonds around a cyclic array.",
+      "problem": "Why do heating and illumination give different stereochemical outcomes?",
+      "development": "Woodward and Hoffmann connected stereochemical patterns with orbital symmetry conservation along concerted reaction paths.",
+      "limitations": "“Forbidden” means disfavored along the assumed concerted route, not impossible through every alternative mechanism.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Robert Burns Woodward and Roald Hoffmann",
+          "role": "Developed orbital-symmetry selection rules."
+        }
+      ],
+      "sourceIds": [
+        "e21-pericyclic-selection-rules"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-pericyclic-selection-rules"
+        ],
+        "history": [
+          "e21-pericyclic-selection-rules"
+        ]
+      },
+      "example": "A four-π-electron electrocyclic ring closure favors conrotation thermally and disrotation photochemically.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Electron count + orbital symmetry + excitation → allowed concerted paths",
+        "explanation": "Thermal and photochemical rules assume different electronic occupations.",
+        "sourceIds": [
+          "e21-pericyclic-selection-rules"
+        ]
+      }
+    },
+    {
+      "id": "rna-world",
+      "title": "RNA world hypothesis",
+      "aliases": [],
+      "discipline": "chemistry",
+      "branchId": "chemistry-biochemistry",
+      "tags": [
+        "RNA world hypothesis"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1986,
+        "label": "1986",
+        "precision": "exact",
+        "note": "Gilbert named the RNA world in 1986; earlier researchers had already proposed primordial RNA roles."
+      },
+      "summary": "An early stage of life may have used RNA for both heredity and catalysis before modern DNA–protein systems.",
+      "problem": "How could inherited information and catalytic function arise before their modern division of labor?",
+      "development": "Catalytic RNA discoveries made dual information-and-catalysis scenarios plausible; Gilbert’s formulation helped organize the research agenda.",
+      "limitations": "No complete historical pathway is established; prebiotic synthesis, replication, compartmentalization, and alternative mixed systems remain active questions.",
+      "standing": "open",
+      "contributors": [
+        {
+          "name": "Walter Gilbert",
+          "role": "Named and articulated the RNA-world scenario."
+        }
+      ],
+      "sourceIds": [
+        "e21-rna-world"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-rna-world"
+        ],
+        "history": [
+          "e21-rna-world"
+        ]
+      },
+      "example": "A ribozyme demonstrates that RNA can catalyze reactions, without proving that early life followed one particular route.",
+      "representation": {
+        "kind": "definition",
+        "expression": "RNA as both inherited information and catalyst",
+        "explanation": "This is an origin-of-life hypothesis, not a claim that contemporary cells function without proteins.",
+        "sourceIds": [
+          "e21-rna-world"
+        ]
+      }
+    },
+    {
+      "id": "doppler-effect",
+      "title": "Doppler effect",
+      "aliases": [],
+      "discipline": "physics",
+      "branchId": "physics-fields",
+      "tags": [
+        "Doppler effect"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1842,
+        "label": "1842",
+        "precision": "exact",
+        "note": "Doppler’s 1842 proposal is the anchor; its original application to stellar colors was inadequate."
+      },
+      "summary": "Relative motion between a source and an observer changes the observed frequency of a wave.",
+      "problem": "Why does the pitch of a passing source change?",
+      "development": "Doppler related motion to wave frequency; later acoustic tests and spectroscopy established applications beyond his initial astronomical argument.",
+      "limitations": "Sound depends on motion relative to its medium; light requires relativistic formulas at high speeds.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Christian Doppler",
+          "role": "Proposed the frequency-shift principle."
+        }
+      ],
+      "sourceIds": [
+        "e21-doppler-effect"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-doppler-effect"
+        ],
+        "history": [
+          "e21-doppler-effect"
+        ]
+      },
+      "example": "An approaching siren sounds higher than the same siren receding.",
+      "representation": {
+        "kind": "formula",
+        "expression": "f′ = f v / (v − vₛ)",
+        "explanation": "For a stationary listener, f is the emitted sound frequency and f′ the higher frequency heard from an approaching source. The medium is at rest, sound travels at speed v, and source speed vₛ is positive and below v.",
+        "sourceIds": [
+          "e21-doppler-effect"
+        ]
+      }
+    },
+    {
+      "id": "coriolis-effect",
+      "title": "Coriolis effect",
+      "aliases": [],
+      "discipline": "physics",
+      "branchId": "physics-mechanics",
+      "tags": [
+        "Coriolis effect"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1835,
+        "label": "1835",
+        "precision": "exact",
+        "note": "Coriolis’s 1835 analysis of relative motion is the milestone, not the first observation of rotating-system effects."
+      },
+      "summary": "In a rotating reference frame, moving objects have an apparent sideways acceleration proportional to their velocity and the rotation rate.",
+      "problem": "Why does an otherwise straight path curve when viewed from a rotating platform?",
+      "development": "Coriolis analyzed machinery in rotating frames. The same reference-frame term became essential for atmospheric and oceanic dynamics.",
+      "limitations": "It is a frame-dependent inertial term, not an additional interaction; local household flows need not be dominated by Earth’s rotation.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Gaspard-Gustave de Coriolis",
+          "role": "Derived the rotating-frame motion term."
+        }
+      ],
+      "sourceIds": [
+        "e21-coriolis-effect"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-coriolis-effect"
+        ],
+        "history": [
+          "e21-coriolis-effect"
+        ]
+      },
+      "example": "Large-scale winds are deflected relative to the rotating Earth.",
+      "representation": {
+        "kind": "formula",
+        "expression": "a_{C} = −2Ω × v",
+        "explanation": "Ω is frame angular velocity and v is velocity measured in that frame.",
+        "sourceIds": [
+          "e21-coriolis-effect"
+        ]
+      }
+    },
+    {
+      "id": "turbulent-energy-cascade",
+      "title": "Turbulent energy cascade",
+      "aliases": [],
+      "discipline": "physics",
+      "branchId": "physics-mechanics",
+      "tags": [
+        "Turbulent energy cascade"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1941,
+        "label": "1941",
+        "precision": "exact",
+        "note": "Kolmogorov’s 1941 scaling theory formalized an inertial-range picture following Richardson’s cascade ideas."
+      },
+      "summary": "In three-dimensional turbulence, energy can pass from large eddies to smaller motions before viscosity dissipates it.",
+      "problem": "How can turbulent flows display regular statistical scaling despite irregular motion?",
+      "development": "Kolmogorov used local isotropy and a scale-independent energy flux to derive inertial-range similarity laws.",
+      "limitations": "Intermittency, boundaries, stratification, and two-dimensional inverse cascades limit the simple picture.",
+      "standing": "limited",
+      "contributors": [
+        {
+          "name": "Andrey Kolmogorov",
+          "role": "Formulated inertial-range similarity theory."
+        }
+      ],
+      "sourceIds": [
+        "e21-turbulent-energy-cascade"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-turbulent-energy-cascade"
+        ],
+        "history": [
+          "e21-turbulent-energy-cascade"
+        ]
+      },
+      "example": "Large stirred eddies feed progressively smaller fluctuations in a high-Reynolds-number fluid.",
+      "representation": {
+        "kind": "formula",
+        "expression": "E(k) ∝ ε^{2/3} k^{−5/3}",
+        "explanation": "E is the energy spectrum, k wavenumber, and ε mean dissipation per unit mass; the scaling assumes a suitable inertial range.",
+        "sourceIds": [
+          "e21-turbulent-energy-cascade"
+        ]
+      }
+    },
+    {
+      "id": "fluctuation-dissipation-theorem",
+      "title": "Fluctuation–dissipation theorem",
+      "aliases": [],
+      "discipline": "physics",
+      "branchId": "physics-thermal",
+      "tags": [
+        "Fluctuation–dissipation theorem"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1951,
+        "label": "1951",
+        "precision": "exact",
+        "note": "Callen and Welton’s 1951 generalization builds on earlier Brownian-motion and electrical-noise results."
+      },
+      "summary": "Equilibrium fluctuations are linked to how a system dissipates energy when weakly disturbed.",
+      "problem": "Can spontaneous noise reveal a system’s response to an applied force?",
+      "development": "Callen and Welton unified noise and dissipation in a quantum statistical relation, generalizing earlier special cases.",
+      "limitations": "The usual theorem assumes thermal equilibrium and linear response; strongly driven systems require extensions.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Herbert Callen and Theodore Welton",
+          "role": "Derived the generalized noise–response relation."
+        }
+      ],
+      "sourceIds": [
+        "e21-fluctuation-dissipation-theorem"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-fluctuation-dissipation-theorem"
+        ],
+        "history": [
+          "e21-fluctuation-dissipation-theorem"
+        ]
+      },
+      "example": "A resistor’s thermal voltage noise is related to its resistance and temperature.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Equilibrium noise ↔ dissipative linear response",
+        "explanation": "The relation depends on temperature and frequency; quantum and classical forms differ.",
+        "sourceIds": [
+          "e21-fluctuation-dissipation-theorem"
+        ]
+      }
+    },
+    {
+      "id": "spontaneous-symmetry-breaking",
+      "title": "Spontaneous symmetry breaking",
+      "aliases": [],
+      "discipline": "physics",
+      "branchId": "physics-fields",
+      "tags": [
+        "Spontaneous symmetry breaking"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1960,
+        "label": "1960",
+        "precision": "exact",
+        "note": "Nambu’s 1960 superconductivity analysis is the selected field-theoretic milestone; ordered phases were studied earlier."
+      },
+      "summary": "A system’s state can have less symmetry than the laws governing it.",
+      "problem": "How can symmetric laws yield an ordered state that selects a direction or phase?",
+      "development": "Nambu used superconductivity to develop ideas connecting broken symmetry, collective modes, and field theory.",
+      "limitations": "Global and gauge symmetries require different treatment; gauge redundancy itself is not an observable physical symmetry.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Yoichiro Nambu",
+          "role": "Connected superconductivity and field-theoretic symmetry breaking."
+        }
+      ],
+      "sourceIds": [
+        "e21-spontaneous-symmetry-breaking"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-spontaneous-symmetry-breaking"
+        ],
+        "history": [
+          "e21-spontaneous-symmetry-breaking"
+        ]
+      },
+      "example": "A ferromagnet can select a magnetization direction despite rotationally symmetric idealized laws.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Symmetric laws; less-symmetric state",
+        "explanation": "The state, rather than an explicit asymmetry in the governing laws, selects among possibilities.",
+        "sourceIds": [
+          "e21-spontaneous-symmetry-breaking"
+        ]
+      }
+    },
+    {
+      "id": "bcs-superconductivity",
+      "title": "BCS theory of superconductivity",
+      "aliases": [
+        "Cooper pairing"
+      ],
+      "discipline": "physics",
+      "branchId": "physics-condensed",
+      "tags": [
+        "BCS theory of superconductivity"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1957,
+        "label": "1957",
+        "precision": "exact",
+        "note": "The full Bardeen–Cooper–Schrieffer theory appeared in 1957, following Cooper’s 1956 pairing argument."
+      },
+      "summary": "A collective state of paired electrons explains conventional superconductivity and its energy gap.",
+      "problem": "What microscopic mechanism produces resistance-free conduction in conventional superconductors?",
+      "development": "Bardeen, Cooper, and Schrieffer constructed a many-electron state stabilized by an effective attraction, commonly mediated by lattice vibrations.",
+      "limitations": "The simplest weak-coupling phonon model does not explain every unconventional superconductor.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "John Bardeen, Leon Cooper, and John Robert Schrieffer",
+          "role": "Developed the microscopic pairing theory."
+        }
+      ],
+      "sourceIds": [
+        "e21-bcs-superconductivity"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-bcs-superconductivity"
+        ],
+        "history": [
+          "e21-bcs-superconductivity"
+        ]
+      },
+      "example": "The theory relates the gap of an ideal weak-coupling superconductor to its critical temperature.",
+      "representation": {
+        "kind": "formula",
+        "expression": "2Δ(0) ≈ 3.52 k_{B}T_{c}",
+        "explanation": "Δ(0) is the zero-temperature energy gap, k_B is Boltzmann’s constant, and T_c is the superconducting transition temperature. The ratio assumes weak, isotropic pairing.",
+        "sourceIds": [
+          "e21-bcs-superconductivity"
+        ]
+      }
+    },
+    {
+      "id": "bose-einstein-condensation",
+      "title": "Bose–Einstein condensation in dilute gases",
+      "aliases": [
+        "BEC"
+      ],
+      "discipline": "physics",
+      "branchId": "physics-condensed",
+      "tags": [
+        "Bose–Einstein condensation in dilute gases"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1995,
+        "label": "1995",
+        "precision": "exact",
+        "note": "1995 marks dilute atomic-gas observations, not Einstein’s 1924–1925 prediction."
+      },
+      "summary": "At sufficiently low temperature, many bosonic atoms can occupy the same quantum state.",
+      "problem": "Can a macroscopic population reveal a shared matter-wave state?",
+      "development": "Laser and evaporative cooling enabled rubidium and sodium experiments to realize dilute-gas condensates in 1995.",
+      "limitations": "Finite size, trapping, and interactions modify ideal-gas predictions; condensation and superfluidity are related but distinct.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Eric Cornell, Carl Wieman, and Wolfgang Ketterle",
+          "role": "Led dilute atomic-gas condensation experiments."
+        }
+      ],
+      "sourceIds": [
+        "e21-bose-einstein-condensation"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-bose-einstein-condensation"
+        ],
+        "history": [
+          "e21-bose-einstein-condensation"
+        ]
+      },
+      "example": "A narrow low-momentum peak appears when a cooled atomic cloud condenses.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Macroscopic occupation of one quantum state",
+        "explanation": "Macroscopic means that a finite fraction of the particles occupies the same state.",
+        "sourceIds": [
+          "e21-bose-einstein-condensation"
+        ]
+      }
+    },
+    {
+      "id": "quantum-decoherence",
+      "title": "Quantum decoherence",
+      "aliases": [],
+      "discipline": "physics",
+      "branchId": "physics-quantum",
+      "tags": [
+        "Quantum decoherence"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1970,
+        "label": "1970",
+        "precision": "exact",
+        "note": "Zeh’s 1970 paper is an early environmental-decoherence milestone; later work developed its modern scope."
+      },
+      "summary": "Interaction with an environment suppresses observable interference between some alternatives in a subsystem.",
+      "problem": "Why do large open systems often behave as though quantum alternatives do not interfere?",
+      "development": "Zeh emphasized environmental entanglement in measurement. Tracing out environmental degrees of freedom explains loss of local coherence without assuming fundamental nonunitary dynamics.",
+      "limitations": "Decoherence alone does not select a unique measurement outcome or resolve every interpretation of quantum mechanics.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "H. Dieter Zeh",
+          "role": "Developed an environmental account of loss of coherence."
+        }
+      ],
+      "sourceIds": [
+        "e21-quantum-decoherence",
+        "e21-quantum-decoherence-2"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-quantum-decoherence",
+          "e21-quantum-decoherence-2"
+        ],
+        "history": [
+          "e21-quantum-decoherence",
+          "e21-quantum-decoherence-2"
+        ]
+      },
+      "example": "Scattered photons can carry away information about an object’s position.",
+      "representation": {
+        "kind": "formula",
+        "expression": "ρ_{S} = Tr_{E}(ρ_{SE})",
+        "explanation": "The reduced state ρ_S traces over environment E; environmental correlations can suppress interference in a selected basis.",
+        "sourceIds": [
+          "e21-quantum-decoherence",
+          "e21-quantum-decoherence-2"
+        ]
+      }
+    },
+    {
+      "id": "loop-quantum-gravity",
+      "title": "Loop quantum gravity",
+      "aliases": [],
+      "discipline": "physics",
+      "branchId": "physics-fields",
+      "tags": [
+        "Loop quantum gravity"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1988,
+        "label": "1988",
+        "precision": "exact",
+        "note": "Rovelli and Smolin’s 1988 loop construction is the selected milestone within a wider research program."
+      },
+      "summary": "This approach attempts to quantize gravitational geometry without assuming a fixed background spacetime metric.",
+      "problem": "Can spacetime geometry itself be described by quantum degrees of freedom?",
+      "development": "Loop variables built on connection formulations of relativity. Later spin-network descriptions supplied quantum-geometric states and geometric operators.",
+      "limitations": "A confirmed empirical test and a complete recovery of all observed low-energy physics remain unresolved; discrete spectra within a formalism are not direct measurements of spacetime atoms.",
+      "standing": "speculative",
+      "contributors": [
+        {
+          "name": "Carlo Rovelli and Lee Smolin",
+          "role": "Developed loop-based quantum-gravity states."
+        }
+      ],
+      "sourceIds": [
+        "e21-loop-quantum-gravity"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-loop-quantum-gravity"
+        ],
+        "history": [
+          "e21-loop-quantum-gravity"
+        ]
+      },
+      "example": "Spin networks label candidate quantum-geometric states rather than ordinary material lattices.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Quantize geometry without a fixed background metric",
+        "explanation": "This is a research aim and construction strategy, not an experimentally established description of nature.",
+        "sourceIds": [
+          "e21-loop-quantum-gravity"
+        ]
+      }
+    },
+    {
+      "id": "holographic-principle",
+      "title": "Holographic principle",
+      "aliases": [],
+      "discipline": "physics",
+      "branchId": "physics-fields",
+      "tags": [
+        "Holographic principle"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1993,
+        "label": "1993",
+        "precision": "exact",
+        "note": "The anchor is ’t Hooft’s 1993 dimensional-reduction proposal, preceding later duality constructions."
+      },
+      "summary": "The proposal suggests that a gravitational region’s independent information may be constrained by boundary area rather than volume.",
+      "problem": "Why does black-hole entropy scale with horizon area?",
+      "development": "Black-hole entropy arguments motivated ’t Hooft’s proposal; later work developed entropy bounds and concrete forms of gravitational duality.",
+      "limitations": "Specific dualities and entropy bounds have precise assumptions; a universal description of our cosmological spacetime is not established.",
+      "standing": "open",
+      "contributors": [
+        {
+          "name": "Gerard ’t Hooft",
+          "role": "Proposed dimensional reduction from gravitational information bounds."
+        }
+      ],
+      "sourceIds": [
+        "e21-holographic-principle",
+        "e21-holographic-principle-2"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-holographic-principle",
+          "e21-holographic-principle-2"
+        ],
+        "history": [
+          "e21-holographic-principle",
+          "e21-holographic-principle-2"
+        ]
+      },
+      "example": "Black-hole thermodynamics motivates comparing stored information with horizon area.",
+      "representation": {
+        "kind": "formula",
+        "expression": "S_{BH} = k_{B}A / (4ℓ_{P}^{2})",
+        "explanation": "For a semiclassical black hole, entropy S_BH depends on horizon area A, Boltzmann’s constant k_B, and the Planck length ℓ_P. This area law motivates holography; it does not prove every proposed duality.",
+        "sourceIds": [
+          "e21-holographic-principle",
+          "e21-holographic-principle-2"
+        ]
+      }
+    },
+    {
+      "id": "modular-arithmetic",
+      "title": "Modular arithmetic",
+      "aliases": [
+        "congruence arithmetic"
+      ],
+      "discipline": "mathematics",
+      "branchId": "math-number",
+      "tags": [
+        "Modular arithmetic"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1801,
+        "label": "1801",
+        "precision": "exact",
+        "note": "Gauss’s Disquisitiones formalized congruence notation; remainder calculations are much older."
+      },
+      "summary": "Integers are grouped by their remainders after division by a fixed modulus, allowing arithmetic on repeating cycles.",
+      "problem": "How can different integers represent the same position in a repeating cycle?",
+      "development": "Gauss organized congruences into a systematic theory of integers. Unlike ordinary equality, congruence identifies numbers whose difference is divisible by the modulus.",
+      "limitations": "Division is not always possible: a residue has a multiplicative inverse only when it is coprime to the modulus.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Carl Friedrich Gauss",
+          "role": "Systematized congruence arithmetic."
+        }
+      ],
+      "sourceIds": [
+        "e21-modular-arithmetic",
+        "e21-modular-arithmetic-2"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-modular-arithmetic",
+          "e21-modular-arithmetic-2"
+        ],
+        "history": [
+          "e21-modular-arithmetic",
+          "e21-modular-arithmetic-2"
+        ]
+      },
+      "example": "On a 12-hour clock, adding five hours to ten gives three.",
+      "representation": {
+        "kind": "formula",
+        "expression": "a ≡ b (mod m) ⇔ m ∣ (a − b)",
+        "explanation": "The positive integer m is the modulus; ∣ means divides exactly.",
+        "sourceIds": [
+          "e21-modular-arithmetic",
+          "e21-modular-arithmetic-2"
+        ]
+      }
+    },
+    {
+      "id": "fundamental-theorem-calculus",
+      "title": "Fundamental theorem of calculus",
+      "aliases": [],
+      "discipline": "mathematics",
+      "branchId": "math-analysis",
+      "tags": [
+        "Fundamental theorem of calculus"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1670,
+        "label": "1670",
+        "precision": "exact",
+        "note": "Publication of Barrow’s geometric lectures is the anchor; Newton, Leibniz, and later analysts supplied broader formulations."
+      },
+      "summary": "Differentiation and integration are inverse operations under appropriate conditions, so accumulated change can be calculated from an antiderivative.",
+      "problem": "Can finding areas and finding slopes be parts of one method?",
+      "development": "Barrow gave a geometric form of the inverse relation. Newton and Leibniz made this connection central to calculus, while later work specified continuity and integrability conditions.",
+      "limitations": "The elementary statement assumes continuous f and an antiderivative F; discontinuities and generalized integrals require more careful versions.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Isaac Barrow",
+          "role": "Established a geometric inverse relation."
+        },
+        {
+          "name": "Isaac Newton and Gottfried Wilhelm Leibniz",
+          "role": "Developed systematic calculus around this connection."
+        }
+      ],
+      "sourceIds": [
+        "f-calculus",
+        "e21-fundamental-theorem-calculus-reference"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-fundamental-theorem-calculus-reference"
+        ],
+        "history": [
+          "f-calculus"
+        ]
+      },
+      "example": "Integrating speed over a time interval gives distance traveled when speed is nonnegative.",
+      "representation": {
+        "kind": "formula",
+        "expression": "∫_{a}^{b} f(x) dx = F(b) − F(a)",
+        "explanation": "Here F′ = f and f is continuous on [a,b].",
+        "sourceIds": [
+          "e21-fundamental-theorem-calculus-reference"
+        ]
+      }
+    },
+    {
+      "id": "prime-number-theorem",
+      "title": "Prime number theorem",
+      "aliases": [],
+      "discipline": "mathematics",
+      "branchId": "math-number",
+      "tags": [
+        "Prime number theorem"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1896,
+        "label": "1896",
+        "precision": "exact",
+        "note": "Hadamard and de la Vallée Poussin independently proved the asymptotic law in 1896, after earlier conjectures."
+      },
+      "summary": "The number of primes up to x grows approximately as x divided by its natural logarithm.",
+      "problem": "How quickly do primes become rarer among larger integers?",
+      "development": "The two proofs used complex analysis and properties of the zeta function. The theorem concerns aggregate density, unlike an algorithm that lists individual primes.",
+      "limitations": "An asymptotic equivalence is not exact at finite x and by itself does not specify the sharpest error bound.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Jacques Hadamard",
+          "role": "Proved the asymptotic law independently."
+        },
+        {
+          "name": "Charles-Jean de la Vallée Poussin",
+          "role": "Gave an independent proof."
+        }
+      ],
+      "sourceIds": [
+        "f-prime",
+        "e21-prime-number-theorem-reference"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-prime-number-theorem-reference"
+        ],
+        "history": [
+          "f-prime",
+          "e21-prime-number-theorem-reference"
+        ]
+      },
+      "example": "Near a large number x, a rough density estimate for primes is 1/ln x.",
+      "representation": {
+        "kind": "formula",
+        "expression": "π(x) ∼ x / ln x",
+        "explanation": "π(x) counts primes ≤ x; ∼ means the ratio tends to 1 as x tends to infinity.",
+        "sourceIds": [
+          "e21-prime-number-theorem-reference"
+        ]
+      }
+    },
+    {
+      "id": "spectral-theorem",
+      "title": "Spectral theorem",
+      "aliases": [],
+      "discipline": "mathematics",
+      "branchId": "math-number",
+      "tags": [
+        "Spectral theorem"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1829,
+        "label": "1829",
+        "precision": "exact",
+        "note": "Cauchy’s 1829 work on symmetric forms is an early finite-dimensional milestone; operator versions came later."
+      },
+      "summary": "A real symmetric matrix can be described by mutually perpendicular eigenvectors and real eigenvalues.",
+      "problem": "When can a coupled linear transformation be separated into independent directions?",
+      "development": "Work on quadratic forms and vibrations led to diagonalization of symmetric systems. Later spectral theory extended related ideas to suitable operators on infinite-dimensional spaces.",
+      "limitations": "This real-matrix statement requires symmetry; arbitrary matrices may lack a full eigenbasis, and unbounded operators need domain conditions.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Augustin-Louis Cauchy",
+          "role": "Advanced the theory of symmetric quadratic forms and characteristic roots."
+        }
+      ],
+      "sourceIds": [
+        "e21-spectral-theorem",
+        "e21-spectral-theorem-2"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-spectral-theorem-2"
+        ],
+        "history": [
+          "e21-spectral-theorem"
+        ]
+      },
+      "example": "Principal vibration modes separate the small oscillations of an ideal symmetric mechanical system.",
+      "representation": {
+        "kind": "formula",
+        "expression": "A = QΛQᵀ, QᵀQ = I",
+        "explanation": "For a real symmetric matrix A, the columns of Q are orthonormal eigenvectors. The diagonal entries of Λ are their eigenvalues; Qᵀ is the transpose and I the identity matrix.",
+        "sourceIds": [
+          "e21-spectral-theorem-2"
+        ]
+      }
+    },
+    {
+      "id": "singular-value-decomposition",
+      "title": "Singular value decomposition",
+      "aliases": [
+        "SVD"
+      ],
+      "discipline": "mathematics",
+      "branchId": "math-number",
+      "tags": [
+        "Singular value decomposition"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1873,
+        "label": "1873",
+        "precision": "exact",
+        "note": "Beltrami’s 1873 work is an early milestone; Jordan, Sylvester, Schmidt, and numerical analysts developed further forms."
+      },
+      "summary": "Any real matrix can be factored into orthogonal changes of coordinates and nonnegative stretches along independent axes.",
+      "problem": "How can the strongest patterns of a rectangular data matrix be isolated?",
+      "development": "Nineteenth-century work on bilinear forms led to the decomposition. Numerical algorithms later made it a practical tool for least squares and low-rank approximation.",
+      "limitations": "A mathematically strong direction need not have scientific meaning; scale, noise, and computational cost affect interpretation.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Eugenio Beltrami",
+          "role": "Published an early decomposition of bilinear forms."
+        }
+      ],
+      "sourceIds": [
+        "e21-singular-value-decomposition"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-singular-value-decomposition"
+        ],
+        "history": [
+          "e21-singular-value-decomposition"
+        ]
+      },
+      "example": "Keeping a few large singular values gives an approximate compressed image matrix.",
+      "representation": {
+        "kind": "formula",
+        "expression": "A = UΣVᵀ",
+        "explanation": "U and V are orthogonal; the rectangular diagonal matrix Σ contains nonnegative singular values.",
+        "sourceIds": [
+          "e21-singular-value-decomposition"
+        ]
+      }
+    },
+    {
+      "id": "law-large-numbers",
+      "title": "Law of large numbers",
+      "aliases": [
+        "LLN"
+      ],
+      "discipline": "mathematics",
+      "branchId": "math-probability",
+      "tags": [
+        "Law of large numbers"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1713,
+        "label": "1713",
+        "precision": "exact",
+        "note": "Bernoulli’s Ars Conjectandi was published posthumously in 1713; later laws cover much broader settings."
+      },
+      "summary": "Under suitable assumptions, averages from many repeated observations approach their expected value.",
+      "problem": "Why can long-run frequencies stabilize even though individual outcomes remain unpredictable?",
+      "development": "Bernoulli proved a result for repeated binary trials. Later formulations distinguished modes of convergence and clarified requirements on independence and moments.",
+      "limitations": "More data do not remove systematic bias; dependent observations or distributions without the required moments need different results.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Jacob Bernoulli",
+          "role": "Proved the original binary-trial law."
+        }
+      ],
+      "sourceIds": [
+        "e21-law-large-numbers",
+        "e21-law-large-numbers-2"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-law-large-numbers",
+          "e21-law-large-numbers-2"
+        ],
+        "history": [
+          "e21-law-large-numbers",
+          "e21-law-large-numbers-2"
+        ]
+      },
+      "example": "The proportion of heads in independent tosses of a fair coin tends toward one half.",
+      "representation": {
+        "kind": "formula",
+        "expression": "P(|X̄ₙ − μ| > ε) → 0",
+        "explanation": "For independent identically distributed observations with finite mean μ, the sample mean converges in probability; ε is any positive tolerance.",
+        "sourceIds": [
+          "e21-law-large-numbers",
+          "e21-law-large-numbers-2"
+        ]
+      }
+    },
+    {
+      "id": "stochastic-calculus",
+      "title": "Stochastic calculus",
+      "aliases": [
+        "Itô calculus"
+      ],
+      "discipline": "mathematics",
+      "branchId": "math-probability",
+      "tags": [
+        "Stochastic calculus"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1944,
+        "label": "1944",
+        "precision": "exact",
+        "note": "Itô’s 1944 stochastic-integral paper anchors this entry; other integration conventions developed separately."
+      },
+      "summary": "Stochastic calculus defines integration and differential rules for noisy paths such as Brownian motion, whose ordinary derivatives do not exist.",
+      "problem": "How can a differential equation include continuously fluctuating noise?",
+      "development": "Itô constructed an integral using non-anticipating integrands. Brownian quadratic variation produces an extra second-derivative term in the change-of-variable rule.",
+      "limitations": "Itô and Stratonovich integrals differ; assumptions about information, coefficients, and noise must be stated.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Kiyosi Itô",
+          "role": "Constructed the stochastic integral and its calculus."
+        }
+      ],
+      "sourceIds": [
+        "e21-stochastic-calculus"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-stochastic-calculus"
+        ],
+        "history": [
+          "e21-stochastic-calculus"
+        ]
+      },
+      "example": "A diffusion model combines a systematic drift with random microscopic motion.",
+      "representation": {
+        "kind": "formula",
+        "expression": "df(Wₜ) = f′(Wₜ)dWₜ + ½f″(Wₜ)dt",
+        "explanation": "W is standard Brownian motion and f is twice continuously differentiable; this is the one-variable Itô rule.",
+        "sourceIds": [
+          "e21-stochastic-calculus"
+        ]
+      }
+    },
+    {
+      "id": "algebraic-topology",
+      "title": "Algebraic topology",
+      "aliases": [],
+      "discipline": "mathematics",
+      "branchId": "math-geometry",
+      "tags": [
+        "Algebraic topology"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1895,
+        "label": "1895",
+        "precision": "exact",
+        "note": "Poincaré’s Analysis situs is the milestone for algebraic invariants, rather than the origin of all topological ideas."
+      },
+      "summary": "Algebraic topology assigns groups and related invariants to spaces to distinguish holes, loops, and other features preserved by continuous deformation.",
+      "problem": "How can a shape be distinguished without measuring lengths or angles?",
+      "development": "Poincaré developed homology and the fundamental group. These algebraic tools form a specific approach within topology, rather than a second name for the entire subject.",
+      "limitations": "One invariant rarely classifies every space; spaces with identical homology can still differ topologically.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Henri Poincaré",
+          "role": "Developed algebraic invariants of spaces."
+        }
+      ],
+      "sourceIds": [
+        "f-topology",
+        "e21-algebraic-topology-reference"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-algebraic-topology-reference"
+        ],
+        "history": [
+          "f-topology",
+          "e21-algebraic-topology-reference"
+        ]
+      },
+      "example": "A circle has a loop that cannot be contracted to a point while staying on the circle.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Loops and holes → algebraic invariants",
+        "explanation": "The fundamental group records based loops up to continuous deformation; homology is a different, complementary invariant.",
+        "sourceIds": [
+          "e21-algebraic-topology-reference"
+        ]
+      }
+    },
+    {
+      "id": "optimal-transport",
+      "title": "Optimal transport",
+      "aliases": [],
+      "discipline": "mathematics",
+      "branchId": "math-analysis",
+      "tags": [
+        "Optimal transport"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1781,
+        "label": "1781",
+        "precision": "exact",
+        "note": "Monge’s earth-moving problem is the historical anchor; mass-splitting transport plans belong to Kantorovich’s later formulation."
+      },
+      "summary": "Optimal transport asks how to move one distribution of material into another with the smallest total cost.",
+      "problem": "Which source should supply each destination when moving material has a cost?",
+      "development": "Monge posed a geometric allocation problem. Kantorovich later allowed mass to split between destinations, producing a linear optimization framework used for comparing distributions.",
+      "limitations": "The cost function defines what counts as close; different costs or constraints can produce different optimal plans.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Gaspard Monge",
+          "role": "Formulated the earth-moving problem."
+        },
+        {
+          "name": "Leonid Kantorovich",
+          "role": "Introduced relaxed transport plans."
+        }
+      ],
+      "sourceIds": [
+        "e21-optimal-transport"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-optimal-transport"
+        ],
+        "history": [
+          "e21-optimal-transport"
+        ]
+      },
+      "example": "Allocate soil from excavation sites to embankments while minimizing hauling distance.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Minimize transport cost while preserving supply and demand",
+        "explanation": "This describes the transport problem; a modern plan may split one source among several destinations.",
+        "sourceIds": [
+          "e21-optimal-transport"
+        ]
+      }
+    },
+    {
+      "id": "riemann-hypothesis",
+      "title": "Riemann hypothesis",
+      "aliases": [],
+      "discipline": "mathematics",
+      "branchId": "math-number",
+      "tags": [
+        "Riemann hypothesis"
+      ],
+      "kind": "mathematics",
+      "date": {
+        "year": 1859,
+        "label": "1859",
+        "precision": "exact",
+        "note": "Riemann proposed the conjecture in his 1859 paper on prime counting."
+      },
+      "summary": "The conjecture places every nontrivial zero of the Riemann zeta function on a particular vertical line in the complex plane.",
+      "problem": "How tightly can deviations in the distribution of primes be bounded?",
+      "development": "Riemann connected prime counting with the analytic continuation of the zeta function. The conjecture concerns its zeros, not a probabilistic rule for generating primes.",
+      "limitations": "It remains unproved. Checking finitely many zeros cannot establish the statement for all zeros; conditional consequences are not established theorems without that qualification.",
+      "standing": "open",
+      "contributors": [
+        {
+          "name": "Bernhard Riemann",
+          "role": "Proposed the zeta-zero conjecture."
+        }
+      ],
+      "sourceIds": [
+        "e21-riemann-hypothesis"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-riemann-hypothesis"
+        ],
+        "history": [
+          "e21-riemann-hypothesis"
+        ]
+      },
+      "example": "A proof would sharpen control over the error in smooth estimates of prime counts.",
+      "representation": {
+        "kind": "formula",
+        "expression": "ζ(s) = 0, 0 < Re(s) < 1 ⇒ Re(s) = ½",
+        "explanation": "The implication is unproved. Here ζ is the analytically continued zeta function, s is a complex input, and Re(s) is its real part. The strip excludes the known trivial zeros at negative even integers.",
+        "sourceIds": [
+          "e21-riemann-hypothesis"
+        ]
+      }
+    },
+    {
+      "id": "point-defects",
+      "title": "Point defects",
+      "aliases": [
+        "Frenkel defect"
+      ],
+      "discipline": "materials",
+      "branchId": "materials-structure",
+      "tags": [
+        "Point defects"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1926,
+        "label": "1926",
+        "precision": "exact",
+        "note": "Frenkel proposed the vacancy–interstitial pair in 1926."
+      },
+      "summary": "A missing, extra, or substituted atom locally interrupts a crystal’s repeating pattern.",
+      "problem": "How can atoms or charge move through an apparently rigid crystal?",
+      "development": "Frenkel related ionic conduction to displaced ions. A vacancy can move as neighboring atoms hop into it, even though the lattice as a whole remains intact.",
+      "limitations": "Defect types and concentrations depend on temperature, composition, and charge balance.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Yakov Frenkel",
+          "role": "Proposed displaced ions and the vacancies they leave."
+        }
+      ],
+      "sourceIds": [
+        "e21-point-defects"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-point-defects"
+        ],
+        "history": [
+          "e21-point-defects"
+        ]
+      },
+      "example": "An ion leaving its normal site for an interstitial site creates two local defects.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Vacancy plus interstitial of the same species",
+        "explanation": "This defines a Frenkel pair, one particular kind of point-defect combination.",
+        "sourceIds": [
+          "e21-point-defects"
+        ]
+      }
+    },
+    {
+      "id": "diffusion-in-solids",
+      "title": "Diffusion in solids",
+      "aliases": [],
+      "discipline": "materials",
+      "branchId": "materials-structure",
+      "tags": [
+        "Diffusion in solids"
+      ],
+      "kind": "discovery",
+      "date": {
+        "year": 1896,
+        "label": "1896",
+        "precision": "exact",
+        "note": "The 1896 experiments established a measurable solid-metal example."
+      },
+      "summary": "Atoms can migrate through solids even below the melting point, redistributing composition over time.",
+      "problem": "Can two metals mix without melting?",
+      "development": "Roberts-Austen tracked gold penetrating lead. Later atomistic models distinguished vacancy, interstitial, and fast boundary paths.",
+      "limitations": "A single diffusivity may fail across phases, grain boundaries, or large composition changes.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "William Chandler Roberts-Austen",
+          "role": "Measured interdiffusion in solid metals."
+        }
+      ],
+      "sourceIds": [
+        "e21-diffusion-in-solids"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-diffusion-in-solids"
+        ],
+        "history": [
+          "e21-diffusion-in-solids"
+        ]
+      },
+      "example": "Heat treatment lets carbon enter the surface of steel.",
+      "representation": {
+        "kind": "formula",
+        "expression": "ℓ ∼ √(Dt)",
+        "explanation": "For ordinary diffusion with constant diffusivity D, characteristic distance ℓ grows as the square root of elapsed time t.",
+        "sourceIds": [
+          "e21-diffusion-in-solids"
+        ]
+      }
+    },
+    {
+      "id": "grain-boundaries",
+      "title": "Grain boundaries",
+      "aliases": [],
+      "discipline": "materials",
+      "branchId": "materials-structure",
+      "tags": [
+        "Grain boundaries"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1950,
+        "label": "1950",
+        "precision": "exact",
+        "note": "The date marks the Read–Shockley model, not the discovery of grains."
+      },
+      "summary": "A grain boundary is the interface between neighboring crystals of different orientation in a solid.",
+      "problem": "How can a solid contain many crystal orientations without gaps?",
+      "development": "Read and Shockley connected the energy of low-angle boundaries to arrays of dislocations that accommodate misorientation.",
+      "limitations": "The simple dislocation-array picture loses accuracy at large misorientations.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "William T. Read and William Shockley",
+          "role": "Modeled low-angle boundaries using dislocations."
+        }
+      ],
+      "sourceIds": [
+        "e21-grain-boundaries"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-grain-boundaries"
+        ],
+        "history": [
+          "e21-grain-boundaries"
+        ]
+      },
+      "example": "Two slightly tilted crystal regions can meet along a row of edge dislocations.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Interface separating differently oriented crystallites",
+        "explanation": "Orientation mismatch is distinct from a change of chemical phase.",
+        "sourceIds": [
+          "e21-grain-boundaries"
+        ]
+      }
+    },
+    {
+      "id": "recrystallization",
+      "title": "Recrystallization after deformation",
+      "aliases": [
+        "recrystallization"
+      ],
+      "discipline": "materials",
+      "branchId": "materials-phases",
+      "tags": [
+        "Recrystallization after deformation"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1952,
+        "label": "1952",
+        "precision": "exact",
+        "note": "The date identifies a synthesis of earlier metallurgical observations."
+      },
+      "summary": "During annealing, new grains with fewer deformation defects can replace cold-worked material.",
+      "problem": "Why can heating restore ductility after work hardening?",
+      "development": "Boundary migration allows low-defect grains to grow into deformed regions, reducing stored deformation energy.",
+      "limitations": "Recovery, recrystallization, and later grain growth are distinct; no single fixed temperature applies to every processing history.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "J. E. Burke and David Turnbull",
+          "role": "Synthesized evidence on recrystallization and grain growth."
+        }
+      ],
+      "sourceIds": [
+        "e21-recrystallization"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-recrystallization"
+        ],
+        "history": [
+          "e21-recrystallization"
+        ]
+      },
+      "example": "Annealing a cold-rolled copper sheet can soften it before further forming.",
+      "representation": {
+        "kind": "definition",
+        "expression": "New low-defect grains replace deformed grains",
+        "explanation": "This describes solid-state recrystallization after deformation, without melting.",
+        "sourceIds": [
+          "e21-recrystallization"
+        ]
+      }
+    },
+    {
+      "id": "precipitation-hardening",
+      "title": "Precipitation hardening",
+      "aliases": [
+        "age hardening"
+      ],
+      "discipline": "materials",
+      "branchId": "materials-phases",
+      "tags": [
+        "Precipitation hardening"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1911,
+        "label": "1911",
+        "precision": "exact",
+        "note": "Wilm’s publication is dated here; recognition of the precipitate mechanism came later."
+      },
+      "summary": "Finely dispersed particles in a metal matrix can impede dislocation motion and raise strength.",
+      "problem": "How can an alloy harden after quenching while it simply ages?",
+      "development": "Wilm observed delayed hardening in aluminum alloys. Later microscopy and theory related the response to changes in solute distribution and precipitates.",
+      "limitations": "Overaging can coarsen particles and reduce strength; strengthening depends on size, spacing, and matrix interaction.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Alfred Wilm",
+          "role": "Reported age hardening in aluminum alloys."
+        }
+      ],
+      "sourceIds": [
+        "e21-precipitation-hardening"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-precipitation-hardening"
+        ],
+        "history": [
+          "e21-precipitation-hardening"
+        ]
+      },
+      "example": "An aluminum–copper alloy can strengthen after solution treatment, quenching, and controlled aging.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Supersaturated solution → dispersed strengthening particles",
+        "explanation": "The heat treatment controls the particle population; hardening is not monotonic indefinitely.",
+        "sourceIds": [
+          "e21-precipitation-hardening"
+        ]
+      }
+    },
+    {
+      "id": "hall-petch",
+      "title": "Hall–Petch relation",
+      "aliases": [
+        "grain-size strengthening"
+      ],
+      "discipline": "materials",
+      "branchId": "materials-phases",
+      "tags": [
+        "Hall–Petch relation"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1951,
+        "label": "1951",
+        "precision": "exact",
+        "note": "Hall’s 1951 paper is the anchor; Petch reported related results in 1953."
+      },
+      "summary": "Over a useful range, smaller grains often raise a polycrystalline metal’s yield stress.",
+      "problem": "Why can two samples of the same alloy have different yield strengths?",
+      "development": "Hall related mild-steel yielding to grain size. Boundaries can obstruct slip, although the microscopic interpretation varies across materials.",
+      "limitations": "The empirical law is not universal, especially for extremely small grains or different deformation mechanisms.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "E. O. Hall and N. J. Petch",
+          "role": "Related strength to grain size in separate studies."
+        }
+      ],
+      "sourceIds": [
+        "e21-hall-petch",
+        "e21-hall-petch-reference"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-hall-petch-reference"
+        ],
+        "history": [
+          "e21-hall-petch",
+          "e21-hall-petch-reference"
+        ]
+      },
+      "example": "Refining grains can strengthen steel without changing its nominal composition.",
+      "representation": {
+        "kind": "formula",
+        "expression": "σ_{y} = σ₀ + k / √d",
+        "explanation": "In the grain-size range where the fit holds, σ_y is yield stress and d is mean grain diameter. σ₀ is the extrapolated intercept and k sets the strength of the grain-size effect for that material.",
+        "sourceIds": [
+          "e21-hall-petch-reference"
+        ]
+      }
+    },
+    {
+      "id": "fracture-mechanics",
+      "title": "Fracture mechanics",
+      "aliases": [],
+      "discipline": "materials",
+      "branchId": "materials-phases",
+      "tags": [
+        "Fracture mechanics"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1921,
+        "label": "1921",
+        "precision": "exact",
+        "note": "The publication of Griffith’s energy criterion is the selected milestone."
+      },
+      "summary": "A crack can grow when extending it releases enough stored energy to pay the energetic cost of fracture.",
+      "problem": "Why can a small flaw cause failure below a material’s ideal strength?",
+      "development": "Griffith’s brittle-fracture theory shifted attention from nominal stress alone to flaw size and the energy balance at a crack.",
+      "limitations": "Ductile solids dissipate energy through plastic deformation, so surface energy alone underestimates resistance.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Alan Arnold Griffith",
+          "role": "Balanced crack-surface energy against released elastic energy."
+        }
+      ],
+      "sourceIds": [
+        "e21-fracture-mechanics"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-fracture-mechanics"
+        ],
+        "history": [
+          "e21-fracture-mechanics"
+        ]
+      },
+      "example": "A scratch on a glass fiber can sharply lower its breaking stress.",
+      "representation": {
+        "kind": "formula",
+        "expression": "G ≥ G_{c}",
+        "explanation": "G is energy released per unit crack extension area; G_c is fracture resistance in the specified conditions.",
+        "sourceIds": [
+          "e21-fracture-mechanics"
+        ]
+      }
+    },
+    {
+      "id": "viscoelasticity",
+      "title": "Viscoelasticity",
+      "aliases": [],
+      "discipline": "materials",
+      "branchId": "materials-phases",
+      "tags": [
+        "Viscoelasticity"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1867,
+        "label": "1867",
+        "precision": "exact",
+        "note": "Maxwell’s published relaxation treatment provides a model milestone."
+      },
+      "summary": "A material can store energy elastically over short times and dissipate or relax stress over longer times.",
+      "problem": "Why does the same material respond differently to fast and slow loading?",
+      "development": "The Maxwell model combines a spring with a viscous element in series, introducing a characteristic stress-relaxation time.",
+      "limitations": "Real polymers often have a spectrum of relaxation times; one linear element pair cannot describe every history.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "James Clerk Maxwell",
+          "role": "Developed a relaxation model linking elastic and viscous response."
+        }
+      ],
+      "sourceIds": [
+        "e21-viscoelasticity"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-viscoelasticity"
+        ],
+        "history": [
+          "e21-viscoelasticity"
+        ]
+      },
+      "example": "At fixed extension, a polymer sample may gradually exert less force.",
+      "representation": {
+        "kind": "formula",
+        "expression": "τ = η / E",
+        "explanation": "For the linear Maxwell element, relaxation time τ is viscosity η divided by spring modulus E.",
+        "sourceIds": [
+          "e21-viscoelasticity"
+        ]
+      }
+    },
+    {
+      "id": "glass-transition",
+      "title": "Glass transition",
+      "aliases": [],
+      "discipline": "materials",
+      "branchId": "materials-phases",
+      "tags": [
+        "Glass transition"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1961,
+        "label": "1961",
+        "precision": "exact",
+        "note": "The 1961 free-volume model is one interpretive milestone; glassmaking and observations of softening are much older."
+      },
+      "summary": "An amorphous material becomes effectively rigid when structural relaxation is too slow on the observation timescale.",
+      "problem": "How can a liquid solidify without crystallizing?",
+      "development": "Free-volume models linked restricted molecular rearrangement to slowing relaxation; competing descriptions explore energy landscapes and cooperative motion.",
+      "limitations": "The measured transition temperature depends on cooling rate and protocol; no single microscopic model explains all glass formers.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "David Turnbull and Morrel H. Cohen",
+          "role": "Developed a free-volume interpretation of vitrification."
+        }
+      ],
+      "sourceIds": [
+        "e21-glass-transition"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-glass-transition"
+        ],
+        "history": [
+          "e21-glass-transition"
+        ]
+      },
+      "example": "A polymer can change from rubbery to glassy as it is cooled.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Relaxation becomes slower than observation",
+        "explanation": "This kinetic description distinguishes vitrification from equilibrium crystallization.",
+        "sourceIds": [
+          "e21-glass-transition"
+        ]
+      }
+    },
+    {
+      "id": "martensitic-transformations",
+      "title": "Martensitic transformations",
+      "aliases": [],
+      "discipline": "materials",
+      "branchId": "materials-phases",
+      "tags": [
+        "Martensitic transformations"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1953,
+        "label": "1953",
+        "precision": "exact",
+        "note": "The 1953 crystallographic theory is dated here, not the first observation of hardened steel."
+      },
+      "summary": "A coordinated lattice rearrangement changes crystal structure without long-range atomic diffusion.",
+      "problem": "How can a solid change phase rapidly while preserving specific orientation relationships?",
+      "development": "Crystallographic theories combined lattice distortion with accommodation to predict the shape change and interface orientation.",
+      "limitations": "Diffusionless transformation does not imply every alloy transforms reversibly or has shape memory.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "M. S. Wechsler, D. S. Lieberman, and T. A. Read",
+          "role": "Developed a crystallographic transformation theory."
+        }
+      ],
+      "sourceIds": [
+        "e21-martensitic-transformations"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-martensitic-transformations"
+        ],
+        "history": [
+          "e21-martensitic-transformations"
+        ]
+      },
+      "example": "Rapid cooling can transform austenite into hard martensite in steel.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Coordinated, diffusionless change of lattice",
+        "explanation": "Atoms move cooperatively over short distances rather than separating by long-range diffusion.",
+        "sourceIds": [
+          "e21-martensitic-transformations"
+        ]
+      }
+    },
+    {
+      "id": "percolation",
+      "title": "Percolation",
+      "aliases": [],
+      "discipline": "materials",
+      "branchId": "materials-functional",
+      "tags": [
+        "Percolation"
+      ],
+      "kind": "theory",
+      "date": {
+        "year": 1957,
+        "label": "1957",
+        "precision": "exact",
+        "note": "The crystals-and-mazes paper formalized percolation in 1957."
+      },
+      "summary": "Local connections can suddenly form a system-spanning path as the fraction of connected sites or bonds increases.",
+      "problem": "When does adding conductive filler turn an insulating composite into a conductor?",
+      "development": "Broadbent and Hammersley studied random media in which the medium’s connectivity controls passage, distinguishing it from randomness in the moving particle alone.",
+      "limitations": "Thresholds depend on geometry, correlations, and finite size; ideal lattice thresholds cannot be copied to arbitrary materials.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Simon Broadbent and John Hammersley",
+          "role": "Formulated probabilistic connectivity in random media."
+        }
+      ],
+      "sourceIds": [
+        "e21-percolation"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-percolation"
+        ],
+        "history": [
+          "e21-percolation"
+        ]
+      },
+      "example": "Carbon particles may form a connected conducting network in a polymer.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Connectivity across a randomly occupied medium",
+        "explanation": "The threshold describes emergence of a large connected cluster for a stated model.",
+        "sourceIds": [
+          "e21-percolation"
+        ]
+      }
+    },
+    {
+      "id": "composite-materials",
+      "title": "Composite materials",
+      "aliases": [],
+      "discipline": "materials",
+      "branchId": "materials-functional",
+      "tags": [
+        "Composite materials"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 1952,
+        "label": "1952",
+        "precision": "exact",
+        "note": "Cox’s mechanics paper is a modeling milestone, not the invention of composites."
+      },
+      "summary": "Distinct constituents share load through interfaces, producing properties that depend on arrangement as well as composition.",
+      "problem": "How does stress reach a reinforcing fiber embedded in a softer matrix?",
+      "development": "Cox analyzed how stress transfers into fibers. Length, orientation, and bonding help determine whether reinforcement is effective.",
+      "limitations": "A simple mixture average cannot capture debonding, off-axis loads, or damage accumulation.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "H. L. Cox",
+          "role": "Modeled load transfer in fibrous materials."
+        }
+      ],
+      "sourceIds": [
+        "e21-composite-materials"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-composite-materials"
+        ],
+        "history": [
+          "e21-composite-materials"
+        ]
+      },
+      "example": "Aligned glass fibers give a resin much greater stiffness along the fiber direction.",
+      "representation": {
+        "kind": "formula",
+        "expression": "E_{∥} ≈ V_{f}E_{f} + V_{m}E_{m}",
+        "explanation": "The ideal axial mixture rule assumes aligned continuous fibers, common strain and good bonding; V denotes volume fraction and E modulus.",
+        "sourceIds": [
+          "e21-composite-materials"
+        ]
+      }
+    },
+    {
+      "id": "metamaterials",
+      "title": "Electromagnetic metamaterials",
+      "aliases": [
+        "metamaterials"
+      ],
+      "discipline": "materials",
+      "branchId": "materials-functional",
+      "tags": [
+        "Electromagnetic metamaterials"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 2000,
+        "label": "2000",
+        "precision": "exact",
+        "note": "The 2000 composite realization followed Veselago’s earlier theoretical prediction."
+      },
+      "summary": "Engineered structures smaller than a wavelength can give a medium an electromagnetic response unlike that of its constituents alone.",
+      "problem": "Can geometry control how an electromagnetic wave propagates through a material?",
+      "development": "Arrays of conducting wires and resonators were combined to realize unusual effective permittivity and permeability over a microwave band.",
+      "limitations": "Effective parameters are frequency-dependent; losses and cell size limit bandwidth and homogenization.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "David R. Smith and collaborators",
+          "role": "Constructed a composite with negative effective electromagnetic parameters."
+        }
+      ],
+      "sourceIds": [
+        "e21-metamaterials",
+        "e21-metamaterials-2"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-metamaterials",
+          "e21-metamaterials-2"
+        ],
+        "history": [
+          "e21-metamaterials",
+          "e21-metamaterials-2"
+        ]
+      },
+      "example": "A microwave composite can exhibit a band where both effective permittivity and permeability are negative.",
+      "representation": {
+        "kind": "definition",
+        "expression": "Subwavelength structure engineers effective wave response",
+        "explanation": "Negative refraction is one possible behavior, not a requirement for every metamaterial.",
+        "sourceIds": [
+          "e21-metamaterials",
+          "e21-metamaterials-2"
+        ]
+      }
+    },
+    {
+      "id": "high-entropy-alloys",
+      "title": "High-entropy alloys",
+      "aliases": [
+        "multi-principal-element alloys"
+      ],
+      "discipline": "materials",
+      "branchId": "materials-functional",
+      "tags": [
+        "High-entropy alloys"
+      ],
+      "kind": "concept",
+      "date": {
+        "year": 2004,
+        "label": "2004",
+        "precision": "exact",
+        "note": "Yeh’s 2004 design paper is the anchor within parallel work on multi-component alloys."
+      },
+      "summary": "Several principal elements can share an alloy in substantial proportions, opening a broad composition space beyond one dominant base metal.",
+      "problem": "Can alloys be designed around several main elements rather than minor additions to one base?",
+      "development": "The high-entropy strategy highlighted configurational mixing entropy and encouraged exploration of previously neglected compositions.",
+      "limitations": "Mixing entropy alone does not ensure a single phase; enthalpy, ordering, temperature, and processing also matter.",
+      "standing": "established",
+      "contributors": [
+        {
+          "name": "Jien-Wei Yeh and collaborators",
+          "role": "Presented a multi-principal-element alloy design strategy."
+        }
+      ],
+      "sourceIds": [
+        "e21-high-entropy-alloys"
+      ],
+      "claimSources": {
+        "summary": [
+          "e21-high-entropy-alloys"
+        ],
+        "history": [
+          "e21-high-entropy-alloys"
+        ]
+      },
+      "example": "A near-equiatomic alloy invites comparison with a traditional dilute alloy of the same elements.",
+      "representation": {
+        "kind": "formula",
+        "expression": "ΔS_{mix} = −R Σ xᵢ ln xᵢ",
+        "explanation": "For an ideal random substitutional solution, xᵢ is the mole fraction of element i and R the gas constant.",
+        "sourceIds": [
+          "e21-high-entropy-alloys"
+        ]
+      }
     }
   ],
   "relationships": [
@@ -4796,6 +6982,855 @@
       "sourceIds": [
         "xp-qcd"
       ]
+    },
+    {
+      "id": "chemical-kinetics--michaelis-menten-kinetics",
+      "source": "chemical-kinetics",
+      "target": "michaelis-menten-kinetics",
+      "type": "foundation",
+      "explanation": "Enzyme saturation is a particular mechanistic model of reaction rate.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-michaelis-menten-kinetics"
+      ]
+    },
+    {
+      "id": "biochemistry--michaelis-menten-kinetics",
+      "source": "biochemistry",
+      "target": "michaelis-menten-kinetics",
+      "type": "enables",
+      "explanation": "Cell-free enzyme studies made quantitative catalytic-rate experiments possible.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-michaelis-menten-kinetics"
+      ]
+    },
+    {
+      "id": "michaelis-menten-kinetics--enzyme-allostery",
+      "source": "michaelis-menten-kinetics",
+      "target": "enzyme-allostery",
+      "type": "revision",
+      "explanation": "Allosteric regulation explains behaviors outside a simple independent-site saturation model.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-enzyme-allostery"
+      ]
+    },
+    {
+      "id": "cellular-respiration--chemiosmosis",
+      "source": "cellular-respiration",
+      "target": "chemiosmosis",
+      "type": "revision",
+      "explanation": "Chemiosmosis explains how respiratory energy can be coupled to phosphorylation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-chemiosmosis"
+      ]
+    },
+    {
+      "id": "lipid-bilayer--chemiosmosis",
+      "source": "lipid-bilayer",
+      "target": "chemiosmosis",
+      "type": "enables",
+      "explanation": "A membrane barrier allows electrochemical gradients to be maintained.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-chemiosmosis"
+      ]
+    },
+    {
+      "id": "chemical-thermodynamics--protein-folding-thermodynamics",
+      "source": "chemical-thermodynamics",
+      "target": "protein-folding-thermodynamics",
+      "type": "foundation",
+      "explanation": "Free-energy differences compare native and unfolded states under specified conditions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-protein-folding-thermodynamics"
+      ]
+    },
+    {
+      "id": "molecular-biology--protein-folding-thermodynamics",
+      "source": "molecular-biology",
+      "target": "protein-folding-thermodynamics",
+      "type": "foundation",
+      "explanation": "Amino-acid sequences connect molecular information to folding behavior.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-protein-folding-thermodynamics"
+      ]
+    },
+    {
+      "id": "arrhenius-equation--transition-state-theory",
+      "source": "arrhenius-equation",
+      "target": "transition-state-theory",
+      "type": "revision",
+      "explanation": "Transition-state theory interprets rate-temperature behavior through activation free energy and a prefactor.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-transition-state-theory"
+      ]
+    },
+    {
+      "id": "statistical-mechanics--transition-state-theory",
+      "source": "statistical-mechanics",
+      "target": "transition-state-theory",
+      "type": "foundation",
+      "explanation": "Statistical populations supply the estimated occupancy of transition-state configurations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-transition-state-theory"
+      ]
+    },
+    {
+      "id": "quantum-chemistry--resonance-delocalization",
+      "source": "quantum-chemistry",
+      "target": "resonance-delocalization",
+      "type": "foundation",
+      "explanation": "Quantum state superposition explains why one localized bond description can be insufficient.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-resonance-delocalization"
+      ]
+    },
+    {
+      "id": "coordination-chemistry--ligand-field-theory",
+      "source": "coordination-chemistry",
+      "target": "ligand-field-theory",
+      "type": "revision",
+      "explanation": "Ligand fields give an electronic account of properties of coordination complexes.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-ligand-field-theory"
+      ]
+    },
+    {
+      "id": "molecular-orbital-theory--ligand-field-theory",
+      "source": "molecular-orbital-theory",
+      "target": "ligand-field-theory",
+      "type": "foundation",
+      "explanation": "Orbital mixing extends purely electrostatic descriptions of metal–ligand interactions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-ligand-field-theory"
+      ]
+    },
+    {
+      "id": "quantum-chemistry--density-functional-theory",
+      "source": "quantum-chemistry",
+      "target": "density-functional-theory",
+      "type": "revision",
+      "explanation": "DFT reorganizes the electronic ground-state problem around density.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-density-functional-theory"
+      ]
+    },
+    {
+      "id": "molecular-orbital-theory--pericyclic-selection-rules",
+      "source": "molecular-orbital-theory",
+      "target": "pericyclic-selection-rules",
+      "type": "foundation",
+      "explanation": "Orbital phases determine how symmetry can be maintained during bond rearrangement.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-pericyclic-selection-rules"
+      ]
+    },
+    {
+      "id": "stereochemistry--pericyclic-selection-rules",
+      "source": "stereochemistry",
+      "target": "pericyclic-selection-rules",
+      "type": "enables",
+      "explanation": "Stereochemical observations provided patterns for the rules to explain.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-pericyclic-selection-rules"
+      ]
+    },
+    {
+      "id": "molecular-biology--rna-world",
+      "source": "molecular-biology",
+      "target": "rna-world",
+      "type": "influence",
+      "explanation": "The division of molecular information and function motivated scenarios in which RNA could play both roles.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-rna-world"
+      ]
+    },
+    {
+      "id": "catalysis--rna-world",
+      "source": "catalysis",
+      "target": "rna-world",
+      "type": "foundation",
+      "explanation": "The hypothesis requires catalytic activity as well as information storage.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-rna-world"
+      ]
+    },
+    {
+      "id": "wave-equation--doppler-effect",
+      "source": "wave-equation",
+      "target": "doppler-effect",
+      "type": "foundation",
+      "explanation": "Wave propagation provides a framework for relating emission intervals to arrival intervals.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-doppler-effect"
+      ]
+    },
+    {
+      "id": "classical-mechanics--coriolis-effect",
+      "source": "classical-mechanics",
+      "target": "coriolis-effect",
+      "type": "foundation",
+      "explanation": "Changing Newtonian equations to rotating coordinates introduces the Coriolis term.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-coriolis-effect"
+      ]
+    },
+    {
+      "id": "fluid-dynamics--turbulent-energy-cascade",
+      "source": "fluid-dynamics",
+      "target": "turbulent-energy-cascade",
+      "type": "foundation",
+      "explanation": "The cascade describes statistical behavior of continuum fluid motion.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-turbulent-energy-cascade"
+      ]
+    },
+    {
+      "id": "dimensional-analysis--turbulent-energy-cascade",
+      "source": "dimensional-analysis",
+      "target": "turbulent-energy-cascade",
+      "type": "foundation",
+      "explanation": "Dimensional reasoning constrains inertial-range scaling from energy flux and length scale.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-turbulent-energy-cascade"
+      ]
+    },
+    {
+      "id": "statistical-mechanics--fluctuation-dissipation-theorem",
+      "source": "statistical-mechanics",
+      "target": "fluctuation-dissipation-theorem",
+      "type": "foundation",
+      "explanation": "Equilibrium correlations connect microscopic fluctuations with macroscopic response.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-fluctuation-dissipation-theorem"
+      ]
+    },
+    {
+      "id": "brownian-motion--fluctuation-dissipation-theorem",
+      "source": "brownian-motion",
+      "target": "fluctuation-dissipation-theorem",
+      "type": "influence",
+      "explanation": "The generalized theorem encompasses the relation between Brownian fluctuations and drag.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-fluctuation-dissipation-theorem"
+      ]
+    },
+    {
+      "id": "bcs-superconductivity--spontaneous-symmetry-breaking",
+      "source": "bcs-superconductivity",
+      "target": "spontaneous-symmetry-breaking",
+      "type": "influence",
+      "explanation": "Nambu explicitly analyzed the BCS superconducting state to develop the field-theoretic treatment.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-spontaneous-symmetry-breaking"
+      ]
+    },
+    {
+      "id": "landau-phase-transitions--spontaneous-symmetry-breaking",
+      "source": "landau-phase-transitions",
+      "target": "spontaneous-symmetry-breaking",
+      "type": "foundation",
+      "explanation": "Order parameters describe how states cease to preserve a symmetry.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-spontaneous-symmetry-breaking"
+      ]
+    },
+    {
+      "id": "superconductivity--bcs-superconductivity",
+      "source": "superconductivity",
+      "target": "bcs-superconductivity",
+      "type": "revision",
+      "explanation": "BCS supplied a microscopic account of the previously observed superconducting phase.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-bcs-superconductivity"
+      ]
+    },
+    {
+      "id": "fermi-dirac-statistics--bcs-superconductivity",
+      "source": "fermi-dirac-statistics",
+      "target": "bcs-superconductivity",
+      "type": "foundation",
+      "explanation": "Pairing is formulated for electrons occupying states around a Fermi surface.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-bcs-superconductivity"
+      ]
+    },
+    {
+      "id": "bose-einstein-statistics--bose-einstein-condensation",
+      "source": "bose-einstein-statistics",
+      "target": "bose-einstein-condensation",
+      "type": "foundation",
+      "explanation": "Bosonic occupation statistics permit the accumulation underlying condensation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-bose-einstein-condensation"
+      ]
+    },
+    {
+      "id": "quantum-mechanics--bose-einstein-condensation",
+      "source": "quantum-mechanics",
+      "target": "bose-einstein-condensation",
+      "type": "foundation",
+      "explanation": "A shared quantum state describes the condensate rather than separate classical trajectories.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-bose-einstein-condensation"
+      ]
+    },
+    {
+      "id": "quantum-entanglement--quantum-decoherence",
+      "source": "quantum-entanglement",
+      "target": "quantum-decoherence",
+      "type": "foundation",
+      "explanation": "System–environment entanglement underlies the reduced-state description of decoherence.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-quantum-decoherence",
+        "e21-quantum-decoherence-2"
+      ]
+    },
+    {
+      "id": "general-relativity--loop-quantum-gravity",
+      "source": "general-relativity",
+      "target": "loop-quantum-gravity",
+      "type": "revision",
+      "explanation": "The program seeks a quantum description of the dynamical geometry used by general relativity.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-loop-quantum-gravity"
+      ]
+    },
+    {
+      "id": "quantum-mechanics--loop-quantum-gravity",
+      "source": "quantum-mechanics",
+      "target": "loop-quantum-gravity",
+      "type": "foundation",
+      "explanation": "Quantum states and operators supply the framework for the proposed quantization.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-loop-quantum-gravity"
+      ]
+    },
+    {
+      "id": "black-holes--holographic-principle",
+      "source": "black-holes",
+      "target": "holographic-principle",
+      "type": "influence",
+      "explanation": "Black-hole entropy supplied the motivation for boundary-based information counting.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-holographic-principle",
+        "e21-holographic-principle-2"
+      ]
+    },
+    {
+      "id": "entropy--holographic-principle",
+      "source": "entropy",
+      "target": "holographic-principle",
+      "type": "foundation",
+      "explanation": "Entropy supplies the measure of accessible states used in gravitational information bounds.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-holographic-principle",
+        "e21-holographic-principle-2"
+      ]
+    },
+    {
+      "id": "euclidean-algorithm--modular-arithmetic",
+      "source": "euclidean-algorithm",
+      "target": "modular-arithmetic",
+      "type": "foundation",
+      "explanation": "The gcd computed by Euclid determines which residues admit inverses; this is a mathematical connection, not a claim of direct transmission.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-modular-arithmetic",
+        "e21-modular-arithmetic-2"
+      ]
+    },
+    {
+      "id": "geometry--fundamental-theorem-calculus",
+      "source": "geometry",
+      "target": "fundamental-theorem-calculus",
+      "type": "foundation",
+      "explanation": "Barrow expressed the relation between tangents and accumulated areas geometrically.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-calculus"
+      ]
+    },
+    {
+      "id": "prime-numbers--prime-number-theorem",
+      "source": "prime-numbers",
+      "target": "prime-number-theorem",
+      "type": "foundation",
+      "explanation": "Counting prime numbers supplies the object whose asymptotic density the theorem describes.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-prime"
+      ]
+    },
+    {
+      "id": "complex-analysis--prime-number-theorem",
+      "source": "complex-analysis",
+      "target": "prime-number-theorem",
+      "type": "enables",
+      "explanation": "The 1896 proofs use the analytic behavior of the zeta function.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-prime"
+      ]
+    },
+    {
+      "id": "quadratic-equations--spectral-theorem",
+      "source": "quadratic-equations",
+      "target": "spectral-theorem",
+      "type": "foundation",
+      "explanation": "Quadratic forms generalize scalar quadratic expressions; their principal axes motivate the symmetric spectral decomposition.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-spectral-theorem"
+      ]
+    },
+    {
+      "id": "linear-algebra--singular-value-decomposition",
+      "source": "linear-algebra",
+      "target": "singular-value-decomposition",
+      "type": "foundation",
+      "explanation": "The decomposition factors a matrix into simpler linear maps.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-singular-value-decomposition"
+      ]
+    },
+    {
+      "id": "spectral-theorem--singular-value-decomposition",
+      "source": "spectral-theorem",
+      "target": "singular-value-decomposition",
+      "type": "foundation",
+      "explanation": "For real A, the symmetric matrix AᵀA provides right singular vectors and squared singular values.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-singular-value-decomposition"
+      ]
+    },
+    {
+      "id": "probability--law-large-numbers",
+      "source": "probability",
+      "target": "law-large-numbers",
+      "type": "foundation",
+      "explanation": "Repeated-trial probabilities make concentration of empirical frequencies a precise mathematical question.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-law-large-numbers",
+        "e21-law-large-numbers-2"
+      ]
+    },
+    {
+      "id": "brownian-motion--stochastic-calculus",
+      "source": "brownian-motion",
+      "target": "stochastic-calculus",
+      "type": "foundation",
+      "explanation": "Brownian paths provide the canonical noisy integrator in Itô calculus.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-stochastic-calculus"
+      ]
+    },
+    {
+      "id": "measure-theory--stochastic-calculus",
+      "source": "measure-theory",
+      "target": "stochastic-calculus",
+      "type": "foundation",
+      "explanation": "Probability measures and limits of random variables supply the formal setting for stochastic integrals.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-stochastic-calculus"
+      ]
+    },
+    {
+      "id": "topology--algebraic-topology",
+      "source": "topology",
+      "target": "algebraic-topology",
+      "type": "foundation",
+      "explanation": "Algebraic invariants provide tools within the broader study of continuous deformation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-topology"
+      ]
+    },
+    {
+      "id": "group-theory--algebraic-topology",
+      "source": "group-theory",
+      "target": "algebraic-topology",
+      "type": "foundation",
+      "explanation": "The fundamental group uses a group operation to encode composition of loops.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-topology"
+      ]
+    },
+    {
+      "id": "optimization--optimal-transport",
+      "source": "optimization",
+      "target": "optimal-transport",
+      "type": "foundation",
+      "explanation": "Transport is a constrained minimization problem with prescribed amounts at sources and destinations.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-optimal-transport"
+      ]
+    },
+    {
+      "id": "complex-analysis--riemann-hypothesis",
+      "source": "complex-analysis",
+      "target": "riemann-hypothesis",
+      "type": "foundation",
+      "explanation": "Analytic continuation makes the zeta function and its critical-strip zeros accessible to this conjecture.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-riemann-hypothesis"
+      ]
+    },
+    {
+      "id": "prime-numbers--riemann-hypothesis",
+      "source": "prime-numbers",
+      "target": "riemann-hypothesis",
+      "type": "influence",
+      "explanation": "The question was formulated in a study of the distribution of prime numbers.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-riemann-hypothesis"
+      ]
+    },
+    {
+      "id": "crystal-lattices--point-defects",
+      "source": "crystal-lattices",
+      "target": "point-defects",
+      "type": "foundation",
+      "explanation": "The reference lattice defines which sites are empty, occupied, or interstitial.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-point-defects"
+      ]
+    },
+    {
+      "id": "diffusion-laws--diffusion-in-solids",
+      "source": "diffusion-laws",
+      "target": "diffusion-in-solids",
+      "type": "foundation",
+      "explanation": "Fick’s transport law relates a measured penetration profile to diffusivity.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-diffusion-in-solids"
+      ]
+    },
+    {
+      "id": "dislocations--grain-boundaries",
+      "source": "dislocations",
+      "target": "grain-boundaries",
+      "type": "foundation",
+      "explanation": "The Read–Shockley model builds low-angle grain boundaries from dislocations.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-grain-boundaries"
+      ]
+    },
+    {
+      "id": "crystal-lattices--grain-boundaries",
+      "source": "crystal-lattices",
+      "target": "grain-boundaries",
+      "type": "foundation",
+      "explanation": "Comparing lattice orientations defines the misorientation of neighboring grains.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-grain-boundaries"
+      ]
+    },
+    {
+      "id": "grain-boundaries--recrystallization",
+      "source": "grain-boundaries",
+      "target": "recrystallization",
+      "type": "enables",
+      "explanation": "Moving boundaries let new grains consume the deformed microstructure.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-recrystallization"
+      ]
+    },
+    {
+      "id": "dislocations--recrystallization",
+      "source": "dislocations",
+      "target": "recrystallization",
+      "type": "foundation",
+      "explanation": "A high dislocation density stores energy that can drive recrystallization.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-recrystallization"
+      ]
+    },
+    {
+      "id": "phase-diagrams--precipitation-hardening",
+      "source": "phase-diagrams",
+      "target": "precipitation-hardening",
+      "type": "foundation",
+      "explanation": "Temperature-dependent solubility helps explain why quenching and aging can produce a second phase.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-precipitation-hardening"
+      ]
+    },
+    {
+      "id": "diffusion-in-solids--precipitation-hardening",
+      "source": "diffusion-in-solids",
+      "target": "precipitation-hardening",
+      "type": "enables",
+      "explanation": "Solute movement in the solid permits precipitates to form and grow.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-precipitation-hardening"
+      ]
+    },
+    {
+      "id": "grain-boundaries--hall-petch",
+      "source": "grain-boundaries",
+      "target": "hall-petch",
+      "type": "foundation",
+      "explanation": "Changing grain size changes boundary spacing for slip across the polycrystal.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-hall-petch"
+      ]
+    },
+    {
+      "id": "elasticity--fracture-mechanics",
+      "source": "elasticity",
+      "target": "fracture-mechanics",
+      "type": "foundation",
+      "explanation": "Elastic strain energy is the reservoir released as a brittle crack extends.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-fracture-mechanics"
+      ]
+    },
+    {
+      "id": "elasticity--viscoelasticity",
+      "source": "elasticity",
+      "target": "viscoelasticity",
+      "type": "revision",
+      "explanation": "A time-dependent viscous contribution extends the instantaneous elastic response.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-viscoelasticity"
+      ]
+    },
+    {
+      "id": "amorphous-materials--glass-transition",
+      "source": "amorphous-materials",
+      "target": "glass-transition",
+      "type": "foundation",
+      "explanation": "Glass transition concerns slowing in a structure without long-range crystalline order.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-glass-transition"
+      ]
+    },
+    {
+      "id": "crystal-lattices--martensitic-transformations",
+      "source": "crystal-lattices",
+      "target": "martensitic-transformations",
+      "type": "foundation",
+      "explanation": "A crystallographic correspondence compares parent and product lattices.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-martensitic-transformations"
+      ]
+    },
+    {
+      "id": "probability--percolation",
+      "source": "probability",
+      "target": "percolation",
+      "type": "foundation",
+      "explanation": "Random site or bond occupation defines the ensemble of possible connected paths.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-percolation"
+      ]
+    },
+    {
+      "id": "graph-theory--percolation",
+      "source": "graph-theory",
+      "target": "percolation",
+      "type": "foundation",
+      "explanation": "Connectivity is tested by paths among network vertices and edges.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-percolation"
+      ]
+    },
+    {
+      "id": "elasticity--composite-materials",
+      "source": "elasticity",
+      "target": "composite-materials",
+      "type": "foundation",
+      "explanation": "Elastic stress and strain in each constituent determine ideal load sharing.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-composite-materials"
+      ]
+    },
+    {
+      "id": "electromagnetism--metamaterials",
+      "source": "electromagnetism",
+      "target": "metamaterials",
+      "type": "foundation",
+      "explanation": "Maxwell’s equations relate the engineered electric and magnetic responses to propagation.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-metamaterials",
+        "e21-metamaterials-2"
+      ]
+    },
+    {
+      "id": "composite-materials--metamaterials",
+      "source": "composite-materials",
+      "target": "metamaterials",
+      "type": "enables",
+      "explanation": "Combining distinct structural elements produces an effective response absent in each element alone.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-metamaterials",
+        "e21-metamaterials-2"
+      ]
+    },
+    {
+      "id": "entropy--high-entropy-alloys",
+      "source": "entropy",
+      "target": "high-entropy-alloys",
+      "type": "foundation",
+      "explanation": "Configurational entropy quantifies a contribution to free energy from random mixing.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-high-entropy-alloys"
+      ]
+    },
+    {
+      "id": "phase-diagrams--high-entropy-alloys",
+      "source": "phase-diagrams",
+      "target": "high-entropy-alloys",
+      "type": "foundation",
+      "explanation": "Phase equilibria must still be checked when exploring multi-element compositions.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-high-entropy-alloys"
+      ]
+    },
+    {
+      "id": "modular-arithmetic--public-key-cryptography",
+      "source": "modular-arithmetic",
+      "target": "public-key-cryptography",
+      "type": "foundation",
+      "explanation": "In the Diffie–Hellman construction, both parties compute powers modulo a prime; the congruence rules let their differently ordered calculations produce the same secret.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-modular-arithmetic",
+        "sc-cryptography"
+      ]
+    },
+    {
+      "id": "fundamental-theorem-calculus--calculus",
+      "source": "fundamental-theorem-calculus",
+      "target": "calculus",
+      "type": "foundation",
+      "explanation": "Differentiating an accumulation function recovers its integrand under suitable conditions. This bridge explains why antiderivatives can be used to compute definite integrals.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "f-calculus"
+      ]
+    },
+    {
+      "id": "law-large-numbers--monte-carlo",
+      "source": "law-large-numbers",
+      "target": "monte-carlo",
+      "type": "foundation",
+      "explanation": "For independent samples with a finite mean, averaging more draws makes a Monte Carlo estimate converge to the expectation it targets.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-law-large-numbers",
+        "xs-monte-carlo"
+      ]
+    },
+    {
+      "id": "martensitic-transformations--shape-memory-alloys",
+      "source": "martensitic-transformations",
+      "target": "shape-memory-alloys",
+      "type": "enables",
+      "explanation": "A reversible martensitic transformation lets deformed material recover its prior shape on heating; not every alloy with martensite has that behavior.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-martensitic-transformations",
+        "xp-shape-memory"
+      ]
+    },
+    {
+      "id": "diffusion-in-solids--li-ion-intercalation",
+      "source": "diffusion-in-solids",
+      "target": "li-ion-intercalation",
+      "type": "enables",
+      "explanation": "A lithium ion entering a host solid must reach available sites inside it. Solid-state diffusion can limit how fast an intercalation electrode charges.",
+      "evidence": "conceptual",
+      "sourceIds": [
+        "e21-diffusion-in-solids",
+        "xp-intercalation"
+      ]
+    },
+    {
+      "id": "coriolis-effect--ekman-transport",
+      "source": "coriolis-effect",
+      "target": "ekman-transport",
+      "type": "foundation",
+      "explanation": "In the ideal wind-driven surface layer, the Coriolis acceleration turns the current; its balance with applied stress gives a net transport across the wind.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-coriolis-effect",
+        "xl-ekman"
+      ]
+    },
+    {
+      "id": "spontaneous-symmetry-breaking--higgs-mechanism",
+      "source": "spontaneous-symmetry-breaking",
+      "target": "higgs-mechanism",
+      "type": "foundation",
+      "explanation": "In a gauge theory with an appropriate scalar field, a symmetry-breaking ground state allows some gauge fields to acquire mass. Breaking a global symmetry alone would not give the same mechanism.",
+      "evidence": "documented",
+      "sourceIds": [
+        "e21-spontaneous-symmetry-breaking",
+        "xp-higgs"
+      ]
     }
   ],
   "sources": [
@@ -5374,6 +8409,312 @@
       "title": "Navier–Stokes equation",
       "url": "https://farside.ph.utexas.edu/teaching/336L/Fluidhtml/node13.html",
       "publisher": "Richard Fitzpatrick, University of Texas at Austin"
+    },
+    {
+      "id": "e21-michaelis-menten-kinetics",
+      "title": "The Original Michaelis Constant: Translation of the 1913 Michaelis–Menten Paper",
+      "url": "https://doi.org/10.1021/bi201284u",
+      "publisher": "Kenneth A. Johnson and Roger S. Goody / Biochemistry (2011)"
+    },
+    {
+      "id": "e21-enzyme-allostery",
+      "title": "On the nature of allosteric transitions: A plausible model",
+      "url": "https://doi.org/10.1016/S0022-2836(65)80285-6",
+      "publisher": "Monod, Wyman, and Changeux / Journal of Molecular Biology (1965)"
+    },
+    {
+      "id": "e21-chemiosmosis",
+      "title": "Coupling of Phosphorylation to Electron and Hydrogen Transfer by a Chemi-Osmotic type of Mechanism",
+      "url": "https://doi.org/10.1038/191144a0",
+      "publisher": "Peter Mitchell / Nature (1961)"
+    },
+    {
+      "id": "e21-protein-folding-thermodynamics",
+      "title": "Principles that govern the folding of protein chains",
+      "url": "https://doi.org/10.1126/science.181.4096.223",
+      "publisher": "Christian B. Anfinsen / Science (1973)"
+    },
+    {
+      "id": "e21-transition-state-theory",
+      "title": "The Activated Complex in Chemical Reactions",
+      "url": "https://doi.org/10.1063/1.1749604",
+      "publisher": "Henry Eyring / Journal of Chemical Physics (1935)"
+    },
+    {
+      "id": "e21-resonance-delocalization",
+      "title": "Quantum Mechanics and the Chemical Bond",
+      "url": "https://doi.org/10.1103/PhysRev.37.1185",
+      "publisher": "Linus Pauling / Physical Review (1931)"
+    },
+    {
+      "id": "e21-ligand-field-theory",
+      "title": "Spectra of Transition-Metal Complexes",
+      "url": "https://pubs.aip.org/aip/jcp/article-abstract/23/6/1004/203779/Spectra-of-Transition-Metal-Complexes",
+      "publisher": "Leslie E. Orgel / Journal of Chemical Physics (1955)"
+    },
+    {
+      "id": "e21-density-functional-theory",
+      "title": "Inhomogeneous Electron Gas",
+      "url": "https://doi.org/10.1103/PhysRev.136.B864",
+      "publisher": "Pierre Hohenberg and Walter Kohn / Physical Review (1964)"
+    },
+    {
+      "id": "e21-pericyclic-selection-rules",
+      "title": "Stereochemistry of Electrocyclic Reactions",
+      "url": "https://roaldhoffmann.com/sites/default/files/fromd6/18s_1.pdf",
+      "publisher": "R. B. Woodward and Roald Hoffmann / JACS (1965)"
+    },
+    {
+      "id": "e21-rna-world",
+      "title": "Origin of life: The RNA world",
+      "url": "https://www.nature.com/articles/319618a0",
+      "publisher": "Walter Gilbert / Nature (1986)"
+    },
+    {
+      "id": "e21-doppler-effect",
+      "title": "Christian Doppler",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Doppler/",
+      "publisher": "MacTutor / University of St Andrews"
+    },
+    {
+      "id": "e21-coriolis-effect",
+      "title": "Gustave Coriolis",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Coriolis/",
+      "publisher": "MacTutor / University of St Andrews"
+    },
+    {
+      "id": "e21-turbulent-energy-cascade",
+      "title": "The local structure of turbulence in incompressible viscous fluid for very large Reynolds numbers",
+      "url": "https://doi.org/10.1098/rspa.1991.0075",
+      "publisher": "A. N. Kolmogorov / Proceedings of the Royal Society (1991 translation of 1941 paper)"
+    },
+    {
+      "id": "e21-fluctuation-dissipation-theorem",
+      "title": "Irreversibility and Generalized Noise",
+      "url": "https://doi.org/10.1103/PhysRev.83.34",
+      "publisher": "H. B. Callen and T. A. Welton / Physical Review (1951)"
+    },
+    {
+      "id": "e21-spontaneous-symmetry-breaking",
+      "title": "Quasi-Particles and Gauge Invariance in the Theory of Superconductivity",
+      "url": "https://doi.org/10.1103/PhysRev.117.648",
+      "publisher": "Yoichiro Nambu / Physical Review (1960)"
+    },
+    {
+      "id": "e21-bcs-superconductivity",
+      "title": "Theory of Superconductivity",
+      "url": "https://doi.org/10.1103/PhysRev.108.1175",
+      "publisher": "J. Bardeen, L. N. Cooper, and J. R. Schrieffer / Physical Review (1957)"
+    },
+    {
+      "id": "e21-bose-einstein-condensation",
+      "title": "Bose–Einstein Condensation in Alkali Gases: scientific background",
+      "url": "https://www.nobelprize.org/prizes/physics/2001/advanced-information/",
+      "publisher": "Royal Swedish Academy of Sciences (2001)"
+    },
+    {
+      "id": "e21-quantum-decoherence",
+      "title": "On the interpretation of measurement in quantum theory",
+      "url": "https://doi.org/10.1007/BF00708656",
+      "publisher": "H. D. Zeh / Foundations of Physics (1970)"
+    },
+    {
+      "id": "e21-quantum-decoherence-2",
+      "title": "Decoherence, einselection, and the quantum origins of the classical",
+      "url": "https://arxiv.org/abs/quant-ph/0105127",
+      "publisher": "Wojciech H. Zurek / Reviews of Modern Physics (2003)"
+    },
+    {
+      "id": "e21-loop-quantum-gravity",
+      "title": "Knot Theory and Quantum Gravity",
+      "url": "https://doi.org/10.1103/PhysRevLett.61.1155",
+      "publisher": "Carlo Rovelli and Lee Smolin / Physical Review Letters (1988)"
+    },
+    {
+      "id": "e21-holographic-principle",
+      "title": "Dimensional Reduction in Quantum Gravity",
+      "url": "https://arxiv.org/abs/gr-qc/9310026",
+      "publisher": "Gerard ’t Hooft (1993)"
+    },
+    {
+      "id": "e21-holographic-principle-2",
+      "title": "The holographic principle",
+      "url": "https://arxiv.org/abs/hep-th/0203101",
+      "publisher": "Raphael Bousso / Reviews of Modern Physics (2002)"
+    },
+    {
+      "id": "e21-modular-arithmetic",
+      "title": "Disquisitiones arithmeticae (1801)",
+      "url": "https://www.loc.gov/item/36021572/",
+      "publisher": "Carl Friedrich Gauss / Library of Congress"
+    },
+    {
+      "id": "e21-modular-arithmetic-2",
+      "title": "Gauss and congruences",
+      "url": "https://mathshistory.st-andrews.ac.uk/DSB/Gauss.pdf",
+      "publisher": "MacTutor / University of St Andrews"
+    },
+    {
+      "id": "e21-spectral-theorem",
+      "title": "Cauchy and the spectral theory of matrices",
+      "url": "https://www.sciencedirect.com/science/article/pii/0315086075900324",
+      "publisher": "Historia Mathematica (1975)"
+    },
+    {
+      "id": "e21-singular-value-decomposition",
+      "title": "On the Early History of the Singular Value Decomposition",
+      "url": "https://doi.org/10.1137/1035134",
+      "publisher": "G. W. Stewart / SIAM Review (1993)"
+    },
+    {
+      "id": "e21-law-large-numbers",
+      "title": "A Tricentenary history of the Law of Large Numbers",
+      "url": "https://arxiv.org/abs/1309.6488",
+      "publisher": "Eugene Seneta / Bernoulli (2013)"
+    },
+    {
+      "id": "e21-law-large-numbers-2",
+      "title": "Ars conjectandi, opus posthumum",
+      "url": "https://library.si.edu/digital-library/book/jacobibernoulli00bern",
+      "publisher": "Jacob Bernoulli / Smithsonian Libraries"
+    },
+    {
+      "id": "e21-stochastic-calculus",
+      "title": "Stochastic Integral",
+      "url": "https://doi.org/10.3792/pia/1195572786",
+      "publisher": "Kiyosi Itô / Proceedings of the Imperial Academy (1944)"
+    },
+    {
+      "id": "e21-optimal-transport",
+      "title": "Optimal Transport: Old and New",
+      "url": "https://doi.org/10.1007/978-3-540-71050-9",
+      "publisher": "Cédric Villani / Springer (2009)"
+    },
+    {
+      "id": "e21-riemann-hypothesis",
+      "title": "Riemann Hypothesis",
+      "url": "https://www.claymath.org/millennium/riemann-hypothesis/",
+      "publisher": "Clay Mathematics Institute"
+    },
+    {
+      "id": "e21-point-defects",
+      "title": "Conduction in Poor Electronic Conductors",
+      "url": "https://doi.org/10.1038/132312a0",
+      "publisher": "J. Frenkel / Nature (1933), recounting the 1926 proposal"
+    },
+    {
+      "id": "e21-diffusion-in-solids",
+      "title": "The Diffusion of Metals",
+      "url": "https://doi.org/10.1038/054055c0",
+      "publisher": "W. C. Roberts-Austen / Nature (1896)"
+    },
+    {
+      "id": "e21-grain-boundaries",
+      "title": "Dislocation Models of Crystal Grain Boundaries",
+      "url": "https://doi.org/10.1103/PhysRev.78.275",
+      "publisher": "W. T. Read and W. Shockley / Physical Review (1950)"
+    },
+    {
+      "id": "e21-recrystallization",
+      "title": "Recrystallization and grain growth",
+      "url": "https://doi.org/10.1016/0502-8205(52)90009-9",
+      "publisher": "J. E. Burke and D. Turnbull / Progress in Metal Physics (1952)"
+    },
+    {
+      "id": "e21-precipitation-hardening",
+      "title": "Alfred Wilm and the beginnings of Duralumin",
+      "url": "https://doi.org/10.1051/metal:2004157",
+      "publisher": "Metallurgical Research & Technology (2004)"
+    },
+    {
+      "id": "e21-hall-petch",
+      "title": "The Deformation and Ageing of Mild Steel: III Discussion of Results",
+      "url": "https://doi.org/10.1088/0370-1301/64/9/303",
+      "publisher": "E. O. Hall / Proceedings of the Physical Society B (1951)"
+    },
+    {
+      "id": "e21-fracture-mechanics",
+      "title": "The phenomena of rupture and flow in solids",
+      "url": "https://doi.org/10.1098/rsta.1921.0006",
+      "publisher": "A. A. Griffith / Philosophical Transactions of the Royal Society A (1921)"
+    },
+    {
+      "id": "e21-viscoelasticity",
+      "title": "On the dynamical theory of gases",
+      "url": "https://doi.org/10.1098/rstl.1867.0004",
+      "publisher": "James Clerk Maxwell / Philosophical Transactions (1867)"
+    },
+    {
+      "id": "e21-glass-transition",
+      "title": "Free-Volume Model of the Amorphous Phase: Glass Transition",
+      "url": "https://doi.org/10.1063/1.1731549",
+      "publisher": "David Turnbull and Morrel H. Cohen / Journal of Chemical Physics (1961)"
+    },
+    {
+      "id": "e21-martensitic-transformations",
+      "title": "On the Theory of the Formation of Martensite",
+      "url": "https://onemine.org/documents/institute-of-metals-division-on-the-theory-of-the-formation-of-martensite",
+      "publisher": "M. S. Wechsler, D. S. Lieberman, and T. A. Read / AIME"
+    },
+    {
+      "id": "e21-percolation",
+      "title": "Percolation processes I. Crystals and mazes",
+      "url": "https://doi.org/10.1017/S0305004100032680",
+      "publisher": "S. R. Broadbent and J. M. Hammersley / Cambridge Philosophical Society (1957)"
+    },
+    {
+      "id": "e21-composite-materials",
+      "title": "The elasticity and strength of paper and other fibrous materials",
+      "url": "https://doi.org/10.1088/0508-3443/3/3/302",
+      "publisher": "H. L. Cox / British Journal of Applied Physics (1952)"
+    },
+    {
+      "id": "e21-metamaterials",
+      "title": "Composite Medium with Simultaneously Negative Permeability and Permittivity",
+      "url": "https://doi.org/10.1103/PhysRevLett.84.4184",
+      "publisher": "D. R. Smith and colleagues / Physical Review Letters (2000)"
+    },
+    {
+      "id": "e21-metamaterials-2",
+      "title": "The electrodynamics of substances with simultaneously negative values of ε and μ",
+      "url": "https://doi.org/10.1070/PU1968v010n04ABEH003699",
+      "publisher": "V. G. Veselago / Soviet Physics Uspekhi (1968 translation)"
+    },
+    {
+      "id": "e21-high-entropy-alloys",
+      "title": "Nanostructured High-Entropy Alloys with Multiple Principal Elements: Novel Alloy Design Concepts and Outcomes",
+      "url": "https://doi.org/10.1002/adem.200300567",
+      "publisher": "Jien-Wei Yeh and colleagues / Advanced Engineering Materials (2004)"
+    },
+    {
+      "id": "e21-spectral-theorem-2",
+      "title": "18.06.30: Spectral theorem",
+      "url": "https://web.mit.edu/~linalg/webpage/Spring16/lecture30.pdf",
+      "publisher": "MIT / 18.06 Linear Algebra"
+    },
+    {
+      "id": "e21-algebraic-topology-reference",
+      "title": "Analysis Situs: an algebraic topology project on Poincaré’s memoirs",
+      "url": "https://analysis-situs.math.cnrs.fr/",
+      "publisher": "CNRS / Laboratoire de Mathématiques d’Orsay"
+    },
+    {
+      "id": "e21-fundamental-theorem-calculus-reference",
+      "title": "Calculus Volume 1, §5.3: The Fundamental Theorem of Calculus",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus",
+      "publisher": "Gilbert Strang and Edwin Herman / OpenStax, Rice University"
+    },
+    {
+      "id": "e21-prime-number-theorem-reference",
+      "title": "Sur la distribution des zéros de la fonction ζ(s) et ses conséquences arithmétiques",
+      "url": "https://www.numdam.org/item/BSMF_1896__24__199_1/",
+      "publisher": "Jacques Hadamard / Bulletin de la Société Mathématique de France (1896)"
+    },
+    {
+      "id": "e21-hall-petch-reference",
+      "title": "Six decades of the Hall–Petch effect – a survey of grain-size strengthening studies on pure metals",
+      "url": "https://doi.org/10.1080/09506608.2016.1191808",
+      "publisher": "Z. C. Cordero, B. E. Knight and C. A. Schuh / International Materials Reviews (2016)"
     }
   ]
 }
