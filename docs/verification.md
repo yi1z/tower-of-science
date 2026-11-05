@@ -1,8 +1,27 @@
 # Edition 2 verification
 
-Edition **2.1.0** was reviewed locally on **2026-11-04**. It contains **573 concepts, 1,019 relationships, 674 source records, 406 formulas or definitions, 61 pillars, and ten journeys with 109 narrated stops**. All 43 branches remain populated.
+## Version 2.1.1 interface checks · 2026-11-04
+
+Sidebar lag reproduced in desktop Chrome 156 on Windows using the NVIDIA RTX 4090 through Direct3D 11. Both production builds ran at 1440 × 850 with GPU compositing enabled. Each trace started after fitting the entire tower and letting the camera settle. The second scene selected diffusion generative models, traced their ancestors, and enabled **All connections**. The trackpad case used short bursts of fractional wheel input.
+
+| Settled scene | Sidebar input | 2.1.0 p95 frame interval | 2.1.1 p95 frame interval |
+| --- | --- | ---: | ---: |
+| Overview | Wheel | 145.5 ms | 6.2 ms |
+| Overview | Trackpad-style burst | 157.7 ms | 6.1 ms |
+| Overview | Scrollbar drag | 170.1 ms | 6.1 ms |
+| All connections and ancestry | Wheel | 266.8 ms | 6.2 ms |
+| All connections and ancestry | Trackpad-style burst | 284.3 ms | 6.2 ms |
+| All connections and ancestry | Scrollbar drag | 284.2 ms | 6.2 ms |
+
+The sidebar advanced in every run. In the release build, the graph recorded zero DOM mutations, zero React commits, and a constant camera transform during each scroll. The performance observer recorded zero main-thread tasks over 50 ms. Browser traces showed paint events for menu hover changes. Isolating the sidebar and the zoomed-out tower into separate compositor layers reduced frame intervals. An earlier lightweight Chromium run measured 16.8 ms at far zoom and did not reproduce the original lag.
+
+All 65 tests, content validation, and the production build using the GitHub Pages base path passed. Geometry checks covered 1,019 individual routes, same-floor and adjacent-floor connections, and overview bundles. The original 313 individual routes with retraced segments now have zero direct reversals. The regression for deep learning → diffusion generative models also checks the approach to the target.
+
+English and Simplified Chinese browser checks covered the sidebar toggle, saved preference, camera centering, chronology tags, mouse and keyboard tooltips on rotated pillar titles, drag and Escape dismissal, and the rendered diffusion path. The overview displayed all nine name-and-range tags in order at desktop size. In a short viewport the crowded ruler scrolled independently. At phone width, the drawer opened and closed, and a shared journey link restored its stop and formula after reload.
 
 ## Edition 2.1.0: 120 concepts and three journeys
+
+Edition **2.1.0** was reviewed locally on **2026-11-04**. It contains **573 concepts, 1,019 relationships, 674 source records, 406 formulas or definitions, 61 pillars, and ten journeys with 109 narrated stops**. All 43 branches remain populated.
 
 | Discipline | Added | Total | Discipline | Added | Total |
 | --- | ---: | ---: | --- | ---: | ---: |

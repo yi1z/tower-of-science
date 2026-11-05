@@ -17,6 +17,10 @@ import { sectionOrder } from './branches';
 import {cameraIntent,type CameraState,type CameraIntent} from './interaction';
 import {useViewportPresentation,type PillarLabels} from './viewport';
 import {useEdgePan} from './useEdgePan';
+import {EraRuler} from './EraRuler';
+import {PillarTooltip} from './PillarTooltip';
+import {useSidebarVisibility} from './useSidebarVisibility';
+import {PanelLeftClose,PanelLeftOpen} from 'lucide-react';
 import {buildSummaryView,summaryBundles,regionId,summaryRoute,type BranchSummary,type SummaryLevel} from './overview';
 
 const index=indexGraph(atlas), layout=layoutGraph(atlas.concepts);
@@ -59,7 +63,7 @@ const PillarNode=memo(({data}:NodeProps<Node<RegionData>>)=>{
  const {region:r,level,summary,labels,onReveal}=data,caption=useRef<HTMLSpanElement>(null),d=disciplines[r.discipline];
  useLayoutEffect(()=>{if(caption.current&&summary)return labels.register(caption.current,summary);},[labels,summary,locale]);
  const label=groupLabel(r.id),description=msg("Explore {branch} in {era}",{branch:label,era:eras.find(e=>e.id===r.eraId)?.label??''})+(summary?msg(", {count} ideas",{count:summary.memberIds.length}):'');
- return <div className={`pillar-region ${level==='section'?'science-section':'branch-region'} ${summary?'collapsed-pillar nopan nodrag':''}`} data-collapsed={!!summary} role={summary?'button':undefined} tabIndex={summary?0:undefined} aria-label={summary?description:undefined} title={summary?description:undefined} style={{'--discipline':d.color,borderColor:`${d.color}40`,background:level==='section'?`${d.color}08`:undefined} as React.CSSProperties} onClick={summary?()=>onReveal(summary):undefined} onKeyDown={summary?e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();onReveal(summary);}}:undefined}>
+ return <div className={`pillar-region ${level==='section'?'science-section':'branch-region'} ${summary?'collapsed-pillar nopan nodrag':''}`} data-collapsed={!!summary} role={summary?'button':undefined} tabIndex={summary?0:undefined} aria-label={summary?description:undefined} data-pillar-title={summary?label:undefined} style={{'--discipline':d.color,borderColor:`${d.color}40`,background:level==='section'?`${d.color}08`:undefined} as React.CSSProperties} onClick={summary?()=>onReveal(summary):undefined} onKeyDown={summary?e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();onReveal(summary);}}:undefined}>
   <svg className="pillar-outline" aria-hidden="true" width="100%" height="100%"><path d={level==='section'?`M .5 0 V ${r.bottom-r.top} M ${r.width-.5} 0 V ${r.bottom-r.top}`:`M .5 0 V ${r.bottom-r.top}`} stroke={d.color} strokeOpacity={level==='section'?.35:.17} strokeWidth={.65} strokeDasharray={level==='branch'?'3 5':undefined} vectorEffect="non-scaling-stroke"/></svg>
   <Handle type="target" position={Position.Bottom}/>
   {summary?<span key="summary-caption" ref={caption} className={`pillar-caption pillar-caption-${level}`}><strong>{d.symbol} {label}</strong><small>{msg("{count} ideas",{count:summary.memberIds.length})}</small></span>:level==='section'?<strong key="section-heading">{d.symbol} {label}</strong>:<span key="branch-heading" className="branch-heading">{label}</span>}
@@ -85,12 +89,6 @@ function BranchRuler({onNavigate,level}:{onNavigate:(id:string)=>void;level:Summ
  const cy=(height/2-transform[1])/transform[2],band=eraBandAt(layout,cy);
  if(level==='section')return <div className="branch-ruler overview-ruler"><strong>{msg("Branch overview")}</strong><span>{msg("Choose a name to reveal its ideas.")}</span></div>;
  return <div className="branch-ruler" aria-label={msg("Science sections in {v0}",{v0:eras.find(e=>e.id===band.id)?.short??''})}>{(transform[2]<.32?layout.sections:layout.regions).filter(r=>r.eraId===band.id).map(r=>{const left=r.left*transform[2]+transform[0],right=(r.left+r.width)*transform[2]+transform[0],visible=Math.min(width,right)-Math.max(0,left);if(visible<42)return null;return <button key={r.id} onClick={()=>onNavigate(r.id)} style={{left:Math.max(0,left),width:visible,borderColor:disciplines[r.discipline].color,color:disciplines[r.discipline].color}} title={`${disciplines[r.discipline].label} / ${branchIndex.get(r.id)?.label}`}>{transform[2]>=.32&&visible>180?branchIndex.get(r.id)?.label:disciplines[r.discipline].label}</button>;})}</div>;
-}
-function EraRuler({onNavigate}:{onNavigate:(id:string)=>void}){
- const {msg,eras}=useLocale();
- const transform=useStore(s=>s.transform),height=useStore(s=>s.height);
- if(transform[2]>=.25)return null;
- return <nav className="era-ruler" aria-label={msg("Era markers on the tower")}>{layout.bands.map(b=>{const y=(b.top+b.bottom)/2*transform[2]+transform[1],era=eras.find(e=>e.id===b.id)!;return y>47&&y<height-48?<button key={b.id} title={`${era.label} · ${era.range}`} style={{top:y}} onClick={()=>onNavigate(b.id)}><strong>{era.short}</strong><small>{era.range}</small></button>:null;})}</nav>;
 }
 const MinimapArtwork=memo(({visible,selected}:{visible:Set<string>;selected:string})=>{
  const top=layout.bands.at(-1)!.top,total=layout.bands[0].bottom-top;
@@ -144,6 +142,8 @@ function AtlasApp({state,change}:{state:ViewState;change:(patch:Partial<ViewStat
  const currentEra=useStore(s=>{const cy=(s.height/2-s.transform[1])/s.transform[2];return eraBandAt(layout,cy).id;});
  const {setCenter,fitView,zoomIn,zoomOut,getViewport}=useReactFlow();
  const graphSurface=useEdgePan(),{level:detailLevel,labels}=useViewportPresentation(graphSurface);
+ const sidebar=useSidebarVisibility(graphSurface);
+ const sidebarLabel=msg(sidebar.hidden?'Show sidebar':'Hide sidebar');
  // Refresh once after the document language and all pillar text have updated.
  useEffect(()=>labels.refreshFonts(),[labels,locale]);
  const bundleLevel=detailLevel==='section'?'section':'branch';
@@ -233,14 +233,18 @@ function AtlasApp({state,change}:{state:ViewState;change:(patch:Partial<ViewStat
  const copyLink=async()=>{try{await navigator.clipboard.writeText(window.location.href);setCopied(true);window.setTimeout(()=>setCopied(false),2000);}catch{setLinkError('Copy the address from your browser to share this view.');}};
  return <div className="app-shell">
   <a className="skip-link" href="#main-content" onClick={e=>{e.preventDefault();document.getElementById('main-content')?.focus();}}>{msg("Skip to atlas")}</a>
-  <header className="masthead"><button className="brand" onClick={reset} aria-label={msg("Tower of Science, return to foundations")}><Logo/><span><strong>{msg("Tower of Science")}</strong><small>{msg("AN ATLAS OF CONNECTED IDEAS")}</small></span></button>
+  <header className="masthead"><button type="button" className="sidebar-toggle icon-button" onClick={sidebar.toggle}
+   aria-label={sidebarLabel} title={sidebarLabel} aria-controls="atlas-navigation" aria-expanded={!sidebar.hidden}>
+   {sidebar.hidden?<PanelLeftOpen size={19}/>:<PanelLeftClose size={19}/>}
+  </button>
+   <button className="brand" onClick={reset} aria-label={msg("Tower of Science, return to foundations")}><Logo/><span><strong>{msg("Tower of Science")}</strong><small>{msg("AN ATLAS OF CONNECTED IDEAS")}</small></span></button>
    <div className="search-wrap"><Search size={17}/><input ref={searchRef} aria-label={msg("Search concepts or contributors")} placeholder={msg("Find an idea, a discovery, a mind…")} value={query} onChange={e=>{setQuery(e.target.value);setSearchOpen(true);}} onFocus={()=>setSearchOpen(true)} onKeyDown={e=>{if(!isComposing(e.nativeEvent)&&e.key==='Enter'&&results[0])goTo(results[0].id);}}/><kbd>{msg("⌘ K")}</kbd>
     {searchOpen&&query.trim()&&<div className="search-results"><div className="search-heading">{msg("{count} ideas found",{count:results.length})}<button onClick={()=>setSearchOpen(false)} aria-label={msg("Close search")}><X size={14}/></button></div>{results.length?results.slice(0,15).map(c=><button key={c.id} onClick={()=>goTo(c.id)}><span className="result-symbol" style={{color:disciplines[c.discipline].color}}>{disciplines[c.discipline].symbol}</span><span><strong>{c.title}</strong><small>{c.date.label} · {disciplines[c.discipline].label}</small></span><ArrowUpRight size={15}/></button>):<p>{msg("No matching ideas. Try “zero”, “Einstein”, or “evolution”.")}</p>}</div>}
    </div><label className="language-picker"><span className="sr-only">Language / 语言</span><select aria-label="Language / 语言" value={locale} onChange={event=>{const locale=event.target.value as Locale;savePreferredLocale(locale);change({locale});}}><option value="en" lang="en">English</option><option value="zh-CN" lang="zh-CN">简体中文</option></select></label><button className="method-button" onClick={()=>setMethodology(true)}><BookOpen size={16}/><span>{msg("About the atlas")}</span></button><button className="mobile-toggle icon-button" aria-label={msg("Open navigation and filters")} onClick={()=>setMobileNav(!mobileNav)}><SlidersHorizontal size={20}/></button>
   </header>
   <div className="workspace">
   {mobileNav&&<button className="nav-backdrop" aria-label={msg("Close navigation")} onClick={()=>setMobileNav(false)}/>}
-  <aside className={`sidebar ${mobileNav?'mobile-open':''}`} aria-label={msg("Atlas navigation")}>
+  <aside id="atlas-navigation" className={`sidebar ${mobileNav?'mobile-open':''}`} data-desktop-hidden={sidebar.hidden} aria-label={msg("Atlas navigation")}>
    <div className="sidebar-intro"><span className="eyebrow">{msg("THE HUMAN PURSUIT OF KNOWLEDGE")}</span><h1>{msg("No idea")}<br/>{msg("stands alone.")}</h1><p>{msg("Discover the foundations.")}<br/>{msg("Follow the connections.")}</p></div>
    <div className="navigation-tabs" role="tablist" aria-label={msg("Browse atlas")}>{(['explore','journeys','pillars'] as const).map(t=><button key={t} role="tab" aria-selected={activeTab===t} className={activeTab===t?'active':''} onClick={()=>setActiveTab(t)}>{t==='explore'?<Compass size={14}/>:t==='journeys'?<GitBranch size={14}/>:<Columns3 size={14}/>}<span>{t==='explore'?msg("Explore"):t==='journeys'?msg("Journeys"):msg("Pillars")}</span></button>)}</div>
    <div className="sidebar-scroll">
@@ -261,7 +265,8 @@ function AtlasApp({state,change}:{state:ViewState;change:(patch:Partial<ViewStat
     <div className={`tower-surface overview-${detailLevel}`} hidden={state.view!=='tower'}><ReactFlow nodes={nodes} edges={noEdges} nodeTypes={nodeTypes} onInit={()=>setInitialized(true)} onPaneClick={()=>{setSearchOpen(false);setEdgeId('');}} minZoom={.02} maxZoom={1.5} onlyRenderVisibleElements nodesDraggable={false} nodesConnectable={false} edgesReconnectable={false} deleteKeyCode={null} selectionKeyCode={null} paneClickDistance={6} panOnScroll zoomOnDoubleClick={false} proOptions={{hideAttribution:false}} ariaLabelConfig={ariaLabelConfig}>
     <ConnectionsLayer edges={edges}/>
     </ReactFlow>
-    <BranchRuler onNavigate={navigateBranch} level={detailLevel}/><EraRuler onNavigate={chooseEra}/>
+    <BranchRuler onNavigate={navigateBranch} level={detailLevel}/><EraRuler layout={layout} onNavigate={chooseEra}/>
+    <PillarTooltip surface={graphSurface}/>
     {benchmarkEnabled&&<MotionBenchmark labels={{title:msg("Local motion benchmark"),run:msg("Run motion benchmark"),measuring:msg("Measuring…")}} center={{x:0,y:layout.bands.find(b=>b.id==='modern')!.top+1600}}/>}
     <TowerOverview visible={filtered.visible} selected={state.concept}/>
     {state.connections==='focus'&&!current&&<div className="focus-hint">{msg("Select an idea to reveal its connections.")}</div>}

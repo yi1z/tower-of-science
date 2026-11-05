@@ -81,6 +81,50 @@ export function eraBandAt(layout:Layout,y:number){
  return layout.bands.find(b=>y>=b.top&&y<=b.bottom)??[...layout.bands].sort((a,b)=>Math.min(Math.abs(a.top-y),Math.abs(a.bottom-y))-Math.min(Math.abs(b.top-y),Math.abs(b.bottom-y)))[0];
 }
 export interface Route { points:Point[];path:string;label:Point }
+export interface RouteObstacle { left:number;right:number;top:number;bottom:number }
+
+function compactTurns(points:Point[]){
+ const turns:Point[]=[];
+ for(const point of points){
+  while(turns.length>=2){
+   const a=turns[turns.length-2],b=turns[turns.length-1];
+   if(!((a.x===b.x&&b.x===point.x)||(a.y===b.y&&b.y===point.y)))break;
+   turns.pop();
+  }
+  const previous=turns.at(-1);
+  if(!previous||previous.x!==point.x||previous.y!==point.y)turns.push(point);
+ }
+ return turns;
+}
+
+// Retracing on a straight line only removes ink. Moving a bend also needs
+// clearance for the rounded corner, so check the padded obstacles first.
+export function finishRoute(raw:Point[],radius:number,obstacles:RouteObstacle[]):Route {
+ let points=compactTurns(raw);
+ const clear=(a:Point,b:Point)=>{
+  const left=Math.min(a.x,b.x)-radius,right=Math.max(a.x,b.x)+radius;
+  const top=Math.min(a.y,b.y)-radius,bottom=Math.max(a.y,b.y)+radius;
+  return !obstacles.some(r=>left<r.right&&right>r.left&&top<r.bottom&&bottom>r.top);
+ };
+ // Keep the outer port legs. Inside them, replace three sides of a dogleg
+ // with the unobstructed elbow, preferring the existing departure axis.
+ for(let i=1;i+3<points.length-1;){
+  const a=points[i],d=points[i+3],horizontal=points[i+1].y===a.y;
+  const elbows=[{x:d.x,y:a.y},{x:a.x,y:d.y}];
+  if(!horizontal)elbows.reverse();
+  const elbow=elbows.find(p=>clear(a,p)&&clear(p,d));
+  if(!elbow){i++;continue;}
+  points.splice(i+1,2,elbow);
+  points=compactTurns(points);
+  i=Math.max(1,i-2);
+ }
+ let longest=0,label=points[0];
+ for(let i=1;i<points.length;i++){
+  const a=points[i-1],b=points[i],length=Math.abs(b.x-a.x)+Math.abs(b.y-a.y);
+  if(length>longest){longest=length;label={x:(a.x+b.x)/2,y:(a.y+b.y)/2};}
+ }
+ return {points,path:roundedPath(points,radius),label};
+}
 /** React Flow's endpoint bounds include large empty pillar areas. Cull using the actual route. */
 export function routeInViewport(route:Route|undefined,transform:[number,number,number],width:number,height:number){
  if(!route)return false;
@@ -107,6 +151,7 @@ export function roundedPath(points:Point[],radius=8){
 // a free x interval for that floor, including when sections shift between eras.
 export function routeRelationships(layout:Layout,relationships:Relationship[]){
  const result=new Map<string,Route>();
+ const obstacles=[...layout.positions.values()].map(p=>({left:p.x,right:p.x+NODE_WIDTH,top:p.y,bottom:p.y+NODE_HEIGHT}));
  const freeX=(row:Floor,wanted:number,track:number)=>{
   const blocks=row.ids.map(id=>layout.positions.get(id)!).map(p=>[p.x-20,p.x+NODE_WIDTH+20]).sort((a,b)=>a[0]-b[0]);
   if(!blocks.some(([l,r])=>wanted>l&&wanted<r))return wanted;
@@ -136,9 +181,7 @@ export function routeRelationships(layout:Layout,relationships:Relationship[]){
    points.push({x,y:approach},{x:target.x,y:approach});
   }
   points.push(target);
-  const clean=points.filter((p,i)=>!i||p.x!==points[i-1].x||p.y!==points[i-1].y);
-  let longest=0,label=clean[0];for(let i=1;i<clean.length;i++){const a=clean[i-1],b=clean[i],length=Math.hypot(b.x-a.x,b.y-a.y);if(length>longest){longest=length;label={x:(a.x+b.x)/2,y:(a.y+b.y)/2};}}
-  result.set(e.id,{points:clean,path:roundedPath(clean),label});
+  result.set(e.id,finishRoute(points,8,obstacles));
  }
  return result;
 }

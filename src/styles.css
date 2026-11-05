@@ -99,7 +99,13 @@ body{font-size:var(--text-ui)}
 @media(min-width:760px) and (max-width:1100px){.sidebar{width:235px}.detail-panel{width:320px}.sidebar-scroll{padding:15px}.sidebar-intro{padding:20px 16px}.navigation-tabs{margin-inline:8px}.navigation-tabs button{gap:2px;font-size:12px}.detail-scroll{padding:20px}}
 @media(max-width:759px){.sidebar{width:min(320px,90vw)}.detail-panel{width:100%;inset:73px 0 0}.detail-scroll{padding:25px}.canvas-toolbar{min-height:62px;padding:9px 14px}.canvas-display{padding:7px 12px}.canvas-display .display-switch{margin-left:0}.canvas-display .display-switch button{padding:5px 7px}.canvas-display .display-switch button span{font-size:12px}.connection-mode>span{display:none}.branch-ruler{height:38px}.branch-ruler button{font-size:12px}.era-ruler{width:125px}.era-ruler strong{font-size:12px}.era-ruler small{font-size:12px}.canvas-caption{max-width:calc(100% - 32px)}.sidebar-footer{font-size:12px}.map-note{bottom:100px}.trace-summary{top:48px}.detail-tools button{min-width:44px;min-height:44px}}
 
-.overview-section .era-ruler{left:6px;width:26px}.overview-section .era-ruler button{writing-mode:vertical-rl;transform:translateY(-50%) rotate(180deg);padding:5px 4px;background:#f5f3eaf0;max-height:110px;border-radius:3px;font-size:12px}.overview-section .era-ruler strong{font-size:12px;white-space:nowrap}.overview-section .era-ruler small{display:none}
+.era-ruler{width:145px;max-width:40%;left:4px}
+.era-ruler[data-scrollable="true"]{overflow-y:auto;overscroll-behavior:contain;pointer-events:auto;scrollbar-width:thin}
+.era-tag-track{position:relative}
+.era-tag-leaders{position:absolute;inset:0;pointer-events:none;fill:none;stroke:#9aab87}
+.era-ruler button{left:8px;border-radius:0 3px 3px 0;padding:3px 8px;max-width:calc(100% - 8px);background:#f5f3eaf2}
+.era-ruler button strong,.era-ruler button small{white-space:nowrap;line-height:1.25}
+.era-ruler button strong{font-size:14px}.era-ruler button small{font-size:12px;margin-top:2px}
 
 /* Pillars retain their historical footprints at every scale. */
 .react-flow__node-region{border:0;background:none}
@@ -158,3 +164,15 @@ body{font-size:var(--text-ui)}
 @media(max-width:759px){.tour-player{max-height:min(50dvh,420px);display:flex;flex-direction:column}.tour-player p{min-height:0;overflow-y:auto}.tour-player-top,.tour-player-bottom{flex-shrink:0}.app-shell:has(.tour-player) .detail-scroll{padding-bottom:calc(min(50dvh,420px) + 24px)}}
 
 @media(max-width:759px){:lang(zh-CN) .detail-identity h2{text-wrap:balance}}
+
+.sidebar-scroll{overscroll-behavior-y:contain;contain:layout paint;isolation:isolate;background:#f6f4ec;will-change:scroll-position}
+.sidebar{isolation:isolate}
+@media(min-width:760px){.sidebar{transform:translateZ(0)}}
+.tower-surface{contain:strict;isolation:isolate;container:tower / inline-size}
+.tower-surface.overview-section,.tower-surface.overview-branch{transform:translateZ(0)}
+.era-ruler ~ .map-note{left:155px}
+@container tower (max-width:640px){.era-ruler ~ .map-note{display:none}}
+.sidebar-toggle{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;flex-shrink:0;border:1px solid var(--line);border-radius:4px}
+@media(min-width:760px){.sidebar[data-desktop-hidden="true"]{display:none}}
+@media(max-width:759px){.sidebar-toggle{display:none}}
+.pillar-tooltip{position:fixed;z-index:80;pointer-events:none;max-width:calc(100vw - 16px);overflow-wrap:anywhere;padding:7px 11px;border:1px solid #c1cab8;border-radius:4px;background:#faf9f2;color:#29483b;font:500 14px/1.4 var(--sans);box-shadow:0 2px 8px #29402520}

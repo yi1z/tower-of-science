@@ -1,5 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {assertCleanRoute} from './routeAssertions';
+import {placeEraTags,ERA_TAG_HEIGHT} from '../src/eraTags';
 import {cameraIntent,dragViewport,pinchViewport,type CameraState} from '../src/interaction';
 import {buildSummaryView,summaryBundles,summaryLevel,summaryRoute,fitPillarTitle,regionId} from '../src/overview';
 import {atlas} from '../src/data/atlas';
@@ -104,11 +106,23 @@ test('summary connections terminate on rendered endpoints, including internal lo
  for(const edge of atlas.relationships){
   const from=view.endpoints.get(edge.source)!,to=view.endpoints.get(edge.target)!;
   const route=summaryRoute(from,to,view,layout);
+  assertCleanRoute(route.points,edge.id);
   assert(route.points.every(p=>Number.isFinite(p.x)&&Number.isFinite(p.y)));assert(!route.path.includes('NaN'));
   const s=view.summaries.find(s=>s.id===from)!,t=view.summaries.find(s=>s.id===to)!;
   assert.deepEqual(route.points[0],{x:s.position.x+s.width/2,y:s.position.y});
   assert.deepEqual(route.points.at(-1),{x:t.position.x+t.width/2,y:t.position.y+t.height});
  }
+});
+
+test('era tags retain isolated band centers and spread crowded tags in screen order',()=>{
+ assert.deepEqual(placeEraTags([35,140,255],300).positions,[35,140,255]);
+ const crowded=placeEraTags([90,100,110],240);
+ assert.equal(crowded.positions[1],100);
+ assert(crowded.positions.every((v,i,a)=>!i||v-a[i-1]>=ERA_TAG_HEIGHT));
+ const short=placeEraTags([2,12,25,40,80],90);
+ assert.equal(short.positions.length,5);assert(short.trackHeight>90);
+ assert.equal(short.positions[0],ERA_TAG_HEIGHT/2);
+ assert.equal(short.positions.at(-1),short.trackHeight-ERA_TAG_HEIGHT/2);
 });
 
 function crosses(a:{x:number;y:number},b:{x:number;y:number},r:{position:{x:number;y:number};width:number;height:number}){

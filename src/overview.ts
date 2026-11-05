@@ -1,6 +1,6 @@
 import type {Concept,Discipline,Relationship} from './types';
 import {eraFor} from './config';
-import {NODE_HEIGHT,NODE_WIDTH,roundedPath,type Bundle,type Layout,type Point,type Route} from './graph';
+import {NODE_HEIGHT,NODE_WIDTH,finishRoute,type Bundle,type Layout,type Point,type Route,type RouteObstacle} from './graph';
 
 export type SummaryLevel='cards'|'branch'|'section';
 export function summaryLevel(zoom:number,previous:SummaryLevel='cards'):SummaryLevel {
@@ -63,6 +63,7 @@ export function summaryBundles(edges:Relationship[],view:SummaryView,concepts:Ma
 }
 
 const routeCaches=new WeakMap<Layout,Map<string,Route>>();
+const pillarObstacles=new WeakMap<Layout,RouteObstacle[]>();
 /** Escape through a branch's card-free margin, then travel through shared era gutters.
  * Reserved section gaps stay clear at every presentation level and under every filter. */
 export function summaryRoute(source:string,target:string,view:SummaryView,layout:Layout,track=0):Route {
@@ -93,8 +94,10 @@ export function summaryRoute(source:string,target:string,view:SummaryView,layout
  else for(let i=si+1;i<ti;i++)cross(layout.bands[i],true);
  const approach=t.points.at(-1)!;
  points.push({x:current.x,y:approach.y},...[...t.points].reverse());
- const clean=points.filter((p,i)=>!i||p.x!==points[i-1].x||p.y!==points[i-1].y);
- let longest=0,label=clean[0];
- for(let i=1;i<clean.length;i++){const a=clean[i-1],b=clean[i],length=Math.hypot(a.x-b.x,a.y-b.y);if(length>longest){longest=length;label={x:(a.x+b.x)/2,y:(a.y+b.y)/2};}}
- const route={points:clean,path:roundedPath(clean,6),label};cache.set(key,route);return route;
+ let obstacles=pillarObstacles.get(layout);
+ if(!obstacles){
+  obstacles=layout.sections.map(r=>({left:r.left,right:r.left+r.width,top:r.top,bottom:r.bottom}));
+  pillarObstacles.set(layout,obstacles);
+ }
+ const route=finishRoute(points,6,obstacles);cache.set(key,route);return route;
 }

@@ -37,6 +37,8 @@ The workflow sets `VITE_BASE_PATH=/tower-of-science/` so JavaScript, styles, fon
 - Choose **English** or **简体中文** in the header. The first visit follows the browser language, and manual choices are remembered. Shared links include `lang=en` or `lang=zh-CN`, which takes precedence over the saved choice. Existing links without a language remain valid.
 - Search in either language, including Chinese or English concept names and contributor names. Chinese details retain the original English title and contributor names for cross-reference.
 - Search for a concept, alias, or contributor. Press Ctrl/Cmd+K to focus search.
+- Use the sidebar button beside the desktop logo to make room for the tower. The atlas remembers your choice and reopens the menu at its previous scroll position during the visit.
+- At overview zoom, each era tag shows its name and date range. Hover over a pillar with a rotated name, or focus it with the keyboard, to read the name horizontally.
 - Select a concept to see its introduction, origins, contributors, limitations, and supporting references. Closing its detail panel preserves your camera position and zoom. The index also preserves the camera until you select a different concept.
 - Drag from blank space, an edge, a bundle count, or a collapsed pillar to pan. A short click still opens the relationship; dragging never opens it accidentally.
 - Zoom out to see inactive subbranches, then major sections, represented by serif names and discipline symbols centered inside their existing pillars. Narrow pillars rotate their titles; they never move or become floating cards. Select a pillar to reveal its ideas without changing selection or filters. Active paths remain individual; summary bundles retain all original relationship evidence.

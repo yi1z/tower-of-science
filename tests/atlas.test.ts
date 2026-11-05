@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { atlas } from '../src/data/atlas';
+import {assertCleanRoute} from './routeAssertions';
+import {finishRoute} from '../src/graph';
 import { validateAtlas,validateReleaseCoverage } from '../src/validate';
 import { indexGraph,layoutGraph,filterGraph,searchConcepts,NODE_WIDTH,NODE_HEIGHT,COLUMN_GAP,periodFor,routeRelationships,buildBundles,visibleBundles,eraBandAt } from '../src/graph';
 import { defaultState,parseState,serializeState } from '../src/state';
@@ -99,6 +101,7 @@ test('bundle membership is distinct, filter-aware, and separated by type and evi
 function assertClearRoutes(concepts:typeof atlas.concepts,relationships:typeof atlas.relationships){
  const layout=layoutGraph(concepts),routes=routeRelationships(layout,relationships);
  for(const edge of relationships){const route=routes.get(edge.id)!;assert(route?.path.startsWith('M '));
+  assertCleanRoute(route.points,edge.id);
   for(let i=1;i<route.points.length;i++){const a=route.points[i-1],b=route.points[i];assert(a.x===b.x||a.y===b.y);
    for(const c of concepts){if(c.id===edge.source||c.id===edge.target)continue;const p=layout.positions.get(c.id)!;
     const crosses=a.x===b.x?a.x>p.x&&a.x<p.x+NODE_WIDTH&&Math.max(a.y,b.y)>p.y&&Math.min(a.y,b.y)<p.y+NODE_HEIGHT:a.y>p.y&&a.y<p.y+NODE_HEIGHT&&Math.max(a.x,b.x)>p.x&&Math.min(a.x,b.x)<p.x+NODE_WIDTH;
@@ -109,6 +112,22 @@ function assertClearRoutes(concepts:typeof atlas.concepts,relationships:typeof a
  return routes;
 }
 test('all individual routes avoid unrelated cards, including changing era widths',()=>{assertClearRoutes(atlas.concepts,atlas.relationships);});
+test('a clear elbow replaces a dogleg while obstacles keep the necessary detour',()=>{
+ const points=[{x:0,y:100},{x:0,y:80},{x:25,y:80},{x:25,y:60},{x:75,y:60},{x:75,y:20}];
+ assert.deepEqual(finishRoute(points,2,[]).points,[points[0],points[1],{x:75,y:80},points[5]]);
+ const blocked=[{left:45,right:55,top:75,bottom:85},{left:-4,right:4,top:65,bottom:75}];
+ assert.deepEqual(finishRoute(points,2,blocked).points,points);
+});
+test('the approach to diffusion models and adjacent-floor links do not overshoot their turns',()=>{
+ const layout=layoutGraph(atlas.concepts),routes=routeRelationships(layout,atlas.relationships);
+ const path=routes.get('deep-learning--diffusion-models')!.points;
+ assert(path.every((p,i)=>i===0||p.y<=path[i-1].y));
+ const floorIndex=new Map(layout.rows.map((row,i)=>[row.id,i]));
+ const floorOf=(id:string)=>floorIndex.get(layout.nodeFloor.get(id)!)!;
+ const adjacent=atlas.relationships.filter(e=>floorOf(e.target)-floorOf(e.source)===1);
+ assert(adjacent.length>0);
+ for(const e of adjacent)assert(routes.get(e.id)!.points.length<=4,e.id);
+});
 test('dense routing handles many parents, same-floor links, and long links deterministically',()=>{
  const concepts=Array.from({length:24},(_,i)=>({...atlas.concepts[0],id:`route-${i}`,discipline:i%2?'physics' as const:'mathematics' as const,branchId:i%2?'physics-fields':'math-analysis',date:{...atlas.concepts[0].date,year:i<12?1801:1901}}));
  const relationships=Array.from({length:23},(_,i)=>({...atlas.relationships[0],id:`route-edge-${i}`,source:`route-${i}`,target:'route-23'}));
